@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>search</title>
+</head>
+<body>
+    <input id="input" type="text" input="search()">
+    <pre id="output">Nothing Here</pre>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.js"></script>
+<script>
+    const options = {
+      isCaseSensitive: false,
+      includeScore: true,
+      // shouldSort: true,
+      // includeMatches: false,
+      // findAllMatches: false,
+      // minMatchCharLength: 1,
+      // location: 0,
+      // threshold: 0.6,
+      // distance: 100,
+      // useExtendedSearch: false,
+      // ignoreLocation: false,
+      // ignoreFieldNorm: false,
+      // fieldNormWeight: 1,
+      keys: [
+        "title"
+      ]
+    };
+    document.getElementById('input').addEventListener('input', search);
+    fuse = null
+
+    fetch('./index.json').then(function (response) {
+            // The API call was successful!
+            return response.json()
+        }).then(function (data){
+            fuse = new Fuse(data, options);
+        }).catch(function (err) {
+            // There was an error
+            alert('Error in loading json file.');
+        });
+
+
+    function search() {
+        searchpattern = document.getElementById("input").value
+        result = fuse.search(searchpattern)
+        document.getElementById('output').innerHTML = JSON.stringify(result,null,2) 
+    }
+</script>
+</html>
