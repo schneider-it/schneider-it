@@ -1,4 +1,4 @@
-.search_div {
+#search_div {
     position: absolute;
     width: 100%;
 
@@ -25,7 +25,7 @@
     } 
 
     &::after {
-        content: 'Press Enter to open the first result!';
+        content: attr(data-after); //'Press Enter to open the first result!';
         position: absolute;
         right: 4vh;
         top: 0;
@@ -68,6 +68,12 @@
         &:hover {
             box-shadow: 0px 8px 0px black;
             transform: translateY(12px);
+        }
+
+        &#active {
+            box-shadow: 0px 8px 0px black;
+            transform: translateY(12px);
+            background: var(--nebenfarbe2);
         }
     }
 
