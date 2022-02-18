@@ -114,13 +114,13 @@
     <div class="section searchable">     
         <div class="container" style="margin-top: 10vh;">
             <div>
-                <h3>Einleitung</h3>
+                <h3 id="Einleitung">Einleitung</h3>
                 <div>
                     Vererbung ist in der objektorientierten Programmierung ein wichtiger wesentlicher Teil. 
                     Die Vererbung ermöglicht es, dass eine ChildClass Attribute und Methoden von einer BaseClass übernehmen kann.
                     Mithilfe der Vererbung kann man am besten realitätsgetreue Datenstrukturen organisieren.
 
-                    <h4>Beispiel</h4>
+                    <h4 id="Einleitung-Beispiel">Beispiel</h4>
                     <div>
                         Nehmen wir an, wir bauen eine einfache Klasse Person. Person ist nun die BaseClass.
                         <div class="code">
@@ -150,9 +150,9 @@
                         </div>
                     </div>
                 </div>
-                <h3>besondere Klassen</h3>
+                <h3 id="besondere_Klassen">besondere Klassen</h3>
                 <div>
-                    <h4>abstract Klassen</h4>
+                    <h4 id="besondere_Klassen-abstract_Klassen">abstract Klassen</h4>
                     <div>
                         Abstrakte Klassen sind Klassen von denen man keine Instanz bilden kann. 
                         Dies macht dann Sinn, wenn man erzwingen will, dass nur eine Instanz der erbenden Klassen (ChildClass) gemacht werden darf.
@@ -164,7 +164,7 @@
                             <div>}</div>
                         </div>
                     </div>
-                    <h4>sealed Klassen</h4>
+                    <h4 id="besondere_Klassen-sealed_Klassen">sealed Klassen</h4>
                     <div>
                         Sealed Klassen (versiegelte Klassen) sind Klassen, von denen man nicht erben kann.
                         Es kann also keine ChildClass einer sealed Klasse geben.
@@ -177,9 +177,9 @@
                         Weil sich sealed und abstract gegenseitig eigentlich komplett widersprechen, ist es nicht möglich eine Klasse gleichzeitig abstract und sealed zu machen.
                     </div>
                 </div>
-                <h3>Polymorphie</h3>
+                <h3 id="Polymorphie">Polymorphie</h3>
                 <div>
-                    <h4>Vorgeschichte</h4>
+                    <h4 id="Polymorphie-Vorgeschichte">Vorgeschichte</h4>
                     <div>
                         Es ist möglich eine BaseClass Person zu deklarieren, die man dann aber mit der ChildClass Student instanziiert.
                         <div class="code">
@@ -197,12 +197,12 @@
                         </div>
                         Wir erstellen ein Array mit Personen. Jede Person ist allerdings bereits eine spezifische Person, zum Beispiel ein Lehrer.
                     </div>
-                    <h4>Einleitung</h4>
+                    <h4 id="Polymorphie-Einleitung">Einleitung</h4>
                     <div>
                         Die Klasse Person implementiert eine Methode SayHello.
                         Wenn man jetzt will, dass manche Personengruppe (ChildClass von Person) auf eine andere Art grüßen, benötigen wir Polymorphie.
                     </div>
-                    <h4>Personenbeispiel</h4>
+                    <h4 id="Polymorphie-Personenbeispiel">Personenbeispiel</h4>
                     <div>
                         Wir möchten, dass jeder Schüler mit "Moin Meister!", jeder Lehrer mit "Guten Morgen!" und jeder Wissenschaftler mit "Grüß Gott!" grüßt.
                         In der Klasse Person haben wir bereits eine Methode SayHello, in der die Person mit "Grüß Gott!" grüßt.
