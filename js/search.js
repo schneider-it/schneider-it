@@ -128,6 +128,31 @@ const list = [
       "title": "Delegate",
       "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Delegate",
       "ordner": "Programmiersprachen -> C# -> Grundlagen -> Datentypen",
+    },
+    {
+      "title": "Was ist das?",
+      "location": "/docs/programmiersprachen/brainfuck.html#Was_ist_das?",
+      "ordner": "Programmiersprachen -> Brainfuck",
+    },
+    {
+      "title": "Erklärung",
+      "location": "/docs/programmiersprachen/brainfuck.html#Erklärung",
+      "ordner": "Programmiersprachen -> Brainfuck",
+    },
+    {
+      "title": "Entwicklung",
+      "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Entwicklung",
+      "ordner": "Programmiersprachen -> Brainfuck",
+    },
+    {
+      "title": "Programmierung",
+      "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Programmierung",
+      "ordner": "Programmiersprachen -> Brainfuck",
+    },
+    {
+      "title": "Mit Brainfuck anfangen",
+      "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Mit_Brainfuck_anfangen",
+      "ordner": "Programmiersprachen -> Brainfuck",
     }
 ]
 
