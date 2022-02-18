@@ -155,15 +155,16 @@
 //       "ordner": "Programmiersprachen -> Brainfuck",
 //     }
 // ]
+
 const options = {
     isCaseSensitive: false,
-    includeScore: false,
+    includeScore: true,
     shouldSort: true,
     includeMatches: false,
     findAllMatches: false,
     minMatchCharLength: 1,
     // location: 0,
-    threshold: 0.4,
+    threshold: 0.5,
     // distance: 100,
     useExtendedSearch: true,
     ignoreLocation: true,
@@ -181,8 +182,8 @@ const options = {
     ]
 };
 
-const fuse = null;
-fetch('./index.json').then(function (response) {
+let fuse = null;
+fetch('/tools/indexer/index.json').then(function (response) {
   // The API call was successful!
   return response.json()
 }).then(function (data){
