@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Programmiersprachen - C# - Other stuff</title>
+    <title>Schneider IT - Programmiersprachen - HTML - alle Attribute</title>
 </head>
 <body onload="OnLoad()">
     <div class="search_button">
@@ -84,7 +84,7 @@
     </div>
 
     <div class="back_button">
-        <a href="../csharp.html">
+        <a href="../html.html">
             <ion-icon name="arrow-back-outline"></ion-icon>
         </a>
     </div>
@@ -94,14 +94,13 @@
             <div class="container small" style="padding: 10vh 0;">
                 <div class="flex-between nowrap">
                     <div class="flex-center-v">
-                        <img src="/img/random.png" alt="Other_stuff_Logo" class="img small" style="margin: 0;">
+                        <img src="/img/grundlagen.png" alt="C#_Logo" class="img small" style="margin: 0;">
                     </div>
                     <div class="flex-center-v" style="width: 70vw; text-align: right;">
                         <div>
-                            <h2 style="margin-bottom: 5vh;">Other stuff C#</h2>
+                            <h2 style="margin-bottom: 5vh;">alle HTML-Attribute</h2>
                             <p style="max-width: 30vw; float: right;">
-                                Hier lernen Sie alles über wichtige C# Klassen, deren statische Methoden, 
-                                Verkettung, Playfair Chiffre und vieles mehr.
+                                Hier sind alle HTML-Attribute aufgelistet.
                             </p>
                         </div>
                     </div>
@@ -110,59 +109,77 @@
         </div>
     </div>
 
-    <div class="section">        
-        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
-            <div class="container" style="padding: 8vh 0;">
-                <h2>Unterkategorien von Ohter stuff</h2>
-            </div>
-        </div>
-
+    <div class="section searchable">   
         <div class="container" style="margin-top: 10vh;">
-            <div class="flex-between">
-                <a href="anderes/wichtige_klassen.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/blueprint.png" alt="wichtige Klassen und Methoden" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>wichtige Klassen</h4>
-                            <p>
-                                Hier lernen Sie alles über die wichtigsten C# Klassen und deren am öftesten verwendeten Methoden.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="anderes/verkettung.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/verknupfung.png" alt="Verkettung" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Verkettung</h4>
-                            <p>
-                                Hier lernen Sie alles über verkettete Listen. Auch doppelt verkettet oder generisch verkettet oder beides.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="anderes/playfair_chiffre.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/verschlusselung.png" alt="Playfair Chiffre" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Playfair Chiffre</h4>
-                            <p>
-                                Sie wollen Nachrichten sicher verschlüsseln können? Bitteschön!
-                            </p>
-                        </div>
-                    </div>
-                </a>
+            <div>
+                <h3>globale Attribute</h3>
+                <div>
+                    Zuerst beginnen wir mit den Attributen, die jeder HTML-Tag besitzen kann.
+                    <table>
+                        <tr>
+                            <th>Attribut</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                        <tr>
+                            <td>accesskey</td>
+                            <td>gibt eine Tastenkombination zur Aktivierung/Fokussierung eines Elements an</td>
+                        </tr>
+                        <tr style="color: var(--turbo);">
+                            <td>class</td>
+                            <td>gibt einen oder mehrere Klassennamen für ein Element an (verweist auf eine Klasse in CSS)</td>
+                        </tr>
+                        <tr>
+                            <td>contenteditable</td>
+                            <td>gibt an, ob der Inhalt eines Elements bearbeitbar ist oder nicht</td>
+                        </tr>
+                        <tr>
+                            <td>data-*</td>
+                            <td>wird verwendet, um benutzerdefinierte Daten für die Seite oder Anwendung zu speichern</td>
+                        </tr>
+                        <tr>
+                            <td>dir</td>
+                            <td>gibt die Textrichtung für den Inhalt in einem Element an</td>
+                        </tr>
+                        <tr>
+                            <td>draggable</td>
+                            <td>gibt an, ob ein Element verschiebbar ist oder nicht</td>
+                        </tr>
+                        <tr>
+                            <td>hidden</td>
+                            <td>gibt an, dass ein Element noch nicht oder nicht mehr relevant ist</td>
+                        </tr>
+                        <tr style="color: var(--turbo);">
+                            <td>id</td>
+                            <td>gibt eine eindeutige ID für ein Element an</td>
+                        </tr>
+                        <tr>
+                            <td>lang</td>
+                            <td>gibt die Sprache des Inhalts des Elements an</td>
+                        </tr>
+                        <tr>
+                            <td>spellcheck</td>
+                            <td>gibt an, ob die Rechtschreibung und Grammatik des Elements geprüft werden soll oder nicht</td>
+                        </tr>
+                        <tr>
+                            <td>style</td>
+                            <td>gibt einen Inline-CSS-Stil für ein Element an</td>
+                        </tr>
+                        <tr>
+                            <td>tabindex</td>
+                            <td>legt die Tabulatorreihenfolge eines Elements fest</td>
+                        </tr>
+                        <tr>
+                            <td>title</td>
+                            <td>gibt zusätzliche Informationen über ein Element an</td>
+                        </tr>
+                        <tr>
+                            <td>translate</td>
+                            <td>gibt an, ob der Inhalt eines Elements übersetzt werden soll oder nicht</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
+        </div>        
     </div>
 
     <footer>
@@ -214,7 +231,7 @@
                 <hr class="short">
                 <div>Unterstützen Sie uns!</div>
                 <strong>
-                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FT9TT4LP8GD6Y" class="fg-link">Spenden</a>
+                    <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=FT9TT4LP8GD6Y" style="color: var(--turbo);">Spenden</a>
                 </strong> 
             </div>
         </div>

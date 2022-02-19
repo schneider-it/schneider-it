@@ -438,6 +438,11 @@ hr.short {
   width: 50%;
 }
 
+.back_button, .search_button, .burger {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
 .back_button, .search_button {
   position: fixed;
   top: 4vh;
@@ -1293,7 +1298,11 @@ hr.short {
           filter: invert(1);
 }
 
-.img.larg {
+.img.large {
+  width: 120vh;
+}
+
+.img.big {
   width: 100vh;
 }
 

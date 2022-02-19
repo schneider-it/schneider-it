@@ -442,6 +442,10 @@ hr {
     }
 }
 
+.back_button, .search_button, .burger {
+    backdrop-filter: blur(10px);
+}
+
 .back_button, .search_button {
     position: fixed;
     top: 4vh;
@@ -1060,7 +1064,11 @@ hr {
         filter: invert(1);
     }
 
-    &.larg {
+    &.large {
+        width: 120vh;
+    }
+
+    &.big {
         width: 100vh;
     }
 

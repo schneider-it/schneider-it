@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Programmiersprachen - C# - Other stuff</title>
+    <title>Schneider IT - Programmiersprachen - HTML - Grundlagen</title>
 </head>
 <body onload="OnLoad()">
     <div class="search_button">
@@ -84,7 +84,7 @@
     </div>
 
     <div class="back_button">
-        <a href="../csharp.html">
+        <a href="../html.html">
             <ion-icon name="arrow-back-outline"></ion-icon>
         </a>
     </div>
@@ -94,14 +94,13 @@
             <div class="container small" style="padding: 10vh 0;">
                 <div class="flex-between nowrap">
                     <div class="flex-center-v">
-                        <img src="/img/random.png" alt="Other_stuff_Logo" class="img small" style="margin: 0;">
+                        <img src="/img/grundlagen.png" alt="C#_Logo" class="img small" style="margin: 0;">
                     </div>
                     <div class="flex-center-v" style="width: 70vw; text-align: right;">
                         <div>
-                            <h2 style="margin-bottom: 5vh;">Other stuff C#</h2>
+                            <h2 style="margin-bottom: 5vh;">Grundlagen HTML</h2>
                             <p style="max-width: 30vw; float: right;">
-                                Hier lernen Sie alles über wichtige C# Klassen, deren statische Methoden, 
-                                Verkettung, Playfair Chiffre und vieles mehr.
+                                Lernen Sie die Entstehung und die Grundbegriffe von HTML kennen.
                             </p>
                         </div>
                     </div>
@@ -110,59 +109,53 @@
         </div>
     </div>
 
-    <div class="section">        
-        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
-            <div class="container" style="padding: 8vh 0;">
-                <h2>Unterkategorien von Ohter stuff</h2>
-            </div>
-        </div>
-
+    <div class="section searchable">   
         <div class="container" style="margin-top: 10vh;">
-            <div class="flex-between">
-                <a href="anderes/wichtige_klassen.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/blueprint.png" alt="wichtige Klassen und Methoden" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>wichtige Klassen</h4>
-                            <p>
-                                Hier lernen Sie alles über die wichtigsten C# Klassen und deren am öftesten verwendeten Methoden.
-                            </p>
-                        </div>
+            <div>
+                <h3 id="Fakten_über_HTML">Fakten über HTML</h3>
+                <div>
+                    Hypertext Markup Language ist eine textbasierte Beschreibungssprache zur Strukturierung elektronischer Dokumente, wie Texte mit Hyperlinks, Bildern und anderen Inhalten.
+                    HTML-Dokumente sind die Grundlage des World Wide Web und werden von Webbrowsern dargestellt.
+                    <br><br>
+                    Das erste HTML erschien am 3. November 1992, nachdem 3 Jahre lang an einer Lösung für den einfachen elektronischen Dokumentenaustausch gearbeitet wurde.
+                    HTML war ursprünglich für CERN (Europäische Organisation für Kernforschung) gedacht, die ihre Forschungsergebnisse untereinander austauschen wollten.
+                </div>
+                <h3 id="Syntax_HTML-Tag">Syntax HTML-Tag</h3>
+                <div>
+                    Die Syntax eines Tags mit Endtag in HTML sieht wie folgt aus (Beispiel mit div):
+                    <div class="code">
+                        &lt;<span class="code-keyword">div</span>&gt; <em>Content</em> &lt;/<span class="code-keyword">div</span>&gt;
                     </div>
-                </a>
-                <a href="anderes/verkettung.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/verknupfung.png" alt="Verkettung" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Verkettung</h4>
-                            <p>
-                                Hier lernen Sie alles über verkettete Listen. Auch doppelt verkettet oder generisch verkettet oder beides.
-                            </p>
-                        </div>
+                    Hat der Tag keinen Endtag, sieht die Syntax so aus (Beispiel mit img):
+                    <div class="code">
+                        &lt;<span class="code-keyword">img</span>&gt;
                     </div>
-                </a>
-                <a href="anderes/playfair_chiffre.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/verschlusselung.png" alt="Playfair Chiffre" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Playfair Chiffre</h4>
-                            <p>
-                                Sie wollen Nachrichten sicher verschlüsseln können? Bitteschön!
-                            </p>
-                        </div>
+                    Wenn man will, kann man trotzdem ein Anzeichen eines Endtags hinzufügen (Beispiel mit link):
+                    <div class="code">
+                        &lt;<span class="code-keyword">link</span>/&gt;
                     </div>
-                </a>
+                </div>
+                <h3 id="Syntax_Attribute">Syntax Attribute</h3>
+                <div>
+                    Die Syntax der Definition eines oder mehrere Attribute sieht so aus (Beispiel mit span):
+                    <div class="code">
+                        &lt;<span class="code-keyword">span</span> <span class="code-variable">id</span>=<span class="code-string">"myId"</span> <span class="code-variable">class</span>=<span class="code-string">"myClass"</span>&gt; <em>Content</em> &lt;/<span class="code-keyword">span</span>&gt;
+                    </div>
+                    Hier noch ein Beispiel mit img:
+                    <div class="code">
+                        &lt;<span class="code-keyword">img</span> <span class="code-variable">src</span>=<span class="code-string">"img/Katzen.jpg"</span> <span class="code-variable">alt</span>=<span class="code-string">"Katzen"</span> <span class="code-variable">class</span>=<span class="code-string">"img"</span> /&gt;
+                    </div>
+                </div>
+                <h3 id="Box-Modell">Box-Modell</h3>
+                <div>
+                    Das HTML-Box-Modell beschreibt, wie HTML und CSS Schriften, Bilder und alles andere interpretieren.
+                    <br><br>
+                    Wie man im folgenden Bild sehen kann, hat jede Box - im Prinzip ist jeder Tag in HTML eine Box - ein Margin, einen Border und ein Padding.
+                    Es ist essenziell dieses Modell zu verstehen, um mit HTML und CSS zu programmieren.
+                    <a href="/img/HTML-Box-Modell.svg" data-lightbox="lightbox" data-title="HTML-Box-Modell"><img src="/img/HTML-Box-Modell.svg" alt="Box-Modell" class="img invert"></a>
+                </div>
             </div>
-        </div>
+        </div>        
     </div>
 
     <footer>
