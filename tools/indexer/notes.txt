@@ -1,0 +1,7 @@
+Eingabeausforderung
+cd E:\repos\schneider-it\tools\indexer\indexer-venv\Scripts
+
+activate.bat ausführen
+cd E:\repos\schneider-it\
+
+python tools\indexer\indexer.py docs tools\indexer\indexer.json ausführen
