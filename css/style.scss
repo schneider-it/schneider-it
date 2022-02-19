@@ -67,6 +67,7 @@ font-family: 'Source Code Pro', monospace;
 
     // Vordergründe
     --standard-schrift: #000;
+    --leichte-schrift: #222;
     --schrift-auf-dunklem-hintergrund: #fff;
     --schrift-auf-hellem-hintergrund: #000;
 
@@ -156,6 +157,8 @@ font-family: 'Source Code Pro', monospace;
 
         // Vordergründe
         --standard-schrift: #fff;
+        --leichte-schrift: #ddd;
+
         --link-standard: #ffdf77;
         --link-hover: #ffd54b;
         --navigation-hover: #ffe7d1;
@@ -194,6 +197,8 @@ body.dark {
 
     // Vordergründe
     --standard-schrift: #fff;
+    --leichte-schrift: #ddd;
+    
     --link-standard: #ffdf77;
     --link-hover: #ffd54b;
     --navigation-hover: #ffe7d1;
