@@ -1,0 +1,977 @@
+[
+    {
+        "title": "Datenbanken",
+        "location": "/docs/datenbanken.html",
+        "prettypath": ""
+    },
+    {
+        "title": "Netzwerktechnik",
+        "location": "/docs/netzwerktechnik.html",
+        "prettypath": ""
+    },
+    {
+        "title": "Programmiersprachen",
+        "location": "/docs/programmiersprachen.html",
+        "prettypath": ""
+    },
+    {
+        "title": "Brainfuck",
+        "location": "/docs/programmiersprachen/brainfuck.html",
+        "prettypath": "Programmiersprachen"
+    },
+    {
+        "title": "Was ist das?",
+        "location": "/docs/programmiersprachen/brainfuck.html#Was_ist_das?",
+        "prettypath": "Programmiersprachen ➜ Brainfuck"
+    },
+    {
+        "title": "Erklärung",
+        "location": "/docs/programmiersprachen/brainfuck.html#Erklärung",
+        "prettypath": "Programmiersprachen ➜ Brainfuck"
+    },
+    {
+        "title": "Entwicklung",
+        "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Entwicklung",
+        "prettypath": "Programmiersprachen ➜ Brainfuck ➜ Erklärung"
+    },
+    {
+        "title": "Programmierung",
+        "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Programmierung",
+        "prettypath": "Programmiersprachen ➜ Brainfuck ➜ Erklärung"
+    },
+    {
+        "title": "Mit Brainfuck anfangen",
+        "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Mit_Brainfuck_anfangen",
+        "prettypath": "Programmiersprachen ➜ Brainfuck ➜ Erklärung"
+    },
+    {
+        "title": "C#",
+        "location": "/docs/programmiersprachen/csharp.html",
+        "prettypath": "Programmiersprachen"
+    },
+    {
+        "title": "Other stuff C#",
+        "location": "/docs/programmiersprachen/csharp/anderes.html",
+        "prettypath": "Programmiersprachen ➜ C#"
+    },
+    {
+        "title": "Verkettung C#",
+        "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
+    },
+    {
+        "title": "Verkettete Listen",
+        "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C#"
+    },
+    {
+        "title": "einfach Verkettete Listen",
+        "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen-einfach_Verkettete_Listen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C# ➜ Verkettete Listen"
+    },
+    {
+        "title": "doppelt Verkettete Listen",
+        "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen-doppelt_Verkettete_Listen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C# ➜ Verkettete Listen"
+    },
+    {
+        "title": "einfach Verkettete Listen generisch",
+        "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen-einfach_Verkettete_Listen_generisch",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C# ➜ Verkettete Listen"
+    },
+    {
+        "title": "doppelt Verkettete Listen generisch",
+        "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen-doppelt_Verkettete_Listen_generisch",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C# ➜ Verkettete Listen"
+    },
+    {
+        "title": "Binary Tree",
+        "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Binary-Tree",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C#"
+    },
+    {
+        "title": "Wichtige Klassen C#",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
+    },
+    {
+        "title": "Math / Mathf",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
+    },
+    {
+        "title": "PI",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-PI",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+    },
+    {
+        "title": "E",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-E",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+    },
+    {
+        "title": "Min",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Min",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+    },
+    {
+        "title": "Max",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Max",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+    },
+    {
+        "title": "Pow",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Pow",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+    },
+    {
+        "title": "Sqrt",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Sqrt",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+    },
+    {
+        "title": "Round",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Round",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+    },
+    {
+        "title": "Abs",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Abs",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+    },
+    {
+        "title": "String",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#String",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
+    },
+    {
+        "title": "Random",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Random",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
+    },
+    {
+        "title": "Playfair Chiffre",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
+    },
+    {
+        "title": "Verkettete Listen",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre"
+    },
+    {
+        "title": "einfach Verkettete Listen",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen-einfach_Verkettete_Listen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre ➜ Verkettete Listen"
+    },
+    {
+        "title": "doppelt Verkettete Listen",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen-doppelt_Verkettete_Listen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre ➜ Verkettete Listen"
+    },
+    {
+        "title": "einfach Verkettete Listen generisch",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen-einfach_Verkettete_Listen_generisch",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre ➜ Verkettete Listen"
+    },
+    {
+        "title": "doppelt Verkettete Listen generisch",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen-doppelt_Verkettete_Listen_generisch",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre ➜ Verkettete Listen"
+    },
+    {
+        "title": "Binary Tree",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Binary-Tree",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre"
+    },
+    {
+        "title": "Grundlagen C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen.html",
+        "prettypath": "Programmiersprachen ➜ C#"
+    },
+    {
+        "title": "Flusssteuerung C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
+    },
+    {
+        "title": "if",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#if",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "else",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#else",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "switch",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#switch",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "Schleifen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "while",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-while",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "for",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-for",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "foreach",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-foreach",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "do-while",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-do-while",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "return",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#return",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "continue und break",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#continue_und_break",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "goto",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#goto",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "statische Methoden C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
+    },
+    {
+        "title": "Einleitung",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Eninleitung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
+    },
+    {
+        "title": "Methodenaufruf",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Methodenaufruf",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
+    },
+    {
+        "title": "Rekursion",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Rekursion",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
+    },
+    {
+        "title": "Datentypen C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
+    },
+    {
+        "title": "einfache Datentypen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C#"
+    },
+    {
+        "title": "Eigenschaften",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Eigenschaften",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Wertebereiche",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Wertebereiche",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Wertebereich erklärt",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Wertebereiche_erklärt",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Operationen mit Zahlen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Operation_mit_Zahlen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Int",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Int",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Double",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Double",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Float",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Float",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Decimal",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Decimal",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Bool",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Bool",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Struct",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Struct",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "short",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-short",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "long",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-long",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "byte",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-byte",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "sbyte",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-sbyte",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "uint",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-uint",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "ushort",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-ushort",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "ulong",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-ulong",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "title": "Referenztypen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C#"
+    },
+    {
+        "title": "Eigenschaften",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Eigenschaften",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "Char",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Char",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "String",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-String",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "Array",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Array",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "List",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-List",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "Class",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Class",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "Interface",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Interface",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "Enum",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Enum",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "Object",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Object",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "Delegate",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Delegate",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "title": "OOP C#",
+        "location": "/docs/programmiersprachen/csharp/oop.html",
+        "prettypath": "Programmiersprachen ➜ C#"
+    },
+    {
+        "title": "Klassen C#",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
+    },
+    {
+        "title": "Verwendung",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
+    },
+    {
+        "title": "Was ist eine Klasse?",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Was_ist_eine_Klasse?",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Verwendung"
+    },
+    {
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Verwendung"
+    },
+    {
+        "title": "Instanz einer Klasse",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Instanz_einer_Klasse",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Verwendung"
+    },
+    {
+        "title": "private Variablen",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#private_Variablen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
+    },
+    {
+        "title": "public Properties",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#public_Properties",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
+    },
+    {
+        "title": "Konstruktoren",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
+    },
+    {
+        "title": "Einleitung",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren-Einleitung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Konstruktoren"
+    },
+    {
+        "title": "Konstruktor-Verkettung",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren-Konstruktor-Verkettung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Konstruktoren"
+    },
+    {
+        "title": "Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
+    },
+    {
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
+    },
+    {
+        "title": "2 Arten",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-2_Arten",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
+    },
+    {
+        "title": "statische Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-statische_Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
+    },
+    {
+        "title": "dynamische Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-dynamische_Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
+    },
+    {
+        "title": "Rekursion",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-Rekursion",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
+    },
+    {
+        "title": "Generische Klassen",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
+    },
+    {
+        "title": "Theorie",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Theorie",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Klasse",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Klasse",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Instanz",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Instanz",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Properties",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Properties",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Methodenaufruf",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Methodenaufruf",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
+    },
+    {
+        "title": "Unit Tests",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
+    },
+    {
+        "title": "Was sind Unit Tests?",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests-Was_sind_Unit_Tests?",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Unit Tests"
+    },
+    {
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Unit Tests"
+    },
+    {
+        "title": "Interfaces C#",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
+    },
+    {
+        "title": "Interfaces",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C#"
+    },
+    {
+        "title": "Was ist ein Interface?",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
+    },
+    {
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces ➜ Was ist ein Interface?"
+    },
+    {
+        "title": "Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
+    },
+    {
+        "title": "Properties",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Properties",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
+    },
+    {
+        "title": "Vererbung C#",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
+    },
+    {
+        "title": "Einleitung",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Einleitung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C#"
+    },
+    {
+        "title": "Beispiel",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Einleitung-Beispiel",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ Einleitung"
+    },
+    {
+        "title": "besondere Klassen",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#besondere_Klassen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C#"
+    },
+    {
+        "title": "abstract Klassen",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#besondere_Klassen-abstract_Klassen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ besondere Klassen"
+    },
+    {
+        "title": "sealed Klassen",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#besondere_Klassen-sealed_Klassen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ besondere Klassen"
+    },
+    {
+        "title": "Polymorphie",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Polymorphie",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C#"
+    },
+    {
+        "title": "Vorgeschichte",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Polymorphie-Vorgeschichte",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ Polymorphie"
+    },
+    {
+        "title": "Einleitung",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Polymorphie-Einleitung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ Polymorphie"
+    },
+    {
+        "title": "Personenbeispiel",
+        "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Polymorphie-Personenbeispiel",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ Polymorphie"
+    },
+    {
+        "title": "HTML",
+        "location": "/docs/programmiersprachen/html.html",
+        "prettypath": "Programmiersprachen"
+    },
+    {
+        "title": "alle HTML-Tags",
+        "location": "/docs/programmiersprachen/html/alle_tags.html",
+        "prettypath": "Programmiersprachen ➜ HTML"
+    },
+    {
+        "title": "Überblick",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Überblick",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags"
+    },
+    {
+        "title": "Details",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags"
+    },
+    {
+        "title": "<div>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<div>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "Beschreibung",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<div>-Beschreibung",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details ➜ <div>"
+    },
+    {
+        "title": "Beispiel",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<div>-Beispiel",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details ➜ <div>"
+    },
+    {
+        "title": "<span>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<span>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<a>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<a>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<img>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<img>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<link>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<link>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<script>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<script>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<noscript>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<noscript>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<h1> bis <h6>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<h1>_bis_<h6>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<p>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<p>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<html>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<html>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<head>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<head>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<body>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<body>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<title>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<title>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<meta>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<meta>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<style>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<style>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<table>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<table>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<tr>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<tr>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<th>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<th>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<td>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<td>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<thead>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<thead>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<tbody>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<tbody>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<tfoot>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<tfoot>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<colgroup>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<colgroup>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<col>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<col>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<br>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<br>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<form>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<form>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<button>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<button>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<input>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<input>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<label>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<label>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<main>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<main>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<section>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<section>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<article>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<article>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<nav>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<nav>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<header>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<header>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<footer>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<footer>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<ul>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<ul>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<ol>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<ol>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<li>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<li>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<sub>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<sub>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<sup>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<sup>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<pre>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<pre>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<!--...-->",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<!--...-->",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<!DOCTYPE>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<!DOCTYPE>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<audio>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<audio>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<video>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<video>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<abbr>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<abbr>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<code>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<code>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<strong>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<strong>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<b>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<b>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<em>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<em>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<i>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<i>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<del>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<del>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<s>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<s>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "<u>",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<u>",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
+    },
+    {
+        "title": "Grundlagen HTML",
+        "location": "/docs/programmiersprachen/html/grundlagen.html",
+        "prettypath": "Programmiersprachen ➜ HTML"
+    },
+    {
+        "title": "Fakten über HTML",
+        "location": "/docs/programmiersprachen/html/grundlagen.html#Fakten_über_HTML",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
+    },
+    {
+        "title": "Syntax HTML-Tag",
+        "location": "/docs/programmiersprachen/html/grundlagen.html#Syntax_HTML-Tag",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
+    },
+    {
+        "title": "Syntax Attribute",
+        "location": "/docs/programmiersprachen/html/grundlagen.html#Syntax_Attribute",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
+    },
+    {
+        "title": "Box-Modell",
+        "location": "/docs/programmiersprachen/html/grundlagen.html#Box-Modell",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
+    },
+    {
+        "title": "alle HTML-Attribute",
+        "location": "/docs/programmiersprachen/html/alle_attribute.html",
+        "prettypath": "Programmiersprachen ➜ HTML"
+    },
+    {
+        "title": "globale Attribute",
+        "location": "/docs/programmiersprachen/html/alle_attribute.html#globale_Attribute",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Attribute"
+    },
+    {
+        "title": "Systentechnik",
+        "location": "/docs/systemtechnik.html",
+        "prettypath": ""
+    }
+]

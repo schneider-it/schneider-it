@@ -176,7 +176,7 @@ const options = {
         weight: 0.7
       },
       {
-        name: 'ordner',
+        name: 'prettypath',
         weight: 0.3
       }
     ]
@@ -196,7 +196,7 @@ fetch('/tools/indexer/index.json').then(function (response) {
 $("#search").on('keyup', function (e) {
   if((e.key !== "Tab" || e.keyCode !== 9) && (e.key !== "Shift" || e.keyCode !== 16) && (e.key !== "Enter" || e.keyCode !== 13)) {
     let search = document.getElementById('search_div');
-    search.scrollIntoViewIfNeeded(true);
+    //search.scrollIntoViewIfNeeded(true);
 
     let pattern = document.getElementById('search').value;
     let ergebnisse = fuse.search(pattern);
@@ -217,7 +217,7 @@ $("#search").on('keyup', function (e) {
         '<div id="">' +
             '<a href=' + ergebnisse[i].item.location + '>' +
                 '<h4>' + ergebnisse[i].item.title + '</h4>' +
-                '<p>' + ergebnisse[i].item.ordner + '</p>' +
+                '<p>' + ergebnisse[i].item.prettypath+ '</p>' +
             '</a>' +
         '</div>'
       );

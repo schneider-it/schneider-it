@@ -13,9 +13,25 @@ class Topic:
     def __str__(self):
         return str(self.title)
     
-class TopicEncoder(json.JSONEncoder):
-    def default(self, o):
-        return o.__dict__
+    def getCoreInfo(self):
+        return { "title": self.title, "location":self.location}
+    
+    def toFlat(self,prettypath=""):
+        topics = list()
+
+        topic = self.getCoreInfo()
+        topic['prettypath'] = prettypath
+        topics.append(topic)
+
+        if prettypath == "":
+            splitter = ""
+        else:
+            splitter = " ➜ "
+        for topic in self.subtopics:
+            topics += topic.toFlat("{0}{1}{2}".format(prettypath,splitter,self.title))
+
+        return topics
+    
 
 class Indexer:
     def __init__(self):
@@ -69,9 +85,9 @@ class Indexer:
                 i += consumed
             else:
                 try:
-                    location = file + "#" + headlines[i]['id'] 
+                    location = "/{0}#{1}".format(file,headlines[i]['id'])
                 except:
-                    location = file
+                    location = "/{0}".format(file)
                 #print("NEW TOPIC"+ headlines[i].text)
                 subtopic = Topic(headlines[i].text,location)
                 topics.append(subtopic)
@@ -80,14 +96,22 @@ class Indexer:
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("usage: <tree> <output-file>")
-        quit()
-    
-    location = sys.argv[1]
-    output = open(sys.argv[2],'w')
+        #print("usage: <tree> <output-file>")
+        print("no arguments given, using default.")
+        location = "docs"
+        os.chdir("../../")
+        path = "./tools/indexer/index.json"
 
+    else:
+        location = sys.argv[1]
+        path = sys.argv[2]
+
+    output = open(path,'w')
     indexer = Indexer()
     topics = indexer.index_subfolder(location)
     
-    json.dump(topics,output, indent=4, cls=TopicEncoder,ensure_ascii=False)
+    flat = list()
+    for topic in topics:
+        flat += topic.toFlat()
+    json.dump(flat,output, indent=4,ensure_ascii=False)
     output.close()
