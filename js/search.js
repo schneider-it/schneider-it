@@ -164,7 +164,7 @@ const options = {
     findAllMatches: false,
     minMatchCharLength: 1,
     // location: 0,
-    threshold: 0.5,
+    threshold: 0.45,
     // distance: 100,
     useExtendedSearch: true,
     ignoreLocation: true,
@@ -215,11 +215,12 @@ $("#search").on('keyup', function (e) {
 
 
     for (let i = 0; i < ergebnisse.length; i++) {
+      
       container.insertAdjacentHTML('beforeend', 
         '<div id="">' +
-            '<a href=' + ergebnisse[i].item.location + '>' +
-                '<h4>' + ergebnisse[i].item.title + '</h4>' +
-                '<p>' + ergebnisse[i].item.prettypath+ '</p>' +
+            '<a href=' + escapeHTML(ergebnisse[i].item.location) + '>' +
+                '<h4>' + escapeHTML(ergebnisse[i].item.title) + '</h4>' +
+                '<p>' + escapeHTML(ergebnisse[i].item.prettypath) + '</p>' +
             '</a>' +
         '</div>'
       );
@@ -293,3 +294,7 @@ document.onkeydown = function (e) {
 $("#search_form").submit(function() {
     return false;
 });
+
+function escapeHTML(unescapedHTML) {
+  return unescapedHTML.replace('<','&lt;').replace('>','&gt;').replace('<','&lt;').replace('>','&gt;');
+}
