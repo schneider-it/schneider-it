@@ -164,8 +164,8 @@ const options = {
     findAllMatches: false,
     minMatchCharLength: 1,
     // location: 0,
-    threshold: 0.45,
-    // distance: 100,
+    threshold: 0.3,
+    // distance: 0,
     useExtendedSearch: true,
     ignoreLocation: true,
     ignoreFieldNorm: false,
@@ -173,11 +173,11 @@ const options = {
     keys: [
       {
         name: 'title',
-        weight: 0.7
+        weight: 0.9
       },
       {
         name: 'prettypath',
-        weight: 0.3
+        weight: 0.1
       }
     ]
 };
