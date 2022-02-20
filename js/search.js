@@ -204,6 +204,8 @@ $("#search").on('keyup', function (e) {
     let container = document.getElementById('ergebnisse');
     container.innerHTML = ''; 
 
+    console.log(JSON.stringify(ergebnisse,null,2));
+
     if(pattern != ""){
       document.querySelector('#search_div').setAttribute('data-after', 'Press Enter to open the first result!');
     }
