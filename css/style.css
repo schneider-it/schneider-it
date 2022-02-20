@@ -1255,6 +1255,8 @@ hr.short {
   position: relative;
   display: inline-block;
   color: var(--link-standard);
+  -webkit-transition: color var(--short-transition) ease-out;
+  transition: color var(--short-transition) ease-out;
   cursor: pointer;
 }
 
@@ -1270,10 +1272,10 @@ hr.short {
   left: 0;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
-  -webkit-transition: -webkit-transform var(--short-transition) ease-out;
-  transition: -webkit-transform var(--short-transition) ease-out;
-  transition: transform var(--short-transition) ease-out;
-  transition: transform var(--short-transition) ease-out, -webkit-transform var(--short-transition) ease-out;
+  -webkit-transition: background var(--short-transition) ease-out, -webkit-transform var(--short-transition) ease-out;
+  transition: background var(--short-transition) ease-out, -webkit-transform var(--short-transition) ease-out;
+  transition: transform var(--short-transition) ease-out, background var(--short-transition) ease-out;
+  transition: transform var(--short-transition) ease-out, background var(--short-transition) ease-out, -webkit-transform var(--short-transition) ease-out;
   background: var(--link-standard);
 }
 

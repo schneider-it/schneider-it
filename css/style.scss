@@ -1031,6 +1031,7 @@ hr {
     position: relative;
     display: inline-block; 
     color: var(--link-standard);
+    transition: color var(--short-transition) ease-out;
     cursor: pointer;
 
     &::before {
@@ -1044,7 +1045,7 @@ hr {
         bottom: 0; 
         left: 0; 
         transform-origin: bottom right; 
-        transition: transform var(--short-transition) ease-out;
+        transition: transform var(--short-transition) ease-out, background var(--short-transition) ease-out;
         background: var(--link-standard);
     }
 
