@@ -70,7 +70,7 @@ class Indexer:
     def index_file(self,file):
         with open(file) as fp:
             try:
-                soup = BeautifulSoup(fp,"html.parser").find('body').extract()
+                soup = BeautifulSoup(fp,"html.parser", from_encoding='utf-8').find('body').extract()
                 soup = BeautifulSoup(str(soup.find_all('div', {'class': ['searchable']})),"html.parser")
             except:
                 raise Exception("Error: The HTML-File " + file + " is not in correct Format!")
@@ -124,7 +124,7 @@ if __name__ == "__main__":
         location = sys.argv[1]
         path = sys.argv[2]
 
-    output = open(path,'w')
+    output = open(path,'w', encoding='utf-8')
 
     indexer = Indexer()
     topics = indexer.index_subfolder(location)
