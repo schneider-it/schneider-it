@@ -155,36 +155,6 @@
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
     },
     {
-        "title": "Verkettete Listen",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre"
-    },
-    {
-        "title": "einfach Verkettete Listen",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen-einfach_Verkettete_Listen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre ➜ Verkettete Listen"
-    },
-    {
-        "title": "doppelt Verkettete Listen",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen-doppelt_Verkettete_Listen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre ➜ Verkettete Listen"
-    },
-    {
-        "title": "einfach Verkettete Listen generisch",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen-einfach_Verkettete_Listen_generisch",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre ➜ Verkettete Listen"
-    },
-    {
-        "title": "doppelt Verkettete Listen generisch",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Verkettete_Listen-doppelt_Verkettete_Listen_generisch",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre ➜ Verkettete Listen"
-    },
-    {
-        "title": "Binary Tree",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html#Binary-Tree",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Playfair Chiffre"
-    },
-    {
         "title": "Grundlagen C#",
         "location": "/docs/programmiersprachen/csharp/grundlagen.html",
         "prettypath": "Programmiersprachen ➜ C#"
@@ -655,283 +625,283 @@
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags"
     },
     {
-        "title": "<div>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<div>",
+        "title": "&lt;div&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;div&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
         "title": "Beschreibung",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<div>-Beschreibung",
-        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details ➜ <div>"
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;div&gt;-Beschreibung",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details ➜ &lt;div&gt;"
     },
     {
         "title": "Beispiel",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<div>-Beispiel",
-        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details ➜ <div>"
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;div&gt;-Beispiel",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details ➜ &lt;div&gt;"
     },
     {
-        "title": "<span>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<span>",
+        "title": "&lt;span&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;span&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<a>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<a>",
+        "title": "&lt;a&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;a&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<img>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<img>",
+        "title": "&lt;img&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;img&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<link>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<link>",
+        "title": "&lt;link&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;link&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<script>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<script>",
+        "title": "&lt;script&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;script&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<noscript>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<noscript>",
+        "title": "&lt;noscript&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;noscript&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<h1> bis <h6>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<h1>_bis_<h6>",
+        "title": "&lt;h1&gt; bis &lt;h6&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;h1&gt;_bis_&lt;h6&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<p>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<p>",
+        "title": "&lt;p&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;p&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<html>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<html>",
+        "title": "&lt;html&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;html&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<head>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<head>",
+        "title": "&lt;head&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;head&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<body>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<body>",
+        "title": "&lt;body&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;body&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<title>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<title>",
+        "title": "&lt;title&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;title&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<meta>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<meta>",
+        "title": "&lt;meta&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;meta&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<style>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<style>",
+        "title": "&lt;style&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;style&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<table>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<table>",
+        "title": "&lt;table&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;table&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<tr>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<tr>",
+        "title": "&lt;tr&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;tr&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<th>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<th>",
+        "title": "&lt;th&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;th&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<td>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<td>",
+        "title": "&lt;td&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;td&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<thead>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<thead>",
+        "title": "&lt;thead&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;thead&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<tbody>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<tbody>",
+        "title": "&lt;tbody&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;tbody&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<tfoot>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<tfoot>",
+        "title": "&lt;tfoot&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;tfoot&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<colgroup>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<colgroup>",
+        "title": "&lt;colgroup&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;colgroup&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<col>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<col>",
+        "title": "&lt;col&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;col&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<br>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<br>",
+        "title": "&lt;br&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;br&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<form>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<form>",
+        "title": "&lt;form&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;form&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<button>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<button>",
+        "title": "&lt;button&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;button&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<input>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<input>",
+        "title": "&lt;input&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;input&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<label>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<label>",
+        "title": "&lt;label&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;label&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<main>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<main>",
+        "title": "&lt;main&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;main&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<section>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<section>",
+        "title": "&lt;section&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;section&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<article>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<article>",
+        "title": "&lt;article&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;article&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<nav>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<nav>",
+        "title": "&lt;nav&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;nav&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<header>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<header>",
+        "title": "&lt;header&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;header&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<footer>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<footer>",
+        "title": "&lt;footer&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;footer&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<ul>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<ul>",
+        "title": "&lt;ul&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;ul&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<ol>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<ol>",
+        "title": "&lt;ol&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;ol&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<li>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<li>",
+        "title": "&lt;li&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;li&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<sub>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<sub>",
+        "title": "&lt;sub&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;sub&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<sup>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<sup>",
+        "title": "&lt;sup&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;sup&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<pre>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<pre>",
+        "title": "&lt;pre&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;pre&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<!--...-->",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<!--...-->",
+        "title": "&lt;!--...--&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;!--...--&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<!DOCTYPE>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<!DOCTYPE>",
+        "title": "&lt;!DOCTYPE&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;!DOCTYPE&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<audio>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<audio>",
+        "title": "&lt;audio&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;audio&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<video>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<video>",
+        "title": "&lt;video&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;video&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<abbr>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<abbr>",
+        "title": "&lt;abbr&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;abbr&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<code>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<code>",
+        "title": "&lt;code&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;code&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<strong>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<strong>",
+        "title": "&lt;strong&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;strong&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<b>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<b>",
+        "title": "&lt;b&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;b&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<em>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<em>",
+        "title": "&lt;em&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;em&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<i>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<i>",
+        "title": "&lt;i&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;i&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<del>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<del>",
+        "title": "&lt;del&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;del&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<s>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<s>",
+        "title": "&lt;s&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;s&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
-        "title": "<u>",
-        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-<u>",
+        "title": "&lt;u&gt;",
+        "location": "/docs/programmiersprachen/html/alle_tags.html#Details-&lt;u&gt;",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {

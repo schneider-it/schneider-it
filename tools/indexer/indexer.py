@@ -4,6 +4,11 @@ import os
 import re
 import sys
 
+ESCAPECHARS = [
+    [ "<", "&lt;" ],
+    [ ">", "&gt;" ]
+]
+
 class Topic:
     def __init__(self, title, location):
         self.title = title 
@@ -13,6 +18,19 @@ class Topic:
     def __str__(self):
         return str(self.title)
     
+    def escapeChars(self):
+        def escape(string,escapechars):
+            for c in ESCAPECHARS:
+                string = string.replace(c[0], c[1])
+            return string
+
+        self.title = escape(self.title,ESCAPECHARS)
+        self.location = escape(self.location,ESCAPECHARS)
+        
+        for topic in self.subtopics:
+            topic.escapeChars()
+        
+            
     def getCoreInfo(self):
         return { "title": self.title, "location":self.location}
     
@@ -107,11 +125,16 @@ if __name__ == "__main__":
         path = sys.argv[2]
 
     output = open(path,'w')
+
     indexer = Indexer()
     topics = indexer.index_subfolder(location)
+
+    for topic in  topics:
+        topic.escapeChars()
     
     flat = list()
     for topic in topics:
         flat += topic.toFlat()
+
     json.dump(flat,output, indent=4,ensure_ascii=False)
     output.close()
