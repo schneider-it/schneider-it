@@ -1293,7 +1293,8 @@ hr.short {
 
 .img {
   display: block;
-  width: 80vh;
+  max-height: 80vh;
+  max-width: 80vh;
   margin: 3vh;
   border-radius: var(--border-radius);
 }
@@ -1304,23 +1305,28 @@ hr.short {
 }
 
 .img.large {
-  width: 120vh;
+  max-height: 120vh;
+  max-width: 120vh;
 }
 
 .img.big {
-  width: 100vh;
+  max-height: 100vh;
+  max-width: 100vh;
 }
 
 .img.medium {
-  width: 60vh;
+  max-height: 60vh;
+  max-width: 60vh;
 }
 
 .img.small {
-  width: 30vh;
+  max-height: 30vh;
+  max-width: 30vh;
 }
 
 .img.little {
-  width: 10vh;
+  max-height: 10vh;
+  max-width: 10vh;
 }
 
 .invisible {
