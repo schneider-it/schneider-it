@@ -31,4 +31,4 @@ Neustart
 
 Ubuntu User einrichten
 
-$ apt install python3 python3-venv python3-pip
+$ sudo apt install python3 python3-venv python3-pip
