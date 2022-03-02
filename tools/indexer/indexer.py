@@ -75,7 +75,7 @@ class Indexer:
             except:
                 raise Exception("Error: The HTML-File " + file + " is not in correct Format!")
 
-            headlines = soup.find_all(re.compile("^h."))
+            headlines = soup.find_all(re.compile("^h[1-7]"))
             del soup
 
             topics = self.index_headings(headlines,int(headlines[0].name[-1]),file)[1]
