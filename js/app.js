@@ -1,11 +1,39 @@
-function OnLoad() {
+function OnLoadAll() {
     NavigationActiveToggle();
     ThemeSwitch();
     VanillaTiltEffect();
     SetCardColors();
     AddCopyButtons();
     PicRandomVogel();
-    //SetHeadingIDs();
+}
+
+function OnLoadIndex() {
+    NavigationActiveToggle();
+    ThemeSwitch();
+    VanillaTiltEffect();
+    SetCardColors();
+    PicRandomVogel();    
+}
+
+function OnLoadLeaf() {
+    NavigationActiveToggle();
+    ThemeSwitch();
+    AddCopyButtons();
+    PicRandomVogel();    
+}
+
+function OnLoadMin() {
+    NavigationActiveToggle();
+    ThemeSwitch();
+}
+
+function OnScroll() {
+    ScrollIndicator();
+}
+
+function OnKeyDown() {
+    e = window.event;
+    KeyCombination(e);
 }
 
 function VanillaTiltEffect() {
@@ -106,38 +134,6 @@ function ShowCopyAccess(id) {
     }, 1200); 
 }
 
-function SetHeadingIDs() {
-    var headings = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
-    let h1 = 0, h2 = 0, h3 = 0, h4 = 0, h5 = 0, h6 = 0;
-    for (var i = 0; i < headings.length; i++) {
-        headings[i].removeAttribute('id');
-        if(headings[i].tagName == "H1") {
-            h1++;
-            headings[i].id = 'h1-' + h1;
-        }
-        else if(headings[i].tagName == "H2") {
-            h2++;
-            headings[i].id = 'h2-' + h2;
-        }
-        else if(headings[i].tagName == "H3") {
-            h3++;
-            headings[i].id = 'h3-' + h3;
-        }
-        else if(headings[i].tagName == "H4") {
-            h4++;
-            headings[i].id = 'h4-' + h4;
-        }
-        else if(headings[i].tagName == "H5") {
-            h5++;
-            headings[i].id = 'h5-' + h5;
-        }
-        else if(headings[i].tagName == "H6") {
-            h6++;
-            headings[i].id = 'h6-' + h6;
-        }
-    }
-}
-
 function PicRandomVogel() {
     var myPix = new Array("/img/vogel1.png","/img/vogel2.png","/img/vogel3.png","/img/vogel4.gif","/img/vogel5.png","/img/vogel6.png","/img/vogel7.png","/img/vogel9.png","/img/vogel10.png","/img/vogel11.png","/img/vogel12.png","/img/vogel13.png","/img/vogel14.png","/img/vogel15.png","/img/vogel16.png","/img/vogel17.png","/img/vogel18.png","/img/vogel19.gif","/img/vogel20.gif","/img/vogel21.gif","/img/vogel22.gif","/img/vogel23.gif","/img/vogel24.gif","/img/vogel25.gif");
     var randomNum = Math.floor(Math.random() * myPix.length);
@@ -156,8 +152,6 @@ function PicRandomVogel() {
     catch{ console.log("There are no birds in here!") }
 }
 
-window.onscroll = function() {ScrollIndicator()};
-
 function ScrollIndicator() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -165,16 +159,16 @@ function ScrollIndicator() {
     document.getElementById("scroll_indicator").style.width = scrolled + "%";
 }
 
-/*#region MouseTracker & Navigation*/
+//#region MouseTracker & Navigation
 
 function NavigationActiveToggle() {
     let burger = document.querySelector('.burger');
     let blurfilter = document.querySelector('.navigation-blur-filter');
     let navigation = document.querySelector('.navigation');
     burger.onclick = function() {
-        burger.classList.toggle('active');
-        blurfilter.classList.toggle('active');
-        navigation.classList.toggle('active');
+        burger.classList.toggle('active'); // damit zu X wird
+        blurfilter.classList.toggle('active'); // damit Hintergrund verschwommen
+        navigation.classList.toggle('active'); // damit Navigation sehen
     }
     blurfilter.onclick = function() {
         burger.classList.remove('active');
@@ -250,78 +244,75 @@ if(!window.matchMedia("(pointer: coarse)").matches) { // none, fine, coarse
     }
 }
 
-/*#endregion*/
+//#endregion
 
-/*#region Tastenkombinationen*/
+//#region Tastenkombinationen
 
+function KeyCombination(e) {
 
-// document.onkeydown = function (e) {  
+    // Holding keys: e.shiftKey, e.altKey, e.ctrlKey, e.metaKey (Windows Taste)
 
-//     // Holding keys: e.shiftKey, e.altKey, e.ctrlKey, e.metaKey (Windows Taste)
+    if(!window.matchMedia("(pointer: coarse)").matches) {  
+        if (e.key === '/' || e.key === "Tab") {
+            window.open("/tools/search.html", "_self");
+            return false;
+        }
 
-//     if(!window.matchMedia("(pointer: coarse)").matches) {  
-//         if(window.location.href.substring(window.location.href.length - 11) != "search.html") {
-//             if (e.key === '/' || e.key === "Tab") {
-//                 window.open("/tools/search.html", "_self");
-//                 return false;
-//             }
+        if ((e.key === 'z' && e.ctrlKey) || (e.key === 'Backspace') || (e.key === "Tab" && e.shiftKey)) {
+            history.back();
+            return false;
+        }
 
-//             if ((e.key === 'z' && e.ctrlKey) || (e.key === 'Backspace') || (e.key === "Tab" && e.shiftKey)) {
-//                 history.back();
-//                 return false;
-//             }
-
-//             if (e.key === 'g') {
-//                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-//                 return false;
-//             }
-            
-//             if (e.key === 'j') {
-//                 window.scrollBy({ top: 800, left: 0, behavior: "smooth" });
-//                 return false;
-//             }
+        if (e.key === 'g') {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            return false;
+        }
         
-//             if (e.key === 'k') {
-//                 window.scrollBy({ top: -800, left: 0, behavior: "smooth" });
-//                 return false;
-//             }
+        if (e.key === 'j') {
+            window.scrollBy({ top: 800, left: 0, behavior: "smooth" });
+            return false;
+        }
     
-//             if (e.key === 'h') {
-//                 window.open("/index.html", "_self");
-//                 return false;
-//             }
-    
-//             if (e.key === 'p') {
-//                 window.open("/docs/programmiersprachen.html", "_self");
-//                 return false;
-//             }
-    
-//             if (e.key === 'n') {
-//                 window.open("/docs/netzwerktechnik.html", "_self");
-//                 return false;
-//             }
-    
-//             if (e.key === 'd') {
-//                 window.open("/docs/datenbanken.html", "_self");
-//                 return false;
-//             }
-    
-//             if (e.key === 's') {
-//                 window.open("/docs/systemtechnik.html", "_self");
-//                 return false;
-//             }
-    
-//             if (e.key === 'q') {
-//                 window.open("/law/quellen.html", "_self");
-//                 return false;
-//             }
-    
-//             if (e.key === 'i') {
-//                 window.open("/law/impressum.html", "_self");
-//                 return false;
-//             }        
-//         }
-//     }    
-// }
+        if (e.key === 'k') {
+            window.scrollBy({ top: -800, left: 0, behavior: "smooth" });
+            return false;
+        }
 
-/*#endregion*/
+        if (e.key === 'h') {
+            window.open("/index.html", "_self");
+            return false;
+        }
+
+        if (e.key === 'p') {
+            window.open("/docs/programmiersprachen.html", "_self");
+            return false;
+        }
+
+        if (e.key === 'n') {
+            window.open("/docs/netzwerktechnik.html", "_self");
+            return false;
+        }
+
+        if (e.key === 'd') {
+            window.open("/docs/datenbanken.html", "_self");
+            return false;
+        }
+
+        if (e.key === 's') {
+            window.open("/docs/systemtechnik.html", "_self");
+            return false;
+        }
+
+        if (e.key === 'q') {
+            window.open("/law/quellen.html", "_self");
+            return false;
+        }
+
+        if (e.key === 'i') {
+            window.open("/law/impressum.html", "_self");
+            return false;
+        }
+    }    
+}
+
+//#endregion
