@@ -658,10 +658,8 @@ hr {
         transition: opacity var(--short-transition) ease-in-out;
     }
 
-    & .themeSwitch {
+    & .themeSwitch, & .tastenkombinationenSwitch {
         position: absolute;
-        top: 4vh;
-        left: 4vh;
         width: 8vh;
         height: 8vh;
         display: flex;
@@ -669,6 +667,16 @@ hr {
         align-items: center;
         background: none;
 		transition: transform 1s cubic-bezier(.19,1,.22,1), opacity var(--short-transition) ease-in-out;
+    }
+
+    & .themeSwitch {
+        top: 4vh;
+        left: 4vh;
+    }
+
+    & .tastenkombinationenSwitch {
+        bottom: 4vh;
+        right: 4vh;
     }
 
     & .list {
@@ -754,13 +762,13 @@ hr {
             opacity: 1;
         }
 
-        & .themeSwitch {
+        & .themeSwitch, & .tastenkombinationenSwitch {
             transition: transform 1s cubic-bezier(.19,1,.22,1), opacity var(--short-transition) ease-in-out calc(var(--middle-transition) - var(--short-transition));
         }
     }
 }
 
-.navigation-blur-filter {
+.navigation-blur-filter, .tastenkombinationen-blur-filter {
     position: fixed;
     top: 0;
     left: 0;
@@ -775,6 +783,15 @@ hr {
         transition: opacity var(--middle-transition) ease-in-out, z-index 0s;
         opacity: .25;
         z-index: 990;
+    }
+}
+
+.tastenkombinationen-blur-filter {
+    transition: none;
+
+    &.active {
+        opacity: 0;
+        z-index: 1009;
     }
 }
 

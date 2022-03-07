@@ -1,6 +1,7 @@
 function OnLoadAll() {
     NavigationActiveToggle();
     ThemeSwitch();
+    TastenkombinationenActiveToggle();
     VanillaTiltEffect();
     SetCardColors();
     AddCopyButtons();
@@ -10,6 +11,7 @@ function OnLoadAll() {
 function OnLoadIndex() {
     NavigationActiveToggle();
     ThemeSwitch();
+    TastenkombinationenActiveToggle();
     VanillaTiltEffect();
     SetCardColors();
     PicRandomVogel();    
@@ -18,6 +20,7 @@ function OnLoadIndex() {
 function OnLoadLeaf() {
     NavigationActiveToggle();
     ThemeSwitch();
+    TastenkombinationenActiveToggle();
     AddCopyButtons();
     PicRandomVogel();    
 }
@@ -25,6 +28,7 @@ function OnLoadLeaf() {
 function OnLoadMin() {
     NavigationActiveToggle();
     ThemeSwitch();
+    TastenkombinationenActiveToggle();
 }
 
 function OnScroll() {
@@ -177,6 +181,20 @@ function NavigationActiveToggle() {
     }
 }
 
+function TastenkombinationenActiveToggle() {
+    let tastenkombinationenSwitch = document.querySelector('.tastenkombinationenSwitch');
+    let blurfilter = document.querySelector('.tastenkombinationen-blur-filter');
+    let tastenkombinationen_iframe = document.querySelector('.tastenkombinationen-iframe');
+    tastenkombinationenSwitch.onclick = function() {
+        blurfilter.classList.add('active'); // damit Hintergrund verschwommen
+        tastenkombinationen_iframe.style.display = "block";
+    }
+    blurfilter.onclick = function() {
+        blurfilter.classList.remove('active');
+        tastenkombinationen_iframe.style.display = "none";
+    }
+}
+
 let clientX = 0,
 	clientY = 0,
 	navclientY = 0;
@@ -224,9 +242,14 @@ if(!window.matchMedia("(pointer: coarse)").matches) { // none, fine, coarse
         link.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, link));
     });
     
-    const themeSwitch = document.querySelector('.themeSwitch');
-    themeSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, themeSwitch));
-    themeSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, themeSwitch));
+    // const themeSwitch = document.querySelector('.themeSwitch');
+    // themeSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, themeSwitch));
+    // themeSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, themeSwitch));
+
+    if(themeSwitch = document.querySelector('.themeSwitch')) {
+        themeSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, themeSwitch));
+        themeSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, themeSwitch));        
+    }
 
     if(burger = document.querySelector('.burger')) {
         burger.addEventListener('mousemove', (event) => mouseEnterHandler(event, burger));
@@ -241,6 +264,11 @@ if(!window.matchMedia("(pointer: coarse)").matches) { // none, fine, coarse
     if(search_button = document.querySelector('.search_button')) {
         search_button.addEventListener('mousemove', (event) => mouseEnterHandler(event, search_button));
         search_button.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, search_button));
+    }
+
+    if(tastenkombinationenSwitch = document.querySelector('.tastenkombinationenSwitch')) {
+        tastenkombinationenSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, tastenkombinationenSwitch));
+        tastenkombinationenSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, tastenkombinationenSwitch));
     }
 }
 
