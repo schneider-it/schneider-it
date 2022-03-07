@@ -508,7 +508,7 @@ hr {
 
     .scroll_indicator {
         height: 100%;
-        background: #04AA6D;
+        background: #04AA6D; // var(--hauptfarbe)
         width: 0%;
     }
 }
