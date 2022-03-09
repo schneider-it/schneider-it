@@ -10,13 +10,9 @@
     
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Netzwerktechnik - Protokolle</title>
+    <title>Schneider IT - Programmiersprachen</title>
 </head>
-<body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
-    <div class="scroll_indicator_div">
-        <div class="scroll_indicator" id="scroll_indicator"></div>
-    </div> 
-
+<body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
     <div class="search_button">
         <a href="/tools/search.html">
             <ion-icon name="search"></ion-icon>
@@ -105,7 +101,7 @@
     </iframe>
 
     <div class="back_button">
-        <a href="../netzwerktechnik.html">
+        <a href="../">
             <ion-icon name="arrow-back-outline"></ion-icon>
         </a>
     </div>
@@ -115,13 +111,13 @@
             <div class="container small" style="padding: 10vh 0;">
                 <div class="flex-between nowrap">
                     <div class="flex-center-v">
-                        <img src="/img/IP.svg" alt="IP_Logo" class="img small" style="margin: 0;">
+                        <img src="/img/.jpg" alt="_Logo" class="img small" style="margin: 0;">
                     </div>
                     <div class="flex-center-v" style="width: 70vw; text-align: right;">
                         <div>
-                            <h2 style="margin-bottom: 5vh;">IP</h2>
+                            <h2 style="margin-bottom: 5vh;"></h2>
                             <p style="max-width: 30vw; float: right;">
-                                Hier lernen Sie alles über das Internet Protocol.
+                                
                             </p>
                         </div>
                     </div>
@@ -130,92 +126,29 @@
         </div>
     </div>
 
-    <div class="section searchable">   
+    <div class="section">        
+        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
+            <div class="container" style="padding: 8vh 0;">
+                <h2>Unterkategorien der </h2>
+            </div>
+        </div>
+
         <div class="container" style="margin-top: 10vh;">
-            <div>
-                <h3>IPv4</h3>
-                <div>
-                    IPv4 ist Version 4 vom Internet Protocol. 
-                    Es wird noch in großen Teilen Europas, der USA und vielen anderen Teilen der Welt verwendet, obwohl es eigentlich nicht mehr genug IPv4-Adressen zur Verfügung hat.
-                    Das ist deshalb so, weil zur Zeit der Erfindung von IPv4 noch niemand dachte, dass jeder Mensch einmal ca. 3 technische Geräte haben wird und all diese Geräte einzigartige IP-Adressen brauchen, um untereinander kommunizieren zu können.
-                    <br><br>
-                    <h4>Aufgaben</h4>
-                    <div>
-                        Folgende Tabelle veranschaulicht die Aufgaben von IPv4:
-                        <table>
-                            <tr><th>Aufgabe</th></tr>
-                            <tr><td>Logische Adressierung (IPv4-Adresse)</td></tr>
-                            <tr><td>IPv4-Konfiguration</td></tr>
-                            <tr><td>IPv4-Header</td></tr>
-                            <tr><td>IP-Routing</td></tr>
-                            <tr><td>Namensauflösung</td></tr>
-                        </table>
+            <div class="flex-between">
+                <a href="">
+                    <div class="card">
+                        <div class="card-before"></div>
+                        <div class="card-img">
+                            <img src="/img/" alt="" style="border-radius: 0;">
+                        </div>
+                        <div class="card-text">
+                            <h4></h4>
+                            <p>
+                                
+                            </p>
+                        </div>
                     </div>
-                    <h4>Aufbau</h4>
-                    <div>
-                        Eine IPv4-Adresse ist folgendermaßen aufgebaut:
-                        <table>
-                            <tr>
-                                <th>Schreibweise</th>
-                                <th colspan="5">Beispiel einer IPv4-Adresse</th>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td colspan="3" style="color: var(--quince-jelly);">Netzanteil</td>
-                                <td style="color: var(--pure-apple);">Hostanteil</td>
-                                <td style="color: var(--greenland-green);">Präfix</td>
-                            </tr>
-                            <tr>
-                                <td>Binär</td>
-                                <td>11000000.</td>
-                                <td>10101000.</td>
-                                <td>10001001.</td>
-                                <td>00001011</td>
-                                <td>/24</td>
-                            </tr>
-                            <tr>
-                                <td>Decimal</td>
-                                <td>192.</td>
-                                <td>168.</td>
-                                <td>137.</td>
-                                <td>11</td>
-                                <td>/24</td>
-                            </tr>
-                            <tr>
-                                <td>Hexadecimal</td>
-                                <td>C0.</td>
-                                <td>A8.</td>
-                                <td>89.</td>
-                                <td>0B</td>
-                                <td>/24</td>
-                            </tr>
-                        </table>
-                        Wie Sie sehen können besteht jede IPv4-Adresse insgesamt aus 32 Bit / 4 Byte und nur aus Einsen und Nullen.
-                        Diese Schreibweise eignet sich besonders gut für Computer, weil 1 für "Strom fließt" und 0 für "kein Strom fließt" stehen kann.
-                        Jedoch sind Menschen eher mit dem Decimalsystem vertraut. Aus diesem Grund kann man 8 Bit / 1 Byte (binär) einfach in eine Zahl zwischen 0 und 255 (decimal) umrechnen.
-                        <br><br>
-                        Außerdem sind IPv4-Adresse in vier Decaden aufgeteilt. Dies dient einer einfacheren Schreibweise.
-                        <br><br>
-                        Diese 32 Bit kann man in den <span style="color: var(--quince-jelly);">Netzanteil</span> und <span style="color: var(--pure-apple);">Hostanteil</span> unterteilen. 
-                        An welcher Stelle die Unterteilung stattfindet gibt der <span style="color: var(--greenland-green);">Präfix</span> vor.
-                    </div>
-                    <h4>Netzanteil</h4>
-                    <div>
-                        Der Netzanteil ist immer vor dem Hostanteil.
-                    </div>
-                    <h4>Hostanteil</h4>
-                    <div>
-
-                    </div>
-                    <h4>Schreibweise</h4>
-                    <div>
-
-                    </div>
-                </div>
-                <h3>IPv6</h3>
-                <div>
-
-                </div>
+                </a>
             </div>
         </div>
     </div>
