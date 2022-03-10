@@ -291,53 +291,18 @@ function KeyCombination(e) {
             return false;
         }
 
-        if (e.key === 'g') {
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            return false;
-        }
-        
-        if (e.key === 'j') {
-            window.scrollBy({ top: 800, left: 0, behavior: "smooth" });
-            return false;
-        }
-    
-        if (e.key === 'k') {
-            window.scrollBy({ top: -800, left: 0, behavior: "smooth" });
-            return false;
-        }
-
-        if (e.key === 'h') {
-            window.open("/index.html", "_self");
-            return false;
-        }
-
-        if (e.key === 'p') {
-            window.open("/docs/programmiersprachen.html", "_self");
-            return false;
-        }
-
-        if (e.key === 'n') {
-            window.open("/docs/netzwerktechnik.html", "_self");
-            return false;
-        }
-
-        if (e.key === 'd') {
-            window.open("/docs/datenbanken.html", "_self");
-            return false;
-        }
-
-        if (e.key === 's') {
-            window.open("/docs/systemtechnik.html", "_self");
-            return false;
-        }
-
-        if (e.key === 'q') {
-            window.open("/law/quellen.html", "_self");
-            return false;
-        }
-
-        if (e.key === 'i') {
-            window.open("/law/impressum.html", "_self");
+        if(e.altKey) {
+            switch(e.key) {
+                case 'j': window.scrollBy({top: 80, left: 0, behavior: 'instant' }); return false;
+                case 'k': window.scrollBy({top: -80, left: 0, behavior: 'instant' }); return false;
+                // case 'n': window.open("/tools/search.html", "_self"); return false;
+                // case 'n': window.open("/tools/search.html", "_self"); return false;
+                // case 'n': window.open("/tools/search.html", "_self"); return false;
+                // case 'n': window.open("/tools/search.html", "_self"); return false;
+                // case 'n': window.open("/tools/search.html", "_self"); return false;
+                // case 'n': window.open("/tools/search.html", "_self"); return false;
+                // case 'n': window.open("/tools/search.html", "_self"); return false;
+            }
             return false;
         }
     }    
