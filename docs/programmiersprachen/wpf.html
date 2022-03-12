@@ -134,9 +134,9 @@
     <div class="section searchable">
         <div class="container" style="margin-top: 10vh;">
             <div>
-                <h3>Controls</h3>
+                <h3 id="Controls">Controls</h3>
                 <div>
-                    <h4>Übersicht</h4>
+                    <h4 id="Controls-Übersicht">Übersicht</h4>
                     <div>
                         Controls dienen als Elemente in XAML-Dateien. 
                         XAML-Dateien sind die Dateien, die WPF verwendet. 
@@ -240,12 +240,336 @@
                             <tr><td>height</td></tr>
                         </table>
                     </div>
-                    <h4>Button</h4>
+                    <h4 id="Controls-Label">Label</h4>
                     <div>
+                        Ein Label dient als Beschriftung für eine TextBox oder einen TextBlock, einen DatePicker oder irgendein anderes Control.
                         <div class="code">
-                            &lt;button content="Save" command="{Binding SaveCmd}" /&gt;
+                            &lt;Label Content="Passwort: " Width="100"/&gt;
                         </div>
                     </div>
+                    <h4 id="Controls-TextBox">TextBox</h4>
+                    <div>
+                        In eine TextBox kann der User etwas hineinschreiben, was dann verarbeitet werden kann.
+                        <div class="code">
+                            &lt;TextBox Text="" Width="200"/&gt;
+                        </div>
+                    </div>
+                    <h4 id="Controls-TextBlock">TextBlock</h4>
+                    <div>
+                        Ein TextBlock ist ein Feld mit Text, den den User nicht bearbeiten, sondern nur lesen kann.
+                        <div class="code">
+                            &lt;TextBox Text="" Width="200"/&gt;
+                        </div>
+                    </div>
+                    <h4 id="Controls-Slider">Slider</h4>
+                    <div>
+                        Ein Slider ist ein Schieberegler, den der User hin und her schieben kann, um bestimmte Einstellungen zu verändern.
+                        Meistens benötigt man einen Converter für einen Slider, damit die Position der Sliderauswahl auch in einen Wert umgewandelt werden kann.
+                        <div class="code">
+                            &lt;Slider Value="50" Minimum="0" Maximum="100" TickFrequency="1" TickPlacement="Top/Bottom"/&gt;
+                        </div>
+                    </div>
+                    <h4 id="Controls-RadioButton">RadioButton</h4>
+                    <div>
+                        Ein RadioButton kommt selten alleine. Mehrere RadioButtons ermöglich eine Auswahl von mehreren Angeboten, sodass der User zum Beispiel sein Lieblingsessen auswählen kann.
+                        <div class="code">
+                            &lt;RadioButton Content="Italienisch" IsChecked="False" GroupName="FavouriteFood"/&gt; <br>
+                            &lt;RadioButton Content="Österreichisch" IsChecked="True" GroupName="FavouriteFood"/&gt; <br>
+                            &lt;RadioButton Content="Chinesisch" IsChecked="False" GroupName="FavouriteFood"/&gt; <br>
+                            &lt;RadioButton Content="Griechisch" IsChecked="False" GroupName="FavouriteFood"/&gt;
+                        </div>
+                    </div>
+                    <h4 id="Controls-CheckBox">CheckBox</h4>
+                    <div>
+                        Ein CheckBox kommt selten alleine. Mehrere CheckBoxes ermöglich eine Mehrfachauswahl von mehreren möglichen Wahr/Falsch-Aussagen, sodass der User zum Beispiel Besitztümer ankreuzen kann.
+                        <div class="code">
+                            &lt;CheckBox Content="Computer" IsChecked="True"/&gt; <br>
+                            &lt;CheckBox Content="Laptop" IsChecked="False"/&gt; <br>
+                            &lt;CheckBox Content="Handy" IsChecked="True"/&gt; <br>
+                            &lt;CheckBox Content="SmartWatch" IsChecked="True"/&gt;
+                        </div>
+                    </div>
+                    <h4 id="Controls-Button">Button</h4>
+                    <div>
+                        <div class="code">
+                            &lt;Button Content="Add" Command="{Binding AddCmd}"/&gt;
+                        </div>
+                    </div>
+                    <h4 id="Controls-DatePicker">DatePicker</h4>
+                    <div>
+                        <div class="code">
+                            &lt;DatePicker Text="" Width="200"/&gt;
+                        </div>
+                    </div>
+                </div>
+                <h3 id="MVVM - Modell">MVVM - Modell</h3>
+                <div>
+                    Das Model-View-ViewModel- Modell hat in WPF sehr viel sinn, weil man dadurch DataBinding, ControlBinding und Converter programmieren kann.
+                    Die View ist hierbei das, was der User sehen, anklicken und bearbeiten kann.
+                    Das Model sind Klassen, die zum Beispiel Werte (Properties) speichern. 
+                    Zum Beispiel eine Person.
+                    Das ViewModel ist der Teil, der die View mit dem Model verbindet.
+                    <br><br>
+                    Wenn man in WPF etwas bindet, sprechen Programmierer automatisch von diesem Modell.
+                    Man kann sich das so vorstellen, dass das ViewModel direkt hinter der View klebt und alle Eingaben, Klicks usw. dem Model weiterleitet oder selber managed.
+                </div>
+                <h3 id="DataBinding">DataBinding</h3>
+                <div>
+                    In der Tabelle oben, sind all diejenigen Properties unterstrichen, die gebindet werden können bzw. normalerweise gebindet werden (man kann auch andere Properties von Controls binden...).
+                    Als Beispiel nehme ich einfach Text als das Property, das gebindet werden soll.
+                    <br><br>
+                    Name ist hier eine Variable aus der VM-Klasse.
+                    <div class="code">
+                        &lt;TextBox Text="{Binding Name}"/&gt;
+                    </div>
+                    Damit man diesen Name auch verwenden kann, benötigt man einen Verweis auf die VM-Klasse.
+                    <pre class="code">
+&lt;Window.DataContext&gt;
+    &lt;local:PersonVM/&gt;
+&lt;/Window.DataContext&gt;</pre>
+                    In C# benötigt man etwas mehr Code. 
+                    Diese Klasse ermöglicht zum Beispiel jeder erbenden Klasse das Nutzen der OnPropertyChanged(); - Methode.
+                    Diese Methode benachrichtigt die View, falls sich in der ViewModel-Klasse ein Wert verändert hat, sodass sich diese updated.
+                    <pre class="code">
+public class PropertyChangedClass : INotifyPropertyChanged
+{
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void OnPropertyChanged([CallerMemberName] string propertyname = null)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyname));
+    }
+}</pre>
+                    Die Klasse Person sieht so aus (mit drei Properties und ToString()- und ToCSV()-Methoden):
+                    <pre class="code">
+public class Person
+{
+    public string Name { get; set; }
+    public string Password { get; set; }
+    public bool IsCool { get; set; }
+
+    public override string ToString()
+    {
+        string iscool = (IsCool) ? "ist cool" : "ist nicht cool";
+        return String.Format($"{Name} hat {Password} als Passwort und {iscool}!");
+    }
+
+    public string ToCSV()
+    {
+        return String.Format($"{Name};{Password};{IsCool}");
+    }
+}</pre>
+                    Die VM-Klasse sieht dann so aus.
+                    Hier sieht man, dass beim Setten eines Properties die OnPropertyChanged()-Methode aufgerufen wird, sodass alle Listener benachrichtigt werden, dass sich dieses Property geändert hat.
+                    <br><br>
+                    Da stellt man sich vielleicht nun die Frage: Woher weiß die Methode denn, welches Property sich verändert hat, wenn gar kein Parameter übergeben wird? 
+                    Einfach Antwort: Darum kümmert sich das [CallerMemberName] aus der PropertyChangedClass.
+                    <pre class="code">
+public class PersonVM : PropertyChangedClass
+{
+    private Person _person;
+
+    public PersonVM()
+    {
+        _person = new Person();
+    }
+    public string Name
+    {
+        get { return _person.Name; }
+        set { _person.Name = value; OnPropertyChanged(); }
+    }
+    public string Password
+    {
+        get { return _person.Password; }
+        set { _person.Password = value; OnPropertyChanged(); }
+    }
+    public int IsCool
+    {
+        get { return _person.IsCool; }
+        set { _person.IsCool = value; OnPropertyChanged(); }
+    }
+}</pre>
+
+                </div>
+                <h3 id="ObservableCollection">ObservableCollection</h3>
+                <div>
+                    Wenn man eine Liste mit Elementen, wie zum Beispiel DataGrid haben will, die sich mit TextBoxen und anderen Controls gemeinsam updated, benötigt man eine ObservableCollection.
+                    <pre class="code">
+public class PersonsVM : PropertyChangedClass
+{
+    public PersonsVM()
+    {
+        AllPersons = new ObservableCollection&lt;PersonVM&gt;();
+        AllPersons.Add(new PersonVM() { Name = "Clemens", Password = "asdfjklö" });
+        AllPersons.Add(new PersonVM() { Name = "Felix", Password = "ölkjfdsa" });
+        AllPersons.Add(new PersonVM() { Name = "Anton", Password = "asdfölkj"});
+        AllPersons.Add(new PersonVM() { Name = "Lorenz", Password = "1234" });
+
+        SelectedPerson = AllPersons.First();
+    }
+
+    ObservableCollection&lt;PersonVM&gt; _allpersons;
+
+    public ObservableCollection&lt;PersonVM&gt; AllPersons
+    {
+        get { return _allpersons; }
+        set { _allpersons = value; }
+    }
+
+    private PersonVM _selectedperson;
+
+    public PersonVM SelectedPerson
+    {
+        get { return _selectedperson; }
+        set { _selectedperson = value; OnPropertyChanged(); }
+    }
+}</pre>
+                    Dies wird dann folgendermaßen mit der XAML-Datei verknüpft:
+                    <pre class="code">
+&lt;Window.DataContext&gt;
+    &lt;local:PersonsVM/&gt;
+&lt;/Window.DataContext&gt;</pre>
+                    <div class="code">
+                        &lt;DataGrid ItemsSource="{Binding AllPersons}" SelectedItem="{Binding SelectedPerson}" Width="300"/&gt;
+                    </div>
+                </div>
+                <h3 id="ControlBinding">ControlBinding</h3>
+                <div>
+                    Will man die Aktion eines Buttons kontrollieren, benötigt man ControlBinding.
+                    <pre class="code">
+public class PersonsVM : PropertyChangedClass
+{
+    public AddCmd AddCmd { get; set; }
+    public LoginCmd LoginCmd { get; set; }
+
+    public PersonsVM()
+    {
+        AllPersons = new ObservableCollection&lt;PersonVM&gt;();
+        AllPersons.Add(new PersonVM() { Name = "Clemens", Password = "asdfjklö" });
+        AllPersons.Add(new PersonVM() { Name = "Felix", Password = "ölkjfdsa" });
+        AllPersons.Add(new PersonVM() { Name = "Anton", Password = "asdfölkj"});
+        AllPersons.Add(new PersonVM() { Name = "Lorenz", Password = "1234" });
+
+        SelectedPerson = AllPersons.First();
+
+        AddCmd = new AddCmd(this);
+        LoginCmd = new LoginCmd(this);
+    }
+
+    ObservableCollection&lt;PersonVM&gt; _allpersons;
+
+    public ObservableCollection&lt;PersonVM&gt; AllPersons
+    {
+        get { return _allpersons; }
+        set { _allpersons = value; }
+    }
+
+    private PersonVM _selectedperson;
+
+    public PersonVM SelectedPerson
+    {
+        get { return _selectedperson; }
+        set { _selectedperson = value; OnPropertyChanged(); }
+    }
+}</pre>
+                    <pre class="code">
+public class LoginCmd : ICommand
+{
+    private PersonsVM _personsVM;
+
+    public LoginCmd(PersonsVM PersonsVM)
+    {
+        _personsVM = PersonsVM;
+    }
+
+    public bool CanExecute(object parameter)
+    {
+        return (_personsVM.SelectedPerson.Name != null && 
+            _personsVM.SelectedPerson.Password != null &&
+            _personsVM.SelectedPerson.Name != "" && 
+            _personsVM.SelectedPerson.Password != "");
+    }
+
+    public void Execute(object parameter)
+    {
+        System.Windows.MessageBox.Show(_personsVM.SelectedPerson.Name + 
+            " is cool", "Coolnesslevel");
+    }
+
+    public event EventHandler CanExecuteChanged
+    {
+        add => CommandManager.RequerySuggested += value;
+        remove => CommandManager.RequerySuggested -= value;
+    }
+}</pre>
+                    <pre class="code">
+public class AddCmd : ICommand
+{
+    private PersonsVM _personsVM;
+
+    public AddCmd(PersonsVM PersonsVM)
+    {
+        _personsVM = PersonsVM;
+    }
+
+    public bool CanExecute(object parameter)
+    {
+        return (_personsVM.SelectedPerson.Name != null && 
+            _personsVM.SelectedPerson.Password != null &&
+            _personsVM.SelectedPerson.Name != "" && 
+            _personsVM.SelectedPerson.Password != "");
+    }
+
+    public void Execute(object parameter)
+    {
+        _personsVM.AllPersons.Add(new PersonVM()
+        {
+            Name = _personsVM.SelectedPerson.Name,
+            Password = _personsVM.SelectedPerson.Password
+        });
+    }
+
+    public event EventHandler CanExecuteChanged
+    {
+        add => CommandManager.RequerySuggested += value;
+        remove => CommandManager.RequerySuggested -= value;
+    }
+}</pre>
+                </div>
+                <h3 id="Converter">Converter</h3>
+                <div>
+                    Wie vorhin schon erwähnt benötigt man einen Converter meistens für Slider, muss aber nicht sein.
+                    Will man zum Beispiel einen Integer (1-5, wie Schulnoten) in den dazupassenden String ("Sehr gut" - "Nicht genügend") convertieren, kann man das so lösen:
+                    <pre class="code">
+public class IntToMarkConverter : IValueConverter
+{
+    public object Convert(object value, Type targetType, 
+        object parameter, CultureInfo culture)
+    {
+        switch (System.Convert.ToInt32(value))
+        {
+            case 1: return "Sehr gut";
+            case 2: return "Gut";
+            case 3: return "Befriedigend";
+            case 4: return "Genügend";
+            default: return "Nicht genügend";
+        }
+    }
+
+    public object ConvertBack(object value, Type targetType, 
+        object parameter, CultureInfo culture)
+    {
+        // macht keinen Sinn, lol
+        throw new NotImplementedException();
+    }
+}</pre>
+                    <pre class="code">
+&lt;Window.Resources&gt;
+    &lt;local:IntToMarkConverter x:Key="IntMark"/&gt;
+&lt;/Window.Resources&gt;</pre>
+                    <pre class="code">
+&lt;TextBox Text="{Binding Note}"/&gt;
+&lt;TextBlock Text="{Binding Note, Converter={StaticResource IntMark}}"/&gt;</pre>
                 </div>
             </div>            
         </div>
