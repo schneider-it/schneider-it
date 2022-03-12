@@ -287,6 +287,25 @@ body {
 body::-webkit-scrollbar {
     display: none; /* for Chrome, Safari, and Opera */
 }
+
+// ::-webkit-scrollbar { Wenn Scrollbar sichtbar sein soll...
+//     width: .5vw;
+// }
+
+// ::-webkit-scrollbar-track {
+//     margin-block: .2vw;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background: #555;
+//     border: transparent solid 3vw;
+//     border-radius: 10000px;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #666;
+// }
+
 /*#endregion*/
 
 /*#region HTML-Tags konfigurieren */
@@ -319,6 +338,7 @@ html, body {
     background-color: var(--hintergrund1);
 
     overflow-x: hidden;
+    overflow: overlay;
     scroll-behavior: smooth;
 }
 
