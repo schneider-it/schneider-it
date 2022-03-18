@@ -155,12 +155,12 @@
                             </tr>
                             <tr>
                                 <td>TextBox</td>
-                                <td><u style="text-decoration: underline;">Text</u></td>
+                                <td><u style="text-decoration: underline;">Text</u>, TextAlignment, TextWrapping, TextTrimming, AcceptsReturn</td>
                                 <td>erzeugt eine Box, dessen Text man bearbeiten kann</td>
                             </tr>
                             <tr>
                                 <td>TextBlock</td>
-                                <td><u style="text-decoration: underline;">Text</u></td>
+                                <td><u style="text-decoration: underline;">Text</u>, TextAlignment, TextWrapping, TextTrimming</td>
                                 <td>erzeugt eine Box, dessen Text nicht bearbeitet werden kann</td>
                             </tr>
                             <tr>
@@ -232,13 +232,6 @@
                                 <td>erzeugt ein Raster, welches frei konfiguriert werden kann</td>
                             </tr>
                         </table>
-                        Jedes Control kann zusätzlich noch folgende Properties besitzen:
-                        <table>
-                            <tr><td>margin</td></tr>
-                            <tr><td>padding</td></tr>
-                            <tr><td>width</td></tr>
-                            <tr><td>height</td></tr>
-                        </table>
                     </div>
                     <h4 id="Controls-Label">Label</h4>
                     <div>
@@ -291,16 +284,138 @@
                     </div>
                     <h4 id="Controls-Button">Button</h4>
                     <div>
+                        Ein Button ist ein klickbares Element, das mithilfe von ControlBinding eine bestimmte Aktion durchführen kann.
                         <div class="code">
                             &lt;Button Content="Add" Command="{Binding AddCmd}"/&gt;
                         </div>
                     </div>
                     <h4 id="Controls-DatePicker">DatePicker</h4>
                     <div>
+                        Mithilfe eines DatePicker kann man eine TextBox mit einem Datumsauswählfeld erstellen. 
+                        Wenn man daraufklickt, öffnet sich ein kleines Fenster mit einem Kalender.
                         <div class="code">
-                            &lt;DatePicker Text="" Width="200"/&gt;
+                            &lt;DatePicker SelectedDate="18/03/2022"/&gt;
                         </div>
                     </div>
+                    <h4 id="Controls-Tabellen">Tabellen</h4>
+                    <div>
+                        <h5 id="Controls-Tabellen-DataGrid">DataGrid</h5>
+                        <div>
+                            
+                        </div>
+                        <h5 id="Controls-Tabellen-ListView">ListView</h5>
+                        <div>
+                            
+                        </div>
+                        <h5 id="Controls-Tabellen-ListBox">ListBox</h5>
+                        <div>
+                            
+                        </div>
+                        <h5 id="Controls-Tabellen-ComboBox">ComboBox</h5>
+                        <div>
+                            
+                        </div>
+                    </div>
+                    <h4 id="Controls-Panel">Panel</h4>
+                    <div>
+                        Mithilfe von Panels kann man andere XAML-Controls den Wünschen entsprechend anordnen.
+                        <h5 id="Controls-Panel-StackPanel">StackPanel</h5>
+                        <div>
+                            Das StackPanel ordnet jedes Kindelement vertikal an.
+                            <pre class="code">
+&lt;StackPanel Orientation="Vertical"&gt;
+
+&lt;/StackPanel&gt;</pre>
+                            Die Orientation bestimmt, ob die Elemente vertikal oder horizontal angeordnet werden sollen.
+                        </div>
+                        <h5 id="Controls-Panel-WrapPanel">WrapPanel</h5>
+                        <div>
+                            Das WrapPanel ordnet jedes Kindelement horizontal an.
+                            <pre class="code">
+&lt;WrapPanel Orientation="Horizontal"&gt;
+
+&lt;/WrapPanel&gt;</pre>
+                            Die Orientation bestimmt, ob die Elemente vertikal oder horizontal angeordnet werden sollen.
+                        </div>
+                        <h5 id="Controls-Panel-DockPanel">DockPanel</h5>
+                        <div>
+                            Das DockPanel erlaubt das kleben an den vier Seiten.
+                            <pre class="code">
+&lt;DockPanel DockPanel.Dock="Left"&gt;
+
+&lt;/DockPanel&gt;</pre>
+                            Das DockPanel.Dock="" Property bestimmt, wo die Elemente kleben sollen.
+                        </div>
+                        <h5 id="Controls-Panel-Grid">Grid</h5>
+                        <div>
+                            Das Grid erzeigt eine Tabelle, die sich der Größe des Fensters anpasst.
+                            <pre class="code">
+&lt;Grid Margin="15"&gt;
+    &lt;Grid.ColumnDefinitions&gt;
+        &lt;ColumnDefinition Width="2*" /&gt;
+        &lt;ColumnDefinition Width="1*" /&gt;
+        &lt;ColumnDefinition Width="2*" /&gt;
+    &lt;/Grid.ColumnDefinitions&gt;
+    &lt;Grid.RowDefinitions&gt;
+        &lt;RowDefinition Height="3*" /&gt;
+        &lt;RowDefinition Height="2*" /&gt;
+    &lt;/Grid.RowDefinitions&gt;
+&lt;/Grid&gt;</pre>
+                            ColumnDefinition bestimmt, wie die Spalten aufgeteilt sein sollen. 
+                            In diesem Fall ist die zweite Spalte halb so breit, wie die erste und dritte Spalte. <br>
+                            RowDefinition bestimmt, wie die Reihen augeteilt sein sollen.
+                            In diesem Fall ist die erste Reihe 1,5x so hoch, wie die zweite Reihe. <br>
+                            Sowohl Reihen als auch Spalten ändern sich somit relativ zur Gesamtbreite des Grid.
+                        </div>
+                        <h5 id="Controls-Panel-Canvas">Canvas</h5>
+                        <div>
+                            Der Canvas ist eine Art Zeichenfläche, wo man Elemente beliebig hin- und herziehen kann.
+                            <pre class="code">
+&lt;Canvas&gt;
+    &lt;Label Canvas.Left="15" Canvas.Top="20"&gt;MyLabel&lt;/Label&gt;
+&lt;/Canvas&gt;</pre>
+                            Mit Canvas.Left / .Right / .Top / .Bottom kann man jedes Element frei ausrichten.
+                        </div>
+                    </div>
+                </div>
+                <h3 id="Properties">Properties</h3>
+                <div>
+                    Die meisten Controls haben eigene spezifische Properties, zum Beispiel hat ein Slider ein Value-Property, welches eine TextBox nicht hat.
+                    Es gibt allerdings auch einige Properties, die jedes Control in WPF hat.
+                    <table>
+                        <tr>
+                            <th>Property</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                        <tr>
+                            <td>Name</td>
+                            <td>definiert den Namen des Controls</td>
+                        </tr>
+                        <tr>
+                            <td>Width</td>
+                            <td>bestimmt die Breite des Elements / Controls</td>
+                        </tr>
+                        <tr>
+                            <td>Height</td>
+                            <td>bestimmt die Höhe des Elements / Controls</td>
+                        </tr>
+                        <tr>
+                            <td>Margin</td>
+                            <td>bestimmt den Abstand außerhalb des Borders (zwischen Border und Umgebung)</td>
+                        </tr>
+                        <tr>
+                            <td>Padding</td>
+                            <td>bestimmt den Abstand innerhalb des Borders (zwischen Text und Border)</td>
+                        </tr>
+                        <tr>
+                            <td>Background</td>
+                            <td>bestimmt die Farbe, den Gradianten oder das Bild des Hintergrunds bzw., welches im Hintergrund angezeigt werden soll</td>
+                        </tr>
+                        <tr>
+                            <td>Foreground</td>
+                            <td>bestimmt die Farbe des Vordergrundes</td>
+                        </tr>
+                    </table>
                 </div>
                 <h3 id="MVVM - Modell">MVVM - Modell</h3>
                 <div>
