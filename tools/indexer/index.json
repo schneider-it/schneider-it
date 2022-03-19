@@ -5,14 +5,129 @@
         "prettypath": ""
     },
     {
+        "title": "relationale Datenbanken",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken"
+    },
+    {
+        "title": "Grundlagen",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken"
+    },
+    {
+        "title": "Beziehungen",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken"
+    },
+    {
+        "title": "Transformationsregeln",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ Beziehungen"
+    },
+    {
+        "title": "Vererbung",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ Beziehungen"
+    },
+    {
+        "title": "Normalformen",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken"
+    },
+    {
+        "title": "SQL - Structured Query Language",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken"
+    },
+    {
+        "title": "DQL - Data Query Language",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
+    },
+    {
+        "title": "DML - Data Manipulation Language",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
+    },
+    {
+        "title": "DDL - Data Definition Language",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
+    },
+    {
+        "title": "DCL - Data Control Language",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
+    },
+    {
         "title": "Netzwerktechnik",
         "location": "/docs/netzwerktechnik.html",
         "prettypath": ""
     },
     {
+        "title": "Grundlagen Netzwerktechnik",
+        "location": "/docs/netzwerktechnik/grundlagen.html",
+        "prettypath": "Netzwerktechnik"
+    },
+    {
+        "title": "OSI-Schichtenmodell",
+        "location": "/docs/netzwerktechnik/grundlagen.html#OSI-Schichtenmodell",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik"
+    },
+    {
+        "title": "Tabelle",
+        "location": "/docs/netzwerktechnik/grundlagen.html#OSI-Schichtenmodell-Tabelle",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ OSI-Schichtenmodell"
+    },
+    {
+        "title": "well-known Ports",
+        "location": "/docs/netzwerktechnik/grundlagen.html#well-known_Ports",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik"
+    },
+    {
         "title": "Protokolle",
         "location": "/docs/netzwerktechnik/protokolle.html",
         "prettypath": "Netzwerktechnik"
+    },
+    {
+        "title": "IP",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "title": "IPv4",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
+    },
+    {
+        "title": "Aufgaben",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "title": "Aufbau",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "title": "Netzanteil",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "title": "Hostanteil",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "title": "Schreibweise",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "title": "IPv6",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
     },
     {
         "title": "Programmiersprachen",
@@ -152,6 +267,11 @@
     {
         "title": "Random",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Random",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
+    },
+    {
+        "title": "Convert",
+        "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Convert",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
     },
     {
@@ -943,6 +1063,146 @@
         "title": "globale Attribute",
         "location": "/docs/programmiersprachen/html/alle_attribute.html#globale_Attribute",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Attribute"
+    },
+    {
+        "title": "WPF",
+        "location": "/docs/programmiersprachen/wpf.html",
+        "prettypath": "Programmiersprachen"
+    },
+    {
+        "title": "Controls",
+        "location": "/docs/programmiersprachen/wpf.html#Controls",
+        "prettypath": "Programmiersprachen ➜ WPF"
+    },
+    {
+        "title": "Übersicht",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Übersicht",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "Label",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Label",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "TextBox",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-TextBox",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "TextBlock",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-TextBlock",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "Slider",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Slider",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "RadioButton",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-RadioButton",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "CheckBox",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-CheckBox",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "Button",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Button",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "DatePicker",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-DatePicker",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "Tabellen",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "DataGrid",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen-DataGrid",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Tabellen"
+    },
+    {
+        "title": "ListView",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen-ListView",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Tabellen"
+    },
+    {
+        "title": "ListBox",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen-ListBox",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Tabellen"
+    },
+    {
+        "title": "ComboBox",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen-ComboBox",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Tabellen"
+    },
+    {
+        "title": "Panel",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Panel",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
+    },
+    {
+        "title": "StackPanel",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-StackPanel",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
+    },
+    {
+        "title": "WrapPanel",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-WrapPanel",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
+    },
+    {
+        "title": "DockPanel",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-DockPanel",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
+    },
+    {
+        "title": "Grid",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-Grid",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
+    },
+    {
+        "title": "Canvas",
+        "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-Canvas",
+        "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
+    },
+    {
+        "title": "Properties",
+        "location": "/docs/programmiersprachen/wpf.html#Properties",
+        "prettypath": "Programmiersprachen ➜ WPF"
+    },
+    {
+        "title": "MVVM - Modell",
+        "location": "/docs/programmiersprachen/wpf.html#MVVM - Modell",
+        "prettypath": "Programmiersprachen ➜ WPF"
+    },
+    {
+        "title": "DataBinding",
+        "location": "/docs/programmiersprachen/wpf.html#DataBinding",
+        "prettypath": "Programmiersprachen ➜ WPF"
+    },
+    {
+        "title": "ObservableCollection",
+        "location": "/docs/programmiersprachen/wpf.html#ObservableCollection",
+        "prettypath": "Programmiersprachen ➜ WPF"
+    },
+    {
+        "title": "ControlBinding",
+        "location": "/docs/programmiersprachen/wpf.html#ControlBinding",
+        "prettypath": "Programmiersprachen ➜ WPF"
+    },
+    {
+        "title": "Converter",
+        "location": "/docs/programmiersprachen/wpf.html#Converter",
+        "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
         "title": "Systentechnik",
