@@ -10,9 +10,13 @@
     
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Netzwerktechnik</title>
+    <title>Schneider IT - Programmiersprachen - Brainfuck</title>
 </head>
-<body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
+<body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
+    <div class="scroll_indicator_div">
+        <div class="scroll_indicator" id="scroll_indicator"></div>
+    </div> 
+
     <div class="search_button">
         <a href="/tools/search.html">
             <ion-icon name="search"></ion-icon>
@@ -101,7 +105,7 @@
     </iframe>
 
     <div class="back_button">
-        <a href="../index.html">
+        <a href="../netzwerktechnik.html">
             <ion-icon name="arrow-back-outline"></ion-icon>
         </a>
     </div>
@@ -111,14 +115,13 @@
             <div class="container small" style="padding: 10vh 0;">
                 <div class="flex-between nowrap">
                     <div class="flex-center-v">
-                        <img src="/img/netzwerktechnik.jpg" alt="Netzwerktechnik_Logo" class="img small" style="margin: 0;">
+                        <img src="/img/grundlagen.png" alt="_Logo" class="img small" style="margin: 0;">
                     </div>
                     <div class="flex-center-v" style="width: 70vw; text-align: right;">
                         <div>
-                            <h2 style="margin-bottom: 5vh;">Netzwerktechnik</h2>
+                            <h2 style="margin-bottom: 5vh;">Grundlagen Netzwerktechnik</h2>
                             <p style="max-width: 30vw; float: right;">
-                                Wenn Sie etwas über die verschiedenen Netzwerktechnikprotokolle, 
-                                bestimmte Betriebssysteme oder die Logik hinter Servern lernen möchten, sind Sie hier genau richtig.
+                                Ob OSI-Schichtenmodell oder well-known Ports, hier lernen Sie's.
                             </p>
                         </div>
                     </div>
@@ -127,76 +130,146 @@
         </div>
     </div>
 
-    <div class="section">        
-        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
-            <div class="container" style="padding: 8vh 0;">
-                <h2>Unterkategorien der Netzwerktechnik</h2>
-            </div>
-        </div>
-
+    <div class="section searchable">
         <div class="container" style="margin-top: 10vh;">
-            <div class="flex-between">
-                <a href="netzwerktechnik/grundlagen.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/grundlagen.png" alt="Protokolle" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Grundlagen</h4>
-                            <p>
-                                Hier lernen Sie die wichtigsten Grundkenntnisse der Netzwerktechnik kennen.
-                                OSI-Schichtenmodell, well-known Ports, ...
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="netzwerktechnik/protokolle.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/ftp.png" alt="Protokolle" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Protokolle</h4>
-                            <p>
-                                Hier lernen Sie alles über die wichtigsten Netzwerktechnikprotokolle, 
-                                die dafür sorgen, dass IT funktioniert.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="netzwerktechnik/betriebssysteme.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/linux.png" alt="Betriebssysteme" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Betriebssysteme</h4>
-                            <p>
-                                Hier lernen Sie verschiedene Betriebssysteme kennen. 
-                                Vor allem stehen UNIX Betriebssysteme im Vordergrund.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="netzwerktechnik/anderes.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/random.png" alt="Anderes" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Other stuff</h4>
-                            <p>
-                                Hier lernen Sie die verschiedensten anderen Sachen. 
-                                Unter anderem über das OSI-Schichtenmodell, die Firewall und so weiter.
-                            </p>
+            <div>
+                <h3 id="OSI-Schichtenmodell">OSI-Schichtenmodell</h3>
+                <div>
+                    <h4 id="OSI-Schichtenmodell-Tabelle">Tabelle</h4>
+                    <div>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Layer</th>
+                                    <th>Name der Schicht</th>
+                                    <th>Beispiele Protokolle</th>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;">7</td>
+                                    <td>Anwendungsschicht</td>
+                                    <td>HTTP, HTTPS, FTP, DHCP, DNS, RTP, VoIP, SMTP, IMAP, POP3</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;">6</td>
+                                    <td>Darstellungsschicht</td>
+                                    <td>SSH</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;">5</td>
+                                    <td>Kommunikations- / Sitzungsschicht</td>
+                                    <td>SSH</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;">4</td>
+                                    <td>Transportschicht</td>
+                                    <td>TCP, UDP</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;">3</td>
+                                    <td>Vermittlungs- / Paketschicht</td>
+                                    <td>IP, ICMP</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;">2</td>
+                                    <td>Sicherungsschicht</td>
+                                    <td>MAC, ARP, RARP</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;">1</td>
+                                    <td>Bitübertragunsschicht</td>
+                                    <td>ARCNET, Token Ring, 1000BASE-T</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
-                </a>
-            </div>
+                </div>  
+                <h3 id="well-known_Ports">well-known Ports</h3>
+                <div>
+                    In dieser Tabelle sind alle wichtigen standardisierten Ports aufgelistet:
+                    <table>
+                        <tr>
+                            <th>Port&#8209;Nr</th>
+                            <th>Protokoll</th>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>FTP (File Transfer Protocol)</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>SSH (Secure Shell)</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>SMTP (Simple Mail Transfer Protocol)</td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>DNS (Domain Name System) - meist über UDP</td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td>DHCP (Dynamic Host Configuration Protocol) IPv4 Server - meist über UDP</td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>DHCP (Dynamic Host Configuration Protocol) IPv4 Client - meist über UDP</td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td>HTTP (Hypertext Transfer Protocol)</td>
+                        </tr>
+                        <tr>
+                            <td>110</td>
+                            <td>POP3 (Post Office Protocol 3)</td>
+                        </tr>
+                        <tr>
+                            <td>143</td>
+                            <td>IMAP (Internet Mail Access Protocol)</td>
+                        </tr>
+                        <tr>
+                            <td>443</td>
+                            <td>HTTPS (Hypertext Transfer Protocol Secure)</td>
+                        </tr>
+                        <tr>
+                            <td>465</td>
+                            <td>SMTPS (Simple Mail Transfer Protocol Secure)</td>
+                        </tr>
+                        <tr>
+                            <td>546</td>
+                            <td>DHCP (Dynamic Host Configuration Protocol) IPv6 Client - meist über UDP</td>
+                        </tr>
+                        <tr>
+                            <td>547</td>
+                            <td>DHCP (Dynamic Host Configuration Protocol) IPv6 Server - meist über UDP</td>
+                        </tr>
+                        <tr>
+                            <td>587</td>
+                            <td>SMTPS (Simple Mail Transfer Protocol Secure)</td>
+                        </tr>
+                        <tr>
+                            <td>993</td>
+                            <td>IMAPS (Internet Mail Access Protocol Secure)</td>
+                        </tr>
+                        <tr>
+                            <td>995</td>
+                            <td>POP3S (Post Office Protocol 3 Secure)</td>
+                        </tr>
+                        <tr>
+                            <td>1935</td>
+                            <td>RTMP (Real Time Messaging Protocol)</td>
+                        </tr>
+                        <tr>
+                            <td>3128</td>
+                            <td>Proxy</td>
+                        </tr>
+                        <tr>
+                            <td>3389</td>
+                            <td>RDP (Remote Desktop Protocol)</td>
+                        </tr>
+                    </table>
+                </div>  
+            </div>            
         </div>
     </div>
 
