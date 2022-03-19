@@ -144,6 +144,10 @@
                                     <th>Name der Schicht</th>
                                     <th>Beispiele Protokolle</th>
                                 </tr>
+                                <tr style="color: var(--leichte-schrift);">
+                                    <td style="text-align: right;">8</td>
+                                    <td>User</td>
+                                </tr>
                                 <tr>
                                     <td style="text-align: right;">7</td>
                                     <td>Anwendungsschicht</td>
@@ -179,13 +183,17 @@
                                     <td>Bitübertragunsschicht</td>
                                     <td>ARCNET, Token Ring, 1000BASE-T</td>
                                 </tr>
+                                <tr style="color: var(--leichte-schrift);">
+                                    <td style="text-align: right;">0</td>
+                                    <td>Kabel</td>
+                                </tr>
                             </table>
                         </div>
                     </div>
                 </div>  
                 <h3 id="well-known_Ports">well-known Ports</h3>
                 <div>
-                    In dieser Tabelle sind alle wichtigen standardisierten Ports aufgelistet:
+                    In dieser Tabelle sind alle wichtigen standardisierten Ports von <b>TCP</b> aufgelistet:
                     <table>
                         <tr>
                             <th>Port&#8209;Nr</th>
@@ -204,56 +212,36 @@
                             <td>SMTP (Simple Mail Transfer Protocol)</td>
                         </tr>
                         <tr>
+                            <td>465, 587</td>
+                            <td>SMTPS (Simple Mail Transfer Protocol Secure)</td>
+                        </tr>
+                        <tr>
                             <td>53</td>
-                            <td>DNS (Domain Name System) - meist über UDP</td>
-                        </tr>
-                        <tr>
-                            <td>67</td>
-                            <td>DHCP (Dynamic Host Configuration Protocol) IPv4 Server - meist über UDP</td>
-                        </tr>
-                        <tr>
-                            <td>68</td>
-                            <td>DHCP (Dynamic Host Configuration Protocol) IPv4 Client - meist über UDP</td>
+                            <td>DNS (Domain Name System)</td>
                         </tr>
                         <tr>
                             <td>80</td>
                             <td>HTTP (Hypertext Transfer Protocol)</td>
                         </tr>
                         <tr>
+                            <td>443</td>
+                            <td>HTTPS (Hypertext Transfer Protocol Secure)</td>
+                        </tr>
+                        <tr>
                             <td>110</td>
                             <td>POP3 (Post Office Protocol 3)</td>
+                        </tr>
+                        <tr>
+                            <td>995</td>
+                            <td>POP3S (Post Office Protocol 3 Secure)</td>
                         </tr>
                         <tr>
                             <td>143</td>
                             <td>IMAP (Internet Mail Access Protocol)</td>
                         </tr>
                         <tr>
-                            <td>443</td>
-                            <td>HTTPS (Hypertext Transfer Protocol Secure)</td>
-                        </tr>
-                        <tr>
-                            <td>465</td>
-                            <td>SMTPS (Simple Mail Transfer Protocol Secure)</td>
-                        </tr>
-                        <tr>
-                            <td>546</td>
-                            <td>DHCP (Dynamic Host Configuration Protocol) IPv6 Client - meist über UDP</td>
-                        </tr>
-                        <tr>
-                            <td>547</td>
-                            <td>DHCP (Dynamic Host Configuration Protocol) IPv6 Server - meist über UDP</td>
-                        </tr>
-                        <tr>
-                            <td>587</td>
-                            <td>SMTPS (Simple Mail Transfer Protocol Secure)</td>
-                        </tr>
-                        <tr>
                             <td>993</td>
                             <td>IMAPS (Internet Mail Access Protocol Secure)</td>
-                        </tr>
-                        <tr>
-                            <td>995</td>
-                            <td>POP3S (Post Office Protocol 3 Secure)</td>
                         </tr>
                         <tr>
                             <td>1935</td>
@@ -266,6 +254,41 @@
                         <tr>
                             <td>3389</td>
                             <td>RDP (Remote Desktop Protocol)</td>
+                        </tr>
+                    </table>
+                    In dieser Tabelle sind alle wichtigen standardisierten Ports von <b>UDP</b> aufgelistet:
+                    <table>
+                        <tr>
+                            <th>Port&#8209;Nr</th>
+                            <th>Protokoll</th>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>SSH (Secure Shell)</td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>DNS (Domain Name System)</td>
+                        </tr>
+                        <tr>
+                            <td>67</td>
+                            <td>DHCP (Dynamic Host Configuration Protocol) IPv4 Server</td>
+                        </tr>
+                        <tr>
+                            <td>68</td>
+                            <td>DHCP (Dynamic Host Configuration Protocol) IPv4 Client</td>
+                        </tr>
+                        <tr>
+                            <td>69</td>
+                            <td>TFTP (Trivial File Transfer Protocol)</td>
+                        </tr>
+                        <tr>
+                            <td>546</td>
+                            <td>DHCP (Dynamic Host Configuration Protocol) IPv6 Client</td>
+                        </tr>
+                        <tr>
+                            <td>547</td>
+                            <td>DHCP (Dynamic Host Configuration Protocol) IPv6 Server</td>
                         </tr>
                     </table>
                 </div>  
