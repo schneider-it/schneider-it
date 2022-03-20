@@ -1129,7 +1129,7 @@ hr {
     display: block;
     max-height: 80vh;
     max-width: 80vh;
-    margin: 3vh;
+    margin-block: 3vh;
     border-radius: var(--border-radius);
 
     &.invert {

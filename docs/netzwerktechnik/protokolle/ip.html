@@ -105,7 +105,7 @@
     </iframe>
 
     <div class="back_button">
-        <a href="../netzwerktechnik.html">
+        <a href="../protokolle.html">
             <ion-icon name="arrow-back-outline"></ion-icon>
         </a>
     </div>
@@ -133,17 +133,17 @@
     <div class="section searchable">   
         <div class="container" style="margin-top: 10vh;">
             <div>
-                <h3>IPv4</h3>
+                <h3 id="IPv4">IPv4</h3>
                 <div>
                     IPv4 ist Version 4 vom Internet Protocol. 
                     Es wird noch in großen Teilen Europas, der USA und vielen anderen Teilen der Welt verwendet, obwohl es eigentlich nicht mehr genug IPv4-Adressen zur Verfügung hat.
                     Das ist deshalb so, weil zur Zeit der Erfindung von IPv4 noch niemand dachte, dass jeder Mensch einmal ca. 3 technische Geräte haben wird und all diese Geräte einzigartige IP-Adressen brauchen, um untereinander kommunizieren zu können.
                     <br><br>
-                    <h4>Aufgaben</h4>
+                    <h4 id="IPv4-Aufgaben">Aufgaben</h4>
                     <div>
                         Folgende Tabelle veranschaulicht die Aufgaben von IPv4:
                         <table>
-                            <tr><th>Aufgabe</th></tr>
+                            <tr><th>Aufgaben von IPv4</th></tr>
                             <tr><td>Logische Adressierung (IPv4-Adresse)</td></tr>
                             <tr><td>IPv4-Konfiguration</td></tr>
                             <tr><td>IPv4-Header</td></tr>
@@ -151,7 +151,7 @@
                             <tr><td>Namensauflösung</td></tr>
                         </table>
                     </div>
-                    <h4>Aufbau</h4>
+                    <h4 id="IPv4-Aufbau">Aufbau</h4>
                     <div>
                         Eine IPv4-Adresse ist folgendermaßen aufgebaut:
                         <table>
@@ -167,26 +167,26 @@
                             </tr>
                             <tr>
                                 <td>Binär</td>
-                                <td>11000000.</td>
-                                <td>10101000.</td>
-                                <td>10001001.</td>
-                                <td>00001011</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">11000000.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">10101000.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">10001001.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">00001011</td>
                                 <td>/24</td>
                             </tr>
                             <tr>
                                 <td>Decimal</td>
-                                <td>192.</td>
-                                <td>168.</td>
-                                <td>137.</td>
-                                <td>11</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">192.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">168.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">137.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">11</td>
                                 <td>/24</td>
                             </tr>
                             <tr>
                                 <td>Hexadecimal</td>
-                                <td>C0.</td>
-                                <td>A8.</td>
-                                <td>89.</td>
-                                <td>0B</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">C0.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">A8.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">89.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">0B</td>
                                 <td>/24</td>
                             </tr>
                         </table>
@@ -199,22 +199,251 @@
                         Diese 32 Bit kann man in den <span style="color: var(--quince-jelly);">Netzanteil</span> und <span style="color: var(--pure-apple);">Hostanteil</span> unterteilen. 
                         An welcher Stelle die Unterteilung stattfindet gibt der <span style="color: var(--greenland-green);">Präfix</span> vor.
                     </div>
-                    <h4>Netzanteil</h4>
+                    <h4 id="IPv4-Netzanteil">Netzanteil</h4>
                     <div>
                         Der Netzanteil ist immer vor dem Hostanteil.
                     </div>
-                    <h4>Hostanteil</h4>
-                    <div>
-
-                    </div>
-                    <h4>Schreibweise</h4>
+                    <h4 id="IPv4-Hostanteil">Hostanteil</h4>
                     <div>
 
                     </div>
                 </div>
-                <h3>IPv6</h3>
+                <h3 id="IPv5">IPv5</h3>
                 <div>
-
+                    Die fünfte Version von IP hieß offiziell ST-2 (Internet Stream Protocol Version 2). 
+                    Urprünglich war dieses Protokoll für Echtzeit-Datenströme, vor allem Audio und Video per Multicast, gedacht.
+                    Allerdings kam man in der Entwicklungszeit von IPv5 bereits auf einige Nachteil drauf, weshalb man gleich mit der verbesserten Version IPv6 zum planen anfing und IPv5 übersprung.
+                </div>
+                <h3 id="IPv6">IPv6</h3>
+                <div>
+                    Die sechste Version von IP ist ziemlich unterschiedlich aufgebaut, im Gegensatz zu der vierten.
+                    <h4 id="IPv6-Vorteile">Vorteile</h4>
+                    <div>
+                        Einer der Hauptgründe der Entwicklung von IPv6 waren die mangelnden Adressen von IPv4. 
+                        Doch längere Adressen sind bei weitem nicht der einzige Unterschied zwischen IPv4 und IPv6.
+                        IPv6 ist ein völlig neues, ausgereiftes Protokoll, welches einige Vorteile mit sich bringt:
+                        <table>
+                            <tr>
+                                <th>Vorteile von IPv6 im Überblick</th>
+                            </tr>
+                            <tr><td>längere Adressen und dadurch ein größerer Adressraum</td></tr>
+                            <tr><td>mehrere IPv6-Adressen pro Host mit unterschiedlichen Gültigkeitsbreichen (Scopes)</td></tr>
+                            <tr><td>Autokonfiguration der IPv6-Adressen (SLAAC)</td></tr>
+                            <tr><td>Multicast durch spezielle Adressen</td></tr>
+                            <tr><td>schnelleres Routing (Präfix und Interface Identifier immer gleich lang)</td></tr>
+                            <tr><td>Punkt-zu-Punkt-Verschlüsselung mit IPsec</td></tr>
+                            <tr><td>Quality of Service (Banbreitengarantie --> Prioritätsvergabe)</td></tr>
+                            <tr><td>Datenpakete bis 4 GByte (Jumbograms)</td></tr>
+                        </table>
+                    </div>
+                    <h4 id="IPv6-Aufbau">Aufbau</h4>
+                    <div>
+                        Jede IPv6-Adresse besteht aus 128 Bit (4x so lange wie IPv4). 
+                        Damit ergeben sich insgesamt erstaunliche 2<sup>128</sup> bzw. 3,4 * 10<sup>38</sup> Adressen.
+                        Und weil das so schön viele sind, hier einmal ausgeschrieben: 
+                        340.282.366.900.000.000.000.000.000.000.000.000.000 Adressen!!!
+                        Ausgesprochen wird das dann übrigens so: rund 340 Sextillionen Adressen!
+                        <br>
+                        Rein als Vergleich, bei IPv4 gibt es insgeamt 4,3 Milliarden verschiedene Adressen...
+                    </div>
+                    <h4 id="IPv6-Schreibweise">Schreibweise</h4>
+                    <div>
+                        Beispiel für eine IPv6-Adresse (in diesem Fall ein Link-Lokal IPv6-Adresse):
+                        <table>
+                            <tr>
+                                <th>Schreibweise</th>
+                                <th colspan="4">Präfix</th>
+                                <th colspan="4">Interface Identifier</th>
+                            </tr>
+                            <tr>
+                                <td>Binär</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">1111111010000000.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">0.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">0.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">0.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">0001001100011001.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">1000101000101110.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">0000001101110000.</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">0111001101000100</td>
+                            </tr>
+                            <tr>
+                                <td>Hexadecimal</td>
+                                <td colspan="4" style="font-family:'Source Code Pro', sans-serif;">fe80::</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">1319:</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">8a2e:</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">0370:</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">7344</td>
+                            </tr>
+                        </table>
+                        Wie man aus der Tabelle herauslesen kann, besteht die IPv6-Adresse aus 128 Bit (die ganzen Nuller wurden hier jetzt weggelassen, damit die IPv6-Adresse nicht zu lange wird).
+                        16 Bit sind immer zu einem 4er-Hexadecimal-Block zusammengefasst. <br><br>
+                        Bei der Schreibweise gelten folgende Regeln:
+                        <table>
+                            <tr><th>Schreibweise Regeln</th></tr>
+                            <tr><td>alle alphabetischen Zeichen klein schreiben</td></tr>
+                            <tr><td>führende Nullen eines Blockes werden grundsätzlich weggelassen</td></tr>
+                            <tr><td>Ein einzelner 4er Nullerblock wird zu einer "<span style="font-family:'Source Code Pro', sans-serif;">0</span>" zusammengefasst</td></tr>
+                            <tr><td>Aufeinanderfolgende 4er Nullerblöcke werden durch zwei Doppelpunkte "<span style="font-family:'Source Code Pro', sans-serif;">::</span>" gekürzt</td></tr>
+                            <tr><td>Sind mehrere gleichwertige Kürzungen möglich, ist die erste von Links beginnend zu wählen</td></tr>
+                        </table>
+                    </div>
+                    <h4 id="IPv6-Segmentierung">Segmentierung</h4>
+                    <div>
+                        Bei IPv6-Adressen heißen die ersten 64 Bit <b>Präfix</b> (auch: Netz-ID oder Network Prefix) (vergleichbar mit dem Netzanteil von IPv4-Adressen) und die hinteren 64 Bit <b>Interface Identifier</b> (auch: Suffix, IID oder EUI) (vergleichbar mit dem Hostanteil von IPv4-Adressen).
+                        Anders als bei IPv4 gibt es keinen Suffix bzw. keine Subnetzmaske der bzw. die bestimmt, an welcher Bitstelle die Trennung zwischen diesen beiden Teilen verläuft. 
+                        Stattdessen ist die Trennung zwischen Präfix und Interface Identifier immer zwischen 64 und 65 Bit!
+                        <a href="/img/IPv6_Segmentierung1.png" data-lightbox="lightbox" data-title="Segmentierung"><img src="/img/IPv6_Segmentierung1.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img invert"></a>
+                        Diese grundlegende, einfach definierte Art und Weise ermöglicht ein sehr viel schnelleres Routing, weil die Router nicht mehr die Subnetzmaske berechnen müssen.
+                        <br><br>
+                        Falls größere Unternehmen trotzdem mehrere Subnetze zur Verfügung haben wollen, gibt der Provider z.B. ein /56-Netz her, was bedeutet, dass die ersten 56 Bit vom Provider vorgeschrieben sind und die anderen 8 Bit vom Unternehmen für Subnetze verwendet werden können.
+                        <a href="/img/IPv6_Segmentierung2.png" data-lightbox="lightbox" data-title="Segmentierung"><img src="/img/IPv6_Segmentierung2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img invert"></a>
+                        Egal, wie viele Subnetz man zur Verfügung hat, in jedem Subnetz können 2<sup>64</sup> Adressen vergeben werden. Da jeder Host mehrere Adressen haben kann, wäre es sogar denkbar, das jeder Dienst oder jede Anwendung auf einem Server eine eigene IPv6-Adresse bekommt.
+                    </div>
+                    <h4 id="IPv6-Scopes">Scopes</h4>
+                    <div>
+                        Unter Address Scopes versteht man die verschiedenen Gültigkeitsbreiche von IPv6-Adressen.
+                        Der Scope ist der Teil des Netzwerks, in dem die zugehörige Adresse als gültig anerkannt und geroutet wird.
+                        <table>
+                            <tr>
+                                <th>Scopename</th>
+                                <th>Gültigkeitsbreich</th>
+                            </tr>
+                            <tr>
+                                <td>Host-Scope</td>
+                                <td>Virtualisierung</td>
+                            </tr>
+                            <tr>
+                                <td>Link-Lokal-Scope</td>
+                                <td>im lokalen Netzwerk</td>
+                            </tr>
+                            <tr>
+                                <td>Private-Scope (<span style="font-family:'Source Code Pro', sans-serif;">fc00::</span>)</td>
+                                <td>nur im private Netzwerk</td>
+                            </tr>
+                            <tr>
+                                <td>Unique-Lokal-Scope</td>
+                                <td>? (bei möglichem Wissenstand bitte kontaktieren...)</td>
+                            </tr>
+                            <tr>
+                                <td>Site-Lokal-Scope (veraltet)</td>
+                                <td>? (bei möglichem Wissenstand bitte kontaktieren...)</td>
+                            </tr>
+                            <tr>
+                                <td>Global-Scope</td>
+                                <td>Internet</td>
+                            </tr>
+                            <tr>
+                                <td>Multicast-Scope</td>
+                                <td>? (bei möglichem Wissenstand bitte kontaktieren...)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h4 id="IPv6-SLAAC">SLAAC</h4>
+                    <div>
+                        Eine der größten Neuerungen bei IPv6 ist die Autokonfiguration.
+                        Das bedeutet, dass sich der Host ohne irgendeinen beeinflussenden Server die IPv6-Adresse, den Standard-Gateway und den DNS-Server selbstständig mittels Router Advertisements besorgen kann.
+                        Dieses Verfahren hat den Namen SLAAC (Stateless Address Autoconfiguration).
+                        <h5 id="IPv6-SLAAC-Link-Lokal_IPv6-Adressen">Link-Lokal IPv6-Adressen</h5>
+                        <div>
+                            Beim Hochfahren eines Hosts holt sich dieser mittels SLAAC direkt eine link-lokal IPv6-Adresse, womit er im internen Netz kommunizieren kann. Diese setzt sich zusammen aus "<span style="font-family:'Source Code Pro', sans-serif;">fe80::</span>" und einer umgewandelten MAC-Adresse.
+                            Die umgewandelte MAC-Adresse erzeugt man folgendermaßen: Man nimmt die 48 Bit lange MAC-Adresse, invertiert das siebente Bit (wenn 1, dann 0; wenn 0, dann 1) und fügt in der Mitte "<span style="font-family:'Source Code Pro', sans-serif;">ff:fe</span>" ein, sodass man auf 64 Bit kommt.
+                            Das heißt, dass die link-lokal IPv6-Adresse als Präfix immer "<span style="font-family:'Source Code Pro', sans-serif;">fe80::</span>" und als Interface Identifier die umgewandelte MAC-Adresse hat.
+                            <br><br>
+                            Beispiel einer link-lokal IPv6-Adresse mit dieser MAC-Adresse: 11:22:33:44:55:66:
+                            <table>
+                                <tr>
+                                    <td><span style="font-family:'Source Code Pro', sans-serif;">fe80::</span></td>
+                                    <td><span style="font-family:'Source Code Pro', sans-serif;">1322:33ff:fe44:5566</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h5 id="IPv6-SLAAC-globale_IPv6-Adressen">globale IPv6-Adressen</h5>
+                        <div>
+                            Mithilfe der globalen IPv6-Adresse kann man ins Internet hinaus. 
+                            Sprich: Die globale IPv6-Adresse kann im gesamten Internet geroutet werden.
+                            <br><br>
+                            Der Präfix dieser globalen IPv6-Adresse bekommt der Host mittels Router Advertisements.
+                            Der Interface Identifier ist der gleiche wie der von der link-lokalen IPv6-Adresse.
+                            Dies hat allerdings den Nachteil, dass wegen der MAC-Adresse im Interface Identifier der Host zurückverfolgbar ist.
+                            <br><br>
+                            Beispiel einer globalen IPv6-Adresse:
+                            <table>
+                                <tr>
+                                    <td><span style="font-family:'Source Code Pro', sans-serif;">2001:db8::</span></td>
+                                    <td><span style="font-family:'Source Code Pro', sans-serif;">1322:33ff:fe44:5566</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <h5 id="IPv6-SLAAC-temporär_globale_IPv6-Adressen">temporär globale IPv6-Adressen</h5>
+                        <div>
+                            Temporär globale IPv6-Adressen werden nur dann generiert, wenn die Privacy Extensions aktivert sind.
+                            Diese wurden entwickelt, damit man verhindert, dass man mittels globaler IPv6-Adresse den Host identifizieren kann (MAC-Adresse verratet Host).
+                            <br><br>
+                            SLAAC generiert einfach einen pseudozufälligen Interface Identifier anstatt die umgewandelte MAC-Adresse zu verwenden.
+                            Als Präfix verwendet SLAAC den gleichen wie bei der globalen IPv6-Adresse.
+                            <table>
+                                <tr>
+                                    <td><span style="font-family:'Source Code Pro', sans-serif;">2001:db8::</span></td>
+                                    <td><span style="font-family:'Source Code Pro', sans-serif;">&lt;pseudozufällig&gt;</span></td>
+                                </tr>
+                            </table>
+                        </div>
+                        Das bedeutet, dass man direkt nach dem Starten des Hosts diese drei IPv6-Adressen hat:
+                        <table>
+                            <tr>
+                                <th>Name der IPv6-Adr.</th>
+                                <th style="min-width: 15vw;">Präfix</th>
+                                <th style="min-width: 15vw;">Interface Identifier</th>
+                            </tr>
+                            <tr>
+                                <td>link-lokal IPv6-Adr.</td>
+                                <td><span style="font-family:'Source Code Pro', sans-serif;">fe80::</span></td>
+                                <td><span style="font-family:'Source Code Pro', sans-serif;">1322:33ff:fe44:5566</span></td>
+                            </tr>
+                            <tr>
+                                <td>globale IPv6-Adr.</td>
+                                <td><span style="font-family:'Source Code Pro', sans-serif;">2001:db8::</span></td>
+                                <td><span style="font-family:'Source Code Pro', sans-serif;">1322:33ff:fe44:5566</span></td>
+                            </tr>
+                            <tr>
+                                <td>temporär globale IPv6-Adr.</td>
+                                <td><span style="font-family:'Source Code Pro', sans-serif;">2001:db8::</span></td>
+                                <td><span style="font-family:'Source Code Pro', sans-serif;">&lt;pseudozufällig&gt;</span></td>
+                            </tr>
+                        </table>                  
+                    </div>
+                    <h4 id="IPv6-Address_Selection">Address Selection</h4>
+                    <div>
+                        
+                    </div>
+                    <h4 id="IPv6-Renumbering">Renumbering</h4>
+                    <div>
+                        
+                    </div>
+                    <h4 id="IPv6-Flow_Labels">Flow Labels</h4>
+                    <div>
+                        
+                    </div>
+                    <h4 id="IPv6-Jumbograms">Jumbograms</h4>
+                    <div>
+                        
+                    </div>
+                    <h4 id="IPv6-mobile_IPv6">mobile IPv6</h4>
+                    <div>
+                        
+                    </div>
+                    <h4 id="IPv6-Multicast">Multicast</h4>
+                    <div>
+                        
+                    </div>
+                    <h4 id="IPv6-Multicast">Multihoming</h4>
+                    <div>
+                        
+                    </div>
+                    <h4 id="IPv6-NDP">NDP</h4>
+                    <div>
+                        
+                    </div>
                 </div>
             </div>
         </div>

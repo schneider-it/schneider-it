@@ -17,6 +17,7 @@
     --ergebnis-p-color-active: #eee;
   }
 }
+
 body.dark {
   --ergebnis-div-shadow: #000;
   --ergebnis-div-shadow-active: #000;
@@ -38,6 +39,7 @@ body {
   position: absolute;
   width: 100%;
 }
+
 #search_div form #search {
   width: 100%;
   height: 8vh;
@@ -47,9 +49,10 @@ body {
   -webkit-box-shadow: 0px 20px 0px -10px var(--ergebnis-div-shadow);
           box-shadow: 0px 20px 0px -10px var(--ergebnis-div-shadow);
 }
+
 #search_div::before {
   font: var(--fa-font-solid);
-  content: "\f002";
+  content: '\f002';
   position: absolute;
   left: 3vh;
   top: 0;
@@ -62,6 +65,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
 #search_div::after {
   content: attr(data-after);
   position: absolute;
@@ -87,6 +91,7 @@ body {
   width: var(--container);
   margin: 20vh auto;
 }
+
 #ergebnisse div {
   width: 100%;
   margin: 5vh 0;
@@ -95,29 +100,33 @@ body {
   border-radius: 2vh;
   -webkit-box-shadow: 0px 25px 0px -5px var(--ergebnis-div-shadow);
           box-shadow: 0px 25px 0px -5px var(--ergebnis-div-shadow);
-  -webkit-transition: color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-  transition: color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
-  transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out;
-  transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+  -webkit-transition: color 50ms ease-in-out, background 50ms ease-in-out, font .1s ease-in-out, -webkit-box-shadow .1s ease-in-out, -webkit-transform .1s ease-in-out;
+  transition: color 50ms ease-in-out, background 50ms ease-in-out, font .1s ease-in-out, -webkit-box-shadow .1s ease-in-out, -webkit-transform .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out, transform .1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font .1s ease-in-out;
+  transition: box-shadow .1s ease-in-out, transform .1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font .1s ease-in-out, -webkit-box-shadow .1s ease-in-out, -webkit-transform .1s ease-in-out;
 }
+
 #ergebnisse div a h4 {
   margin: 0;
   padding: 0;
   color: var(--ergebnis-h-color);
   font-weight: 700;
 }
+
 #ergebnisse div a p {
   margin: 0;
   padding: 0;
   color: var(--ergebnis-p-color);
   font-weight: 400;
 }
+
 #ergebnisse div:hover {
   -webkit-box-shadow: 0px 13px 0px -5px var(--ergebnis-div-shadow);
           box-shadow: 0px 13px 0px -5px var(--ergebnis-div-shadow);
   -webkit-transform: translateY(12px);
           transform: translateY(12px);
 }
+
 #ergebnisse div#active {
   -webkit-box-shadow: 0px 19px 0px -5px var(--ergebnis-div-shadow-active);
           box-shadow: 0px 19px 0px -5px var(--ergebnis-div-shadow-active);
@@ -125,12 +134,15 @@ body {
           transform: translateY(6px);
   background: var(--nebenfarbe2);
 }
+
 #ergebnisse div#active a h4 {
   color: var(--ergebnis-h-color-active);
 }
+
 #ergebnisse div#active a p {
   color: var(--ergebnis-p-color-active);
 }
+
 #ergebnisse div#active:hover {
   -webkit-box-shadow: 0px 13px 0px -5px var(--ergebnis-div-shadow);
           box-shadow: 0px 13px 0px -5px var(--ergebnis-div-shadow);
