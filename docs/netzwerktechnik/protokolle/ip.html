@@ -307,36 +307,40 @@
                             <tr>
                                 <th>Scopename</th>
                                 <th>Gültigkeitsbreich</th>
+                                <th style="min-width: 25vw;">Adressraum</th>
                             </tr>
                             <tr>
-                                <td>Host-Scope</td>
-                                <td>Virtualisierung</td>
+                                <td>Host-Scope (Loopback)</td>
+                                <td>für Host-interne Anwendungen (nicht routbar)</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">::1/128</td>
                             </tr>
                             <tr>
-                                <td>Link-Lokal-Scope</td>
-                                <td>im lokalen Netzwerk</td>
-                            </tr>
-                            <tr>
-                                <td>Private-Scope (<span style="font-family:'Source Code Pro', sans-serif;">fc00::</span>)</td>
-                                <td>nur im private Netzwerk</td>
+                                <td><b>Link-Lokal-Scope</b></td>
+                                <td>im lokalen Netzwerk (nicht routbar)</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">fe80::/10 -- fe80:: - febf::</td>
                             </tr>
                             <tr>
                                 <td>Unique-Lokal-Scope</td>
-                                <td>? (bei möglichem Wissenstand bitte kontaktieren...)</td>
+                                <td>ähnlichen den privaten IPv4-Adressen (nicht routbar)</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">fc00::/7 -- fc00:: - fdff::</td>
                             </tr>
                             <tr>
                                 <td>Site-Lokal-Scope (veraltet)</td>
-                                <td>? (bei möglichem Wissenstand bitte kontaktieren...)</td>
+                                <td>ähnlich wie Unique-Lokal-Scope, nur in der aktuellen "Site" gültig; Site = größer als Link-Lokal Bereich; seit September 2004 veraltet</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">fec0::</td>
                             </tr>
                             <tr>
-                                <td>Global-Scope</td>
-                                <td>Internet</td>
+                                <td><b>Global-Scope</b></td>
+                                <td>Internet (routbar)</td>
+                                <td>alle anderen...</td>
                             </tr>
                             <tr>
                                 <td>Multicast-Scope</td>
-                                <td>? (bei möglichem Wissenstand bitte kontaktieren...)</td>
+                                <td>IPv6-Adressen, die als Multicast verwendet werden können</td>
+                                <td style="font-family:'Source Code Pro', sans-serif;">ff00::/8 -- ff00:: - ffff::</td>
                             </tr>
                         </table>
+                        Für detailiertere Informationen: <a href="https://www.elektronik-kompendium.de/sites/net/2107111.htm" class="link">Elektronik Kompendium - IPv6-Address-Scopes (Gültigkeitsbereiche)</a>
                     </div>
                     <h4 id="IPv6-SLAAC">SLAAC</h4>
                     <div>
@@ -414,35 +418,61 @@
                     </div>
                     <h4 id="IPv6-Address_Selection">Address Selection</h4>
                     <div>
-                        
+                        Address Selection entscheidet, welche IP-Adresse verwendet werden soll. 
+                        Dabei kann entweder die IPv4-Adresse verwendet werden oder eine der IPv6-Adresse, also die link-lokal, global oder eine andere IPv6-Adresse, die der Host zur Verfügung hat. 
+                    </div>
+                    <h4 id="IPv6-IPsec">IPsec</h4>
+                    <div>
+                        IPsec sorgt für die kryptografische Verschlüsselungen von IPv6-Paketen über öffentliche und unsichere Netzwerke. 
+                        Weil es diese Verschlüsselungs- und Authentifizierungsmethoden bei IPv4 noch nicht gab, hat man diese auch bei IPv4 später spezifisch integriert.
                     </div>
                     <h4 id="IPv6-Renumbering">Renumbering</h4>
                     <div>
-                        
+                        Renumbering heißt der Vorgang, bei dem im laufenden Betrieb eine IPv6-Adresse, deren Gültigkeit bald ausläuft, durch eine neue ausgetauscht wird. 
+                        Dies funktioniert, indem mittels Router Advertisements die Priorität der neuen IPv6-Adresse höher gesetz ist, als die der alten, sodass mit der Zeit alle Dienst bzw. Anwendungen die neue IPv6-Adresse verwenden.
+                        <br><br>
+                        Dieser Vorgang ist zum Beispiel nützlich, wenn man ein Mobilgerät verwendet, womit man sich von einem Netzwerk zum andern bewegt und weiterhin Anwendungen im Hintergrund laufen oder wenn ein DHCP-Server ausgetauscht wird und neue Präfixe vergibt.
                     </div>
                     <h4 id="IPv6-Flow_Labels">Flow Labels</h4>
                     <div>
-                        
+                        Flow Labels ermöglichen das Priorisieren von Paketen, indem sie die Bandbreite der Übertragung erhöhen, sodass diese Pakete schneller übertragen werden können.
                     </div>
                     <h4 id="IPv6-Jumbograms">Jumbograms</h4>
                     <div>
-                        
-                    </div>
-                    <h4 id="IPv6-mobile_IPv6">mobile IPv6</h4>
-                    <div>
-                        
+                        Jumbograms nennen sich die Datenpakete, die bis zu 4GByte groß sein dürfen. 
+                        Im Vergleich zu der maximalen Paketgröße bei IPv4 (64KByte) ist dies ziemlich groß.
+                        Allerdings muss man bedenken, dass auf den unteren Schichten des OSI-Schichtenmodells, wie zum Beispiel der Ethernet-Schicht (Schicht 2 des OSI-Schichtenmodells), die maximale Paketgröße kleiner sein kann, weshalb diese großen Jumbograms wieder unterteilt werden müssen.
+                        Bei Ethernet liegt die maximale Paketgröße nämlich bei 1.500 Byte.
                     </div>
                     <h4 id="IPv6-Multicast">Multicast</h4>
                     <div>
-                        
+                        Unter Multicast versteht man eine Adresse, die an mehrere Clients gleichzeitig sendet. 
+                        Zum Beispiel müssen Zeit-Server, Video- oder Audio- Dienste auf Multicast-Adressen laufen, damit mehrere Clients gleichzeitig darauf zugreifen können.
+                        Ein Twitch-Stream zum Beispiel, wird von mehreren Personen gleichzeit angesehen.
                     </div>
                     <h4 id="IPv6-Multicast">Multihoming</h4>
                     <div>
-                        
+                        Multihoming bedeutet, dass in einem Netzwerk mehrere Router mit unterschiedlichen Präfixen (die vom Privoder zur Verfügung gestellt werden) existieren.
+                        Somit können Hosts in diesem Netzwerk auch mehrere IPv6-Adressen mit unterschiedlichen Präfixen haben.
                     </div>
                     <h4 id="IPv6-NDP">NDP</h4>
                     <div>
-                        
+                        Das Neighbor Discovery Protocol (kurz: NDP) tauscht Informationen bzgl. der link-lokalen IPv6-Adresse wie zum Beispiel Router Discovery und Neighbor Discovery aus.
+                        Die Übertragung erfolgt mittels ICMPv6.
+                    </div>
+                    <h4 id="IPv6-stateless_vs._stateful">stateless vs. stateful</h4>
+                    Während stateless die Konfiguration mittels SLAAC bezeichnet, ist stateful die Konfiguration mittles DHCPv6.
+                    <div>
+                        <table>
+                            <tr>
+                                <td>stateless</td>
+                                <td>Autokonfiguration mittels SLAAC (Stateless Address Autoconfiguration)</td>
+                            </tr>
+                            <tr>
+                                <td>stateful</td>
+                                <td>Konfiguration mittels DHCPv6</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </div>
