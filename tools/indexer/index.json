@@ -96,38 +96,223 @@
     },
     {
         "title": "IPv4",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
     },
     {
         "title": "Aufgaben",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Aufgaben",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
     },
     {
         "title": "Aufbau",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Aufbau",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
     },
     {
         "title": "Netzanteil",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Netzanteil",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
     },
     {
         "title": "Hostanteil",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Hostanteil",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
     },
     {
-        "title": "Schreibweise",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+        "title": "IPv5",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv5",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
     },
     {
         "title": "IPv6",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
+    },
+    {
+        "title": "Vorteile",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Vorteile",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Aufbau",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Aufbau",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Schreibweise",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Schreibweise",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Segmentierung",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Segmentierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Scopes",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Scopes",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "SLAAC",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Link-Lokal IPv6-Adressen",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-Link-Lokal_IPv6-Adressen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
+    },
+    {
+        "title": "globale IPv6-Adressen",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-globale_IPv6-Adressen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
+    },
+    {
+        "title": "temporär globale IPv6-Adressen",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-temporär_globale_IPv6-Adressen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
+    },
+    {
+        "title": "Address Selection",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Address_Selection",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "IPsec",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-IPsec",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Renumbering",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Renumbering",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Flow Labels",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Flow_Labels",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Jumbograms",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Jumbograms",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Multicast",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Multicast",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "Multihoming",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Multicast",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "NDP",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-NDP",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "stateless vs. stateful",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-stateless_vs._stateful",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "title": "TCP",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "title": "Aufgaben",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Aufgaben",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Segmentierung (Data Segmenting)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Segmentierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Verbindungsmanagement (Connection Establishment and Termination)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Verbindungsmanagement",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Fehlerbehandlung (Error Detection)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Fehlerbehandlung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Flusssteuerung (Flow Control)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Flusssteuerung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Anwendungsunterstützung (Application Support)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Anwendungsunterstützung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Portgruppen",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
+    },
+    {
+        "title": "well-known Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-well-known_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "title": "Registered Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Registered_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "title": "Dynamically Allocated Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Dynamically_Allocated_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "title": "Portzustände",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
+    },
+    {
+        "title": "Open",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Open",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
+    },
+    {
+        "title": "Closed",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Closed",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
+    },
+    {
+        "title": "Filtered",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Filtered",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
+    },
+    {
+        "title": "UDP",
+        "location": "/docs/netzwerktechnik/protokolle/udp.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "title": "Unterschiede zu TCP",
+        "location": "/docs/netzwerktechnik/protokolle/udp.html#Unterschiede",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ UDP"
+    },
+    {
+        "title": "Funktionsweise von UDP",
+        "location": "/docs/netzwerktechnik/protokolle/udp.html#Funktionsweise",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ UDP"
     },
     {
         "title": "Programmiersprachen",
@@ -173,6 +358,11 @@
         "title": "Other stuff C#",
         "location": "/docs/programmiersprachen/csharp/anderes.html",
         "prettypath": "Programmiersprachen ➜ C#"
+    },
+    {
+        "title": "Playfair Chiffre",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
     },
     {
         "title": "Verkettung C#",
@@ -275,94 +465,9 @@
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
     },
     {
-        "title": "Playfair Chiffre",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
-    },
-    {
         "title": "Grundlagen C#",
         "location": "/docs/programmiersprachen/csharp/grundlagen.html",
         "prettypath": "Programmiersprachen ➜ C#"
-    },
-    {
-        "title": "Flusssteuerung C#",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
-    },
-    {
-        "title": "if",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#if",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "else",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#else",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "switch",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#switch",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "Schleifen",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "while",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-while",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
-    },
-    {
-        "title": "for",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-for",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
-    },
-    {
-        "title": "foreach",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-foreach",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
-    },
-    {
-        "title": "do-while",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-do-while",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
-    },
-    {
-        "title": "return",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#return",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "continue und break",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#continue_und_break",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "goto",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#goto",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "statische Methoden C#",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
-    },
-    {
-        "title": "Einleitung",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Eninleitung",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
-    },
-    {
-        "title": "Methodenaufruf",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Methodenaufruf",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
-    },
-    {
-        "title": "Rekursion",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Rekursion",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
     },
     {
         "title": "Datentypen C#",
@@ -515,9 +620,119 @@
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
     },
     {
+        "title": "Flusssteuerung C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
+    },
+    {
+        "title": "if",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#if",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "else",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#else",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "switch",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#switch",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "Schleifen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "while",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-while",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "for",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-for",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "foreach",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-foreach",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "do-while",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-do-while",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "return",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#return",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "continue und break",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#continue_und_break",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "goto",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#goto",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "statische Methoden C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
+    },
+    {
+        "title": "Einleitung",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Eninleitung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
+    },
+    {
+        "title": "Methodenaufruf",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Methodenaufruf",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
+    },
+    {
+        "title": "Rekursion",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Rekursion",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
+    },
+    {
         "title": "OOP C#",
         "location": "/docs/programmiersprachen/csharp/oop.html",
         "prettypath": "Programmiersprachen ➜ C#"
+    },
+    {
+        "title": "Interfaces C#",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
+    },
+    {
+        "title": "Interfaces",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C#"
+    },
+    {
+        "title": "Was ist ein Interface?",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
+    },
+    {
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces ➜ Was ist ein Interface?"
+    },
+    {
+        "title": "Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
+    },
+    {
+        "title": "Properties",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Properties",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
     },
     {
         "title": "Klassen C#",
@@ -650,36 +865,6 @@
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Unit Tests"
     },
     {
-        "title": "Interfaces C#",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
-    },
-    {
-        "title": "Interfaces",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C#"
-    },
-    {
-        "title": "Was ist ein Interface?",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
-    },
-    {
-        "title": "Syntax",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?-Syntax",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces ➜ Was ist ein Interface?"
-    },
-    {
-        "title": "Methoden",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Methoden",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
-    },
-    {
-        "title": "Properties",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Properties",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
-    },
-    {
         "title": "Vererbung C#",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
@@ -733,6 +918,16 @@
         "title": "HTML",
         "location": "/docs/programmiersprachen/html.html",
         "prettypath": "Programmiersprachen"
+    },
+    {
+        "title": "alle HTML-Attribute",
+        "location": "/docs/programmiersprachen/html/alle_attribute.html",
+        "prettypath": "Programmiersprachen ➜ HTML"
+    },
+    {
+        "title": "globale Attribute",
+        "location": "/docs/programmiersprachen/html/alle_attribute.html#globale_Attribute",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Attribute"
     },
     {
         "title": "alle HTML-Tags",
@@ -1053,16 +1248,6 @@
         "title": "Box-Modell",
         "location": "/docs/programmiersprachen/html/grundlagen.html#Box-Modell",
         "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
-    },
-    {
-        "title": "alle HTML-Attribute",
-        "location": "/docs/programmiersprachen/html/alle_attribute.html",
-        "prettypath": "Programmiersprachen ➜ HTML"
-    },
-    {
-        "title": "globale Attribute",
-        "location": "/docs/programmiersprachen/html/alle_attribute.html#globale_Attribute",
-        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Attribute"
     },
     {
         "title": "WPF",
