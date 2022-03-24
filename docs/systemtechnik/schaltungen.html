@@ -10,13 +10,9 @@
     
     <link rel="stylesheet" href="/css/style.min.css">
     <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Netzwerktechnik - Protokolle - TCP</title>
+    <title>Schneider IT - Systemtechnik - Schaltungen</title>
 </head>
-<body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
-    <div class="scroll_indicator_div">
-        <div class="scroll_indicator" id="scroll_indicator"></div>
-    </div> 
-
+<body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
     <div class="search_button">
         <a href="/tools/search.html">
             <ion-icon name="search"></ion-icon>
@@ -105,7 +101,7 @@
     </iframe>
 
     <div class="back_button">
-        <a href="../protokolle.html">
+        <a href="../systemtechnik.html">
             <ion-icon name="arrow-back-outline"></ion-icon>
         </a>
     </div>
@@ -115,13 +111,13 @@
             <div class="container small" style="padding: 10vh 0;">
                 <div class="flex-between nowrap">
                     <div class="flex-center-v">
-                        <img src="/img/UDP.svg" alt="UDP_Logo" class="img small" style="margin: 0;">
+                        <img src="/img/elektronische-schaltung.png" alt="Schaltungen_Logo" class="img small" style="margin: 0;">
                     </div>
                     <div class="flex-center-v" style="width: 70vw; text-align: right;">
                         <div>
-                            <h2 style="margin-bottom: 5vh;">UDP</h2>
+                            <h2 style="margin-bottom: 5vh;">Schaltungen</h2>
                             <p style="max-width: 30vw; float: right;">
-                                Hier wird alles über das User Datagram Protocol erklärt.
+                                Hier lernen Sie die wichtigsten Schaltungen kennen.
                             </p>
                         </div>
                     </div>
@@ -130,67 +126,44 @@
         </div>
     </div>
 
-    <div class="section searchable">
+    <div class="section">        
+        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
+            <div class="container" style="padding: 8vh 0;">
+                <h2>Unterkategorien der Schaltungen</h2>
+            </div>
+        </div>
+
         <div class="container" style="margin-top: 10vh;">
-            <div>
-                Das User Datagram Protocol (kurz: UDP) arbeitet auf Layer 4 des OSI-Schichtenmodells (Transportschicht). 
-                Es sorgt dafür, dass eine verbindungslose Verbindung aufgebaut wird.
-                <h3 id="Unterschiede">Unterschiede zu TCP</h3>
-                <div>
-                    Es gibt einige Unterschiede zu TCP, weil UDP eigentlich ganz anders aufgebaut ist und anders funktioniert als TCP.
-                    Aus diesem Grund gibt es hier die ultimative VS-Tabelle zwischen TCP und UDP.
-                    <table>
-                        <tr>
-                            <th>TCP</th>
-                            <th>UDP</th>
-                        </tr>
-                        <tr>
-                            <td>verbindungsorientiert (Verbindungsaufbau und -abbau)</td>
-                            <td>verbindungslos</td>
-                        </tr>
-                        <tr>
-                            <td>Kontrollfunktionen (Flow Control, Segmentierung, ..)</td>
-                            <td>keine Kontrollmechanismen</td>
-                        </tr>
-                        <tr>
-                            <td>langsamer, wenn wenige Pakete</td>
-                            <td>schneller, wenn wenige Pakete</td>
-                        </tr>
-                        <tr>
-                            <td>Verwendung: DHCP, FTP, SMTP, HTTP, POP, IMAP, NNTP, ...</td>
-                            <td>Verwendung: Audio, Video, DNS, VPN, TFTP, NetBIOS, SNMP, ...</td>
-                        </tr>
-                        <tr>
-                            <td>Ziel: 99,9% von Daten sollen ankommen</td>
-                            <td>Ziel: Daten sollen möglichst zeitgleich ankommen</td>
-                        </tr>
-                        <tr>
-                            <td>viel Header</td>
-                            <td>wenig Header (keine Segmentierung, ...)</td>
-                        </tr>
-                        <tr>
-                            <td>Bestätigung der Ankunft eines Pakets</td>
-                            <td>keine Bestätigungen</td>
-                        </tr>
-                        <tr>
-                            <td>setzt Pakete für Anwendung in richtiger Reihenfolge zusammen</td>
-                            <td>leitet Pakete direkt an Anwendung weiter, die sich selbst um die Reihenfolge kümmern muss</td>
-                        </tr>
-                    </table>
-                </div>
-                <h3 id="Funktionsweise">Funktionsweise von UDP</h3>
-                <div>
-                    UDP hat die selbe Aufgabe wie TCP, nur das nahezu alle Kontrollfunktionen fehlen, dadurch schlanker und einfacher zu verarbeiten ist.
-                    So besitzt UDP keinerlei Methoden die sicherstellen, dass ein Datenpaket beim Empfänger ankommt. 
-                    Ebenso entfällt die Nummerierung der Datenpakete. 
-                    UDP ist nicht in der Lage die Datenpakete in der richtigen Reihenfolge zusammenzusetzen. 
-                    Statt dessen werden die UDP-Pakete direkt an die Anwendung weitergeleitet. 
-                    Für eine sichere Datenübertragung ist deshalb die Anwendung zuständig.
-                    <br><br>
-                    In der Regel wird UDP für Anwendungen und Dienste verwendet, die mit Paketverlusten umgehen können oder sich selber um das Verbindungsmanagement kümmern. 
-                    UDP eignet sich auch für Anwendungen, die nur einzelne, nicht zusammenhängende Datenpakete transportieren müssen, wie zum Beispiel DNS.
-                </div>
-            </div>            
+            <div class="flex-between">
+                <a href="schaltungen/DAC.html">
+                    <div class="card">
+                        <div class="card-before"></div>
+                        <div class="card-img">
+                            <img src="/img/numbers.png" alt="Numbers" style="border-radius: 0;">
+                        </div>
+                        <div class="card-text">
+                            <h4>DAC</h4>
+                            <p>
+                                Hier lernen Sie die Schaltungen kennen, die digitale Signale in analoge Signale umwandeln.
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="schaltungen/ADC.html">
+                    <div class="card">
+                        <div class="card-before"></div>
+                        <div class="card-img">
+                            <img src="/img/binary-code.png" alt="Binary Code" style="border-radius: 0;">
+                        </div>
+                        <div class="card-text">
+                            <h4>ADC</h4>
+                            <p>
+                                Hier lernen Sie die Schaltungen kennen, die analoge Signale in digitale Signale umwandeln.                                
+                            </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
