@@ -332,7 +332,7 @@ body::-webkit-scrollbar {
 }
 
 html, body {
-    font-size: 2.2vh;
+    font-size: 1.1rem;
     font-weight: 400;
     color: var(--standard-schrift); 
     background-color: var(--hintergrund1);
@@ -373,49 +373,49 @@ table {
 
 h1 {
     font-family: 'Public Sans', sans-serif;
-    font-size: 10vh;
+    font-size: 5rem;
     font-weight: 900;
     margin: 10vh 0;
 }
 
 h2 {
     font-family: 'Public Sans', sans-serif;
-    font-size: 5.8vh;
+    font-size: 3rem;
     font-weight: 800;
     margin: 3vh 0;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 4.5vh;
+    font-size: 2.25rem;
     font-weight: 800;
     margin: 2.5vh 0;
 }
 
 h4 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 3.8vh;
+    font-size: 1.9rem;
     font-weight: 700;
     margin: 2vh 0;
 }
 
 h5 {
     font-family: 'Raleway', sans-serif;
-    font-size: 3vh;
+    font-size: 1.5rem;
     font-weight: 600;
     margin: 1.5vh 0;
 }
 
 h6 {
     font-family: 'Raleway', sans-serif;
-    font-size: 2.5vh;
+    font-size: 1.25rem;
     font-weight: 500;
     margin: 1vh 0;
 }
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 2.2vh;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -440,10 +440,15 @@ footer {
 
     & .footer-vogel {
         position: absolute;
-        left: 5vh;
-        bottom: 5vh;
-        max-height: 20vh;
-        max-width: 20vh;
+        left: 3vh;
+        bottom: 3vh;
+        max-height: 10vh;
+        max-width: 10vh;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
@@ -666,7 +671,7 @@ hr {
     height: 100vh;
     width: 80vh;
     padding: 25vh 10vh;
-    font-size: 3vh;
+    font-size: 1.5rem;
     background: var(--hintergrund2);
     transform: translateX(100vh); 
     transition: transform var(--middle-transition) ease-in-out;
@@ -747,7 +752,7 @@ hr {
 			position: relative;
             color: var(--standard-schrift);
 			transform-origin: left center;
-			font-size: 3vh;
+			font-size: 1.5rem;
 			font-weight: 600;
 			transition: transform 1s cubic-bezier(.19,1,.22,1);
 			
@@ -911,7 +916,7 @@ hr {
 
         &>div {
             font-family: 'Open Sans', sans-serif;
-            font-size: 3.8vh;
+            font-size: 1.9rem;
             font-weight: 700;
             margin: 2vh 0;
         }
@@ -976,7 +981,7 @@ hr {
         vertical-align: middle;
         cursor: pointer;
         font-family: 'Poppins', sans-serif;
-        font-size: 2vh;
+        font-size: 1rem;
         transition: background-color var(--short-transition) ease-in-out;
         z-index: 10;
 
@@ -997,7 +1002,7 @@ hr {
         right: 3vh;
         top: 0;
         height: 100%;
-        font-size: 3vh;
+        font-size: 1.5rem;
         display: flex;
         align-items: center;
     }
@@ -1032,7 +1037,7 @@ hr {
         right: 3vh;
         top: 0;
         height: 100%;
-        font-size: 4vh;
+        font-size: 2rem;
         display: flex;
         align-items: center;
     }
@@ -1063,7 +1068,7 @@ hr {
         right: 3vh;
         top: 0;
         height: 100%;
-        font-size: 4vh;
+        font-size: 2rem;
         display: flex;
         align-items: center;
     }
@@ -1072,7 +1077,7 @@ hr {
 .button {
     display: inline-block;
     font-family: 'Mochiy Pop P One', sans-serif;
-    font-size: 2.1vh;
+    font-size: 1rem;
     letter-spacing: 4;
     padding: 1.5vh 4vh;
     margin: 3vh;
@@ -1186,7 +1191,7 @@ hr {
         transform: translateX(110vw);
 
         & .navlink .link-text {
-            font-size: 2vh;
+            font-size: 1rem;
 
             &::after {
                 left: 3vh;
@@ -1195,9 +1200,9 @@ hr {
     }
 
     footer .footer-vogel {
-        position: relative;
-        left: calc((100vw - (var(--container) + 2 * 5vh)) / 2);
-        margin-top: calc(10vh);
+        position: absolute;
+        left: 50vw;
+        transform: translateX(-50%);
     }
 
     .card{
