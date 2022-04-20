@@ -333,7 +333,7 @@ body::-webkit-scrollbar {
 }
 
 html, body {
-    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 1.2vw, 1.5rem);
     font-weight: 400;
     color: var(--standard-schrift); 
     background-color: var(--hintergrund1);
@@ -353,11 +353,15 @@ table {
     }
 
     & tr {
-        width: 100%;
+        width: auto;
 
         & th, td {
-            padding: 1vh;
+            padding: 0.6rem;   
+            // text-size-adjust: 100%;         
             width: auto;
+            // word-break: break-word;
+            // white-space: pre-wrap;
+            // word-wrap: break-word;
         }
 
         & th {
@@ -374,49 +378,49 @@ table {
 
 h1 {
     font-family: 'Public Sans', sans-serif;
-    font-size: 5rem;
+    font-size: clamp(4.2rem, 5.5vw, 5rem);
     font-weight: 900;
     margin: 10vh 0;
 }
 
 h2 {
     font-family: 'Public Sans', sans-serif;
-    font-size: 3rem;
+    font-size: clamp(2.5rem, 3.3vw, 3rem);
     font-weight: 800;
     margin: 3vh 0;
 }
 
 h3 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 2.25rem;
+    font-size: clamp(1.9rem, 2.5vw, 2.3rem);
     font-weight: 800;
     margin: 2.5vh 0;
 }
 
 h4 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.9rem;
+    font-size: clamp(1.5rem, 2vw, 1.9rem);
     font-weight: 700;
     margin: 2vh 0;
 }
 
 h5 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.64vw, 1.5rem);
     font-weight: 600;
     margin: 1.5vh 0;
 }
 
 h6 {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 1.3vw, 1.3rem);
     font-weight: 500;
     margin: 1vh 0;
 }
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
     font-weight: 500;
 }
 
@@ -673,7 +677,7 @@ hr {
     height: 100vh;
     width: 80vh;
     padding: 25vh 10vh;
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 1.64vw, 1.5rem);
     background: var(--hintergrund2);
     transform: translateX(100vh); 
     transition: transform var(--middle-transition) ease-in-out;
@@ -754,7 +758,7 @@ hr {
 			position: relative;
             color: var(--standard-schrift);
 			transform-origin: left center;
-			font-size: 1.5rem;
+			font-size: clamp(1.2rem, 1.64vw, 1.5rem);
 			font-weight: 600;
 			transition: transform 1s cubic-bezier(.19,1,.22,1);
 			
@@ -925,16 +929,10 @@ hr {
         top: 78%;
         transition: top var(--long-transition) var(--bounce-easing);
         user-select: none;
-
-        &>div {
-            font-family: 'Open Sans', sans-serif;
-            font-size: 1.9rem;
-            font-weight: 700;
-            margin: 2vh 0;
-        }
     
-        & p {
+        &>p {
             transition: margin var(--long-transition) var(--bounce-easing);
+            font-size: 1rem;
             padding-top: 40%;
         }
     }
@@ -1145,7 +1143,7 @@ hr {
 .img {
     display: block;
     max-height: 80vh;
-    max-width: 80vh;
+    max-width: 100%;
     margin-block: 3vh;
     border-radius: var(--border-radius);
 

@@ -35,24 +35,27 @@ fetch('/tools/indexer/index.json').then(function (response) {
   alert('Error in loading json file.');
 });
 
+let ergebnisse;
+
 $("#search").on('keyup', function (e) {
   if((e.key !== "Tab" || e.keyCode !== 9) && (e.key !== "Shift" || e.keyCode !== 16) && (e.key !== "Enter" || e.keyCode !== 13)) {
-    let search = document.getElementById('search_div');
+    let search = document.getElementsByClassName('search_div');
     //search.scrollIntoViewIfNeeded(true);
 
     let pattern = document.getElementById('search').value;
-    let ergebnisse = fuse.search(pattern);
+    ergebnisse = fuse.search(pattern);
 
     let container = document.getElementById('ergebnisse');
     container.innerHTML = ''; 
 
     console.log(JSON.stringify(ergebnisse,null,2));
 
-    if(pattern != ""){
-      document.querySelector('#search_div').setAttribute('data-after', 'Press Enter to open the first result!');
+    if(pattern != "" && ergebnisse != ""){
+      if(!window.matchMedia("(pointer: coarse)").matches)
+        document.querySelector('.search_div').setAttribute('data-after', 'Press Enter to open the first result!');
     }
     else {
-      document.querySelector('#search_div').setAttribute('data-after', '');
+      document.querySelector('.search_div').setAttribute('data-after', '');
     }
 
 
@@ -72,7 +75,8 @@ $("#search").on('keyup', function (e) {
 
 document.onkeydown = function (e) {  
   if((e.key === "Tab" || e.keyCode === 9)){
-    document.querySelector('#search_div').setAttribute('data-after', 'Press Enter to open the selected result!');
+    if(!window.matchMedia("(pointer: coarse)").matches && ergebnisse != "")
+      document.querySelector('.search_div').setAttribute('data-after', 'Press Enter to open the selected result!');
 
     let active_element = document.getElementById('active');
     if(active_element == null) {

@@ -311,7 +311,7 @@ body::-webkit-scrollbar {
 }
 
 html, body {
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 1.2vw, 1.5rem);
   font-weight: 400;
   color: var(--standard-schrift);
   background-color: var(--hintergrund1);
@@ -329,10 +329,10 @@ table tr, table th, table td {
   border: 0.5vh solid var(--border-color1);
 }
 table tr {
-  width: 100%;
+  width: auto;
 }
 table tr th, table tr td {
-  padding: 1vh;
+  padding: 0.6rem;
   width: auto;
 }
 table tr th {
@@ -346,49 +346,49 @@ table tr td.right {
 
 h1 {
   font-family: "Public Sans", sans-serif;
-  font-size: 5rem;
+  font-size: clamp(4.2rem, 5.5vw, 5rem);
   font-weight: 900;
   margin: 10vh 0;
 }
 
 h2 {
   font-family: "Public Sans", sans-serif;
-  font-size: 3rem;
+  font-size: clamp(2.5rem, 3.3vw, 3rem);
   font-weight: 800;
   margin: 3vh 0;
 }
 
 h3 {
   font-family: "Open Sans", sans-serif;
-  font-size: 2.25rem;
+  font-size: clamp(1.9rem, 2.5vw, 2.3rem);
   font-weight: 800;
   margin: 2.5vh 0;
 }
 
 h4 {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.9rem;
+  font-size: clamp(1.5rem, 2vw, 1.9rem);
   font-weight: 700;
   margin: 2vh 0;
 }
 
 h5 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1.64vw, 1.5rem);
   font-weight: 600;
   margin: 1.5vh 0;
 }
 
 h6 {
   font-family: "Raleway", sans-serif;
-  font-size: 1.25rem;
+  font-size: clamp(1.1rem, 1.3vw, 1.3rem);
   font-weight: 500;
   margin: 1vh 0;
 }
 
 p {
   font-family: "Poppins", sans-serif;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
   font-weight: 500;
 }
 
@@ -724,7 +724,7 @@ hr.short {
   height: 100vh;
   width: 80vh;
   padding: 25vh 10vh;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1.64vw, 1.5rem);
   background: var(--hintergrund2);
   -webkit-transform: translateX(100vh);
           transform: translateX(100vh);
@@ -834,7 +834,7 @@ hr.short {
   color: var(--standard-schrift);
   -webkit-transform-origin: left center;
           transform-origin: left center;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 1.64vw, 1.5rem);
   font-weight: 600;
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1057,15 +1057,10 @@ hr.short {
       -ms-user-select: none;
           user-select: none;
 }
-.card .card-text > div {
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.9rem;
-  font-weight: 700;
-  margin: 2vh 0;
-}
-.card .card-text p {
+.card .card-text > p {
   -webkit-transition: margin var(--long-transition) var(--bounce-easing);
   transition: margin var(--long-transition) var(--bounce-easing);
+  font-size: 1rem;
   padding-top: 40%;
 }
 .card:hover .card-before {
@@ -1277,7 +1272,7 @@ hr.short {
 .img {
   display: block;
   max-height: 80vh;
-  max-width: 80vh;
+  max-width: 100%;
   margin-block: 3vh;
   border-radius: var(--border-radius);
 }

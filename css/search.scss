@@ -35,9 +35,10 @@ body {
     min-height: 100vh;
 }
 
-#search_div {
-    position: absolute;
-    width: 100%;
+.search_div {
+    position: relative;
+    width: clamp(4vh, 60rem, calc(100% - 32vh));
+    margin: 4vh auto 0;
 
     & form {
         & #search {
@@ -68,6 +69,7 @@ body {
         right: 4vh;
         top: 0;
         height: 100%;
+        max-width: 50%;
         color: var(--border-color1);
         font-size: 1.8vh;
         display: flex;
@@ -79,7 +81,7 @@ body {
 #ergebnisse {
     position: relative;
     width: var(--container);
-    margin: 20vh auto;
+    margin: 8vh auto;
 
     & div { 
         width: 100%;
@@ -133,4 +135,11 @@ body {
         }
     }
 
+}
+
+@media screen and (max-width: 40rem) {
+    .search_div {
+        width: calc(100% - 8vh);
+        margin: 16vh auto 0;
+    }
 }

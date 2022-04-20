@@ -22,7 +22,7 @@ function OnLoadLeaf() {
     ThemeSwitch();
     TastenkombinationenActiveToggle();
     AddCopyButtons();
-    PicRandomVogel();    
+    PicRandomVogel();
 }
 
 function OnLoadMin() {
