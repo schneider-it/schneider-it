@@ -57,26 +57,22 @@ function ThemeSwitch() {
 
     themeSwitch.onclick = function() {
         if(localStorage.getItem("colorTheme") == null){
-            // if(!(body.classList.contains("dark") || body.classList.contains("light"))) {
-                if(window.matchMedia('(prefers-color-scheme: light)').matches){
-                    body.classList.add("dark");
-                    localStorage.setItem("colorTheme", "dark");
-                }
-                else {
-                    body.classList.add("light");
-                    localStorage.setItem("colorTheme", "light");
-                }
-            // }
+            if(window.matchMedia('(prefers-color-scheme: light)').matches){
+                body.setAttribute("colorTheme", "dark");
+                localStorage.setItem("colorTheme", "dark");
+            }
+            else {
+                body.setAttribute("colorTheme", "light");
+                localStorage.setItem("colorTheme", "light");
+            }
         }
         else {
-            if(body.classList.contains("dark")){
-                body.classList.add("light");
-                body.classList.remove("dark");
+            if(body.getAttribute("colorTheme") == "dark"){
+                body.setAttribute("colorTheme", "light");
                 localStorage.setItem("colorTheme", "light");
             }
             else {
-                body.classList.add("dark");
-                body.classList.remove("light");
+                body.setAttribute("colorTheme", "dark");
                 localStorage.setItem("colorTheme", "dark");
             }
         }
@@ -84,10 +80,10 @@ function ThemeSwitch() {
 
     if(localStorage.getItem("colorTheme") != null) {
         if(localStorage.getItem("colorTheme") == "dark"){
-            body.classList.add("dark");
+            body.setAttribute("colorTheme", "dark");
         }
         else if(localStorage.getItem("colorTheme") == "light"){
-            body.classList.add("light");
+            body.setAttribute("colorTheme", "light");
         }
     }
 }
@@ -241,10 +237,6 @@ if(!window.matchMedia("(pointer: coarse)").matches) { // none, fine, coarse
         link.addEventListener('mousemove', (event) => mouseNavEnterHandler(event, link));
         link.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, link));
     });
-    
-    // const themeSwitch = document.querySelector('.themeSwitch');
-    // themeSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, themeSwitch));
-    // themeSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, themeSwitch));
 
     if(themeSwitch = document.querySelector('.themeSwitch')) {
         themeSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, themeSwitch));

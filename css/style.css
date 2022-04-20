@@ -37,7 +37,7 @@ font-family: 'Source Code Pro', monospace;
 
 /*#endregion */
 /*#region Farben*/
-:root, body.light {
+:root, body[colorTheme=light] {
   --hauptfarbe: #7366be;
   --nebenfarbe1: #1e88e5;
   --nebenfarbe2: #5865F2;
@@ -149,7 +149,7 @@ font-family: 'Source Code Pro', monospace;
     --code-normal: #DCDCDC;
   }
 }
-body.dark {
+body[colorTheme=dark] {
   --hintergrund1: #23272A;
   --hintergrund2: #36393F;
   --hintergrund3: #1C1B29;
@@ -241,19 +241,19 @@ body.dark {
     display: none;
   }
 }
-.light .moon {
+body[colorTheme=light] .moon {
   display: inline-block;
 }
 
-.light .sun {
+body[colorTheme=light] .sun {
   display: none;
 }
 
-.dark .moon {
+body[colorTheme=dark] .moon {
   display: none;
 }
 
-.dark .sun {
+body[colorTheme=dark] .sun {
   display: inline-block;
 }
 
