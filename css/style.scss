@@ -544,6 +544,7 @@ hr {
 .search_button {
     left: initial;
     right: 16vh;
+    z-index: 1001;
 
     &>a {
         &>ion-icon {
@@ -771,7 +772,6 @@ hr {
 		}		
 	}
 	
-	
 	& .navlink:hover .link-text {
 		transform: translateY(-220%) skewY(6deg);
 		
@@ -794,7 +794,7 @@ hr {
     }
 }
 
-.navigation-blur-filter, .tastenkombinationen-blur-filter {
+.navigation-blur-filter, .tastenkombinationen-background_close {
     position: fixed;
     top: 0;
     left: 0;
@@ -812,7 +812,18 @@ hr {
     }
 }
 
-.tastenkombinationen-blur-filter {
+.tastenkombinationen-iframe {
+    display: none;
+    position: fixed; 
+    height: 800px; 
+    width: 1000px;
+    margin: calc((100vh - 800px)/2) calc((100vw - 1000px)/2); 
+    border: 3px #ccc solid;
+    border-radius: 10px;
+    z-index: 1010;
+}
+
+.tastenkombinationen-background_close {
     transition: none;
 
     &.active {

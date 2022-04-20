@@ -506,6 +506,7 @@ hr.short {
 .search_button {
   left: initial;
   right: 16vh;
+  z-index: 1001;
 }
 .search_button > a > ion-icon {
   width: 60%;
@@ -880,7 +881,7 @@ hr.short {
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity var(--short-transition) ease-in-out calc(var(--middle-transition) - var(--short-transition)), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.navigation-blur-filter, .tastenkombinationen-blur-filter {
+.navigation-blur-filter, .tastenkombinationen-background_close {
   position: fixed;
   top: 0;
   left: 0;
@@ -892,18 +893,29 @@ hr.short {
   transition: opacity var(--middle-transition) ease-in-out, z-index 0s var(--middle-transition);
   z-index: -999;
 }
-.navigation-blur-filter.active, .tastenkombinationen-blur-filter.active {
+.navigation-blur-filter.active, .tastenkombinationen-background_close.active {
   -webkit-transition: opacity var(--middle-transition) ease-in-out, z-index 0s;
   transition: opacity var(--middle-transition) ease-in-out, z-index 0s;
   opacity: 0.25;
   z-index: 990;
 }
 
-.tastenkombinationen-blur-filter {
+.tastenkombinationen-iframe {
+  display: none;
+  position: fixed;
+  height: 800px;
+  width: 1000px;
+  margin: calc((100vh - 800px) / 2) calc((100vw - 1000px) / 2);
+  border: 3px #ccc solid;
+  border-radius: 10px;
+  z-index: 1010;
+}
+
+.tastenkombinationen-background_close {
   -webkit-transition: none;
   transition: none;
 }
-.tastenkombinationen-blur-filter.active {
+.tastenkombinationen-background_close.active {
   opacity: 0;
   z-index: 1009;
 }

@@ -179,14 +179,14 @@ function NavigationActiveToggle() {
 
 function TastenkombinationenActiveToggle() {
     let tastenkombinationenSwitch = document.querySelector('.tastenkombinationenSwitch');
-    let blurfilter = document.querySelector('.tastenkombinationen-blur-filter');
+    let background_close = document.querySelector('.tastenkombinationen-background_close');
     let tastenkombinationen_iframe = document.querySelector('.tastenkombinationen-iframe');
     tastenkombinationenSwitch.onclick = function() {
-        blurfilter.classList.add('active'); // damit Hintergrund verschwommen
+        background_close.classList.add('active'); // damit Hintergrund verschwommen
         tastenkombinationen_iframe.style.display = "block";
     }
-    blurfilter.onclick = function() {
-        blurfilter.classList.remove('active');
+    background_close.onclick = function() {
+        background_close.classList.remove('active');
         tastenkombinationen_iframe.style.display = "none";
     }
 }
