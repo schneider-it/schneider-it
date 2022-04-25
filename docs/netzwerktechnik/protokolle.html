@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link href="/css/fa_all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Netzwerktechnik - Protokolle</title>
 </head>
 <body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
     <div class="search_button">
-        <a href="/tools/search.html">
+        <a href="/components/search.html">
             <ion-icon name="search"></ion-icon>
         </a>
     </div>
@@ -96,328 +96,303 @@
         </a>
     </div>
 
-    <div class="section center searchable">
-        <div class="container fluid" style="background: var(--nyc-taxi); color: var(--schrift-auf-hellem-hintergrund);">
-            <div class="container small" style="padding: 10vh 0;">
-                <div class="flex-between nowrap">
-                    <div class="flex-center-v">
-                        <img src="/img/ftp.png" alt="Netzwerktechnik_Logo" class="img small" style="margin: 0;">
-                    </div>
-                    <div class="flex-center-v" style="width: 70vw; text-align: right;">
-                        <div>
-                            <h2 style="margin-bottom: 5vh;">Protokolle</h2>
-                            <p style="max-width: 30vw; float: right;">
-                                Hier sind alle Protokolle, die für ein funktionierendes Netzwerk notwendig sind, 
-                                aufgelistet und werden jeweils erklärt.
-                            </p>
-                        </div>
-                    </div>
+    <div class="title">
+        <img src="/img/ftp.png" alt="FTP_Logo">
+        <h1>Protokolle</h1>
+    </div>
+    <div></div>
+
+    <div class="cards">
+        <a href="protokolle/ip.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/IP.svg" alt="IP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>IP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Internet Protocol.
+                        Dieses Protokoll stellt die Grundlage des Internets da.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="section">        
-        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
-            <div class="container" style="padding: 8vh 0;">
-                <h2>Unterkategorien der Protokolle</h2>
+        </a>
+        <a href="protokolle/tcp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/TCP.svg" alt="TCP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>TCP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Transmission Control Protocol.
+                        Es kümmert sich um eine verbindungsorientierte Datenübertragung zwischen Computer und Servern.
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <div class="container" style="margin-top: 10vh;">
-            <div class="flex-between">
-                <a href="protokolle/ip.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/IP.svg" alt="IP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>IP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Internet Protocol.
-                                Dieses Protokoll stellt die Grundlage des Internets da.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/tcp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/TCP.svg" alt="TCP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>TCP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Transmission Control Protocol.
-                                Es kümmert sich um eine verbindungsorientierte Datenübertragung zwischen Computer und Servern.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/udp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/UDP.svg" alt="UDP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>UDP</h4>
-                            <p>
-                                Hier lernen Sie alles über das User Datagram Protocol.
-                                Es kümmert sich um eine verbindungslose Datenübertragung zwischen Computer und Servern.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="protokolle/nat.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/NAT.svg" alt="NAT" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>NAT</h4>
-                            <p>
-                                Hier lernen Sie alles über das Network Address Translation.
-                                Dieses Protokoll ist wesentlich, um ein lokales Netzwerk mit dem Internet zu verbinden.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/arp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/ARP.svg" alt="ARP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>ARP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Address Resolution Protocol.
-                                Dieses Protokoll wandelt IP-Adressen in MAC-Adressen um und vice versa.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/http.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/HTTP.svg" alt="HTTP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>HTTP</h4>
-                            <p>
-                                Hier lernen Sie alles über das HyperText Transfer Protocol.
-                                Dieses Protokoll regelt die Datenübertragung zwischen Anwendungen, meistens im Internet.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="protokolle/https.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/HTTPS.svg" alt="HTTPS" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>HTTPS</h4>
-                            <p>
-                                Hier lernen Sie alles über das HyperText Transfer Protocol Secure.
-                                Dieses Protokoll ist wie HTTP, nur verschlüsselt.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/dhcp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/DHCP.svg" alt="DHCP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>DHCP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Dynamic Host Configuration Protocol.
-                                Dieses Protokoll vergibt Rechnern in einem lokalem Netzwerk IP-Adressen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/dns.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/DNS.svg" alt="DNS" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>DNS</h4>
-                            <p>
-                                Hier lernen Sie alles über das Domain Name System.
-                                Dieses Protokoll managed die Namensauflösung, weil Menschen sich Namen leichter merken.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="protokolle/ftp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/FTP.svg" alt="FTP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>FTP</h4>
-                            <p>
-                                Hier lernen Sie alles über das File Transfer Protocol.
-                                Dieses Protokoll bietet eine leichte Möglichkeit Dateien zu teilen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/tftp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/TFTP.svg" alt="TFTP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>TFTP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Trivial File Transfer Protocol.
-                                Dieses Protokoll ist eine abgespeckte Version von FTP.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/rdp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/RDP.svg" alt="RDP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>RDP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Remote Desktop Protocol.
-                                Dieses Protokoll sorgt für eine funktionierende Remote-Verbindung.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="protokolle/smtp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/SMTP.svg" alt="SMTP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>SMTP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Simple Mail Transfer Protocol.
-                                Dieses Protokoll managed den Ausgangsserver eines Mailservers.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/pop3.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/POP3.svg" alt="POP3" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>POP3</h4>
-                            <p>
-                                Hier lernen Sie alles über das Post Office Protocol.
-                                Dieses Protokoll ist ein Eingangsserver (die E-Mails werden am Client gespeichert).
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/imap.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/IMAP.svg" alt="IMAP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>IMAP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Internet Message Access Protocol.
-                                Dieses Protokoll ist ein moderner Eingangsserver (die E-Mails werden immer am Server gespeichert).
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                
-                <a href="protokolle/ssh.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/SSH.svg" alt="SSH" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>SSH</h4>
-                            <p>
-                                Hier lernen Sie alles über das Secure Shell.
-                                Dieses Protokoll wird verwendet, um lokal eine entfernte Kommandozeile verfügbar zu machen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/ntp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/NTP.svg" alt="NTP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>NTP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Network Time Protocol.
-                                Dieses Protokoll sorgt für eine perfekte Synchronisierung von Echtzeituhren in Computersystemen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/icmp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/ICMP.svg" alt="ICMP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>ICMP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Internet Control Message Protocol.
-                                Dieses Protokoll dient zum Austausch von Nachrichtenmeldungen und Fehlermeldungen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="protokolle/icmp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/NDP.svg" alt="NDP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>NDP</h4>
-                            <p>
-                                Hier lernen Sie alles über das Neighbor Discovery Protocol.
-                                Dieses Protokoll tauscht Informationen zwischen einzelnen Host aus.
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        </a>
+        <a href="protokolle/udp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/UDP.svg" alt="UDP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>UDP</h4>
+                    <p>
+                        Hier lernen Sie alles über das User Datagram Protocol.
+                        Es kümmert sich um eine verbindungslose Datenübertragung zwischen Computer und Servern.
+                    </p>
+                </div>
             </div>
-        </div>
+        </a>
+        
+        <a href="protokolle/nat.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/NAT.svg" alt="NAT" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>NAT</h4>
+                    <p>
+                        Hier lernen Sie alles über das Network Address Translation.
+                        Dieses Protokoll ist wesentlich, um ein lokales Netzwerk mit dem Internet zu verbinden.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/arp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/ARP.svg" alt="ARP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>ARP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Address Resolution Protocol.
+                        Dieses Protokoll wandelt IP-Adressen in MAC-Adressen um und vice versa.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/http.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/HTTP.svg" alt="HTTP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>HTTP</h4>
+                    <p>
+                        Hier lernen Sie alles über das HyperText Transfer Protocol.
+                        Dieses Protokoll regelt die Datenübertragung zwischen Anwendungen, meistens im Internet.
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="protokolle/https.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/HTTPS.svg" alt="HTTPS" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>HTTPS</h4>
+                    <p>
+                        Hier lernen Sie alles über das HyperText Transfer Protocol Secure.
+                        Dieses Protokoll ist wie HTTP, nur verschlüsselt.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/dhcp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/DHCP.svg" alt="DHCP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>DHCP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Dynamic Host Configuration Protocol.
+                        Dieses Protokoll vergibt Rechnern in einem lokalem Netzwerk IP-Adressen.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/dns.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/DNS.svg" alt="DNS" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>DNS</h4>
+                    <p>
+                        Hier lernen Sie alles über das Domain Name System.
+                        Dieses Protokoll managed die Namensauflösung, weil Menschen sich Namen leichter merken.
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="protokolle/ftp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/FTP.svg" alt="FTP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>FTP</h4>
+                    <p>
+                        Hier lernen Sie alles über das File Transfer Protocol.
+                        Dieses Protokoll bietet eine leichte Möglichkeit Dateien zu teilen.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/tftp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/TFTP.svg" alt="TFTP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>TFTP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Trivial File Transfer Protocol.
+                        Dieses Protokoll ist eine abgespeckte Version von FTP.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/rdp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/RDP.svg" alt="RDP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>RDP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Remote Desktop Protocol.
+                        Dieses Protokoll sorgt für eine funktionierende Remote-Verbindung.
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="protokolle/smtp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/SMTP.svg" alt="SMTP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>SMTP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Simple Mail Transfer Protocol.
+                        Dieses Protokoll managed den Ausgangsserver eines Mailservers.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/pop3.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/POP3.svg" alt="POP3" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>POP3</h4>
+                    <p>
+                        Hier lernen Sie alles über das Post Office Protocol.
+                        Dieses Protokoll ist ein Eingangsserver (die E-Mails werden am Client gespeichert).
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/imap.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/IMAP.svg" alt="IMAP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>IMAP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Internet Message Access Protocol.
+                        Dieses Protokoll ist ein moderner Eingangsserver (die E-Mails werden immer am Server gespeichert).
+                    </p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="protokolle/ssh.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/SSH.svg" alt="SSH" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>SSH</h4>
+                    <p>
+                        Hier lernen Sie alles über das Secure Shell.
+                        Dieses Protokoll wird verwendet, um lokal eine entfernte Kommandozeile verfügbar zu machen.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/ntp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/NTP.svg" alt="NTP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>NTP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Network Time Protocol.
+                        Dieses Protokoll sorgt für eine perfekte Synchronisierung von Echtzeituhren in Computersystemen.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/icmp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/ICMP.svg" alt="ICMP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>ICMP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Internet Control Message Protocol.
+                        Dieses Protokoll dient zum Austausch von Nachrichtenmeldungen und Fehlermeldungen.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="protokolle/icmp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/NDP.svg" alt="NDP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>NDP</h4>
+                    <p>
+                        Hier lernen Sie alles über das Neighbor Discovery Protocol.
+                        Dieses Protokoll tauscht Informationen zwischen einzelnen Host aus.
+                    </p>
+                </div>
+            </div>
+        </a>
     </div>
 
     <footer>

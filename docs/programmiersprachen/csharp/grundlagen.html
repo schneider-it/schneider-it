@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link href="/css/fa_all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Programmiersprachen - C# - Grundlagen</title>
 </head>
 <body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
     <div class="search_button">
-        <a href="/tools/search.html">
+        <a href="/components/search.html">
             <ion-icon name="search"></ion-icon>
         </a>
     </div>
@@ -95,83 +95,55 @@
             <ion-icon name="arrow-back-outline"></ion-icon>
         </a>
     </div>
+    <div class="title">
+        <img src="/img/grundlagen.png" alt="Grundlagen_Logo">
+        <h1>Grundlagen C#</h1>
+    </div>
+    <div></div>
 
-    <div class="section center searchable">
-        <div class="container fluid" style="background: var(--nyc-taxi); color: var(--schrift-auf-hellem-hintergrund);">
-            <div class="container small" style="padding: 10vh 0;">
-                <div class="flex-between nowrap">
-                    <div class="flex-center-v">
-                        <img src="/img/grundlagen.png" alt="Grundlagen_Logo" class="img small" style="margin: 0;">
-                    </div>
-                    <div class="flex-center-v" style="width: 70vw; text-align: right;">
-                        <div>
-                            <h2 style="margin-bottom: 5vh;">Grundlagen C#</h2>
-                            <p style="max-width: 30vw; float: right;">
-                                Hier lernen Sie die verschiedenen Datentypen, die Flusssteuerung und statische Methoden kennen.
-                            </p>
-                        </div>
-                    </div>
+    <div class="cards">
+        <a href="grundlagen/datentypen.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/layers.png" alt="Datentypen" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Datentypen</h4>
+                    <p>
+                        Lernen Sie etwas über Integers, Strings und vieles mehr.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="section">        
-        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
-            <div class="container" style="padding: 8vh 0;">
-                <div style="font-family: 'Public Sans', sans-serif;
-                font-size: 5.8vh;
-                font-weight: 800;
-                margin: 3vh 0;">Unterkategorien von Grundlagen</div>
+        </a>
+        <a href="grundlagen/flusssteuerung.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/reihenfolge.png" alt="Flowcontrol" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Flowcontrol</h4>
+                    <p>
+                        Lernen Sie, wie Sie Ihr Programm steuern können. If, While, For und vieles mehr.
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <div class="container" style="margin-top: 10vh;">
-            <div class="flex-between">
-                <a href="grundlagen/datentypen.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/layers.png" alt="Datentypen" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Datentypen</h4>
-                            <p>
-                                Lernen Sie etwas über Integers, Strings und vieles mehr.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="grundlagen/flusssteuerung.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/reihenfolge.png" alt="Flowcontrol" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Flowcontrol</h4>
-                            <p>
-                                Lernen Sie, wie Sie Ihr Programm steuern können. If, While, For und vieles mehr.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="grundlagen/methoden.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/organisieren.png" alt="Methoden" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Methoden</h4>
-                            <p>
-                                Lernen Sie statische Methoden kennen, die Ihnen helfen Ihr Programm übersichtlicher zu gestalten.
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        </a>
+        <a href="grundlagen/methoden.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/organisieren.png" alt="Methoden" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Methoden</h4>
+                    <p>
+                        Lernen Sie statische Methoden kennen, die Ihnen helfen Ihr Programm übersichtlicher zu gestalten.
+                    </p>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <footer>

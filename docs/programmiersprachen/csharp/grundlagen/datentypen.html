@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link href="/css/fa_all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Programmiersprachen - C# - Grundlagen - Datentypen</title>
 </head>
@@ -18,7 +18,7 @@
     </div> 
 
     <div class="search_button">
-        <a href="/tools/search.html">
+        <a href="/components/search.html">
             <ion-icon name="search"></ion-icon>
         </a>
     </div>
@@ -100,25 +100,11 @@
         </a>
     </div>
 
-    <div class="section center searchable">
-        <div class="container fluid" style="background: var(--nyc-taxi); color: var(--schrift-auf-hellem-hintergrund);">
-            <div class="container small" style="padding: 10vh 0;">
-                <div class="flex-between nowrap">
-                    <div class="flex-center-v">
-                        <img src="/img/layers.png" alt="Datentypen_Logo" class="img small" style="margin: 0;">
-                    </div>
-                    <div class="flex-center-v" style="width: 70vw; text-align: right;">
-                        <div>
-                            <h2 style="margin-bottom: 5vh;">Datentypen C#</h2>
-                            <p style="max-width: 30vw; float: right;">
-                                Hier lernen Sie die verschiedenen Datentypen, zum Beispiel Integers oder Strings, kennen.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="title">
+        <img src="/img/layers.png" alt="Layers_Logo">
+        <h1>Datentypen C#</h1>
     </div>
+    <div></div>
 
     <div class="section searchable">
         <div class="container" style="margin-top: 10vh;">
@@ -255,7 +241,7 @@
                         Dabei kommt die Frage auf, wie man nun am besten negative Zahlen speichern soll. 
                         Die einfachste Lösung ist wahrscheinlich das erste Bit einer Zahl. <br><br>
                         Das SByte sieht zum Beispiel auf einer runden Zahlengerade so aus:
-                        <a href="/img/Wertebereich.png" data-lightbox="lightbox" data-title="Wertebereich SByte"><img src="/img/Wertebereich.png" alt="Wertebereich" class="img invert medium"></a>
+                        <a href="/img/Wertebereich.png" data-lightbox="lightbox" data-title="Wertebereich SByte"><img src="/img/Wertebereich.png" alt="Wertebereich" class="img" invert img-size="medium"></a>
                         Dadurch, dass Zahlen in C# so aufgebaut sind, lassen sich lustige Programme schreiben:
                         <div class="code">
                             <span class="code-keyword">sbyte</span> <span class="code-variable">mySByte</span>; <br>
@@ -548,7 +534,7 @@
                             <span class="code-keyword">int</span>[,,] <span class="code-variable">myIntArray3</span> = <span class="code-keyword">new int</span>[<span class="code-number">3</span>, <span class="code-number">3</span>, <span class="code-number">3</span>];
                         </div>
                         Letzteres Array kann man sich so vorstellen:
-                        <a href="img/3dim_array2.png" data-lightbox="lightbox" data-title="3x3x3 Array - 3-dimensionales Array"><img src="img/3dim_array2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-kontrast img-small"></a>
+                        <a href="/img/3dim_array2.png" data-lightbox="lightbox" data-title="3x3x3 Array - 3-dimensionales Array"><img src="/img/3dim_array2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert img-size="small"></a>
                         Eine Initialisierung der einzelnen Felder eines Arrays sieht zum Beispiel so aus:
                         <div class="code">
                             <span class="code-variable">myIntArray</span>[<span class="code-number">0</span>] = -<span class="code-number">10</span>;

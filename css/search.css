@@ -1,31 +1,3 @@
-:root, body.light {
-  --ergebnis-div-shadow: #ccc;
-  --ergebnis-div-shadow-active: #444;
-  --ergebnis-h-color: #333;
-  --ergebnis-h-color-active: #fff;
-  --ergebnis-p-color: #666;
-  --ergebnis-p-color-active: #eee;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --ergebnis-div-shadow: #000;
-    --ergebnis-div-shadow-active: #000;
-    --ergebnis-h-color: #fff;
-    --ergebnis-h-color-active: #fff;
-    --ergebnis-p-color: #bbb;
-    --ergebnis-p-color-active: #eee;
-  }
-}
-body.dark {
-  --ergebnis-div-shadow: #000;
-  --ergebnis-div-shadow-active: #000;
-  --ergebnis-h-color: #fff;
-  --ergebnis-h-color-active: #fff;
-  --ergebnis-p-color: #bbb;
-  --ergebnis-p-color-active: #eee;
-}
-
 html {
   overflow-y: scroll;
 }
@@ -43,10 +15,10 @@ body {
   width: 100%;
   height: 8vh;
   padding: 3vh 5vh 3vh 9vh;
-  background: var(--hintergrund2);
+  background: hsl(210deg, 10%, 20%);
   border-radius: 10000px;
-  -webkit-box-shadow: 0px 20px 0px -10px var(--ergebnis-div-shadow);
-          box-shadow: 0px 20px 0px -10px var(--ergebnis-div-shadow);
+  -webkit-box-shadow: 0px 20px 0px -10px hsl(0deg, 0%, 0%);
+          box-shadow: 0px 20px 0px -10px hsl(0deg, 0%, 0%);
 }
 .search_div::before {
   font: var(--fa-font-solid);
@@ -70,7 +42,7 @@ body {
   top: 0;
   height: 100%;
   max-width: 50%;
-  color: var(--border-color1);
+  color: hsl(0deg, 0%, 60%);
   font-size: 1.8vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -86,17 +58,17 @@ body {
 
 #ergebnisse {
   position: relative;
-  width: var(--container);
+  width: 80%;
   margin: 8vh auto;
 }
 #ergebnisse div {
   width: 100%;
   margin: 5vh 0;
   padding: 3vh 4vh;
-  background: var(--hintergrund2);
+  background: hsl(210deg, 10%, 20%);
   border-radius: 2vh;
-  -webkit-box-shadow: 0px 25px 0px -5px var(--ergebnis-div-shadow);
-          box-shadow: 0px 25px 0px -5px var(--ergebnis-div-shadow);
+  -webkit-box-shadow: 0px 25px 0px -5px hsl(0deg, 0%, 0%);
+          box-shadow: 0px 25px 0px -5px hsl(0deg, 0%, 0%);
   -webkit-transition: color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
   transition: color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out;
@@ -105,37 +77,36 @@ body {
 #ergebnisse div a h4 {
   margin: 0;
   padding: 0;
-  color: var(--ergebnis-h-color);
+  color: hsl(0deg, 0%, 100%);
   font-weight: 700;
 }
 #ergebnisse div a p {
   margin: 0;
   padding: 0;
-  color: var(--ergebnis-p-color);
+  color: hsl(0deg, 0%, 70%);
   font-weight: 400;
 }
 #ergebnisse div:hover {
-  -webkit-box-shadow: 0px 13px 0px -5px var(--ergebnis-div-shadow);
-          box-shadow: 0px 13px 0px -5px var(--ergebnis-div-shadow);
+  -webkit-box-shadow: 0px 13px 0px -5px hsl(0deg, 0%, 0%);
+          box-shadow: 0px 13px 0px -5px hsl(0deg, 0%, 0%);
   -webkit-transform: translateY(12px);
           transform: translateY(12px);
 }
 #ergebnisse div#active {
-  -webkit-box-shadow: 0px 19px 0px -5px var(--ergebnis-div-shadow-active);
-          box-shadow: 0px 19px 0px -5px var(--ergebnis-div-shadow-active);
+  -webkit-box-shadow: 0px 19px 0px -5px hsl(0deg, 0%, 0%);
+          box-shadow: 0px 19px 0px -5px hsl(0deg, 0%, 0%);
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
-  background: var(--nebenfarbe2);
 }
 #ergebnisse div#active a h4 {
-  color: var(--ergebnis-h-color-active);
+  color: hsl(0deg, 0%, 100%);
 }
 #ergebnisse div#active a p {
-  color: var(--ergebnis-p-color-active);
+  color: hsl(0deg, 0%, 90%);
 }
 #ergebnisse div#active:hover {
-  -webkit-box-shadow: 0px 13px 0px -5px var(--ergebnis-div-shadow);
-          box-shadow: 0px 13px 0px -5px var(--ergebnis-div-shadow);
+  -webkit-box-shadow: 0px 13px 0px -5px hsl(0deg, 0%, 0%);
+          box-shadow: 0px 13px 0px -5px hsl(0deg, 0%, 0%);
   -webkit-transform: translateY(12px);
           transform: translateY(12px);
 }

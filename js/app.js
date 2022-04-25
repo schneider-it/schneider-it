@@ -1,34 +1,23 @@
 function OnLoadAll() {
-    NavigationActiveToggle();
-    ThemeSwitch();
-    TastenkombinationenActiveToggle();
+    LoadFooterandHeader();
     VanillaTiltEffect();
     SetCardColors();
     AddCopyButtons();
-    PicRandomVogel();
 }
 
 function OnLoadIndex() {
-    NavigationActiveToggle();
-    ThemeSwitch();
-    TastenkombinationenActiveToggle();
+    LoadFooterandHeader();
     VanillaTiltEffect();
     SetCardColors();
-    PicRandomVogel();    
 }
 
 function OnLoadLeaf() {
-    NavigationActiveToggle();
-    ThemeSwitch();
-    TastenkombinationenActiveToggle();
+    LoadFooterandHeader();
     AddCopyButtons();
-    PicRandomVogel();
 }
 
 function OnLoadMin() {
-    NavigationActiveToggle();
-    ThemeSwitch();
-    TastenkombinationenActiveToggle();
+    LoadFooterandHeader();
 }
 
 function OnScroll() {
@@ -134,29 +123,40 @@ function ShowCopyAccess(id) {
     }, 1200); 
 }
 
-function PicRandomVogel() {
-    var myPix = new Array("/img/vogel1.png","/img/vogel2.png","/img/vogel3.png","/img/vogel4.gif","/img/vogel5.png","/img/vogel6.png","/img/vogel7.png","/img/vogel9.png","/img/vogel10.png","/img/vogel11.png","/img/vogel12.png","/img/vogel13.png","/img/vogel14.png","/img/vogel15.png","/img/vogel16.png","/img/vogel17.png","/img/vogel18.png","/img/vogel19.gif","/img/vogel20.gif","/img/vogel21.gif","/img/vogel22.gif","/img/vogel23.gif","/img/vogel24.gif","/img/vogel25.gif");
-    var randomNum = Math.floor(Math.random() * myPix.length);
-    try{
-        document.getElementById("vogel").src = myPix[randomNum];
-        if(Math.random() < .5 && myPix[randomNum] != "/img/vogel24.gif") {
-            document.getElementById("vogel").style.transform = "scale(-1, 1)";
+function LoadFooterandHeader() {
+    $("#header").load("/components/header.html", function() {
+        NavigationActiveToggle();
+        ThemeSwitch();
+        TastenkombinationenActiveToggle();
+        ActiveFollowCursor();
+    });
+    $("#footer").load("/components/footer.html", function() {
+        var myPix = new Array("/img/vogel1.png","/img/vogel2.png","/img/vogel3.png","/img/vogel4.gif","/img/vogel5.png","/img/vogel6.png","/img/vogel7.png","/img/vogel9.png","/img/vogel10.png","/img/vogel11.png","/img/vogel12.png","/img/vogel13.png","/img/vogel14.png","/img/vogel15.png","/img/vogel16.png","/img/vogel17.png","/img/vogel18.png","/img/vogel19.gif","/img/vogel20.gif","/img/vogel21.gif","/img/vogel22.gif","/img/vogel23.gif","/img/vogel24.gif","/img/vogel25.gif");
+        var randomNum = Math.floor(Math.random() * myPix.length);
+        try{
+            document.getElementById("vogel").src = myPix[randomNum];
+            if(Math.random() < .5 && myPix[randomNum] != "/img/vogel24.gif") {
+                document.getElementById("vogel").style.transform = "scale(-1, 1)";
+            }
+            // document.getElementById("vogel_a").style.cursor = "default";
+        
+            // if(Math.random() < .18){
+            //     document.getElementById("vogel_a").href = "34573r366.html";
+            //     document.getElementById("vogel_a").style.cursor = "pointer";
+            // }
         }
-        // document.getElementById("vogel_a").style.cursor = "default";
+        catch{ console.log("There are no birds in here!") }
+    });
     
-        // if(Math.random() < .18){
-        //     document.getElementById("vogel_a").href = "34573r366.html";
-        //     document.getElementById("vogel_a").style.cursor = "pointer";
-        // }
-    }
-    catch{ console.log("There are no birds in here!") }
 }
 
 function ScrollIndicator() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
-    document.getElementById("scroll_indicator").style.width = scrolled + "%";
+    if(document.getElementById("scroll_indicator") != null){
+        document.getElementById("scroll_indicator").style.width = scrolled + "%";
+    }
 }
 
 //#region MouseTracker & Navigation
@@ -191,78 +191,82 @@ function TastenkombinationenActiveToggle() {
     }
 }
 
-let clientX = 0,
+function ActiveFollowCursor(){
+    let clientX = 0,
 	clientY = 0,
 	navclientY = 0;
 
      
-const navLinks = document.querySelectorAll('.navlink');
+    const navLinks = document.querySelectorAll('.navlink');
 
-const calculateDistance = (x, y, boundary) => {
-	const distance = Math.sqrt((x * x) + (y * y));
-	return distance <= boundary;
-}
+    const calculateDistance = (x, y, boundary) => {
+        const distance = Math.sqrt((x * x) + (y * y));
+        return distance <= boundary;
+    }
 
-const mouseEnterHandler = (event, element) => {
-	const rect = element.getBoundingClientRect();
-	const diffX = clientX - (rect.width / 2) - rect.left;
-	const diffY = clientY - (rect.height / 2) - rect.top;
-	if(calculateDistance(diffX / 2, diffY / 2, 10000)) {
-		element.style.transform = `translate(${diffX * 1.2}px, ${diffY * 1.2}px)`;	
-	}	
-}
+    const mouseEnterHandler = (event, element) => {
+        const rect = element.getBoundingClientRect();
+        const diffX = clientX - (rect.width / 2) - rect.left;
+        const diffY = clientY - (rect.height / 2) - rect.top;
+        if(calculateDistance(diffX / 2, diffY / 2, 10000)) {
+            element.style.transform = `translate(${diffX * 1.2}px, ${diffY * 1.2}px)`;	
+        }	
+    }
 
-const mouseLeaveHandler = (event, element) => {
-	element.style.transform = `translate(0, 0)`;
-}
+    const mouseLeaveHandler = (event, element) => {
+        element.style.transform = `translate(0, 0)`;
+    }
 
-const mouseNavEnterHandler = (event, element) => {
-	const rect = element.getBoundingClientRect();
-	const diffX = clientX - (rect.width / 2) - rect.left;
-	const diffY = navclientY - (rect.height / 2) - rect.top;
-	if(calculateDistance(diffX, diffY, 0.15625 * document.body.offsetWidth)) {
-		element.style.transform = `translate(${diffX/2}px, ${diffY/2}px)`;	
-	}	
-}
+    const mouseNavEnterHandler = (event, element) => {
+        const rect = element.getBoundingClientRect();
+        const diffX = clientX - (rect.width / 2) - rect.left;
+        const diffY = navclientY - (rect.height / 2) - rect.top;
+        if(calculateDistance(diffX, diffY, 0.15625 * document.body.offsetWidth)) {
+            element.style.transform = `translate(${diffX/2}px, ${diffY/2}px)`;	
+        }	
+    }
 
 
-document.addEventListener('mousemove', (e) => {
-	clientX = e.clientX;
-	clientY = e.clientY;
-	navclientY = e.clientY+30; // +20 damit sich Navigation nicht überlappt
-});
-
-if(!window.matchMedia("(pointer: coarse)").matches) { // none, fine, coarse
-    navLinks.forEach(link => {
-        link.addEventListener('mousemove', (event) => mouseNavEnterHandler(event, link));
-        link.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, link));
+    document.addEventListener('mousemove', (e) => {
+        clientX = e.clientX;
+        clientY = e.clientY;
+        navclientY = e.clientY+30; // +20 damit sich Navigation nicht überlappt
     });
 
-    if(themeSwitch = document.querySelector('.themeSwitch')) {
-        themeSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, themeSwitch));
-        themeSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, themeSwitch));        
-    }
+    if(!window.matchMedia("(pointer: coarse)").matches) { // none, fine, coarse
+        navLinks.forEach(link => {
+            link.addEventListener('mousemove', (event) => mouseNavEnterHandler(event, link));
+            link.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, link));
+        });
 
-    if(burger = document.querySelector('.burger')) {
-        burger.addEventListener('mousemove', (event) => mouseEnterHandler(event, burger));
-        burger.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, burger));        
-    }
+        if(themeSwitch = document.querySelector('.themeSwitch')) {
+            themeSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, themeSwitch));
+            themeSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, themeSwitch));        
+        }
 
-    if(back_button = document.querySelector('.back_button')) {
-        back_button.addEventListener('mousemove', (event) => mouseEnterHandler(event, back_button));
-        back_button.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, back_button));
-    }
-    
-    if(search_button = document.querySelector('.search_button')) {
-        search_button.addEventListener('mousemove', (event) => mouseEnterHandler(event, search_button));
-        search_button.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, search_button));
-    }
+        if(burger = document.querySelector('.burger')) {
+            burger.addEventListener('mousemove', (event) => mouseEnterHandler(event, burger));
+            burger.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, burger));        
+        }
 
-    if(tastenkombinationenSwitch = document.querySelector('.tastenkombinationenSwitch')) {
-        tastenkombinationenSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, tastenkombinationenSwitch));
-        tastenkombinationenSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, tastenkombinationenSwitch));
+        if(back_button = document.querySelector('.back_button')) {
+            back_button.addEventListener('mousemove', (event) => mouseEnterHandler(event, back_button));
+            back_button.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, back_button));
+        }
+        
+        if(search_button = document.querySelector('.search_button')) {
+            search_button.addEventListener('mousemove', (event) => mouseEnterHandler(event, search_button));
+            search_button.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, search_button));
+        }
+
+        if(tastenkombinationenSwitch = document.querySelector('.tastenkombinationenSwitch')) {
+            tastenkombinationenSwitch.addEventListener('mousemove', (event) => mouseEnterHandler(event, tastenkombinationenSwitch));
+            tastenkombinationenSwitch.addEventListener('mouseleave', (event) => mouseLeaveHandler(event, tastenkombinationenSwitch));
+        }
     }
 }
+
+
 
 //#endregion
 

@@ -1,0 +1,287 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+@use '../base/animations' as *;
+
+.navigation {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 80vh;
+    padding: 25vh 10vh;
+    font-size: clamp(1.2rem, 1.64vw, 1.5rem);
+    background: $background-color-2;
+    transform: translateX(100vh); 
+    transition: transform $transition-middle ease-in-out;
+    user-select: none;
+    z-index: 1000;
+
+    &>* {
+        opacity: 0;
+        transition: opacity $transition-short ease-in-out;
+    }
+
+    & .themeSwitch, & .tastenkombinationenSwitch {
+        position: absolute;
+        width: 8vh;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+		transition: transform 1s cubic-bezier(.19,1,.22,1), opacity $transition-short ease-in-out;
+    }
+
+    & .themeSwitch {
+        top: 4vh;
+        left: 4vh;
+    }
+
+    & .tastenkombinationenSwitch {
+        bottom: 4vh;
+        right: 4vh;
+    }
+
+    & .list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+        flex-direction: column;
+	}
+	
+	& .item {
+		position: relative;
+        padding: 2vh 0;	
+	}
+	
+	& .navlink {
+		text-decoration: none;
+		font-weight: 400;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0 40px;
+
+		position: relative;
+		transition: transform 1s cubic-bezier(.19,1,.22,1);
+		
+		
+		&::before {
+			content: '';
+			position: absolute;
+			top: -30px;
+			bottom: -30px;
+			left: 0;
+			right: 0;			
+		}
+		
+		& .link-showcase {
+			position: relative;
+			width: 100%;
+			display: flex;
+			height: 4vh;
+			overflow: hidden;
+		}
+		
+		& .link-text {
+			position: relative;
+            color: $font-color;
+			transform-origin: left center;
+			font-size: 1.2rem;
+			font-weight: 600;
+			transition: transform 1s cubic-bezier(.19,1,.22,1);
+			
+			&::after {
+				content: attr(data-after);
+				display: block;
+				position: absolute;
+				transform-origin: left center;
+				color: $font-color-navigation-hover;
+				top: calc(220% - 15px); // 30px weniger als beim unteren Hover-Effect, damit JS-Code ausgeglichen
+                left: 4vh;
+				transform: skewY(30deg);
+				transition: transform 1s cubic-bezier(.19,1,.22,1);
+			}
+		}		
+	}
+	
+	& .navlink:hover .link-text {
+		transform: translateY(-220%) skewY(6deg);
+		
+		&::after {
+			transform: skewY(-6deg);
+		}		
+	}
+
+    &.active {
+        transform: translateX(0vh);
+
+        &>* {
+            transition: opacity $transition-short ease-in-out calc($transition-middle - $transition-short);
+            opacity: 1;
+        }
+
+        & .themeSwitch, & .tastenkombinationenSwitch {
+            transition: transform 1s cubic-bezier(.19,1,.22,1), opacity $transition-short ease-in-out calc($transition-middle - $transition-short);
+        }
+    }
+}
+
+.navigation-blur-filter, .tastenkombinationen-background_close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: $font-color;
+    opacity: 0;
+    transition: opacity $transition-middle ease-in-out, z-index 0s $transition-middle;
+    z-index: -999;
+
+    &.active {
+        transition: opacity $transition-middle ease-in-out, z-index 0s;
+        opacity: .25;
+        z-index: 990;
+    }
+}
+
+.tastenkombinationen-iframe {
+    display: none;
+    position: fixed; 
+    height: 800px; 
+    width: 1000px;
+    margin: calc((100vh - 800px)/2) calc((100vw - 1000px)/2); 
+    border: 3px #ccc solid;
+    border-radius: 10px;
+    z-index: 1010;
+}
+
+.tastenkombinationen-background_close {
+    transition: none;
+
+    &.active {
+        opacity: 0;
+        z-index: 1009;
+    }
+}
+
+.burger {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 4vh;
+    right: 4vh;
+    width: 8vh;
+    height: 8vh;
+    padding: 3vh;
+    border-radius: 50%;
+    transition: transform 1s cubic-bezier(.19,1,.22,1), background $transition-short ease-in-out;
+    cursor: pointer;
+    z-index: 1001;
+
+    &>.burger-line {
+        position: absolute;
+        display: block;
+        width: 4vh;
+        height: .5vh;
+        border-radius: 10000px;
+        // mix-blend-mode:overlay;
+        background: $font-color;
+        transition: transform $transition-middle ease-in-out, background $transition-short ease-in-out;
+    }
+
+    &>.burger-line1 {
+        animation: burger-anim1 $transition-middle ease-in-out;
+        transform: translateY(-.6vh);
+    }
+
+    &>.burger-line2 {
+        animation: burger-anim2 $transition-middle ease-in-out;
+        transform: translateY(.6vh);
+    }
+
+    &:hover {
+        background: $main-color;
+
+        &>.burger-line {
+            background: $font-color-light;
+        }
+    }
+}
+
+body .moon {
+    display: none;
+}
+
+body .sun {
+    display: inline-block;
+}
+
+body[colorTheme="light"] .moon {
+    display: inline-block;
+}
+
+body[colorTheme="light"] .sun {
+    display: none;
+}
+
+.back_button, .search_button, .burger {
+    backdrop-filter: blur(10px);
+}
+
+.back_button, .search_button {
+    position: fixed;
+    top: 4vh;
+    left: 4vh;
+    width: 8vh;
+    height: 8vh;  
+
+    border-radius: 50%;
+    transition: transform 1s cubic-bezier(.19,1,.22,1), background $transition-short ease-in-out, color $transition-short ease-in-out;
+    z-index: 995;
+
+    &>a {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &>ion-icon {
+            width: 70%;
+            height: 70%;
+            color: $font-color;
+        }
+    }    
+
+    &:hover {
+        background: $main-color;
+
+        &>a {
+            & ion-icon {
+                color: $font-color-light;
+            }
+        }        
+    }
+}
+
+.search_button {
+    left: initial;
+    right: 16vh;
+    z-index: 1001;
+
+    &>a {
+        &>ion-icon {
+            width: 60%;
+            height: 60%;
+        }
+    }   
+}

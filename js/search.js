@@ -84,6 +84,7 @@ document.onkeydown = function (e) {
       let first_element = container.firstElementChild;
       if(first_element != null) {
         first_element.setAttribute('id', 'active');
+        setBackgroundofErgebnis(first_element);
       }
       return false;
     }
@@ -98,7 +99,9 @@ document.onkeydown = function (e) {
 
     if(new_active_element != null){ 
       active_element.setAttribute('id', '');
+      active_element.style.background = "";
       new_active_element.setAttribute('id', 'active');
+      setBackgroundofErgebnis(new_active_element)
       new_active_element.scrollIntoViewIfNeeded(true);
     }
     else {
@@ -106,15 +109,21 @@ document.onkeydown = function (e) {
       let container = document.getElementById('ergebnisse');
       if(!e.shiftKey) {
         let first_element = container.firstElementChild;
+        let last_element = container.lastElementChild;
         if(first_element != null) {
+          last_element.style.background = "";
           first_element.setAttribute('id', 'active');
+          setBackgroundofErgebnis(first_element);
           first_element.scrollIntoViewIfNeeded(true);
         }
       }
       else if(e.shiftKey) { 
         let last_element = container.lastElementChild;
+        let first_element = container.firstElementChild;
         if(last_element != null) {
+          first_element.style.background = "";
           last_element.setAttribute('id', 'active');
+          setBackgroundofErgebnis(last_element);
           last_element.scrollIntoViewIfNeeded(true);
         }
       }
@@ -135,6 +144,17 @@ document.onkeydown = function (e) {
       window.location.href = ergebnisse[0].item.location;
     }
   }
+}
+
+function setBackgroundofErgebnis(element) {  
+  if(element.children[0].href.includes('datenbanken'))
+    element.style.background = "hsl(295, 80%, 69%)";
+  else if(element.children[0].href.includes('programmiersprachen'))
+    element.style.background = "hsl(208, 80%, 50%)";
+  else if(element.children[0].href.includes('netzwerktechnik'))
+    element.style.background = "hsl(37, 80%, 51%)";
+  else if(element.children[0].href.includes('systemtechnik'))
+    element.style.background = "hsl(158, 95%, 34%)";
 }
 
 $("#search_form").submit(function() {

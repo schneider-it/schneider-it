@@ -1,0 +1,77 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+.code-string { color: $font-color-code-string !important }
+.code-comment { color: $font-color-code-comment !important }
+.code-class { color: $font-color-code-class !important }
+.code-struct { color: $font-color-code-struct !important }
+.code-method { color: $font-color-code-method !important }
+.code-variable { color: $font-color-code-variable !important }
+.code-number { color: $font-color-code-number !important }
+.code-keyword { color: $font-color-code-keyword !important }
+.code-keyword-optional { color: $font-color-code-keyword-optional !important }
+.code-generic { color: $font-color-code-generic !important }
+.code-flowcontrol { color: $font-color-code-flowcontrol !important }
+.code-error { color: $font-color-code-error !important }
+.code-normal { color: $font-color-code-normal !important }
+
+.code {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 5vh 0;
+    padding: 3vh;
+    padding-right: 10vh;
+    color: $font-color;
+    background: $background-color-code;
+    border: 3px solid $border-color;
+    border-radius: $border-radius;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    user-select: text;
+    line-height: 1.5;
+    // counter-increment: code-id;
+
+    & .code-copy {
+        position: absolute;
+        top: -4vh;
+        right: -2vh;
+        padding: 1vh 2vh;
+        color: $font-color;
+        background: $background-color-code-copy;
+        border: $main-color .5vh solid;
+        border-radius: $border-radius;
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1rem;
+        transition: background-color $transition-short ease-in-out;
+        z-index: 10;
+
+        &.copied {
+            color: $font-color-light;
+            background: $main-color;
+        }
+    }
+
+    & div, span {
+        font-family: inherit;
+    }
+
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f121";
+        position: absolute;
+        right: 3vh;
+        top: 0;
+        height: 100%;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    & .tab::before {
+        content: '\00A0\00A0\00A0\00A0';
+    }
+}

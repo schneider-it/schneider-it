@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+
+.img {
+    display: block;
+    max-height: 80vh;
+    max-width: 100%;
+    margin-block: 3vh;
+    border-radius: $border-radius;
+
+    &[invert] {
+        filter: invert(1);
+    }
+
+    &[img-size="large"] {
+        max-height: 120vh;
+        max-width: 120vh;
+    }
+
+    &[img-size="big"] {
+        max-height: 100vh;
+        max-width: 100vh;
+    }
+
+    &[img-size="medium"] {
+        max-height: 60vh;
+        max-width: 60vh;
+    }
+
+    &[img-size="small"] {
+        max-height: 30vh;
+        max-width: 30vh;
+    }
+
+    &[img-size="little"] {
+        max-height: 10vh;
+        max-width: 10vh;
+    }
+}

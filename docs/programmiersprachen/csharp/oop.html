@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link href="/css/fa_all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Programmiersprachen - C# - OOP</title>
 </head>
 <body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
     <div class="search_button">
-        <a href="/tools/search.html">
+        <a href="/components/search.html">
             <ion-icon name="search"></ion-icon>
         </a>
     </div>
@@ -96,83 +96,58 @@
         </a>
     </div>
 
-    <div class="section center searchable">
-        <div class="container fluid" style="background: var(--nyc-taxi); color: var(--schrift-auf-hellem-hintergrund);">
-            <div class="container small" style="padding: 10vh 0;">
-                <div class="flex-between nowrap">
-                    <div class="flex-center-v">
-                        <img src="/img/objekt.png" alt="Grundlagen_Logo" class="img small" style="margin: 0;">
-                    </div>
-                    <div class="flex-center-v" style="width: 70vw; text-align: right;">
-                        <div>
-                            <h2 style="margin-bottom: 5vh;">OOP C#</h2>
-                            <p style="max-width: 30vw; float: right;">
-                                Objekt Orientierte Programmierung. <br>
-                                Erstellen Sie eigene Klasse und Interfaces.
-                            </p>
-                        </div>
-                    </div>
+    <div class="title">
+        <img src="/img/objekt.png" alt="Objekt_Logo">
+        <h1>OOP C#</h1>
+    </div>
+    <div></div>
+
+    <div class="cards">
+        <a href="oop/klassen.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/bauplan.png" alt="Klassen" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Klassen</h4>
+                    <p>
+                        Hier lernen Sie, wie Sie einen Bauplan für Instanzen erstellen können.
+                        Außerdem lernen Sie: Generische Klassen, Methoden, Konstruktoren, Unit Tests, ...
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="section">        
-        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
-            <div class="container" style="padding: 8vh 0;">
-                <h2>Unterkategorien von OOP</h2>
+        </a>
+        <a href="oop/interfaces.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/flip.png" alt="Interfaces" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Interfaces</h4>
+                    <p>
+                        Hier lernen Sie Interfaces zu definieren, sodass eine fixed Schnittstelle zwischen View und Controller besteht.
+                        Außerdem lernen Sie das MVC-Modell kennen.
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <div class="container" style="margin-top: 10vh;">
-            <div class="flex-between">
-                <a href="oop/klassen.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/bauplan.png" alt="Klassen" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Klassen</h4>
-                            <p>
-                                Hier lernen Sie, wie Sie einen Bauplan für Instanzen erstellen können.
-                                Außerdem lernen Sie: Generische Klassen, Methoden, Konstruktoren, Unit Tests, ...
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="oop/interfaces.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/flip.png" alt="Interfaces" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Interfaces</h4>
-                            <p>
-                                Hier lernen Sie Interfaces zu definieren, sodass eine fixed Schnittstelle zwischen View und Controller besteht.
-                                Außerdem lernen Sie das MVC-Modell kennen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="oop/vererbung.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/mutter-und-tochter.png" alt="Vererbung" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Vererbung</h4>
-                            <p>
-                                Klassen können voneinander erben. Lernen Sie mehr darüber.
-                                Außerdem lernen Sie etwas über abstract und sealed Klassen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        </a>
+        <a href="oop/vererbung.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/mutter-und-tochter.png" alt="Vererbung" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Vererbung</h4>
+                    <p>
+                        Klassen können voneinander erben. Lernen Sie mehr darüber.
+                        Außerdem lernen Sie etwas über abstract und sealed Klassen.
+                    </p>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <footer>

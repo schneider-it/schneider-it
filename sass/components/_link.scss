@@ -1,0 +1,36 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+.link {
+    position: relative;
+    display: inline-block; 
+    color: $font-color-link;
+    transition: color $transition-short ease-out;
+    cursor: pointer;
+
+    &::before {
+        content: ''; 
+        position: absolute; 
+        // display: block;
+        width: 100%; 
+        transform: scaleX(0); 
+        height: .3vh; 
+        border-radius: 10000px;
+        bottom: 0; 
+        left: 0; 
+        transform-origin: bottom right; 
+        transition: transform $transition-short ease-out, background $transition-short ease-out;
+        background: $font-color-link;
+    }
+
+    &:hover {
+        color: $font-color-link-hover;
+
+        &::before {
+            transform: scaleX(1); 
+            transform-origin: bottom left; 
+            background: $font-color-link-hover;
+            // transition-delay: var(--short-transition);
+        }
+    }
+}

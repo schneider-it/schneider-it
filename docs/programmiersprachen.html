@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link href="/css/fa_all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Programmiersprachen</title>
 </head>
 <body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
     <div class="search_button">
-        <a href="/tools/search.html">
+        <a href="/components/search.html">
             <ion-icon name="search"></ion-icon>
         </a>
     </div>
@@ -96,187 +96,161 @@
         </a>
     </div>
 
-    <div class="section center searchable">
-        <div class="container fluid" style="background: var(--nyc-taxi); color: var(--schrift-auf-hellem-hintergrund);">
-            <div class="container small" style="padding: 10vh 0;">
-                <div class="flex-between nowrap">
-                    <div class="flex-center-v">
-                        <img src="/img/programmiersprachen.jpg" alt="Programmiersprachen_Logo" class="img small" style="margin: 0;">
-                    </div>
-                    <div class="flex-center-v" style="width: 70vw; text-align: right;">
-                        <div>
-                            <h2 style="margin-bottom: 5vh;">Programmiersprachen</h2>
-                            <p style="max-width: 30vw; float: right;">
-                                Die verschiedenen Programmiersprachen, die Sie lernen können, sind: 
-                                C#, HTML, CSS, SCSS, JavaScript, Bootstrap, WPF, Brainfuck. <br>
-                                Einige davon sind eigentlich keine Programmiersprachen.
-                            </p>
-                        </div>
-                    </div>
+    <div class="title">
+        <img src="/img/programmiersprachen.jpg" alt="Programmiersprachen_Logo" img-border-radius>
+        <h1>Programmiersprachen</h1>
+    </div>
+    <div></div>
+
+    <div class="cards">
+        <a href="programmiersprachen/csharp.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/c-sharp.png" alt="C#" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>C#</h4>
+                    <p>
+                        Hier lernen Sie alles über die objektorientierte Programmiersprache C#, 
+                        Variablen, Methoden, Klassen und vieles mehr.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="section">        
-        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
-            <div class="container" style="padding: 8vh 0;">
-                <h2>Unterkategorien der Programmiersprachen</h2>
+        </a>
+        <a href="programmiersprachen/html.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/html-5.png" alt="HTML" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>HTML</h4>
+                    <p>
+                        Hier lernen Sie alles über die Beschreibungssprache HTML.
+                        Diese Sprache befindet sich aktuell in der fünften Version.
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <div class="container" style="margin-top: 10vh;">
-            <div class="flex-between">
-                <a href="programmiersprachen/csharp.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/c-sharp.png" alt="C#" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>C#</h4>
-                            <p>
-                                Hier lernen Sie alles über die objektorientierte Programmiersprache C#, 
-                                Variablen, Methoden, Klassen und vieles mehr.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/html.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/html-5.png" alt="HTML" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>HTML</h4>
-                            <p>
-                                Hier lernen Sie alles über die Beschreibungssprache HTML.
-                                Diese Sprache befindet sich aktuell in der fünften Version.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/css.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/css-3.png" alt="CSS" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>CSS</h4>
-                            <p>
-                                Hier lernen Sie alles über die Beschreibungssprache CSS.
-                                Diese Sprache befindet sich aktuell in der dritten Version.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/js.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/js.png" alt="JavaScript" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>JavaScript</h4>
-                            <p>
-                                Hier lernen Sie alles über die Programmiersprache JavaScript.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/bootstrap.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/bootstrap.png" alt="Bootstrap" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Bootstrap</h4>
-                            <p>
-                                Hier lernen Sie die CSS-Klassen-Sammlung Bootstrap kennen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/sass.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/sass.png" alt="SASS" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>SASS</h4>
-                            <p>
-                                Hier lernen Sie alles über die Beschreibungssprache SASS.
-                                Dies ist eine verbesserte Erweiterung für CSS. 
-                                Im Endeffekt soll sie das Programmieren erleichert.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/brainfuck.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/brainfuck.png" alt="Brainfuck" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Brainfuck</h4>
-                            <p>
-                                Hier lernen Sie alles über die Programmiersprache mit dem weltweit kleinsten Compiler, BRAINFUCK!
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/wpf.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/old.png" alt="WPF" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>WPF</h4>
-                            <p>
-                                Hier lernen Sie alles über WPF.
-                                Das ist zwar schon ein wenig veraltet, sodass es niemand mehr nutzt, aber Sie können es trotzdem lernen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/c++.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/c++.png" alt="C++">
-                        </div>
-                        <div class="card-text">
-                            <h4>C++</h4>
-                            <p>
-                                Hier lernen Sie alles über die Programmiersprache C++.
-                                Der Vorgänger von C#.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="programmiersprachen/react.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/react.png" alt="React">
-                        </div>
-                        <div class="card-text">
-                            <h4>React</h4>
-                            <p>
-                                Hier lernen Sie alles über die Programmiersprache C++.
-                                Der Vorgänger von C#.
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        </a>
+        <a href="programmiersprachen/css.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/css-3.png" alt="CSS" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>CSS</h4>
+                    <p>
+                        Hier lernen Sie alles über die Beschreibungssprache CSS.
+                        Diese Sprache befindet sich aktuell in der dritten Version.
+                    </p>
+                </div>
             </div>
-        </div>
+        </a>
+        <a href="programmiersprachen/js.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/js.png" alt="JavaScript" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>JavaScript</h4>
+                    <p>
+                        Hier lernen Sie alles über die Programmiersprache JavaScript.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="programmiersprachen/bootstrap.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/bootstrap.png" alt="Bootstrap" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Bootstrap</h4>
+                    <p>
+                        Hier lernen Sie die CSS-Klassen-Sammlung Bootstrap kennen.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="programmiersprachen/sass.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/sass.png" alt="SASS" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>SASS</h4>
+                    <p>
+                        Hier lernen Sie alles über die Beschreibungssprache SASS.
+                        Dies ist eine verbesserte Erweiterung für CSS. 
+                        Im Endeffekt soll sie das Programmieren erleichert.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="programmiersprachen/brainfuck.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/brainfuck.png" alt="Brainfuck" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Brainfuck</h4>
+                    <p>
+                        Hier lernen Sie alles über die Programmiersprache mit dem weltweit kleinsten Compiler, BRAINFUCK!
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="programmiersprachen/wpf.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/old.png" alt="WPF" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>WPF</h4>
+                    <p>
+                        Hier lernen Sie alles über WPF.
+                        Das ist zwar schon ein wenig veraltet, sodass es niemand mehr nutzt, aber Sie können es trotzdem lernen.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="programmiersprachen/c++.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/c++.png" alt="C++">
+                </div>
+                <div class="card-text">
+                    <h4>C++</h4>
+                    <p>
+                        Hier lernen Sie alles über die Programmiersprache C++.
+                        Der Vorgänger von C#.
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="programmiersprachen/react.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/react.png" alt="React">
+                </div>
+                <div class="card-text">
+                    <h4>React</h4>
+                    <p>
+                        Hier lernen Sie alles über die Programmiersprache C++.
+                        Der Vorgänger von C#.
+                    </p>
+                </div>
+            </div>
+        </a>
     </div>
 
     <footer>

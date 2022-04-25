@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link href="/css/fa_all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Netzwerktechnik - Protokolle - IP</title>
 </head>
@@ -18,7 +18,7 @@
     </div> 
 
     <div class="search_button">
-        <a href="/tools/search.html">
+        <a href="/components/search.html">
             <ion-icon name="search"></ion-icon>
         </a>
     </div>
@@ -100,25 +100,11 @@
         </a>
     </div>
 
-    <div class="section center searchable">
-        <div class="container fluid" style="background: var(--nyc-taxi); color: var(--schrift-auf-hellem-hintergrund);">
-            <div class="container small" style="padding: 10vh 0;">
-                <div class="flex-between nowrap">
-                    <div class="flex-center-v">
-                        <img src="/img/IP.svg" alt="IP_Logo" class="img small" style="margin: 0;">
-                    </div>
-                    <div class="flex-center-v" style="width: 70vw; text-align: right;">
-                        <div>
-                            <h2 style="margin-bottom: 5vh;">IP</h2>
-                            <p style="max-width: 30vw; float: right;">
-                                Hier lernen Sie alles über das Internet Protocol.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="title">
+        <img src="/img/IP.svg" alt="IP_Logo">
+        <h1>IP</h1>
     </div>
+    <div></div>
 
     <div class="section searchable">   
         <div class="container" style="margin-top: 10vh;">
@@ -282,11 +268,11 @@
                         Bei IPv6-Adressen heißen die ersten 64 Bit <b>Präfix</b> (auch: Netz-ID oder Network Prefix) (vergleichbar mit dem Netzanteil von IPv4-Adressen) und die hinteren 64 Bit <b>Interface Identifier</b> (auch: Suffix, IID oder EUI) (vergleichbar mit dem Hostanteil von IPv4-Adressen).
                         Anders als bei IPv4 gibt es keinen Suffix bzw. keine Subnetzmaske der bzw. die bestimmt, an welcher Bitstelle die Trennung zwischen diesen beiden Teilen verläuft. 
                         Stattdessen ist die Trennung zwischen Präfix und Interface Identifier immer zwischen 64 und 65 Bit!
-                        <a href="/img/IPv6_Segmentierung1.png" data-lightbox="lightbox" data-title="Segmentierung"><img src="/img/IPv6_Segmentierung1.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img invert"></a>
+                        <a href="/img/IPv6_Segmentierung1.png" data-lightbox="lightbox" data-title="Segmentierung"><img src="/img/IPv6_Segmentierung1.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         Diese grundlegende, einfach definierte Art und Weise ermöglicht ein sehr viel schnelleres Routing, weil die Router nicht mehr die Subnetzmaske berechnen müssen.
                         <br><br>
                         Falls größere Unternehmen trotzdem mehrere Subnetze zur Verfügung haben wollen, gibt der Provider z.B. ein /56-Netz her, was bedeutet, dass die ersten 56 Bit vom Provider vorgeschrieben sind und die anderen 8 Bit vom Unternehmen für Subnetze verwendet werden können.
-                        <a href="/img/IPv6_Segmentierung2.png" data-lightbox="lightbox" data-title="Segmentierung"><img src="/img/IPv6_Segmentierung2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img invert"></a>
+                        <a href="/img/IPv6_Segmentierung2.png" data-lightbox="lightbox" data-title="Segmentierung"><img src="/img/IPv6_Segmentierung2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         Egal, wie viele Subnetz man zur Verfügung hat, in jedem Subnetz können 2<sup>64</sup> Adressen vergeben werden. Da jeder Host mehrere Adressen haben kann, wäre es sogar denkbar, das jeder Dienst oder jede Anwendung auf einem Server eine eigene IPv6-Adresse bekommt.
                     </div>
                     <h4 id="IPv6-Scopes">Scopes</h4>

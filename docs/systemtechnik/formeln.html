@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link href="/css/fa_all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Systemtechnik - Formeln</title>
 </head>
 <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
     <div class="search_button">
-        <a href="/tools/search.html">
+        <a href="/components/search.html">
             <ion-icon name="search"></ion-icon>
         </a>
     </div>
@@ -96,26 +96,11 @@
         </a>
     </div>
 
-    <div class="section center searchable">
-        <div class="container fluid" style="background: var(--nyc-taxi); color: var(--schrift-auf-hellem-hintergrund);">
-            <div class="container small" style="padding: 10vh 0;">
-                <div class="flex-between nowrap">
-                    <div class="flex-center-v">
-                        <img src="/img/physics.png" alt="Systentechnik_Logo" class="img small" style="margin: 0;">
-                    </div>
-                    <div class="flex-center-v" style="width: 70vw; text-align: right;">
-                        <div>
-                            <h2 style="margin-bottom: 5vh;">Formeln</h2>
-                            <p style="max-width: 30vw; float: right;">
-                                Hier sind die wichtigsten Formeln in Schaltungen, 
-                                Vorsätze der Einheiten und Zusammenhänge zwischen diesen Einheiten erklärt.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="title">
+        <img src="/img/physics.png" alt="Physics_Logo">
+        <h1>Formeln</h1>
     </div>
+    <div></div>
 
     <div class="section searchable">
         <div class="container" style="margin-top: 10vh;">
@@ -365,13 +350,13 @@
                     <h4>Knotenregel</h4>
                      <div>
                         Die Knotenregel besagt, dass alle Ströme, die in einen Knoten fließen auch wieder aus dem Knoten fließen müssen.
-                        <a href="img/Knotenregel-Bild2.png" data-lightbox="lightbox" data-title="Knotenregel Grafik"><img src="img/Knotenregel-Bild2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-small"></a>
+                        <a href="/img/Knotenregel-Bild2.png" data-lightbox="lightbox" data-title="Knotenregel Grafik"><img src="/img/Knotenregel-Bild2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" img-size="small"></a>
                         In diesem Fall würde die Formel so lauten:
                         <div class="code">
                             <span class="code-keyword">I<sub>1</sub></span> + <span class="code-keyword">I<sub>2</sub></span> - <span class="code-keyword">I<sub>3</sub></span> - <span class="code-keyword">I<sub>4</sub></span> = 0
                         </div>
                         Allgemein formuliert sieht die Formel wie folgt aus:
-                        <a href="img/Knotenregel-Formel2.png" data-lightbox="lightbox" data-title="Knotenregel Formel"><img src="img/Knotenregel-Formel2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-very-small"></a>
+                        <a href="/img/Knotenregel-Formel2.png" data-lightbox="lightbox" data-title="Knotenregel Formel"><img src="/img/Knotenregel-Formel2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" img-size="little"></a>
                         <div>
                             <hr>
                             <span class="code-comment">N</span><span style="font-family: 'Source Code Pro', sans-serif;">:</span> Anzahl der Leiter im Knotenpunkt
@@ -380,13 +365,13 @@
                     <h4>Maschenregel</h4>
                      <div>
                         Die Maschenregel besagt, dass alle Spannungen, die in einer Art Kreis zusammenhängen, insgesamt 0 ergeben müssen.
-                        <a href="img/Maschenregel-Bild2.png" data-lightbox="lightbox" data-title="Maschenregel Grafik"><img src="img/Maschenregel-Bild2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-small"></a>
+                        <a href="/img/Maschenregel-Bild2.png" data-lightbox="lightbox" data-title="Maschenregel Grafik"><img src="/img/Maschenregel-Bild2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" img-size="small"></a>
                         In diesem Fall würde die Formel so lauten:
                         <div class="code">
                             <span class="code-error">-U<sub>1</sub></span> - <span class="code-error">U<sub>2</sub></span> + <span class="code-error">U<sub>3</sub></span> - <span class="code-error">U<sub>4</sub></span> + <span class="code-error">U<sub>5</sub></span> = 0
                         </div>
                         Allgemein formuliert sieht die Formel wie folgt aus:
-                        <a href="img/Maschenregel-Formel2.png" data-lightbox="lightbox" data-title="Maschenregel Formel"><img src="img/Maschenregel-Formel2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-very-small"></a>
+                        <a href="/img/Maschenregel-Formel2.png" data-lightbox="lightbox" data-title="Maschenregel Formel"><img src="/img/Maschenregel-Formel2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" img-size="little"></a>
                     </div>
                 </div>
                 <h3>Strom- & Spannungsteiler</h3>
@@ -395,7 +380,7 @@
                     <h4>Stromteiler</h4>
                      <div>
                         Der Stromteiler lässt sich in parallelen Schaltungen anwenden.
-                        <a href="img/Stromteiler2.png" data-lightbox="lightbox" data-title="Stromteiler"><img src="img/Stromteiler2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-small"></a>
+                        <a href="/img/Stromteiler2.png" data-lightbox="lightbox" data-title="Stromteiler"><img src="/img/Stromteiler2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" img-size="small"></a>
                         In dieser Schaltung gelten folgende Formeln:
                         <div class="code">
                             <span class="code-keyword">I<sub>1</sub></span> / <span class="code-keyword">I<sub>2</sub></span> = <span class="code-comment">R<sub>2</sub></span> / <span class="code-comment">R<sub>1</sub></span>
@@ -410,7 +395,7 @@
                     <h4>Spannungsteiler</h4>
                      <div>
                         Der Spannungsteiler lässt sich in seriellen Schaltungen anwenden.
-                        <a href="img/Spannungsteiler2.png" data-lightbox="lightbox" data-title="Spannungsteiler"><img src="img/Spannungsteiler2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-small"></a>
+                        <a href="/img/Spannungsteiler2.png" data-lightbox="lightbox" data-title="Spannungsteiler"><img src="/img/Spannungsteiler2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" img-size="small"></a>
                         In dieser Schaltung gelten folgende Formeln:
                         <div class="code">
                             <span class="code-error">U<sub>1</sub></span> / <span class="code-error">U<sub>2</sub></span> = <span class="code-comment">R<sub>1</sub></span> / <span class="code-comment">R<sub>2</sub></span>
@@ -422,7 +407,7 @@
                 </div>
                 <h3>Tiefpass</h3>
                  <div>
-                    <a href="img/Tiefpass2.svg" data-lightbox="lightbox" data-title="Tiefpass"><img src="img/Tiefpass2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-kontrast img-small"></a>
+                    <a href="/img/Tiefpass2.svg" data-lightbox="lightbox" data-title="Tiefpass"><img src="/img/Tiefpass2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert img-size="small"></a>
                     Beim Tiefpass gelten folgende Formeln:
                     <div class="code">
                         <span class="code-error">U<sub>C</sub></span> = <span class="code-error">U</span> * (1 - <span class="code-class">e<sup>-(t / &tau;)</sup></span>)
@@ -447,7 +432,7 @@
                     Ein Kondensator entsteht entweder gewollt oder ungewollt.
                     Wenn man absichtlich etwas aufladen will, ist der Kondensator gewollt.
                     Wenn jedoch zwei Kabel nebeneinander liegen und einen Kondensator bilden, dann ist das ungewollt, weil man eigentlich keinen Kondensator haben will (aus diesem Grund müssen Kabel geschrimt werden).
-                    <a href="img/Plattenkondensator2.png" data-lightbox="lightbox" data-title="Plattenkondensator"><img src="img/Plattenkondensator2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img"></a>
+                    <a href="/img/Plattenkondensator2.png" data-lightbox="lightbox" data-title="Plattenkondensator"><img src="/img/Plattenkondensator2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img"></a>
                     Beim Plattenkondensator gelten folgende Formeln:
                     <div class="code">
                         <span class="code-method">E</span> = <span class="code-keyword-optional">U</span> / <span class="code-comment">d</span>
@@ -487,7 +472,7 @@
                         </div>
                         <h5>Aufbau</h5>
                         <div>
-                            <a href="img/Inverting_Amplifier2.svg" data-lightbox="lightbox" data-title="Invertierer"><img src="img/Inverting_Amplifier2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-kontrast"></a>
+                            <a href="/img/Inverting_Amplifier2.svg" data-lightbox="lightbox" data-title="Invertierer"><img src="/img/Inverting_Amplifier2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         </div>
                         <h5>Formeln</h5>
                         <div>
@@ -508,7 +493,7 @@
                         </div>
                         <h5>Aufbau</h5>
                         <div>
-                            <a href="img/Noninverting_Amplifier2.svg" data-lightbox="lightbox" data-title="Nicht-Invertierer"><img src="img/Noninverting_Amplifier2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-kontrast"></a>
+                            <a href="/img/Noninverting_Amplifier2.svg" data-lightbox="lightbox" data-title="Nicht-Invertierer"><img src="/img/Noninverting_Amplifier2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         </div>
                         <h5>Formeln</h5>
                         <div>
@@ -531,7 +516,7 @@
                         </div>
                         <h5>Aufbau</h5>
                         <div>
-                            <a href="img/Summing_Amplifier2.png" data-lightbox="lightbox" data-title="Summierer"><img src="img/Summing_Amplifier2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-kontrast"></a>
+                            <a href="/img/Summing_Amplifier2.png" data-lightbox="lightbox" data-title="Summierer"><img src="/img/Summing_Amplifier2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         </div>
                         <h5>Formeln</h5>
                         <div>
@@ -558,7 +543,7 @@
                         </div>
                         <h5>Aufbau</h5>
                         <div>
-                            <a href="img/Differential_Amplifier2.svg" data-lightbox="lightbox" data-title="Differenzierer"><img src="img/Differential_Amplifier2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-kontrast"></a>
+                            <a href="/img/Differential_Amplifier2.svg" data-lightbox="lightbox" data-title="Differenzierer"><img src="/img/Differential_Amplifier2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         </div>
                         <h5>Formeln</h5>
                         <div>
@@ -583,7 +568,7 @@
                         </div>
                         <h5>Aufbau</h5>
                         <div>
-                            <a href="img/Integrator2.svg" data-lightbox="lightbox" data-title="Integrierer"><img src="img/Integrator2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-kontrast"></a>
+                            <a href="/img/Integrator2.svg" data-lightbox="lightbox" data-title="Integrierer"><img src="/img/Integrator2.svg" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         </div>
                         <h5>Formel</h5>
                         <div>
@@ -602,7 +587,7 @@
                         </div>
                         <h5>Zeichnung</h5>
                         <div>
-                            <a href="img/Bodediagramm2.svg" data-lightbox="lightbox" data-title="Bodediagramm"><img src="img/Bodediagramm2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img img-kontrast"></a>
+                            <a href="/img/Bodediagramm2.svg" data-lightbox="lightbox" data-title="Bodediagramm"><img src="/img/Bodediagramm2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         </div>
                     </div>
                 </div>

@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="/css/lightbox.min.css">
     <link href="/css/fa_all.min.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" href="/css/main.min.css">
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Programmiersprachen - C#</title>
 </head>
 <body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
     <div class="search_button">
-        <a href="/tools/search.html">
+        <a href="/components/search.html">
             <ion-icon name="search"></ion-icon>
         </a>
     </div>
@@ -96,81 +96,56 @@
         </a>
     </div>
 
-    <div class="section center searchable">
-        <div class="container fluid" style="background: var(--nyc-taxi); color: var(--schrift-auf-hellem-hintergrund);">
-            <div class="container small" style="padding: 10vh 0;">
-                <div class="flex-between nowrap">
-                    <div class="flex-center-v">
-                        <img src="/img/c-sharp.png" alt="C#_Logo" class="img small" style="margin: 0;">
-                    </div>
-                    <div class="flex-center-v" style="width: 70vw; text-align: right;">
-                        <div>
-                            <h2 style="margin-bottom: 5vh;">C#</h2>
-                            <p style="max-width: 30vw; float: right;">
-                                Hier lernen Sie eine der wichtigsten Programmiersprachen kennen, C#. <br>
-                                Ausgesprochen wird dies überigens wie C Sharp.
-                            </p>
-                        </div>
-                    </div>
+    <div class="title">
+        <img src="/img/c-sharp.png" alt="C#_Logo">
+        <h1>C#</h1>
+    </div>
+    <div></div>
+
+    <div class="cards">
+        <a href="csharp/grundlagen.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/grundlagen.png" alt="Grundlagen" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Grundlagen</h4>
+                    <p>
+                        Hier lernen Sie etwas über Datentypen, Flusssteuerung und statische Methoden.
+                    </p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="section">        
-        <div class="container fluid" style="background: var(--nebenfarbe2); color: var(--schrift-auf-dunklem-hintergrund);">
-            <div class="container" style="padding: 8vh 0;">
-                <h2>Unterkategorien von C#</h2>
+        </a>
+        <a href="csharp/oop.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/objekt.png" alt="OOP" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>OOP</h4>
+                    <p>
+                        Hier lernen Sie den objektorientierten Teil von C# besser kennen.
+                        Es geht um Klassen, Vererbung und Verkettung.
+                    </p>
+                </div>
             </div>
-        </div>
-
-        <div class="container" style="margin-top: 10vh;">
-            <div class="flex-between">
-                <a href="csharp/grundlagen.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/grundlagen.png" alt="Grundlagen" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Grundlagen</h4>
-                            <p>
-                                Hier lernen Sie etwas über Datentypen, Flusssteuerung und statische Methoden.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="csharp/oop.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/objekt.png" alt="OOP" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>OOP</h4>
-                            <p>
-                                Hier lernen Sie den objektorientierten Teil von C# besser kennen.
-                                Es geht um Klassen, Vererbung und Verkettung.
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a href="csharp/anderes.html">
-                    <div class="card">
-                        <div class="card-before"></div>
-                        <div class="card-img">
-                            <img src="/img/random.png" alt="Anderes" style="border-radius: 0;">
-                        </div>
-                        <div class="card-text">
-                            <h4>Other stuff</h4>
-                            <p>
-                                Hier lernen Sie wichtigsten Klassen und deren statische Methoden, Input / Output, Verkettung und vieles mehr kennen.
-                            </p>
-                        </div>
-                    </div>
-                </a>
+        </a>
+        <a href="csharp/anderes.html">
+            <div class="card">
+                <div class="card-before"></div>
+                <div class="card-img">
+                    <img src="/img/random.png" alt="Anderes" style="border-radius: 0;">
+                </div>
+                <div class="card-text">
+                    <h4>Other stuff</h4>
+                    <p>
+                        Hier lernen Sie wichtigsten Klassen und deren statische Methoden, Input / Output, Verkettung und vieles mehr kennen.
+                    </p>
+                </div>
             </div>
-        </div>
+        </a>
     </div>
 
     <footer>

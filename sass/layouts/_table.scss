@@ -1,0 +1,35 @@
+@use '../abstracts/colors' as *;
+@use '../abstracts/variables' as *;
+
+table {
+    width: 100%;
+    margin: 3vh 0;
+    border-collapse: collapse;
+
+    & tr, th, td {
+        border: .5vh solid $border-color;
+    }
+
+    & tr {
+        width: auto;
+
+        & th, td {
+            padding: 0.6rem;   
+            // text-size-adjust: 100%;         
+            width: auto;
+            // word-break: break-word;
+            // white-space: pre-wrap;
+            // word-wrap: break-word;
+        }
+
+        & th {
+            background: $main-color;
+            color: $font-color-light;
+            font-weight: 500;
+        }
+
+        & td.right {
+            text-align: right;
+        }
+    }
+}
