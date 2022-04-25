@@ -5,9 +5,9 @@
     position: relative;
     display: block;
     width: 100%;
-    margin: 3vh 0;
-    padding: 3vh;
-    padding-right: 10vh;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    padding-right: 5rem;
     color: $font-color-warning;
     background: $background-color-warning;
     border: 3px solid $font-color-warning;
@@ -23,7 +23,7 @@
         font-family: "Font Awesome 5 Free";
         content: "\f1e2";
         position: absolute;
-        right: 3vh;
+        right: 1.5rem;
         top: 0;
         height: 100%;
         font-size: 2rem;

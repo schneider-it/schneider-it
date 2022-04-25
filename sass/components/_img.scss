@@ -2,9 +2,9 @@
 
 .img {
     display: block;
-    max-height: 80vh;
+    max-height: 40rem;
     max-width: 100%;
-    margin-block: 3vh;
+    margin-block: 1.5rem;
     border-radius: $border-radius;
 
     &[invert] {
@@ -12,27 +12,27 @@
     }
 
     &[img-size="large"] {
-        max-height: 120vh;
-        max-width: 120vh;
+        max-height: 60rem;
+        max-width: 60rem;
     }
 
     &[img-size="big"] {
-        max-height: 100vh;
-        max-width: 100vh;
+        max-height: 50rem;
+        max-width: 50rem;
     }
 
     &[img-size="medium"] {
-        max-height: 60vh;
-        max-width: 60vh;
+        max-height: 30rem;
+        max-width: 30rem;
     }
 
     &[img-size="small"] {
-        max-height: 30vh;
-        max-width: 30vh;
+        max-height: 15rem;
+        max-width: 15rem;
     }
 
     &[img-size="little"] {
-        max-height: 10vh;
-        max-width: 10vh;
+        max-height: 5rem;
+        max-width: 5rem;
     }
 }

@@ -154,6 +154,15 @@ body {
   width: 100%;
 }
 
+:target:before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 0;
+  height: 1.8rem;
+  margin-top: -1.8rem;
+}
+
 @-webkit-keyframes burger-anim1 {
   0% {
     -webkit-transform: rotate(45deg);
@@ -293,42 +302,42 @@ h1 {
   font-family: "Public Sans", sans-serif;
   font-size: clamp(4.2rem, 5.5vw, 5rem);
   font-weight: 900;
-  margin: 10vh 0;
+  margin: 5rem 0;
 }
 
 h2 {
   font-family: "Public Sans", sans-serif;
   font-size: clamp(2.5rem, 3.3vw, 3rem);
   font-weight: 800;
-  margin: 3vh 0;
+  margin: 1.5rem 0;
 }
 
 h3 {
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1.9rem, 2.5vw, 2.3rem);
   font-weight: 800;
-  margin: 2.5vh 0;
+  margin: 1.25rem 0;
 }
 
 h4 {
   font-family: "Open Sans", sans-serif;
   font-size: clamp(1.5rem, 2vw, 1.9rem);
   font-weight: 700;
-  margin: 2vh 0;
+  margin: 1rem 0;
 }
 
 h5 {
   font-family: "Raleway", sans-serif;
   font-size: clamp(1.2rem, 1.64vw, 1.5rem);
   font-weight: 600;
-  margin: 1.5vh 0;
+  margin: 0.75rem 0;
 }
 
 h6 {
   font-family: "Raleway", sans-serif;
   font-size: clamp(1.1rem, 1.3vw, 1.3rem);
   font-weight: 500;
-  margin: 1vh 0;
+  margin: 0.5rem 0;
 }
 
 p {
@@ -432,12 +441,11 @@ footer .footer-vogel img {
   right: 0;
   top: 0;
   height: 100vh;
-  width: 80vh;
-  padding: 25vh 10vh;
+  width: 100vw;
   font-size: clamp(1.2rem, 1.64vw, 1.5rem);
   background: hsl(210deg, 10%, 20%);
-  -webkit-transform: translateX(100vh);
-          transform: translateX(100vh);
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
@@ -455,8 +463,8 @@ footer .footer-vogel img {
 }
 .navigation .themeSwitch, .navigation .tastenkombinationenSwitch {
   position: absolute;
-  width: 8vh;
-  height: 8vh;
+  width: 4rem;
+  height: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -472,13 +480,17 @@ footer .footer-vogel img {
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease-in-out;
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
+.navigation .themeSwitch ion-icon, .navigation .tastenkombinationenSwitch ion-icon {
+  width: 40%;
+  height: 40%;
+}
 .navigation .themeSwitch {
-  top: 4vh;
-  left: 4vh;
+  top: 2rem;
+  left: 2rem;
 }
 .navigation .tastenkombinationenSwitch {
-  bottom: 4vh;
-  right: 4vh;
+  bottom: 2rem;
+  right: 2rem;
 }
 .navigation .list {
   margin: 0;
@@ -500,7 +512,7 @@ footer .footer-vogel img {
 }
 .navigation .item {
   position: relative;
-  padding: 2vh 0;
+  padding: 1rem 0;
 }
 .navigation .navlink {
   text-decoration: none;
@@ -536,7 +548,7 @@ footer .footer-vogel img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 4vh;
+  height: 2rem;
   overflow: hidden;
 }
 .navigation .navlink .link-text {
@@ -544,7 +556,6 @@ footer .footer-vogel img {
   color: hsl(0deg, 0%, 100%);
   -webkit-transform-origin: left center;
           transform-origin: left center;
-  font-size: 1.2rem;
   font-weight: 600;
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -559,7 +570,7 @@ footer .footer-vogel img {
           transform-origin: left center;
   color: hsl(29deg, 100%, 91%);
   top: calc(220% - 15px);
-  left: 4vh;
+  left: 2rem;
   -webkit-transform: skewY(30deg);
           transform: skewY(30deg);
   -webkit-transition: -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -575,16 +586,16 @@ footer .footer-vogel img {
   -webkit-transform: skewY(-6deg);
           transform: skewY(-6deg);
 }
-.navigation.active {
-  -webkit-transform: translateX(0vh);
-          transform: translateX(0vh);
+.navigation[active] {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
-.navigation.active > * {
+.navigation[active] > * {
   -webkit-transition: opacity 0.2s ease-in-out 0.3s;
   transition: opacity 0.2s ease-in-out 0.3s;
   opacity: 1;
 }
-.navigation.active .themeSwitch, .navigation.active .tastenkombinationenSwitch {
+.navigation[active] .themeSwitch, .navigation[active] .tastenkombinationenSwitch {
   -webkit-transition: opacity 0.2s ease-in-out 0.3s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: opacity 0.2s ease-in-out 0.3s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease-in-out 0.3s;
@@ -603,7 +614,7 @@ footer .footer-vogel img {
   transition: opacity 0.5s ease-in-out, z-index 0s 0.5s;
   z-index: -999;
 }
-.navigation-blur-filter.active, .tastenkombinationen-background_close.active {
+.navigation-blur-filter[active], .tastenkombinationen-background_close[active] {
   -webkit-transition: opacity 0.5s ease-in-out, z-index 0s;
   transition: opacity 0.5s ease-in-out, z-index 0s;
   opacity: 0.25;
@@ -613,9 +624,9 @@ footer .footer-vogel img {
 .tastenkombinationen-iframe {
   display: none;
   position: fixed;
-  height: 800px;
-  width: 1000px;
-  margin: calc((100vh - 800px) / 2) calc((100vw - 1000px) / 2);
+  height: 30rem;
+  width: 40rem;
+  margin: calc((100vh - 30rem) / 2) calc((100vw - 40rem) / 2);
   border: 3px #ccc solid;
   border-radius: 10px;
   z-index: 1010;
@@ -625,7 +636,7 @@ footer .footer-vogel img {
   -webkit-transition: none;
   transition: none;
 }
-.tastenkombinationen-background_close.active {
+.tastenkombinationen-background_close[active] {
   opacity: 0;
   z-index: 1009;
 }
@@ -641,11 +652,11 @@ footer .footer-vogel img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 4vh;
-  right: 4vh;
-  width: 8vh;
-  height: 8vh;
-  padding: 3vh;
+  top: 2rem;
+  right: 2rem;
+  width: 4rem;
+  height: 4rem;
+  padding: 1.5rem;
   border-radius: 50%;
   -webkit-transition: background 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: background 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -657,8 +668,8 @@ footer .footer-vogel img {
 .burger > .burger-line {
   position: absolute;
   display: block;
-  width: 4vh;
-  height: 0.5vh;
+  width: 2rem;
+  height: 0.25rem;
   border-radius: 10000px;
   background: hsl(0deg, 0%, 100%);
   -webkit-transition: background 0.2s ease-in-out, -webkit-transform 0.5s ease-in-out;
@@ -669,20 +680,32 @@ footer .footer-vogel img {
 .burger > .burger-line1 {
   -webkit-animation: burger-anim1 0.5s ease-in-out;
           animation: burger-anim1 0.5s ease-in-out;
-  -webkit-transform: translateY(-0.6vh);
-          transform: translateY(-0.6vh);
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
 }
 .burger > .burger-line2 {
   -webkit-animation: burger-anim2 0.5s ease-in-out;
           animation: burger-anim2 0.5s ease-in-out;
-  -webkit-transform: translateY(0.6vh);
-          transform: translateY(0.6vh);
+  -webkit-transform: translateY(0.3rem);
+          transform: translateY(0.3rem);
 }
 .burger:hover {
   background: hsl(235deg, 86%, 65%);
 }
 .burger:hover > .burger-line {
   background: hsl(0deg, 0%, 100%);
+}
+.burger[active] > .burger-line1 {
+  -webkit-animation: burger-anim1-active var(--middle-transition) ease-in-out;
+          animation: burger-anim1-active var(--middle-transition) ease-in-out;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.burger[active] > .burger-line2 {
+  -webkit-animation: burger-anim2-active var(--middle-transition) ease-in-out;
+          animation: burger-anim2-active var(--middle-transition) ease-in-out;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 body .moon {
@@ -708,10 +731,10 @@ body[colorTheme=light] .sun {
 
 .back_button, .search_button {
   position: fixed;
-  top: 4vh;
-  left: 4vh;
-  width: 8vh;
-  height: 8vh;
+  top: 2rem;
+  left: 2rem;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
   -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: background 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -746,7 +769,7 @@ body[colorTheme=light] .sun {
 
 .search_button {
   left: initial;
-  right: 16vh;
+  right: 8rem;
   z-index: 1001;
 }
 .search_button > a > ion-icon {
@@ -754,13 +777,20 @@ body[colorTheme=light] .sun {
   height: 60%;
 }
 
+@media (min-width: 60em) {
+  .navigation {
+    width: 40rem;
+    -webkit-transform: translateX(40rem);
+            transform: translateX(40rem);
+  }
+}
 table {
   width: 100%;
-  margin: 3vh 0;
+  margin: 1.5rem 0;
   border-collapse: collapse;
 }
 table tr, table th, table td {
-  border: 0.5vh solid hsl(0deg, 0%, 60%);
+  border: 0.25rem solid hsl(0deg, 0%, 60%);
 }
 table tr {
   width: auto;
@@ -783,10 +813,10 @@ table tr td.right {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  height: 8vh;
+  height: 4rem;
   display: inline-grid;
   gap: 1.5rem;
-  margin-top: 16vh;
+  margin-top: 8rem;
   grid-template-columns: 3rem 1fr;
 }
 .title > img {
@@ -819,7 +849,7 @@ table tr td.right {
 
 @media (min-width: 60em) {
   .title {
-    margin: 4vh 0 0 0;
+    margin: 2rem 0 0 0;
   }
 }
 .link {
@@ -836,7 +866,7 @@ table tr td.right {
   width: 100%;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  height: 0.3vh;
+  height: 0.15rem;
   border-radius: 10000px;
   bottom: 0;
   left: 0;
@@ -982,11 +1012,24 @@ table tr td.right {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+.scroll_indicator_div {
+  width: 100%;
+  height: 0.25rem;
+  background: hsl(210deg, 10%, 15%);
+  position: fixed;
+  z-index: 980;
+}
+.scroll_indicator_div .scroll_indicator {
+  height: 100%;
+  background: hsl(235deg, 86%, 65%);
+  width: 0%;
+}
+
 .img {
   display: block;
-  max-height: 80vh;
+  max-height: 40rem;
   max-width: 100%;
-  margin-block: 3vh;
+  margin-block: 1.5rem;
   border-radius: 20px;
 }
 .img[invert] {
@@ -994,24 +1037,24 @@ table tr td.right {
           filter: invert(1);
 }
 .img[img-size=large] {
-  max-height: 120vh;
-  max-width: 120vh;
+  max-height: 60rem;
+  max-width: 60rem;
 }
 .img[img-size=big] {
-  max-height: 100vh;
-  max-width: 100vh;
+  max-height: 50rem;
+  max-width: 50rem;
 }
 .img[img-size=medium] {
-  max-height: 60vh;
-  max-width: 60vh;
+  max-height: 30rem;
+  max-width: 30rem;
 }
 .img[img-size=small] {
-  max-height: 30vh;
-  max-width: 30vh;
+  max-height: 15rem;
+  max-width: 15rem;
 }
 .img[img-size=little] {
-  max-height: 10vh;
-  max-width: 10vh;
+  max-height: 5rem;
+  max-width: 5rem;
 }
 
 .code-string {
@@ -1070,9 +1113,9 @@ table tr td.right {
   position: relative;
   display: block;
   width: 100%;
-  margin: 5vh 0;
-  padding: 3vh;
-  padding-right: 10vh;
+  margin: 2.5rem 0;
+  padding: 1.5rem;
+  padding-right: 5rem;
   color: hsl(0deg, 0%, 100%);
   background: hsl(220deg, 10%, 25%);
   border: 3px solid hsl(0deg, 0%, 60%);
@@ -1087,12 +1130,12 @@ table tr td.right {
 }
 .code .code-copy {
   position: absolute;
-  top: -4vh;
-  right: -2vh;
-  padding: 1vh 2vh;
+  top: -2rem;
+  right: -1rem;
+  padding: 0.5rem 1rem;
   color: hsl(0deg, 0%, 100%);
   background: hsl(220deg, 10%, 15%);
-  border: hsl(235deg, 86%, 65%) 0.5vh solid;
+  border: hsl(235deg, 86%, 65%) 0.25rem solid;
   border-radius: 20px;
   text-align: center;
   vertical-align: middle;
@@ -1114,7 +1157,7 @@ table tr td.right {
   font-family: "Font Awesome 5 Free";
   content: "\f121";
   position: absolute;
-  right: 3vh;
+  right: 1.5rem;
   top: 0;
   height: 100%;
   font-size: 1.5rem;
@@ -1134,12 +1177,12 @@ table tr td.right {
   font-family: "Mochiy Pop P One", sans-serif;
   font-size: 1rem;
   letter-spacing: 4;
-  padding: 1.5vh 4vh;
-  margin: 3vh;
+  padding: 0.75em 2em;
+  margin: 1.5rem;
   min-width: 200px;
   text-align: center;
   border: hsl(235deg, 86%, 65%) 5px solid;
-  border-radius: 10vh;
+  border-radius: 20px;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
@@ -1155,8 +1198,8 @@ table tr td.right {
 hr {
   position: relative;
   width: 100%;
-  height: 0.5vh;
-  margin: 3vh 0;
+  height: 0.25rem;
+  margin: 1.5rem 0;
   background: hsl(0deg, 0%, 60%);
   border-radius: 20px;
 }
@@ -1177,9 +1220,9 @@ hr[length=short] {
   position: relative;
   display: block;
   width: 100%;
-  margin: 3vh 0;
-  padding: 3vh;
-  padding-right: 10vh;
+  margin: 1.5rem 0;
+  padding: 1.5em;
+  padding-right: 5rem;
   color: hsl(0deg, 0%, 100%);
   background: hsl(188deg, 78%, 41%);
   border: 3px solid hsl(0deg, 0%, 95%);
@@ -1194,7 +1237,7 @@ hr[length=short] {
   font-family: "Font Awesome 5 Free";
   content: "\f129";
   position: absolute;
-  right: 3vh;
+  right: 1.5rem;
   top: 0;
   height: 100%;
   font-size: 2rem;
@@ -1210,9 +1253,9 @@ hr[length=short] {
   position: relative;
   display: block;
   width: 100%;
-  margin: 3vh 0;
-  padding: 3vh;
-  padding-right: 10vh;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  padding-right: 5rem;
   color: hsl(45deg, 95%, 30%);
   background: hsl(46deg, 100%, 90%);
   border: 3px solid hsl(45deg, 95%, 30%);
@@ -1227,7 +1270,7 @@ hr[length=short] {
   font-family: "Font Awesome 5 Free";
   content: "\f1e2";
   position: absolute;
-  right: 3vh;
+  right: 1.5rem;
   top: 0;
   height: 100%;
   font-size: 2rem;

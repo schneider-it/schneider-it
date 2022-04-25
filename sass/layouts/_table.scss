@@ -3,11 +3,11 @@
 
 table {
     width: 100%;
-    margin: 3vh 0;
+    margin: 1.5rem 0;
     border-collapse: collapse;
 
     & tr, th, td {
-        border: .5vh solid $border-color;
+        border: .25rem solid $border-color;
     }
 
     & tr {

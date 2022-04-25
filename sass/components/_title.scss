@@ -2,10 +2,10 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    height: 8vh;
+    height: 4rem;
     display: inline-grid;
     gap: 1.5rem;
-    margin-top: 16vh;
+    margin-top: 8rem;
     grid-template-columns: 3rem 1fr;
 
     &>img {
@@ -34,6 +34,6 @@
 
 @media (min-width: 60em) {
     .title {
-        margin: 4vh 0 0 0;
+        margin: 2rem 0 0 0;
     }
 }

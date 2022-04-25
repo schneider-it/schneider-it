@@ -166,14 +166,14 @@ function NavigationActiveToggle() {
     let blurfilter = document.querySelector('.navigation-blur-filter');
     let navigation = document.querySelector('.navigation');
     burger.onclick = function() {
-        burger.classList.toggle('active'); // damit zu X wird
-        blurfilter.classList.toggle('active'); // damit Hintergrund verschwommen
-        navigation.classList.toggle('active'); // damit Navigation sehen
+        (burger.getAttribute("active") != "true" ? burger.setAttribute("active", "true") : burger.removeAttribute("active")); // damit zu X wird
+        (blurfilter.getAttribute("active") != "true" ? blurfilter.setAttribute("active", "true") : blurfilter.removeAttribute("active"));  // damit Hintergrund verschwommen
+        (navigation.getAttribute("active") != "true" ? navigation.setAttribute("active", "true") : navigation.removeAttribute("active")); // damit Navigation sehen
     }
     blurfilter.onclick = function() {
-        burger.classList.remove('active');
-        blurfilter.classList.remove('active');
-        navigation.classList.remove('active');
+        burger.removeAttribute("active");
+        blurfilter.removeAttribute("active");
+        navigation.removeAttribute("active");
     }
 }
 

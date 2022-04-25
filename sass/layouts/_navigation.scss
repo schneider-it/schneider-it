@@ -10,11 +10,10 @@
     right: 0;
     top: 0;
     height: 100vh;
-    width: 80vh;
-    padding: 25vh 10vh;
+    width: 100vw;
     font-size: clamp(1.2rem, 1.64vw, 1.5rem);
     background: $background-color-2;
-    transform: translateX(100vh); 
+    transform: translateX(100vw); 
     transition: transform $transition-middle ease-in-out;
     user-select: none;
     z-index: 1000;
@@ -26,23 +25,28 @@
 
     & .themeSwitch, & .tastenkombinationenSwitch {
         position: absolute;
-        width: 8vh;
-        height: 8vh;
+        width: 4rem;
+        height: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
         background: none;
 		transition: transform 1s cubic-bezier(.19,1,.22,1), opacity $transition-short ease-in-out;
+
+        & ion-icon {
+            width: 40%;
+            height: 40%;
+        }
     }
 
     & .themeSwitch {
-        top: 4vh;
-        left: 4vh;
+        top: 2rem;
+        left: 2rem;
     }
 
     & .tastenkombinationenSwitch {
-        bottom: 4vh;
-        right: 4vh;
+        bottom: 2rem;
+        right: 2rem;
     }
 
     & .list {
@@ -57,7 +61,7 @@
 	
 	& .item {
 		position: relative;
-        padding: 2vh 0;	
+        padding: 1rem 0;	
 	}
 	
 	& .navlink {
@@ -85,7 +89,7 @@
 			position: relative;
 			width: 100%;
 			display: flex;
-			height: 4vh;
+			height: 2rem;
 			overflow: hidden;
 		}
 		
@@ -93,7 +97,6 @@
 			position: relative;
             color: $font-color;
 			transform-origin: left center;
-			font-size: 1.2rem;
 			font-weight: 600;
 			transition: transform 1s cubic-bezier(.19,1,.22,1);
 			
@@ -104,7 +107,7 @@
 				transform-origin: left center;
 				color: $font-color-navigation-hover;
 				top: calc(220% - 15px); // 30px weniger als beim unteren Hover-Effect, damit JS-Code ausgeglichen
-                left: 4vh;
+                left: 2rem;
 				transform: skewY(30deg);
 				transition: transform 1s cubic-bezier(.19,1,.22,1);
 			}
@@ -119,8 +122,8 @@
 		}		
 	}
 
-    &.active {
-        transform: translateX(0vh);
+    &[active] {
+        transform: translateX(0);
 
         &>* {
             transition: opacity $transition-short ease-in-out calc($transition-middle - $transition-short);
@@ -144,7 +147,7 @@
     transition: opacity $transition-middle ease-in-out, z-index 0s $transition-middle;
     z-index: -999;
 
-    &.active {
+    &[active] {
         transition: opacity $transition-middle ease-in-out, z-index 0s;
         opacity: .25;
         z-index: 990;
@@ -154,9 +157,11 @@
 .tastenkombinationen-iframe {
     display: none;
     position: fixed; 
-    height: 800px; 
-    width: 1000px;
-    margin: calc((100vh - 800px)/2) calc((100vw - 1000px)/2); 
+    $height: 30rem;
+    $width: 40rem;
+    height: $height; 
+    width: $width;
+    margin: calc((100vh - $height)/2) calc((100vw - $width)/2); 
     border: 3px #ccc solid;
     border-radius: 10px;
     z-index: 1010;
@@ -165,7 +170,7 @@
 .tastenkombinationen-background_close {
     transition: none;
 
-    &.active {
+    &[active] {
         opacity: 0;
         z-index: 1009;
     }
@@ -176,11 +181,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    top: 4vh;
-    right: 4vh;
-    width: 8vh;
-    height: 8vh;
-    padding: 3vh;
+    top: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 1.5rem;
     border-radius: 50%;
     transition: transform 1s cubic-bezier(.19,1,.22,1), background $transition-short ease-in-out;
     cursor: pointer;
@@ -189,8 +194,8 @@
     &>.burger-line {
         position: absolute;
         display: block;
-        width: 4vh;
-        height: .5vh;
+        width: 2rem;
+        height: .25rem;
         border-radius: 10000px;
         // mix-blend-mode:overlay;
         background: $font-color;
@@ -199,12 +204,12 @@
 
     &>.burger-line1 {
         animation: burger-anim1 $transition-middle ease-in-out;
-        transform: translateY(-.6vh);
+        transform: translateY(-.3rem);
     }
 
     &>.burger-line2 {
         animation: burger-anim2 $transition-middle ease-in-out;
-        transform: translateY(.6vh);
+        transform: translateY(.3rem);
     }
 
     &:hover {
@@ -212,6 +217,18 @@
 
         &>.burger-line {
             background: $font-color-light;
+        }
+    }
+
+    &[active] {
+        &>.burger-line1 {
+            animation: burger-anim1-active var(--middle-transition) ease-in-out;
+            transform: rotate(45deg);
+        }
+    
+        &>.burger-line2 {
+            animation: burger-anim2-active var(--middle-transition) ease-in-out;
+            transform: rotate(-45deg);
         }
     }
 }
@@ -238,10 +255,10 @@ body[colorTheme="light"] .sun {
 
 .back_button, .search_button {
     position: fixed;
-    top: 4vh;
-    left: 4vh;
-    width: 8vh;
-    height: 8vh;  
+    top: 2rem;
+    left: 2rem;
+    width: 4rem;
+    height: 4rem;  
 
     border-radius: 50%;
     transition: transform 1s cubic-bezier(.19,1,.22,1), background $transition-short ease-in-out, color $transition-short ease-in-out;
@@ -275,7 +292,7 @@ body[colorTheme="light"] .sun {
 
 .search_button {
     left: initial;
-    right: 16vh;
+    right: 8rem;
     z-index: 1001;
 
     &>a {
@@ -284,4 +301,11 @@ body[colorTheme="light"] .sun {
             height: 60%;
         }
     }   
+}
+
+@media (min-width: 60em) {
+    .navigation {
+        width: 40rem;
+        transform: translateX(40rem); 
+    }
 }

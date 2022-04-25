@@ -6,12 +6,12 @@
     font-family: 'Mochiy Pop P One', sans-serif;
     font-size: 1rem;
     letter-spacing: 4;
-    padding: 1.5vh 4vh;
-    margin: 3vh;
+    padding: .75em 2em;
+    margin: 1.5rem;
     min-width: 200px;
     text-align: center;
     border: $background-color-button 5px solid; // --button-background, damit gleich wie Hintergrund
-    border-radius: 10vh;
+    border-radius: $border-radius;
     transition: all $transition-short ease-in-out;
     cursor: pointer;
 

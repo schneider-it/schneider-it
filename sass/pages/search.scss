@@ -12,13 +12,13 @@ body {
 .search_div {
     position: relative;
     width: clamp(4vh, 60rem, calc(100% - 32vh));
-    margin: 4vh auto 0;
+    margin: 2rem auto 0;
 
     & form {
         & #search {
             width: 100%;
-            height: 8vh;
-            padding: 3vh 5vh 3vh 9vh;
+            height: 4rem;
+            padding: 1.5rem 2.5rem 1.5rem 4.5rem;
             background: $background-color-2;
             border-radius: 10000px;     
             box-shadow: 0px 20px 0px -10px $shadow-ergebnis-div;      
@@ -29,10 +29,10 @@ body {
         font: var(--fa-font-solid); // so ein Scheiß!!!
         content: '\f002';
         position: absolute;
-        left: 3vh;
+        left: 1.5rem;
         top: 0;
         height: 100%;
-        font-size: 3.5vh;
+        font-size: 1.75rem;
         display: flex;
         align-items: center;
     } 
@@ -40,12 +40,12 @@ body {
     &::after {
         content: attr(data-after); //'Press Enter to open the first result!';
         position: absolute;
-        right: 4vh;
+        right: 2rem;
         top: 0;
         height: 100%;
         max-width: 50%;
         color: $border-color;
-        font-size: 1.8vh;
+        font-size: 0.9rem;
         display: flex;
         align-items: center;
         user-select: none;
@@ -55,14 +55,14 @@ body {
 #ergebnisse {
     position: relative;
     width: $container;
-    margin: 8vh auto;
+    margin: 4rem auto;
 
     & div { 
         width: 100%;
-        margin: 5vh 0;
-        padding: 3vh 4vh;
+        margin: 2.5rem 0;
+        padding: 1.5rem 2rem;
         background: $background-color-2;
-        border-radius: 2vh;
+        border-radius: $border-radius;
         box-shadow: 0px 25px 0px -5px $shadow-ergebnis-div;
         transition: box-shadow .1s ease-in-out, transform .1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font .1s ease-in-out;
 
@@ -113,7 +113,11 @@ body {
 
 @media screen and (max-width: 40rem) {
     .search_div {
-        width: calc(100% - 8vh);
-        margin: 16vh auto 0;
+        width: $container;
+        margin: 8rem auto 0;
+
+        &::after {
+            content: '';
+        }
     }
 }

@@ -20,3 +20,13 @@
     min-height: 100vh;
     width: 100%;
 }
+
+:target:before { 
+    content: ''; 
+    display: block; 
+    position: relative; 
+    width: 0;
+    $target-abstand-top: 1.8rem;
+    height: $target-abstand-top; 
+    margin-top: -$target-abstand-top;
+}
