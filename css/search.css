@@ -74,13 +74,13 @@ body {
   transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
-#ergebnisse div a h4 {
+#ergebnisse div h4 {
   margin: 0;
   padding: 0;
   color: hsl(0deg, 0%, 100%);
   font-weight: 700;
 }
-#ergebnisse div a p {
+#ergebnisse div p {
   margin: 0;
   padding: 0;
   color: hsl(0deg, 0%, 70%);
@@ -97,11 +97,12 @@ body {
           box-shadow: 0px 19px 0px -5px hsl(0deg, 0%, 0%);
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
+  background: hsl(208deg, 80%, 50%);
 }
-#ergebnisse div#active a h4 {
+#ergebnisse div#active h4 {
   color: hsl(0deg, 0%, 100%);
 }
-#ergebnisse div#active a p {
+#ergebnisse div#active p {
   color: hsl(0deg, 0%, 90%);
 }
 #ergebnisse div#active:hover {

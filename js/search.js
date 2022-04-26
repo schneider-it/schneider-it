@@ -60,13 +60,11 @@ $("#search").on('keyup', function (e) {
 
 
     for (let i = 0; i < ergebnisse.length; i++) {
-      
+      console.log(ergebnisse[i].item.location);
       container.insertAdjacentHTML('beforeend', 
-        '<div id="">' +
-            '<a href=' + ergebnisse[i].item.location + '>' +
-                '<h4>' + ergebnisse[i].item.title + '</h4>' +
-                '<p>' + ergebnisse[i].item.prettypath + '</p>' +
-            '</a>' +
+        '<div onclick="OnClickErgebnis(\'' + ergebnisse[i].item.location + '\')">' +
+            '<h4>' + ergebnisse[i].item.title + '</h4>' +
+            '<p>' + ergebnisse[i].item.prettypath + '</p>' +
         '</div>'
       );
     }
@@ -138,12 +136,19 @@ document.onkeydown = function (e) {
     let active_element = document.getElementById('active');
     if(active_element != null) {
       let link = active_element.firstElementChild.href;
-      window.location.href = link;
+      OnClickErgebnis(link)
     }
     else {
-      window.location.href = ergebnisse[0].item.location;
+      let link = ergebnisse[0].item.location;
+      OnClickErgebnis(link)
     }
   }
+}
+
+function OnClickErgebnis(link) {
+  
+
+  window.location.href = link;
 }
 
 function setBackgroundofErgebnis(element) {  
