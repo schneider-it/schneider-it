@@ -104,7 +104,14 @@ body {
             }
         }
     }
+}
 
+#clear_search_history {
+    display: none;
+    position: absolute;
+    right: calc((100vw - $container) / 2);
+    top: 9rem;
+    z-index: 980;
 }
 
 @media screen and (max-width: 40rem) {

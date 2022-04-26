@@ -12,7 +12,7 @@
     <link rel="icon" href="/img/Logo.svg">
     <title>Schneider IT - Search</title>
 </head>
-<body onload="OnLoadMin();">
+<body onload="OnLoadMin(); LoadSearchHistory();">
     <div class="burger">
         <div class="burger-line burger-line1"></div>
         <div class="burger-line burger-line2"></div>
@@ -96,9 +96,9 @@
         </form>
     </div>
 
-    <div id="ergebnisse">
-        
-    </div>
+    <div id="clear_search_history" class="button" onclick="ClearSearchHistory()" small>Clear Latest Results</div>
+
+    <div id="ergebnisse"></div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/vanilla-tilt.js"></script>

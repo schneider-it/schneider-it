@@ -8,7 +8,7 @@
     letter-spacing: 4;
     padding: .75em 2em;
     margin: 1.5rem;
-    min-width: 200px;
+    min-width: 10rem;
     text-align: center;
     border: $background-color-button 5px solid; // --button-background, damit gleich wie Hintergrund
     border-radius: $border-radius;
@@ -20,5 +20,14 @@
         color: $font-color-light;
         transform: scale(1.1);
         border-radius: $border-radius;
+    }
+
+    &[small] {
+        font-family: 'Raleway', sans-serif;
+        font-size: .75rem;
+        letter-spacing: initial;
+        padding: .5em 1em;
+        margin: 0.5rem;
+        min-width: 5rem;
     }
 }

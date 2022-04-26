@@ -1179,7 +1179,7 @@ table tr td.right {
   letter-spacing: 4;
   padding: 0.75em 2em;
   margin: 1.5rem;
-  min-width: 200px;
+  min-width: 10rem;
   text-align: center;
   border: hsl(235deg, 86%, 65%) 5px solid;
   border-radius: 20px;
@@ -1193,6 +1193,14 @@ table tr td.right {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   border-radius: 20px;
+}
+.button[small] {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: initial;
+  padding: 0.5em 1em;
+  margin: 0.5rem;
+  min-width: 5rem;
 }
 
 hr {

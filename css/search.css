@@ -112,6 +112,14 @@ body {
           transform: translateY(12px);
 }
 
+#clear_search_history {
+  display: none;
+  position: absolute;
+  right: calc((100vw - 80%) / 2);
+  top: 9rem;
+  z-index: 980;
+}
+
 @media screen and (max-width: 40rem) {
   .search_div {
     width: 80%;
