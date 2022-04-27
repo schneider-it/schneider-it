@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .title {
     position: relative;
     left: 50%;
@@ -8,7 +10,7 @@
     margin-top: 8rem;
     grid-template-columns: 3rem 1fr;
 
-    &>img {
+    & > img {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -21,7 +23,7 @@
         }
     }
 
-    &>h1 {
+    & > h1 {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -32,8 +34,8 @@
     }
 }
 
-@media (min-width: 60em) {
+@media (min-width: $media-break-point-2) {
     .title {
-        margin: 2rem 0 0 0;
+        margin-top: 2rem;
     }
 }

@@ -1,32 +1,36 @@
-@use '../abstracts/colors' as *;
-@use '../abstracts/variables' as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
 
 .button {
     display: inline-block;
-    font-family: 'Mochiy Pop P One', sans-serif;
+    position: relative;
+    font-family: "Raleway", sans-serif;
     font-size: 1rem;
-    letter-spacing: 4;
-    padding: .75em 2em;
+    padding: 1em 4em;
     margin: 1.5rem;
     min-width: 10rem;
     text-align: center;
+    color: $font-color;
+    background-color: $background-color;
     border: $background-color-button 5px solid; // --button-background, damit gleich wie Hintergrund
     border-radius: $border-radius;
-    transition: all $transition-short ease-in-out;
+    transition: background $transition-short ease-in-out,
+        border-radius $transition-short, transform $transition-short ease-in-out;
     cursor: pointer;
 
     &:hover {
-        background: $background-color-button;
         color: $font-color-light;
-        transform: scale(1.1);
-        border-radius: $border-radius;
+        background: $background-color-button;
+    }
+
+    &[funny-font] {
+        font-family: "Mochiy Pop P One", sans-serif;
     }
 
     &[small] {
-        font-family: 'Raleway', sans-serif;
-        font-size: .75rem;
+        font-size: 0.75rem;
         letter-spacing: initial;
-        padding: .5em 1em;
+        padding: 0.5em 2em;
         margin: 0.5rem;
         min-width: 5rem;
     }

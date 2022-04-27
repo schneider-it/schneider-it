@@ -1,5 +1,5 @@
-@use '../abstracts/colors' as *;
-@use '../abstracts/variables' as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
 
 html {
     overflow-y: scroll;
@@ -20,14 +20,14 @@ body {
             height: 4rem;
             padding: 1.5rem 2.5rem 1.5rem 4.5rem;
             background: $background-color-2;
-            border-radius: 10000px;     
-            box-shadow: 0px 20px 0px -10px $shadow-ergebnis-div;      
-        }      
+            border-radius: 10000px;
+            box-shadow: 0px 20px 0px -10px $shadow-ergebnis-div;
+        }
     }
 
     &::before {
         font: var(--fa-font-solid); // so ein Scheiß!!!
-        content: '\f002';
+        content: "\f002";
         position: absolute;
         left: 1.5rem;
         top: 0;
@@ -35,7 +35,7 @@ body {
         font-size: 1.75rem;
         display: flex;
         align-items: center;
-    } 
+    }
 
     &::after {
         content: attr(data-after); //'Press Enter to open the first result!';
@@ -49,7 +49,7 @@ body {
         display: flex;
         align-items: center;
         user-select: none;
-    } 
+    }
 }
 
 #ergebnisse {
@@ -57,14 +57,16 @@ body {
     width: $container;
     margin: 4rem auto;
 
-    & div { 
+    & div {
         width: 100%;
         margin: 2.5rem 0;
         padding: 1.5rem 2rem;
         background: $background-color-2;
         border-radius: $border-radius;
         box-shadow: 0px 25px 0px -5px $shadow-ergebnis-div;
-        transition: box-shadow .1s ease-in-out, transform .1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font .1s ease-in-out;
+        transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out,
+            color 50ms ease-in-out, background 50ms ease-in-out,
+            font 0.1s ease-in-out;
 
         & h4 {
             margin: 0;
@@ -78,8 +80,8 @@ body {
             padding: 0;
             color: $font-color-ergebnis-paragraph;
             font-weight: 400;
-        } 
-    
+        }
+
         &:hover {
             box-shadow: 0px 13px 0px -5px $shadow-ergebnis-div;
             transform: translateY(12px);
@@ -88,15 +90,15 @@ body {
         &#active {
             box-shadow: 0px 19px 0px -5px $shadow-ergebnis-div-active;
             transform: translateY(6px);
-            background: $background-color-ergebnis-div-active;
+            // background: $background-color-ergebnis-div-active;
 
             & h4 {
                 color: $font-color-ergebnis-heading-active;
-            } 
+            }
 
             & p {
                 color: $font-color-ergebnis-paragraph-active;
-            } 
+            }
 
             &:hover {
                 box-shadow: 0px 13px 0px -5px $shadow-ergebnis-div;
@@ -114,13 +116,17 @@ body {
     z-index: 980;
 }
 
-@media screen and (max-width: 40rem) {
+@media (max-width: $media-break-point) {
     .search_div {
         width: $container;
         margin: 8rem auto 0;
 
         &::after {
-            content: '';
+            content: "";
         }
+    }
+
+    #clear_search_history {
+        top: 15rem;
     }
 }

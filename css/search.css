@@ -97,7 +97,6 @@ body {
           box-shadow: 0px 19px 0px -5px hsl(0deg, 0%, 0%);
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
-  background: hsl(208deg, 80%, 50%);
 }
 #ergebnisse div#active h4 {
   color: hsl(0deg, 0%, 100%);
@@ -120,12 +119,16 @@ body {
   z-index: 980;
 }
 
-@media screen and (max-width: 40rem) {
+@media (max-width: 40em) {
   .search_div {
     width: 80%;
     margin: 8rem auto 0;
   }
   .search_div::after {
     content: "";
+  }
+
+  #clear_search_history {
+    top: 15rem;
   }
 }

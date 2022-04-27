@@ -602,7 +602,8 @@ footer .footer-vogel img {
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease-in-out 0.3s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.navigation-blur-filter, .tastenkombinationen-background_close {
+.navigation-blur-filter,
+.tastenkombinationen-background_close {
   position: fixed;
   top: 0;
   left: 0;
@@ -614,7 +615,8 @@ footer .footer-vogel img {
   transition: opacity 0.5s ease-in-out, z-index 0s 0.5s;
   z-index: -999;
 }
-.navigation-blur-filter[active], .tastenkombinationen-background_close[active] {
+.navigation-blur-filter[active],
+.tastenkombinationen-background_close[active] {
   -webkit-transition: opacity 0.5s ease-in-out, z-index 0s;
   transition: opacity 0.5s ease-in-out, z-index 0s;
   opacity: 0.25;
@@ -624,9 +626,9 @@ footer .footer-vogel img {
 .tastenkombinationen-iframe {
   display: none;
   position: fixed;
-  height: 30rem;
-  width: 40rem;
-  margin: calc((100vh - 30rem) / 2) calc((100vw - 40rem) / 2);
+  height: min(100vh - 2rem, 30rem);
+  width: min(100vw - 2rem, 40rem);
+  margin: calc((100vh - min(100vh - 2rem, 30rem)) / 2) calc((100vw - min(100vw - 2rem, 40rem)) / 2);
   border: 3px #ccc solid;
   border-radius: 10px;
   z-index: 1010;
@@ -724,12 +726,15 @@ body[colorTheme=light] .sun {
   display: none;
 }
 
-.back_button, .search_button, .burger {
+.back_button,
+.search_button,
+.burger {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
 
-.back_button, .search_button {
+.back_button,
+.search_button {
   position: fixed;
   top: 2rem;
   left: 2rem;
@@ -742,7 +747,8 @@ body[colorTheme=light] .sun {
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 995;
 }
-.back_button > a, .search_button > a {
+.back_button > a,
+.search_button > a {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -755,15 +761,18 @@ body[colorTheme=light] .sun {
       -ms-flex-align: center;
           align-items: center;
 }
-.back_button > a > ion-icon, .search_button > a > ion-icon {
+.back_button > a > ion-icon,
+.search_button > a > ion-icon {
   width: 70%;
   height: 70%;
   color: hsl(0deg, 0%, 100%);
 }
-.back_button:hover, .search_button:hover {
+.back_button:hover,
+.search_button:hover {
   background: hsl(235deg, 86%, 65%);
 }
-.back_button:hover > a ion-icon, .search_button:hover > a ion-icon {
+.back_button:hover > a ion-icon,
+.search_button:hover > a ion-icon {
   color: hsl(0deg, 0%, 100%);
 }
 
@@ -849,7 +858,7 @@ table tr td.right {
 
 @media (min-width: 60em) {
   .title {
-    margin: 2rem 0 0 0;
+    margin-top: 2rem;
   }
 }
 .link {
@@ -1146,59 +1155,65 @@ table tr td.right {
   transition: background-color 0.2s ease-in-out;
   z-index: 10;
 }
-.code .code-copy.copied {
+.code .code-copy[copied] {
   color: hsl(0deg, 0%, 100%);
   background: hsl(235deg, 86%, 65%);
 }
-.code div, .code span {
+.code div,
+.code span {
   font-family: inherit;
-}
-.code::after {
-  font-family: "Font Awesome 5 Free";
-  content: "\f121";
-  position: absolute;
-  right: 1.5rem;
-  top: 0;
-  height: 100%;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 .code .tab::before {
   content: "    ";
 }
 
+@media (min-width: 40em) {
+  .code::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f121";
+    position: absolute;
+    right: 1.5rem;
+    top: 0;
+    height: 100%;
+    font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .button {
   display: inline-block;
-  font-family: "Mochiy Pop P One", sans-serif;
+  position: relative;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
-  letter-spacing: 4;
-  padding: 0.75em 2em;
+  padding: 1em 4em;
   margin: 1.5rem;
   min-width: 10rem;
   text-align: center;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(210deg, 10%, 15%);
   border: hsl(235deg, 86%, 65%) 5px solid;
   border-radius: 20px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: background 0.2s ease-in-out, border-radius 0.2s, -webkit-transform 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, border-radius 0.2s, -webkit-transform 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, border-radius 0.2s, transform 0.2s ease-in-out;
+  transition: background 0.2s ease-in-out, border-radius 0.2s, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
   cursor: pointer;
 }
 .button:hover {
-  background: hsl(235deg, 86%, 65%);
   color: hsl(0deg, 0%, 100%);
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  border-radius: 20px;
+  background: hsl(235deg, 86%, 65%);
+}
+.button[funny-font] {
+  font-family: "Mochiy Pop P One", sans-serif;
 }
 .button[small] {
-  font-family: "Raleway", sans-serif;
   font-size: 0.75rem;
   letter-spacing: initial;
-  padding: 0.5em 1em;
+  padding: 0.5em 2em;
   margin: 0.5rem;
   min-width: 5rem;
 }
