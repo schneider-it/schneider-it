@@ -11,27 +11,27 @@
         filter: invert(1);
     }
 
-    &[img-size="large"] {
+    &[img-size=large] {
         max-height: 60rem;
         max-width: 60rem;
     }
 
-    &[img-size="big"] {
+    &[img-size=big] {
         max-height: 50rem;
         max-width: 50rem;
     }
 
-    &[img-size="medium"] {
+    &[img-size=medium] {
         max-height: 30rem;
         max-width: 30rem;
     }
 
-    &[img-size="small"] {
+    &[img-size=small] {
         max-height: 15rem;
         max-width: 15rem;
     }
 
-    &[img-size="little"] {
+    &[img-size=little] {
         max-height: 5rem;
         max-width: 5rem;
     }
