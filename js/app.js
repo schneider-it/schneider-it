@@ -1,19 +1,27 @@
 function OnLoadAll() {
-    LoadFooterandHeader();
+    LoadHeader();
+    LoadFooter();
     VanillaTiltEffect();
     SetCardColors();
     AddCopyButtons();
 }
 
 function OnLoadIndex() {
-    LoadFooterandHeader();
+    LoadHeader();
+    LoadFooter();
     VanillaTiltEffect();
     SetCardColors();
 }
 
 function OnLoadLeaf() {
-    LoadFooterandHeader();
+    LoadHeader();
+    LoadFooter();
     AddCopyButtons();
+}
+
+function OnLoadSearch() {
+    LoadHeaderwithoutSearch();
+    LoadFooter();
 }
 
 function OnLoadMin() {
@@ -154,7 +162,7 @@ function ShowCopyAccess(id) {
     }, 1200);
 }
 
-function LoadFooterandHeader() {
+function LoadHeader() {
     if (document.getElementById("header") != null) {
         console.log("inside");
         $("#header").load("/components/header.html", function () {
@@ -164,6 +172,24 @@ function LoadFooterandHeader() {
             ActiveFollowCursor();
         });
     }
+}
+
+function LoadHeaderwithoutSearch() {
+    if (document.getElementById("header") != null) {
+        console.log("inside");
+        $("#header").load(
+            "/components/header_without_search.html",
+            function () {
+                NavigationActiveToggle();
+                ThemeSwitch();
+                TastenkombinationenActiveToggle();
+                ActiveFollowCursor();
+            }
+        );
+    }
+}
+
+function LoadFooter() {
     if (document.getElementById("footer") != null) {
         $("#footer").load("/components/footer.html", function () {
             var myPix = new Array(
