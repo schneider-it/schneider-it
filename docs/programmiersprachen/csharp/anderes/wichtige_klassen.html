@@ -1,125 +1,215 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!">
-    <link rel="stylesheet" href="/css/lightbox.min.css">
-    <link href="/css/fa_all.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Programmiersprachen - C# - Other stuff - Wichtige Klassen</title>
-</head>
-<body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
-    <div class="scroll_indicator_div">
-        <div class="scroll_indicator" id="scroll_indicator"></div>
-    </div> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
 
-    <div id="header"></div>
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
+        <title>
+            Schneider IT - Programmiersprachen - C# - Other stuff - Wichtige
+            Klassen
+        </title>
+    </head>
+    <body
+        onload="OnLoadLeaf();"
+        onscroll="OnScroll();"
+        onkeydown="OnKeyDown();"
+    >
+        <div class="scroll_indicator_div">
+            <div class="scroll_indicator" id="scroll_indicator"></div>
+        </div>
 
-    <div class="tastenkombinationen-background_close"></div>
-    <iframe src="/tools/tastenkombinationen.html" class="tastenkombinationen-iframe"></iframe>
+        <div id="header"></div>
 
-    <div class="back_button">
-        <a href="../anderes.html">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-        </a>
-    </div>
+        <div class="tastenkombinationen-background_close"></div>
+        <iframe
+            src="/tools/tastenkombinationen.html"
+            class="tastenkombinationen-iframe"
+        ></iframe>
 
-    <div class="title">
-        <img src="/img/blueprint.png" alt="Blueprint_Logo">
-        <h1>wichtige Klassen C#</h1>
-    </div>
-    <div></div>
+        <div class="back_button">
+            <a href="../anderes.html">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </a>
+        </div>
 
-    <div class="section searchable">
-        <div class="container" style="margin-top: 10vh;">
-            <div>
-                <h3 id="Math_/_Mathf">Math / Mathf</h3>
+        <div class="title searchable">
+            <img src="/img/blueprint.png" alt="Blueprint_Logo" />
+            <h1>wichtige Klassen C#</h1>
+        </div>
+        <div></div>
+
+        <div class="section searchable">
+            <div class="container" style="margin-top: 10vh">
                 <div>
-                    <h4 id="Math_/_Mathf-PI">PI</h4>
+                    <h3 id="Math_/_Mathf">Math / Mathf</h3>
                     <div>
-                        Um die Zahl &pi; (Pi) auf 16 Nachkommastellen genau zu bekommen (ohne auswendig merken), kann man Math.PI verwenden.
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.PI; <span class="code-comment">// 3.1415926535897931</span>
+                        <h4 id="Math_/_Mathf-PI">PI</h4>
+                        <div>
+                            Um die Zahl &pi; (Pi) auf 16 Nachkommastellen genau
+                            zu bekommen (ohne auswendig merken), kann man
+                            Math.PI verwenden.
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.PI;
+                                <span class="code-comment"
+                                    >// 3.1415926535897931</span
+                                >
+                            </div>
+                        </div>
+                        <h4 id="Math_/_Mathf-E">E</h4>
+                        <div>
+                            Um die Zahl &#8455; (Euler'sche Zahl) auf 16
+                            Nachkommastellen genau zu bekommen (ohne auswendig
+                            merken), kann man Math.E verwenden.
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.E;
+                                <span class="code-comment"
+                                    >// 2.7182818284590451</span
+                                >
+                            </div>
+                        </div>
+                        <h4 id="Math_/_Mathf-Min">Min</h4>
+                        <div>
+                            Will man die kleinere Zahl von zwei Zahlen bekommen:
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.<span
+                                    class="code-method"
+                                    >Min</span
+                                >(<span class="code-number">5</span>,
+                                <span class="code-number">10</span>);
+                            </div>
+                        </div>
+                        <h4 id="Math_/_Mathf-Max">Max</h4>
+                        <div>
+                            Will man die größere Zahl von zwei Zahlen bekommen:
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.<span
+                                    class="code-method"
+                                    >Max</span
+                                >(<span class="code-number">5</span>,
+                                <span class="code-number">10</span>);
+                            </div>
+                        </div>
+                        <h4 id="Math_/_Mathf-Pow">Pow</h4>
+                        <div>
+                            Um Zahlen potenzieren zu können, verwendet man in C#
+                            die Pow-Methode. <br />
+                            Wenn man zum Beispiel 2<sup>32</sup> ausrechnen
+                            möchte:
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.<span
+                                    class="code-method"
+                                    >Pow</span
+                                >(<span class="code-number">2</span>,
+                                <span class="code-number">32</span>);
+                            </div>
+                        </div>
+                        <h4 id="Math_/_Mathf-Sqrt">Sqrt</h4>
+                        <div>
+                            Um Zahlen radizieren zu können, verwendet man in C#
+                            die Sqrt-Methode. <br />
+                            Wenn man zum Beispiel die Quadratwurzel aus 2
+                            ausrechnen möchte:
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.<span
+                                    class="code-method"
+                                    >Sqrt</span
+                                >(<span class="code-number">2</span>);
+                            </div>
+                            Damit man auch andere Wurzeln ziehen kann, muss man
+                            die Pow-Methode verwenden. <br />
+                            Zum Beispiel kann man so die Kubikwurzel aus 2
+                            ziehen:
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.<span
+                                    class="code-method"
+                                    >Pow</span
+                                >(<span class="code-number">2</span>,
+                                <span class="code-number">1</span>/<span
+                                    class="code-number"
+                                    >3</span
+                                >);
+                            </div>
+                        </div>
+                        <h4 id="Math_/_Mathf-Round">Round</h4>
+                        <div>
+                            Möchte man Zahlen runden, verwendet man die
+                            Round-Methode. Will man zum Beispiel &pi; auf 10
+                            Nachkommastellen runden:
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.<span
+                                    class="code-method"
+                                    >Round</span
+                                >(<span class="code-class">Math</span>.PI,
+                                <span class="code-number">10</span>);
+                            </div>
+                        </div>
+                        <h4 id="Math_/_Mathf-Abs">Abs</h4>
+                        <div>
+                            Um den Betrag einer Zahl zu bekommen:
+                            <div class="code">
+                                <span class="code-keyword">double</span>
+                                <span class="code-variable">number</span> =
+                                <span class="code-class">Math</span>.<span
+                                    class="code-method"
+                                    >Abs</span
+                                >(<span class="code-class">Math</span>.<span
+                                    class="code-method"
+                                    >Sqrt</span
+                                >(<span class="code-number">4</span>));
+                            </div>
                         </div>
                     </div>
-                    <h4 id="Math_/_Mathf-E">E</h4>
-                    <div>
-                        Um die Zahl &#8455; (Euler'sche Zahl) auf 16 Nachkommastellen genau zu bekommen (ohne auswendig merken), kann man Math.E verwenden.
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.E; <span class="code-comment">// 2.7182818284590451</span>
-                        </div>
-                    </div>
-                    <h4 id="Math_/_Mathf-Min">Min</h4>
-                    <div>
-                        Will man die kleinere Zahl von zwei Zahlen bekommen:
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.<span class="code-method">Min</span>(<span class="code-number">5</span>, <span class="code-number">10</span>);
-                        </div>
-                    </div>
-                    <h4 id="Math_/_Mathf-Max">Max</h4>
-                    <div>
-                        Will man die größere Zahl von zwei Zahlen bekommen:
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.<span class="code-method">Max</span>(<span class="code-number">5</span>, <span class="code-number">10</span>);
-                        </div>
-                    </div>
-                    <h4 id="Math_/_Mathf-Pow">Pow</h4>
-                    <div>
-                        Um Zahlen potenzieren zu können, verwendet man in C# die Pow-Methode. <br>
-                        Wenn man zum Beispiel 2<sup>32</sup> ausrechnen möchte:
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.<span class="code-method">Pow</span>(<span class="code-number">2</span>, <span class="code-number">32</span>);
-                        </div>
-                    </div>
-                    <h4 id="Math_/_Mathf-Sqrt">Sqrt</h4>
-                    <div>
-                        Um Zahlen radizieren zu können, verwendet man in C# die Sqrt-Methode. <br>
-                        Wenn man zum Beispiel die Quadratwurzel aus 2 ausrechnen möchte:                               
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.<span class="code-method">Sqrt</span>(<span class="code-number">2</span>);
-                        </div>
-                        Damit man auch andere Wurzeln ziehen kann, muss man die Pow-Methode verwenden. <br>
-                        Zum Beispiel kann man so die Kubikwurzel aus 2 ziehen:
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.<span class="code-method">Pow</span>(<span class="code-number">2</span>, <span class="code-number">1</span>/<span class="code-number">3</span>);
-                        </div>
-                    </div>
-                    <h4 id="Math_/_Mathf-Round">Round</h4>
-                    <div>
-                        Möchte man Zahlen runden, verwendet man die Round-Methode.
-                        Will man zum Beispiel &pi; auf 10 Nachkommastellen runden:
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.<span class="code-method">Round</span>(<span class="code-class">Math</span>.PI, <span class="code-number">10</span>);
-                        </div>
-                    </div>
-                    <h4 id="Math_/_Mathf-Abs">Abs</h4>
-                    <div>
-                        Um den Betrag einer Zahl zu bekommen:
-                        <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">number</span> = <span class="code-class">Math</span>.<span class="code-method">Abs</span>(<span class="code-class">Math</span>.<span class="code-method">Sqrt</span>(<span class="code-number">4</span>));
-                        </div>
-                    </div>
+                    <h3 id="String">String</h3>
+                    <h3 id="Random">Random</h3>
+                    <h3 id="Convert">Convert</h3>
                 </div>
-                <h3 id="String">String</h3>
-                <h3 id="Random">Random</h3>
-                <h3 id="Convert">Convert</h3>
             </div>
         </div>
-    </div>
 
-    <div id="footer"></div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script defer src="/js/fa_all.min.js"></script>
+        <div id="footer"></div>
 
-    <script type="text/javascript" src="/js/app.js"></script>
-</body>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <script src="/js/lightbox.min.js"></script>
+        <script defer src="/js/fa_all.min.js"></script>
+
+        <script type="text/javascript" src="/js/app.js"></script>
+    </body>
 </html>
