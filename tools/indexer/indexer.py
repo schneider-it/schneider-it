@@ -107,7 +107,7 @@ class Indexer:
                 except:
                     location = "/{0}".format(file)
                 #print("NEW TOPIC"+ headlines[i].text)
-                subtopic = Topic(headlines[i].text,location)
+                subtopic = Topic(headlines[i].text.strip(),location)
                 topics.append(subtopic)
             i += 1
         return (i,topics)

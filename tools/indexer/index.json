@@ -11,52 +11,52 @@
     },
     {
         "title": "Grundlagen",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#Grundlagen",
         "prettypath": "Datenbanken ➜ relationale Datenbanken"
     },
     {
         "title": "Beziehungen",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#Beziehungen",
         "prettypath": "Datenbanken ➜ relationale Datenbanken"
     },
     {
         "title": "Transformationsregeln",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#Beziehungen-Transformationsregeln",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ Beziehungen"
     },
     {
         "title": "Vererbung",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#Beziehungen-Vererbung",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ Beziehungen"
     },
     {
         "title": "Normalformen",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#Normalformen",
         "prettypath": "Datenbanken ➜ relationale Datenbanken"
     },
     {
         "title": "SQL - Structured Query Language",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken"
     },
     {
         "title": "DQL - Data Query Language",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language-DQL_-_Data_Query_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
     },
     {
         "title": "DML - Data Manipulation Language",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language-DML_-_Data_Manipulation_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
     },
     {
         "title": "DDL - Data Definition Language",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language-DDL_-_Data_Definition_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
     },
     {
         "title": "DCL - Data Control Language",
-        "location": "/docs/datenbanken/relationale_Datenbanken.html",
+        "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language-DCL_-_Data_Control_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
     },
     {
@@ -88,6 +88,101 @@
         "title": "Protokolle",
         "location": "/docs/netzwerktechnik/protokolle.html",
         "prettypath": "Netzwerktechnik"
+    },
+    {
+        "title": "UDP",
+        "location": "/docs/netzwerktechnik/protokolle/udp.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "title": "Unterschiede zu TCP",
+        "location": "/docs/netzwerktechnik/protokolle/udp.html#Unterschiede",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ UDP"
+    },
+    {
+        "title": "Funktionsweise von UDP",
+        "location": "/docs/netzwerktechnik/protokolle/udp.html#Funktionsweise",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ UDP"
+    },
+    {
+        "title": "TCP",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "title": "Aufgaben",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Aufgaben",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Segmentierung (Data Segmenting)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Segmentierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Verbindungsmanagement (Connection Establishment and Termination)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Verbindungsmanagement",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Fehlerbehandlung (Error Detection)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Fehlerbehandlung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Flusssteuerung (Flow Control)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Flusssteuerung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Anwendungsunterstützung (Application Support)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Anwendungsunterstützung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "title": "Portgruppen",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
+    },
+    {
+        "title": "well-known Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-well-known_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "title": "Registered Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Registered_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "title": "Dynamically Allocated Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Dynamically_Allocated_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "title": "Portzustände",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
+    },
+    {
+        "title": "Open",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Open",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
+    },
+    {
+        "title": "Closed",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Closed",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
+    },
+    {
+        "title": "Filtered",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Filtered",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
     },
     {
         "title": "IP",
@@ -220,101 +315,6 @@
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
     },
     {
-        "title": "TCP",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html",
-        "prettypath": "Netzwerktechnik ➜ Protokolle"
-    },
-    {
-        "title": "Aufgaben",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Aufgaben",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Segmentierung (Data Segmenting)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Segmentierung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Verbindungsmanagement (Connection Establishment and Termination)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Verbindungsmanagement",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Fehlerbehandlung (Error Detection)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Fehlerbehandlung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Flusssteuerung (Flow Control)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Flusssteuerung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Anwendungsunterstützung (Application Support)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Anwendungsunterstützung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Ports",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Portgruppen",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
-    },
-    {
-        "title": "well-known Ports",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-well-known_Ports",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
-    },
-    {
-        "title": "Registered Ports",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Registered_Ports",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
-    },
-    {
-        "title": "Dynamically Allocated Ports",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Dynamically_Allocated_Ports",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
-    },
-    {
-        "title": "Portzustände",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
-    },
-    {
-        "title": "Open",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Open",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
-    },
-    {
-        "title": "Closed",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Closed",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
-    },
-    {
-        "title": "Filtered",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Filtered",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
-    },
-    {
-        "title": "UDP",
-        "location": "/docs/netzwerktechnik/protokolle/udp.html",
-        "prettypath": "Netzwerktechnik ➜ Protokolle"
-    },
-    {
-        "title": "Unterschiede zu TCP",
-        "location": "/docs/netzwerktechnik/protokolle/udp.html#Unterschiede",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ UDP"
-    },
-    {
-        "title": "Funktionsweise von UDP",
-        "location": "/docs/netzwerktechnik/protokolle/udp.html#Funktionsweise",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ UDP"
-    },
-    {
         "title": "Programmiersprachen",
         "location": "/docs/programmiersprachen.html",
         "prettypath": ""
@@ -360,11 +360,6 @@
         "prettypath": "Programmiersprachen ➜ C#"
     },
     {
-        "title": "Playfair Chiffre",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
-    },
-    {
         "title": "Verkettung C#",
         "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
@@ -400,74 +395,159 @@
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C#"
     },
     {
-        "title": "Wichtige Klassen C#",
+        "title": "wichtige Klassen C#",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
     },
     {
         "title": "Math / Mathf",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C#"
     },
     {
         "title": "PI",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-PI",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
         "title": "E",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-E",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
         "title": "Min",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Min",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
         "title": "Max",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Max",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
         "title": "Pow",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Pow",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
         "title": "Sqrt",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Sqrt",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
         "title": "Round",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Round",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
         "title": "Abs",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Abs",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C# ➜ Math / Mathf"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
         "title": "String",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#String",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C#"
     },
     {
         "title": "Random",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Random",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C#"
     },
     {
         "title": "Convert",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Convert",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Wichtige Klassen C#"
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C#"
+    },
+    {
+        "title": "Playfair Chiffre",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
     },
     {
         "title": "Grundlagen C#",
         "location": "/docs/programmiersprachen/csharp/grundlagen.html",
         "prettypath": "Programmiersprachen ➜ C#"
+    },
+    {
+        "title": "Flusssteuerung C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
+    },
+    {
+        "title": "if",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#if",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "else",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#else",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "switch",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#switch",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "Schleifen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "while",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-while",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "for",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-for",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "foreach",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-foreach",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "do-while",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-do-while",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
+    },
+    {
+        "title": "return",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#return",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "continue und break",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#continue_und_break",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "goto",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#goto",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
+    },
+    {
+        "title": "statische Methoden C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
+    },
+    {
+        "title": "Einleitung",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Eninleitung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
+    },
+    {
+        "title": "Methodenaufruf",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Methodenaufruf",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
+    },
+    {
+        "title": "Rekursion",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Rekursion",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
     },
     {
         "title": "Datentypen C#",
@@ -620,89 +700,139 @@
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
     },
     {
-        "title": "Flusssteuerung C#",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
-    },
-    {
-        "title": "if",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#if",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "else",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#else",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "switch",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#switch",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "Schleifen",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "while",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-while",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
-    },
-    {
-        "title": "for",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-for",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
-    },
-    {
-        "title": "foreach",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-foreach",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
-    },
-    {
-        "title": "do-while",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-do-while",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
-    },
-    {
-        "title": "return",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#return",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "continue und break",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#continue_und_break",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "goto",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#goto",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
-    },
-    {
-        "title": "statische Methoden C#",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
-    },
-    {
-        "title": "Einleitung",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Eninleitung",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
-    },
-    {
-        "title": "Methodenaufruf",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Methodenaufruf",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
-    },
-    {
-        "title": "Rekursion",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Rekursion",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
-    },
-    {
         "title": "OOP C#",
         "location": "/docs/programmiersprachen/csharp/oop.html",
         "prettypath": "Programmiersprachen ➜ C#"
+    },
+    {
+        "title": "Klassen",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
+    },
+    {
+        "title": "Verwendung",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
+    },
+    {
+        "title": "Was ist eine Klasse?",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Was_ist_eine_Klasse?",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Verwendung"
+    },
+    {
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Verwendung"
+    },
+    {
+        "title": "Instanz einer Klasse",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Instanz_einer_Klasse",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Verwendung"
+    },
+    {
+        "title": "private Variablen",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#private_Variablen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
+    },
+    {
+        "title": "public Properties",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#public_Properties",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
+    },
+    {
+        "title": "Konstruktoren",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
+    },
+    {
+        "title": "Einleitung",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren-Einleitung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Konstruktoren"
+    },
+    {
+        "title": "Konstruktor-Verkettung",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren-Konstruktor-Verkettung",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Konstruktoren"
+    },
+    {
+        "title": "Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
+    },
+    {
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
+    },
+    {
+        "title": "2 Arten",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-2_Arten",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
+    },
+    {
+        "title": "statische Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-statische_Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
+    },
+    {
+        "title": "dynamische Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-dynamische_Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
+    },
+    {
+        "title": "Rekursion",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-Rekursion",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
+    },
+    {
+        "title": "Generische Klassen",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
+    },
+    {
+        "title": "Theorie",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Theorie",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Klasse",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Klasse",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Instanz",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Instanz",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Properties",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Properties",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
+    },
+    {
+        "title": "Syntax Methodenaufruf",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Methodenaufruf",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
+    },
+    {
+        "title": "Unit Tests",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
+    },
+    {
+        "title": "Was sind Unit Tests?",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests-Was_sind_Unit_Tests?",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Unit Tests"
+    },
+    {
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Unit Tests"
     },
     {
         "title": "Interfaces C#",
@@ -733,136 +863,6 @@
         "title": "Properties",
         "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Properties",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
-    },
-    {
-        "title": "Klassen C#",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
-    },
-    {
-        "title": "Verwendung",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
-    },
-    {
-        "title": "Was ist eine Klasse?",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Was_ist_eine_Klasse?",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Verwendung"
-    },
-    {
-        "title": "Syntax",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Syntax",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Verwendung"
-    },
-    {
-        "title": "Instanz einer Klasse",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Instanz_einer_Klasse",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Verwendung"
-    },
-    {
-        "title": "private Variablen",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#private_Variablen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
-    },
-    {
-        "title": "public Properties",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#public_Properties",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
-    },
-    {
-        "title": "Konstruktoren",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
-    },
-    {
-        "title": "Einleitung",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren-Einleitung",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Konstruktoren"
-    },
-    {
-        "title": "Konstruktor-Verkettung",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren-Konstruktor-Verkettung",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Konstruktoren"
-    },
-    {
-        "title": "Methoden",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
-    },
-    {
-        "title": "Syntax",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-Syntax",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
-    },
-    {
-        "title": "2 Arten",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-2_Arten",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
-    },
-    {
-        "title": "statische Methoden",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-statische_Methoden",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
-    },
-    {
-        "title": "dynamische Methoden",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-dynamische_Methoden",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
-    },
-    {
-        "title": "Rekursion",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-Rekursion",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Methoden"
-    },
-    {
-        "title": "Generische Klassen",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
-    },
-    {
-        "title": "Theorie",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Theorie",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
-    },
-    {
-        "title": "Syntax Klasse",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Klasse",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
-    },
-    {
-        "title": "Syntax Instanz",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Instanz",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
-    },
-    {
-        "title": "Syntax Properties",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Properties",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
-    },
-    {
-        "title": "Syntax Methoden",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Methoden",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
-    },
-    {
-        "title": "Syntax Methodenaufruf",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Methodenaufruf",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Generische Klassen"
-    },
-    {
-        "title": "Unit Tests",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C#"
-    },
-    {
-        "title": "Was sind Unit Tests?",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests-Was_sind_Unit_Tests?",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Unit Tests"
-    },
-    {
-        "title": "Syntax",
-        "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests-Syntax",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen C# ➜ Unit Tests"
     },
     {
         "title": "Vererbung C#",
@@ -918,16 +918,6 @@
         "title": "HTML",
         "location": "/docs/programmiersprachen/html.html",
         "prettypath": "Programmiersprachen"
-    },
-    {
-        "title": "alle HTML-Attribute",
-        "location": "/docs/programmiersprachen/html/alle_attribute.html",
-        "prettypath": "Programmiersprachen ➜ HTML"
-    },
-    {
-        "title": "globale Attribute",
-        "location": "/docs/programmiersprachen/html/alle_attribute.html#globale_Attribute",
-        "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Attribute"
     },
     {
         "title": "alle HTML-Tags",
@@ -1250,6 +1240,16 @@
         "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
     },
     {
+        "title": "alle Attribute",
+        "location": "/docs/programmiersprachen/html/alle_attribute.html",
+        "prettypath": "Programmiersprachen ➜ HTML"
+    },
+    {
+        "title": "globale Attribute",
+        "location": "/docs/programmiersprachen/html/alle_attribute.html#globale_Attribute",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle Attribute"
+    },
+    {
         "title": "WPF",
         "location": "/docs/programmiersprachen/wpf.html",
         "prettypath": "Programmiersprachen"
@@ -1390,203 +1390,208 @@
         "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
-        "title": "Systentechnik",
+        "title": "Systemtechnik",
         "location": "/docs/systemtechnik.html",
         "prettypath": ""
     },
     {
         "title": "Formeln",
         "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik"
+        "prettypath": "Systemtechnik"
     },
     {
         "title": "Vorsätze der Einheiten",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
+        "location": "/docs/systemtechnik/formeln.html#Vorsätze _der _Einheiten",
+        "prettypath": "Systemtechnik ➜ Formeln"
+    },
+    {
+        "title": "Ohm'sches Gesetz & Co.",
+        "location": "/docs/systemtechnik/formeln.html#Ohm'sches_Gesetz_&_Co.",
+        "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
         "title": "Ohm'sches Gesetz",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
-    },
-    {
-        "title": "Ohm'sches Gesetz",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Ohm'sches Gesetz"
+        "location": "/docs/systemtechnik/formeln.html#Ohm'sches_Gesetz_&_Co.-Ohm'sches_Gesetz",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Ohm'sches Gesetz & Co."
     },
     {
         "title": "Ähnliche physikalische Gesetze",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Ohm'sches Gesetz"
+        "location": "/docs/systemtechnik/formeln.html#Ohm'sches_Gesetz_&_Co.-Ähnliche_physikalische_Gesetze",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Ohm'sches Gesetz & Co."
     },
     {
         "title": "Kirchhoffsche Gesetze",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
+        "location": "/docs/systemtechnik/formeln.html#Kirchhoffsche_Gesetze",
+        "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
         "title": "Knotenregel",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Kirchhoffsche Gesetze"
+        "location": "/docs/systemtechnik/formeln.html#Kirchhoffsche_Gesetze-Knotenregel",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Kirchhoffsche Gesetze"
     },
     {
         "title": "Maschenregel",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Kirchhoffsche Gesetze"
+        "location": "/docs/systemtechnik/formeln.html#Kirchhoffsche_Gesetze-Maschenregel",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Kirchhoffsche Gesetze"
     },
     {
         "title": "Strom- & Spannungsteiler",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
+        "location": "/docs/systemtechnik/formeln.html#Strom-_&_Spannunsteiler",
+        "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
         "title": "Stromteiler",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Strom- & Spannungsteiler"
+        "location": "/docs/systemtechnik/formeln.html#Strom-_&_Spannunsteiler-Stromteiler",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Strom- & Spannungsteiler"
     },
     {
         "title": "Spannungsteiler",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Strom- & Spannungsteiler"
+        "location": "/docs/systemtechnik/formeln.html#Strom-_&_Spannunsteiler-Spannungsteiler",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Strom- & Spannungsteiler"
     },
     {
         "title": "Tiefpass",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
+        "location": "/docs/systemtechnik/formeln.html#Tiefpass",
+        "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
         "title": "Wechselspannung",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
+        "location": "/docs/systemtechnik/formeln.html#Wechselspannung",
+        "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
         "title": "Plattenkondensator",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
+        "location": "/docs/systemtechnik/formeln.html#Plattenkondensator",
+        "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
         "title": "Transistor",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
+        "location": "/docs/systemtechnik/formeln.html#Transistor",
+        "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
         "title": "Verstärker",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker",
+        "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
         "title": "Invertierende Verstärker",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Invertierende_Verstärker",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
         "title": "Theorie",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Invertierende_Verstärker-Theorie",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
     },
     {
         "title": "Aufbau",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Invertierende_Verstärker-Aufbau",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
     },
     {
         "title": "Formeln",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Invertierende_Verstärker-Formeln",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
     },
     {
         "title": "Nicht-Invertierende Verstärker",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Nicht-Invertierende_Verstärker",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
         "title": "Theorie",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Nicht-Invertierende_Verstärker-Theorie",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
     },
     {
         "title": "Aufbau",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Nicht-Invertierende_Verstärker-Aufbau",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
     },
     {
         "title": "Formeln",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Nicht-Invertierende_Verstärker-Formeln",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
     },
     {
         "title": "Summierende Verstärker",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Summierende_Verstärker",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
         "title": "Theorie",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Summierende_Verstärker-Theorie",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
     },
     {
         "title": "Aufbau",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Summierende_Verstärker-Aufbau",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
     },
     {
         "title": "Formeln",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Summierende_Verstärker-Formeln",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
     },
     {
         "title": "Differenzverstärker",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Differenzverstärker",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
         "title": "Theorie",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Differenzverstärker-Theorie",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
     },
     {
         "title": "Aufbau",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Differenzverstärker-Aufbau",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
     },
     {
         "title": "Formeln",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Differenzverstärker-Formeln",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
     },
     {
         "title": "Integrator",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Integrator",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
         "title": "Theorie",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Integrator-Theorie",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
     },
     {
         "title": "Aufbau",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Integrator-Aufbau",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
     },
     {
         "title": "Formel",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Integrator-Formel",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
     },
     {
         "title": "Bodediagramm",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Bodediagramm",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
         "title": "Theorie",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Bodediagramm"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Bodediagramm-Theorie",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Bodediagramm"
     },
     {
         "title": "Zeichnung",
-        "location": "/docs/systemtechnik/formeln.html",
-        "prettypath": "Systentechnik ➜ Formeln ➜ Verstärker ➜ Bodediagramm"
+        "location": "/docs/systemtechnik/formeln.html#Verstärker-Bodediagramm-Zeichnung",
+        "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Bodediagramm"
+    },
+    {
+        "title": "Schaltungen",
+        "location": "/docs/systemtechnik/schaltungen.html",
+        "prettypath": "Systemtechnik"
     }
 ]
