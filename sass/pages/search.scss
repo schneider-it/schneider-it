@@ -87,7 +87,7 @@ body {
             transform: translateY(12px);
         }
 
-        &#active {
+        &[active] {
             box-shadow: 0px 19px 0px -5px $shadow-ergebnis-div-active;
             transform: translateY(6px);
             // background: $background-color-ergebnis-div-active;

@@ -125,8 +125,7 @@ function SetCardColors() {
 
     for (let i = 0; i < cards_before.length; i++) {
         const card_before = cards_before[i];
-        card_before.style.background =
-            colors[Math.floor(Math.random() * colors.length)];
+        card_before.style.background = colors[Math.floor(Math.random() * colors.length)];
     }
 }
 
@@ -138,11 +137,7 @@ function AddCopyButtons() {
             class: "code-copy",
             id: "code-copy-" + i,
             onclick:
-                'CopyToClipboardCode("#code-' +
-                i +
-                '"); ShowCopyAccess("#code-copy-' +
-                i +
-                '")',
+                'CopyToClipboardCode("#code-' + i + '"); ShowCopyAccess("#code-copy-' + i + '")',
         }).appendTo("#code-" + i);
     }
 }
@@ -164,7 +159,6 @@ function ShowCopyAccess(id) {
 
 function LoadHeader() {
     if (document.getElementById("header") != null) {
-        console.log("inside");
         $("#header").load("/components/header.html", function () {
             NavigationActiveToggle();
             ThemeSwitch();
@@ -176,16 +170,12 @@ function LoadHeader() {
 
 function LoadHeaderwithoutSearch() {
     if (document.getElementById("header") != null) {
-        console.log("inside");
-        $("#header").load(
-            "/components/header_without_search.html",
-            function () {
-                NavigationActiveToggle();
-                ThemeSwitch();
-                TastenkombinationenActiveToggle();
-                ActiveFollowCursor();
-            }
-        );
+        $("#header").load("/components/header_without_search.html", function () {
+            NavigationActiveToggle();
+            ThemeSwitch();
+            TastenkombinationenActiveToggle();
+            ActiveFollowCursor();
+        });
     }
 }
 
@@ -221,12 +211,8 @@ function LoadFooter() {
             var randomNum = Math.floor(Math.random() * myPix.length);
             try {
                 document.getElementById("vogel").src = myPix[randomNum];
-                if (
-                    Math.random() < 0.5 &&
-                    myPix[randomNum] != "/img/vogel24.gif"
-                ) {
-                    document.getElementById("vogel").style.transform =
-                        "scale(-1, 1)";
+                if (Math.random() < 0.5 && myPix[randomNum] != "/img/vogel24.gif") {
+                    document.getElementById("vogel").style.transform = "scale(-1, 1)";
                 }
                 // document.getElementById("vogel_a").style.cursor = "default";
 
@@ -242,15 +228,11 @@ function LoadFooter() {
 }
 
 function ScrollIndicator() {
-    var winScroll =
-        document.body.scrollTop || document.documentElement.scrollTop;
-    var height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     if (document.getElementById("scroll_indicator") != null) {
-        document.getElementById("scroll_indicator").style.width =
-            scrolled + "%";
+        document.getElementById("scroll_indicator").style.width = scrolled + "%";
     }
 }
 
@@ -279,19 +261,12 @@ function NavigationActiveToggle() {
 }
 
 function TastenkombinationenActiveToggle() {
-    let tastenkombinationenSwitch = document.querySelector(
-        ".tastenkombinationenSwitch"
-    );
-    let background_close = document.querySelector(
-        ".tastenkombinationen-background_close"
-    );
-    let tastenkombinationen_iframe = document.querySelector(
-        ".tastenkombinationen-iframe"
-    );
+    let tastenkombinationenSwitch = document.querySelector(".tastenkombinationenSwitch");
+    let background_close = document.querySelector(".tastenkombinationen-background_close");
+    let tastenkombinationen_iframe = document.querySelector(".tastenkombinationen-iframe");
     tastenkombinationenSwitch.onclick = function () {
         background_close.classList.add("active"); // damit Hintergrund verschwommen
         tastenkombinationen_iframe.style.display = "block";
-        console.log(background_close);
     };
     background_close.onclick = function () {
         background_close.classList.remove("active");
@@ -316,9 +291,7 @@ function ActiveFollowCursor() {
         const diffX = clientX - rect.width / 2 - rect.left;
         const diffY = clientY - rect.height / 2 - rect.top;
         if (calculateDistance(diffX / 2, diffY / 2, 10000)) {
-            element.style.transform = `translate(${diffX * 1.2}px, ${
-                diffY * 1.2
-            }px)`;
+            element.style.transform = `translate(${diffX * 1.2}px, ${diffY * 1.2}px)`;
         }
     };
 
@@ -330,12 +303,8 @@ function ActiveFollowCursor() {
         const rect = element.getBoundingClientRect();
         const diffX = clientX - rect.width / 2 - rect.left;
         const diffY = navclientY - rect.height / 2 - rect.top;
-        if (
-            calculateDistance(diffX, diffY, 0.15625 * document.body.offsetWidth)
-        ) {
-            element.style.transform = `translate(${diffX / 2}px, ${
-                diffY / 2
-            }px)`;
+        if (calculateDistance(diffX, diffY, 0.15625 * document.body.offsetWidth)) {
+            element.style.transform = `translate(${diffX / 2}px, ${diffY / 2}px)`;
         }
     };
 
@@ -348,12 +317,8 @@ function ActiveFollowCursor() {
     if (!window.matchMedia("(pointer: coarse)").matches) {
         // none, fine, coarse
         navLinks.forEach((link) => {
-            link.addEventListener("mousemove", (event) =>
-                mouseNavEnterHandler(event, link)
-            );
-            link.addEventListener("mouseleave", (event) =>
-                mouseLeaveHandler(event, link)
-            );
+            link.addEventListener("mousemove", (event) => mouseNavEnterHandler(event, link));
+            link.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, link));
         });
 
         if ((themeSwitch = document.querySelector(".themeSwitch"))) {
@@ -366,12 +331,8 @@ function ActiveFollowCursor() {
         }
 
         if ((burger = document.querySelector(".burger"))) {
-            burger.addEventListener("mousemove", (event) =>
-                mouseEnterHandler(event, burger)
-            );
-            burger.addEventListener("mouseleave", (event) =>
-                mouseLeaveHandler(event, burger)
-            );
+            burger.addEventListener("mousemove", (event) => mouseEnterHandler(event, burger));
+            burger.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, burger));
         }
 
         if ((back_button = document.querySelector(".back_button"))) {
@@ -392,11 +353,7 @@ function ActiveFollowCursor() {
             );
         }
 
-        if (
-            (tastenkombinationenSwitch = document.querySelector(
-                ".tastenkombinationenSwitch"
-            ))
-        ) {
+        if ((tastenkombinationenSwitch = document.querySelector(".tastenkombinationenSwitch"))) {
             tastenkombinationenSwitch.addEventListener("mousemove", (event) =>
                 mouseEnterHandler(event, tastenkombinationenSwitch)
             );

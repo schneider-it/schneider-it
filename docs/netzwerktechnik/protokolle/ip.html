@@ -19,17 +19,14 @@
 
     <div id="header"></div>
 
-    <div class="tastenkombinationen-background_close"></div>
-    <iframe src="/tools/tastenkombinationen.html" class="tastenkombinationen-iframe"></iframe>
-
-    <div class="back_button">
+        <div class="back_button">
         <a href="../protokolle.html">
             <ion-icon name="arrow-back-outline"></ion-icon>
         </a>
     </div>
 
     <div class="title searchable">
-        <img src="/img/IP.svg" alt="IP_Logo">
+        <img loading="lazy" src="/img/IP.svg" alt="IP_Logo">
         <h1>IP</h1>
     </div>
     <div></div>
@@ -196,11 +193,11 @@
                         Bei IPv6-Adressen heißen die ersten 64 Bit <b>Präfix</b> (auch: Netz-ID oder Network Prefix) (vergleichbar mit dem Netzanteil von IPv4-Adressen) und die hinteren 64 Bit <b>Interface Identifier</b> (auch: Suffix, IID oder EUI) (vergleichbar mit dem Hostanteil von IPv4-Adressen).
                         Anders als bei IPv4 gibt es keinen Suffix bzw. keine Subnetzmaske der bzw. die bestimmt, an welcher Bitstelle die Trennung zwischen diesen beiden Teilen verläuft. 
                         Stattdessen ist die Trennung zwischen Präfix und Interface Identifier immer zwischen 64 und 65 Bit!
-                        <a href="/img/IPv6_Segmentierung1.png" data-lightbox="lightbox" data-title="Segmentierung"><img src="/img/IPv6_Segmentierung1.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
+                        <a href="/img/IPv6_Segmentierung1.png" data-lightbox="lightbox" data-title="Segmentierung"><img loading="lazy" src="/img/IPv6_Segmentierung1.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         Diese grundlegende, einfach definierte Art und Weise ermöglicht ein sehr viel schnelleres Routing, weil die Router nicht mehr die Subnetzmaske berechnen müssen.
                         <br><br>
                         Falls größere Unternehmen trotzdem mehrere Subnetze zur Verfügung haben wollen, gibt der Provider z.B. ein /56-Netz her, was bedeutet, dass die ersten 56 Bit vom Provider vorgeschrieben sind und die anderen 8 Bit vom Unternehmen für Subnetze verwendet werden können.
-                        <a href="/img/IPv6_Segmentierung2.png" data-lightbox="lightbox" data-title="Segmentierung"><img src="/img/IPv6_Segmentierung2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
+                        <a href="/img/IPv6_Segmentierung2.png" data-lightbox="lightbox" data-title="Segmentierung"><img loading="lazy" src="/img/IPv6_Segmentierung2.png" alt="Dieses Bild wurde vorübergehend gesperrt!" class="img" invert></a>
                         Egal, wie viele Subnetz man zur Verfügung hat, in jedem Subnetz können 2<sup>64</sup> Adressen vergeben werden. Da jeder Host mehrere Adressen haben kann, wäre es sogar denkbar, das jeder Dienst oder jede Anwendung auf einem Server eine eigene IPv6-Adresse bekommt.
                     </div>
                     <h4 id="IPv6-Scopes">Scopes</h4>

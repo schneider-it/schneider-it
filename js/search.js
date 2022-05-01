@@ -53,25 +53,17 @@ $("#search").on("keyup", function (e) {
         let pattern = document.getElementById("search").value;
         ergebnisse = fuse.search(pattern);
 
-        // console.log(JSON.stringify(ergebnisse, null, 2));
-
         if (pattern != "" && ergebnisse != "") {
             if (!window.matchMedia("(pointer: coarse)").matches)
                 document
                     .querySelector(".search_div")
-                    .setAttribute(
-                        "data-after",
-                        "Press Enter to open the first result!"
-                    );
+                    .setAttribute("data-after", "Press Enter to open the first result!");
         } else {
             // search_history = JSON.parse(localStorage.getItem("search_history"));
             BuildSearchHistory();
             document
                 .querySelector(".search_div")
-                .setAttribute(
-                    "data-after",
-                    "Press Enter to open your latest result!"
-                );
+                .setAttribute("data-after", "Press Enter to open your latest result!");
         }
 
         BuildErgebnisse(ergebnisse);
@@ -111,14 +103,11 @@ function BuildErgebnisse(ergebnisse) {
 function BuildSearchHistory() {
     const container = document.getElementById("ergebnisse");
     if (search_history.length == 0) container.innerHTML = "";
-    else if (search_history.length == 1)
-        container.innerHTML = "<h6>Latest Result:</h6>";
-    else if (search_history.length > 1)
-        container.innerHTML = "<h6>Latest Results:</h6>";
+    else if (search_history.length == 1) container.innerHTML = "<h6>Latest Result:</h6>";
+    else if (search_history.length > 1) container.innerHTML = "<h6>Latest Results:</h6>";
 
     let clear_search_history = document.getElementById("clear_search_history");
-    if (search_history.length != 0)
-        clear_search_history.style.display = "block";
+    if (search_history.length != 0) clear_search_history.style.display = "block";
     else clear_search_history.style.display = "none";
 
     for (let i = 0; i < search_history.length; i++) {
@@ -149,20 +138,16 @@ document.onkeydown = function (e) {
         if (!window.matchMedia("(pointer: coarse)").matches && ergebnisse != "")
             document
                 .querySelector(".search_div")
-                .setAttribute(
-                    "data-after",
-                    "Press Enter to open the selected result!"
-                );
+                .setAttribute("data-after", "Press Enter to open the selected result!");
 
-        let active_element = document.getElementById("active");
+        let active_element = document.querySelector("[active]");
         if (active_element == null) {
             let container = document.getElementById("ergebnisse");
             let first_element = container.firstElementChild;
             if (first_element != null) {
-                first_element.setAttribute("id", "active");
+                first_element.setAttribute("active", "");
                 setBackgroundofErgebnis(first_element);
             }
-            console.log("return false;");
             return false;
         }
         let new_active_element;
@@ -174,20 +159,20 @@ document.onkeydown = function (e) {
         }
 
         if (new_active_element != null) {
-            active_element.setAttribute("id", "");
+            active_element.removeAttribute("active");
             active_element.style.background = "";
-            new_active_element.setAttribute("id", "active");
+            new_active_element.setAttribute("active", "");
             setBackgroundofErgebnis(new_active_element);
             new_active_element.scrollIntoViewIfNeeded(true);
         } else {
-            active_element.setAttribute("id", "");
+            active_element.removeAttribute("active");
             let container = document.getElementById("ergebnisse");
             if (!e.shiftKey) {
                 let first_element = container.firstElementChild;
                 let last_element = container.lastElementChild;
                 if (first_element != null) {
                     last_element.style.background = "";
-                    first_element.setAttribute("id", "active");
+                    first_element.setAttribute("active", "");
                     setBackgroundofErgebnis(first_element);
                     first_element.scrollIntoViewIfNeeded(true);
                 }
@@ -196,13 +181,12 @@ document.onkeydown = function (e) {
                 let first_element = container.firstElementChild;
                 if (last_element != null) {
                     first_element.style.background = "";
-                    last_element.setAttribute("id", "active");
+                    last_element.setAttribute("active", "");
                     setBackgroundofErgebnis(last_element);
                     last_element.scrollIntoViewIfNeeded(true);
                 }
             }
         }
-        console.log("return false;");
         return false;
     }
 
@@ -210,14 +194,22 @@ document.onkeydown = function (e) {
         event.preventDefault();
         let pattern = document.getElementById("search").value;
         let ergebnisse = fuse.search(pattern);
-        let active_element = document.getElementById("active");
+        let active_element = document.querySelector("[active]");
+        var index = 0;
         if (active_element != null) {
-            // let link = active_element.firstElementChild.href;
-            OnClickErgebnis(active_element);
-        } else {
-            // let link = ergebnisse[0].item.location;
-            OnClickErgebnis(ergebnisse[0]);
+            for (var i = 0; i < ergebnisse.length; i++) {
+                if (
+                    active_element.children[0].innerHTML == ergebnisse[i].title &&
+                    active_element.children[1].innerHTML == ergebnisse[i].prettypath
+                )
+                    index = i;
+            }
         }
+        OnClickErgebnis(
+            ergebnisse[index].item.title,
+            ergebnisse[index].item.location,
+            ergebnisse[index].item.prettypath
+        );
     }
 };
 
@@ -226,9 +218,10 @@ function LoadSearchHistory() {
         search_history = JSON.parse(localStorage.getItem("search_history"));
     else search_history = [];
 
-    search_history = search_history.filter(
-        (element) => element.prettypath !== undefined
-    );
+    // search_history = [];
+    // localStorage.setItem("search_history", JSON.stringify(search_history));
+
+    search_history = search_history.filter((element) => element.prettypath !== undefined);
 
     BuildSearchHistory();
 }
@@ -243,21 +236,22 @@ function OnClickErgebnis(title, location, prettypath) {
     let isalreadyinHistory = false;
     for (let i = 0; i < search_history.length; i++) {
         if (
-            (search_history[i].title == title &&
-                search_history[i].location == location &&
-                search_history[i].prettypath == prettypath) ||
-            search_history.length >= 5
+            search_history[i].title == EscapeHTML(title) &&
+            search_history[i].location == EscapeHTML(location) &&
+            search_history[i].prettypath == EscapeHTML(prettypath)
         )
             isalreadyinHistory = true;
     }
     if (!isalreadyinHistory) {
-        search_history[search_history.length] = {
-            title: title,
-            location: location,
-            prettypath: prettypath,
+        for (let i = search_history.length - 1; i >= 0; i--) {
+            if (i <= 5) search_history[i + 1] = search_history[i];
+        }
+        search_history[0] = {
+            title: EscapeHTML(title),
+            location: EscapeHTML(location),
+            prettypath: EscapeHTML(prettypath),
         };
     }
-    console.log(search_history);
     localStorage.setItem("search_history", JSON.stringify(search_history));
     window.location.href = location;
 }
@@ -276,3 +270,13 @@ function setBackgroundofErgebnis(element) {
 $("#search_form").submit(function () {
     return false;
 });
+
+function EscapeHTML(unsafe) {
+    console.log(unsafe);
+    return unsafe
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
