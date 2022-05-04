@@ -1,10 +1,10 @@
-@use '../abstracts/colors' as *;
+@use "../abstracts/colors" as *;
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 
     text-decoration: none;
     outline-style: none;
@@ -21,11 +21,10 @@
     color: inherit;
 }
 
-html, 
+html,
 body {
-    color: $font-color; 
+    color: $font-color;
     background-color: $background-color;
-
     overflow-x: hidden;
     // overflow: overlay;
     scroll-behavior: smooth;

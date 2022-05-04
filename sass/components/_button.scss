@@ -4,36 +4,78 @@
 .button {
     display: inline-block;
     position: relative;
-    font-family: 'Lato', sans-serif;
-    color: $font-color;
-    $border-value: 0.2rem;
-    // border: $border-value solid $main-color;
-    border-radius: $border-value;
-    margin-block: 1rem;
-    padding: .5rem; 
+    border: 0.1rem solid $main-color;
+    box-shadow: inset 0.1rem 0.1rem $main-color, inset -0.1rem -0.1rem $main-color;
+    background: none;
+    margin: 1rem;
+    padding: 0.5em 1em;
+    color: $main-color;
+    font-size: 1.2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
     overflow: hidden;
-    transition: color $transition-middle ease-in-out, transform $transition-middle ease-in-out;
+    z-index: 0;
+    transition: color $transition-long ease-in-out;
 
     &::before {
-        content: '';
-        $slope-value: 1rem;
+        content: "";
         position: absolute;
-        top: -1px;
-        left: -1px;
-        right: -$slope-value;
-        bottom: -1px;
-        clip-path: polygon(0 0, calc(100% - $slope-value) 0, 100% 100%, 0% 100%);
-        background-color: $main-color;
-        transform: translateX(-100%);
-        transition: transform $transition-middle ease-in-out;
+        background: $main-color;
+        z-index: -1;
+    }
+
+    &[hover-from="top"]::before {
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 0%;
+        border-radius: 0 0 50% 50%;
+        transition: height $transition-middle ease-in-out;
+    }
+
+    &[hover-from="right"]::before {
+        right: 0px;
+        top: 0px;
+        height: 100%;
+        width: 0%;
+        border-radius: 50% 0 0 50%;
+        transition: width $transition-middle ease-in-out;
+    }
+
+    &[hover-from="bottom"]::before {
+        bottom: 0px;
+        right: 0px;
+        width: 100%;
+        height: 0%;
+        border-radius: 50% 50% 0 0;
+        transition: height $transition-middle ease-in-out;
+    }
+
+    &[hover-from="left"]::before {
+        left: 0px;
+        bottom: 0px;
+        height: 100%;
+        width: 0%;
+        border-radius: 0 50% 50% 0;
+        transition: width $transition-middle ease-in-out;
     }
 
     &:hover {
-        color: $background-color;
-        // transform: scale(0.99);
+        color: $font-color-light;
 
         &::before {
-            transform: translateX(0%);    
+            transition: $transition-long;
+        }
+
+        &[hover-from="top"]::before,
+        &[hover-from="bottom"]::before {
+            height: 200%;
+        }
+
+        &[hover-from="right"]::before,
+        &[hover-from="left"]::before {
+            width: 200%;
         }
     }
 
@@ -41,13 +83,14 @@
         text-transform: uppercase;
     }
 
-    &[prev] {
+    &[prev],
+    &[next] {
         text-transform: uppercase;
+    }
 
+    &[prev] {
     }
 
     &[next] {
-        text-transform: uppercase;
-        
     }
 }
