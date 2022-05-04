@@ -291,6 +291,28 @@ body {
             transform: rotate(-45deg);
   }
 }
+@-webkit-keyframes button-next-anim {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #fbc638;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes button-next-anim {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #fbc638;
+  }
+  100% {
+    color: white;
+  }
+}
 html,
 body {
   font-size: clamp(1.1rem, 1.2vw, 1.5rem);
@@ -347,7 +369,7 @@ p {
 
 footer {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 8.5rem;
   padding: 5rem 5rem 10rem 5rem;
   background: hsl(220deg, 10%, 20%);
   font-size: 1rem;
@@ -947,10 +969,10 @@ body[colorTheme=light] .sun {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out, color 0.2s ease-in-out;
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out, color 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease-in-out;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 995;
 }
 .back_button > a,
@@ -1473,7 +1495,9 @@ table tr td.right {
   text-transform: uppercase;
 }
 .button[prev], .button[next] {
+  position: relative;
   padding: 0.5em 1.5em;
+  color: hsl(0deg, 0%, 100%);
   background: #6225e6;
   -webkit-clip-path: polygon(0.8rem 0, 100% 0%, calc(100% - 0.8rem) 100%, 0% 100%);
           clip-path: polygon(0.8rem 0, 100% 0%, calc(100% - 0.8rem) 100%, 0% 100%);
@@ -1482,10 +1506,82 @@ table tr td.right {
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
+  -webkit-transition: margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  z-index: 10;
 }
-.button[prev]::after, .button[next]::after {
-  content: "";
+.button[prev] div:nth-child(1) i {
+  position: absolute;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
+.button[prev] div:nth-child(2) {
+  margin-left: 2rem;
+}
+.button[prev]:hover {
+  -webkit-transform: translateX(-0.5rem);
+          transform: translateX(-0.5rem);
+}
+.button[prev]:hover div:nth-child(1) .arrow-one {
+  -webkit-transform: translateX(calc(-100% + 0.5rem)) scale(1.4);
+          transform: translateX(calc(-100% + 0.5rem)) scale(1.4);
+  -webkit-animation: button-next-anim 1s infinite 0.2s;
+          animation: button-next-anim 1s infinite 0.2s;
+}
+.button[prev]:hover div:nth-child(1) .arrow-two {
+  -webkit-transform: translateX(0.5rem) scale(1.4);
+          transform: translateX(0.5rem) scale(1.4);
+  -webkit-animation: button-next-anim 1s infinite 0.4s;
+          animation: button-next-anim 1s infinite 0.4s;
+}
+.button[prev]:hover div:nth-child(1) .arrow-three {
+  -webkit-transform: translateX(calc(100% + 0.5rem)) scale(1.4);
+          transform: translateX(calc(100% + 0.5rem)) scale(1.4);
+  -webkit-animation: button-next-anim 1s infinite 0.6s;
+          animation: button-next-anim 1s infinite 0.6s;
+}
+.button[prev]:hover div:nth-child(2) {
+  margin-left: 3.5rem;
+}
+.button[next] div:nth-child(1) {
+  margin-right: 1rem;
+}
+.button[next] div:nth-child(2) {
+  padding: 0.5em 0;
+}
+.button[next] div:nth-child(2) i {
+  position: absolute;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+.button[next]:hover {
+  -webkit-box-shadow: 5rem 5rem 0 #fbc638;
+          box-shadow: 5rem 5rem 0 #fbc638;
+  -webkit-transform: translateX(1rem);
+          transform: translateX(1rem);
+}
+.button[next]:hover div:nth-child(1) {
+  margin-right: 2rem;
+}
+.button[next]:hover div:nth-child(2) .arrow-one {
+  -webkit-transform: translateX(-100%) scale(1.4);
+          transform: translateX(-100%) scale(1.4);
+  -webkit-animation: button-next-anim 1s infinite 0.2s;
+          animation: button-next-anim 1s infinite 0.2s;
+}
+.button[next]:hover div:nth-child(2) .arrow-two {
+  -webkit-animation: button-next-anim 1s infinite 0.4s;
+          animation: button-next-anim 1s infinite 0.4s;
+}
+.button[next]:hover div:nth-child(2) .arrow-three {
+  -webkit-transform: translateX(100%) scale(1.4);
+          transform: translateX(100%) scale(1.4);
+  -webkit-animation: button-next-anim 1s infinite 0.6s;
+          animation: button-next-anim 1s infinite 0.6s;
+}
+
 hr {
   position: relative;
   width: 100%;

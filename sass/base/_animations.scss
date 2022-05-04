@@ -1,34 +1,37 @@
 @keyframes burger-anim1 {
-    0%{
+    0% {
         transform: rotate(45deg);
     }
-    40%, 60% {
+    40%,
+    60% {
         transform: rotate(0deg);
         transform: translateY(0vh);
     }
     100% {
-        transform: translateY(-.6vh);
+        transform: translateY(-0.6vh);
     }
 }
 
 @keyframes burger-anim2 {
-    0%{
+    0% {
         transform: rotate(-45deg);
     }
-    40%, 60% {
+    40%,
+    60% {
         transform: rotate(0deg);
         transform: translateY(0vh);
     }
     100% {
-        transform: translateY(.6vh);
+        transform: translateY(0.6vh);
     }
 }
 
 @keyframes burger-anim1-active {
-    0%{
-        transform: translateY(-.6vh);
+    0% {
+        transform: translateY(-0.6vh);
     }
-    40%, 60% {
+    40%,
+    60% {
         transform: translateY(0vh);
         transform: rotate(0deg);
     }
@@ -38,14 +41,27 @@
 }
 
 @keyframes burger-anim2-active {
-    0%{
-        transform: translateY(.6vh);
+    0% {
+        transform: translateY(0.6vh);
     }
-    40%, 60% {
+    40%,
+    60% {
         transform: translateY(0vh);
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(-45deg);
+    }
+}
+
+@keyframes button-next-anim {
+    0% {
+        color: white;
+    }
+    50% {
+        color: #fbc638;
+    }
+    100% {
+        color: white;
     }
 }

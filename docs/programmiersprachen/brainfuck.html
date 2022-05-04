@@ -1,145 +1,257 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!">
-    <link rel="stylesheet" href="/css/lightbox.min.css">
-    <link href="/css/fa_all.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Programmiersprachen - Brainfuck</title>
-</head>
-<body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
-    <div class="scroll_indicator_div">
-        <div class="scroll_indicator" id="scroll_indicator"></div>
-    </div> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
 
-    <div id="header"></div>
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
+        <title>Schneider IT - Programmiersprachen - Brainfuck</title>
+    </head>
+    <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
+        <div class="scroll_indicator_div">
+            <div class="scroll_indicator" id="scroll_indicator"></div>
+        </div>
+
+        <div id="header"></div>
 
         <div class="back_button">
-        <a href="../programmiersprachen.html">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-        </a>
-    </div>
-
-    <div class="title searchable">
-        <img loading="lazy" src="/img/brainfuck.png" alt="Brainfuck_Logo">
-        <h1>Brainfuck</h1>
-    </div>
-    <div></div>
-
-    <div class="section searchable">
-        <div class="container" style="margin-top: 10vh;">
-            <h3 id="Was_ist_das?">Was ist das?</h3>
-            <p>
-                Brainfuck ist eine minimalistische esoterische Programmiersprache, die dafür sorgt, das dein Gehirn schmerzt. 
-                Sie ist voll funktionsfähig, aber nicht dazu gedacht, echte Software zu erstellen. 
-                Es ist mehr wie ein Kunstwerk, das den IQ Status herausfordert.
-            </p>
-            <h3 id="Erklärung">Erklärung</h3>
-            <div>
-                <h4 id="Erklärung-Entwicklung">Entwicklung</h4>
-                <p>
-                    Brainfuck wurde 1993 von dem Schweizer Physikstudenten Urban Müller entwickelt, dessen Ziel es war, eine Sprache mit einem möglichst kleinen Compiler zu entwickeln.
-                    Sie wurde für das Amiga 2.0-Betriebssystem entwickelt und der Compiler hat weniger als 200 Bytes (<a href="https://gist.github.com/lifthrasiir/596667" class="link">160 Bytes</a>). 
-                    Auch wenn diese 160 Bytes eigentlich nicht der Syntax von C entsprechen, wird der Code trotz Warnings compiliert.
-                    <div class="code"> 
-                        <span class="code-error">s</span>[<span class="code-number">99</span>],<span class="code-keyword">*</span><span class="code-error">r</span><span class="code-keyword">=</span><span class="code-error">s</span>,<span class="code-keyword">*</span><span class="code-error">d</span>,<span class="code-error">c</span>;<span class="code-error">main</span>(<span class="code-error">a</span>,<span class="code-error">b</span>){char<span class="code-keyword">*</span><span class="code-error">v</span><span class="code-keyword">=</span><span class="code-number">1</span>[<span class="code-error">d</span><span class="code-keyword">=</span><span class="code-error">b</span>];<span class="code-flowcontrol">for</span>(;<span class="code-error">c</span><span class="code-keyword">=</span><span class="code-keyword">*</span><span class="code-error">v</span><span class="code-keyword">++</span><span class="code-keyword">%</span><span class="code-number">93</span>;)<span class="code-flowcontrol">for</span>(<span class="code-error">b</span><span class="code-keyword">=</span><span class="code-error">c</span><span class="code-keyword">&</span><span class="code-number">2</span>,<span class="code-error">b</span><span class="code-keyword">=</span><span class="code-error">c</span><span class="code-keyword">%</span><span class="code-number">7</span><span class="code-keyword">?</span><span class="code-error">a</span>&&(<span class="code-error">c</span><span class="code-keyword">&</span><span class="code-number">17</span><span class="code-keyword">?</span><span class="code-error">c</span><span class="code-keyword">&</span><span class="code-number">1</span><span class="code-keyword">?</span>(<span class="code-keyword">*</span><span class="code-error">r</span><span class="code-keyword">+</span><span class="code-keyword">=</span><span class="code-error">b</span><span class="code-keyword">-</span><span class="code-number">1</span>):(<span class="code-error">r</span><span class="code-keyword">+</span><span class="code-keyword">=</span><span class="code-error">b</span><span class="code-keyword">-</span><span class="code-number">1</span>):<span class="code-error">syscall</span>(<span class="code-number">4</span><span class="code-keyword">-</span><span class="code-keyword">!</span><span class="code-error">b</span>,<span class="code-error">b</span>,<span class="code-error">r</span>,<span class="code-number">1</span>),<span class="code-number">0</span>):<span class="code-error">v</span>;<span class="code-error">b</span><span class="code-keyword">&&</span><span class="code-error">c</span>|<span class="code-error">a</span><span class="code-keyword">**</span><span class="code-error">r</span>;<span class="code-error">v</span><span class="code-keyword">=</span><span class="code-error">d</span>)<span class="code-error">main</span>(<span class="code-keyword">!</span><span class="code-error">c</span>,<span class="code-keyword">&</span><span class="code-error">a</span>);<span class="code-error">d</span><span class="code-keyword">=</span><span class="code-error">v</span>;}
-                    </div>
-                </p>
-                <h4 id="Erklärung-Programmierung">Programmierung</h4>
-                <p>
-                    Ein Brainfuck-Programm beginnt mit einem eindimensionalen Array von 30000 Byte. 
-                    Alle Werte werden auf Null initialisiert, dann gibt es einen beweglichen Zeiger, den man mit acht verschiedenen Befehlen manipulieren kann. 
-                    <br><br>
-                    Verwenden Sie das Größer- oder Kleiner-Zeichen, um den Zeiger um jeweils eine Zelle nach links oder rechts zu verschieben. 
-                    Erhöhen oder verringern Sie den Wert in einer Zelle mit Plus oder Minus. 
-                    Verwenden Sie einen Punkt, um das Byte an der aktuellen Position des Zeigers auszugeben, oder verwenden Sie ein Komma, um eine Eingabe zu akzeptieren und an der aktuellen Position des Zeigers zu speichern.
-                    Und schließlich verwenden Sie öffnende und schließende Klammern, um eine Schleife zu erstellen. 
-                    Beachten Sie, dass Brainfuck keine Variablen, Funktionen oder Klassen benötigt. 
-                    <table>
-                        <tr>
-                            <th>Zeichen</th>
-                            <th>C-Äquivalent</th>
-                            <th>Semantik</th>
-                        </tr>
-                        <tr>
-                            <td>&gt;</td>
-                            <td>ptr++;</td>
-                            <td>inkrementiert den Zeiger</td>
-                        </tr>
-                        <tr>
-                            <td>&lt;</td>
-                            <td>ptr--;</td>
-                            <td>dekrementiert den Zeiger</td>
-                        </tr>
-                        <tr>
-                            <td>+</td>
-                            <td>ptr[0]++;</td>
-                            <td>inkrementiert den aktuellen Zellenwert</td>
-                        </tr>
-                        <tr>
-                            <td>-</td>
-                            <td>ptr[0]--;</td>
-                            <td>dekrementiert den aktuellen Zellenwert</td>
-                        </tr>
-                        <tr>
-                            <td>.</td>
-                            <td>putchar (ptr[0]);</td>
-                            <td>Gibt den aktuellen Zellenwert als ASCII-Zeichen auf der Standardausgabe aus</td>
-                        </tr>
-                        <tr>
-                            <td>,</td>
-                            <td>ptr[0] = getchar();</td>
-                            <td>Liest ein Zeichen von der Standardeingabe und speichert dessen ASCII-Wert in der aktuellen Zelle</td>
-                        </tr>
-                        <tr>
-                            <td>[</td>
-                            <td>while (ptr[0]) {</td>
-                            <td>Springt nach vorne, hinter den passenden ]-Befehl, wenn der aktuelle Zellenwert 0 ist</td>
-                        </tr>
-                        <tr>
-                            <td>]</td>
-                            <td>}</td>
-                            <td>Springt zurück, hinter den passenden [-Befehl, wenn der aktuelle Zellenwert nicht 0 ist</td>
-                        </tr>
-                    </table>
-                </p>
-                <h4 id="Erklärung-Mit_Brainfuck_anfangen">Mit Brainfuck anfangen</h4>
-                <p>
-                    Um mit Brainfuck zu beginnen, löschen Sie Ihr Betriebssystem und installieren Sie Amiga OS. 
-                    Dann erstellen Sie eine Datei mit der Endung .bf, was für Brainfuck steht. 
-                    Alle Zeichen, die nicht in der obrigen Tabelle vorkommen, werden als Kommentar ignoriert.
-                    <br><br>
-                    Um jetzt einen String ausgeben zu können, müssen die einzelnen Arrayelemente des anfänglich leeren Arrays auf die einzelnen Werte (ASCII Tabelle) des Strings gesetzt werden. 
-                    <br><br>
-                    Um diesen Code dann auszuprobieren, rufen Sie diese Website aus: <a href="https://copy.sh/brainfuck/" class="link">https://copy.sh/brainfuck/</a>.
-                    <br><br>
-                    Viel Spaß!
-                </p>
-            </div>
-
-            <div class="button">Some button</div>
-            <div class="button" uppercase>Some button</div>
-            <div class="flexbox" space-between>
-                <div id="button-prev" class="button" prev style="opacity: 0.1; pointer-events: none; user-select:none;"><a href="">Previous</a></div>
-                <div id="button-next" class="button" next><a href="">Next</a></div>
-            </div>            
+            <a href="../programmiersprachen.html">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </a>
         </div>
-    </div>
 
-    <div id="footer"></div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script defer src="/js/fa_all.min.js"></script>
+        <div class="title searchable">
+            <img loading="lazy" src="/img/brainfuck.png" alt="Brainfuck_Logo" />
+            <h1>Brainfuck</h1>
+        </div>
+        <div></div>
 
-    <script type="text/javascript" src="/js/app.js"></script>
-</body>
+        <div class="section searchable">
+            <div class="container" style="margin-top: 10vh">
+                <h3 id="Was_ist_das?">Was ist das?</h3>
+                <div>
+                    Brainfuck ist eine minimalistische esoterische Programmiersprache, die dafür
+                    sorgt, das dein Gehirn schmerzt. Sie ist voll funktionsfähig, aber nicht dazu
+                    gedacht, echte Software zu erstellen. Es ist mehr wie ein Kunstwerk, das den IQ
+                    Status herausfordert.
+                </div>
+                <h3 id="Erklärung">Erklärung</h3>
+                <div>
+                    <h4 id="Erklärung-Entwicklung">Entwicklung</h4>
+                    <div>
+                        Brainfuck wurde 1993 von dem Schweizer Physikstudenten Urban Müller
+                        entwickelt, dessen Ziel es war, eine Sprache mit einem möglichst kleinen
+                        Compiler zu entwickeln. Sie wurde für das Amiga 2.0-Betriebssystem
+                        entwickelt und der Compiler hat weniger als 200 Bytes (<a
+                            href="https://gist.github.com/lifthrasiir/596667"
+                            class="link"
+                            >160 Bytes</a
+                        >). Auch wenn diese 160 Bytes eigentlich nicht der Syntax von C entsprechen,
+                        wird der Code trotz Warnings compiliert.
+                        <div class="code">
+                            <span class="code-error">s</span>[<span class="code-number">99</span
+                            >],<span class="code-keyword">*</span><span class="code-error">r</span
+                            ><span class="code-keyword">=</span
+                            ><span class="code-error">s</span>,<span class="code-keyword">*</span
+                            ><span class="code-error">d</span>,<span class="code-error">c</span
+                            >;<span class="code-error">main</span>(<span class="code-error">a</span
+                            >,<span class="code-error">b</span>){char<span class="code-keyword"
+                                >*</span
+                            ><span class="code-error">v</span><span class="code-keyword">=</span
+                            ><span class="code-number">1</span>[<span class="code-error">d</span
+                            ><span class="code-keyword">=</span
+                            ><span class="code-error">b</span>];<span class="code-flowcontrol"
+                                >for</span
+                            >(;<span class="code-error">c</span><span class="code-keyword">=</span
+                            ><span class="code-keyword">*</span><span class="code-error">v</span
+                            ><span class="code-keyword">++</span><span class="code-keyword">%</span
+                            ><span class="code-number">93</span>;)<span class="code-flowcontrol"
+                                >for</span
+                            >(<span class="code-error">b</span><span class="code-keyword">=</span
+                            ><span class="code-error">c</span><span class="code-keyword">&</span
+                            ><span class="code-number">2</span>,<span class="code-error">b</span
+                            ><span class="code-keyword">=</span><span class="code-error">c</span
+                            ><span class="code-keyword">%</span><span class="code-number">7</span
+                            ><span class="code-keyword">?</span
+                            ><span class="code-error">a</span>&&(<span class="code-error">c</span
+                            ><span class="code-keyword">&</span><span class="code-number">17</span
+                            ><span class="code-keyword">?</span><span class="code-error">c</span
+                            ><span class="code-keyword">&</span><span class="code-number">1</span
+                            ><span class="code-keyword">?</span>(<span class="code-keyword">*</span
+                            ><span class="code-error">r</span><span class="code-keyword">+</span
+                            ><span class="code-keyword">=</span><span class="code-error">b</span
+                            ><span class="code-keyword">-</span
+                            ><span class="code-number">1</span>):(<span class="code-error">r</span
+                            ><span class="code-keyword">+</span><span class="code-keyword">=</span
+                            ><span class="code-error">b</span><span class="code-keyword">-</span
+                            ><span class="code-number">1</span>):<span class="code-error"
+                                >syscall</span
+                            >(<span class="code-number">4</span><span class="code-keyword">-</span
+                            ><span class="code-keyword">!</span
+                            ><span class="code-error">b</span>,<span class="code-error">b</span
+                            >,<span class="code-error">r</span>,<span class="code-number">1</span
+                            >),<span class="code-number">0</span>):<span class="code-error">v</span
+                            >;<span class="code-error">b</span><span class="code-keyword">&&</span
+                            ><span class="code-error">c</span>|<span class="code-error">a</span
+                            ><span class="code-keyword">**</span
+                            ><span class="code-error">r</span>;<span class="code-error">v</span
+                            ><span class="code-keyword">=</span
+                            ><span class="code-error">d</span>)<span class="code-error">main</span
+                            >(<span class="code-keyword">!</span
+                            ><span class="code-error">c</span>,<span class="code-keyword">&</span
+                            ><span class="code-error">a</span>);<span class="code-error">d</span
+                            ><span class="code-keyword">=</span><span class="code-error">v</span>;}
+                        </div>
+                    </div>
+                    <h4 id="Erklärung-Programmierung">Programmierung</h4>
+                    <div>
+                        Ein Brainfuck-Programm beginnt mit einem eindimensionalen Array von 30000
+                        Byte. Alle Werte werden auf Null initialisiert, dann gibt es einen
+                        beweglichen Zeiger, den man mit acht verschiedenen Befehlen manipulieren
+                        kann.
+                        <br /><br />
+                        Verwenden Sie das Größer- oder Kleiner-Zeichen, um den Zeiger um jeweils
+                        eine Zelle nach links oder rechts zu verschieben. Erhöhen oder verringern
+                        Sie den Wert in einer Zelle mit Plus oder Minus. Verwenden Sie einen Punkt,
+                        um das Byte an der aktuellen Position des Zeigers auszugeben, oder verwenden
+                        Sie ein Komma, um eine Eingabe zu akzeptieren und an der aktuellen Position
+                        des Zeigers zu speichern. Und schließlich verwenden Sie öffnende und
+                        schließende Klammern, um eine Schleife zu erstellen. Beachten Sie, dass
+                        Brainfuck keine Variablen, Funktionen oder Klassen benötigt.
+                        <table>
+                            <tr>
+                                <th>Zeichen</th>
+                                <th>C-Äquivalent</th>
+                                <th>Semantik</th>
+                            </tr>
+                            <tr>
+                                <td>&gt;</td>
+                                <td>ptr++;</td>
+                                <td>inkrementiert den Zeiger</td>
+                            </tr>
+                            <tr>
+                                <td>&lt;</td>
+                                <td>ptr--;</td>
+                                <td>dekrementiert den Zeiger</td>
+                            </tr>
+                            <tr>
+                                <td>+</td>
+                                <td>ptr[0]++;</td>
+                                <td>inkrementiert den aktuellen Zellenwert</td>
+                            </tr>
+                            <tr>
+                                <td>-</td>
+                                <td>ptr[0]--;</td>
+                                <td>dekrementiert den aktuellen Zellenwert</td>
+                            </tr>
+                            <tr>
+                                <td>.</td>
+                                <td>putchar (ptr[0]);</td>
+                                <td>
+                                    Gibt den aktuellen Zellenwert als ASCII-Zeichen auf der
+                                    Standardausgabe aus
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>,</td>
+                                <td>ptr[0] = getchar();</td>
+                                <td>
+                                    Liest ein Zeichen von der Standardeingabe und speichert dessen
+                                    ASCII-Wert in der aktuellen Zelle
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>[</td>
+                                <td>while (ptr[0]) {</td>
+                                <td>
+                                    Springt nach vorne, hinter den passenden ]-Befehl, wenn der
+                                    aktuelle Zellenwert 0 ist
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>]</td>
+                                <td>}</td>
+                                <td>
+                                    Springt zurück, hinter den passenden [-Befehl, wenn der aktuelle
+                                    Zellenwert nicht 0 ist
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <h4 id="Erklärung-Mit_Brainfuck_anfangen">Mit Brainfuck anfangen</h4>
+                    <div>
+                        Um mit Brainfuck zu beginnen, löschen Sie Ihr Betriebssystem und
+                        installieren Sie Amiga OS. Dann erstellen Sie eine Datei mit der Endung .bf,
+                        was für Brainfuck steht. Alle Zeichen, die nicht in der obrigen Tabelle
+                        vorkommen, werden als Kommentar ignoriert.
+                        <br /><br />
+                        Um jetzt einen String ausgeben zu können, müssen die einzelnen Arrayelemente
+                        des anfänglich leeren Arrays auf die einzelnen Werte (ASCII Tabelle) des
+                        Strings gesetzt werden.
+                        <br /><br />
+                        Um diesen Code dann auszuprobieren, rufen Sie diese Website aus:
+                        <a href="https://copy.sh/brainfuck/" class="link"
+                            >https://copy.sh/brainfuck/</a
+                        >. <br /><br />
+                        Viel Spaß!
+                    </div>
+                </div>
+
+                <div class="button">Some button</div>
+                <div class="button" uppercase>Some button</div>
+                <div class="flexbox" space-between>
+                    <div id="button-prev" class="button" prev>
+                        <a href="">
+                            <div class="flexbox" space-between>
+                                <div class="flexbox" wrap-reverse centered-vertical>
+                                    <i class="fa-solid fa-angle-left arrow-one"></i>
+                                    <i class="fa-solid fa-angle-left arrow-two"></i>
+                                    <i class="fa-solid fa-angle-left arrow-three"></i>
+                                </div>
+                                <div>Previous</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="button-next" class="button" next>
+                        <a href="">
+                            <div class="flexbox" space-between>
+                                <div>Next</div>
+                                <div class="flexbox" wrap-reverse centered-vertical>
+                                    <i class="fa-solid fa-angle-right arrow-one"></i>
+                                    <i class="fa-solid fa-angle-right arrow-two"></i>
+                                    <i class="fa-solid fa-angle-right arrow-three"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="/js/lightbox.min.js"></script>
+        <script defer src="/js/fa_all.min.js"></script>
+
+        <script type="text/javascript" src="/js/app.js"></script>
+    </body>
 </html>

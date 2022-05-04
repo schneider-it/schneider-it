@@ -137,8 +137,7 @@
         & .themeSwitch,
         & .tastenkombinationenSwitch {
             transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-                opacity $transition-short ease-in-out
-                    calc($transition-middle - $transition-short);
+                opacity $transition-short ease-in-out calc($transition-middle - $transition-short);
         }
     }
 }
@@ -152,8 +151,7 @@
     height: 100vh;
     background: $font-color;
     opacity: 0;
-    transition: opacity $transition-middle ease-in-out,
-        z-index 0s $transition-middle;
+    transition: opacity $transition-middle ease-in-out, z-index 0s $transition-middle;
     z-index: -999;
 
     &[active] {
@@ -276,8 +274,8 @@ body[colorTheme="light"] .sun {
 
     border-radius: 50%;
     transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-        background $transition-short ease-in-out,
-        color $transition-short ease-in-out;
+        background $transition-short ease-in-out, color $transition-short ease-in-out,
+        opacity $transition-middle ease-in-out;
     z-index: 995;
 
     & > a {
