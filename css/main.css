@@ -1394,15 +1394,17 @@ table tr td.right {
   }
 }
 .button {
+  margin: 1rem;
+}
+.button:not(:is([prev], [next])) {
   display: inline-block;
   position: relative;
   border: 0.1rem solid hsl(235deg, 86%, 65%);
   -webkit-box-shadow: inset 0.1rem 0.1rem hsl(235deg, 86%, 65%), inset -0.1rem -0.1rem hsl(235deg, 86%, 65%);
           box-shadow: inset 0.1rem 0.1rem hsl(235deg, 86%, 65%), inset -0.1rem -0.1rem hsl(235deg, 86%, 65%);
   background: none;
-  margin: 1rem;
-  padding: 0.5em 1em;
   color: hsl(235deg, 86%, 65%);
+  padding: 0.5em 1em;
   font-size: 1.2rem;
   font-family: "Lato", sans-serif;
   font-weight: 600;
@@ -1412,13 +1414,13 @@ table tr td.right {
   -webkit-transition: color 0.8s ease-in-out;
   transition: color 0.8s ease-in-out;
 }
-.button::before {
+.button:not(:is([prev], [next]))::before {
   content: "";
   position: absolute;
   background: hsl(235deg, 86%, 65%);
   z-index: -1;
 }
-.button[hover-from=top]::before {
+.button:not(:is([prev], [next]))[hover-from=top]::before {
   top: 0px;
   left: 0px;
   width: 100%;
@@ -1427,7 +1429,7 @@ table tr td.right {
   -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
 }
-.button[hover-from=right]::before {
+.button:not(:is([prev], [next]))[hover-from=right]::before {
   right: 0px;
   top: 0px;
   height: 100%;
@@ -1436,7 +1438,7 @@ table tr td.right {
   -webkit-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
 }
-.button[hover-from=bottom]::before {
+.button:not(:is([prev], [next]))[hover-from=bottom]::before {
   bottom: 0px;
   right: 0px;
   width: 100%;
@@ -1445,7 +1447,7 @@ table tr td.right {
   -webkit-transition: height 0.5s ease-in-out;
   transition: height 0.5s ease-in-out;
 }
-.button[hover-from=left]::before {
+.button:not(:is([prev], [next]))[hover-from=left]::before {
   left: 0px;
   bottom: 0px;
   height: 100%;
@@ -1454,24 +1456,35 @@ table tr td.right {
   -webkit-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
 }
-.button:hover {
+.button:not(:is([prev], [next])):hover {
   color: hsl(0deg, 0%, 100%);
 }
-.button:hover::before {
+.button:not(:is([prev], [next])):hover::before {
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
-.button:hover[hover-from=top]::before, .button:hover[hover-from=bottom]::before {
+.button:not(:is([prev], [next])):hover[hover-from=top]::before, .button:not(:is([prev], [next])):hover[hover-from=bottom]::before {
   height: 200%;
 }
-.button:hover[hover-from=right]::before, .button:hover[hover-from=left]::before {
+.button:not(:is([prev], [next])):hover[hover-from=right]::before, .button:not(:is([prev], [next])):hover[hover-from=left]::before {
   width: 200%;
 }
 .button[uppercase] {
   text-transform: uppercase;
 }
 .button[prev], .button[next] {
+  padding: 0.5em 1.5em;
+  background: #6225e6;
+  -webkit-clip-path: polygon(0.8rem 0, 100% 0%, calc(100% - 0.8rem) 100%, 0% 100%);
+          clip-path: polygon(0.8rem 0, 100% 0%, calc(100% - 0.8rem) 100%, 0% 100%);
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-style: italic;
   text-transform: uppercase;
+}
+.button[prev]::after, .button[next]::after {
+  content: "";
 }
 hr {
   position: relative;

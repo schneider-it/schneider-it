@@ -2,80 +2,83 @@
 @use "../abstracts/variables" as *;
 
 .button {
-    display: inline-block;
-    position: relative;
-    border: 0.1rem solid $main-color;
-    box-shadow: inset 0.1rem 0.1rem $main-color, inset -0.1rem -0.1rem $main-color;
-    background: none;
     margin: 1rem;
-    padding: 0.5em 1em;
-    color: $main-color;
-    font-size: 1.2rem;
-    font-family: "Lato", sans-serif;
-    font-weight: 600;
-    cursor: pointer;
-    overflow: hidden;
-    z-index: 0;
-    transition: color $transition-long ease-in-out;
 
-    &::before {
-        content: "";
-        position: absolute;
-        background: $main-color;
-        z-index: -1;
-    }
-
-    &[hover-from="top"]::before {
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 0%;
-        border-radius: 0 0 50% 50%;
-        transition: height $transition-middle ease-in-out;
-    }
-
-    &[hover-from="right"]::before {
-        right: 0px;
-        top: 0px;
-        height: 100%;
-        width: 0%;
-        border-radius: 50% 0 0 50%;
-        transition: width $transition-middle ease-in-out;
-    }
-
-    &[hover-from="bottom"]::before {
-        bottom: 0px;
-        right: 0px;
-        width: 100%;
-        height: 0%;
-        border-radius: 50% 50% 0 0;
-        transition: height $transition-middle ease-in-out;
-    }
-
-    &[hover-from="left"]::before {
-        left: 0px;
-        bottom: 0px;
-        height: 100%;
-        width: 0%;
-        border-radius: 0 50% 50% 0;
-        transition: width $transition-middle ease-in-out;
-    }
-
-    &:hover {
-        color: $font-color-light;
+    &:not(:is([prev], [next])) {
+        display: inline-block;
+        position: relative;
+        border: 0.1rem solid $main-color;
+        box-shadow: inset 0.1rem 0.1rem $main-color, inset -0.1rem -0.1rem $main-color;
+        background: none;
+        color: $main-color;
+        padding: 0.5em 1em;
+        font-size: 1.2rem;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        cursor: pointer;
+        overflow: hidden;
+        z-index: 0;
+        transition: color $transition-long ease-in-out;
 
         &::before {
-            transition: $transition-long;
+            content: "";
+            position: absolute;
+            background: $main-color;
+            z-index: -1;
         }
 
-        &[hover-from="top"]::before,
+        &[hover-from="top"]::before {
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 0%;
+            border-radius: 0 0 50% 50%;
+            transition: height $transition-middle ease-in-out;
+        }
+
+        &[hover-from="right"]::before {
+            right: 0px;
+            top: 0px;
+            height: 100%;
+            width: 0%;
+            border-radius: 50% 0 0 50%;
+            transition: width $transition-middle ease-in-out;
+        }
+
         &[hover-from="bottom"]::before {
-            height: 200%;
+            bottom: 0px;
+            right: 0px;
+            width: 100%;
+            height: 0%;
+            border-radius: 50% 50% 0 0;
+            transition: height $transition-middle ease-in-out;
         }
 
-        &[hover-from="right"]::before,
         &[hover-from="left"]::before {
-            width: 200%;
+            left: 0px;
+            bottom: 0px;
+            height: 100%;
+            width: 0%;
+            border-radius: 0 50% 50% 0;
+            transition: width $transition-middle ease-in-out;
+        }
+
+        &:hover {
+            color: $font-color-light;
+
+            &::before {
+                transition: $transition-long;
+            }
+
+            &[hover-from="top"]::before,
+            &[hover-from="bottom"]::before {
+                height: 200%;
+            }
+
+            &[hover-from="right"]::before,
+            &[hover-from="left"]::before {
+                width: 200%;
+            }
         }
     }
 
@@ -85,7 +88,20 @@
 
     &[prev],
     &[next] {
+        padding: 0.5em 1.5em;
+        $background: #6225e6;
+        background: $background;
+        $clip-path-offset: 0.8rem;
+        clip-path: polygon($clip-path-offset 0, 100% 0%, calc(100% - $clip-path-offset) 100%, 0% 100%);
+        font-family: "Poppins", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 900;
+        font-style: italic;
         text-transform: uppercase;
+
+        &::after {
+            content: "";
+        }
     }
 
     &[prev] {
