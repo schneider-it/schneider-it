@@ -87,27 +87,21 @@
         text-transform: uppercase;
     }
 
-    &[prev],
-    &[next] {
+    &:is([prev], [next]) {
+        display: inline-block;
         position: relative;
         padding: 0.5em 1.5em;
         color: $font-color-light;
         background: #6225e6;
         $clip-path-offset: 0.8rem;
-        clip-path: polygon(
-            $clip-path-offset 0,
-            100% 0%,
-            calc(100% - $clip-path-offset) 100%,
-            0% 100%
-        );
+        clip-path: polygon($clip-path-offset 0, 100% 0%, calc(100% - $clip-path-offset) 100%, 0% 100%);
         font-family: "Poppins", sans-serif;
         font-size: 1.8rem;
         font-weight: 900;
         font-style: italic;
         text-transform: uppercase;
-        transition: transform 0.4s ease-in-out, margin-right 0.4s ease-in-out,
-            margin-left 0.4s ease-in-out;
-        z-index: 10;
+        box-shadow: 3rem 3rem 0 black;
+        transition: transform 0.4s ease-in-out, margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out;
     }
 
     &[prev] {
@@ -128,7 +122,7 @@
             & div:nth-child(1) {
                 & .arrow-one {
                     transform: translateX(calc(-100% + 0.5rem)) scale(1.4);
-                    animation: button-next-anim 1s infinite 0.2s;
+                    animation: button-next-anim 1s infinite 0.6s;
                 }
 
                 & .arrow-two {
@@ -138,7 +132,7 @@
 
                 & .arrow-three {
                     transform: translateX(calc(100% + 0.5rem)) scale(1.4);
-                    animation: button-next-anim 1s infinite 0.6s;
+                    animation: button-next-anim 1s infinite 0.2s;
                 }
             }
 

@@ -1494,7 +1494,8 @@ table tr td.right {
 .button[uppercase] {
   text-transform: uppercase;
 }
-.button[prev], .button[next] {
+.button:is([prev], [next]) {
+  display: inline-block;
   position: relative;
   padding: 0.5em 1.5em;
   color: hsl(0deg, 0%, 100%);
@@ -1506,11 +1507,12 @@ table tr td.right {
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
+  -webkit-box-shadow: 3rem 3rem 0 black;
+          box-shadow: 3rem 3rem 0 black;
   -webkit-transition: margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   transition: margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out;
   transition: transform 0.4s ease-in-out, margin-right 0.4s ease-in-out, margin-left 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
-  z-index: 10;
 }
 .button[prev] div:nth-child(1) i {
   position: absolute;
@@ -1527,8 +1529,8 @@ table tr td.right {
 .button[prev]:hover div:nth-child(1) .arrow-one {
   -webkit-transform: translateX(calc(-100% + 0.5rem)) scale(1.4);
           transform: translateX(calc(-100% + 0.5rem)) scale(1.4);
-  -webkit-animation: button-next-anim 1s infinite 0.2s;
-          animation: button-next-anim 1s infinite 0.2s;
+  -webkit-animation: button-next-anim 1s infinite 0.6s;
+          animation: button-next-anim 1s infinite 0.6s;
 }
 .button[prev]:hover div:nth-child(1) .arrow-two {
   -webkit-transform: translateX(0.5rem) scale(1.4);
@@ -1539,8 +1541,8 @@ table tr td.right {
 .button[prev]:hover div:nth-child(1) .arrow-three {
   -webkit-transform: translateX(calc(100% + 0.5rem)) scale(1.4);
           transform: translateX(calc(100% + 0.5rem)) scale(1.4);
-  -webkit-animation: button-next-anim 1s infinite 0.6s;
-          animation: button-next-anim 1s infinite 0.6s;
+  -webkit-animation: button-next-anim 1s infinite 0.2s;
+          animation: button-next-anim 1s infinite 0.2s;
 }
 .button[prev]:hover div:nth-child(2) {
   margin-left: 3.5rem;
