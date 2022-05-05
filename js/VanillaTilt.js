@@ -47,7 +47,9 @@ var VanillaTilt = (function () {
             this.reverse = this.settings.reverse ? -1 : 1;
             this.glare = VanillaTilt.isSettingTrue(this.settings.glare);
             this.glarePrerender = VanillaTilt.isSettingTrue(this.settings["glare-prerender"]);
-            this.fullPageListening = VanillaTilt.isSettingTrue(this.settings["full-page-listening"]);
+            this.fullPageListening = VanillaTilt.isSettingTrue(
+                this.settings["full-page-listening"]
+            );
             this.gyroscope = VanillaTilt.isSettingTrue(this.settings.gyroscope);
             this.gyroscopeSamples = this.settings.gyroscopeSamples;
 
@@ -80,7 +82,9 @@ var VanillaTilt = (function () {
             }
 
             if (typeof this.settings["mouse-event-element"] === "string") {
-                const mouseEventElement = document.querySelector(this.settings["mouse-event-element"]);
+                const mouseEventElement = document.querySelector(
+                    this.settings["mouse-event-element"]
+                );
 
                 if (mouseEventElement) {
                     return mouseEventElement;
@@ -226,7 +230,11 @@ var VanillaTilt = (function () {
             };
 
             if (this.element && this.element.style) {
-                this.element.style.transform = `perspective(${this.settings.perspective}px) ` + `rotateX(0deg) ` + `rotateY(0deg) ` + `scale3d(1, 1, 1)`;
+                this.element.style.transform =
+                    `perspective(${this.settings.perspective}px) ` +
+                    `rotateX(0deg) ` +
+                    `rotateY(0deg) ` +
+                    `scale3d(1, 1, 1)`;
             }
 
             this.resetGlare();
@@ -248,13 +256,23 @@ var VanillaTilt = (function () {
 
             if (this.fullPageListening) {
                 this.event = {
-                    clientX: ((this.settings.startX + this.settings.max) / (2 * this.settings.max)) * this.clientWidth,
-                    clientY: ((this.settings.startY + this.settings.max) / (2 * this.settings.max)) * this.clientHeight,
+                    clientX:
+                        ((this.settings.startX + this.settings.max) / (2 * this.settings.max)) *
+                        this.clientWidth,
+                    clientY:
+                        ((this.settings.startY + this.settings.max) / (2 * this.settings.max)) *
+                        this.clientHeight,
                 };
             } else {
                 this.event = {
-                    clientX: this.left + ((this.settings.startX + this.settings.max) / (2 * this.settings.max)) * this.width,
-                    clientY: this.top + ((this.settings.startY + this.settings.max) / (2 * this.settings.max)) * this.height,
+                    clientX:
+                        this.left +
+                        ((this.settings.startX + this.settings.max) / (2 * this.settings.max)) *
+                            this.width,
+                    clientY:
+                        this.top +
+                        ((this.settings.startY + this.settings.max) / (2 * this.settings.max)) *
+                            this.height,
                 };
             }
 
@@ -281,7 +299,12 @@ var VanillaTilt = (function () {
 
             let tiltX = (this.reverse * (this.settings.max - x * this.settings.max * 2)).toFixed(2);
             let tiltY = (this.reverse * (y * this.settings.max * 2 - this.settings.max)).toFixed(2);
-            let angle = Math.atan2(this.event.clientX - (this.left + this.width / 2), -(this.event.clientY - (this.top + this.height / 2))) * (180 / Math.PI);
+            let angle =
+                Math.atan2(
+                    this.event.clientX - (this.left + this.width / 2),
+                    -(this.event.clientY - (this.top + this.height / 2))
+                ) *
+                (180 / Math.PI);
 
             return {
                 tiltX: tiltX,
@@ -304,11 +327,29 @@ var VanillaTilt = (function () {
         update() {
             let values = this.getValues();
 
-            this.element.style.transform = "perspective(" + this.settings.perspective + "px) " + "rotateX(" + (this.settings.axis === "x" ? 0 : values.tiltY) + "deg) " + "rotateY(" + (this.settings.axis === "y" ? 0 : values.tiltX) + "deg) " + "scale3d(" + this.settings.scale + ", " + this.settings.scale + ", " + this.settings.scale + ")";
+            this.element.style.transform =
+                "perspective(" +
+                this.settings.perspective +
+                "px) " +
+                "rotateX(" +
+                (this.settings.axis === "x" ? 0 : values.tiltY) +
+                "deg) " +
+                "rotateY(" +
+                (this.settings.axis === "y" ? 0 : values.tiltX) +
+                "deg) " +
+                "scale3d(" +
+                this.settings.scale +
+                ", " +
+                this.settings.scale +
+                ", " +
+                this.settings.scale +
+                ")";
 
             if (this.glare) {
                 this.glareElement.style.transform = `rotate(${values.angle}deg) translate(-50%, -50%)`;
-                this.glareElement.style.opacity = `${(values.percentageY * this.settings["max-glare"]) / 100}`;
+                this.glareElement.style.opacity = `${
+                    (values.percentageY * this.settings["max-glare"]) / 100
+                }`;
             }
 
             this.element.dispatchEvent(
@@ -371,7 +412,10 @@ var VanillaTilt = (function () {
 
         updateGlareSize() {
             if (this.glare) {
-                const glareSize = (this.element.offsetWidth > this.element.offsetHeight ? this.element.offsetWidth : this.element.offsetHeight) * 2;
+                const glareSize =
+                    (this.element.offsetWidth > this.element.offsetHeight
+                        ? this.element.offsetWidth
+                        : this.element.offsetHeight) * 2;
 
                 Object.assign(this.glareElement.style, {
                     width: `${glareSize}px`,
@@ -381,9 +425,15 @@ var VanillaTilt = (function () {
         }
 
         updateClientSize() {
-            this.clientWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            this.clientWidth =
+                window.innerWidth ||
+                document.documentElement.clientWidth ||
+                document.body.clientWidth;
 
-            this.clientHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+            this.clientHeight =
+                window.innerHeight ||
+                document.documentElement.clientHeight ||
+                document.body.clientHeight;
         }
 
         onWindowResize() {
@@ -394,7 +444,8 @@ var VanillaTilt = (function () {
         setTransition() {
             clearTimeout(this.transitionTimeout);
             this.element.style.transition = this.settings.speed + "ms " + this.settings.easing;
-            if (this.glare) this.glareElement.style.transition = `opacity ${this.settings.speed}ms ${this.settings.easing}`;
+            if (this.glare)
+                this.glareElement.style.transition = `opacity ${this.settings.speed}ms ${this.settings.easing}`;
 
             this.transitionTimeout = setTimeout(() => {
                 this.element.style.transition = "";

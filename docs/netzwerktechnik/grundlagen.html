@@ -15,11 +15,7 @@
         <link rel="icon" href="/img/Logo.svg" />
         <title>Schneider IT - Netzwerktechnik - Grundlagen</title>
     </head>
-    <body
-        onload="OnLoadLeaf();"
-        onscroll="OnScroll();"
-        onkeydown="OnKeyDown();"
-    >
+    <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
         <div class="scroll_indicator_div">
             <div class="scroll_indicator" id="scroll_indicator"></div>
         </div>
@@ -60,8 +56,7 @@
                                         <td style="text-align: right">7</td>
                                         <td>Anwendungsschicht</td>
                                         <td>
-                                            HTTP, HTTPS, FTP, DHCP, DNS, RTP,
-                                            VoIP, SMTP, IMAP, POP3
+                                            HTTP, HTTPS, FTP, DHCP, DNS, RTP, VoIP, SMTP, IMAP, POP3
                                         </td>
                                     </tr>
                                     <tr>
@@ -71,9 +66,7 @@
                                     </tr>
                                     <tr>
                                         <td style="text-align: right">5</td>
-                                        <td>
-                                            Kommunikations- / Sitzungsschicht
-                                        </td>
+                                        <td>Kommunikations- / Sitzungsschicht</td>
                                         <td>SSH</td>
                                     </tr>
                                     <tr>
@@ -106,8 +99,8 @@
                     </div>
                     <h3 id="well-known_Ports">well-known Ports</h3>
                     <div>
-                        In dieser Tabelle sind alle wichtigen standardisierten
-                        Ports von <b>TCP</b> aufgelistet:
+                        In dieser Tabelle sind alle wichtigen standardisierten Ports von
+                        <b>TCP</b> aufgelistet:
                         <table>
                             <tr>
                                 <th>Port&#8209;Nr</th>
@@ -116,8 +109,8 @@
                             <tr>
                                 <td>20, 21</td>
                                 <td>
-                                    FTP (File Transfer Protocol) - 20:
-                                    Command-Pakete, 21: Daten-Pakete
+                                    FTP (File Transfer Protocol) - 20: Command-Pakete, 21:
+                                    Daten-Pakete
                                 </td>
                             </tr>
                             <tr>
@@ -130,9 +123,7 @@
                             </tr>
                             <tr>
                                 <td>465, 587</td>
-                                <td>
-                                    SMTPS (Simple Mail Transfer Protocol Secure)
-                                </td>
+                                <td>SMTPS (Simple Mail Transfer Protocol Secure)</td>
                             </tr>
                             <tr>
                                 <td>53</td>
@@ -144,9 +135,7 @@
                             </tr>
                             <tr>
                                 <td>443</td>
-                                <td>
-                                    HTTPS (Hypertext Transfer Protocol Secure)
-                                </td>
+                                <td>HTTPS (Hypertext Transfer Protocol Secure)</td>
                             </tr>
                             <tr>
                                 <td>110</td>
@@ -162,9 +151,7 @@
                             </tr>
                             <tr>
                                 <td>993</td>
-                                <td>
-                                    IMAPS (Internet Mail Access Protocol Secure)
-                                </td>
+                                <td>IMAPS (Internet Mail Access Protocol Secure)</td>
                             </tr>
                             <tr>
                                 <td>1935</td>
@@ -179,8 +166,8 @@
                                 <td>RDP (Remote Desktop Protocol)</td>
                             </tr>
                         </table>
-                        In dieser Tabelle sind alle wichtigen standardisierten
-                        Ports von <b>UDP</b> aufgelistet:
+                        In dieser Tabelle sind alle wichtigen standardisierten Ports von
+                        <b>UDP</b> aufgelistet:
                         <table>
                             <tr>
                                 <th>Port&#8209;Nr</th>
@@ -196,17 +183,11 @@
                             </tr>
                             <tr>
                                 <td>67</td>
-                                <td>
-                                    DHCP (Dynamic Host Configuration Protocol)
-                                    IPv4 Server
-                                </td>
+                                <td>DHCP (Dynamic Host Configuration Protocol) IPv4 Server</td>
                             </tr>
                             <tr>
                                 <td>68</td>
-                                <td>
-                                    DHCP (Dynamic Host Configuration Protocol)
-                                    IPv4 Client
-                                </td>
+                                <td>DHCP (Dynamic Host Configuration Protocol) IPv4 Client</td>
                             </tr>
                             <tr>
                                 <td>69</td>
@@ -222,23 +203,15 @@
                             </tr>
                             <tr>
                                 <td>161</td>
-                                <td>
-                                    SNMP (Simple Network Management Protocol)
-                                </td>
+                                <td>SNMP (Simple Network Management Protocol)</td>
                             </tr>
                             <tr>
                                 <td>546</td>
-                                <td>
-                                    DHCP (Dynamic Host Configuration Protocol)
-                                    IPv6 Client
-                                </td>
+                                <td>DHCP (Dynamic Host Configuration Protocol) IPv6 Client</td>
                             </tr>
                             <tr>
                                 <td>547</td>
-                                <td>
-                                    DHCP (Dynamic Host Configuration Protocol)
-                                    IPv6 Server
-                                </td>
+                                <td>DHCP (Dynamic Host Configuration Protocol) IPv6 Server</td>
                             </tr>
                         </table>
                     </div>
@@ -249,22 +222,25 @@
         <div id="footer"></div>
 
         <script
+            defer
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"
         ></script>
-        <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
+        <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
         <script
+            defer
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
         ></script>
         <script
+            defer
             nomodule
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
-        <script src="/js/lightbox.min.js"></script>
-        <script defer src="/js/fa_all.min.js"></script>
+        <script defer src="/js/Lightbox.js"></script>
+        <script defer src="/js/FontAwesome.js"></script>
 
-        <script type="text/javascript" src="/js/app.js"></script>
+        <script defer type="text/javascript" src="/js/app.js"></script>
     </body>
 </html>

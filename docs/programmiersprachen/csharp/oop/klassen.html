@@ -1,504 +1,905 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!">
-    <link rel="stylesheet" href="/css/lightbox.min.css">
-    <link href="/css/fa_all.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Programmiersprachen - C# - OOP - Klassen</title>
-</head>
-<body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
-    <div class="scroll_indicator_div">
-        <div class="scroll_indicator" id="scroll_indicator"></div>
-    </div> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
 
-    <div id="header"></div>
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
+        <title>Schneider IT - Programmiersprachen - C# - OOP - Klassen</title>
+    </head>
+    <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
+        <div class="scroll_indicator_div">
+            <div class="scroll_indicator" id="scroll_indicator"></div>
+        </div>
+
+        <div id="header"></div>
 
         <div class="back_button">
-        <a href="../oop.html">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-        </a>
-    </div>
+            <a href="../oop.html">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </a>
+        </div>
 
-    <div class="title searchable">
-        <img loading="lazy" src="/img/bauplan.png" alt="Bauplan_Logo">
-        <h1>Klassen</h1>
-    </div>
-    <div></div>
+        <div class="title searchable">
+            <img loading="lazy" src="/img/bauplan.png" alt="Bauplan_Logo" />
+            <h1>Klassen</h1>
+        </div>
+        <div></div>
 
-    <div class="section searchable">     
-        <div class="container" style="margin-top: 10vh;">
-            <div>
-                <h3 id="Verwendung">Verwendung</h3>
+        <div class="section searchable">
+            <div class="container" style="margin-top: 10vh">
                 <div>
-                    <h4 id="Verwendung-Was_ist_eine_Klasse?">Was ist eine Klasse?</h4>
+                    <h3 id="Verwendung">Verwendung</h3>
                     <div>
-                        Klassen bedeuten in objektorientierten Programmiersprachen, dass man sich seinen eigenen Datentyp bauen kann.
-                        Von diesem Datentyp kann man sich dann beliebig viele sogenannte Instanzen erstellen. 
-                        Die Klasse ist der Bauplan der Instanz, weil jede Instanz nach gleichem Konzept gebaut wird.
-                        <br><br>
-                        Eine Klasse definiert man mit dem Schlüsselwort "class". Anschließend kommt der Name der Klasse. Generischer Typ, Basisklassen und Interfaces, von denen die Klasse erbt, sind optional.
-                        <br><br>
+                        <h4 id="Verwendung-Was_ist_eine_Klasse?">Was ist eine Klasse?</h4>
+                        <div>
+                            Klassen bedeuten in objektorientierten Programmiersprachen, dass man
+                            sich seinen eigenen Datentyp bauen kann. Von diesem Datentyp kann man
+                            sich dann beliebig viele sogenannte Instanzen erstellen. Die Klasse ist
+                            der Bauplan der Instanz, weil jede Instanz nach gleichem Konzept gebaut
+                            wird.
+                            <br /><br />
+                            Eine Klasse definiert man mit dem Schlüsselwort "class". Anschließend
+                            kommt der Name der Klasse. Generischer Typ, Basisklassen und Interfaces,
+                            von denen die Klasse erbt, sind optional.
+                            <br /><br />
+                        </div>
+                        <h4 id="Verwendung-Syntax">Syntax</h4>
+                        <div>
+                            <div class="code">
+                                <span class="code-keyword">class</span> &lt;<span
+                                    class="code-keyword"
+                                    >Classname</span
+                                >&gt;&lt;&lt;<span class="code-keyword-optional">Generic</span
+                                >&gt;&gt; : &lt;<span class="code-keyword-optional">BaseClass</span
+                                >&gt;, &lt;<span class="code-keyword-optional">Interface</span>&gt;
+                                { }
+                            </div>
+                            Beispiel:
+                            <div class="code">
+                                <span class="code-keyword">class</span>
+                                <span class="code-class">Person</span>
+                                <div>{</div>
+                                <br />
+                                <div>}</div>
+                            </div>
+                            Eine Klasse besteht immer aus Daten (Attributen und Eigenschaften) und
+                            Verhalten (Methoden). Aus diesem Grund kann man innerhalb einer Klasse
+                            dynamische Methoden (auch statische Methoden, wenn man will) und
+                            Variablen definieren.
+                        </div>
+                        <h4 id="Verwendung-Instanz_einer_Klasse">Instanz einer Klasse</h4>
+                        <div>
+                            Wenn man nun eine Instanz dieser Klasse erstellen möchte, muss man das
+                            neue Objekt erstellen und instanziieren.
+                            <div class="code">
+                                <span class="code-class">Person</span>
+                                <span class="code-variable">myPerson</span> =
+                                <span class="code-keyword">new</span>
+                                <span class="code-class">Person</span>();
+                            </div>
+                        </div>
                     </div>
-                    <h4 id="Verwendung-Syntax">Syntax</h4>
+                    <h3 id="private_Variablen">private Variablen</h3>
                     <div>
+                        In einer Klasse lassen sich Variablen genauso deklarieren wie im Main.
                         <div class="code">
-                            <span class="code-keyword">class</span> &lt;<span class="code-keyword">Classname</span>&gt;&lt;&lt;<span class="code-keyword-optional">Generic</span>&gt;&gt; : &lt;<span class="code-keyword-optional">BaseClass</span>&gt;, &lt;<span class="code-keyword-optional">Interface</span>&gt;  { }
+                            <span class="code-keyword">private string</span>
+                            <span class="code-variable">name</span>;
                         </div>
-                        Beispiel:
-                        <div class="code">
-                            <span class="code-keyword">class</span> <span class="code-class">Person</span>
-                            <div>{</div>
-                            <br>
-                            <div>}</div>
-                        </div>
-                        Eine Klasse besteht immer aus Daten (Attributen und Eigenschaften) und Verhalten (Methoden). 
-                        Aus diesem Grund kann man innerhalb einer Klasse dynamische Methoden (auch statische Methoden, wenn man will) und Variablen definieren.
+                        Diese Variable ist nun allerdings nur in der Klasse verfügbar, weil ihre
+                        Sichtbarkeit private ist, was bei den Variablen in einer Klasse durchaus
+                        Sinn macht. Wenn man public Variablen erstellen will, macht man am besten
+                        gleich ein Property. Dazu mehr im nächsten Absatz.
+                        <br /><br />
+                        Will man diese Variable nun von anderen Stellen im Programm aus verändern
+                        oder bekommen, so benötigt man entweder public Methoden, die die Variable
+                        zurückliefern oder einlesen oder einen beziehungsweise mehrere
+                        Konstruktoren. In diesen Methoden kann man gleichzeitig noch eine vorzeitige
+                        Überprüfung machen, ob der übergebene Wert auch korrekt ist und in den
+                        Datentyp der Variable passen würde. Diese Art der Aufspaltung der Variable
+                        und ihrer Verfügbarkeit nennt man Datenkapselung.
                     </div>
-                    <h4 id="Verwendung-Instanz_einer_Klasse">Instanz einer Klasse</h4>
-                    <div>
-                        Wenn man nun eine Instanz dieser Klasse erstellen möchte, muss man das neue Objekt erstellen und instanziieren.
-                        <div class="code">
-                            <span class="code-class">Person</span> <span class="code-variable">myPerson</span> = <span class="code-keyword">new</span> <span class="code-class">Person</span>();
-                        </div>
-                    </div>
-                </div>
-                <h3 id="private_Variablen">private Variablen</h3>
-                <div>
-                    In einer Klasse lassen sich Variablen genauso deklarieren wie im Main.
-                    <div class="code">
-                        <span class="code-keyword">private string</span> <span class="code-variable">name</span>;
-                    </div>
-                    Diese Variable ist nun allerdings nur in der Klasse verfügbar, weil ihre Sichtbarkeit private ist, was bei den Variablen in einer Klasse durchaus Sinn macht. 
-                    Wenn man public Variablen erstellen will, macht man am besten gleich ein Property. Dazu mehr im nächsten Absatz.
-                    <br><br>
-                    Will man diese Variable nun von anderen Stellen im Programm aus verändern oder bekommen, so benötigt man entweder public Methoden, die die Variable zurückliefern oder einlesen oder einen beziehungsweise mehrere Konstruktoren.
-                    In diesen Methoden kann man gleichzeitig noch eine vorzeitige Überprüfung machen, ob der übergebene Wert auch korrekt ist und in den Datentyp der Variable passen würde.
-                    Diese Art der Aufspaltung der Variable und ihrer Verfügbarkeit nennt man Datenkapselung.
-                </div>
-                <h3 id="public_Properties">public Properties</h3>
-                <div>
-                    <div>
-                        Unter Properties versteht man die Eigenschaften einer Klasse. 
-                        Eine Person hat zum Beispiel einen Namen. Deshalb ist Name ein Property von der Klasse Person.
-                        Man kann zu Properties übrigens auch Attribute sagen.
-                        <br><br>
-                        Properties sind meistens public, also von überall aus sichtbar, damit man leicht auf sie zugreifen kann.
-                        <br><br>
-                        Properties gibt es in der Kurzschreibweise und in der Langschreibweise. 
-                        In der Kurzschreibweise wird das Property selbst zum Attribut, während es in der Langschreibweise eine andere Variable public macht.
-                        <br><br>
-                        Ein Beispiel der Kurzschreibweise sieht so aus:
-                        <div class="code">
-                            <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                        </div>
-                        Ein Beispiel der Langschreibweise sieht so aus:
-                        <div class="code">
-                            <span class="code-keyword">string</span> name;
-                            <br><br>
-                            <span class="code-keyword">public string</span> Name
-                            <div>{</div>
-                            <span class="code-keyword tab">get</span> { <span class="code-keyword">return</span> name; }
-                            <br>
-                            <span class="code-keyword tab">set</span> { name = <span class="code-keyword">value</span>; }
-                            <div>}</div>
-                        </div>
-                        Wie man gut erkennen kann, wird bei der Langschreibweise die Variable name returned, wenn die Get-Methode aufgerufen wird.
-                        Wenn man der Variable name einen Wert zuweisen will, setzt man name auf den übergebenen Wert (Parameter value). 
-                        Es ist nicht sichtbar, dass dieser Parameter übergeben wird.
-                    </div>
-                </div>
-                <h3 id="Konstruktoren">Konstruktoren</h3>
-                <div>
-                    <h4 id="Konstruktoren-Einleitung">Einleitung</h4>
-                    <div>
-                        Konstruktoren sind Methoden in einer Klasse, die automatisch beim Instanziieren einer Instanz aufgerufen werden. 
-                        Grundsätzlich existiert in einer Klasse immer mindestens ein Konstruktor, auch wenn man diesen nicht sieht.
-                        <div class="code">
-                            <span class="code-keyword">public</span> <span class="code-class">Person</span>()
-                            <div>{</div>
-                                <br>
-                            <div>}</div>
-                        </div>
-                        Konstruktoren kann man auch selber definieren. 
-                        In den geschwungenen Klammern kann man auch Programmcode hinzufügen, wie er in den Grundlagen erklärt wird.
-                        <br><br>
-                        Meistens bekommt ein selbst definierter Konstruktor einen oder mehrere Parameter übergeben, damit diese Werte gleich beim Erstellen der Instanz in die Variablen gespeichert werden können.
-                        <div class="code">
-                            <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                            <br><br>
-                            <span class="code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>)
-                            <div>{</div>
-                            <span class="tab code-keyword-optional">this</span>.Name = <span class="code-variable">name</span>;
-                            <div>}</div>
-                        </div>
-                        Wie man sehen kann, steht da ein this für dem Name. 
-                        Dieses muss verwendet werden, wenn name und Name gleich heißen würden, also zum Beispiel beide groß geschrieben werden.
-                        In diesem Fall müsste es jetzt nicht unbedingt verwendet werden. Es dient allerdings auch zur Übersicht.
-                        <br><br>
-                        Der Konstruktor kann auch mehrere Parameter übergeben bekommen, diese sind dann mit einem Beistrich zu trennen.
-                        <div class="code">
-                            <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                            <br>                                        
-                            <span class="code-keyword">public int</span> Age { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                            <br><br>
-                            <span class="code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>, <span class="code-keyword">int</span> <span class="code-variable">age</span>)
-                            <div>{</div>
-                            <span class="tab code-keyword-optional">this</span>.Name = <span class="code-variable">name</span>;
-                            <br>
-                            <span class="tab code-keyword-optional">this</span>.Age = <span class="code-variable">age</span>;
-                            <div>}</div>
-                        </div>
-                        In einer Klasse kann es auch mehrere Konstruktoren geben. Diese müssen sich allerdings von den Parametern her voneinander unterscheiden.
-                        <div class="code">
-                            <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                            <br>                                        
-                            <span class="code-keyword">public int</span> Age { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                            <br><br>
-                            <span class="code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>)
-                            <div>{</div>
-                            <span class="tab code-keyword-optional">this</span>.Name = <span class="code-variable">name</span>;
-                            <div>}</div>
-                            <br>
-                            <span class="code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>, <span class="code-keyword">int</span> <span class="code-variable">age</span>)
-                            <div>{</div>
-                            <span class="tab code-keyword-optional">this</span>.Name = <span class="code-variable">name</span>;
-                            <br>
-                            <span class="tab code-keyword-optional">this</span>.Age = <span class="code-variable">age</span>;
-                            <div>}</div>
-                        </div>
-                        Wie man an diesem Beispiel gut sehen kann, gibt es Programmzeilen die sich wiederholen. Und doppelten Programmcode wollen wir vermeiden.
-                        Aus diesem Grund gibt es die Konstruktor-Verkettung.
-                        <br><br>
-                        Wenn eine Klasse einen Konstruktor mit mindestens einem Parameter besitzt, kann man diese Variable beim instanziieren der Klasse gleich mit-über-geben.
-                        <div class="code">
-                            <span class="code-class">Person</span> <span class="code-variable">myPerson</span> = <span class="code-keyword">new</span> <span class="code-class">Person</span>(<span class="code-string">"Felix"</span>);
-                        </div>
-                        Wichtig ist hierbei, dass die Datentypen, die man übergibt, auch mit irgendeiner Parameterliste von einem Konstruktor in der Klasse übereinstimmen.
-                        <div class="code">
-                            <span class="code-class">Person</span> <span class="code-variable">myPerson</span> = <span class="code-keyword">new</span> <span class="code-class">Person</span>(<span class="code-string">"Felix"</span>, 16);
-                        </div>
-                    </div>
-                    <h4 id="Konstruktoren-Konstruktor-Verkettung">Konstruktor-Verkettung</h4>
+                    <h3 id="public_Properties">public Properties</h3>
                     <div>
                         <div>
-                            Damit bei den Konstruktoren keine doppelten Programmzeilen vorkommen gibt es die Konstruktor-Verkettung.
-                            <br><br>
-                            Konstruktor-Verkettung funktioniert folgendermaßen: 
-                            Wenn ein Konstruktor aufgerufen wird, verweist der Konstruktor auf einen anderen Konstruktor, der dann bestimmte Zuweisungen, die ohne Konstruktor-Verkettung doppelt vorkommen würden, ausführt.
+                            Unter Properties versteht man die Eigenschaften einer Klasse. Eine
+                            Person hat zum Beispiel einen Namen. Deshalb ist Name ein Property von
+                            der Klasse Person. Man kann zu Properties übrigens auch Attribute sagen.
+                            <br /><br />
+                            Properties sind meistens public, also von überall aus sichtbar, damit
+                            man leicht auf sie zugreifen kann.
+                            <br /><br />
+                            Properties gibt es in der Kurzschreibweise und in der Langschreibweise.
+                            In der Kurzschreibweise wird das Property selbst zum Attribut, während
+                            es in der Langschreibweise eine andere Variable public macht.
+                            <br /><br />
+                            Ein Beispiel der Kurzschreibweise sieht so aus:
                             <div class="code">
-                                <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                                <br>                                        
-                                <span class="code-keyword">public int</span> Age { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                                <br><br>
-                                <span class="code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>)
+                                <span class="code-keyword">public string</span> Name {
+                                <span class="code-keyword">get</span>;
+                                <span class="code-keyword">set</span>; }
+                            </div>
+                            Ein Beispiel der Langschreibweise sieht so aus:
+                            <div class="code">
+                                <span class="code-keyword">string</span> name; <br /><br />
+                                <span class="code-keyword">public string</span> Name
                                 <div>{</div>
-                                <span class="tab code-keyword-optional">this</span>.Name = <span class="code-variable">name</span>;
-                                <div>}</div>
-                                <br>
-                                <span class="code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>, <span class="code-keyword">int</span> <span class="code-variable">age</span>)  : <span class="code-keyword">this</span>(<span class="code-variable">name</span>)
-                                <div>{</div>
-                                <span class="tab code-keyword-optional">this</span>.Age = <span class="code-variable">age</span>;
+                                <span class="code-keyword tab">get</span> {
+                                <span class="code-keyword">return</span> name; }
+                                <br />
+                                <span class="code-keyword tab">set</span> { name =
+                                <span class="code-keyword">value</span>; }
                                 <div>}</div>
                             </div>
-                            Man kann Konstruktor-Verkettung auch in die umgekehrte Richtung betreiben. Dies eignet sich dann besonders gut, wenn man einen Konstruktor mit allen möglichen Parametern hat und alle anderen Konstruktoren auf diesen Konstruktor "verketten".
+                            Wie man gut erkennen kann, wird bei der Langschreibweise die Variable
+                            name returned, wenn die Get-Methode aufgerufen wird. Wenn man der
+                            Variable name einen Wert zuweisen will, setzt man name auf den
+                            übergebenen Wert (Parameter value). Es ist nicht sichtbar, dass dieser
+                            Parameter übergeben wird.
+                        </div>
+                    </div>
+                    <h3 id="Konstruktoren">Konstruktoren</h3>
+                    <div>
+                        <h4 id="Konstruktoren-Einleitung">Einleitung</h4>
+                        <div>
+                            Konstruktoren sind Methoden in einer Klasse, die automatisch beim
+                            Instanziieren einer Instanz aufgerufen werden. Grundsätzlich existiert
+                            in einer Klasse immer mindestens ein Konstruktor, auch wenn man diesen
+                            nicht sieht.
                             <div class="code">
-                                <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                                <br>                                        
-                                <span class="code-keyword">public int</span> Age { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                                <br><br>
-                                <span class="code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>) : <span class="code-keyword">this</span>(<span class="code-variable">name</span>, 0) { }
-                                <br><br>
-                                <span class="code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>, <span class="code-keyword">int</span> <span class="code-variable">age</span>)
+                                <span class="code-keyword">public</span>
+                                <span class="code-class">Person</span>()
                                 <div>{</div>
-                                <span class="tab code-keyword-optional">this</span>.Name = <span class="code-variable">name</span>;
-                                <br>
-                                <span class="tab code-keyword-optional">this</span>.Age = <span class="code-variable">age</span>;
+                                <br />
                                 <div>}</div>
                             </div>
-                            Wenn man auf den Konstruktor der Basis-Klasse verweisen möchte (mehr dazu unter Vererbung), schreibt man base statt this.
+                            Konstruktoren kann man auch selber definieren. In den geschwungenen
+                            Klammern kann man auch Programmcode hinzufügen, wie er in den Grundlagen
+                            erklärt wird.
+                            <br /><br />
+                            Meistens bekommt ein selbst definierter Konstruktor einen oder mehrere
+                            Parameter übergeben, damit diese Werte gleich beim Erstellen der Instanz
+                            in die Variablen gespeichert werden können.
                             <div class="code">
-                                <div class="code-comment">// BaseClass Person</div>
-                                <span class="code-keyword">class</span> <span class="code-class">Person</span>
+                                <span class="code-keyword">public string</span> Name {
+                                <span class="code-keyword">get</span>;
+                                <span class="code-keyword">set</span>; } <br /><br />
+                                <span class="code-keyword">public</span>
+                                <span class="code-class">Person</span>(<span class="code-keyword"
+                                    >string</span
+                                >
+                                <span class="code-variable">name</span>)
                                 <div>{</div>
-                                    <span class="tab code-keyword">public string</span> Name { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                                    <br>                                        
-                                    <span class="tab code-keyword">public int</span> Age { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                                    <br><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Person</span>() <br><span class="tab"></span><span class="tab"></span><span class="tab"></span>: <span class="code-keyword">this</span>(<span class="code-string">"unnamed"</span>, 0) { }
-                                    <br><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>) <br><span class="tab"></span><span class="tab"></span><span class="tab"></span>: <span class="code-keyword">this</span>(<span class="code-variable">name</span>, 0) { }
-                                    <br><br>
-                                    <span class="tab code-comment">// nicht sehr sinnvoll</span><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">int</span> <span class="code-variable">age</span>) <br><span class="tab"></span><span class="tab"></span><span class="tab"></span>: <span class="code-keyword">this</span>(<span class="code-string">"unnamed"</span>, <span class="code-variable">age</span>) { }
-                                    <br><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Person</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>, <span class="code-keyword">int</span> <span class="code-variable">age</span>)
+                                <span class="tab code-keyword-optional">this</span>.Name =
+                                <span class="code-variable">name</span>;
+                                <div>}</div>
+                            </div>
+                            Wie man sehen kann, steht da ein this für dem Name. Dieses muss
+                            verwendet werden, wenn name und Name gleich heißen würden, also zum
+                            Beispiel beide groß geschrieben werden. In diesem Fall müsste es jetzt
+                            nicht unbedingt verwendet werden. Es dient allerdings auch zur
+                            Übersicht.
+                            <br /><br />
+                            Der Konstruktor kann auch mehrere Parameter übergeben bekommen, diese
+                            sind dann mit einem Beistrich zu trennen.
+                            <div class="code">
+                                <span class="code-keyword">public string</span> Name {
+                                <span class="code-keyword">get</span>;
+                                <span class="code-keyword">set</span>; }
+                                <br />
+                                <span class="code-keyword">public int</span> Age {
+                                <span class="code-keyword">get</span>;
+                                <span class="code-keyword">set</span>; } <br /><br />
+                                <span class="code-keyword">public</span>
+                                <span class="code-class">Person</span>(<span class="code-keyword"
+                                    >string</span
+                                >
+                                <span class="code-variable">name</span>,
+                                <span class="code-keyword">int</span>
+                                <span class="code-variable">age</span>)
+                                <div>{</div>
+                                <span class="tab code-keyword-optional">this</span>.Name =
+                                <span class="code-variable">name</span>;
+                                <br />
+                                <span class="tab code-keyword-optional">this</span>.Age =
+                                <span class="code-variable">age</span>;
+                                <div>}</div>
+                            </div>
+                            In einer Klasse kann es auch mehrere Konstruktoren geben. Diese müssen
+                            sich allerdings von den Parametern her voneinander unterscheiden.
+                            <div class="code">
+                                <span class="code-keyword">public string</span> Name {
+                                <span class="code-keyword">get</span>;
+                                <span class="code-keyword">set</span>; }
+                                <br />
+                                <span class="code-keyword">public int</span> Age {
+                                <span class="code-keyword">get</span>;
+                                <span class="code-keyword">set</span>; } <br /><br />
+                                <span class="code-keyword">public</span>
+                                <span class="code-class">Person</span>(<span class="code-keyword"
+                                    >string</span
+                                >
+                                <span class="code-variable">name</span>)
+                                <div>{</div>
+                                <span class="tab code-keyword-optional">this</span>.Name =
+                                <span class="code-variable">name</span>;
+                                <div>}</div>
+                                <br />
+                                <span class="code-keyword">public</span>
+                                <span class="code-class">Person</span>(<span class="code-keyword"
+                                    >string</span
+                                >
+                                <span class="code-variable">name</span>,
+                                <span class="code-keyword">int</span>
+                                <span class="code-variable">age</span>)
+                                <div>{</div>
+                                <span class="tab code-keyword-optional">this</span>.Name =
+                                <span class="code-variable">name</span>;
+                                <br />
+                                <span class="tab code-keyword-optional">this</span>.Age =
+                                <span class="code-variable">age</span>;
+                                <div>}</div>
+                            </div>
+                            Wie man an diesem Beispiel gut sehen kann, gibt es Programmzeilen die
+                            sich wiederholen. Und doppelten Programmcode wollen wir vermeiden. Aus
+                            diesem Grund gibt es die Konstruktor-Verkettung.
+                            <br /><br />
+                            Wenn eine Klasse einen Konstruktor mit mindestens einem Parameter
+                            besitzt, kann man diese Variable beim instanziieren der Klasse gleich
+                            mit-über-geben.
+                            <div class="code">
+                                <span class="code-class">Person</span>
+                                <span class="code-variable">myPerson</span> =
+                                <span class="code-keyword">new</span>
+                                <span class="code-class">Person</span>(<span class="code-string"
+                                    >"Felix"</span
+                                >);
+                            </div>
+                            Wichtig ist hierbei, dass die Datentypen, die man übergibt, auch mit
+                            irgendeiner Parameterliste von einem Konstruktor in der Klasse
+                            übereinstimmen.
+                            <div class="code">
+                                <span class="code-class">Person</span>
+                                <span class="code-variable">myPerson</span> =
+                                <span class="code-keyword">new</span>
+                                <span class="code-class">Person</span>(<span class="code-string"
+                                    >"Felix"</span
+                                >, 16);
+                            </div>
+                        </div>
+                        <h4 id="Konstruktoren-Konstruktor-Verkettung">Konstruktor-Verkettung</h4>
+                        <div>
+                            <div>
+                                Damit bei den Konstruktoren keine doppelten Programmzeilen vorkommen
+                                gibt es die Konstruktor-Verkettung.
+                                <br /><br />
+                                Konstruktor-Verkettung funktioniert folgendermaßen: Wenn ein
+                                Konstruktor aufgerufen wird, verweist der Konstruktor auf einen
+                                anderen Konstruktor, der dann bestimmte Zuweisungen, die ohne
+                                Konstruktor-Verkettung doppelt vorkommen würden, ausführt.
+                                <div class="code">
+                                    <span class="code-keyword">public string</span> Name {
+                                    <span class="code-keyword">get</span>;
+                                    <span class="code-keyword">set</span>; }
+                                    <br />
+                                    <span class="code-keyword">public int</span> Age {
+                                    <span class="code-keyword">get</span>;
+                                    <span class="code-keyword">set</span>; } <br /><br />
+                                    <span class="code-keyword">public</span>
+                                    <span class="code-class">Person</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>)
+                                    <div>{</div>
+                                    <span class="tab code-keyword-optional">this</span>.Name =
+                                    <span class="code-variable">name</span>;
+                                    <div>}</div>
+                                    <br />
+                                    <span class="code-keyword">public</span>
+                                    <span class="code-class">Person</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>,
+                                    <span class="code-keyword">int</span>
+                                    <span class="code-variable">age</span>) :
+                                    <span class="code-keyword">this</span>(<span
+                                        class="code-variable"
+                                        >name</span
+                                    >)
+                                    <div>{</div>
+                                    <span class="tab code-keyword-optional">this</span>.Age =
+                                    <span class="code-variable">age</span>;
+                                    <div>}</div>
+                                </div>
+                                Man kann Konstruktor-Verkettung auch in die umgekehrte Richtung
+                                betreiben. Dies eignet sich dann besonders gut, wenn man einen
+                                Konstruktor mit allen möglichen Parametern hat und alle anderen
+                                Konstruktoren auf diesen Konstruktor "verketten".
+                                <div class="code">
+                                    <span class="code-keyword">public string</span> Name {
+                                    <span class="code-keyword">get</span>;
+                                    <span class="code-keyword">set</span>; }
+                                    <br />
+                                    <span class="code-keyword">public int</span> Age {
+                                    <span class="code-keyword">get</span>;
+                                    <span class="code-keyword">set</span>; } <br /><br />
+                                    <span class="code-keyword">public</span>
+                                    <span class="code-class">Person</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>) :
+                                    <span class="code-keyword">this</span>(<span
+                                        class="code-variable"
+                                        >name</span
+                                    >, 0) { } <br /><br />
+                                    <span class="code-keyword">public</span>
+                                    <span class="code-class">Person</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>,
+                                    <span class="code-keyword">int</span>
+                                    <span class="code-variable">age</span>)
+                                    <div>{</div>
+                                    <span class="tab code-keyword-optional">this</span>.Name =
+                                    <span class="code-variable">name</span>;
+                                    <br />
+                                    <span class="tab code-keyword-optional">this</span>.Age =
+                                    <span class="code-variable">age</span>;
+                                    <div>}</div>
+                                </div>
+                                Wenn man auf den Konstruktor der Basis-Klasse verweisen möchte (mehr
+                                dazu unter Vererbung), schreibt man base statt this.
+                                <div class="code">
+                                    <div class="code-comment">// BaseClass Person</div>
+                                    <span class="code-keyword">class</span>
+                                    <span class="code-class">Person</span>
+                                    <div>{</div>
+                                    <span class="tab code-keyword">public string</span> Name {
+                                    <span class="code-keyword">get</span>;
+                                    <span class="code-keyword">set</span>; }
+                                    <br />
+                                    <span class="tab code-keyword">public int</span> Age {
+                                    <span class="code-keyword">get</span>;
+                                    <span class="code-keyword">set</span>; } <br /><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Person</span>() <br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span>:
+                                    <span class="code-keyword">this</span>(<span class="code-string"
+                                        >"unnamed"</span
+                                    >, 0) { } <br /><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Person</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>) <br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span>:
+                                    <span class="code-keyword">this</span>(<span
+                                        class="code-variable"
+                                        >name</span
+                                    >, 0) { } <br /><br />
+                                    <span class="tab code-comment">// nicht sehr sinnvoll</span
+                                    ><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Person</span>(<span
+                                        class="code-keyword"
+                                        >int</span
+                                    >
+                                    <span class="code-variable">age</span>) <br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span>:
+                                    <span class="code-keyword">this</span>(<span class="code-string"
+                                        >"unnamed"</span
+                                    >, <span class="code-variable">age</span>) { } <br /><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Person</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>,
+                                    <span class="code-keyword">int</span>
+                                    <span class="code-variable">age</span>)
                                     <div class="tab">{</div>
-                                    <span class="tab"></span><span class="tab code-keyword-optional">this</span>.Name = <span class="code-variable">name</span>;
-                                    <br>
-                                    <span class="tab"></span><span class="tab code-keyword-optional">this</span>.Age = <span class="code-variable">age</span>;
+                                    <span class="tab"></span
+                                    ><span class="tab code-keyword-optional">this</span>.Name =
+                                    <span class="code-variable">name</span>;
+                                    <br />
+                                    <span class="tab"></span
+                                    ><span class="tab code-keyword-optional">this</span>.Age =
+                                    <span class="code-variable">age</span>;
                                     <div class="tab">}</div>
-                                <div>}</div>                                            
-                                <br>
-                                <div class="code-comment">// ChildClass Student</div>
-                                <span class="code-keyword">class</span> <span class="code-class">Student</span> : <span class="code-class">Person</span>
-                                <div>{</div>
-                                    <span class="tab code-keyword">public string</span> Schoolclass { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                                    <br><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Student</span>()<br><span class="tab"></span><span class="tab"></span><span class="tab"></span> : <span class="code-keyword">this</span>(<span class="code-string">"unnamed"</span>, 0, <span class="code-keyword">null</span>  ) { }
-                                    <br><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Student</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>) <br><span class="tab"></span><span class="tab"></span><span class="tab"></span>: <span class="code-keyword">this</span>(<span class="code-variable">name</span>, 0, <span class="code-keyword">null</span>  ) { }
-                                    <br><br>
-                                    <span class="tab code-comment">// nicht sehr sinnvoll</span><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Student</span>(<span class="code-keyword">int</span> <span class="code-variable">age</span>) <br><span class="tab"></span><span class="tab"></span><span class="tab"></span>: <span class="code-keyword">this</span>(<span class="code-string">"unnamed"</span>, <span class="code-variable">age</span>, <span class="code-keyword">null</span>  ) { }
-                                    <br><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Student</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>, <span class="code-keyword">int</span> <span class="code-variable">age</span>) <br><span class="tab"></span><span class="tab"></span><span class="tab"></span>: <span class="code-keyword">this</span>(<span class="code-variable">name</span>, <span class="code-variable">age</span>, <span class="code-keyword">null</span>  ) { }
-                                    <br><br>
-                                    <span class="tab code-keyword">public</span> <span class="code-class">Student</span>(<span class="code-keyword">string</span> <span class="code-variable">name</span>, <span class="code-keyword">int</span> <span class="code-variable">age</span>, <br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&nbsp;&nbsp; <span class="code-keyword">string</span> <span class="code-variable">schoolclass</span>) <br><span class="tab"></span><span class="tab"></span><span class="tab"></span>: <span class="code-keyword">base</span>(<span class="code-variable">name</span>, <span class="code-variable">age</span>)
+                                    <div>}</div>
+                                    <br />
+                                    <div class="code-comment">// ChildClass Student</div>
+                                    <span class="code-keyword">class</span>
+                                    <span class="code-class">Student</span> :
+                                    <span class="code-class">Person</span>
+                                    <div>{</div>
+                                    <span class="tab code-keyword">public string</span> Schoolclass
+                                    { <span class="code-keyword">get</span>;
+                                    <span class="code-keyword">set</span>; } <br /><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Student</span>()<br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span> :
+                                    <span class="code-keyword">this</span>(<span class="code-string"
+                                        >"unnamed"</span
+                                    >, 0, <span class="code-keyword">null</span> ) { } <br /><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Student</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>) <br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span>:
+                                    <span class="code-keyword">this</span>(<span
+                                        class="code-variable"
+                                        >name</span
+                                    >, 0, <span class="code-keyword">null</span> ) { } <br /><br />
+                                    <span class="tab code-comment">// nicht sehr sinnvoll</span
+                                    ><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Student</span>(<span
+                                        class="code-keyword"
+                                        >int</span
+                                    >
+                                    <span class="code-variable">age</span>) <br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span>:
+                                    <span class="code-keyword">this</span>(<span class="code-string"
+                                        >"unnamed"</span
+                                    >, <span class="code-variable">age</span>,
+                                    <span class="code-keyword">null</span> ) { } <br /><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Student</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>,
+                                    <span class="code-keyword">int</span>
+                                    <span class="code-variable">age</span>) <br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span>:
+                                    <span class="code-keyword">this</span>(<span
+                                        class="code-variable"
+                                        >name</span
+                                    >, <span class="code-variable">age</span>,
+                                    <span class="code-keyword">null</span> ) { } <br /><br />
+                                    <span class="tab code-keyword">public</span>
+                                    <span class="code-class">Student</span>(<span
+                                        class="code-keyword"
+                                        >string</span
+                                    >
+                                    <span class="code-variable">name</span>,
+                                    <span class="code-keyword">int</span>
+                                    <span class="code-variable">age</span>, <br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span
+                                    ><span class="tab"></span>&nbsp;&nbsp;
+                                    <span class="code-keyword">string</span>
+                                    <span class="code-variable">schoolclass</span>) <br /><span
+                                        class="tab"
+                                    ></span
+                                    ><span class="tab"></span><span class="tab"></span>:
+                                    <span class="code-keyword">base</span>(<span
+                                        class="code-variable"
+                                        >name</span
+                                    >, <span class="code-variable">age</span>)
                                     <div class="tab">{</div>
-                                    <span class="tab"></span><span class="tab code-keyword-optional">this</span>.Schoolclass = <span class="code-variable">schoolclass</span>;
+                                    <span class="tab"></span
+                                    ><span class="tab code-keyword-optional">this</span>.Schoolclass
+                                    = <span class="code-variable">schoolclass</span>;
                                     <div class="tab">}</div>
+                                    <div>}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 id="Methoden">Methoden</h3>
+                    <div>
+                        <h4 id="Methoden-Syntax">Syntax</h4>
+                        <div>
+                            Die grundsätzliche immer gleichbleibende Syntax einer C#-Methode sieht
+                            wie folgt aus:
+                            <div class="code">
+                                &lt;<span class="code-keyword-optional">Zugriffsmodifizierer</span
+                                >&gt; &lt;<span class="code-keyword">Rückgabewert</span>&gt;
+                                &lt;<span class="code-keyword">Methodenname</span>&gt;(&lt;<span
+                                    class="code-keyword-optional"
+                                    >Parameter</span
+                                >&gt;) { }
+                            </div>
+                        </div>
+                        <h4 id="Methoden-2_Arten">2 Arten</h4>
+                        <div>
+                            Es gibt zwei verschiedene Arten von Methoden: statische und dynamische
+                            Methoden. Der Unterschied besteht darin, dass statische Methoden
+                            (erkennen am Schlüsselwort static) keine Instanz benötigen, um
+                            aufgerufen werden zu können. Dynamische Methoden hingegen benötigen
+                            zuerst eine Instanz einer Klasse und können mithilfe dieser Instanz die
+                            Methode aufrufen.
+                        </div>
+                        <h4 id="Methoden-statische_Methoden">statische Methoden</h4>
+                        <div>
+                            Keine Instanz einer Klasse notwendig:
+                            <div class="code">
+                                <span class="code-keyword">static void</span>
+                                <span class="code-method">Main</span>(<span class="code-keyword"
+                                    >string</span
+                                >[] <span class="code-variable">args</span>)
+                                <div>{</div>
+                                <span class="tab code-method">Method</span>();
+                                <div>}</div>
+                                <br />
+                                <span class="code-keyword">static void</span>
+                                <span class="code-method">Method</span>()
+                                <div>{</div>
+                                <span class="tab code-comment">// code</span>
                                 <div>}</div>
                             </div>
                         </div>
-                    </div>                                    
-                </div>
-                <h3 id="Methoden">Methoden</h3>
-                <div>
-                    <h4 id="Methoden-Syntax">Syntax</h4>
-                    <div>
-                        Die grundsätzliche immer gleichbleibende Syntax einer C#-Methode sieht wie folgt aus:
-                        <div class="code">
-                            &lt;<span class="code-keyword-optional">Zugriffsmodifizierer</span>&gt; &lt;<span class="code-keyword">Rückgabewert</span>&gt; &lt;<span class="code-keyword">Methodenname</span>&gt;(&lt;<span class="code-keyword-optional">Parameter</span>&gt;) { }
+                        <h4 id="Methoden-dynamische_Methoden">dynamische Methoden</h4>
+                        <div>
+                            Kann nur aufgerufen werden, wenn eine Instanz vorhanden ist:
+                            <div class="code">
+                                <span class="code-keyword">static void</span>
+                                <span class="code-method">Main</span>(<span class="code-keyword"
+                                    >string</span
+                                >[] <span class="code-variable">args</span>)
+                                <div>{</div>
+                                <span class="tab code-class">Person</span>
+                                <span class="code-variable">person</span> =
+                                <span class="code-keyword">new</span>
+                                <span class="code-class">Person</span>();
+                                <br />
+                                <span class="tab code-variable">person</span>.<span
+                                    class="code-method"
+                                    >Method</span
+                                >();
+                                <div>}</div>
+                                <br />
+                                <span class="code-keyword">class</span>
+                                <span class="code-class">Person</span>
+                                <div>{</div>
+                                <span class="tab"></span
+                                ><span class="code-keyword">static void</span>
+                                <span class="code-method">Method</span>()
+                                <div class="tab">{</div>
+                                <span class="tab"></span
+                                ><span class="tab code-comment">// code</span>
+                                <div class="tab">}</div>
+                                <div>}</div>
+                            </div>
+                        </div>
+                        <h4 id="Methoden-Rekursion">Rekursion</h4>
+                        <div>
+                            Man spricht von Rekursion, wenn sich eine Methode selbst aufruft und
+                            somit einen endlosen geschlossenen Kreislauf bildet.
+                            <div class="code">
+                                <span class="code-keyword">static void</span>
+                                <span class="code-method">RecMethod</span>()
+                                <div>{</div>
+                                <span class="tab code-method">RecMethod</span>();
+                                <div>}</div>
+                            </div>
+                            Diese RecMethod würde zu einem StackOverflow führen, da der Cache
+                            irgendwann voll sein wird. Aus diesem Grund macht diese Methode keinen
+                            Sinn.
+                            <br /><br />
+                            Rekursion ist allerdings trotzdem sehr sinnvoll, wenn man zum Beispiel
+                            an die Koch-Schneeflocke denkt. Ein Ausschnitt einer Schneeflocke, der
+                            sich endlos in sich selbst fortsetzt (Sie können gerne Mal googlen...)
+                            <br /><br />
+                            Das bedeutet in der Programmiersprache, dass die RecMethod irgendwann
+                            aus sich selbst herausspringen muss. Dies kann ganz einfach erzielt
+                            werden, indem ein if in die Methode eingebaut wird, das irgendwann true
+                            ergibt.
+                            <div class="code">
+                                <span class="code-keyword">static void</span>
+                                <span class="code-method">RecMethod</span>(<span
+                                    class="code-keyword"
+                                    >int</span
+                                >
+                                <span class="code-variable">counter</span>)
+                                <div>{</div>
+                                <span class="tab code-flowcontrol">if</span>(<span
+                                    class="code-variable"
+                                    >counter</span
+                                >
+                                &lt;= 0)
+                                <br />
+                                <span class="tab"></span
+                                ><span class="tab code-flowcontrol">return</span>;
+                                <br />
+                                <span class="tab code-method">RecMethod</span>(<span
+                                    class="code-variable"
+                                    >counter</span
+                                >--);
+                                <div>}</div>
+                            </div>
+                            Methoden können übrigens auch untereinander rekursiv sein, wenn zum
+                            Beispiel Method1 Method2 aufruft und Method2 wiederrum Method1. Dieses
+                            Verfahren kann man theoretisch endlos im Kreis fortsetzen. Das erinnert
+                            dann sehr stark an die TTL-Zeit eines Paketes, die verhindert, dass ein
+                            Paket im Netzwerk endlos in einem Routerkreis gefangen wäre.
                         </div>
                     </div>
-                    <h4 id="Methoden-2_Arten">2 Arten</h4>
+                    <h3 id="Generische_Klassen">Generische Klassen</h3>
                     <div>
-                        Es gibt zwei verschiedene Arten von Methoden: statische und dynamische Methoden. 
-                        Der Unterschied besteht darin, dass statische Methoden (erkennen am Schlüsselwort static) keine Instanz benötigen, um aufgerufen werden zu können.
-                        Dynamische Methoden hingegen benötigen zuerst eine Instanz einer Klasse und können mithilfe dieser Instanz die Methode aufrufen.
-                    </div>
-                    <h4 id="Methoden-statische_Methoden">statische Methoden</h4>
-                    <div>
-                        Keine Instanz einer Klasse notwendig:
-                        <div class="code">
-                            <span class="code-keyword">static void</span> <span class="code-method">Main</span>(<span class="code-keyword">string</span>[] <span class="code-variable">args</span>)
-                            <div>{</div>
-                            <span class="tab code-method">Method</span>();
-                            <div>}</div>
-                            <br>
-                            <span class="code-keyword">static void</span> <span class="code-method">Method</span>()
-                            <div>{</div>
-                            <span class="tab code-comment">// code</span>
-                            <div>}</div>
+                        <h4 id="Generische_Klassen-Theorie">Theorie</h4>
+                        <div>
+                            Wenn man eine Klasse erstellen will, die man mit verschiedenen
+                            Datentypen bauen kann, verwendet man generische Klassen. Eine generische
+                            Klasse verhindert also, dass man mehrere Klassen mit verschiedenen
+                            Attributen aber gleichen Eigenschaften bauen muss.
+                        </div>
+                        <h4 id="Generische_Klassen-Syntax_Klasse">Syntax Klasse</h4>
+                        <div>
+                            Man möchte zum Beispiel eine Klasse Liste machen, die mehrere Strings
+                            enthält, nein Integers, nein Characters...<br />
+                            Wenn das der Fall ist, baut man sich am besten eine generische Klasse
+                            List:
+                            <div class="code">
+                                <span class="code-keyword">class</span>
+                                <span class="code-class">List</span>&lt;<span class="code-generic"
+                                    >T</span
+                                >&gt;
+                                <div>{</div>
+                                <br />
+                                <div>}</div>
+                            </div>
+                            Wenn man den generischen Datentyp T einschränken möchte, sodass man zum
+                            Beispiel sicherstellen kann, dass T "compareable" ist, dann verwendet
+                            man generische Typconstraints mithilfe des Schlüsselwortes where.
+                            <div class="code">
+                                <span class="code-keyword">class</span>
+                                <span class="code-class">List</span>&lt;<span class="code-generic"
+                                    >T</span
+                                >&gt; <span class="code-keyword">where</span>
+                                <span class="code-generic">T</span> :
+                                <span class="code-generic">IComparable</span>&lt;<span
+                                    class="code-generic"
+                                    >T</span
+                                >&gt;
+                                <div>{</div>
+                                <br />
+                                <div>}</div>
+                            </div>
+                            Nach diesem Doppelpunkt können viele verschiedenen Constraints stehen.
+                            In dieser Tabelle sind die Wichtigsten zusammengefasst:
+                            <table>
+                                <tr>
+                                    <th>Constraint</th>
+                                    <th>Beschreibung</th>
+                                </tr>
+                                <tr>
+                                    <td>where T : class</td>
+                                    <td>Der Typ muss ein Referenztyp sein.</td>
+                                </tr>
+                                <tr>
+                                    <td>where T : struct</td>
+                                    <td>Der Typ muss ein Wertetyp sein.</td>
+                                </tr>
+                                <tr>
+                                    <td>where T : unmanaged</td>
+                                    <td>Der Typ darf kein Referenztyp sein.</td>
+                                </tr>
+                                <tr>
+                                    <td>where T : new()</td>
+                                    <td>
+                                        Der Typ muss einen öffentlichen parameterlosen Konstruktor
+                                        haben.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>where T : &lt;base&nbsp;class&nbsp;name&gt;</td>
+                                    <td>
+                                        Der Typ muss diese Klasse sein oder von dieser Klasse erben.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>where T : &lt;interface&nbsp;name&gt;</td>
+                                    <td>Der Typ muss dieses Interface sein oder implementieren.</td>
+                                </tr>
+                                <tr>
+                                    <td>where T : U</td>
+                                    <td>Der Typ muss entweder U sein oder von U erben.</td>
+                                </tr>
+                            </table>
+                            Im Falle des obrigen Beispieles ist noch zu ergänzen, was das &lt;T&gt;
+                            nach dem IComparable zu bedeuten hat. <br />
+                            Das &lt;T&gt; bedeutet in diesem Sachzusammenhang, dass T nur mit dem
+                            gleichen Datentyp vergleichbar ist, nicht mit anderen. Würde das
+                            Constraint so lauten: "where T : IComparable", dann könnte man zum
+                            Beispiel den Typen int (T) mit dem Typen string (anderes T) vergleichen.
+                        </div>
+                        <h4 id="Generische_Klassen-Syntax_Instanz">Syntax Instanz</h4>
+                        <div>
+                            Beim Instanziieren dieser Klasse muss man dann ebenfalls eine andere
+                            Syntax verwenden. In diesem Fall, instanziieren wir eine Liste mit
+                            Integern.
+                            <div class="code">
+                                <span class="code-class">List</span>&lt;<span class="code-keyword"
+                                    >int</span
+                                >&gt; <span class="code-variable">myIntList</span> =
+                                <span class="code-keyword">new</span>
+                                <span class="code-class">List</span>&lt;<span class="code-keyword"
+                                    >int</span
+                                >&gt;();
+                            </div>
+                            Beziehungsweise, wenn man die Klasse mit einem String instanziieren
+                            möchte:
+                            <div class="code">
+                                <span class="code-class">List</span>&lt;<span class="code-keyword"
+                                    >string</span
+                                >&gt; <span class="code-variable">myStringList</span> =
+                                <span class="code-keyword">new</span>
+                                <span class="code-class">List</span>&lt;<span class="code-keyword"
+                                    >string</span
+                                >&gt;();
+                            </div>
+                        </div>
+                        <h4 id="Generische_Klassen-Syntax_Properties">Syntax Properties</h4>
+                        <div>
+                            Wenn man eine generisches Property, ein generisches Attribut
+                            beziehungsweise eine generische Variable in der generischen Klasse haben
+                            will, lautet die Syntax folgendermaßen:
+                            <div class="code">
+                                <span class="code-keyword">public</span>
+                                <span class="code-class">List</span>&lt;<span class="code-generic"
+                                    >T</span
+                                >&gt; Items { <span class="code-keyword">get</span>;
+                                <span class="code-keyword">set</span>; }
+                            </div>
+                        </div>
+                        <h4 id="Generische_Klassen-Syntax_Methoden">Syntax Methoden</h4>
+                        <div>
+                            Diesen generischen Datentyp kann man nun in den Methoden der Klasse
+                            einbauen. Zum Beispiel können wir eine Methoden Add hinzufügen.
+                            <div class="code">
+                                <span class="code-keyword">public</span>
+                                <span class="code-keyword">void</span>
+                                <span class="code-method">Add</span>(<span class="code-generic"
+                                    >T</span
+                                >
+                                <span class="code-variable">value</span>)
+                                <div>{</div>
+                                <span class="tab">Items</span>.<span class="code-method">Add</span
+                                >(<span class="code-variable">value</span>);
+                                <div>}</div>
+                            </div>
+                        </div>
+                        <h4 id="Generische_Klassen-Syntax_Methodenaufruf">Syntax Methodenaufruf</h4>
+                        <div>
+                            Diese Methode kann man dann genau wie bei konkreten Klassen aufrufen.
+                            <div class="code">
+                                <span class="code-variable">myIntList</span>.<span
+                                    class="code-method"
+                                    >Add</span
+                                >(10);
+                            </div>
+                            Oder die String-Variante:
+                            <div class="code">
+                                <span class="code-variable">myStringList</span>.<span
+                                    class="code-method"
+                                    >Add</span
+                                >(<span class="code-string">"Katze"</span>);
+                            </div>
                         </div>
                     </div>
-                    <h4 id="Methoden-dynamische_Methoden">dynamische Methoden</h4>
+                    <h3 id="Unit_Tests">Unit Tests</h3>
                     <div>
-                        Kann nur aufgerufen werden, wenn eine Instanz vorhanden ist:
-                        <div class="code">
-                            <span class="code-keyword">static void</span> <span class="code-method">Main</span>(<span class="code-keyword">string</span>[] <span class="code-variable">args</span>)
-                            <div>{</div>
-                            <span class="tab code-class">Person</span> <span class="code-variable">person</span> = <span class="code-keyword">new</span> <span class="code-class">Person</span>();
-                            <br>
-                            <span class="tab code-variable">person</span>.<span class="code-method">Method</span>();
-                            <div>}</div>
-                            <br>
-                            <span class="code-keyword">class</span> <span class="code-class">Person</span>
-                            <div>{</div>
-                            <span class="tab"></span><span class="code-keyword">static void</span> <span class="code-method">Method</span>()
-                            <div class="tab">{</div>
-                            <span class="tab"></span><span class="tab code-comment">// code</span>
-                            <div class="tab">}</div>
-                            <div>}</div>
+                        <h4 id="Unit_Tests-Was_sind_Unit_Tests?">Was sind Unit Tests?</h4>
+                        <div>
+                            Unit Tests verwendet man, damit man Methoden einer Klasse auf deren
+                            Richtigkeit überprüfen kann.
+                            <br /><br />
+                            Beispielsweise sind Unit Tests sehr nützlich, wenn man noch keine
+                            Instanzen der Klasse hat, mit denen man die Methoden testen könnte. Dann
+                            schreibt man sich einfach einen Unit Test. Für jede public Methode in
+                            der Klasse, schreibt man auch eine Unit Test Methode. In diese Unit Test
+                            Methoden bildet man dann eine oder mehrere Instanzen und überprüft, ob
+                            die richtigen Werte zurückgeliefert werden, beziehungsweise ob die
+                            richtigen Operationen durchgeführt wurden.
                         </div>
-                    </div>
-                    <h4 id="Methoden-Rekursion">Rekursion</h4>
-                    <div>
-                        Man spricht von Rekursion, wenn sich eine Methode selbst aufruft und somit einen endlosen geschlossenen Kreislauf bildet.
-                        <div class="code">
-                            <span class="code-keyword">static void</span> <span class="code-method">RecMethod</span>()
-                            <div>{</div>
-                            <span class="tab code-method">RecMethod</span>();
-                            <div>}</div>
+                        <h4 id="Unit_Tests-Syntax">Syntax</h4>
+                        <div>
+                            Damit der Compiler weiß, dass es sich bei der neuen Methode um eine Unit
+                            Test Methode handelt, benötigt man eine bestimmte Syntax.
+                            <div class="code">
+                                <span class="code-keyword">using</span>
+                                Microsoft.VisualStudio.TestTools.UnitTesting; <br /><br />
+                                [<span class="code-class">TestClass</span>] <br />
+                                <span class="code-keyword">public class</span>
+                                <span class="code-class">UnitTest_List</span> <br />
+                                <div>{</div>
+                                <span class="tab"></span>[<span class="code-class">TestMethod</span
+                                >] <br />
+                                <span class="tab code-keyword">public void</span>
+                                <span class="code-method">TestAdd</span>() <br />
+                                <div class="tab">{</div>
+                                <span class="tab"></span
+                                ><span class="tab code-class">List</span>&lt;<span
+                                    class="code-keyword"
+                                    >int</span
+                                >&gt; <span class="code-variable">myIntList</span> =
+                                <span class="code-keyword">new</span>
+                                <span class="code-class">List</span>&lt;<span class="code-keyword"
+                                    >int</span
+                                >&gt;();
+                                <br />
+                                <span class="tab"></span
+                                ><span class="tab code-variable">myIntList</span>.<span
+                                    class="code-method"
+                                    >Add</span
+                                >(<span class="code-number">123</span>);
+                                <br />
+                                <span class="tab"></span
+                                ><span class="tab code-class">Assert</span>.<span
+                                    class="code-method"
+                                    >AreEqual</span
+                                >(<span class="code-variable">myIntList</span>.Items[<span
+                                    class="code-number"
+                                    >0</span
+                                >], <span class="code-number">123</span>);
+                                <div class="tab">}</div>
+                                <div>}</div>
+                            </div>
+                            Die Assert Klasse ist bei Unit Tests automatisch mit dabei. Mithilfe der
+                            verschiedenen Methoden in der Assert Klasse kann man seine eigenen
+                            Methoden auf alles testen.
                         </div>
-                        Diese RecMethod würde zu einem StackOverflow führen, da der Cache irgendwann voll sein wird.
-                        Aus diesem Grund macht diese Methode keinen Sinn.
-                        <br><br>
-                        Rekursion ist allerdings trotzdem sehr sinnvoll, wenn man zum Beispiel an die Koch-Schneeflocke denkt.
-                        Ein Ausschnitt einer Schneeflocke, der sich endlos in sich selbst fortsetzt (Sie können gerne Mal googlen...)
-                        <br><br>
-                        Das bedeutet in der Programmiersprache, dass die RecMethod irgendwann aus sich selbst herausspringen muss.
-                        Dies kann ganz einfach erzielt werden, indem ein if in die Methode eingebaut wird, das irgendwann true ergibt.
-                        <div class="code">
-                            <span class="code-keyword">static void</span> <span class="code-method">RecMethod</span>(<span class="code-keyword">int</span> <span class="code-variable">counter</span>)
-                            <div>{</div>
-                            <span class="tab code-flowcontrol">if</span>(<span class="code-variable">counter</span> &lt;= 0)
-                            <br>
-                            <span class="tab"></span><span class="tab code-flowcontrol">return</span>;
-                            <br>
-                            <span class="tab code-method">RecMethod</span>(<span class="code-variable">counter</span>--);
-                            <div>}</div>
-                        </div>
-                        Methoden können übrigens auch untereinander rekursiv sein, wenn zum Beispiel Method1 Method2 aufruft und Method2 wiederrum Method1.
-                        Dieses Verfahren kann man theoretisch endlos im Kreis fortsetzen. 
-                        Das erinnert dann sehr stark an die TTL-Zeit eines Paketes, die verhindert, dass ein Paket im Netzwerk endlos in einem Routerkreis gefangen wäre.
-                    </div>
-                </div>
-                <h3 id="Generische_Klassen">Generische Klassen</h3>
-                <div>
-                    <h4 id="Generische_Klassen-Theorie">Theorie</h4>
-                    <div>
-                        Wenn man eine Klasse erstellen will, die man mit verschiedenen Datentypen bauen kann, verwendet man generische Klassen.
-                        Eine generische Klasse verhindert also, dass man mehrere Klassen mit verschiedenen Attributen aber gleichen Eigenschaften bauen muss.
-                    </div>
-                    <h4 id="Generische_Klassen-Syntax_Klasse">Syntax Klasse</h4>
-                    <div>
-                        Man möchte zum Beispiel eine Klasse Liste machen, die mehrere Strings enthält, nein Integers, nein Characters...<br>
-                        Wenn das der Fall ist, baut man sich am besten eine generische Klasse List:
-                        <div class="code">                                        
-                            <span class="code-keyword">class</span> <span class="code-class">List</span>&lt;<span class="code-generic">T</span>&gt;
-                            <div>{</div>
-                            <br>
-                            <div>}</div>
-                        </div>
-                        Wenn man den generischen Datentyp T einschränken möchte, sodass man zum Beispiel sicherstellen kann, dass T "compareable" ist, dann verwendet man generische Typconstraints mithilfe des Schlüsselwortes where.
-                        <div class="code">                                        
-                            <span class="code-keyword">class</span> <span class="code-class">List</span>&lt;<span class="code-generic">T</span>&gt; <span class="code-keyword">where</span> <span class="code-generic">T</span> : <span class="code-generic">IComparable</span>&lt;<span class="code-generic">T</span>&gt;
-                            <div>{</div>
-                            <br>
-                            <div>}</div>
-                        </div>
-                        Nach diesem Doppelpunkt können viele verschiedenen Constraints stehen. In dieser Tabelle sind die Wichtigsten zusammengefasst:
-                        <table>
-                            <tr>
-                                <th>Constraint</th>
-                                <th>Beschreibung</th>
-                            </tr>                                        
-                            <tr>
-                                <td>where T : class</td>
-                                <td>Der Typ muss ein Referenztyp sein.</td>
-                            </tr>
-                            <tr>
-                                <td>where T : struct</td>
-                                <td>Der Typ muss ein Wertetyp sein.</td>
-                            </tr>
-                            <tr>
-                                <td>where T : unmanaged</td>
-                                <td>Der Typ darf kein Referenztyp sein.</td>
-                            </tr>
-                            <tr>
-                                <td>where T : new()</td>
-                                <td>Der Typ muss einen öffentlichen parameterlosen Konstruktor haben.</td>
-                            </tr>
-                            <tr>
-                                <td>where T : &lt;base&nbsp;class&nbsp;name&gt;</td>
-                                <td>Der Typ muss diese Klasse sein oder von dieser Klasse erben.</td>
-                            </tr>
-                            <tr>
-                                <td>where T : &lt;interface&nbsp;name&gt;</td>
-                                <td>Der Typ muss dieses Interface sein oder implementieren.</td>
-                            </tr>
-                            <tr>
-                                <td>where T : U</td>
-                                <td>Der Typ muss entweder U sein oder von U erben.</td>
-                            </tr>
-                        </table>
-                        Im Falle des obrigen Beispieles ist noch zu ergänzen, was das &lt;T&gt; nach dem IComparable zu bedeuten hat. <br>
-                        Das &lt;T&gt; bedeutet in diesem Sachzusammenhang, dass T nur mit dem gleichen Datentyp vergleichbar ist, nicht mit anderen.
-                        Würde das Constraint so lauten: "where T : IComparable", dann könnte man zum Beispiel den Typen int (T) mit dem Typen string (anderes T) vergleichen. 
-                    </div>
-                    <h4 id="Generische_Klassen-Syntax_Instanz">Syntax Instanz</h4>
-                    <div>
-                        Beim Instanziieren dieser Klasse muss man dann ebenfalls eine andere Syntax verwenden. In diesem Fall, instanziieren wir eine Liste mit Integern.
-                        <div class="code">
-                            <span class="code-class">List</span>&lt;<span class="code-keyword">int</span>&gt; <span class="code-variable">myIntList</span> = <span class="code-keyword">new</span> <span class="code-class">List</span>&lt;<span class="code-keyword">int</span>&gt;();
-                        </div>
-                        Beziehungsweise, wenn man die Klasse mit einem String instanziieren möchte:
-                        <div class="code">
-                            <span class="code-class">List</span>&lt;<span class="code-keyword">string</span>&gt; <span class="code-variable">myStringList</span> = <span class="code-keyword">new</span> <span class="code-class">List</span>&lt;<span class="code-keyword">string</span>&gt;();
-                        </div>                        
-                    </div>
-                    <h4 id="Generische_Klassen-Syntax_Properties">Syntax Properties</h4>
-                    <div>
-                        Wenn man eine generisches Property, ein generisches Attribut beziehungsweise eine generische Variable in der generischen Klasse haben will, lautet die Syntax folgendermaßen:
-                        <div class="code">
-                            <span class="code-keyword">public</span> <span class="code-class">List</span>&lt;<span class="code-generic">T</span>&gt; Items { <span class="code-keyword">get</span>; <span class="code-keyword">set</span>; }
-                        </div>
-                    </div>
-                    <h4 id="Generische_Klassen-Syntax_Methoden">Syntax Methoden</h4>
-                    <div>
-                        Diesen generischen Datentyp kann man nun in den Methoden der Klasse einbauen. Zum Beispiel können wir eine Methoden Add hinzufügen.
-                        <div class="code">
-                            <span class="code-keyword">public</span> <span class="code-keyword">void</span> <span class="code-method">Add</span>(<span class="code-generic">T</span> <span class="code-variable">value</span>)
-                            <div>{</div>
-                            <span class="tab">Items</span>.<span class="code-method">Add</span>(<span class="code-variable">value</span>);
-                            <div>}</div>
-                        </div>                                    
-                    </div>
-                    <h4 id="Generische_Klassen-Syntax_Methodenaufruf">Syntax Methodenaufruf</h4>
-                    <div>
-                        Diese Methode kann man dann genau wie bei konkreten Klassen aufrufen. 
-                        <div class="code">
-                            <span class="code-variable">myIntList</span>.<span class="code-method">Add</span>(10);
-                        </div>    
-                        Oder die String-Variante:
-                        <div class="code">
-                            <span class="code-variable">myStringList</span>.<span class="code-method">Add</span>(<span class="code-string">"Katze"</span>);
-                        </div>                         
-                    </div>
-                </div>
-                <h3 id="Unit_Tests">Unit Tests</h3>
-                <div>
-                    <h4 id="Unit_Tests-Was_sind_Unit_Tests?">Was sind Unit Tests?</h4>
-                    <div>
-                        Unit Tests verwendet man, damit man Methoden einer Klasse auf deren Richtigkeit überprüfen kann.
-                        <br><br>
-                        Beispielsweise sind Unit Tests sehr nützlich, wenn man noch keine Instanzen der Klasse hat, mit denen man die Methoden testen könnte.
-                        Dann schreibt man sich einfach einen Unit Test. Für jede public Methode in der Klasse, schreibt man auch eine Unit Test Methode.
-                        In diese Unit Test Methoden bildet man dann eine oder mehrere Instanzen und überprüft, ob die richtigen Werte zurückgeliefert werden,
-                        beziehungsweise ob die richtigen Operationen durchgeführt wurden.
-                    </div>
-                    <h4 id="Unit_Tests-Syntax">Syntax</h4>
-                    <div>
-                        Damit der Compiler weiß, dass es sich bei der neuen Methode um eine Unit Test Methode handelt, benötigt man eine bestimmte Syntax.
-                        <div class="code">
-                            <span class="code-keyword">using</span> Microsoft.VisualStudio.TestTools.UnitTesting; <br><br>
-                            [<span class="code-class">TestClass</span>] <br>
-                            <span class="code-keyword">public class</span> <span class="code-class">UnitTest_List</span> <br>
-                            <div>{</div>
-                            <span class="tab"></span>[<span class="code-class">TestMethod</span>] <br>
-                            <span class="tab code-keyword">public void</span> <span class="code-method">TestAdd</span>() <br>
-                            <div class="tab">{</div>
-                            <span class="tab"></span><span class="tab code-class">List</span>&lt;<span class="code-keyword">int</span>&gt; <span class="code-variable">myIntList</span> = <span class="code-keyword">new</span> <span class="code-class">List</span>&lt;<span class="code-keyword">int</span>&gt;();
-                            <br>
-                            <span class="tab"></span><span class="tab code-variable">myIntList</span>.<span class="code-method">Add</span>(<span class="code-number">123</span>);
-                            <br>
-                            <span class="tab"></span><span class="tab code-class">Assert</span>.<span class="code-method">AreEqual</span>(<span class="code-variable">myIntList</span>.Items[<span class="code-number">0</span>], <span class="code-number">123</span>);
-                            <div class="tab">}</div>
-                            <div>}</div>
-                        </div>
-                        Die Assert Klasse ist bei Unit Tests automatisch mit dabei. Mithilfe der verschiedenen Methoden in der Assert Klasse kann man seine eigenen Methoden auf alles testen.
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="footer"></div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script defer src="/js/fa_all.min.js"></script>
+        <div id="footer"></div>
 
-    <script type="text/javascript" src="/js/app.js"></script>
-</body>
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
+        <script
+            defer
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            defer
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <script defer src="/js/Lightbox.js"></script>
+        <script defer src="/js/FontAwesome.js"></script>
+
+        <script defer type="text/javascript" src="/js/app.js"></script>
+    </body>
 </html>

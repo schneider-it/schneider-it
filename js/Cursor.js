@@ -1,4 +1,4 @@
-function ActiveFollowCursor() {
+export function ActiveFollowCursor() {
     let clientX = 0,
         clientY = 0,
         navclientY = 0;
@@ -46,8 +46,12 @@ function ActiveFollowCursor() {
         });
 
         if ((themeSwitch = document.querySelector(".themeSwitch"))) {
-            themeSwitch.addEventListener("mousemove", (event) => mouseEnterHandler(event, themeSwitch));
-            themeSwitch.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, themeSwitch));
+            themeSwitch.addEventListener("mousemove", (event) =>
+                mouseEnterHandler(event, themeSwitch)
+            );
+            themeSwitch.addEventListener("mouseleave", (event) =>
+                mouseLeaveHandler(event, themeSwitch)
+            );
         }
 
         if ((burger = document.querySelector(".burger"))) {
@@ -56,18 +60,30 @@ function ActiveFollowCursor() {
         }
 
         if ((back_button = document.querySelector(".back_button"))) {
-            back_button.addEventListener("mousemove", (event) => mouseEnterHandler(event, back_button));
-            back_button.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, back_button));
+            back_button.addEventListener("mousemove", (event) =>
+                mouseEnterHandler(event, back_button)
+            );
+            back_button.addEventListener("mouseleave", (event) =>
+                mouseLeaveHandler(event, back_button)
+            );
         }
 
         if ((search_button = document.querySelector(".search_button"))) {
-            search_button.addEventListener("mousemove", (event) => mouseEnterHandler(event, search_button));
-            search_button.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, search_button));
+            search_button.addEventListener("mousemove", (event) =>
+                mouseEnterHandler(event, search_button)
+            );
+            search_button.addEventListener("mouseleave", (event) =>
+                mouseLeaveHandler(event, search_button)
+            );
         }
 
         if ((tastenkombinationenSwitch = document.querySelector(".tastenkombinationenSwitch"))) {
-            tastenkombinationenSwitch.addEventListener("mousemove", (event) => mouseEnterHandler(event, tastenkombinationenSwitch));
-            tastenkombinationenSwitch.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, tastenkombinationenSwitch));
+            tastenkombinationenSwitch.addEventListener("mousemove", (event) =>
+                mouseEnterHandler(event, tastenkombinationenSwitch)
+            );
+            tastenkombinationenSwitch.addEventListener("mouseleave", (event) =>
+                mouseLeaveHandler(event, tastenkombinationenSwitch)
+            );
         }
     }
 }

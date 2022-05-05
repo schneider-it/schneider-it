@@ -1,3 +1,5 @@
+// import * as Fuse from "./Fuse";
+
 const options = {
     isCaseSensitive: false,
     includeScore: true,

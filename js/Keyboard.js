@@ -1,4 +1,4 @@
-function KeyboardCombinations(e) {
+export function KeyboardCombinations(e) {
     // Holding keys: e.shiftKey, e.altKey, e.ctrlKey, e.metaKey (Windows Taste)
 
     if (!window.matchMedia("(pointer: coarse)").matches) {
@@ -7,7 +7,11 @@ function KeyboardCombinations(e) {
             return false;
         }
 
-        if ((e.key === "z" && e.ctrlKey) || e.key === "Backspace" || (e.key === "Tab" && e.shiftKey)) {
+        if (
+            (e.key === "z" && e.ctrlKey) ||
+            e.key === "Backspace" ||
+            (e.key === "Tab" && e.shiftKey)
+        ) {
             history.back();
             return false;
         }

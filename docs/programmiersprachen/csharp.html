@@ -1,87 +1,120 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!">
-    <link rel="stylesheet" href="/css/lightbox.min.css">
-    <link href="/css/fa_all.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Programmiersprachen - C#</title>
-</head>
-<body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
-    <div id="header"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
+        <title>Schneider IT - Programmiersprachen - C#</title>
+    </head>
+    <body onload="OnLoadIndex();" onkeydown="OnKeyDown();">
+        <div id="header"></div>
 
         <div class="back_button">
-        <a href="../programmiersprachen.html">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-        </a>
-    </div>
+            <a href="../programmiersprachen.html">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </a>
+        </div>
 
-    <div class="title searchable">
-        <img loading="lazy" src="/img/c-sharp.png" alt="C#_Logo">
-        <h1>C#</h1>
-    </div>
-    <div></div>
+        <div class="title searchable">
+            <img loading="lazy" src="/img/c-sharp.png" alt="C#_Logo" />
+            <h1>C#</h1>
+        </div>
+        <div></div>
 
-    <div class="cards">
-        <a href="csharp/grundlagen.html">
-            <div class="card">
-                <div class="card-before"></div>
-                <div class="card-img">
-                    <img loading="lazy" src="/img/grundlagen.png" alt="Grundlagen" style="border-radius: 0;">
+        <div class="cards">
+            <a href="csharp/grundlagen.html">
+                <div class="card">
+                    <div class="card-before"></div>
+                    <div class="card-img">
+                        <img
+                            loading="lazy"
+                            src="/img/grundlagen.png"
+                            alt="Grundlagen"
+                            style="border-radius: 0"
+                        />
+                    </div>
+                    <div class="card-text">
+                        <h4>Grundlagen</h4>
+                        <p>
+                            Hier lernen Sie etwas über Datentypen, Flusssteuerung und statische
+                            Methoden.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-text">
-                    <h4>Grundlagen</h4>
-                    <p>
-                        Hier lernen Sie etwas über Datentypen, Flusssteuerung und statische Methoden.
-                    </p>
+            </a>
+            <a href="csharp/oop.html">
+                <div class="card">
+                    <div class="card-before"></div>
+                    <div class="card-img">
+                        <img
+                            loading="lazy"
+                            src="/img/objekt.png"
+                            alt="OOP"
+                            style="border-radius: 0"
+                        />
+                    </div>
+                    <div class="card-text">
+                        <h4>OOP</h4>
+                        <p>
+                            Hier lernen Sie den objektorientierten Teil von C# besser kennen. Es
+                            geht um Klassen, Vererbung und Verkettung.
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </a>
-        <a href="csharp/oop.html">
-            <div class="card">
-                <div class="card-before"></div>
-                <div class="card-img">
-                    <img loading="lazy" src="/img/objekt.png" alt="OOP" style="border-radius: 0;">
+            </a>
+            <a href="csharp/anderes.html">
+                <div class="card">
+                    <div class="card-before"></div>
+                    <div class="card-img">
+                        <img
+                            loading="lazy"
+                            src="/img/random.png"
+                            alt="Anderes"
+                            style="border-radius: 0"
+                        />
+                    </div>
+                    <div class="card-text">
+                        <h4>Other stuff</h4>
+                        <p>
+                            Hier lernen Sie wichtigsten Klassen und deren statische Methoden, Input
+                            / Output, Verkettung und vieles mehr kennen.
+                        </p>
+                    </div>
                 </div>
-                <div class="card-text">
-                    <h4>OOP</h4>
-                    <p>
-                        Hier lernen Sie den objektorientierten Teil von C# besser kennen.
-                        Es geht um Klassen, Vererbung und Verkettung.
-                    </p>
-                </div>
-            </div>
-        </a>
-        <a href="csharp/anderes.html">
-            <div class="card">
-                <div class="card-before"></div>
-                <div class="card-img">
-                    <img loading="lazy" src="/img/random.png" alt="Anderes" style="border-radius: 0;">
-                </div>
-                <div class="card-text">
-                    <h4>Other stuff</h4>
-                    <p>
-                        Hier lernen Sie wichtigsten Klassen und deren statische Methoden, Input / Output, Verkettung und vieles mehr kennen.
-                    </p>
-                </div>
-            </div>
-        </a>
-    </div>
+            </a>
+        </div>
 
-    <div id="footer"></div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script defer src="/js/fa_all.min.js"></script>
+        <div id="footer"></div>
 
-    <script type="text/javascript" src="/js/app.js"></script>
-</body>
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
+        <script
+            defer
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            defer
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <script defer src="/js/Lightbox.js"></script>
+        <script defer src="/js/FontAwesome.js"></script>
+
+        <script defer type="text/javascript" src="/js/app.js"></script>
+    </body>
 </html>

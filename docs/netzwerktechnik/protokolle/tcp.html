@@ -1,187 +1,275 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!">
-    <link rel="stylesheet" href="/css/lightbox.min.css">
-    <link href="/css/fa_all.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Netzwerktechnik - Protokolle - TCP</title>
-</head>
-<body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
-    <div class="scroll_indicator_div">
-        <div class="scroll_indicator" id="scroll_indicator"></div>
-    </div> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
 
-    <div id="header"></div>
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
+        <title>Schneider IT - Netzwerktechnik - Protokolle - TCP</title>
+    </head>
+    <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
+        <div class="scroll_indicator_div">
+            <div class="scroll_indicator" id="scroll_indicator"></div>
+        </div>
+
+        <div id="header"></div>
 
         <div class="back_button">
-        <a href="../protokolle.html">
-            <ion-icon name="arrow-back-outline"></ion-icon>
-        </a>
-    </div>
-
-    <div class="title searchable">
-        <img loading="lazy" src="/img/TCP.svg" alt="TCP_Logo">
-        <h1>TCP</h1>
-    </div>
-    <div></div>
-
-    <div class="section searchable">
-        <div class="container" style="margin-top: 10vh;">
-            <div>
-                Das Transmission Control Protocol (kurz: TCP) arbeitet auf Layer 4 des OSI-Schichtenmodells (Transportschicht). 
-                Es sorgt dafür, dass eine verbindungsorientierte Verbindung zwischen zwei Endgeräten aufgebaut und abgebaut wird.
-                <h3 id="Aufgaben">Aufgaben</h3>
-                <div>
-                    Hier eine Übersicht mit den Aufgaben und Funktionen von TCP:
-                    <table>
-                        <tr><td>Segmentierung (Data Segmenting)</td></tr>
-                        <tr><td>Verbindungsmanagement (Connection Establishment and Termination)</td></tr>
-                        <tr><td>Fehlerbehandlung (Error Detection)</td></tr>
-                        <tr><td>Flusssteuerung (Flow Control)</td></tr>
-                        <tr><td>Anwendungsunterstützung (Application Support)</td></tr>
-                    </table>
-                    Diese Aufgaben werden jetzt im Detail beschrieben:
-                </div>
-                <h3 id="Segmentierung">Segmentierung (Data Segmenting)</h3>
-                <div>
-                    Eine Funktion von TCP besteht darin, den von den Anwendungen kommenden Datenstrom in Datenpakete bzw. Segmente aufzuteilen (Segmentierung) und beim Empfang wieder zusammenzusetzen. 
-                    Die Segmente werden mit einem Header versehen, in dem Steuer- und Kontroll-Informationen enthalten sind. 
-                    Danach werden die Segmente an das Internet Protocol (IP) übergeben.
-                    <br><br>
-                    Da beim IP-Routing die Datenpakete unterschiedliche Wege gehen können, entstehen unter Umständen zeitliche Verzögerungen, die dazu führen, dass die Datenpakete beim Empfänger in einer anderen Reihenfolge eingehen, als sie ursprünglich hatten. 
-                    Deshalb werden die Segmente beim Empfänger auch wieder in die richtige Reihenfolge gebracht und erst dann an die adressierte Anwendung übergeben. 
-                    Dazu werden die Segmente mit einer fortlaufenden Sequenznummer versehen (Sequenzierung).
-                </div>
-                <h3 id="Verbindungsmanagement">Verbindungsmanagement (Connection Establishment and Termination)</h3>
-                <div>
-                    Als verbindungsorientiertes Protokoll ist TCP für den Verbindungsaufbau und Verbindungsabbau zwischen zwei Stationen einer Ende-zu-EndeKommunikation zuständig.
-                    Durch TCP stehen Sender und Empfänger ständig in Kontakt zueinander.
-                    <br><br>
-                    Wenn auf einer bestehenden Verbindung längere Zeit nichts gesendet wird, schickt TCP ein Paket zur Bestätigung der Verbindung.
-                </div>
-                <h3 id="Fehlerbehandlung">Fehlerbehandlung (Error Detection)</h3>
-                <div>
-                    Obwohl es sich eher um eine virtuelle Verbindung handelt, werden während der Datenübertragung ständig Kontrollmeldungen ausgetauscht. 
-                    Der Empfänger bestätigt dem Sender jedes empfangene Datenpaket. Trifft keine Bestätigung beim Absender ein, wird das Paket noch mal verschickt. 
-                    Da es bei Übertragungsproblemen zu doppelten Datenpaketen und Quittierungen kommen kann, werden alle TCP-Pakete und TCP- Meldungen mit einer fortlaufenden Sequenznummer gekennzeichnet. 
-                    So sind Sender und Empfänger in der Lage, die Reihenfolge und Zuordnung der Datenpakete und Meldungen zu erkennen. 
-                </div>
-                <h3 id="Flusssteuerung">Flusssteuerung (Flow Control)</h3>
-                <div>
-                    Bei einer paketorientierten Übertragung ohne feste zeitliche Zuordnung und ohne Kenntnis des Übertragungswegs erhält das Transport-Protokoll vom Übertragungssystem keine Information über die verfügbare Bandbreite. 
-                    Mit der Flusssteuerung werden beliebig langsame oder schnelle Übertragungsstrecken dynamisch auszulasten und auch auf unerwartete Engpässe und Verzögerungen reagiert. 
-                    Dazu nutzt TCP Stop & Go Bits (Verwendung z.B.: Traffic Shaping). 
-                    Solange der Empfänger keine Probleme hat mit der Ankunft der vielen Pakete, schickt er immer ein Go Bit im Bestätigungspaket.
-                    Wenn allerdings irgendein Fehler oder ein Problem auftritt, setzt der Empfänger dieses Bit auf Stop, sodass TCP aufhört weitere Pakete zu schicken, bis das gleiche Bestätigungspaket mit einem Go Bit beim Sender ankommt.
-                    <br><br>
-                    Dieses Verfahren wird auch gerne von Providern verwendet, um die Datenbandbreite runter zu drosseln.
-                    Wenn man zum Beispiel eine 100MByte/s-Leitung zu seinem Haus verlegt hat und nur für 20 MByte/s gezahlt hat, dann kann man durch Stop & Go Bits die Geschwindigkeit verlangsamen, sodass nicht die vollen 100MByte/s genutzt werden können, sondern eben nur 20MByte/s.
-                    Dieses Verfahren der Bandbreitenreduzierung nennt sich Traffic Shaping.
-                </div>
-                <h3 id="Anwendungsunterstützung">Anwendungsunterstützung (Application Support)</h3>
-                <div>
-                    TCP- und UDP-Ports sind eine Software-Abstraktion, um Kommunikationsverbindungen voneinander unterscheiden zu können.
-                    Ähnlich wie IP-Adressen Rechner in Netzwerken adressieren, adressieren Ports spezifische Anwendungen oder Verbindungen, die auf einem Rechner laufen.
-                </div>
-                <h3 id="Ports">Ports</h3>
-                <div>
-                    Mithilfe von Ports kann man verschiedene Anwendungen und Dienste adressieren.
-                    TCP muss wissen, an welche Anwendung es die Pakete weiterleiten soll, weshabl die Portnummer darüber Auskunft gibt.
-                    <h4 id="Ports-Portgruppen">Portgruppen</h4>
-                    <div>
-                        Portnummern gehen von 1 bis 65.535. 
-                        In diesem Zahlenbereich gibt es drei verschiedene Bereiche von Portnummern.
-                        <table>
-                            <tr>
-                                <th>Bereich</th>
-                                <th>Name dieser Gruppe</th>
-                            </tr>
-                            <tr>
-                                <td>0 - 1.023</td>
-                                <td>well-known Ports</td>
-                            </tr>
-                            <tr>
-                                <td>1.024 - 49.151</td>
-                                <td>Registered Ports</td>
-                            </tr>
-                            <tr>
-                                <td>49.152 - 65.535</td>
-                                <td>Dynamically Allocated Ports</td>
-                            </tr>
-                        </table>
-                        Diese Portbereiche werden nun im Detail beschrieben:
-                        <h5 id="Ports-Portgruppen-well-known_Ports">well-known Ports</h5>
-                        <div>
-                            Die well-known Ports sind fix festgelegt Ports für Anwendungen, wie zum Beispiel FTP, DHCP oder DNS.
-                            Der Bereich dieser Portsgruppe geht von 0 bis 1.023.
-                            Für eine Auflistenung der wichtigsten well-known Ports, folgen Sie diesem Link: <a href="/docs/netzwerktechnik/grundlagen.html#well-known_Ports" class="link">well-known Ports</a>.
-                        </div>
-                        <h5 id="Ports-Portgruppen-Registered_Ports">Registered Ports</h5>
-                        <div>
-                            Die registrierten Ports können von jedem registriert werden. 
-                            Wenn man das will, muss man dies bei IANA/ICANN beantragen.
-                            Der Bereich von den registrierten Ports geht von 1.024 bis 49.151.
-                        </div>
-                        <h5 id="Ports-Portgruppen-Dynamically_Allocated_Ports">Dynamically Allocated Ports</h5>
-                        <div>
-                            Die dynamically allocated Ports werden von Clients für eine ausgehende Verbindung verwendet (Source-Port).
-                            Das bedeutet, wenn ein Client sich zu einem Server verbindet, vergibt TCP bzw. UDP den Standard-Port für den Empfänger-Port und einen freien Port ab 49.152 für den Sender-Port.
-                            Wenn der Server die Daten erhalten hat und eine Antwort zurückschickt, dann werden die Portnummern vertauscht.
-                            Damit wird sichergestellt, dass die Daten nicht an eine falsche Anwendung übergeben werden.
-                            Der Bereich dieser Portgruppe geht von 49.152 bis 65.535.
-                        </div>
-                    </div>
-                    <h4 id="Ports-Portzustände">Portzustände</h4>
-                    <div>
-                        Ports können mehrere Zustände aufweisen. 
-                        Der Zustand eines Ports definiert, ob eine Kommunikation über diesen Port zu einer dahinterliegenden Anwendung möglich ist, oder nicht. 
-                        Vereinfacht gesehen gibt es drei Zustände.
-                        <table>
-                            <tr><th>Portzustände</th></tr>
-                            <tr><td>Open / Offen</td></tr>
-                            <tr><td>Closed / Geschlossen</td></tr>
-                            <tr><td>Filtered / Gefiltert (Blocked / Geblockt)</td></tr>
-                        </table>
-                        Diese Portzustände werden nun im Detail beschrieben:
-                        <h5 id="Ports-Portzustände-Open">Open</h5>
-                        <div>
-                            Ein Port wird dann als Open bezeichnet, wenn eine Anwendung dahinter "lauscht". 
-                            Der Client kann dann zu dieser Anwendung mittels TCP eine Verbindung aufbauen und kommunizieren.
-                        </div>
-                        <h5 id="Ports-Portzustände-Closed">Closed</h5>
-                        <div>
-                            Ein Port wird dann als Closed bezeichnet, wenn keine Anwendung dahinter "lauscht".
-                            Dies ist der Standardzustand eines Ports und er bedeutet, dass der Host eine Verbindung zu diesem Port aktiv ablehnt.
-                            Closed kann auch bedeuten, dass zwar eine Anwendung auf diesem Port "lauscht", allerdings ist dieser durch eine Firewall blockiert und wird rejected.
-                            Das bedeutet aber auch, dass zu der dahinterliegenden Anwendung keine Verbindung aufgebaut werden kann.
-                        </div>
-                        <h5 id="Ports-Portzustände-Filtered">Filtered</h5>
-                        <div>
-                            Ein Port wird dann als Filtered bezeichnet, wenn die Verbindung weder bestätigt (Open) noch abgeleht (Closed) wird.
-                            Das bedeutet, dass der kontaktierte Port durch eine Firewall geschützt ist und auf Verbindungsversuche nicht antwortet (drop).
-                            Dieser Zustand kann allerdings auch dadurch entstehen, dass der kontaktierte Host gar nicht erreichbar ist.
-                        </div>
-                    </div>
-                </div>
-            </div>            
+            <a href="../protokolle.html">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </a>
         </div>
-    </div>
 
-    <div id="footer"></div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/js/vanilla-tilt.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="/js/lightbox.min.js"></script>
-    <script defer src="/js/fa_all.min.js"></script>
+        <div class="title searchable">
+            <img loading="lazy" src="/img/TCP.svg" alt="TCP_Logo" />
+            <h1>TCP</h1>
+        </div>
+        <div></div>
 
-    <script type="text/javascript" src="/js/app.js"></script>
-</body>
+        <div class="section searchable">
+            <div class="container" style="margin-top: 10vh">
+                <div>
+                    Das Transmission Control Protocol (kurz: TCP) arbeitet auf Layer 4 des
+                    OSI-Schichtenmodells (Transportschicht). Es sorgt dafür, dass eine
+                    verbindungsorientierte Verbindung zwischen zwei Endgeräten aufgebaut und
+                    abgebaut wird.
+                    <h3 id="Aufgaben">Aufgaben</h3>
+                    <div>
+                        Hier eine Übersicht mit den Aufgaben und Funktionen von TCP:
+                        <table>
+                            <tr>
+                                <td>Segmentierung (Data Segmenting)</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Verbindungsmanagement (Connection Establishment and Termination)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fehlerbehandlung (Error Detection)</td>
+                            </tr>
+                            <tr>
+                                <td>Flusssteuerung (Flow Control)</td>
+                            </tr>
+                            <tr>
+                                <td>Anwendungsunterstützung (Application Support)</td>
+                            </tr>
+                        </table>
+                        Diese Aufgaben werden jetzt im Detail beschrieben:
+                    </div>
+                    <h3 id="Segmentierung">Segmentierung (Data Segmenting)</h3>
+                    <div>
+                        Eine Funktion von TCP besteht darin, den von den Anwendungen kommenden
+                        Datenstrom in Datenpakete bzw. Segmente aufzuteilen (Segmentierung) und beim
+                        Empfang wieder zusammenzusetzen. Die Segmente werden mit einem Header
+                        versehen, in dem Steuer- und Kontroll-Informationen enthalten sind. Danach
+                        werden die Segmente an das Internet Protocol (IP) übergeben.
+                        <br /><br />
+                        Da beim IP-Routing die Datenpakete unterschiedliche Wege gehen können,
+                        entstehen unter Umständen zeitliche Verzögerungen, die dazu führen, dass die
+                        Datenpakete beim Empfänger in einer anderen Reihenfolge eingehen, als sie
+                        ursprünglich hatten. Deshalb werden die Segmente beim Empfänger auch wieder
+                        in die richtige Reihenfolge gebracht und erst dann an die adressierte
+                        Anwendung übergeben. Dazu werden die Segmente mit einer fortlaufenden
+                        Sequenznummer versehen (Sequenzierung).
+                    </div>
+                    <h3 id="Verbindungsmanagement">
+                        Verbindungsmanagement (Connection Establishment and Termination)
+                    </h3>
+                    <div>
+                        Als verbindungsorientiertes Protokoll ist TCP für den Verbindungsaufbau und
+                        Verbindungsabbau zwischen zwei Stationen einer Ende-zu-EndeKommunikation
+                        zuständig. Durch TCP stehen Sender und Empfänger ständig in Kontakt
+                        zueinander.
+                        <br /><br />
+                        Wenn auf einer bestehenden Verbindung längere Zeit nichts gesendet wird,
+                        schickt TCP ein Paket zur Bestätigung der Verbindung.
+                    </div>
+                    <h3 id="Fehlerbehandlung">Fehlerbehandlung (Error Detection)</h3>
+                    <div>
+                        Obwohl es sich eher um eine virtuelle Verbindung handelt, werden während der
+                        Datenübertragung ständig Kontrollmeldungen ausgetauscht. Der Empfänger
+                        bestätigt dem Sender jedes empfangene Datenpaket. Trifft keine Bestätigung
+                        beim Absender ein, wird das Paket noch mal verschickt. Da es bei
+                        Übertragungsproblemen zu doppelten Datenpaketen und Quittierungen kommen
+                        kann, werden alle TCP-Pakete und TCP- Meldungen mit einer fortlaufenden
+                        Sequenznummer gekennzeichnet. So sind Sender und Empfänger in der Lage, die
+                        Reihenfolge und Zuordnung der Datenpakete und Meldungen zu erkennen.
+                    </div>
+                    <h3 id="Flusssteuerung">Flusssteuerung (Flow Control)</h3>
+                    <div>
+                        Bei einer paketorientierten Übertragung ohne feste zeitliche Zuordnung und
+                        ohne Kenntnis des Übertragungswegs erhält das Transport-Protokoll vom
+                        Übertragungssystem keine Information über die verfügbare Bandbreite. Mit der
+                        Flusssteuerung werden beliebig langsame oder schnelle Übertragungsstrecken
+                        dynamisch auszulasten und auch auf unerwartete Engpässe und Verzögerungen
+                        reagiert. Dazu nutzt TCP Stop & Go Bits (Verwendung z.B.: Traffic Shaping).
+                        Solange der Empfänger keine Probleme hat mit der Ankunft der vielen Pakete,
+                        schickt er immer ein Go Bit im Bestätigungspaket. Wenn allerdings irgendein
+                        Fehler oder ein Problem auftritt, setzt der Empfänger dieses Bit auf Stop,
+                        sodass TCP aufhört weitere Pakete zu schicken, bis das gleiche
+                        Bestätigungspaket mit einem Go Bit beim Sender ankommt.
+                        <br /><br />
+                        Dieses Verfahren wird auch gerne von Providern verwendet, um die
+                        Datenbandbreite runter zu drosseln. Wenn man zum Beispiel eine
+                        100MByte/s-Leitung zu seinem Haus verlegt hat und nur für 20 MByte/s gezahlt
+                        hat, dann kann man durch Stop & Go Bits die Geschwindigkeit verlangsamen,
+                        sodass nicht die vollen 100MByte/s genutzt werden können, sondern eben nur
+                        20MByte/s. Dieses Verfahren der Bandbreitenreduzierung nennt sich Traffic
+                        Shaping.
+                    </div>
+                    <h3 id="Anwendungsunterstützung">
+                        Anwendungsunterstützung (Application Support)
+                    </h3>
+                    <div>
+                        TCP- und UDP-Ports sind eine Software-Abstraktion, um
+                        Kommunikationsverbindungen voneinander unterscheiden zu können. Ähnlich wie
+                        IP-Adressen Rechner in Netzwerken adressieren, adressieren Ports spezifische
+                        Anwendungen oder Verbindungen, die auf einem Rechner laufen.
+                    </div>
+                    <h3 id="Ports">Ports</h3>
+                    <div>
+                        Mithilfe von Ports kann man verschiedene Anwendungen und Dienste
+                        adressieren. TCP muss wissen, an welche Anwendung es die Pakete weiterleiten
+                        soll, weshabl die Portnummer darüber Auskunft gibt.
+                        <h4 id="Ports-Portgruppen">Portgruppen</h4>
+                        <div>
+                            Portnummern gehen von 1 bis 65.535. In diesem Zahlenbereich gibt es drei
+                            verschiedene Bereiche von Portnummern.
+                            <table>
+                                <tr>
+                                    <th>Bereich</th>
+                                    <th>Name dieser Gruppe</th>
+                                </tr>
+                                <tr>
+                                    <td>0 - 1.023</td>
+                                    <td>well-known Ports</td>
+                                </tr>
+                                <tr>
+                                    <td>1.024 - 49.151</td>
+                                    <td>Registered Ports</td>
+                                </tr>
+                                <tr>
+                                    <td>49.152 - 65.535</td>
+                                    <td>Dynamically Allocated Ports</td>
+                                </tr>
+                            </table>
+                            Diese Portbereiche werden nun im Detail beschrieben:
+                            <h5 id="Ports-Portgruppen-well-known_Ports">well-known Ports</h5>
+                            <div>
+                                Die well-known Ports sind fix festgelegt Ports für Anwendungen, wie
+                                zum Beispiel FTP, DHCP oder DNS. Der Bereich dieser Portsgruppe geht
+                                von 0 bis 1.023. Für eine Auflistenung der wichtigsten well-known
+                                Ports, folgen Sie diesem Link:
+                                <a
+                                    href="/docs/netzwerktechnik/grundlagen.html#well-known_Ports"
+                                    class="link"
+                                    >well-known Ports</a
+                                >.
+                            </div>
+                            <h5 id="Ports-Portgruppen-Registered_Ports">Registered Ports</h5>
+                            <div>
+                                Die registrierten Ports können von jedem registriert werden. Wenn
+                                man das will, muss man dies bei IANA/ICANN beantragen. Der Bereich
+                                von den registrierten Ports geht von 1.024 bis 49.151.
+                            </div>
+                            <h5 id="Ports-Portgruppen-Dynamically_Allocated_Ports">
+                                Dynamically Allocated Ports
+                            </h5>
+                            <div>
+                                Die dynamically allocated Ports werden von Clients für eine
+                                ausgehende Verbindung verwendet (Source-Port). Das bedeutet, wenn
+                                ein Client sich zu einem Server verbindet, vergibt TCP bzw. UDP den
+                                Standard-Port für den Empfänger-Port und einen freien Port ab 49.152
+                                für den Sender-Port. Wenn der Server die Daten erhalten hat und eine
+                                Antwort zurückschickt, dann werden die Portnummern vertauscht. Damit
+                                wird sichergestellt, dass die Daten nicht an eine falsche Anwendung
+                                übergeben werden. Der Bereich dieser Portgruppe geht von 49.152 bis
+                                65.535.
+                            </div>
+                        </div>
+                        <h4 id="Ports-Portzustände">Portzustände</h4>
+                        <div>
+                            Ports können mehrere Zustände aufweisen. Der Zustand eines Ports
+                            definiert, ob eine Kommunikation über diesen Port zu einer
+                            dahinterliegenden Anwendung möglich ist, oder nicht. Vereinfacht gesehen
+                            gibt es drei Zustände.
+                            <table>
+                                <tr>
+                                    <th>Portzustände</th>
+                                </tr>
+                                <tr>
+                                    <td>Open / Offen</td>
+                                </tr>
+                                <tr>
+                                    <td>Closed / Geschlossen</td>
+                                </tr>
+                                <tr>
+                                    <td>Filtered / Gefiltert (Blocked / Geblockt)</td>
+                                </tr>
+                            </table>
+                            Diese Portzustände werden nun im Detail beschrieben:
+                            <h5 id="Ports-Portzustände-Open">Open</h5>
+                            <div>
+                                Ein Port wird dann als Open bezeichnet, wenn eine Anwendung dahinter
+                                "lauscht". Der Client kann dann zu dieser Anwendung mittels TCP eine
+                                Verbindung aufbauen und kommunizieren.
+                            </div>
+                            <h5 id="Ports-Portzustände-Closed">Closed</h5>
+                            <div>
+                                Ein Port wird dann als Closed bezeichnet, wenn keine Anwendung
+                                dahinter "lauscht". Dies ist der Standardzustand eines Ports und er
+                                bedeutet, dass der Host eine Verbindung zu diesem Port aktiv
+                                ablehnt. Closed kann auch bedeuten, dass zwar eine Anwendung auf
+                                diesem Port "lauscht", allerdings ist dieser durch eine Firewall
+                                blockiert und wird rejected. Das bedeutet aber auch, dass zu der
+                                dahinterliegenden Anwendung keine Verbindung aufgebaut werden kann.
+                            </div>
+                            <h5 id="Ports-Portzustände-Filtered">Filtered</h5>
+                            <div>
+                                Ein Port wird dann als Filtered bezeichnet, wenn die Verbindung
+                                weder bestätigt (Open) noch abgeleht (Closed) wird. Das bedeutet,
+                                dass der kontaktierte Port durch eine Firewall geschützt ist und auf
+                                Verbindungsversuche nicht antwortet (drop). Dieser Zustand kann
+                                allerdings auch dadurch entstehen, dass der kontaktierte Host gar
+                                nicht erreichbar ist.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script
+            defer
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
+        <script
+            defer
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            defer
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <script defer src="/js/Lightbox.js"></script>
+        <script defer src="/js/FontAwesome.js"></script>
+
+        <script defer type="text/javascript" src="/js/app.js"></script>
+    </body>
 </html>

@@ -1,4 +1,19 @@
-var confetti = { maxCount: 150, speed: 2, frameInterval: 15, alpha: 1, gradient: !1, start: null, stop: null, toggle: null, pause: null, resume: null, togglePause: null, remove: null, isPaused: null, isRunning: null };
+var confetti = {
+    maxCount: 150,
+    speed: 2,
+    frameInterval: 15,
+    alpha: 1,
+    gradient: !1,
+    start: null,
+    stop: null,
+    toggle: null,
+    pause: null,
+    resume: null,
+    togglePause: null,
+    remove: null,
+    isPaused: null,
+    isRunning: null,
+};
 !(function () {
     (confetti.start = s),
         (confetti.stop = w),
@@ -19,8 +34,26 @@ var confetti = { maxCount: 150, speed: 2, frameInterval: 15, alpha: 1, gradient:
         (confetti.isRunning = function () {
             return e;
         });
-    var t = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame,
-        n = ["rgba(30,144,255,", "rgba(107,142,35,", "rgba(255,215,0,", "rgba(255,192,203,", "rgba(106,90,205,", "rgba(173,216,230,", "rgba(238,130,238,", "rgba(152,251,152,", "rgba(70,130,180,", "rgba(244,164,96,", "rgba(210,105,30,", "rgba(220,20,60,"],
+    var t =
+            window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            window.oRequestAnimationFrame ||
+            window.msRequestAnimationFrame,
+        n = [
+            "rgba(30,144,255,",
+            "rgba(107,142,35,",
+            "rgba(255,215,0,",
+            "rgba(255,192,203,",
+            "rgba(106,90,205,",
+            "rgba(173,216,230,",
+            "rgba(238,130,238,",
+            "rgba(152,251,152,",
+            "rgba(70,130,180,",
+            "rgba(244,164,96,",
+            "rgba(210,105,30,",
+            "rgba(220,20,60,",
+        ],
         e = !1,
         i = !1,
         o = Date.now(),
@@ -28,7 +61,17 @@ var confetti = { maxCount: 150, speed: 2, frameInterval: 15, alpha: 1, gradient:
         r = 0,
         l = null;
     function d(t, e, i) {
-        return (t.color = n[(Math.random() * n.length) | 0] + (confetti.alpha + ")")), (t.color2 = n[(Math.random() * n.length) | 0] + (confetti.alpha + ")")), (t.x = Math.random() * e), (t.y = Math.random() * i - i), (t.diameter = 10 * Math.random() + 5), (t.tilt = 10 * Math.random() - 10), (t.tiltAngleIncrement = 0.07 * Math.random() + 0.05), (t.tiltAngle = Math.random() * Math.PI), t;
+        return (
+            (t.color = n[(Math.random() * n.length) | 0] + (confetti.alpha + ")")),
+            (t.color2 = n[(Math.random() * n.length) | 0] + (confetti.alpha + ")")),
+            (t.x = Math.random() * e),
+            (t.y = Math.random() * i - i),
+            (t.diameter = 10 * Math.random() + 5),
+            (t.tilt = 10 * Math.random() - 10),
+            (t.tiltAngleIncrement = 0.07 * Math.random() + 0.05),
+            (t.tiltAngle = Math.random() * Math.PI),
+            t
+        );
     }
     function u() {
         i = !0;
@@ -49,13 +92,34 @@ var confetti = { maxCount: 150, speed: 2, frameInterval: 15, alpha: 1, gradient:
                             n = window.innerWidth,
                             i = window.innerHeight;
                         r += 0.01;
-                        for (var o = 0; o < a.length; o++) (t = a[o]), !e && t.y < -15 ? (t.y = i + 100) : ((t.tiltAngle += t.tiltAngleIncrement), (t.x += Math.sin(r) - 0.5), (t.y += 0.5 * (Math.cos(r) + t.diameter + confetti.speed)), (t.tilt = 15 * Math.sin(t.tiltAngle))), (t.x > n + 20 || t.x < -20 || t.y > i) && (e && a.length <= confetti.maxCount ? d(t, n, i) : (a.splice(o, 1), o--));
+                        for (var o = 0; o < a.length; o++)
+                            (t = a[o]),
+                                !e && t.y < -15
+                                    ? (t.y = i + 100)
+                                    : ((t.tiltAngle += t.tiltAngleIncrement),
+                                      (t.x += Math.sin(r) - 0.5),
+                                      (t.y += 0.5 * (Math.cos(r) + t.diameter + confetti.speed)),
+                                      (t.tilt = 15 * Math.sin(t.tiltAngle))),
+                                (t.x > n + 20 || t.x < -20 || t.y > i) &&
+                                    (e && a.length <= confetti.maxCount
+                                        ? d(t, n, i)
+                                        : (a.splice(o, 1), o--));
                     })(),
                     (function (t) {
                         for (var n, e, i, o, r = 0; r < a.length; r++) {
-                            if (((n = a[r]), t.beginPath(), (t.lineWidth = n.diameter), (i = n.x + n.tilt), (e = i + n.diameter / 2), (o = n.y + n.tilt + n.diameter / 2), confetti.gradient)) {
+                            if (
+                                ((n = a[r]),
+                                t.beginPath(),
+                                (t.lineWidth = n.diameter),
+                                (i = n.x + n.tilt),
+                                (e = i + n.diameter / 2),
+                                (o = n.y + n.tilt + n.diameter / 2),
+                                confetti.gradient)
+                            ) {
                                 var l = t.createLinearGradient(e, n.y, i, o);
-                                l.addColorStop("0", n.color), l.addColorStop("1.0", n.color2), (t.strokeStyle = l);
+                                l.addColorStop("0", n.color),
+                                    l.addColorStop("1.0", n.color2),
+                                    (t.strokeStyle = l);
                             } else t.strokeStyle = n.color;
                             t.moveTo(e, n.y), t.lineTo(i, o), t.stroke();
                         }
@@ -79,7 +143,10 @@ var confetti = { maxCount: 150, speed: 2, frameInterval: 15, alpha: 1, gradient:
         var m = document.getElementById("confetti-canvas");
         null === m
             ? ((m = document.createElement("canvas")).setAttribute("id", "confetti-canvas"),
-              m.setAttribute("style", "display:block;z-index:999999;pointer-events:none;position:fixed;top:0"),
+              m.setAttribute(
+                  "style",
+                  "display:block;z-index:999999;pointer-events:none;position:fixed;top:0"
+              ),
               document.body.prepend(m),
               (m.width = r),
               (m.height = u),
