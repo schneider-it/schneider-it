@@ -106,7 +106,7 @@
                 display: block;
                 position: absolute;
                 transform-origin: left center;
-                color: var(--font-color)-navigation-hover;
+                color: var(--font-color-navigation-hover);
                 top: calc(
                     220% - 15px
                 ); // 30px weniger als beim unteren Hover-Effect, damit JS-Code ausgeglichen
@@ -226,7 +226,7 @@
         background-color: var(--main-color);
 
         & > .burger-line {
-            background-color: var(--font-color)-light;
+            background-color: var(--font-color-light);
         }
     }
 
@@ -298,7 +298,7 @@ body[colorTheme="light"] .sun {
 
         & > a {
             & i {
-                color: var(--font-color)-light;
+                color: var(--font-color-light);
             }
         }
     }
