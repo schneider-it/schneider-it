@@ -5,22 +5,22 @@ table {
     width: 100%;
     margin: 1.5rem 0;
     border-collapse: collapse;
-    background-color: $background-color-3;
-    border: 0.2rem solid $border-color;
-    border-radius: $border-radius;
+    background-color: var(--background-color-3);
+    border: 0.2rem solid var(--border-color);
+    border-radius: var(--border-radius);
 
     & tr,
     th,
     td {
-        // border-left: .15rem  solid $border-color;
-        // border-right: .15rem solid $border-color;
+        // border-left: .15rem  solid var(--border-color);
+        // border-right: .15rem solid var(--border-color);
     }
 
     & tr {
         width: auto;
 
         &:nth-child(even) {
-            background-color: $background-color-2;
+            background-color: var(--background-color-2);
         }
 
         & th,
@@ -34,8 +34,8 @@ table {
         }
 
         & th {
-            background-color: $main-color;
-            color: $font-color-light;
+            background-color: var(--main-color);
+            color: var(--font-color-light);
             font-weight: 500;
         }
 

@@ -8,10 +8,10 @@
     &:not(:is([prev], [next])) {
         display: inline-block;
         position: relative;
-        border: 0.1rem solid $main-color;
-        box-shadow: inset 0.1rem 0.1rem $main-color, inset -0.1rem -0.1rem $main-color;
+        border: 0.1rem solid var(--main-color);
+        box-shadow: inset 0.1rem 0.1rem var(--main-color), inset -0.1rem -0.1rem var(--main-color);
         background: none;
-        color: $main-color;
+        color: var(--main-color);
         padding: 0.5em 1em;
         font-size: 1.2rem;
         font-family: "Lato", sans-serif;
@@ -19,12 +19,12 @@
         cursor: pointer;
         overflow: hidden;
         z-index: 1;
-        transition: color $transition-long ease-in-out;
+        transition: color var(--transition-long) ease-in-out;
 
         &::before {
             content: "";
             position: absolute;
-            background-color: $main-color;
+            background-color: var(--main-color);
             z-index: -1;
         }
 
@@ -34,7 +34,7 @@
             width: 100%;
             height: 0%;
             border-radius: 0 0 50% 50%;
-            transition: height $transition-middle ease-in-out;
+            transition: height var(--transition-middle) ease-in-out;
         }
 
         &[hover-from="right"]::before {
@@ -43,7 +43,7 @@
             height: 100%;
             width: 0%;
             border-radius: 50% 0 0 50%;
-            transition: width $transition-middle ease-in-out;
+            transition: width var(--transition-middle) ease-in-out;
         }
 
         &[hover-from="bottom"]::before {
@@ -52,7 +52,7 @@
             width: 100%;
             height: 0%;
             border-radius: 50% 50% 0 0;
-            transition: height $transition-middle ease-in-out;
+            transition: height var(--transition-middle) ease-in-out;
         }
 
         &[hover-from="left"]::before {
@@ -61,7 +61,7 @@
             height: 100%;
             width: 0%;
             border-radius: 0 50% 50% 0;
-            transition: width $transition-middle ease-in-out;
+            transition: width var(--transition-middle) ease-in-out;
         }
 
         &[small] {
@@ -69,15 +69,16 @@
             padding: 0.3em 0.5em;
             font-size: 0.8rem;
             font-weight: 500;
-            border: 0.05rem solid $main-color;
-            box-shadow: inset 0.05rem 0.05rem $main-color, inset -0.05rem -0.05rem $main-color;
+            border: 0.05rem solid var(--main-color);
+            box-shadow: inset 0.05rem 0.05rem var(--main-color),
+                inset -0.05rem -0.05rem var(--main-color);
         }
 
         &:hover {
-            color: $font-color-light;
+            color: var(--font-color-light);
 
             &::before {
-                transition: $transition-long;
+                transition: var(--transition-long);
             }
 
             &[hover-from="top"]::before,
@@ -100,7 +101,7 @@
         display: inline-block;
         position: relative;
         padding: 0.5em 1.5em;
-        color: $font-color-light;
+        color: var(--font-color-light);
         background-color: #6225e6;
         $clip-path-offset: 0.8rem;
         clip-path: polygon(

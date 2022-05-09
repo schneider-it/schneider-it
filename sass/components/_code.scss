@@ -2,43 +2,43 @@
 @use "../abstracts/variables" as *;
 
 .code-string {
-    color: $font-color-code-string !important;
+    color: var(--font-color-code-string) !important;
 }
 .code-comment {
-    color: $font-color-code-comment !important;
+    color: var(--font-color-code-comment) !important;
 }
 .code-class {
-    color: $font-color-code-class !important;
+    color: var(--font-color-code-class) !important;
 }
 .code-struct {
-    color: $font-color-code-struct !important;
+    color: var(--font-color-code-struct) !important;
 }
 .code-method {
-    color: $font-color-code-method !important;
+    color: var(--font-color-code-method) !important;
 }
 .code-variable {
-    color: $font-color-code-variable !important;
+    color: var(--font-color-code-variable) !important;
 }
 .code-number {
-    color: $font-color-code-number !important;
+    color: var(--font-color-code-number) !important;
 }
 .code-keyword {
-    color: $font-color-code-keyword !important;
+    color: var(--font-color-code-keyword) !important;
 }
 .code-keyword-optional {
-    color: $font-color-code-keyword-optional !important;
+    color: var(--font-color-code-keyword-optional) !important;
 }
 .code-generic {
-    color: $font-color-code-generic !important;
+    color: var(--font-color-code-generic) !important;
 }
 .code-flowcontrol {
-    color: $font-color-code-flowcontrol !important;
+    color: var(--font-color-code-flowcontrol) !important;
 }
 .code-error {
-    color: $font-color-code-error !important;
+    color: var(--font-color-code-error) !important;
 }
 .code-normal {
-    color: $font-color-code-normal !important;
+    color: var(--font-color-code-normal) !important;
 }
 
 .code {
@@ -48,10 +48,10 @@
     margin: 2.5rem 0;
     padding: 1.5rem;
     padding-right: 5rem;
-    color: $font-color;
-    background-color: $background-color-code;
-    border: 3px solid $border-color;
-    border-radius: $border-radius;
+    color: var(--font-color);
+    background-color: var(--background-color-code);
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius);
     font-family: "Source Code Pro", monospace;
     font-weight: 600;
     user-select: text;
@@ -63,21 +63,21 @@
         top: -2rem;
         right: -1rem;
         padding: 0.5rem 1rem;
-        color: $font-color;
-        background-color: $background-color-code-copy;
-        border: $main-color 0.25rem solid;
-        border-radius: $border-radius;
+        color: var(--font-color);
+        background-color: var(--background-color-code-copy);
+        border: var(--main-color) 0.25rem solid;
+        border-radius: var(--border-radius);
         text-align: center;
         vertical-align: middle;
         cursor: pointer;
         font-family: "Poppins", sans-serif;
         font-size: 1rem;
-        transition: background-color $transition-short ease-in-out;
+        transition: background-color var(--transition-short) ease-in-out;
         z-index: 10;
 
         &[copied] {
-            color: $font-color-light;
-            background-color: $main-color;
+            color: var(--font-color-light);
+            background-color: var(--main-color);
         }
     }
 
@@ -91,7 +91,7 @@
     }
 }
 
-@media (min-width: $media-break-point) {
+@media (min-width: 40em) {
     .code {
         &::after {
             font-family: "Font Awesome 5 Free";

@@ -10,6 +10,93 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+  --main-color: hsl(235, 86%, 65%);
+  --font-color: hsl(0, 0%, 100%);
+  --font-color-secondary: hsl(0, 0%, 85%);
+  --font-color-dark: hsl(0, 0%, 0%);
+  --font-color-light: hsl(0, 0%, 100%);
+  --font-color-link: hsl(46, 100%, 75%);
+  --font-color-link-hover: hsl(46, 100%, 65%);
+  --font-color-navigation-hover: hsl(29, 100%, 91%);
+  --font-color-warning: hsl(45, 95%, 30%);
+  --font-color-info: hsl(0, 0%, 100%);
+  --background-color: hsl(210, 10%, 15%);
+  --background-color-2: hsl(210, 10%, 20%);
+  --background-color-3: hsl(210, 10%, 25%);
+  --background-color-button: --main-color;
+  --background-color-card: hsl(220, 0%, 15%);
+  --background-color-code: hsl(220, 10%, 25%);
+  --background-color-code-copy: hsl(220, 10%, 15%);
+  --background-color-warning: hsl(46, 100%, 90%);
+  --background-color-info: hsl(188, 78%, 41%);
+  --background-color-footer: hsl(220, 10%, 20%);
+  --border-color: hsl(0, 0%, 60%);
+  --border-color-2: hsl(0, 0%, 95%);
+  --font-color-code-string: hsl(18, 50%, 68%);
+  --font-color-code-comment: hsl(111, 39%, 45%);
+  --font-color-code-class: hsl(169, 49%, 52%);
+  --font-color-code-struct: hsl(130, 36%, 65%);
+  --font-color-code-method: hsl(60, 42%, 76%);
+  --font-color-code-variable: hsl(201, 93%, 79%);
+  --font-color-code-number: hsl(99, 28%, 73%);
+  --font-color-code-keyword: hsl(207, 61%, 59%);
+  --font-color-code-keyword-optional: hsl(211, 45%, 43%);
+  --font-color-code-generic: hsl(102, 35%, 72%);
+  --font-color-code-flowcontrol: hsl(293, 50%, 75%);
+  --font-color-code-error: hsl(2, 97%, 60%);
+  --font-color-code-normal: hsl(0, 0%, 86%);
+  --orange: hsl(37, 80%, 51%);
+  --green: hsl(99, 57%, 31%);
+  --lime: hsl(158, 95%, 34%);
+  --blue: hsl(208, 80%, 50%);
+  --violet: hsl(267, 54%, 54%);
+  --pink: hsl(295, 80%, 69%);
+  --shadow-ergebnis-div: hsl(0, 0%, 0%);
+  --shadow-ergebnis-div-active: hsl(0, 0%, 0%);
+  --font-color-ergebnis-heading: hsl(0, 0%, 100%);
+  --font-color-ergebnis-heading-active: hsl(0, 0%, 100%);
+  --font-color-ergebnis-paragraph: hsl(0, 0%, 70%);
+  --font-color-ergebnis-paragraph-active: hsl(0, 0%, 90%);
+  --background-color-ergebnis-div-active: --blue;
+}
+
+body[colorTheme=light] {
+  --font-color: hsl(0, 0%, 0%);
+  --font-color-secondary: hsl(0, 0%, 15%);
+  --font-color-link: hsl(238, 66%, 64%);
+  --font-color-link-hover: hsl(248, 65%, 52%);
+  --font-color-navigation-hover: --font-color-link;
+  --background-color: hsl(0, 0%, 100%);
+  --background-color-2: hsl(0, 0%, 95%);
+  --background-color-3: hsl(0, 0%, 90%);
+  --background-color-card: --background-color-2;
+  --background-color-code: --background-color-2;
+  --background-color-code-copy: --background-color-3;
+  --background-color-footer: --background-color-3;
+  --border-color: hsl(0, 0%, 40%);
+  --border-color-2: hsl(0, 0%, 5%);
+  --font-color-code-string: hsl(0, 77%, 36%);
+  --font-color-code-comment: hsl(115, 81%, 29%);
+  --font-color-code-class: hsl(194, 61%, 43%);
+  --font-color-code-struct: --font-color-code-class;
+  --font-color-code-method: hsl(37, 58%, 29%);
+  --font-color-code-variable: hsl(225, 61%, 31%);
+  --font-color-code-number: --font-color-code-normal;
+  --font-color-code-keyword: hsl(240, 100%, 53%);
+  --font-color-code-keyword-optional: hsl(240, 100%, 79%);
+  --font-color-code-generic: --font-color-code-class;
+  --font-color-code-flowcontrol: hsl(283, 90%, 40%);
+  --font-color-code-error: hsl(0, 100%, 59%);
+  --font-color-code-normal: hsl(0, 0%, 0%);
+  --shadow-ergebnis-div: hsl(0, 0%, 80%);
+  --shadow-ergebnis-div-active: hsl(0, 0%, 25%);
+  --font-color-ergebnis-heading: hsl(0, 0%, 20%);
+  --font-color-ergebnis-heading-active: hsl(0, 0%, 100%);
+  --font-color-ergebnis-paragraph: hsl(0, 0%, 40%);
+  --font-color-ergebnis-paragraph-active: hsl(0, 0%, 90%);
+}
+
 /*
 font-family: 'Lato', sans-serif;
 font-family: 'Mochiy Pop P One', sans-serif;
@@ -23,6 +110,17 @@ font-family: 'Rubik', sans-serif;
 font-family: 'Signika', sans-serif;
 font-family: 'Source Code Pro', monospace;
 */
+:root {
+  --container: 80%;
+  --transition-short: 0.2s;
+  --transition-middle: 0.5s;
+  --transition-long: 0.8s;
+  --bounce-easing: cubic-bezier(0.89, -0.68, 0.5, 1);
+  --border-radius: 20px;
+  --media-break-point: 40em;
+  --media-break-point-2: 60em;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -130,8 +228,8 @@ select {
 
 html,
 body {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(210deg, 10%, 15%);
+  color: var(--font-color);
+  background-color: var(--background-color);
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -146,7 +244,7 @@ i:before {
 
 .container {
   position: relative;
-  width: 80%;
+  width: var(--container);
   margin: auto;
 }
 .container[container-size=fluid] {
@@ -379,9 +477,9 @@ footer {
   position: relative;
   margin-top: 8.5rem;
   padding: 5rem 5rem 10rem 5rem;
-  background-color: hsl(220deg, 10%, 20%);
+  background-color: var(--background-color-footer);
   font-size: 1rem;
-  color: hsl(0deg, 0%, 100%);
+  color: var(--font-color);
   min-height: 20rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -679,13 +777,13 @@ footer .footer-vogel img {
   height: 100vh;
   width: 100vw;
   font-size: clamp(1.2rem, 1.64vw, 1.5rem);
-  background-color: hsl(210deg, 10%, 20%);
+  background-color: var(--background-color-2);
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform var(--transition-middle) ease-in-out;
+  transition: -webkit-transform var(--transition-middle) ease-in-out;
+  transition: transform var(--transition-middle) ease-in-out;
+  transition: transform var(--transition-middle) ease-in-out, -webkit-transform var(--transition-middle) ease-in-out;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -694,8 +792,8 @@ footer .footer-vogel img {
 }
 .navigation > * {
   opacity: 0;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity var(--transition-short) ease-in-out;
+  transition: opacity var(--transition-short) ease-in-out;
 }
 .navigation .themeSwitch, .navigation .tastenkombinationenSwitch {
   position: absolute;
@@ -711,10 +809,10 @@ footer .footer-vogel img {
       -ms-flex-align: center;
           align-items: center;
   background: none;
-  -webkit-transition: opacity 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease-in-out;
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: opacity var(--transition-short) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity var(--transition-short) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity var(--transition-short) ease-in-out;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity var(--transition-short) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .navigation .themeSwitch i, .navigation .tastenkombinationenSwitch i {
   width: 40%;
@@ -789,7 +887,7 @@ footer .footer-vogel img {
 }
 .navigation .navlink .link-text {
   position: relative;
-  color: hsl(0deg, 0%, 100%);
+  color: var(--font-color);
   -webkit-transform-origin: left center;
           transform-origin: left center;
   font-weight: 600;
@@ -804,7 +902,7 @@ footer .footer-vogel img {
   position: absolute;
   -webkit-transform-origin: left center;
           transform-origin: left center;
-  color: hsl(29deg, 100%, 91%);
+  color: var(--font-color) -navigation-hover;
   top: calc(220% - 15px);
   left: 2rem;
   -webkit-transform: skewY(30deg);
@@ -827,15 +925,15 @@ footer .footer-vogel img {
           transform: translateX(0);
 }
 .navigation[active] > * {
-  -webkit-transition: opacity 0.2s ease-in-out 0.3s;
-  transition: opacity 0.2s ease-in-out 0.3s;
+  -webkit-transition: opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short));
+  transition: opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short));
   opacity: 1;
 }
 .navigation[active] .themeSwitch, .navigation[active] .tastenkombinationenSwitch {
-  -webkit-transition: opacity 0.2s ease-in-out 0.3s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: opacity 0.2s ease-in-out 0.3s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease-in-out 0.3s;
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity 0.2s ease-in-out 0.3s, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short)), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short)), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short));
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short)), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .navigation-blur-filter,
@@ -845,16 +943,16 @@ footer .footer-vogel img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: var(--font-color);
   opacity: 0;
-  -webkit-transition: opacity 0.5s ease-in-out, z-index 0s 0.5s;
-  transition: opacity 0.5s ease-in-out, z-index 0s 0.5s;
+  -webkit-transition: opacity var(--transition-middle) ease-in-out, z-index 0s var(--transition-middle);
+  transition: opacity var(--transition-middle) ease-in-out, z-index 0s var(--transition-middle);
   z-index: -999;
 }
 .navigation-blur-filter[active],
 .tastenkombinationen-background_close[active] {
-  -webkit-transition: opacity 0.5s ease-in-out, z-index 0s;
-  transition: opacity 0.5s ease-in-out, z-index 0s;
+  -webkit-transition: opacity var(--transition-middle) ease-in-out, z-index 0s;
+  transition: opacity var(--transition-middle) ease-in-out, z-index 0s;
   opacity: 0.25;
   z-index: 990;
 }
@@ -896,10 +994,10 @@ footer .footer-vogel img {
   height: 4rem;
   padding: 1.5rem;
   border-radius: 50%;
-  -webkit-transition: background 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: background 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out;
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: background var(--transition-short) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background var(--transition-short) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background var(--transition-short) ease-in-out;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background var(--transition-short) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   cursor: pointer;
   z-index: 1001;
 }
@@ -909,39 +1007,39 @@ footer .footer-vogel img {
   width: 2rem;
   height: 0.25rem;
   border-radius: 10000px;
-  background-color: hsl(0deg, 0%, 100%);
-  -webkit-transition: background 0.2s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: background 0.2s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, background 0.2s ease-in-out;
-  transition: transform 0.5s ease-in-out, background 0.2s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  background-color: var(--font-color);
+  -webkit-transition: background var(--transition-short) ease-in-out, -webkit-transform var(--transition-middle) ease-in-out;
+  transition: background var(--transition-short) ease-in-out, -webkit-transform var(--transition-middle) ease-in-out;
+  transition: transform var(--transition-middle) ease-in-out, background var(--transition-short) ease-in-out;
+  transition: transform var(--transition-middle) ease-in-out, background var(--transition-short) ease-in-out, -webkit-transform var(--transition-middle) ease-in-out;
 }
 .burger > .burger-line1 {
-  -webkit-animation: burger-anim1 0.5s ease-in-out;
-          animation: burger-anim1 0.5s ease-in-out;
+  -webkit-animation: burger-anim1 var(--transition-middle) ease-in-out;
+          animation: burger-anim1 var(--transition-middle) ease-in-out;
   -webkit-transform: translateY(-0.3rem);
           transform: translateY(-0.3rem);
 }
 .burger > .burger-line2 {
-  -webkit-animation: burger-anim2 0.5s ease-in-out;
-          animation: burger-anim2 0.5s ease-in-out;
+  -webkit-animation: burger-anim2 var(--transition-middle) ease-in-out;
+          animation: burger-anim2 var(--transition-middle) ease-in-out;
   -webkit-transform: translateY(0.3rem);
           transform: translateY(0.3rem);
 }
 .burger:hover {
-  background-color: hsl(235deg, 86%, 65%);
+  background-color: var(--main-color);
 }
 .burger:hover > .burger-line {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: var(--font-color) -light;
 }
 .burger[active] > .burger-line1 {
-  -webkit-animation: burger-anim1-active var(--middle-transition) ease-in-out;
-          animation: burger-anim1-active var(--middle-transition) ease-in-out;
+  -webkit-animation: burger-anim1-active var(--transition-middle) ease-in-out;
+          animation: burger-anim1-active var(--transition-middle) ease-in-out;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 .burger[active] > .burger-line2 {
-  -webkit-animation: burger-anim2-active var(--middle-transition) ease-in-out;
-          animation: burger-anim2-active var(--middle-transition) ease-in-out;
+  -webkit-animation: burger-anim2-active var(--transition-middle) ease-in-out;
+          animation: burger-anim2-active var(--transition-middle) ease-in-out;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -977,10 +1075,10 @@ body[colorTheme=light] .sun {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  -webkit-transition: background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease-in-out;
-  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.5s ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: background var(--transition-short) ease-in-out, color var(--transition-short) ease-in-out, opacity var(--transition-middle) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background var(--transition-short) ease-in-out, color var(--transition-short) ease-in-out, opacity var(--transition-middle) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background var(--transition-short) ease-in-out, color var(--transition-short) ease-in-out, opacity var(--transition-middle) ease-in-out;
+  transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background var(--transition-short) ease-in-out, color var(--transition-short) ease-in-out, opacity var(--transition-middle) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 995;
 }
 .back_button > a,
@@ -1000,15 +1098,15 @@ body[colorTheme=light] .sun {
 .back_button > a > i,
 .search_button > a > i {
   font-size: 1.7rem;
-  color: hsl(0deg, 0%, 100%);
+  color: var(--font-color);
 }
 .back_button:hover,
 .search_button:hover {
-  background-color: hsl(235deg, 86%, 65%);
+  background-color: var(--main-color);
 }
 .back_button:hover > a i,
 .search_button:hover > a i {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--font-color) -light;
 }
 
 .search_button {
@@ -1032,15 +1130,15 @@ table {
   width: 100%;
   margin: 1.5rem 0;
   border-collapse: collapse;
-  background-color: hsl(210deg, 10%, 25%);
-  border: 0.2rem solid hsl(0deg, 0%, 60%);
-  border-radius: 20px;
+  background-color: var(--background-color-3);
+  border: 0.2rem solid var(--border-color);
+  border-radius: var(--border-radius);
 }
 table tr {
   width: auto;
 }
 table tr:nth-child(even) {
-  background-color: hsl(210deg, 10%, 20%);
+  background-color: var(--background-color-2);
 }
 table tr th,
 table tr td {
@@ -1048,8 +1146,8 @@ table tr td {
   width: auto;
 }
 table tr th {
-  background-color: hsl(235deg, 86%, 65%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: var(--main-color);
+  color: var(--font-color-light);
   font-weight: 500;
 }
 table tr td.right {
@@ -1103,9 +1201,9 @@ table tr td.right {
 .link {
   position: relative;
   display: inline-block;
-  color: hsl(46deg, 100%, 75%);
-  -webkit-transition: color 0.2s ease-out;
-  transition: color 0.2s ease-out;
+  color: var(--font-color-link);
+  -webkit-transition: color var(--transition-short) ease-out;
+  transition: color var(--transition-short) ease-out;
   cursor: pointer;
 }
 .link::before {
@@ -1120,21 +1218,21 @@ table tr td.right {
   left: 0;
   -webkit-transform-origin: bottom right;
           transform-origin: bottom right;
-  -webkit-transition: background 0.2s ease-out, -webkit-transform 0.2s ease-out;
-  transition: background 0.2s ease-out, -webkit-transform 0.2s ease-out;
-  transition: transform 0.2s ease-out, background 0.2s ease-out;
-  transition: transform 0.2s ease-out, background 0.2s ease-out, -webkit-transform 0.2s ease-out;
-  background-color: hsl(46deg, 100%, 75%);
+  -webkit-transition: background var(--transition-short) ease-out, -webkit-transform var(--transition-short) ease-out;
+  transition: background var(--transition-short) ease-out, -webkit-transform var(--transition-short) ease-out;
+  transition: transform var(--transition-short) ease-out, background var(--transition-short) ease-out;
+  transition: transform var(--transition-short) ease-out, background var(--transition-short) ease-out, -webkit-transform var(--transition-short) ease-out;
+  background-color: var(--font-color-link);
 }
 .link:hover {
-  color: hsl(46deg, 100%, 65%);
+  color: var(--font-color-link-hover);
 }
 .link:hover::before {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
-  background-color: hsl(46deg, 100%, 65%);
+  background-color: var(--font-color-link-hover);
 }
 
 .cards {
@@ -1150,16 +1248,16 @@ table tr td.right {
   position: relative;
   width: 18rem;
   height: 25rem;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 .cards > a .card {
   position: relative;
   width: 100%;
   height: 100%;
-  border-radius: 20px;
-  border: hsl(0deg, 0%, 95%) 6px solid;
+  border-radius: var(--border-radius);
+  border: var(--border-color-2) 6px solid;
   overflow: hidden;
-  background-color: hsl(220deg, 0%, 15%);
+  background-color: var(--background-color-card);
   padding: 1.5rem;
 }
 .cards > a .card .card-before {
@@ -1168,9 +1266,9 @@ table tr td.right {
   left: 0;
   width: 100%;
   height: 13rem;
-  background-color: hsl(235deg, 86%, 65%);
-  -webkit-transition: height 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
-  transition: height 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
+  background-color: var(--main-color);
+  -webkit-transition: height var(--transition-long) var(--bounce-easing);
+  transition: height var(--transition-long) var(--bounce-easing);
   z-index: -1;
 }
 .cards > a .card .card-img {
@@ -1182,7 +1280,7 @@ table tr td.right {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 10000px;
-  background-color: hsl(220deg, 0%, 15%);
+  background-color: var(--background-color-card);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1196,8 +1294,8 @@ table tr td.right {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: top 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
-  transition: top 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
+  -webkit-transition: top var(--transition-long) var(--bounce-easing);
+  transition: top var(--transition-long) var(--bounce-easing);
 }
 .cards > a .card .card-img img {
   border-radius: 10000px;
@@ -1215,16 +1313,16 @@ table tr td.right {
 .cards > a .card .card-text {
   position: relative;
   top: 15rem;
-  -webkit-transition: top 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
-  transition: top 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
+  -webkit-transition: top var(--transition-long) var(--bounce-easing);
+  transition: top var(--transition-long) var(--bounce-easing);
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
 .cards > a .card .card-text > p {
-  -webkit-transition: margin 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
-  transition: margin 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
+  -webkit-transition: margin var(--transition-long) var(--bounce-easing);
+  transition: margin var(--transition-long) var(--bounce-easing);
   font-size: 1rem;
   padding-top: 5rem;
 }
@@ -1263,13 +1361,13 @@ table tr td.right {
 .scroll_indicator_div {
   width: 100%;
   height: 0.25rem;
-  background-color: hsl(210deg, 10%, 15%);
+  background-color: var(--background-color);
   position: fixed;
   z-index: 980;
 }
 .scroll_indicator_div .scroll_indicator {
   height: 100%;
-  background-color: hsl(235deg, 86%, 65%);
+  background-color: var(--main-color);
   width: 0%;
 }
 
@@ -1278,7 +1376,7 @@ table tr td.right {
   max-height: 40rem;
   max-width: 100%;
   margin-block: 1.5rem;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
 }
 .img[invert] {
   -webkit-filter: invert(1);
@@ -1306,55 +1404,55 @@ table tr td.right {
 }
 
 .code-string {
-  color: hsl(18deg, 50%, 68%) !important;
+  color: var(--font-color-code-string) !important;
 }
 
 .code-comment {
-  color: hsl(111deg, 39%, 45%) !important;
+  color: var(--font-color-code-comment) !important;
 }
 
 .code-class {
-  color: hsl(169deg, 49%, 52%) !important;
+  color: var(--font-color-code-class) !important;
 }
 
 .code-struct {
-  color: hsl(130deg, 36%, 65%) !important;
+  color: var(--font-color-code-struct) !important;
 }
 
 .code-method {
-  color: hsl(60deg, 42%, 76%) !important;
+  color: var(--font-color-code-method) !important;
 }
 
 .code-variable {
-  color: hsl(201deg, 93%, 79%) !important;
+  color: var(--font-color-code-variable) !important;
 }
 
 .code-number {
-  color: hsl(99deg, 28%, 73%) !important;
+  color: var(--font-color-code-number) !important;
 }
 
 .code-keyword {
-  color: hsl(207deg, 61%, 59%) !important;
+  color: var(--font-color-code-keyword) !important;
 }
 
 .code-keyword-optional {
-  color: hsl(211deg, 45%, 43%) !important;
+  color: var(--font-color-code-keyword-optional) !important;
 }
 
 .code-generic {
-  color: hsl(102deg, 35%, 72%) !important;
+  color: var(--font-color-code-generic) !important;
 }
 
 .code-flowcontrol {
-  color: hsl(293deg, 50%, 75%) !important;
+  color: var(--font-color-code-flowcontrol) !important;
 }
 
 .code-error {
-  color: hsl(2deg, 97%, 60%) !important;
+  color: var(--font-color-code-error) !important;
 }
 
 .code-normal {
-  color: hsl(0deg, 0%, 86%) !important;
+  color: var(--font-color-code-normal) !important;
 }
 
 .code {
@@ -1364,10 +1462,10 @@ table tr td.right {
   margin: 2.5rem 0;
   padding: 1.5rem;
   padding-right: 5rem;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(220deg, 10%, 25%);
-  border: 3px solid hsl(0deg, 0%, 60%);
-  border-radius: 20px;
+  color: var(--font-color);
+  background-color: var(--background-color-code);
+  border: 3px solid var(--border-color);
+  border-radius: var(--border-radius);
   font-family: "Source Code Pro", monospace;
   font-weight: 600;
   -webkit-user-select: text;
@@ -1381,22 +1479,22 @@ table tr td.right {
   top: -2rem;
   right: -1rem;
   padding: 0.5rem 1rem;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(220deg, 10%, 15%);
-  border: hsl(235deg, 86%, 65%) 0.25rem solid;
-  border-radius: 20px;
+  color: var(--font-color);
+  background-color: var(--background-color-code-copy);
+  border: var(--main-color) 0.25rem solid;
+  border-radius: var(--border-radius);
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
-  -webkit-transition: background-color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;
+  -webkit-transition: background-color var(--transition-short) ease-in-out;
+  transition: background-color var(--transition-short) ease-in-out;
   z-index: 10;
 }
 .code .code-copy[copied] {
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(235deg, 86%, 65%);
+  color: var(--font-color-light);
+  background-color: var(--main-color);
 }
 .code div,
 .code span {
@@ -1429,11 +1527,11 @@ table tr td.right {
 .button:not(:is([prev], [next])) {
   display: inline-block;
   position: relative;
-  border: 0.1rem solid hsl(235deg, 86%, 65%);
-  -webkit-box-shadow: inset 0.1rem 0.1rem hsl(235deg, 86%, 65%), inset -0.1rem -0.1rem hsl(235deg, 86%, 65%);
-          box-shadow: inset 0.1rem 0.1rem hsl(235deg, 86%, 65%), inset -0.1rem -0.1rem hsl(235deg, 86%, 65%);
+  border: 0.1rem solid var(--main-color);
+  -webkit-box-shadow: inset 0.1rem 0.1rem var(--main-color), inset -0.1rem -0.1rem var(--main-color);
+          box-shadow: inset 0.1rem 0.1rem var(--main-color), inset -0.1rem -0.1rem var(--main-color);
   background: none;
-  color: hsl(235deg, 86%, 65%);
+  color: var(--main-color);
   padding: 0.5em 1em;
   font-size: 1.2rem;
   font-family: "Lato", sans-serif;
@@ -1441,13 +1539,13 @@ table tr td.right {
   cursor: pointer;
   overflow: hidden;
   z-index: 1;
-  -webkit-transition: color 0.8s ease-in-out;
-  transition: color 0.8s ease-in-out;
+  -webkit-transition: color var(--transition-long) ease-in-out;
+  transition: color var(--transition-long) ease-in-out;
 }
 .button:not(:is([prev], [next]))::before {
   content: "";
   position: absolute;
-  background-color: hsl(235deg, 86%, 65%);
+  background-color: var(--main-color);
   z-index: -1;
 }
 .button:not(:is([prev], [next]))[hover-from=top]::before {
@@ -1456,8 +1554,8 @@ table tr td.right {
   width: 100%;
   height: 0%;
   border-radius: 0 0 50% 50%;
-  -webkit-transition: height 0.5s ease-in-out;
-  transition: height 0.5s ease-in-out;
+  -webkit-transition: height var(--transition-middle) ease-in-out;
+  transition: height var(--transition-middle) ease-in-out;
 }
 .button:not(:is([prev], [next]))[hover-from=right]::before {
   right: 0px;
@@ -1465,8 +1563,8 @@ table tr td.right {
   height: 100%;
   width: 0%;
   border-radius: 50% 0 0 50%;
-  -webkit-transition: width 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
+  -webkit-transition: width var(--transition-middle) ease-in-out;
+  transition: width var(--transition-middle) ease-in-out;
 }
 .button:not(:is([prev], [next]))[hover-from=bottom]::before {
   bottom: 0px;
@@ -1474,8 +1572,8 @@ table tr td.right {
   width: 100%;
   height: 0%;
   border-radius: 50% 50% 0 0;
-  -webkit-transition: height 0.5s ease-in-out;
-  transition: height 0.5s ease-in-out;
+  -webkit-transition: height var(--transition-middle) ease-in-out;
+  transition: height var(--transition-middle) ease-in-out;
 }
 .button:not(:is([prev], [next]))[hover-from=left]::before {
   left: 0px;
@@ -1483,24 +1581,24 @@ table tr td.right {
   height: 100%;
   width: 0%;
   border-radius: 0 50% 50% 0;
-  -webkit-transition: width 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
+  -webkit-transition: width var(--transition-middle) ease-in-out;
+  transition: width var(--transition-middle) ease-in-out;
 }
 .button:not(:is([prev], [next]))[small] {
   margin: 0.5rem;
   padding: 0.3em 0.5em;
   font-size: 0.8rem;
   font-weight: 500;
-  border: 0.05rem solid hsl(235deg, 86%, 65%);
-  -webkit-box-shadow: inset 0.05rem 0.05rem hsl(235deg, 86%, 65%), inset -0.05rem -0.05rem hsl(235deg, 86%, 65%);
-          box-shadow: inset 0.05rem 0.05rem hsl(235deg, 86%, 65%), inset -0.05rem -0.05rem hsl(235deg, 86%, 65%);
+  border: 0.05rem solid var(--main-color);
+  -webkit-box-shadow: inset 0.05rem 0.05rem var(--main-color), inset -0.05rem -0.05rem var(--main-color);
+          box-shadow: inset 0.05rem 0.05rem var(--main-color), inset -0.05rem -0.05rem var(--main-color);
 }
 .button:not(:is([prev], [next])):hover {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--font-color-light);
 }
 .button:not(:is([prev], [next])):hover::before {
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: var(--transition-long);
+  transition: var(--transition-long);
 }
 .button:not(:is([prev], [next])):hover[hover-from=top]::before, .button:not(:is([prev], [next])):hover[hover-from=bottom]::before {
   height: 200%;
@@ -1515,7 +1613,7 @@ table tr td.right {
   display: inline-block;
   position: relative;
   padding: 0.5em 1.5em;
-  color: hsl(0deg, 0%, 100%);
+  color: var(--font-color-light);
   background-color: #6225e6;
   -webkit-clip-path: polygon(0.8rem 0, 100% 0%, calc(100% - 0.8rem) 100%, 0% 100%);
           clip-path: polygon(0.8rem 0, 100% 0%, calc(100% - 0.8rem) 100%, 0% 100%);
@@ -1606,8 +1704,8 @@ hr {
   width: 100%;
   height: 0.25rem;
   margin: 1.5rem 0;
-  background-color: hsl(0deg, 0%, 60%);
-  border-radius: 20px;
+  background-color: var(--border-color);
+  border-radius: var(--border-radius);
 }
 hr[length=fluid] {
   width: 100vw;
@@ -1629,10 +1727,10 @@ hr[length=short] {
   margin: 1.5rem 0;
   padding: 1.5em;
   padding-right: 5rem;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(188deg, 78%, 41%);
-  border: 3px solid hsl(0deg, 0%, 95%);
-  border-radius: 20px;
+  color: var(--font-color-info);
+  background-color: var(--background-color-info);
+  border: 3px solid var(--border-color-2);
+  border-radius: var(--border-radius);
   font-weight: 600;
 }
 .info::before {
@@ -1662,10 +1760,10 @@ hr[length=short] {
   margin: 1.5rem 0;
   padding: 1.5rem;
   padding-right: 5rem;
-  color: hsl(45deg, 95%, 30%);
-  background-color: hsl(46deg, 100%, 90%);
-  border: 3px solid hsl(45deg, 95%, 30%);
-  border-radius: 20px;
+  color: var(--font-color-warning);
+  background-color: var(--background-color-warning);
+  border: 3px solid var(--font-color-warning);
+  border-radius: var(--border-radius);
   font-weight: 600;
 }
 .warning::before {

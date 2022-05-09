@@ -1,2 +1,4 @@
 @use "../abstracts/colors" as *;
-$main-color: $blue;
+:root {
+    --main-color: var(--blue);
+}

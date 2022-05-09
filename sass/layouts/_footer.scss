@@ -5,9 +5,9 @@ footer {
     position: relative;
     margin-top: 8.5rem;
     padding: 5rem 5rem 10rem 5rem;
-    background-color: $background-color-footer;
+    background-color: var(--background-color-footer);
     font-size: 1rem;
-    color: $font-color;
+    color: var(--font-color);
 
     min-height: 20rem;
     display: flex;

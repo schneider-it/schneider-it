@@ -13,16 +13,16 @@
         position: relative;
         width: 18rem;
         height: 25rem;
-        border-radius: $border-radius;
+        border-radius: var(--border-radius);
 
         & .card {
             position: relative;
             width: 100%;
             height: 100%;
-            border-radius: $border-radius;
-            border: $border-color-2 6px solid;
+            border-radius: var(--border-radius);
+            border: var(--border-color-2) 6px solid;
             overflow: hidden;
-            background-color: $background-color-card;
+            background-color: var(--background-color-card);
             padding: 1.5rem;
 
             & .card-before {
@@ -31,8 +31,8 @@
                 left: 0;
                 width: 100%;
                 height: 13rem;
-                background-color: $main-color;
-                transition: height $transition-long $bounce-easing;
+                background-color: var(--main-color);
+                transition: height var(--transition-long) var(--bounce-easing);
                 z-index: -1;
             }
 
@@ -44,12 +44,12 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 border-radius: 10000px;
-                background-color: $background-color-card;
+                background-color: var(--background-color-card);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 user-select: none;
-                transition: top $transition-long $bounce-easing;
+                transition: top var(--transition-long) var(--bounce-easing);
 
                 & img {
                     border-radius: 10000px;
@@ -64,11 +64,11 @@
             & .card-text {
                 position: relative;
                 top: 15rem;
-                transition: top $transition-long $bounce-easing;
+                transition: top var(--transition-long) var(--bounce-easing);
                 user-select: none;
 
                 & > p {
-                    transition: margin $transition-long $bounce-easing;
+                    transition: margin var(--transition-long) var(--bounce-easing);
                     font-size: 1rem;
                     padding-top: 5rem;
                 }

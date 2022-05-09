@@ -4,8 +4,8 @@
 .link {
     position: relative;
     display: inline-block;
-    color: $font-color-link;
-    transition: color $transition-short ease-out;
+    color: var(--font-color-link);
+    transition: color var(--transition-short) ease-out;
     cursor: pointer;
 
     &::before {
@@ -19,18 +19,19 @@
         bottom: 0;
         left: 0;
         transform-origin: bottom right;
-        transition: transform $transition-short ease-out, background $transition-short ease-out;
-        background-color: $font-color-link;
+        transition: transform var(--transition-short) ease-out,
+            background var(--transition-short) ease-out;
+        background-color: var(--font-color-link);
     }
 
     &:hover {
-        color: $font-color-link-hover;
+        color: var(--font-color-link-hover);
 
         &::before {
             transform: scaleX(1);
             transform-origin: bottom left;
-            background-color: $font-color-link-hover;
-            // transition-delay: var(--short-transition);
+            background-color: var(--font-color-link-hover);
+            // transition-delay: var(--transition-short);
         }
     }
 }

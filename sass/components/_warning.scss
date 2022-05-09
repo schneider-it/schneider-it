@@ -8,10 +8,10 @@
     margin: 1.5rem 0;
     padding: 1.5rem;
     padding-right: 5rem;
-    color: $font-color-warning;
-    background-color: $background-color-warning;
-    border: 3px solid $font-color-warning;
-    border-radius: $border-radius;
+    color: var(--font-color-warning);
+    background-color: var(--background-color-warning);
+    border: 3px solid var(--font-color-warning);
+    border-radius: var(--border-radius);
     font-weight: 600;
 
     &::before {
