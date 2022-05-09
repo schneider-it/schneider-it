@@ -19,9 +19,9 @@ body {
             width: 100%;
             height: 4rem;
             padding: 1.5rem 2.5rem 1.5rem 4.5rem;
-            background-color: $background-color-2;
+            background-color: var(--background-color-2);
             border-radius: 10000px;
-            box-shadow: 0px 20px 0px -10px $shadow-ergebnis-div;
+            box-shadow: 0px 20px 0px -10px var(--shadow-ergebnis-div);
         }
     }
 
@@ -44,7 +44,7 @@ body {
         top: 0;
         height: 100%;
         max-width: 50%;
-        color: $border-color;
+        color: var(--border-color);
         font-size: 0.9rem;
         display: flex;
         align-items: center;
@@ -54,53 +54,53 @@ body {
 
 #ergebnisse {
     position: relative;
-    width: $container;
+    width: var(--container);
     margin: 4rem auto;
 
     & div {
         width: 100%;
         margin: 2.5rem 0;
         padding: 1.5rem 2rem;
-        background-color: $background-color-2;
-        border-radius: $border-radius;
-        box-shadow: 0px 25px 0px -5px $shadow-ergebnis-div;
+        background-color: var(--background-color-2);
+        border-radius: var(--border-radius);
+        box-shadow: 0px 25px 0px -5px var(--shadow-ergebnis-div);
         transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, color 50ms ease-in-out,
             background 50ms ease-in-out, font 0.1s ease-in-out;
 
         & h4 {
             margin: 0;
             padding: 0;
-            color: $font-color-ergebnis-heading;
+            color: var(--font-color-ergebnis-heading);
             font-weight: 700;
         }
 
         & p {
             margin: 0;
             padding: 0;
-            color: $font-color-ergebnis-paragraph;
+            color: var(--font-color-ergebnis-paragraph);
             font-weight: 400;
         }
 
         &:hover {
-            box-shadow: 0px 13px 0px -5px $shadow-ergebnis-div;
+            box-shadow: 0px 13px 0px -5px var(--shadow-ergebnis-div);
             transform: translateY(12px);
         }
 
         &[active] {
-            box-shadow: 0px 19px 0px -5px $shadow-ergebnis-div-active;
+            box-shadow: 0px 19px 0px -5px var(--shadow-ergebnis-div-active);
             transform: translateY(6px);
-            // background-color: $background-color-ergebnis-div-active;
+            // background-color: var(--background-color-ergebnis-div-active);
 
             & h4 {
-                color: $font-color-ergebnis-heading-active;
+                color: var(--font-color-ergebnis-heading-active);
             }
 
             & p {
-                color: $font-color-ergebnis-paragraph-active;
+                color: var(--font-color-ergebnis-paragraph-active);
             }
 
             &:hover {
-                box-shadow: 0px 13px 0px -5px $shadow-ergebnis-div;
+                box-shadow: 0px 13px 0px -5px var(--shadow-ergebnis-div);
                 transform: translateY(12px);
             }
         }
@@ -110,14 +110,14 @@ body {
 #clear_search_history {
     display: none;
     position: absolute;
-    right: calc((100vw - $container) / 2);
+    right: calc((100vw - var(--container)) / 2);
     top: 9rem;
     z-index: 980;
 }
 
-@media (max-width: $media-break-point) {
+@media (max-width: 40em) {
     .search_div {
-        width: $container;
+        width: var(--container);
         margin: 8rem auto 0;
 
         &::after {
