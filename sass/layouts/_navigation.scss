@@ -35,7 +35,7 @@
         transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
             opacity $transition-short ease-in-out;
 
-        & ion-icon {
+        & i {
             width: 40%;
             height: 40%;
         }
@@ -286,9 +286,8 @@ body[colorTheme="light"] .sun {
         justify-content: center;
         align-items: center;
 
-        & > ion-icon {
-            width: 70%;
-            height: 70%;
+        & > i {
+            font-size: 2rem;
             color: $font-color;
         }
     }
@@ -297,7 +296,7 @@ body[colorTheme="light"] .sun {
         background: $main-color;
 
         & > a {
-            & ion-icon {
+            & i {
                 color: $font-color-light;
             }
         }
@@ -310,7 +309,7 @@ body[colorTheme="light"] .sun {
     z-index: 1001;
 
     & > a {
-        & > ion-icon {
+        & > i {
             width: 60%;
             height: 60%;
         }

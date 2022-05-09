@@ -5,6 +5,7 @@ function OnLoadAll() {
     SetCardColors();
     AddCopyButtons();
     RandomizeButtonHover();
+    LoadButtonNextPrev();
 }
 
 function OnLoadIndex() {
@@ -20,6 +21,7 @@ function OnLoadLeaf() {
     LoadFooter();
     AddCopyButtons();
     RandomizeButtonHover();
+    LoadButtonNextPrev();
 }
 
 function OnLoadSearch() {
@@ -85,7 +87,44 @@ function ThemeSwitch() {
 }
 
 function SetCardColors() {
-    var colors = ["#f6e58d", "#f9ca24", "#ffbe76", "#f0932b", "#ff7979", "#eb4d4b", "#badc58", "#6ab04c", "#7ed6df", "#22a6b3", "#e056fd", "#be2edd", "#686de0", "#4834d4", "#30336b", "#130f40", "#fc5c65", "#eb3b5a", "#fd9644", "#fa8231", "#f7b731", "#26de81", "#20bf6b", "#2bcbba", "#0fb9b1", "#45aaf2", "#2d98da", "#4b7bec", "#3867d6", "#a55eea", "#f1c40f", "#8e44ad", "#27ae60", "#8854d0", "#1abc9c", "#e67e22"];
+    var colors = [
+        "#f6e58d",
+        "#f9ca24",
+        "#ffbe76",
+        "#f0932b",
+        "#ff7979",
+        "#eb4d4b",
+        "#badc58",
+        "#6ab04c",
+        "#7ed6df",
+        "#22a6b3",
+        "#e056fd",
+        "#be2edd",
+        "#686de0",
+        "#4834d4",
+        "#30336b",
+        "#130f40",
+        "#fc5c65",
+        "#eb3b5a",
+        "#fd9644",
+        "#fa8231",
+        "#f7b731",
+        "#26de81",
+        "#20bf6b",
+        "#2bcbba",
+        "#0fb9b1",
+        "#45aaf2",
+        "#2d98da",
+        "#4b7bec",
+        "#3867d6",
+        "#a55eea",
+        "#f1c40f",
+        "#8e44ad",
+        "#27ae60",
+        "#8854d0",
+        "#1abc9c",
+        "#e67e22",
+    ];
 
     var cards_before = document.querySelectorAll(".card-before");
 
@@ -102,7 +141,8 @@ function AddCopyButtons() {
             text: "Copy",
             class: "code-copy",
             id: "code-copy-" + i,
-            onclick: 'CopyToClipboardCode("#code-' + i + '"); ShowCopyAccess("#code-copy-' + i + '")',
+            onclick:
+                'CopyToClipboardCode("#code-' + i + '"); ShowCopyAccess("#code-copy-' + i + '")',
         }).appendTo("#code-" + i);
     }
 }
@@ -130,9 +170,16 @@ function RandomizeButtonHover() {
         var randomness = Math.random();
         if (randomness < 0.49) button.setAttribute("hover-from", "top");
         else if (randomness >= 0.49 && randomness < 0.5) button.setAttribute("hover-from", "right");
-        else if (randomness >= 0.5 && randomness < 0.99) button.setAttribute("hover-from", "bottom");
+        else if (randomness >= 0.5 && randomness < 0.99)
+            button.setAttribute("hover-from", "bottom");
         else button.setAttribute("hover-from", "left");
         // });
+    }
+}
+
+function LoadButtonNextPrev() {
+    if (document.getElementById("buttons-prev-next") != null) {
+        $("#buttons-prev-next").load("/components/header.html", function () {});
     }
 }
 
@@ -149,7 +196,7 @@ function LoadHeader() {
 
 function LoadHeaderwithoutSearch() {
     if (document.getElementById("header") != null) {
-        $("#header").load("/components/header_without_search.html", function () {
+        $("#header").load("/components/prev-next.html", function () {
             NavigationActiveToggle();
             ThemeSwitch();
             TastenkombinationenActiveToggle();
@@ -161,7 +208,32 @@ function LoadHeaderwithoutSearch() {
 function LoadFooter() {
     if (document.getElementById("footer") != null) {
         $("#footer").load("/components/footer.html", function () {
-            var myPix = new Array("/img/vogel1.png", "/img/vogel2.png", "/img/vogel3.png", "/img/vogel4.gif", "/img/vogel5.png", "/img/vogel6.png", "/img/vogel7.png", "/img/vogel9.png", "/img/vogel10.png", "/img/vogel11.png", "/img/vogel12.png", "/img/vogel13.png", "/img/vogel14.png", "/img/vogel15.png", "/img/vogel16.png", "/img/vogel17.png", "/img/vogel18.png", "/img/vogel19.gif", "/img/vogel20.gif", "/img/vogel21.gif", "/img/vogel22.gif", "/img/vogel23.gif", "/img/vogel24.gif", "/img/vogel25.gif");
+            var myPix = new Array(
+                "/img/vogel1.png",
+                "/img/vogel2.png",
+                "/img/vogel3.png",
+                "/img/vogel4.gif",
+                "/img/vogel5.png",
+                "/img/vogel6.png",
+                "/img/vogel7.png",
+                "/img/vogel9.png",
+                "/img/vogel10.png",
+                "/img/vogel11.png",
+                "/img/vogel12.png",
+                "/img/vogel13.png",
+                "/img/vogel14.png",
+                "/img/vogel15.png",
+                "/img/vogel16.png",
+                "/img/vogel17.png",
+                "/img/vogel18.png",
+                "/img/vogel19.gif",
+                "/img/vogel20.gif",
+                "/img/vogel21.gif",
+                "/img/vogel22.gif",
+                "/img/vogel23.gif",
+                "/img/vogel24.gif",
+                "/img/vogel25.gif"
+            );
             var randomNum = Math.floor(Math.random() * myPix.length);
             try {
                 document.getElementById("vogel").src = myPix[randomNum];
@@ -197,9 +269,15 @@ function NavigationActiveToggle() {
     let blurfilter = document.querySelector(".navigation-blur-filter");
     let navigation = document.querySelector(".navigation");
     burger.onclick = function () {
-        burger.getAttribute("active") != "true" ? burger.setAttribute("active", "true") : burger.removeAttribute("active"); // damit zu X wird
-        blurfilter.getAttribute("active") != "true" ? blurfilter.setAttribute("active", "true") : blurfilter.removeAttribute("active"); // damit Hintergrund verschwommen
-        navigation.getAttribute("active") != "true" ? navigation.setAttribute("active", "true") : navigation.removeAttribute("active"); // damit Navigation sehen
+        burger.getAttribute("active") != "true"
+            ? burger.setAttribute("active", "true")
+            : burger.removeAttribute("active"); // damit zu X wird
+        blurfilter.getAttribute("active") != "true"
+            ? blurfilter.setAttribute("active", "true")
+            : blurfilter.removeAttribute("active"); // damit Hintergrund verschwommen
+        navigation.getAttribute("active") != "true"
+            ? navigation.setAttribute("active", "true")
+            : navigation.removeAttribute("active"); // damit Navigation sehen
     };
     blurfilter.onclick = function () {
         burger.removeAttribute("active");
@@ -270,8 +348,12 @@ function ActiveFollowCursor() {
         });
 
         if ((themeSwitch = document.querySelector(".themeSwitch"))) {
-            themeSwitch.addEventListener("mousemove", (event) => mouseEnterHandler(event, themeSwitch));
-            themeSwitch.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, themeSwitch));
+            themeSwitch.addEventListener("mousemove", (event) =>
+                mouseEnterHandler(event, themeSwitch)
+            );
+            themeSwitch.addEventListener("mouseleave", (event) =>
+                mouseLeaveHandler(event, themeSwitch)
+            );
         }
 
         if ((burger = document.querySelector(".burger"))) {
@@ -280,18 +362,30 @@ function ActiveFollowCursor() {
         }
 
         if ((back_button = document.querySelector(".back_button"))) {
-            back_button.addEventListener("mousemove", (event) => mouseEnterHandler(event, back_button));
-            back_button.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, back_button));
+            back_button.addEventListener("mousemove", (event) =>
+                mouseEnterHandler(event, back_button)
+            );
+            back_button.addEventListener("mouseleave", (event) =>
+                mouseLeaveHandler(event, back_button)
+            );
         }
 
         if ((search_button = document.querySelector(".search_button"))) {
-            search_button.addEventListener("mousemove", (event) => mouseEnterHandler(event, search_button));
-            search_button.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, search_button));
+            search_button.addEventListener("mousemove", (event) =>
+                mouseEnterHandler(event, search_button)
+            );
+            search_button.addEventListener("mouseleave", (event) =>
+                mouseLeaveHandler(event, search_button)
+            );
         }
 
         if ((tastenkombinationenSwitch = document.querySelector(".tastenkombinationenSwitch"))) {
-            tastenkombinationenSwitch.addEventListener("mousemove", (event) => mouseEnterHandler(event, tastenkombinationenSwitch));
-            tastenkombinationenSwitch.addEventListener("mouseleave", (event) => mouseLeaveHandler(event, tastenkombinationenSwitch));
+            tastenkombinationenSwitch.addEventListener("mousemove", (event) =>
+                mouseEnterHandler(event, tastenkombinationenSwitch)
+            );
+            tastenkombinationenSwitch.addEventListener("mouseleave", (event) =>
+                mouseLeaveHandler(event, tastenkombinationenSwitch)
+            );
         }
     }
 }
@@ -309,7 +403,11 @@ function KeyCombination(e) {
             return false;
         }
 
-        if ((e.key === "z" && e.ctrlKey) || e.key === "Backspace" || (e.key === "Tab" && e.shiftKey)) {
+        if (
+            (e.key === "z" && e.ctrlKey) ||
+            e.key === "Backspace" ||
+            (e.key === "Tab" && e.shiftKey)
+        ) {
             history.back();
             return false;
         }
