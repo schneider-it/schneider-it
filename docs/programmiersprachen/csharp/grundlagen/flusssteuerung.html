@@ -21,7 +21,7 @@
 
         <div class="back_button">
         <a href="../grundlagen.html">
-            <ion-icon name="arrow-back-outline"></ion-icon>
+            <i class="fa-solid fa-arrow-left"></i>
         </a>
     </div>
 
@@ -89,6 +89,14 @@
                     <div class="code">
                         <span class="code-flowcontrol">if</span> (!(<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span> && <span class="code-variable">tempInCelsius</span> &gt;= <span class="code-number">40.0</span>)) <br>
                             <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Angenehm"</span>); <br>
+                    </div>
+                    Für kurze if-Statements gibt es auch eine Kurzschreibweise. Die Syntax sieht dann wie folgt aus:
+                    <div class="code">
+                        <span class="code-method">Bedingung</span> ? <span class="code-variable">Code, wenn true</span> : <span class="code-string">Code, wenn false</span>;
+                    </div>
+                    Hier ein Beispiel:
+                    <div class="code">
+                        (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">10.0</span>) ? <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Kalt"</span>) : <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Warm"</span>);
                     </div>
                 </div>
                 <h3 id="else">else</h3>

@@ -2,7 +2,7 @@
 @use "../abstracts/variables" as *;
 
 .email {
-    background: $background-color-2;
+    background-color: $background-color-2;
     color: $font-color-secondary;
     cursor: pointer;
 
@@ -12,7 +12,7 @@
     }
 
     &[copied] {
-        background: $main-color;
+        background-color: $main-color;
         color: $font-color-light;
         cursor: default;
     }

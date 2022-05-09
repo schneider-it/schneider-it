@@ -1,5 +1,5 @@
 .email {
-  background: hsl(210deg, 10%, 20%);
+  background-color: hsl(210deg, 10%, 20%);
   color: hsl(0deg, 0%, 85%);
   cursor: pointer;
 }
@@ -8,7 +8,7 @@
   color: hsl(0deg, 0%, 100%);
 }
 .email[copied] {
-  background: hsl(235deg, 86%, 65%);
+  background-color: hsl(235deg, 86%, 65%);
   color: hsl(0deg, 0%, 100%);
   cursor: default;
 }

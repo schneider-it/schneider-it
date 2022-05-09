@@ -1,5 +1,5 @@
-@use '../abstracts/colors' as *;
-@use '../abstracts/variables' as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
 
 .warning {
     position: relative;
@@ -9,7 +9,7 @@
     padding: 1.5rem;
     padding-right: 5rem;
     color: $font-color-warning;
-    background: $background-color-warning;
+    background-color: $background-color-warning;
     border: 3px solid $font-color-warning;
     border-radius: $border-radius;
     font-weight: 600;

@@ -136,6 +136,14 @@ body {
   scroll-behavior: smooth;
 }
 
+i:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
 .container {
   position: relative;
   width: 80%;
@@ -371,7 +379,7 @@ footer {
   position: relative;
   margin-top: 8.5rem;
   padding: 5rem 5rem 10rem 5rem;
-  background: hsl(220deg, 10%, 20%);
+  background-color: hsl(220deg, 10%, 20%);
   font-size: 1rem;
   color: hsl(0deg, 0%, 100%);
   min-height: 20rem;
@@ -671,7 +679,7 @@ footer .footer-vogel img {
   height: 100vh;
   width: 100vw;
   font-size: clamp(1.2rem, 1.64vw, 1.5rem);
-  background: hsl(210deg, 10%, 20%);
+  background-color: hsl(210deg, 10%, 20%);
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: -webkit-transform 0.5s ease-in-out;
@@ -837,7 +845,7 @@ footer .footer-vogel img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 100%);
   opacity: 0;
   -webkit-transition: opacity 0.5s ease-in-out, z-index 0s 0.5s;
   transition: opacity 0.5s ease-in-out, z-index 0s 0.5s;
@@ -901,7 +909,7 @@ footer .footer-vogel img {
   width: 2rem;
   height: 0.25rem;
   border-radius: 10000px;
-  background: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 100%);
   -webkit-transition: background 0.2s ease-in-out, -webkit-transform 0.5s ease-in-out;
   transition: background 0.2s ease-in-out, -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, background 0.2s ease-in-out;
@@ -920,10 +928,10 @@ footer .footer-vogel img {
           transform: translateY(0.3rem);
 }
 .burger:hover {
-  background: hsl(235deg, 86%, 65%);
+  background-color: hsl(235deg, 86%, 65%);
 }
 .burger:hover > .burger-line {
-  background: hsl(0deg, 0%, 100%);
+  background-color: hsl(0deg, 0%, 100%);
 }
 .burger[active] > .burger-line1 {
   -webkit-animation: burger-anim1-active var(--middle-transition) ease-in-out;
@@ -991,12 +999,12 @@ body[colorTheme=light] .sun {
 }
 .back_button > a > i,
 .search_button > a > i {
-  font-size: 2rem;
+  font-size: 1.7rem;
   color: hsl(0deg, 0%, 100%);
 }
 .back_button:hover,
 .search_button:hover {
-  background: hsl(235deg, 86%, 65%);
+  background-color: hsl(235deg, 86%, 65%);
 }
 .back_button:hover > a i,
 .search_button:hover > a i {
@@ -1034,12 +1042,13 @@ table tr {
 table tr:nth-child(even) {
   background-color: hsl(210deg, 10%, 20%);
 }
-table tr th, table tr td {
+table tr th,
+table tr td {
   padding: 0.6rem;
   width: auto;
 }
 table tr th {
-  background: hsl(235deg, 86%, 65%);
+  background-color: hsl(235deg, 86%, 65%);
   color: hsl(0deg, 0%, 100%);
   font-weight: 500;
 }
@@ -1115,7 +1124,7 @@ table tr td.right {
   transition: background 0.2s ease-out, -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, background 0.2s ease-out;
   transition: transform 0.2s ease-out, background 0.2s ease-out, -webkit-transform 0.2s ease-out;
-  background: hsl(46deg, 100%, 75%);
+  background-color: hsl(46deg, 100%, 75%);
 }
 .link:hover {
   color: hsl(46deg, 100%, 65%);
@@ -1125,7 +1134,7 @@ table tr td.right {
           transform: scaleX(1);
   -webkit-transform-origin: bottom left;
           transform-origin: bottom left;
-  background: hsl(46deg, 100%, 65%);
+  background-color: hsl(46deg, 100%, 65%);
 }
 
 .cards {
@@ -1150,7 +1159,7 @@ table tr td.right {
   border-radius: 20px;
   border: hsl(0deg, 0%, 95%) 6px solid;
   overflow: hidden;
-  background: hsl(220deg, 0%, 15%);
+  background-color: hsl(220deg, 0%, 15%);
   padding: 1.5rem;
 }
 .cards > a .card .card-before {
@@ -1159,7 +1168,7 @@ table tr td.right {
   left: 0;
   width: 100%;
   height: 13rem;
-  background: hsl(235deg, 86%, 65%);
+  background-color: hsl(235deg, 86%, 65%);
   -webkit-transition: height 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
   transition: height 0.8s cubic-bezier(0.89, -0.68, 0.5, 1);
   z-index: -1;
@@ -1173,7 +1182,7 @@ table tr td.right {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   border-radius: 10000px;
-  background: hsl(220deg, 0%, 15%);
+  background-color: hsl(220deg, 0%, 15%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1254,13 +1263,13 @@ table tr td.right {
 .scroll_indicator_div {
   width: 100%;
   height: 0.25rem;
-  background: hsl(210deg, 10%, 15%);
+  background-color: hsl(210deg, 10%, 15%);
   position: fixed;
   z-index: 980;
 }
 .scroll_indicator_div .scroll_indicator {
   height: 100%;
-  background: hsl(235deg, 86%, 65%);
+  background-color: hsl(235deg, 86%, 65%);
   width: 0%;
 }
 
@@ -1356,7 +1365,7 @@ table tr td.right {
   padding: 1.5rem;
   padding-right: 5rem;
   color: hsl(0deg, 0%, 100%);
-  background: hsl(220deg, 10%, 25%);
+  background-color: hsl(220deg, 10%, 25%);
   border: 3px solid hsl(0deg, 0%, 60%);
   border-radius: 20px;
   font-family: "Source Code Pro", monospace;
@@ -1373,7 +1382,7 @@ table tr td.right {
   right: -1rem;
   padding: 0.5rem 1rem;
   color: hsl(0deg, 0%, 100%);
-  background: hsl(220deg, 10%, 15%);
+  background-color: hsl(220deg, 10%, 15%);
   border: hsl(235deg, 86%, 65%) 0.25rem solid;
   border-radius: 20px;
   text-align: center;
@@ -1387,7 +1396,7 @@ table tr td.right {
 }
 .code .code-copy[copied] {
   color: hsl(0deg, 0%, 100%);
-  background: hsl(235deg, 86%, 65%);
+  background-color: hsl(235deg, 86%, 65%);
 }
 .code div,
 .code span {
@@ -1431,14 +1440,14 @@ table tr td.right {
   font-weight: 600;
   cursor: pointer;
   overflow: hidden;
-  z-index: 0;
+  z-index: 1;
   -webkit-transition: color 0.8s ease-in-out;
   transition: color 0.8s ease-in-out;
 }
 .button:not(:is([prev], [next]))::before {
   content: "";
   position: absolute;
-  background: hsl(235deg, 86%, 65%);
+  background-color: hsl(235deg, 86%, 65%);
   z-index: -1;
 }
 .button:not(:is([prev], [next]))[hover-from=top]::before {
@@ -1477,6 +1486,15 @@ table tr td.right {
   -webkit-transition: width 0.5s ease-in-out;
   transition: width 0.5s ease-in-out;
 }
+.button:not(:is([prev], [next]))[small] {
+  margin: 0.5rem;
+  padding: 0.3em 0.5em;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 0.05rem solid hsl(235deg, 86%, 65%);
+  -webkit-box-shadow: inset 0.05rem 0.05rem hsl(235deg, 86%, 65%), inset -0.05rem -0.05rem hsl(235deg, 86%, 65%);
+          box-shadow: inset 0.05rem 0.05rem hsl(235deg, 86%, 65%), inset -0.05rem -0.05rem hsl(235deg, 86%, 65%);
+}
 .button:not(:is([prev], [next])):hover {
   color: hsl(0deg, 0%, 100%);
 }
@@ -1498,7 +1516,7 @@ table tr td.right {
   position: relative;
   padding: 0.5em 1.5em;
   color: hsl(0deg, 0%, 100%);
-  background: #6225e6;
+  background-color: #6225e6;
   -webkit-clip-path: polygon(0.8rem 0, 100% 0%, calc(100% - 0.8rem) 100%, 0% 100%);
           clip-path: polygon(0.8rem 0, 100% 0%, calc(100% - 0.8rem) 100%, 0% 100%);
   font-family: "Poppins", sans-serif;
@@ -1588,7 +1606,7 @@ hr {
   width: 100%;
   height: 0.25rem;
   margin: 1.5rem 0;
-  background: hsl(0deg, 0%, 60%);
+  background-color: hsl(0deg, 0%, 60%);
   border-radius: 20px;
 }
 hr[length=fluid] {
@@ -1612,7 +1630,7 @@ hr[length=short] {
   padding: 1.5em;
   padding-right: 5rem;
   color: hsl(0deg, 0%, 100%);
-  background: hsl(188deg, 78%, 41%);
+  background-color: hsl(188deg, 78%, 41%);
   border: 3px solid hsl(0deg, 0%, 95%);
   border-radius: 20px;
   font-weight: 600;
@@ -1645,7 +1663,7 @@ hr[length=short] {
   padding: 1.5rem;
   padding-right: 5rem;
   color: hsl(45deg, 95%, 30%);
-  background: hsl(46deg, 100%, 90%);
+  background-color: hsl(46deg, 100%, 90%);
   border: 3px solid hsl(45deg, 95%, 30%);
   border-radius: 20px;
   font-weight: 600;

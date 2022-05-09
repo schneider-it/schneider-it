@@ -3,7 +3,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background: #222;
+  background-color: #222;
   color: white;
   overflow: hidden;
   display: -webkit-box;

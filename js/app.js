@@ -179,7 +179,7 @@ function RandomizeButtonHover() {
 
 function LoadButtonNextPrev() {
     if (document.getElementById("buttons-prev-next") != null) {
-        $("#buttons-prev-next").load("/components/header.html", function () {});
+        $("#buttons-prev-next").load("/components/prev-next.html.html", function () {});
     }
 }
 
@@ -196,7 +196,7 @@ function LoadHeader() {
 
 function LoadHeaderwithoutSearch() {
     if (document.getElementById("header") != null) {
-        $("#header").load("/components/prev-next.html", function () {
+        $("#header").load("/components/header_without_search.html", function () {
             NavigationActiveToggle();
             ThemeSwitch();
             TastenkombinationenActiveToggle();

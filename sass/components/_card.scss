@@ -1,5 +1,5 @@
-@use '../abstracts/colors' as *;
-@use '../abstracts/variables' as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
 
 .cards {
     position: relative;
@@ -9,7 +9,7 @@
     gap: 1.5rem;
     margin-top: 5rem;
 
-    &>a {
+    & > a {
         position: relative;
         width: 18rem;
         height: 25rem;
@@ -22,20 +22,20 @@
             border-radius: $border-radius;
             border: $border-color-2 6px solid;
             overflow: hidden;
-            background: $background-color-card;
+            background-color: $background-color-card;
             padding: 1.5rem;
-        
+
             & .card-before {
                 position: absolute;
                 top: 0;
                 left: 0;
                 width: 100%;
                 height: 13rem;
-                background: $main-color;
+                background-color: $main-color;
                 transition: height $transition-long $bounce-easing;
                 z-index: -1;
             }
-        
+
             & .card-img {
                 position: absolute;
                 width: 6rem;
@@ -44,60 +44,59 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 border-radius: 10000px;
-                background: $background-color-card;
+                background-color: $background-color-card;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 user-select: none;
                 transition: top $transition-long $bounce-easing;
-        
+
                 & img {
                     border-radius: 10000px;
                     width: 70%;
                     height: 70%;
                     object-fit: cover;
-                    transition: transform .7s cubic-bezier(.6,0,.4,1) .1s;
-                    transform: scale(.9);
+                    transition: transform 0.7s cubic-bezier(0.6, 0, 0.4, 1) 0.1s;
+                    transform: scale(0.9);
                 }
             }
-        
+
             & .card-text {
                 position: relative;
                 top: 15rem;
                 transition: top $transition-long $bounce-easing;
                 user-select: none;
-            
-                &>p {
+
+                & > p {
                     transition: margin $transition-long $bounce-easing;
                     font-size: 1rem;
                     padding-top: 5rem;
                 }
             }
-        
+
             &:hover {
                 & .card-before {
                     height: 20%;
                 }
-        
+
                 & .card-img {
                     top: 20%;
-        
+
                     & img {
-                        transform: scale(.9) rotate(360deg);
+                        transform: scale(0.9) rotate(360deg);
                     }
                 }
-                
+
                 & .card-text {
                     top: 28%;
-        
+
                     & p {
                         margin-top: -30%;
                     }
                 }
             }
-        
         }
-    }    
+    }
 }
 
 @media (min-width: 45em) {
