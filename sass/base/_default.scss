@@ -30,7 +30,7 @@ body {
     scroll-behavior: smooth;
 }
 
-i:before {
+i[centered]:before {
     position: absolute;
     top: 50%;
     left: 50%;

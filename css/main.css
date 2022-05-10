@@ -234,7 +234,7 @@ body {
   scroll-behavior: smooth;
 }
 
-i:before {
+i[centered]:before {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1784,4 +1784,33 @@ hr[length=short] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+kbd {
+  display: inline-block;
+  position: relative;
+  font-size: 0.8em;
+  text-align: center;
+  color: var(--font-color);
+  background-color: var(--background-color);
+  min-width: 1rem;
+  padding: 0.1em 0.3em;
+  margin: 0.15rem 0.1rem 0.15rem 0.2rem;
+  border: 0.1em solid var(--border-color);
+  border-radius: 0.2rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 0 var(--font-color), inset 0 0 0 0.2rem var(--background-color);
+          box-shadow: 0.1rem 0.1rem 0 var(--font-color), inset 0 0 0 0.2rem var(--background-color);
+  -webkit-transform: translate(-0.1rem, -0.1rem);
+          transform: translate(-0.1rem, -0.1rem);
+  -webkit-transition: -webkit-transform var(--transition-short) ease-in-out, -webkit-box-shadow var(--transition-short) ease-in-out;
+  transition: -webkit-transform var(--transition-short) ease-in-out, -webkit-box-shadow var(--transition-short) ease-in-out;
+  transition: transform var(--transition-short) ease-in-out, box-shadow var(--transition-short) ease-in-out;
+  transition: transform var(--transition-short) ease-in-out, box-shadow var(--transition-short) ease-in-out, -webkit-transform var(--transition-short) ease-in-out, -webkit-box-shadow var(--transition-short) ease-in-out;
+  cursor: default;
+}
+kbd:hover {
+  -webkit-transform: translate(0);
+          transform: translate(0);
+  -webkit-box-shadow: 0 0 0 var(--font-color), inset 0 0 0 0.2rem var(--background-color);
+          box-shadow: 0 0 0 var(--font-color), inset 0 0 0 0.2rem var(--background-color);
 }
