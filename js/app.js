@@ -179,7 +179,7 @@ function RandomizeButtonHover() {
 
 function LoadButtonNextPrev() {
     if (document.getElementById("buttons-prev-next") != null) {
-        $("#buttons-prev-next").load("/components/prev-next.html.html", function () {});
+        $("#buttons-prev-next").load("/components/prev-next.html", function () {});
     }
 }
 
@@ -291,11 +291,11 @@ function TastenkombinationenActiveToggle() {
     let background_close = document.querySelector(".tastenkombinationen-background_close");
     let tastenkombinationen_iframe = document.querySelector(".tastenkombinationen-iframe");
     tastenkombinationenSwitch.onclick = function () {
-        background_close.classList.add("active"); // damit Hintergrund verschwommen
+        background_close.setAttribute("active", ""); // damit Hintergrund verschwommen
         tastenkombinationen_iframe.style.display = "block";
     };
     background_close.onclick = function () {
-        background_close.classList.remove("active");
+        background_close.removeAttribute("active");
         tastenkombinationen_iframe.style.display = "none";
     };
 }
