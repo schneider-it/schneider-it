@@ -110,11 +110,21 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
   font-weight: 800;
-  margin-block: 0.4em;
+  margin: 0 0 1em 0;
+  text-align: center;
+}
+#tastenkombinationen > div > div {
+  margin-inline: 1em;
 }
 #tastenkombinationen > div > div > h3 {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 800;
   margin-block: 0.3em;
+}
+#tastenkombinationen .tastenkombinationen-close {
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem;
+  font-size: 2.5rem;
 }

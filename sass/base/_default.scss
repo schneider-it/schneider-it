@@ -29,10 +29,3 @@ body {
     // overflow: overlay;
     scroll-behavior: smooth;
 }
-
-i[centered]:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}

@@ -24,11 +24,14 @@ body {
         font-family: "Open Sans", sans-serif;
         font-size: 1.5rem;
         font-weight: 800;
-        margin-block: 0.4em;
+        margin: 0 0 1em 0;
+        text-align: center;
     }
 
     & > div {
         & > div {
+            margin-inline: 1em;
+
             & > h3 {
                 font-family: "Open Sans", sans-serif;
                 font-size: 1rem;
@@ -36,12 +39,19 @@ body {
                 margin-block: 0.3em;
             }
 
-            & > div {
-                & > div {
-                    & > div {
-                    }
-                }
-            }
+            // & > div {
+            //     & > div {
+            //         & > div {
+            //         }
+            //     }
+            // }
         }
+    }
+
+    & .tastenkombinationen-close {
+        position: absolute;
+        top: 0.3rem;
+        right: 1rem;
+        font-size: 2.5rem;
     }
 }

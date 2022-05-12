@@ -290,14 +290,21 @@ function TastenkombinationenActiveToggle() {
     let tastenkombinationenSwitch = document.querySelector(".tastenkombinationenSwitch");
     let background_close = document.querySelector(".tastenkombinationen-background_close");
     let tastenkombinationen_iframe = document.querySelector(".tastenkombinationen-iframe");
+
     tastenkombinationenSwitch.onclick = function () {
-        background_close.setAttribute("active", ""); // damit Hintergrund verschwommen
+        background_close.setAttribute("active", "");
         tastenkombinationen_iframe.style.display = "block";
     };
+
     background_close.onclick = function () {
         background_close.removeAttribute("active");
         tastenkombinationen_iframe.style.display = "none";
     };
+
+    // $(".tastenkombinationen-close").onclick = function () {
+    //     background_close.removeAttribute("active");
+    //     tastenkombinationen_iframe.style.display = "none";
+    // };
 }
 
 function ActiveFollowCursor() {

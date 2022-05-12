@@ -1,255 +1,318 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!">
-    <link rel="stylesheet" href="/css/lightbox.min.css">
-    <link href="/css/fa_all.min.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="/css/main.min.css">
-    <link rel="icon" href="/img/Logo.svg">
-    <title>Schneider IT - Programmiersprachen - Brainfuck</title>
-</head>
-<body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
-    <div class="scroll_indicator_div">
-        <div class="scroll_indicator" id="scroll_indicator"></div>
-    </div> 
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
 
-    <div id="header"></div>
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="stylesheet" href="/css/programmiersprachen.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
+        <title>Schneider IT - Programmiersprachen - Brainfuck</title>
+    </head>
+    <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
+        <div class="scroll_indicator_div">
+            <div class="scroll_indicator" id="scroll_indicator"></div>
+        </div>
+
+        <div id="header"></div>
 
         <div class="back_button">
-        <a href="../programmiersprachen.html">
-            <i class="fa-solid fa-arrow-left"></i>
-        </a>
-    </div>
+            <a href="../programmiersprachen.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
 
-    <div class="title searchable">
-        <img loading="lazy" src="/img/old.png" alt="Old_Logo">
-        <h1>WPF</h1>
-    </div>
-    <div></div>
+        <div class="title searchable">
+            <img loading="lazy" src="/img/old.png" alt="Old_Logo" />
+            <h1>WPF</h1>
+        </div>
+        <div></div>
 
-    <div class="section searchable">
-        <div class="container" style="margin-top: 10vh;">
-            <div>
-                <h3 id="Controls">Controls</h3>
+        <div class="section searchable">
+            <div class="container" style="margin-top: 10vh">
                 <div>
-                    <h4 id="Controls-Übersicht">Übersicht</h4>
+                    <h3 id="Controls">Controls</h3>
                     <div>
-                        Controls dienen als Elemente in XAML-Dateien. 
-                        XAML-Dateien sind die Dateien, die WPF verwendet. 
-                        Hier ist eine Liste der wichtigsten und gebrächlichsten WPF-Controls.
-                        Die Properties, die normalerweise gebindet werden (mehr dazu bei Binding) sind unterstrichen.
-                        <table>
-                            <tr>
-                                <th>Control</th>
-                                <th>spezifische Properties</th>
-                                <th>Beschreibung</th>
-                            </tr>
-                            <tr>
-                                <td>Label</td>
-                                <td><u style="text-decoration: underline;">Content</u></td>
-                                <td>erzeugt eine Beschriftung für z.B.: TextBox</td>
-                            </tr>
-                            <tr>
-                                <td>TextBox</td>
-                                <td><u style="text-decoration: underline;">Text</u>, TextAlignment, TextWrapping, TextTrimming, AcceptsReturn</td>
-                                <td>erzeugt eine Box, dessen Text man bearbeiten kann</td>
-                            </tr>
-                            <tr>
-                                <td>TextBlock</td>
-                                <td><u style="text-decoration: underline;">Text</u>, TextAlignment, TextWrapping, TextTrimming</td>
-                                <td>erzeugt eine Box, dessen Text nicht bearbeitet werden kann</td>
-                            </tr>
-                            <tr>
-                                <td>Slider</td>
-                                <td>Minimum, Maximum, <u style="text-decoration: underline;">Value</u>, TickFrequency, TickPlacement</td>
-                                <td>erzeugt einen Schieberegler</td>
-                            </tr>
-                            <tr>
-                                <td>RadioButton</td>
-                                <td>Content, <u style="text-decoration: underline;">IsChecked</u>, GroupName</td>
-                                <td>erzeugt erzeugt einen runden Button mit Text, wo man einen auswählen kann</td>
-                            </tr>
-                            <tr>
-                                <td>CheckBox</td>
-                                <td>Content, <u style="text-decoration: underline;">IsChecked</u></td>
-                                <td>erzeugt ein Kästchen mit Text, welches man anhäckelchen kann</td>
-                            </tr>
-                            <tr>
-                                <td>Button</td>
-                                <td>Content, <u style="text-decoration: underline;">Command</u></td>
-                                <td>erzeugt einen anklickbare Box, die eine Aktion durchführt</td>
-                            </tr>
-                            <tr>
-                                <td>DatePicker</td>
-                                <td><u style="text-decoration: underline;">Text</u></td>
-                                <td>erzeugt eine TextBox mit auswählbarem Datum</td>
-                            </tr>
-                            <tr>
-                                <td>DataGrid</td>
-                                <td><u style="text-decoration: underline;">ItemsSource</u>, <u style="text-decoration: underline;">SelectedItem</u></td>
-                                <td>erzeugt eine Art Tabelle bzw. Liste, die bearbeitet und sortiert werden kann</td>
-                            </tr>
-                            <tr>
-                                <td>ListView</td>
-                                <td rowspan="3"><u style="text-decoration: underline;">ItemsSource</u>, <u style="text-decoration: underline;">SelectedItem</u>, DisplayMemberPath</td>
-                                <td>erzeugt eine Liste</td>
-                            </tr>
-                            <tr>
-                                <td>ListBox</td>
-                                <td>erzeugt eine Liste</td>
-                            </tr>
-                            <tr>
-                                <td>ComboBox</td>
-                                <td>erzeugt eine DropBox, wo man Items auswählen kann</td>
-                            </tr>
-                            <tr>
-                                <td>Canvas</td>
-                                <td></td>
-                                <td>erzeugt einen Bereich, wo Controls frei platziert werden können</td>
-                            </tr>
-                            <tr>
-                                <td>StackPanel</td>
-                                <td>Orientation</td>
-                                <td>erzeugt einen Bereich, wo standardmäßig untereinander Controls hineinkommen</td>
-                            </tr>
-                            <tr>
-                                <td>WrapPanel</td>
-                                <td>Orientation</td>
-                                <td>erzeugt einen Bereich, wo standardmäßig nebeneinander Controls hineinkommen</td>
-                            </tr>
-                            <tr>
-                                <td>DockPanel</td>
-                                <td></td>
-                                <td>erzeugt einen Bereich, wo Controls relativ zu den vier Rändern platziert werden können</td>
-                            </tr>
-                            <tr>
-                                <td>Grid</td>
-                                <td></td>
-                                <td>erzeugt ein Raster, welches frei konfiguriert werden kann</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <h4 id="Controls-Label">Label</h4>
-                    <div>
-                        Ein Label dient als Beschriftung für eine TextBox oder einen TextBlock, einen DatePicker oder irgendein anderes Control.
-                        <div class="code">
-                            &lt;Label Content="Passwort: " Width="100"/&gt;
-                        </div>
-                    </div>
-                    <h4 id="Controls-TextBox">TextBox</h4>
-                    <div>
-                        In eine TextBox kann der User etwas hineinschreiben, was dann verarbeitet werden kann.
-                        <div class="code">
-                            &lt;TextBox Text="" Width="200"/&gt;
-                        </div>
-                    </div>
-                    <h4 id="Controls-TextBlock">TextBlock</h4>
-                    <div>
-                        Ein TextBlock ist ein Feld mit Text, den den User nicht bearbeiten, sondern nur lesen kann.
-                        <div class="code">
-                            &lt;TextBox Text="" Width="200"/&gt;
-                        </div>
-                    </div>
-                    <h4 id="Controls-Slider">Slider</h4>
-                    <div>
-                        Ein Slider ist ein Schieberegler, den der User hin und her schieben kann, um bestimmte Einstellungen zu verändern.
-                        Meistens benötigt man einen Converter für einen Slider, damit die Position der Sliderauswahl auch in einen Wert umgewandelt werden kann.
-                        <div class="code">
-                            &lt;Slider Value="50" Minimum="0" Maximum="100" TickFrequency="1" TickPlacement="Top/Bottom"/&gt;
-                        </div>
-                    </div>
-                    <h4 id="Controls-RadioButton">RadioButton</h4>
-                    <div>
-                        Ein RadioButton kommt selten alleine. Mehrere RadioButtons ermöglich eine Auswahl von mehreren Angeboten, sodass der User zum Beispiel sein Lieblingsessen auswählen kann.
-                        <div class="code">
-                            &lt;RadioButton Content="Italienisch" IsChecked="False" GroupName="FavouriteFood"/&gt; <br>
-                            &lt;RadioButton Content="Österreichisch" IsChecked="True" GroupName="FavouriteFood"/&gt; <br>
-                            &lt;RadioButton Content="Chinesisch" IsChecked="False" GroupName="FavouriteFood"/&gt; <br>
-                            &lt;RadioButton Content="Griechisch" IsChecked="False" GroupName="FavouriteFood"/&gt;
-                        </div>
-                    </div>
-                    <h4 id="Controls-CheckBox">CheckBox</h4>
-                    <div>
-                        Ein CheckBox kommt selten alleine. Mehrere CheckBoxes ermöglich eine Mehrfachauswahl von mehreren möglichen Wahr/Falsch-Aussagen, sodass der User zum Beispiel Besitztümer ankreuzen kann.
-                        <div class="code">
-                            &lt;CheckBox Content="Computer" IsChecked="True"/&gt; <br>
-                            &lt;CheckBox Content="Laptop" IsChecked="False"/&gt; <br>
-                            &lt;CheckBox Content="Handy" IsChecked="True"/&gt; <br>
-                            &lt;CheckBox Content="SmartWatch" IsChecked="True"/&gt;
-                        </div>
-                    </div>
-                    <h4 id="Controls-Button">Button</h4>
-                    <div>
-                        Ein Button ist ein klickbares Element, das mithilfe von ControlBinding eine bestimmte Aktion durchführen kann.
-                        <div class="code">
-                            &lt;Button Content="Add" Command="{Binding AddCmd}"/&gt;
-                        </div>
-                    </div>
-                    <h4 id="Controls-DatePicker">DatePicker</h4>
-                    <div>
-                        Mithilfe eines DatePicker kann man eine TextBox mit einem Datumsauswählfeld erstellen. 
-                        Wenn man daraufklickt, öffnet sich ein kleines Fenster mit einem Kalender.
-                        <div class="code">
-                            &lt;DatePicker SelectedDate="18/03/2022"/&gt;
-                        </div>
-                    </div>
-                    <h4 id="Controls-Tabellen">Tabellen</h4>
-                    <div>
-                        <h5 id="Controls-Tabellen-DataGrid">DataGrid</h5>
+                        <h4 id="Controls-Übersicht">Übersicht</h4>
                         <div>
-                            
+                            Controls dienen als Elemente in XAML-Dateien. XAML-Dateien sind die
+                            Dateien, die WPF verwendet. Hier ist eine Liste der wichtigsten und
+                            gebrächlichsten WPF-Controls. Die Properties, die normalerweise gebindet
+                            werden (mehr dazu bei Binding) sind unterstrichen.
+                            <table>
+                                <tr>
+                                    <th>Control</th>
+                                    <th>spezifische Properties</th>
+                                    <th>Beschreibung</th>
+                                </tr>
+                                <tr>
+                                    <td>Label</td>
+                                    <td><u style="text-decoration: underline">Content</u></td>
+                                    <td>erzeugt eine Beschriftung für z.B.: TextBox</td>
+                                </tr>
+                                <tr>
+                                    <td>TextBox</td>
+                                    <td>
+                                        <u style="text-decoration: underline">Text</u>,
+                                        TextAlignment, TextWrapping, TextTrimming, AcceptsReturn
+                                    </td>
+                                    <td>erzeugt eine Box, dessen Text man bearbeiten kann</td>
+                                </tr>
+                                <tr>
+                                    <td>TextBlock</td>
+                                    <td>
+                                        <u style="text-decoration: underline">Text</u>,
+                                        TextAlignment, TextWrapping, TextTrimming
+                                    </td>
+                                    <td>
+                                        erzeugt eine Box, dessen Text nicht bearbeitet werden kann
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Slider</td>
+                                    <td>
+                                        Minimum, Maximum,
+                                        <u style="text-decoration: underline">Value</u>,
+                                        TickFrequency, TickPlacement
+                                    </td>
+                                    <td>erzeugt einen Schieberegler</td>
+                                </tr>
+                                <tr>
+                                    <td>RadioButton</td>
+                                    <td>
+                                        Content,
+                                        <u style="text-decoration: underline">IsChecked</u>,
+                                        GroupName
+                                    </td>
+                                    <td>
+                                        erzeugt erzeugt einen runden Button mit Text, wo man einen
+                                        auswählen kann
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>CheckBox</td>
+                                    <td>
+                                        Content, <u style="text-decoration: underline">IsChecked</u>
+                                    </td>
+                                    <td>
+                                        erzeugt ein Kästchen mit Text, welches man anhäckelchen kann
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Button</td>
+                                    <td>
+                                        Content, <u style="text-decoration: underline">Command</u>
+                                    </td>
+                                    <td>
+                                        erzeugt einen anklickbare Box, die eine Aktion durchführt
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DatePicker</td>
+                                    <td><u style="text-decoration: underline">Text</u></td>
+                                    <td>erzeugt eine TextBox mit auswählbarem Datum</td>
+                                </tr>
+                                <tr>
+                                    <td>DataGrid</td>
+                                    <td>
+                                        <u style="text-decoration: underline">ItemsSource</u>,
+                                        <u style="text-decoration: underline">SelectedItem</u>
+                                    </td>
+                                    <td>
+                                        erzeugt eine Art Tabelle bzw. Liste, die bearbeitet und
+                                        sortiert werden kann
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>ListView</td>
+                                    <td rowspan="3">
+                                        <u style="text-decoration: underline">ItemsSource</u>,
+                                        <u style="text-decoration: underline">SelectedItem</u>,
+                                        DisplayMemberPath
+                                    </td>
+                                    <td>erzeugt eine Liste</td>
+                                </tr>
+                                <tr>
+                                    <td>ListBox</td>
+                                    <td>erzeugt eine Liste</td>
+                                </tr>
+                                <tr>
+                                    <td>ComboBox</td>
+                                    <td>erzeugt eine DropBox, wo man Items auswählen kann</td>
+                                </tr>
+                                <tr>
+                                    <td>Canvas</td>
+                                    <td></td>
+                                    <td>
+                                        erzeugt einen Bereich, wo Controls frei platziert werden
+                                        können
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>StackPanel</td>
+                                    <td>Orientation</td>
+                                    <td>
+                                        erzeugt einen Bereich, wo standardmäßig untereinander
+                                        Controls hineinkommen
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>WrapPanel</td>
+                                    <td>Orientation</td>
+                                    <td>
+                                        erzeugt einen Bereich, wo standardmäßig nebeneinander
+                                        Controls hineinkommen
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>DockPanel</td>
+                                    <td></td>
+                                    <td>
+                                        erzeugt einen Bereich, wo Controls relativ zu den vier
+                                        Rändern platziert werden können
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Grid</td>
+                                    <td></td>
+                                    <td>
+                                        erzeugt ein Raster, welches frei konfiguriert werden kann
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                        <h5 id="Controls-Tabellen-ListView">ListView</h5>
+                        <h4 id="Controls-Label">Label</h4>
                         <div>
-                            
+                            Ein Label dient als Beschriftung für eine TextBox oder einen TextBlock,
+                            einen DatePicker oder irgendein anderes Control.
+                            <div class="code">&lt;Label Content="Passwort: " Width="100"/&gt;</div>
                         </div>
-                        <h5 id="Controls-Tabellen-ListBox">ListBox</h5>
+                        <h4 id="Controls-TextBox">TextBox</h4>
                         <div>
-                            
+                            In eine TextBox kann der User etwas hineinschreiben, was dann
+                            verarbeitet werden kann.
+                            <div class="code">&lt;TextBox Text="" Width="200"/&gt;</div>
                         </div>
-                        <h5 id="Controls-Tabellen-ComboBox">ComboBox</h5>
+                        <h4 id="Controls-TextBlock">TextBlock</h4>
                         <div>
-                            
+                            Ein TextBlock ist ein Feld mit Text, den den User nicht bearbeiten,
+                            sondern nur lesen kann.
+                            <div class="code">&lt;TextBox Text="" Width="200"/&gt;</div>
                         </div>
-                    </div>
-                    <h4 id="Controls-Panel">Panel</h4>
-                    <div>
-                        Mithilfe von Panels kann man andere XAML-Controls den Wünschen entsprechend anordnen.
-                        <h5 id="Controls-Panel-StackPanel">StackPanel</h5>
+                        <h4 id="Controls-Slider">Slider</h4>
                         <div>
-                            Das StackPanel ordnet jedes Kindelement vertikal an.
-                            <pre class="code">
+                            Ein Slider ist ein Schieberegler, den der User hin und her schieben
+                            kann, um bestimmte Einstellungen zu verändern. Meistens benötigt man
+                            einen Converter für einen Slider, damit die Position der Sliderauswahl
+                            auch in einen Wert umgewandelt werden kann.
+                            <div class="code">
+                                &lt;Slider Value="50" Minimum="0" Maximum="100" TickFrequency="1"
+                                TickPlacement="Top/Bottom"/&gt;
+                            </div>
+                        </div>
+                        <h4 id="Controls-RadioButton">RadioButton</h4>
+                        <div>
+                            Ein RadioButton kommt selten alleine. Mehrere RadioButtons ermöglich
+                            eine Auswahl von mehreren Angeboten, sodass der User zum Beispiel sein
+                            Lieblingsessen auswählen kann.
+                            <div class="code">
+                                &lt;RadioButton Content="Italienisch" IsChecked="False"
+                                GroupName="FavouriteFood"/&gt; <br />
+                                &lt;RadioButton Content="Österreichisch" IsChecked="True"
+                                GroupName="FavouriteFood"/&gt; <br />
+                                &lt;RadioButton Content="Chinesisch" IsChecked="False"
+                                GroupName="FavouriteFood"/&gt; <br />
+                                &lt;RadioButton Content="Griechisch" IsChecked="False"
+                                GroupName="FavouriteFood"/&gt;
+                            </div>
+                        </div>
+                        <h4 id="Controls-CheckBox">CheckBox</h4>
+                        <div>
+                            Ein CheckBox kommt selten alleine. Mehrere CheckBoxes ermöglich eine
+                            Mehrfachauswahl von mehreren möglichen Wahr/Falsch-Aussagen, sodass der
+                            User zum Beispiel Besitztümer ankreuzen kann.
+                            <div class="code">
+                                &lt;CheckBox Content="Computer" IsChecked="True"/&gt; <br />
+                                &lt;CheckBox Content="Laptop" IsChecked="False"/&gt; <br />
+                                &lt;CheckBox Content="Handy" IsChecked="True"/&gt; <br />
+                                &lt;CheckBox Content="SmartWatch" IsChecked="True"/&gt;
+                            </div>
+                        </div>
+                        <h4 id="Controls-Button">Button</h4>
+                        <div>
+                            Ein Button ist ein klickbares Element, das mithilfe von ControlBinding
+                            eine bestimmte Aktion durchführen kann.
+                            <div class="code">
+                                &lt;Button Content="Add" Command="{Binding AddCmd}"/&gt;
+                            </div>
+                        </div>
+                        <h4 id="Controls-DatePicker">DatePicker</h4>
+                        <div>
+                            Mithilfe eines DatePicker kann man eine TextBox mit einem
+                            Datumsauswählfeld erstellen. Wenn man daraufklickt, öffnet sich ein
+                            kleines Fenster mit einem Kalender.
+                            <div class="code">&lt;DatePicker SelectedDate="18/03/2022"/&gt;</div>
+                        </div>
+                        <h4 id="Controls-Tabellen">Tabellen</h4>
+                        <div>
+                            <h5 id="Controls-Tabellen-DataGrid">DataGrid</h5>
+                            <div></div>
+                            <h5 id="Controls-Tabellen-ListView">ListView</h5>
+                            <div></div>
+                            <h5 id="Controls-Tabellen-ListBox">ListBox</h5>
+                            <div></div>
+                            <h5 id="Controls-Tabellen-ComboBox">ComboBox</h5>
+                            <div></div>
+                        </div>
+                        <h4 id="Controls-Panel">Panel</h4>
+                        <div>
+                            Mithilfe von Panels kann man andere XAML-Controls den Wünschen
+                            entsprechend anordnen.
+                            <h5 id="Controls-Panel-StackPanel">StackPanel</h5>
+                            <div>
+                                Das StackPanel ordnet jedes Kindelement vertikal an.
+                                <pre class="code">
 &lt;StackPanel Orientation="Vertical"&gt;
 
-&lt;/StackPanel&gt;</pre>
-                            Die Orientation bestimmt, ob die Elemente vertikal oder horizontal angeordnet werden sollen.
-                        </div>
-                        <h5 id="Controls-Panel-WrapPanel">WrapPanel</h5>
-                        <div>
-                            Das WrapPanel ordnet jedes Kindelement horizontal an.
-                            <pre class="code">
+&lt;/StackPanel&gt;</pre
+                                >
+                                Die Orientation bestimmt, ob die Elemente vertikal oder horizontal
+                                angeordnet werden sollen.
+                            </div>
+                            <h5 id="Controls-Panel-WrapPanel">WrapPanel</h5>
+                            <div>
+                                Das WrapPanel ordnet jedes Kindelement horizontal an.
+                                <pre class="code">
 &lt;WrapPanel Orientation="Horizontal"&gt;
 
-&lt;/WrapPanel&gt;</pre>
-                            Die Orientation bestimmt, ob die Elemente vertikal oder horizontal angeordnet werden sollen.
-                        </div>
-                        <h5 id="Controls-Panel-DockPanel">DockPanel</h5>
-                        <div>
-                            Das DockPanel erlaubt das kleben an den vier Seiten.
-                            <pre class="code">
+&lt;/WrapPanel&gt;</pre
+                                >
+                                Die Orientation bestimmt, ob die Elemente vertikal oder horizontal
+                                angeordnet werden sollen.
+                            </div>
+                            <h5 id="Controls-Panel-DockPanel">DockPanel</h5>
+                            <div>
+                                Das DockPanel erlaubt das kleben an den vier Seiten.
+                                <pre class="code">
 &lt;DockPanel DockPanel.Dock="Left"&gt;
 
-&lt;/DockPanel&gt;</pre>
-                            Das DockPanel.Dock="" Property bestimmt, wo die Elemente kleben sollen.
-                        </div>
-                        <h5 id="Controls-Panel-Grid">Grid</h5>
-                        <div>
-                            Das Grid erzeigt eine Tabelle, die sich der Größe des Fensters anpasst.
-                            <pre class="code">
+&lt;/DockPanel&gt;</pre
+                                >
+                                Das DockPanel.Dock="" Property bestimmt, wo die Elemente kleben
+                                sollen.
+                            </div>
+                            <h5 id="Controls-Panel-Grid">Grid</h5>
+                            <div>
+                                Das Grid erzeigt eine Tabelle, die sich der Größe des Fensters
+                                anpasst.
+                                <pre class="code">
 &lt;Grid Margin="15"&gt;
     &lt;Grid.ColumnDefinitions&gt;
         &lt;ColumnDefinition Width="2*" /&gt;
@@ -260,92 +323,115 @@
         &lt;RowDefinition Height="3*" /&gt;
         &lt;RowDefinition Height="2*" /&gt;
     &lt;/Grid.RowDefinitions&gt;
-&lt;/Grid&gt;</pre>
-                            ColumnDefinition bestimmt, wie die Spalten aufgeteilt sein sollen. 
-                            In diesem Fall ist die zweite Spalte halb so breit, wie die erste und dritte Spalte. <br>
-                            RowDefinition bestimmt, wie die Reihen augeteilt sein sollen.
-                            In diesem Fall ist die erste Reihe 1,5x so hoch, wie die zweite Reihe. <br>
-                            Sowohl Reihen als auch Spalten ändern sich somit relativ zur Gesamtbreite des Grid.
-                        </div>
-                        <h5 id="Controls-Panel-Canvas">Canvas</h5>
-                        <div>
-                            Der Canvas ist eine Art Zeichenfläche, wo man Elemente beliebig hin- und herziehen kann.
-                            <pre class="code">
+&lt;/Grid&gt;</pre
+                                >
+                                ColumnDefinition bestimmt, wie die Spalten aufgeteilt sein sollen.
+                                In diesem Fall ist die zweite Spalte halb so breit, wie die erste
+                                und dritte Spalte. <br />
+                                RowDefinition bestimmt, wie die Reihen augeteilt sein sollen. In
+                                diesem Fall ist die erste Reihe 1,5x so hoch, wie die zweite Reihe.
+                                <br />
+                                Sowohl Reihen als auch Spalten ändern sich somit relativ zur
+                                Gesamtbreite des Grid.
+                            </div>
+                            <h5 id="Controls-Panel-Canvas">Canvas</h5>
+                            <div>
+                                Der Canvas ist eine Art Zeichenfläche, wo man Elemente beliebig hin-
+                                und herziehen kann.
+                                <pre class="code">
 &lt;Canvas&gt;
     &lt;Label Canvas.Left="15" Canvas.Top="20"&gt;MyLabel&lt;/Label&gt;
-&lt;/Canvas&gt;</pre>
-                            Mit Canvas.Left / .Right / .Top / .Bottom kann man jedes Element frei ausrichten.
+&lt;/Canvas&gt;</pre
+                                >
+                                Mit Canvas.Left / .Right / .Top / .Bottom kann man jedes Element
+                                frei ausrichten.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <h3 id="Properties">Properties</h3>
-                <div>
-                    Die meisten Controls haben eigene spezifische Properties, zum Beispiel hat ein Slider ein Value-Property, welches eine TextBox nicht hat.
-                    Es gibt allerdings auch einige Properties, die jedes Control in WPF hat.
-                    <table>
-                        <tr>
-                            <th>Property</th>
-                            <th>Beschreibung</th>
-                        </tr>
-                        <tr>
-                            <td>Name</td>
-                            <td>definiert den Namen des Controls</td>
-                        </tr>
-                        <tr>
-                            <td>Width</td>
-                            <td>bestimmt die Breite des Elements / Controls</td>
-                        </tr>
-                        <tr>
-                            <td>Height</td>
-                            <td>bestimmt die Höhe des Elements / Controls</td>
-                        </tr>
-                        <tr>
-                            <td>Margin</td>
-                            <td>bestimmt den Abstand außerhalb des Borders (zwischen Border und Umgebung)</td>
-                        </tr>
-                        <tr>
-                            <td>Padding</td>
-                            <td>bestimmt den Abstand innerhalb des Borders (zwischen Text und Border)</td>
-                        </tr>
-                        <tr>
-                            <td>Background</td>
-                            <td>bestimmt die Farbe, den Gradianten oder das Bild des Hintergrunds bzw., welches im Hintergrund angezeigt werden soll</td>
-                        </tr>
-                        <tr>
-                            <td>Foreground</td>
-                            <td>bestimmt die Farbe des Vordergrundes</td>
-                        </tr>
-                    </table>
-                </div>
-                <h3 id="MVVM - Modell">MVVM - Modell</h3>
-                <div>
-                    Das Model-View-ViewModel- Modell hat in WPF sehr viel sinn, weil man dadurch DataBinding, ControlBinding und Converter programmieren kann.
-                    Die View ist hierbei das, was der User sehen, anklicken und bearbeiten kann.
-                    Das Model sind Klassen, die zum Beispiel Werte (Properties) speichern. 
-                    Zum Beispiel eine Person.
-                    Das ViewModel ist der Teil, der die View mit dem Model verbindet.
-                    <br><br>
-                    Wenn man in WPF etwas bindet, sprechen Programmierer automatisch von diesem Modell.
-                    Man kann sich das so vorstellen, dass das ViewModel direkt hinter der View klebt und alle Eingaben, Klicks usw. dem Model weiterleitet oder selber managed.
-                </div>
-                <h3 id="DataBinding">DataBinding</h3>
-                <div>
-                    In der Tabelle oben, sind all diejenigen Properties unterstrichen, die gebindet werden können bzw. normalerweise gebindet werden (man kann auch andere Properties von Controls binden...).
-                    Als Beispiel nehme ich einfach Text als das Property, das gebindet werden soll.
-                    <br><br>
-                    Name ist hier eine Variable aus der VM-Klasse.
-                    <div class="code">
-                        &lt;TextBox Text="{Binding Name}"/&gt;
+                    <h3 id="Properties">Properties</h3>
+                    <div>
+                        Die meisten Controls haben eigene spezifische Properties, zum Beispiel hat
+                        ein Slider ein Value-Property, welches eine TextBox nicht hat. Es gibt
+                        allerdings auch einige Properties, die jedes Control in WPF hat.
+                        <table>
+                            <tr>
+                                <th>Property</th>
+                                <th>Beschreibung</th>
+                            </tr>
+                            <tr>
+                                <td>Name</td>
+                                <td>definiert den Namen des Controls</td>
+                            </tr>
+                            <tr>
+                                <td>Width</td>
+                                <td>bestimmt die Breite des Elements / Controls</td>
+                            </tr>
+                            <tr>
+                                <td>Height</td>
+                                <td>bestimmt die Höhe des Elements / Controls</td>
+                            </tr>
+                            <tr>
+                                <td>Margin</td>
+                                <td>
+                                    bestimmt den Abstand außerhalb des Borders (zwischen Border und
+                                    Umgebung)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Padding</td>
+                                <td>
+                                    bestimmt den Abstand innerhalb des Borders (zwischen Text und
+                                    Border)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Background</td>
+                                <td>
+                                    bestimmt die Farbe, den Gradianten oder das Bild des
+                                    Hintergrunds bzw., welches im Hintergrund angezeigt werden soll
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Foreground</td>
+                                <td>bestimmt die Farbe des Vordergrundes</td>
+                            </tr>
+                        </table>
                     </div>
-                    Damit man diesen Name auch verwenden kann, benötigt man einen Verweis auf die VM-Klasse.
-                    <pre class="code">
+                    <h3 id="MVVM - Modell">MVVM - Modell</h3>
+                    <div>
+                        Das Model-View-ViewModel- Modell hat in WPF sehr viel sinn, weil man dadurch
+                        DataBinding, ControlBinding und Converter programmieren kann. Die View ist
+                        hierbei das, was der User sehen, anklicken und bearbeiten kann. Das Model
+                        sind Klassen, die zum Beispiel Werte (Properties) speichern. Zum Beispiel
+                        eine Person. Das ViewModel ist der Teil, der die View mit dem Model
+                        verbindet.
+                        <br /><br />
+                        Wenn man in WPF etwas bindet, sprechen Programmierer automatisch von diesem
+                        Modell. Man kann sich das so vorstellen, dass das ViewModel direkt hinter
+                        der View klebt und alle Eingaben, Klicks usw. dem Model weiterleitet oder
+                        selber managed.
+                    </div>
+                    <h3 id="DataBinding">DataBinding</h3>
+                    <div>
+                        In der Tabelle oben, sind all diejenigen Properties unterstrichen, die
+                        gebindet werden können bzw. normalerweise gebindet werden (man kann auch
+                        andere Properties von Controls binden...). Als Beispiel nehme ich einfach
+                        Text als das Property, das gebindet werden soll.
+                        <br /><br />
+                        Name ist hier eine Variable aus der VM-Klasse.
+                        <div class="code">&lt;TextBox Text="{Binding Name}"/&gt;</div>
+                        Damit man diesen Name auch verwenden kann, benötigt man einen Verweis auf
+                        die VM-Klasse.
+                        <pre class="code">
 &lt;Window.DataContext&gt;
     &lt;local:PersonVM/&gt;
-&lt;/Window.DataContext&gt;</pre>
-                    In C# benötigt man etwas mehr Code. 
-                    Diese Klasse ermöglicht zum Beispiel jeder erbenden Klasse das Nutzen der OnPropertyChanged(); - Methode.
-                    Diese Methode benachrichtigt die View, falls sich in der ViewModel-Klasse ein Wert verändert hat, sodass sich diese updated.
-                    <pre class="code">
+&lt;/Window.DataContext&gt;</pre
+                        >
+                        In C# benötigt man etwas mehr Code. Diese Klasse ermöglicht zum Beispiel
+                        jeder erbenden Klasse das Nutzen der OnPropertyChanged(); - Methode. Diese
+                        Methode benachrichtigt die View, falls sich in der ViewModel-Klasse ein Wert
+                        verändert hat, sodass sich diese updated.
+                        <pre class="code">
 public class PropertyChangedClass : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler PropertyChanged;
@@ -354,9 +440,11 @@ public class PropertyChangedClass : INotifyPropertyChanged
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyname));
     }
-}</pre>
-                    Die Klasse Person sieht so aus (mit drei Properties und ToString()- und ToCSV()-Methoden):
-                    <pre class="code">
+}</pre
+                        >
+                        Die Klasse Person sieht so aus (mit drei Properties und ToString()- und
+                        ToCSV()-Methoden):
+                        <pre class="code">
 public class Person
 {
     public string Name { get; set; }
@@ -373,13 +461,17 @@ public class Person
     {
         return String.Format($"{Name};{Password};{IsCool}");
     }
-}</pre>
-                    Die VM-Klasse sieht dann so aus.
-                    Hier sieht man, dass beim Setten eines Properties die OnPropertyChanged()-Methode aufgerufen wird, sodass alle Listener benachrichtigt werden, dass sich dieses Property geändert hat.
-                    <br><br>
-                    Da stellt man sich vielleicht nun die Frage: Woher weiß die Methode denn, welches Property sich verändert hat, wenn gar kein Parameter übergeben wird? 
-                    Einfach Antwort: Darum kümmert sich das [CallerMemberName] aus der PropertyChangedClass.
-                    <pre class="code">
+}</pre
+                        >
+                        Die VM-Klasse sieht dann so aus. Hier sieht man, dass beim Setten eines
+                        Properties die OnPropertyChanged()-Methode aufgerufen wird, sodass alle
+                        Listener benachrichtigt werden, dass sich dieses Property geändert hat.
+                        <br /><br />
+                        Da stellt man sich vielleicht nun die Frage: Woher weiß die Methode denn,
+                        welches Property sich verändert hat, wenn gar kein Parameter übergeben wird?
+                        Einfach Antwort: Darum kümmert sich das [CallerMemberName] aus der
+                        PropertyChangedClass.
+                        <pre class="code">
 public class PersonVM : PropertyChangedClass
 {
     private Person _person;
@@ -403,13 +495,15 @@ public class PersonVM : PropertyChangedClass
         get { return _person.IsCool; }
         set { _person.IsCool = value; OnPropertyChanged(); }
     }
-}</pre>
-
-                </div>
-                <h3 id="ObservableCollection">ObservableCollection</h3>
-                <div>
-                    Wenn man eine Liste mit Elementen, wie zum Beispiel DataGrid haben will, die sich mit TextBoxen und anderen Controls gemeinsam updated, benötigt man eine ObservableCollection.
-                    <pre class="code">
+}</pre
+                        >
+                    </div>
+                    <h3 id="ObservableCollection">ObservableCollection</h3>
+                    <div>
+                        Wenn man eine Liste mit Elementen, wie zum Beispiel DataGrid haben will, die
+                        sich mit TextBoxen und anderen Controls gemeinsam updated, benötigt man eine
+                        ObservableCollection.
+                        <pre class="code">
 public class PersonsVM : PropertyChangedClass
 {
     public PersonsVM()
@@ -438,20 +532,24 @@ public class PersonsVM : PropertyChangedClass
         get { return _selectedperson; }
         set { _selectedperson = value; OnPropertyChanged(); }
     }
-}</pre>
-                    Dies wird dann folgendermaßen mit der XAML-Datei verknüpft:
-                    <pre class="code">
+}</pre
+                        >
+                        Dies wird dann folgendermaßen mit der XAML-Datei verknüpft:
+                        <pre class="code">
 &lt;Window.DataContext&gt;
     &lt;local:PersonsVM/&gt;
-&lt;/Window.DataContext&gt;</pre>
-                    <div class="code">
-                        &lt;DataGrid ItemsSource="{Binding AllPersons}" SelectedItem="{Binding SelectedPerson}" Width="300"/&gt;
+&lt;/Window.DataContext&gt;</pre
+                        >
+                        <div class="code">
+                            &lt;DataGrid ItemsSource="{Binding AllPersons}" SelectedItem="{Binding
+                            SelectedPerson}" Width="300"/&gt;
+                        </div>
                     </div>
-                </div>
-                <h3 id="ControlBinding">ControlBinding</h3>
-                <div>
-                    Will man die Aktion eines Buttons kontrollieren, benötigt man ControlBinding.
-                    <pre class="code">
+                    <h3 id="ControlBinding">ControlBinding</h3>
+                    <div>
+                        Will man die Aktion eines Buttons kontrollieren, benötigt man
+                        ControlBinding.
+                        <pre class="code">
 public class PersonsVM : PropertyChangedClass
 {
     public AddCmd AddCmd { get; set; }
@@ -486,8 +584,9 @@ public class PersonsVM : PropertyChangedClass
         get { return _selectedperson; }
         set { _selectedperson = value; OnPropertyChanged(); }
     }
-}</pre>
-                    <pre class="code">
+}</pre
+                        >
+                        <pre class="code">
 public class LoginCmd : ICommand
 {
     private PersonsVM _personsVM;
@@ -516,8 +615,9 @@ public class LoginCmd : ICommand
         add => CommandManager.RequerySuggested += value;
         remove => CommandManager.RequerySuggested -= value;
     }
-}</pre>
-                    <pre class="code">
+}</pre
+                        >
+                        <pre class="code">
 public class AddCmd : ICommand
 {
     private PersonsVM _personsVM;
@@ -549,13 +649,16 @@ public class AddCmd : ICommand
         add => CommandManager.RequerySuggested += value;
         remove => CommandManager.RequerySuggested -= value;
     }
-}</pre>
-                </div>
-                <h3 id="Converter">Converter</h3>
-                <div>
-                    Wie vorhin schon erwähnt benötigt man einen Converter meistens für Slider, muss aber nicht sein.
-                    Will man zum Beispiel einen Integer (1-5, wie Schulnoten) in den dazupassenden String ("Sehr gut" - "Nicht genügend") convertieren, kann man das so lösen:
-                    <pre class="code">
+}</pre
+                        >
+                    </div>
+                    <h3 id="Converter">Converter</h3>
+                    <div>
+                        Wie vorhin schon erwähnt benötigt man einen Converter meistens für Slider,
+                        muss aber nicht sein. Will man zum Beispiel einen Integer (1-5, wie
+                        Schulnoten) in den dazupassenden String ("Sehr gut" - "Nicht genügend")
+                        convertieren, kann man das so lösen:
+                        <pre class="code">
 public class IntToMarkConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, 
@@ -577,22 +680,25 @@ public class IntToMarkConverter : IValueConverter
         // macht keinen Sinn, lol
         throw new NotImplementedException();
     }
-}</pre>
-                    <pre class="code">
+}</pre
+                        >
+                        <pre class="code">
 &lt;Window.Resources&gt;
     &lt;local:IntToMarkConverter x:Key="IntMark"/&gt;
-&lt;/Window.Resources&gt;</pre>
-                    <pre class="code">
+&lt;/Window.Resources&gt;</pre
+                        >
+                        <pre class="code">
 &lt;TextBox Text="{Binding Note}"/&gt;
-&lt;TextBlock Text="{Binding Note, Converter={StaticResource IntMark}}"/&gt;</pre>
+&lt;TextBlock Text="{Binding Note, Converter={StaticResource IntMark}}"/&gt;</pre
+                        >
+                    </div>
                 </div>
-            </div>            
+            </div>
         </div>
-    </div>
 
-    <div id="footer"></div>
-    
-    <script
+        <div id="footer"></div>
+
+        <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"
@@ -602,5 +708,5 @@ public class IntToMarkConverter : IValueConverter
         <script defer src="/js/FontAwesome.js"></script>
 
         <script defer type="text/javascript" src="/js/app.js"></script>
-</body>
+    </body>
 </html>

@@ -1,0 +1,48 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../base/animations" as *;
+
+.navigation {
+    & .themeSwitch {
+        position: absolute;
+        width: 4rem;
+        height: 4rem;
+        top: 2rem;
+        left: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+            opacity var(--transition-short) ease-in-out;
+
+        & i {
+            width: 40%;
+            height: 40%;
+        }
+    }
+
+    &[active] {
+        & .themeSwitch {
+            transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+                opacity var(--transition-short) ease-in-out
+                    calc(var(--transition-middle) - var(--transition-short));
+        }
+    }
+}
+
+body .moon {
+    display: none;
+}
+
+body .sun {
+    display: inline-block;
+}
+
+body[colorTheme="light"] .moon {
+    display: inline-block;
+}
+
+body[colorTheme="light"] .sun {
+    display: none;
+}

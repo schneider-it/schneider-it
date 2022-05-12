@@ -23,34 +23,6 @@
         transition: opacity var(--transition-short) ease-in-out;
     }
 
-    & .themeSwitch,
-    & .tastenkombinationenSwitch {
-        position: absolute;
-        width: 4rem;
-        height: 4rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: none;
-        transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-            opacity var(--transition-short) ease-in-out;
-
-        & i {
-            width: 40%;
-            height: 40%;
-        }
-    }
-
-    & .themeSwitch {
-        top: 2rem;
-        left: 2rem;
-    }
-
-    & .tastenkombinationenSwitch {
-        bottom: 2rem;
-        right: 2rem;
-    }
-
     & .list {
         margin: 0;
         padding: 0;
@@ -133,18 +105,10 @@
                 calc(var(--transition-middle) - var(--transition-short));
             opacity: 1;
         }
-
-        & .themeSwitch,
-        & .tastenkombinationenSwitch {
-            transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-                opacity var(--transition-short) ease-in-out
-                    calc(var(--transition-middle) - var(--transition-short));
-        }
     }
 }
 
-.navigation-blur-filter,
-.tastenkombinationen-background_close {
+.navigation-blur-filter {
     position: fixed;
     top: 0;
     left: 0;
@@ -162,113 +126,11 @@
     }
 }
 
-.tastenkombinationen-iframe {
-    display: none;
-    position: fixed;
-    $height: min(100vh - 2rem, 30rem);
-    $width: min(100vw - 2rem, 40rem);
-    height: $height;
-    width: $width;
-    margin: calc((100vh - $height) / 2) calc((100vw - $width) / 2);
-    padding: 0;
-    outline: 0.2rem var(--border-color) solid;
-    box-shadow: inset 0.1rem 0.1rem var(--border-color), inset -0.1rem -0.1rem var(--border-color);
-    border-radius: 10px;
-    z-index: 1010;
-}
-
-.tastenkombinationen-background_close {
-    transition: none;
-
-    &[active] {
-        opacity: 0;
-        z-index: 1009;
-    }
-}
-
-.burger {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 2rem;
-    right: 2rem;
-    width: 4rem;
-    height: 4rem;
-    padding: 1.5rem;
-    border-radius: 50%;
-    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-        background var(--transition-short) ease-in-out;
-    cursor: pointer;
-    z-index: 1001;
-
-    & > .burger-line {
-        position: absolute;
-        display: block;
-        width: 2rem;
-        height: 0.25rem;
-        border-radius: 10000px;
-        // mix-blend-mode:overlay;
-        background-color: var(--font-color);
-        transition: transform var(--transition-middle) ease-in-out,
-            background var(--transition-short) ease-in-out;
-    }
-
-    & > .burger-line1 {
-        animation: burger-anim1 var(--transition-middle) ease-in-out;
-        transform: translateY(-0.3rem);
-    }
-
-    & > .burger-line2 {
-        animation: burger-anim2 var(--transition-middle) ease-in-out;
-        transform: translateY(0.3rem);
-    }
-
-    &:hover {
-        background-color: var(--main-color);
-
-        & > .burger-line {
-            background-color: var(--font-color-light);
-        }
-    }
-
-    &[active] {
-        & > .burger-line1 {
-            animation: burger-anim1-active var(--transition-middle) ease-in-out;
-            transform: rotate(45deg);
-        }
-
-        & > .burger-line2 {
-            animation: burger-anim2-active var(--transition-middle) ease-in-out;
-            transform: rotate(-45deg);
-        }
-    }
-}
-
-body .moon {
-    display: none;
-}
-
-body .sun {
-    display: inline-block;
-}
-
-body[colorTheme="light"] .moon {
-    display: inline-block;
-}
-
-body[colorTheme="light"] .sun {
-    display: none;
-}
-
-.back_button,
-.search_button,
-.burger {
+.back_button {
     backdrop-filter: blur(10px);
 }
 
-.back_button,
-.search_button {
+.back_button {
     position: fixed;
     top: 2rem;
     left: 2rem;
@@ -302,19 +164,6 @@ body[colorTheme="light"] .sun {
             & i {
                 color: var(--font-color-light);
             }
-        }
-    }
-}
-
-.search_button {
-    left: initial;
-    right: 8rem;
-    z-index: 1001;
-
-    & > a {
-        & > i {
-            width: 60%;
-            height: 60%;
         }
     }
 }

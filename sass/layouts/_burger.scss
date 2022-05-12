@@ -1,0 +1,62 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+.burger {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    padding: 1.5rem;
+    border-radius: 50%;
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+        background var(--transition-short) ease-in-out;
+    cursor: pointer;
+    z-index: 1001;
+    backdrop-filter: blur(10px);
+
+    & > .burger-line {
+        position: absolute;
+        display: block;
+        width: 2rem;
+        height: 0.25rem;
+        border-radius: 10000px;
+        // mix-blend-mode:overlay;
+        background-color: var(--font-color);
+        transition: transform var(--transition-middle) ease-in-out,
+            background var(--transition-short) ease-in-out;
+    }
+
+    & > .burger-line1 {
+        animation: burger-anim1 var(--transition-middle) ease-in-out;
+        transform: translateY(-0.3rem);
+    }
+
+    & > .burger-line2 {
+        animation: burger-anim2 var(--transition-middle) ease-in-out;
+        transform: translateY(0.3rem);
+    }
+
+    &:hover {
+        background-color: var(--main-color);
+
+        & > .burger-line {
+            background-color: var(--font-color-light);
+        }
+    }
+
+    &[active] {
+        & > .burger-line1 {
+            animation: burger-anim1-active var(--transition-middle) ease-in-out;
+            transform: rotate(45deg);
+        }
+
+        & > .burger-line2 {
+            animation: burger-anim2-active var(--transition-middle) ease-in-out;
+            transform: rotate(-45deg);
+        }
+    }
+}
