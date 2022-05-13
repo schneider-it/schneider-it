@@ -37,10 +37,10 @@ function OnScroll() {
     ScrollIndicator();
 }
 
-// function OnKeyDown() {
-//     e = window.event;
-//     KeyCombination(e);
-// }
+function OnKeyDown() {
+    e = window.event;
+    KeyCombination(e);
+}
 
 function VanillaTiltEffect() {
     VanillaTilt.init(document.querySelectorAll(".card"), {
@@ -179,9 +179,66 @@ function RandomizeButtonHover() {
 
 function LoadButtonNextPrev() {
     if (document.getElementById("buttons-prev-next") != null) {
-        $("#buttons-prev-next").load("/components/prev-next.html", function () {});
+        $("#buttons-prev-next").load("/components/prev-next.html", function () {
+            $.getJSON("/tools/indexer/index.json", function (json) {
+                let link = window.location.href;
+                link = link.substring(link.indexOf("/docs"));
+                let button_prev = document.getElementById("button-prev");
+                let button_next = document.getElementById("button-next");
+
+                let index = json.findIndex((object) => {
+                    return object.location == link;
+                });
+
+                let found_prev = false;
+                let found_next = false;
+
+                let index_prev = index - 1;
+                let index_next = index + 1;
+
+                let link_prev = json[index_prev].location;
+                let link_next = json[index_next].location;
+
+                let slash_count = json[index].location.split("/").length - 1;
+
+                while (found_prev == false) {
+                    console.log("link_prev: " + link_prev);
+                    if (link_prev.includes("#")) {
+                        index_prev--;
+                        link_prev = json[index_prev].location;
+                    } else if (link_prev.split("/").length - 1 != slash_count) break;
+                    else found_prev = true;
+                }
+
+                while (found_next == false) {
+                    console.log("link_next: " + link_next);
+                    if (link_next.includes("#")) {
+                        index_next++;
+                        link_next = json[index_next].location;
+                    } else if (link_next.split("/").length - 1 != slash_count) break;
+                    else found_next = true;
+                }
+
+                button_prev.children[0].href = link_prev;
+                button_next.children[0].href = link_next;
+
+                if (found_prev == false) {
+                    button_prev.style.opacity = 0;
+                    button_prev.style.userSelect = "none";
+                    button_prev.style.pointerEvents = "none";
+                }
+
+                if (found_next == false) {
+                    button_next.style.opacity = 0;
+                    button_next.style.userSelect = "none";
+                    button_next.style.pointerEvents = "none";
+                }
+            });
+        });
     }
 }
+
+function FindPrevNextLink(link) {}
 
 function LoadHeader() {
     if (document.getElementById("header") != null) {
@@ -405,8 +462,9 @@ function KeyCombination(e) {
     // Holding keys: e.shiftKey, e.altKey, e.ctrlKey, e.metaKey (Windows Taste)
 
     if (!window.matchMedia("(pointer: coarse)").matches) {
+        event.preventDefault();
         if (e.key === "/" || e.key === "Tab") {
-            window.open("/tools/search.html", "_self");
+            window.open("/components/search.html", "_self");
             return false;
         }
 
@@ -419,24 +477,18 @@ function KeyCombination(e) {
             return false;
         }
 
-        if (e.altKey) {
-            switch (e.key) {
-                case "j":
-                    window.scrollBy({ top: 80, left: 0, behavior: "instant" });
-                    return false;
-                case "k":
-                    window.scrollBy({ top: -80, left: 0, behavior: "instant" });
-                    return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-            }
-            return false;
+        switch (e.key) {
+            case "j":
+                window.scrollBy({ top: 80, left: 0, behavior: "instant" });
+                return false;
+            case "k":
+                window.scrollBy({ top: -80, left: 0, behavior: "instant" });
+                return false;
+            case "n":
+                window.open("/tools/search.html", "_self");
+                return false;
         }
+        return false;
     }
 }
 
