@@ -78,7 +78,7 @@
                 display: block;
                 position: absolute;
                 transform-origin: left center;
-                color: var(--font-color-navigation-hover);
+                color: var(--main-color);
                 top: calc(
                     220% - 15px
                 ); // 30px weniger als beim unteren Hover-Effect, damit JS-Code ausgeglichen
@@ -90,7 +90,7 @@
     }
 
     & .navlink:hover .link-text {
-        transform: translateY(-220%) skewY(6deg);
+        transform: translateY(-200%) skewY(6deg);
 
         &::after {
             transform: skewY(-6deg);
@@ -123,48 +123,6 @@
         transition: opacity var(--transition-middle) ease-in-out, z-index 0s;
         opacity: 0.25;
         z-index: 990;
-    }
-}
-
-.back_button {
-    backdrop-filter: blur(10px);
-}
-
-.back_button {
-    position: fixed;
-    top: 2rem;
-    left: 2rem;
-    width: 4rem;
-    height: 4rem;
-
-    border-radius: 50%;
-    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
-        background var(--transition-short) ease-in-out, color var(--transition-short) ease-in-out,
-        opacity var(--transition-middle) ease-in-out;
-    z-index: 995;
-
-    & > a {
-        width: 100%;
-        height: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        & > i {
-            font-size: 1.7rem;
-            color: var(--font-color);
-        }
-    }
-
-    &:hover {
-        background-color: var(--main-color);
-
-        & > a {
-            & i {
-                color: var(--font-color-light);
-            }
-        }
     }
 }
 

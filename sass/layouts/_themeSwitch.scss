@@ -19,6 +19,11 @@
         & i {
             width: 40%;
             height: 40%;
+            transition: color var(--transition-short) ease-in-out;
+        }
+
+        &:hover i {
+            color: var(--main-color);
         }
     }
 
