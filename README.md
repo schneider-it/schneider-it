@@ -1,5 +1,5 @@
 # Schneider-IT
-This repository contains our hosted website Schneider-IT.
+This repository contains our hosted website [Schneider-IT](https://www.schneider-it.at/).
 
 ## How to get involved in development
 
@@ -40,7 +40,8 @@ an diese E-Mail-Adresse senden: <administator@schneider-it.at>.
     Mit freundlichen Grüßen
     <dein Name>, <Job / SchülerIn>
     
-Nachdem versenden dieser E-Mail bekommst du per E-Mail eine Bestätigung deiner Teilnahme.
+Nachdem versenden dieser E-Mail bekommst du per E-Mail eine Bestätigung deiner Teilnahme.  
+Du wirst dann dem [Helpers-Team](https://github.com/orgs/schneider-it/teams/helpers) hinzugefügt und kannst HTML-Dateien erstellen und bearbeiten, sowie git pushes machen. Achte dabei bitte immer darauf, dass du keine anderen Dateien überschreibst!
 
 #### Warum wir diese Informationen benötigen?
 
