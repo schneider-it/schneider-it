@@ -15,43 +15,6 @@ Hauptsächlich benötigen wir Hilfe beim *Erweitern unseres Inhalts* auf [Schnei
 Alles basiert auf **freiwilliger Interesse**. Deswegen sind wir gleich bei du...  
 Wenn du mithilfst, bekommst du keine Kohle, allerdings erhälst du Ehre, Respekt und Freunde. :)
 
-### Contact us
-
-Um dem Team beizutreten, musst du einfach die unten angeführte E-Mail, **ausgefüllt mit deinen Daten**,  
-an diese E-Mail-Adresse senden: <administator@schneider-it.at>.
-
-    Liebes Schneider-IT Team,
-    
-    Ich bin <dein Name>, <dein Alter> Jahre alt, und möchte gerne eurem Entwicklerteam beitreten, weil 
-    <oberflächliche Erklärung bitte>.
-    
-    Meine Stärken sind: <deine Stärken>
-    
-    Meine Schwächen sind: <deine Schwächen, falls vorhanden>
-    
-    Meine Adresse:
-    <Straße, Hausnummer>
-    <Postleitzahl>
-    <Stadt / Dorf>
-    <Staat / Land>
-    
-    Mir ist bewusst, dass ich interessiert und motiviert an die Sache rangehe.
-    
-    Mit freundlichen Grüßen
-    <dein Name>, <Job / SchülerIn>
-    
-Nachdem versenden dieser E-Mail bekommst du per E-Mail eine Bestätigung deiner Teilnahme.  
-Du wirst dann dem [Helpers-Team](https://github.com/orgs/schneider-it/teams/helpers) hinzugefügt und kannst HTML-Dateien erstellen und bearbeiten, sowie git pushes machen. Achte dabei bitte immer darauf, dass du keine anderen Dateien überschreibst!
-
-#### Warum wir diese Informationen benötigen?
-
-Wir benötigen deine Daten, um uns zu vergewissern, dass du
-1. eine echte Person bist
-2. loyal und freiwillig mitmachen willst
-3. Interesse und Motivation zeigst
-
-Wenn du manche Daten nicht preisgeben willst, ist das auch kein Problem, weil du diese dann aus der E-Mail einfach weglässt.
-
 ### Requirements
 
 Für eine effektive und effiziente Zusammenarbeit, gibt es ein paar Skills / Fähigkeiten, die du mitbringen solltest.  
@@ -68,6 +31,9 @@ Falls du irgendwelche Kenntnisse noch nicht beherrscht, stellt das allerdings **
 weil wir bereit sind, dich bei diesem essenziellen Schritt deines Lebens zu begleiten (exklusive Sprachen lernen).  
 Schau doch gerne mal bei den [Wikis](https://github.com/schneider-it/schneider-it/wiki) dieses Respositorys vorbei, um deine Skills zu erweitern.
 
+### Team beitreten
+
+Wenn du nun Lust, Motivation und Interesse hast, unserem [Team beizutreten](https://github.com/schneider-it/schneider-it/wiki/Contact-us#team-beitreten), dann [kontaktiere uns](https://github.com/schneider-it/schneider-it/wiki/Contact-us)!
 
 ## Standards
 
