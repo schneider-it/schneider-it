@@ -57,7 +57,7 @@ body {
     width: var(--container);
     margin: 4rem auto;
 
-    & div {
+    & .ergebnis {
         width: 100%;
         margin: 2.5rem 0;
         padding: 1.5rem 2rem;
@@ -108,11 +108,7 @@ body {
 }
 
 #clear_search_history {
-    display: none;
-    position: absolute;
-    right: calc((100vw - var(--container)) / 2);
-    top: 9rem;
-    z-index: 980;
+    // z-index: 980;
 }
 
 @media (max-width: 40em) {

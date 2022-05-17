@@ -159,7 +159,7 @@ body {
   width: var(--container);
   margin: 4rem auto;
 }
-#ergebnisse div {
+#ergebnisse .ergebnis {
   width: 100%;
   margin: 2.5rem 0;
   padding: 1.5rem 2rem;
@@ -172,49 +172,41 @@ body {
   transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out;
   transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out, color 50ms ease-in-out, background 50ms ease-in-out, font 0.1s ease-in-out, -webkit-box-shadow 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
 }
-#ergebnisse div h4 {
+#ergebnisse .ergebnis h4 {
   margin: 0;
   padding: 0;
   color: var(--font-color-ergebnis-heading);
   font-weight: 700;
 }
-#ergebnisse div p {
+#ergebnisse .ergebnis p {
   margin: 0;
   padding: 0;
   color: var(--font-color-ergebnis-paragraph);
   font-weight: 400;
 }
-#ergebnisse div:hover {
+#ergebnisse .ergebnis:hover {
   -webkit-box-shadow: 0px 13px 0px -5px var(--shadow-ergebnis-div);
           box-shadow: 0px 13px 0px -5px var(--shadow-ergebnis-div);
   -webkit-transform: translateY(12px);
           transform: translateY(12px);
 }
-#ergebnisse div[active] {
+#ergebnisse .ergebnis[active] {
   -webkit-box-shadow: 0px 19px 0px -5px var(--shadow-ergebnis-div-active);
           box-shadow: 0px 19px 0px -5px var(--shadow-ergebnis-div-active);
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
 }
-#ergebnisse div[active] h4 {
+#ergebnisse .ergebnis[active] h4 {
   color: var(--font-color-ergebnis-heading-active);
 }
-#ergebnisse div[active] p {
+#ergebnisse .ergebnis[active] p {
   color: var(--font-color-ergebnis-paragraph-active);
 }
-#ergebnisse div[active]:hover {
+#ergebnisse .ergebnis[active]:hover {
   -webkit-box-shadow: 0px 13px 0px -5px var(--shadow-ergebnis-div);
           box-shadow: 0px 13px 0px -5px var(--shadow-ergebnis-div);
   -webkit-transform: translateY(12px);
           transform: translateY(12px);
-}
-
-#clear_search_history {
-  display: none;
-  position: absolute;
-  right: calc((100vw - var(--container)) / 2);
-  top: 9rem;
-  z-index: 980;
 }
 
 @media (max-width: 40em) {

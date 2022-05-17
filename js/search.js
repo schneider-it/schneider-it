@@ -60,15 +60,13 @@ $("#search").on("keyup", function (e) {
                 document
                     .querySelector(".search_div")
                     .setAttribute("data-after", "Press Enter to open the first result!");
+
+            BuildErgebnisse(ergebnisse);
         } else {
             // search_history = JSON.parse(localStorage.getItem("search_history"));
-            BuildSearchHistory();
-            document
-                .querySelector(".search_div")
-                .setAttribute("data-after", "Press Enter to open your latest result!");
+            if (pattern != "") BuildSearchHistory(false);
+            else BuildSearchHistory();
         }
-
-        BuildErgebnisse(ergebnisse);
     }
 });
 
@@ -76,13 +74,13 @@ function BuildErgebnisse(ergebnisse) {
     let container = document.getElementById("ergebnisse");
     container.innerHTML = "";
 
-    let clear_search_history = document.getElementById("clear_search_history");
-    clear_search_history.style.display = "none";
+    // let clear_search_history = document.getElementById("clear_search_history");
+    // clear_search_history.style.display = "none";
 
     for (let i = 0; i < ergebnisse.length; i++) {
         container.insertAdjacentHTML(
             "beforeend",
-            "<div onclick=\"OnClickErgebnis('" +
+            "<div class='ergebnis' onclick=\"OnClickErgebnis('" +
                 ergebnisse[i].item.title +
                 "', '" +
                 ergebnisse[i].item.location +
@@ -102,20 +100,53 @@ function BuildErgebnisse(ergebnisse) {
     return false;
 }
 
-function BuildSearchHistory() {
-    const container = document.getElementById("ergebnisse");
-    if (search_history.length == 0) container.innerHTML = "";
-    else if (search_history.length == 1) container.innerHTML = "<h6>Latest Result:</h6>";
-    else if (search_history.length > 1) container.innerHTML = "<h6>Latest Results:</h6>";
+function BuildSearchHistory(results_exist) {
+    if (search_history != "")
+        document
+            .querySelector(".search_div")
+            .setAttribute("data-after", "Press Enter to open your latest result!");
+    else document.querySelector(".search_div").setAttribute("data-after", "");
 
-    let clear_search_history = document.getElementById("clear_search_history");
-    if (search_history.length != 0) clear_search_history.style.display = "block";
-    else clear_search_history.style.display = "none";
+    const container = document.getElementById("ergebnisse");
+    container.innerHTML = "";
+
+    if (results_exist == false) {
+        container.innerHTML =
+            "<h5>Your search did not return any results.</h5>" +
+            "<h6>Suggestions:</h6>" +
+            "<ul>" +
+            "<li>Make sure all words are spelled correctly.</li>" +
+            "<li>Try other search terms.</li>" +
+            "<li>Try more general search terms.</li>" +
+            "</ul>";
+        if (search_history.length >= 1) container.innerHTML += "<hr>";
+    }
+    if (search_history.length == 0) container.innerHTML += "";
+    else if (search_history.length == 1)
+        // Einzahl
+        container.innerHTML +=
+            "<div id='latest-result-heading' class='flexbox' space-between centered><h5>Latest Result:</h5>" +
+            "<div id='clear_search_history' class='button' onclick='ClearSearchHistory()' small>" +
+            "Clear Latest Result&nbsp;&nbsp;&nbsp;<i class='fa-solid fa-arrow-down'></i>" +
+            "</div>" +
+            "</div>";
+    else if (search_history.length > 1)
+        // Mehrzahl
+        container.innerHTML +=
+            "<div id='latest-result-heading' class='flexbox' space-between centered><h5>Latest Results:</h5>" +
+            "<div id='clear_search_history' class='button' onclick='ClearSearchHistory()' small>" +
+            "Clear Latest Results&nbsp;&nbsp;&nbsp;<i class='fa-solid fa-arrow-down'></i>" +
+            "</div>" +
+            "</div>";
+
+    // let clear_search_history = document.getElementById("clear_search_history");
+    // if (search_history.length != 0) clear_search_history.style.display = "block";
+    // else clear_search_history.style.display = "none";
 
     for (let i = 0; i < search_history.length; i++) {
         container.insertAdjacentHTML(
             "beforeend",
-            "<div onclick=\"OnClickErgebnis('" +
+            "<div class='ergebnis' onclick=\"OnClickErgebnis('" +
                 search_history[i].title +
                 "', '" +
                 search_history[i].location +
@@ -136,7 +167,8 @@ function BuildSearchHistory() {
 }
 
 document.onkeydown = function (e) {
-    if (e.key === "Tab" || e.keyCode === 9) {
+    if (e.key === "Tab" || e.key == "ArrowDown" || e.key == "ArrowUp") {
+        e.preventDefault();
         if (!window.matchMedia("(pointer: coarse)").matches && ergebnisse != "")
             document
                 .querySelector(".search_div")
@@ -146,6 +178,9 @@ document.onkeydown = function (e) {
         if (active_element == null) {
             let container = document.getElementById("ergebnisse");
             let first_element = container.firstElementChild;
+            while (first_element.classList.contains("ergebnis") == false)
+                // Achtung
+                first_element = first_element.nextElementSibling;
             if (first_element != null) {
                 first_element.setAttribute("active", "");
                 setBackgroundofErgebnis(first_element);
@@ -154,9 +189,9 @@ document.onkeydown = function (e) {
         }
         let new_active_element;
 
-        if (!e.shiftKey) {
+        if (!e.shiftKey || e.key == "ArrowDown") {
             new_active_element = active_element.nextElementSibling;
-        } else if (e.shiftKey) {
+        } else if (e.shiftKey || e.key == "ArrowUp") {
             new_active_element = active_element.previousElementSibling;
         }
 
@@ -169,7 +204,7 @@ document.onkeydown = function (e) {
         } else {
             active_element.removeAttribute("active");
             let container = document.getElementById("ergebnisse");
-            if (!e.shiftKey) {
+            if (!e.shiftKey || e.key == "ArrowDown") {
                 let first_element = container.firstElementChild;
                 let last_element = container.lastElementChild;
                 if (first_element != null) {
@@ -178,7 +213,7 @@ document.onkeydown = function (e) {
                     setBackgroundofErgebnis(first_element);
                     first_element.scrollIntoViewIfNeeded(true);
                 }
-            } else if (e.shiftKey) {
+            } else if (e.shiftKey || e.key == "ArrowUp") {
                 let last_element = container.lastElementChild;
                 let first_element = container.firstElementChild;
                 if (last_element != null) {
@@ -231,7 +266,7 @@ function LoadSearchHistory() {
 function ClearSearchHistory() {
     search_history = [];
     localStorage.setItem("search_history", JSON.stringify(search_history));
-    BuildSearchHistory();
+    BuildSearchHistory(false);
 }
 
 function OnClickErgebnis(title, location, prettypath) {
@@ -259,13 +294,25 @@ function OnClickErgebnis(title, location, prettypath) {
 }
 
 function setBackgroundofErgebnis(element) {
-    if (element.children[1].innerHTML.includes("Datenbanken"))
+    if (
+        element.children[1].innerHTML.includes("Datenbanken") ||
+        element.children[0].innerHTML.includes("Datenbanken")
+    )
         element.style.background = "hsl(295, 80%, 69%)";
-    else if (element.children[1].innerHTML.includes("Programmiersprachen"))
+    else if (
+        element.children[1].innerHTML.includes("Programmiersprachen") ||
+        element.children[0].innerHTML.includes("Programmiersprachen")
+    )
         element.style.background = "hsl(208, 80%, 50%)";
-    else if (element.children[1].innerHTML.includes("Netzwerktechnik"))
+    else if (
+        element.children[1].innerHTML.includes("Netzwerktechnik") ||
+        element.children[0].innerHTML.includes("Netzwerktechnik")
+    )
         element.style.background = "hsl(37, 80%, 51%)";
-    else if (element.children[1].innerHTML.includes("Systemtechnik"))
+    else if (
+        element.children[1].innerHTML.includes("Systemtechnik") ||
+        element.children[0].innerHTML.includes("Systemtechnik")
+    )
         element.style.background = "hsl(158, 95%, 34%)";
 }
 

@@ -21,6 +21,11 @@
         z-index: 1;
         transition: color var(--transition-long) ease-in-out;
 
+        & * {
+            transition: color var(--transition-long) ease-in-out 0;
+            z-index: 0;
+        }
+
         &::before {
             content: "";
             position: absolute;
