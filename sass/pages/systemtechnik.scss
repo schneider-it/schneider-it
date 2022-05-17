@@ -1,4 +1,5 @@
 @use "../abstracts/colors" as *;
-:root {
+
+body[colorTheme="dark"] {
     --main-color: var(--lime);
 }

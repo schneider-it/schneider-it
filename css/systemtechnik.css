@@ -85,6 +85,6 @@ body[colorTheme=light] {
   --font-color-ergebnis-paragraph-active: hsl(0, 0%, 90%);
 }
 
-:root {
+body[colorTheme=dark] {
   --main-color: var(--lime);
 }

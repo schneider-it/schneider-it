@@ -1336,7 +1336,7 @@ footer .footer-vogel img {
   position: absolute;
   -webkit-transform-origin: left center;
           transform-origin: left center;
-  color: var(--font-color-navigation-hover);
+  color: var(--main-color);
   top: calc(220% - 15px);
   left: 2rem;
   -webkit-transform: skewY(30deg);
@@ -1347,8 +1347,8 @@ footer .footer-vogel img {
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
 }
 .navigation .navlink:hover .link-text {
-  -webkit-transform: translateY(-220%) skewY(6deg);
-          transform: translateY(-220%) skewY(6deg);
+  -webkit-transform: translateY(-200%) skewY(6deg);
+          transform: translateY(-200%) skewY(6deg);
 }
 .navigation .navlink:hover .link-text::after {
   -webkit-transform: skewY(-6deg);
@@ -1383,11 +1383,13 @@ footer .footer-vogel img {
   z-index: 990;
 }
 
-.back_button {
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
+@media (min-width: 60em) {
+  .navigation {
+    width: 40rem;
+    -webkit-transform: translateX(40rem);
+            transform: translateX(40rem);
+  }
 }
-
 .back_button {
   position: fixed;
   top: 2rem;
@@ -1400,6 +1402,8 @@ footer .footer-vogel img {
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background var(--transition-short) ease-in-out, color var(--transition-short) ease-in-out, opacity var(--transition-middle) ease-in-out;
   transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1), background var(--transition-short) ease-in-out, color var(--transition-short) ease-in-out, opacity var(--transition-middle) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   z-index: 995;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
 }
 .back_button > a {
   width: 100%;
@@ -1425,13 +1429,6 @@ footer .footer-vogel img {
   color: var(--font-color-light);
 }
 
-@media (min-width: 60em) {
-  .navigation {
-    width: 40rem;
-    -webkit-transform: translateX(40rem);
-            transform: translateX(40rem);
-  }
-}
 .search_button {
   position: fixed;
   top: 2rem;
@@ -1497,6 +1494,11 @@ footer .footer-vogel img {
 .navigation .themeSwitch i {
   width: 40%;
   height: 40%;
+  -webkit-transition: color var(--transition-short) ease-in-out;
+  transition: color var(--transition-short) ease-in-out;
+}
+.navigation .themeSwitch:hover i {
+  color: var(--main-color);
 }
 .navigation[active] .themeSwitch {
   -webkit-transition: opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short)), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1545,6 +1547,9 @@ body[colorTheme=light] .sun {
 .navigation .tastenkombinationenSwitch i {
   width: 40%;
   height: 40%;
+}
+.navigation .tastenkombinationenSwitch:hover i {
+  color: var(--main-color);
 }
 .navigation[active] .tastenkombinationenSwitch {
   -webkit-transition: opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short)), -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
