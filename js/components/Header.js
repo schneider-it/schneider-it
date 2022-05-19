@@ -1,5 +1,5 @@
-import * as Toggle from "./Toggle.js";
-import * as Cursor from "./Cursor.js";
+import * as Toggle from "./ui/Toggle.js";
+import * as Cursor from "./ui/Cursor.js";
 
 export function LoadHeader() {
     if (document.getElementById("header") != null) {

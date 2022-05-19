@@ -1,10 +1,10 @@
 import * as Header from "./Header.js";
 import * as Footer from "./Footer.js";
-import * as Tilt from "./VanillaTilt.js";
-import * as ScrollIndicator from "./ScrollIndicator.js";
-import * as Button from "./Button.js";
-import * as Card from "./Card.js";
-import * as Code from "./Code.js";
+import * as Tilt from "../librairy/VanillaTilt.js";
+import * as ScrollIndicator from "./ui/ScrollIndicator.js";
+import * as Button from "./ui/Button.js";
+import * as Card from "./ui/Card.js";
+import * as Code from "./ui/Code.js";
 
 OnLoadAll();
 

@@ -1,4 +1,4 @@
-import * as LoadAndScroll from "./Load&Scroll.js";
+import * as LoadAndScroll from "./components/Load&Scroll.js";
 
-import * as Confetti from "./Confetti.js";
-import * as FontAwesome from "./FontAwesome.js";
+import * as Confetti from "./components/ui/Confetti.js";
+import * as FontAwesome from "./font/FontAwesome.js";
