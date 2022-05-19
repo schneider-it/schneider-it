@@ -5,7 +5,9 @@
     max-height: 40rem;
     max-width: 100%;
     margin-block: 1.5rem;
-    border-radius: var(--border-radius);
+    &:not([no-border-radius]) {
+        border-radius: var(--border-radius);
+    }
 
     &[invert] {
         filter: invert(1);

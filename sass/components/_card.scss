@@ -51,13 +51,21 @@
                 user-select: none;
                 transition: top var(--transition-long) var(--bounce-easing);
 
-                & img {
+                & :is(img, i) {
                     border-radius: 10000px;
                     width: 70%;
                     height: 70%;
                     object-fit: cover;
                     transition: transform 0.7s cubic-bezier(0.6, 0, 0.4, 1) 0.1s;
                     transform: scale(0.9);
+                }
+
+                & i::before {
+                    font-size: 3rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
             }
 
@@ -106,7 +114,8 @@
                     & .card-img {
                         top: 20%;
 
-                        & img {
+                        & img,
+                        i {
                             transform: scale(0.9) rotate(360deg);
                         }
                     }

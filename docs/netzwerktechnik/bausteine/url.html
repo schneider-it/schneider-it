@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="stylesheet" href="/css/netzwerktechnik.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
+        <title>Schneider IT</title>
+    </head>
+    <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
+        <div class="scroll_indicator_div">
+            <div class="scroll_indicator" id="scroll_indicator"></div>
+        </div>
+
+        <div id="header"></div>
+
+        <div class="back_button">
+            <a href="../bausteine.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+
+        <div class="title searchable">
+            <i class="fa-brands fa-firefox"></i>
+            <h1>URL</h1>
+        </div>
+        <div></div>
+
+        <div class="section searchable">
+            <div class="container" style="margin-top: 10vh">
+                <div>
+                    <h3 id="URL_-_Uniform_Resource_Locator">URL - Uniform Resource Locator</h3>
+                    <div>
+                        Der URL ist ein wichtiger Bestandteil vieler Protokolle des Internets. URL
+                        gehört, wie HTTP und HTML, zum World Wide Web (WWW). Nahezu alle Programme,
+                        die auf Internet-Ressourcen zugreifen verwenden dazu URLs. Obwohl es im
+                        eigentlichen Sprachgebrauch gerne als "die" URL bezeichnet wird, heißt es
+                        korrekterweise "der" URL, von "der" Uniform Resource Locator.
+                        <h4 id="URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)">
+                            Aufbau eines URL (Beispiel)
+                        </h4>
+                        <div>
+                            <div class="code">
+                                Ressourcentyp://User:Passwort@Host.Domain.TLD:Port/Pfad/Datei?Parameter
+                            </div>
+                            Der URL berücksichtigt sehr viele Adressierungsarten mit Benutzername,
+                            Passwort, lokale, nichtlokale Ressourcen und sogar Parameter. Der Aufbau
+                            kann deshalb äußerst komplex sein.
+                            <h5
+                                id="URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Ressourcentyp://"
+                            >
+                                Ressourcentyp://
+                            </h5>
+                            <div>
+                                Der Ressourcentyp bezeichnet das Protokoll auf der Anwendungsebene.
+                                Mit diesem Protokoll wird die Ressource angesprochen. Protokolle
+                                wären z. B. HTTP, NNTP, FTP, etc. Dem Protokoll folgt ein
+                                Doppelpunkt, der den Ressourcentyp vom restlichen Ressourcenzeiger
+                                trennt. Der Doppel-Slash (Schrägstriche) deutet auf eine nicht
+                                lokale Ressource hin, also außerhalb der eigenen Station
+                                (https://www.elektronik-kompendium.de/). Eine lokale Ressource führt
+                                meist zum Ausführen einer Aktion oder einer Anwendung. Z. B. wird
+                                bei mailto:kontakt@das-ELKO.de der E-Mail-Client aufgerufen. Keine
+                                Ausnahme bildet der Ressourcentyp file: (z. B. file:///c:/windows/).
+                                Der Dritte Slash ist kein Fehler, sondern gehört bereits zum
+                                Ressourcenzeiger und kennzeichnet die höchste Ebene, über den
+                                Laufwerken, des Dateisystems.
+                            </div>
+                            <h5
+                                id="URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-User:Passwort@"
+                            >
+                                User:Passwort@
+                            </h5>
+                            <div>
+                                Beide Werte enthalten einen Benutzername und Passwort, die durch
+                                einen Doppelpunkt voneinander getrennt sind. Diese Angaben sind
+                                erforderlich, wenn eine Ressource eine Authentifizierung erwartet.
+                                Selbige Schreibweise ist auch ohne Passwort möglich. Das führt dann
+                                zur Schreibweise einer E-Mail-Adresse, welche schon lange Zeit vor
+                                der URL bekannt war. Alle weitere Angaben werden durch einen
+                                Klammeraffen (at, @) voneinander getrennt. Vorsicht: Benutzername
+                                und Passwort werden in Klartext übertragen, wenn das
+                                Anwendungsprotokoll keine Verschlüsselung vorsieht.
+                            </div>
+                            <h5
+                                id="URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Host.Domain.TLD"
+                            >
+                                Host.Domain.TLD
+                            </h5>
+                            <div>
+                                Dieser Teil besteht aus dem Host, der Domain und der
+                                Top-Level-Domain (TLD), die mit einem Punkt voneinander getrennt
+                                werden. Es handelt sich dabei um die Adresse des Computers, auf der
+                                sich die Ressource befindet. Alternativ ist hier auch die Angabe
+                                einer IP-Adresse möglich. Damit wird DNS umgangen.
+                            </div>
+                            <h5
+                                id="URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-:Port"
+                            >
+                                :Port
+                            </h5>
+                            <div>
+                                Hierbei ist der Port von UDP und TCP gemeint. In der Regel ist jedem
+                                Kommunikationsprotokoll ein Port fest zugewiesen. Über diese Ports
+                                stellen die Protokolle die Verbindung her. Wird der Port
+                                weggelassen, verwendet die Anwendung den Standard-Port des
+                                Ressourcentyps (Protokoll).
+                            </div>
+                            <h5
+                                id="URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-/Pfad/Datei"
+                            >
+                                /Pfad/Datei
+                            </h5>
+                            <div>
+                                Diese Angabe verweist auf den Standort der Ressource des
+                                adressierten Zielsystems. Üblicherweise wird darin die teilweise
+                                identische Verzeichnisstruktur abgebildet.
+                            </div>
+                            <h5
+                                id="URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Parameter"
+                            >
+                                Parameter
+                            </h5>
+                            <div>
+                                Enthält die Ressource ausführbare Bestandteile, so können diese mit
+                                Parametern gefüttert oder gesteuert werden. Auf diese Weise werden
+                                Benutzereingaben übermittelt, verarbeitet und sogar gespeichert. Die
+                                Parameter werden durch ein Fragezeichen (?) vom Rest der URL
+                                getrennt. Nicht jeder Ressourcentyp kennt Parameter. Außerdem gibt
+                                es unterschiedliche Verfahren und nicht alle Parameter sind für das
+                                entfernte Zielsystem bestimmt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
+        <script defer src="/js/Lightbox.js"></script>
+        <script defer src="/js/FontAwesome.js"></script>
+
+        <script defer type="text/javascript" src="/js/app.js"></script>
+    </body>
+</html>

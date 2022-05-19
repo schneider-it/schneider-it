@@ -1644,7 +1644,7 @@ table tr td.right {
   margin-top: 8rem;
   grid-template-columns: 3rem 1fr;
 }
-.title > img {
+.title > :is(img, i) {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -1654,8 +1654,16 @@ table tr td.right {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.title > img[img-border-radius] {
+.title > :is(img, i)[img-border-radius] {
   border-radius: 10000px;
+}
+.title i::before {
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .title > h1 {
   display: -webkit-inline-box;
@@ -1681,10 +1689,12 @@ table tr td.right {
   position: relative;
   display: inline-block;
   color: var(--font-color-link);
-  font-family: "Youtube Sans", sans-serif;
   -webkit-transition: color var(--transition-short) ease-out;
   transition: color var(--transition-short) ease-out;
   cursor: pointer;
+}
+.link[youtube-font] {
+  font-family: "Youtube Sans", sans-serif;
 }
 .link::before {
   content: "";
@@ -1777,7 +1787,7 @@ table tr td.right {
   -webkit-transition: top var(--transition-long) var(--bounce-easing);
   transition: top var(--transition-long) var(--bounce-easing);
 }
-.cards > a .card .card-img img {
+.cards > a .card .card-img :is(img, i) {
   border-radius: 10000px;
   width: 70%;
   height: 70%;
@@ -1789,6 +1799,14 @@ table tr td.right {
   transition: transform 0.7s cubic-bezier(0.6, 0, 0.4, 1) 0.1s, -webkit-transform 0.7s cubic-bezier(0.6, 0, 0.4, 1) 0.1s;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+.cards > a .card .card-img i::before {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .cards > a .card .card-text {
   position: relative;
@@ -1827,7 +1845,8 @@ table tr td.right {
   .cards > a .card:hover .card-img {
     top: 20%;
   }
-  .cards > a .card:hover .card-img img {
+  .cards > a .card:hover .card-img img,
+.cards > a .card:hover .card-img i {
     -webkit-transform: scale(0.9) rotate(360deg);
             transform: scale(0.9) rotate(360deg);
   }
@@ -1871,6 +1890,8 @@ table tr td.right {
   max-height: 40rem;
   max-width: 100%;
   margin-block: 1.5rem;
+}
+.img:not([no-border-radius]) {
   border-radius: var(--border-radius);
 }
 .img[invert] {

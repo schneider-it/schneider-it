@@ -10,7 +10,7 @@
     margin-top: 8rem;
     grid-template-columns: 3rem 1fr;
 
-    & > img {
+    & > :is(img, i) {
         position: relative;
         top: 50%;
         transform: translateY(-50%);
@@ -21,6 +21,14 @@
         &[img-border-radius] {
             border-radius: 10000px;
         }
+    }
+
+    & i::before {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     & > h1 {

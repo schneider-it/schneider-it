@@ -5,9 +5,12 @@
     position: relative;
     display: inline-block;
     color: var(--font-color-link);
-    font-family: "Youtube Sans", sans-serif;
     transition: color var(--transition-short) ease-out;
     cursor: pointer;
+
+    &[youtube-font] {
+        font-family: "Youtube Sans", sans-serif;
+    }
 
     &::before {
         content: "";

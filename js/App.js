@@ -37,10 +37,10 @@ function OnScroll() {
     ScrollIndicator();
 }
 
-// function OnKeyDown() {
-//     e = window.event;
-//     KeyCombination(e);
-// }
+function OnKeyDown() {
+    e = window.event;
+    KeyCombination(e);
+}
 
 function VanillaTiltEffect() {
     VanillaTilt.init(document.querySelectorAll(".card"), {
@@ -406,7 +406,7 @@ function KeyCombination(e) {
 
     if (!window.matchMedia("(pointer: coarse)").matches) {
         if (e.key === "/" || e.key === "Tab") {
-            window.open("/tools/search.html", "_self");
+            window.open("/components/search.html", "_self");
             return false;
         }
 
@@ -416,25 +416,6 @@ function KeyCombination(e) {
             (e.key === "Tab" && e.shiftKey)
         ) {
             history.back();
-            return false;
-        }
-
-        if (e.altKey) {
-            switch (e.key) {
-                case "j":
-                    window.scrollBy({ top: 80, left: 0, behavior: "instant" });
-                    return false;
-                case "k":
-                    window.scrollBy({ top: -80, left: 0, behavior: "instant" });
-                    return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-                // case 'n': window.open("/tools/search.html", "_self"); return false;
-            }
             return false;
         }
     }
