@@ -6,6 +6,7 @@ function OnLoadAll() {
     AddCopyButtons();
     RandomizeButtonHover();
     LoadButtonNextPrev();
+    TableScroll();
 }
 
 function OnLoadIndex() {
@@ -22,6 +23,7 @@ function OnLoadLeaf() {
     AddCopyButtons();
     RandomizeButtonHover();
     LoadButtonNextPrev();
+    TableScroll();
 }
 
 function OnLoadSearch() {
@@ -160,6 +162,15 @@ function ShowCopyAccess(id) {
     setTimeout(function () {
         code.removeAttribute("copied");
     }, 1200);
+}
+
+function TableScroll() {
+    // let tables = document.querySelectorAll("table");
+    // console.log(tables);
+    // tables.forEach((table) => {
+    //     table.draggable({ axis: "x" });
+    // });
+    $("table").draggable({ axis: "x" });
 }
 
 function RandomizeButtonHover() {

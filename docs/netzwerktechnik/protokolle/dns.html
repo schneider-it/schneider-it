@@ -50,9 +50,9 @@
                     Das Domain Name System ist ein System zur Auflösung von Computernamen in
                     IP-Adressen und umgekehrt. DNS kennt keine zentrale Datenbank. Die Informationen
                     sind auf vielen tausend Nameservern (DNS-Server) verteilt.<br />
-                    Möchte man zum Beispiel die Webseite www.elektronik-kompendium.de besuchen, dann
-                    fragt der Browser einen DNS-Server, der in der IP-Konfiguration hinterlegt ist.
-                    Das ist in der Regel der Router des Internet-Zugangs. Je nach dem, ob die
+                    Möchte man zum Beispiel die Webseite www.schneider-it.at besuchen, dann fragt
+                    der Browser einen DNS-Server, der in der IP-Konfiguration hinterlegt ist. Das
+                    ist in der Regel der Router des Internet-Zugangs. Je nach dem, ob die
                     DNS-Anfrage beantwortet werden kann oder nicht, wird eine Kette weiterer
                     DNS-Server befragt, bis die Anfrage positiv beantwortet und eine IP-Adresse an
                     den Browser zurück geliefert werden kann.
@@ -105,7 +105,7 @@
                         Punkt beginnt. Dieser Punkt ist die Wurzel bzw. Root. In der Regel lässt man
                         den Punkt einfach weg, weil er nur symbolischen Charakter hat.
                         <br /><br />
-                        <table>
+                        <table id="table">
                             <tr>
                                 <th>Computername (Host oder Dienst)</th>
                                 <th>Second-Level-Domain (SLD)</th>
@@ -113,13 +113,13 @@
                             </tr>
                             <tr>
                                 <td>www.</td>
-                                <td>elektronik-kompendium.</td>
-                                <td>de.</td>
+                                <td>schneider-it.</td>
+                                <td>at.</td>
                             </tr>
                             <tr>
                                 <td>ftp.</td>
-                                <td>elektronik-kompendium.</td>
-                                <td>de.</td>
+                                <td>schneider-it.</td>
+                                <td>at.</td>
                             </tr>
                         </table>
 
@@ -136,8 +136,8 @@
                             <tr>
                                 <td>www.</td>
                                 <td>dse-faq.</td>
-                                <td>elektronik-kompendium.</td>
-                                <td>de</td>
+                                <td>schneider-it.</td>
+                                <td>at.</td>
                             </tr>
                         </table>
 
@@ -153,15 +153,15 @@
                         und eingesetzt werden. Die Second-Level-Domain bildet unter der
                         Top-Level-Domain einen Domain-Namensraum, der es der Organisation ermöglicht
                         einen Server mit dem Namen "www" zu betreiben, der im Internet dann zum
-                        Beispiel unter "www.elektronik-kompendium.de" zu erreichen ist.<br />
+                        Beispiel unter "www.schneider-it.at" zu erreichen ist.<br />
                         Für weitere Unterteilungen existiert noch eine Third-Level-Domain, die auch
                         als Sub-Level-Domain oder Subdomain bezeichnet wird. Ganz am Ende der Kette
                         (am Anfang des Domain-Namens) wird dann der optionale Hostname des Computers
                         eingesetzt.
                         <br /><br />
 
-                        Eine so zusammengesetzte Adresse (zum Beispiel www.elektronik-kompendium.de)
-                        ist ein sogenannter Fully Qualified Domain Name (FQDN).
+                        Eine so zusammengesetzte Adresse (zum Beispiel www.schneider-it.at) ist ein
+                        sogenannter Fully Qualified Domain Name (FQDN).
                     </div>
                     <h4 id="DNS_-_Domain_Name_System-Organisatorische_Top-Level-Domains_(Auszug)">
                         Organisatorische Top-Level-Domains (Auszug)
@@ -334,6 +334,7 @@
                     <h4 id="DNS_-_Domain_Name_System-DNS-Zonen">DNS-Zonen</h4>
                     <div>
                         <img
+                            loading="lazy"
                             src="https://www.elektronik-kompendium.de/sites/net/bilder/09011414.gif"
                             alt="DNS-Zonen"
                             class="img"
@@ -529,6 +530,7 @@
                     <h4 id="DNS_-_Domain_Name_System-Rekursion">Rekursion</h4>
                     <div>
                         <img
+                            loading="lazy"
                             src="https://www.elektronik-kompendium.de/sites/net/bilder/09011411.gif"
                             alt="Rekursive DNS-Abfrage"
                             class="img"
@@ -547,6 +549,7 @@
                     <h4 id="DNS_-_Domain_Name_System-Iteration">Iteration</h4>
                     <div>
                         <img
+                            loading="lazy"
                             src="https://www.elektronik-kompendium.de/sites/net/bilder/09011412.gif"
                             alt="Rekursive DNS-Abfrage"
                             class="img"
@@ -605,6 +608,10 @@
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"
         ></script>
+        <!-- <script
+            src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"
+            type="text/javascript"
+        ></script> -->
         <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
         <script defer src="/js/Lightbox.js"></script>
         <script defer src="/js/FontAwesome.js"></script>

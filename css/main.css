@@ -543,10 +543,10 @@ footer {
 footer > .footer-container {
   position: relative;
   display: inline-grid;
-  row-gap: 2.5rem;
-  -webkit-column-gap: 2rem;
-     -moz-column-gap: 2rem;
-          column-gap: 2rem;
+  row-gap: 3rem;
+  -webkit-column-gap: 3rem;
+     -moz-column-gap: 3rem;
+          column-gap: 3rem;
 }
 footer > .footer-container > .footer-element {
   min-width: 10rem;
@@ -1602,11 +1602,17 @@ body[colorTheme=light] .sun {
 
 table {
   width: 100%;
+  position: relative;
   margin: 1.5rem 0;
   border-collapse: collapse;
   background-color: var(--background-color-3);
   border: 0.2rem solid var(--border-color);
   border-radius: var(--border-radius);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 table tr {
   width: auto;
