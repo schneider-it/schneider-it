@@ -236,8 +236,8 @@ document.onkeydown = function (e) {
         if (active_element != null) {
             for (var i = 0; i < ergebnisse.length; i++) {
                 if (
-                    active_element.children[0].innerHTML == ergebnisse[i].title &&
-                    active_element.children[1].innerHTML == ergebnisse[i].prettypath
+                    active_element.children[0].innerHTML == ergebnisse[i].item.title &&
+                    active_element.children[1].innerHTML == ergebnisse[i].item.prettypath
                 )
                     index = i;
             }
@@ -321,7 +321,6 @@ $("#search_form").submit(function () {
 });
 
 function EscapeHTML(unsafe) {
-    console.log(unsafe);
     return unsafe
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")

@@ -282,6 +282,174 @@
                                 </tr>
                             </table>
                         </div>
+
+                        <h4 id="Namensauflösung-hosts">hosts</h4>
+                        <div>
+                            Jedes TCP/IP-Betriebssystem hat eine Datei mit dem Namen "hosts". In
+                            dieser Datei sind IP-Adressen und Computernamen tabellarisch
+                            aufgelistet. Weil diese Datei händisch gepflegt werden muss, trägt man
+                            hier temporär nur die Adressen und Namen lokaler Systeme ein
+                        </div>
+                        <h4 id="Namensauflösung-lmhosts">lmhosts</h4>
+                        <div>
+                            Die Datei "lmhosts" ist zusätzlich in Windows-Betriebssystemen zu
+                            finden. In dieser Datei sind speziell die für Windows-Netzwerke
+                            wichtigen NetBIOS-Namen für die Namensauflösung enthalten
+                        </div>
+                        <h4 id="Namensauflösung-DNS_-_Domain_Name_System">
+                            DNS - Domain Name System
+                        </h4>
+                        <div>
+                            DNS ist ein dezentrales und hierarchisch angeordnetes System zur
+                            Auflösung von Domain-Namen in IP-Adressen. Ein Client, der einen
+                            Domain-Namen in eine IP-Adresse auflösen will, stellt eine Anfrage an
+                            einen DNS-Server. Kann dieser DNS-Server die Anfrage nicht beantworten,
+                            dann befragt er einen übergeordneten DNS-Server, bis eine IP-Adresse
+                            ermittelt und an den anfragenden Client zurück geliefert werden kann.
+                        </div>
+                        <h4 id="Namensauflösung-WINS_-_Windows_Internet_Name_Service">
+                            WINS - Windows Internet Name Service
+                        </h4>
+                        <div>
+                            WINS ist ein auf Windows basierendes System zur Namensauflösung. Es baut
+                            auf den NetBIOS-Dienst von Windows auf. WINS wurde eingeführt, um die
+                            NetBIOS-Rundsprüche, die zur Namensauflösung verwendet werden, zu
+                            reduzieren. Wie bei DNS greift der Client auf den WINSServer zu, um die
+                            IP-Adresse zu einem Rechnernamen herauszufinden.
+                        </div>
+                        <h4 id="Namensauflösung-Schritt_für_Schritt:_Ablauf_einer_Namensauflösung">
+                            Schritt für Schritt: Ablauf einer Namensauflösung
+                        </h4>
+                        <div>
+                            Der folgende Ablauf soll eine mögliche Namensauflösung darstellen. In
+                            bestimmten Systemen und der praktischen Anwendung kann der Ablauf von
+                            diesem hier abweichen. Der Ablauf geht davon aus, dass die ursprüngliche
+                            Anfrage zur Namensauflösung erst vom verantwortlichen Nameserver
+                            (autoritativ) beantwortet werden kann. In der Praxis kommt es häufig
+                            vor, dass die Namensauflösung durch einen Resolver (Stellvertreter)
+                            erfolgreich beantwortet werden kann.
+                            <a
+                                href="https://www.elektronik-kompendium.de/sites/net/bilder/09011413.gif"
+                                data-lightbox="lightbox"
+                                data-title="Ablauf der Namensauflösung"
+                            >
+                                <img
+                                    src="https://www.elektronik-kompendium.de/sites/net/bilder/09011413.gif"
+                                    alt="Ablauf der Namensauflösung"
+                                    class="img"
+                                    invert
+                                    no-border-radius
+                                />
+                            </a>
+                            <ol>
+                                <li>
+                                    Der Client stellt seine Anfrage zur Auflösung eines Computer-
+                                    oder Domain-Namens an seinen lokalen DNS-Resolver. Der schaut
+                                    zuerst in die "hosts"-Systemdatei, ob sich dort ein statischer
+                                    Eintrag für den Computer- oder Domain-Namen befindet. Danach
+                                    schaut der Client in seinen eigenen Cache.
+                                </li>
+                                <li>
+                                    Ist der lokale Resolver nicht fündig geworden, befragt er den
+                                    DNS-Server im lokalen Netzwerk. In der Regel ist das der Router
+                                    für den Internet-Zugang. Bei diesem DNS-Server handelt es sich
+                                    meistens um einen DNS-Resolver bzw. Proxy mit einem
+                                    Zwischenspeicher (Cache) handelt. Manchmal ist er auch nur ein
+                                    Relay.
+                                </li>
+                                <li>
+                                    Dieser DNS-Resolver befragt den DNS-Server beim
+                                    Internet-Service-Provider (ISP). Wie ab hier die Abfragefolge
+                                    aussieht hängt davon ab, wie ISP-Nameserver die die
+                                    DNS-Hierarchie angebunden ist.
+                                </li>
+                                <li>
+                                    Denkbare wäre, dass der ISB-Nameserver den Root-Nameserver für
+                                    die Verantwortlichkeit der Top-Level-Domain (.com, .net, .de,
+                                    ...) befragt. Der Root-Nameserver delegiert die Anfrage an den
+                                    für die Zone verantwortlichen NIC-DNS-Server. Für die TLD ".de"
+                                    wäre das die DENIC.
+                                </li>
+                                <li>
+                                    Der ISP-Nameserver befragt dann den DENIC-Nameserver, der die
+                                    Adresse des autoritativen Nameserver zurückliefert.
+                                </li>
+                                <li>
+                                    Der ISP-Nameserver befragt dann den für die Zone zuständigen
+                                    autoritativen Nameserver, der die IP-Adresse zurückliefert.
+                                </li>
+                                <li>
+                                    Der ISP-Nameserver übergibt die IP-Adresse an den DNS-Server des
+                                    Internet-Routers.
+                                </li>
+                                <li>
+                                    Von dort wird die IP-Adresse an den lokalen Resolver gegeben.
+                                </li>
+                                <li>
+                                    Ganz am Schluss landet die IP-Adresse bei der anfragenden
+                                    Software.
+                                </li>
+                            </ol>
+                        </div>
+                        <h4 id="Namensauflösung-Zusätzliche_Namensauflösung_in_Windows">
+                            Zusätzliche Namensauflösung in Windows
+                        </h4>
+                        <div>
+                            <ul>
+                                <li>
+                                    Findet die Suche über den DNS-Server die IP-Adresse nicht, wird
+                                    der WINS-Server befragt.
+                                </li>
+                                <li>
+                                    Kennt auch dieser den Computernamen nicht, wird ein
+                                    NetBIOS-Rundspruch abgesetzt.
+                                </li>
+                                <li>
+                                    Als letzter Strohhalm bei der NetBIOS-Namensauflösung ist die
+                                    lmhosts-Datei.
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 id="Namensauflösung-Zeroconf_/_Bonjour_/_Avahi">
+                            Zeroconf / Bonjour / Avahi
+                        </h4>
+                        <div>
+                            Zeroconf, Bonjour und Avahi sind selbstkonfigurierende Verfahren für
+                            Adhoc-Netze auf Basis von IPv4 und IPv6. Im Prinzip handelt es sich um
+                            eine Sammlung bestehender Protokolle auf Basis von IP, DNS und NAT, um
+                            Netzwerkdienste, die in einem IP-Netz bereitgestellt werden, automatisch
+                            erkennen zu können, ohne das der Anwender irgendetwas manuell
+                            konfigurieren muss. Beispielsweise macht es Computernamen im lokalen
+                            Netzwerk bekannt. Auf diese Weise kann man auf die Konfiguration eines
+                            zentralen DNS-Servers im lokalen Netzwerk verzichten.
+                        </div>
+                        <h4 id="Namensauflösung-PNRP_-_Peer_Name_Resolution_Protocol">
+                            PNRP - Peer Name Resolution Protocol
+                        </h4>
+                        <div>
+                            PNRP ist ein Protokoll von Microsoft für die Namensauflösung in
+                            IPv6-Netzwerken. PNRP ermöglicht es, dass ein Rechner seine IP-Adressen
+                            mit einem Namen verknüpft und seine Dienste im lokalen Netzwerk
+                            anbietet. Damit hat es die gleiche Funktion, wie Bonjour (Zeroconf) von
+                            Apple.
+                        </div>
+                        <h4 id="Namensauflösung-DDNS_-_DynDNS_-_Dynamic_Domain_Name_System">
+                            DDNS - DynDNS - Dynamic Domain Name System
+                        </h4>
+                        <div>
+                            DynDNS oder DDNS ist ein System, das dynamische IP-Adressen von
+                            Domain-Namen aktualisieren kann. Unter DynDNS versteht man in der Regel
+                            einen DNS-Dienst, der die ständig wechselnden IP-Adressen an einem
+                            typischen Internet-Anschluss für einen festen Domain-Namen aktualisiert.
+                        </div>
+                        <h4 id="Namensauflösung-DNSSEC">DNSSEC</h4>
+                        <div>
+                            Die Domain Name System Security Extensions (DNSSEC) sind eine
+                            DNS-Implementierung, für kryptografisch abgesicherte DNS-Anfragen.
+                            DNSSEC hat Funktionen, die prüfen, ob eine DNS-Auskunft von einem
+                            vertrauenswürdigen DNS-Server stammt und ob der Transport unverfälscht
+                            übertragen wurde.
+                        </div>
                     </div>
                 </div>
             </div>

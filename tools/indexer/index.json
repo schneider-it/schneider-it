@@ -145,6 +145,56 @@
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "title": "hosts",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-hosts",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "lmhosts",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-lmhosts",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "DNS - Domain Name System",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-DNS_-_Domain_Name_System",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "WINS - Windows Internet Name Service",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-WINS_-_Windows_Internet_Name_Service",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "Schritt für Schritt: Ablauf einer Namensauflösung",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-Schritt_für_Schritt:_Ablauf_einer_Namensauflösung",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "Zusätzliche Namensauflösung in Windows",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-Zusätzliche_Namensauflösung_in_Windows",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "Zeroconf / Bonjour / Avahi",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-Zeroconf_/_Bonjour_/_Avahi",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "PNRP - Peer Name Resolution Protocol",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-PNRP_-_Peer_Name_Resolution_Protocol",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "DDNS - DynDNS - Dynamic Domain Name System",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-DDNS_-_DynDNS_-_Dynamic_Domain_Name_System",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
+        "title": "DNSSEC",
+        "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-DNSSEC",
+        "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
+    },
+    {
         "title": "Protokolle",
         "location": "/docs/netzwerktechnik/protokolle.html",
         "prettypath": "Netzwerktechnik"
@@ -238,6 +288,71 @@
         "title": "DNSSEC",
         "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNSSEC",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "title": "HTTP",
+        "location": "/docs/netzwerktechnik/protokolle/http.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "title": "HTTP im OSI-Schichtenmodell",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP im OSI-Schichtenmodell",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "title": "Wie funktioniert HTTP?",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#Wie funktioniert HTTP?",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "title": "HTTP-Versionen im Vergleich",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "title": "HTTP/1.1",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/1.1",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
+    },
+    {
+        "title": "HTTPS - HTTP Secure",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTPS - HTTP Secure",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
+    },
+    {
+        "title": "HTTP/2",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/2",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
+    },
+    {
+        "title": "HTTP/3",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/3",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
+    },
+    {
+        "title": "HTTP-Adressierung",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Adressierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "title": "HTTP-Cookie",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Cookie",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "title": "HTTP-Authentifizierung",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Authentifizierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "title": "HTTP-ABR - HTTP Adaptive Bit Rate",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-ABR - HTTP Adaptive Bit Rate",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "title": "Eigenen Webserver einrichten",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#Eigenen Webserver einrichten",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
     },
     {
         "title": "IP",
