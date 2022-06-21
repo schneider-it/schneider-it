@@ -95,27 +95,27 @@
             }
 
             &:nth-of-type(1) .navlink .link-text::after {
-                color: hsl(235, 86%, 65%);
+                color: #5966f3;
             }
 
             &:nth-of-type(2) .navlink .link-text::after {
-                color: #1986e6;
+                color: var(--lime);
             }
 
             &:nth-of-type(3) .navlink .link-text::after {
-                color: #e67e22;
+                color: var(--orange);
             }
 
             &:nth-of-type(4) .navlink .link-text::after {
-                color: #e571ef;
+                color: var(--pink);
             }
 
             &:nth-of-type(5) .navlink .link-text::after {
-                color: #04aa6d;
+                color: var(--blue);
             }
 
             &:nth-of-type(6) .navlink .link-text::after {
-                color: #834ac9;
+                color: var(--violet);
             }
         }
     }

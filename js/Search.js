@@ -110,7 +110,9 @@ function BuildSearchHistory(results_exist) {
     const container = document.getElementById("ergebnisse");
     container.innerHTML = "";
 
-    if (results_exist == false) {
+    let pattern = document.getElementById("search").value;
+
+    if (results_exist == false && pattern != "") {
         container.innerHTML =
             "<h5>Your search did not return any results.</h5>" +
             "<h6>Suggestions:</h6>" +
@@ -314,6 +316,11 @@ function setBackgroundofErgebnis(element) {
         element.children[0].innerHTML.includes("Systemtechnik")
     )
         element.style.background = "hsl(158, 95%, 34%)";
+    else if (
+        element.children[1].innerHTML.includes("Betriebssysteme") ||
+        element.children[0].innerHTML.includes("Betriebssysteme")
+    )
+        element.style.background = "hsl(267, 54%, 54%)";
 }
 
 $("#search_form").submit(function () {

@@ -50,7 +50,7 @@
   --green: hsl(99, 57%, 31%);
   --lime: hsl(158, 95%, 34%);
   --blue: hsl(208, 80%, 50%);
-  --violet: hsl(267, 54%, 54%);
+  --violet: hsl(59, 76%, 54%);
   --pink: hsl(295, 80%, 69%);
   --shadow-ergebnis-div: hsl(0, 0%, 0%);
   --shadow-ergebnis-div-active: hsl(0, 0%, 0%);
@@ -95,6 +95,7 @@ body[colorTheme=light] {
   --font-color-ergebnis-heading-active: hsl(0, 0%, 100%);
   --font-color-ergebnis-paragraph: hsl(0, 0%, 40%);
   --font-color-ergebnis-paragraph-active: hsl(0, 0%, 90%);
+  --violet: hsl(267, 54%, 54%);
 }
 
 @font-face {
@@ -1354,22 +1355,22 @@ footer .footer-vogel img {
           transform: skewY(-6deg);
 }
 .navigation .list .item:nth-of-type(1) .navlink .link-text::after {
-  color: hsl(235deg, 86%, 65%);
+  color: #5966f3;
 }
 .navigation .list .item:nth-of-type(2) .navlink .link-text::after {
-  color: #1986e6;
+  color: var(--lime);
 }
 .navigation .list .item:nth-of-type(3) .navlink .link-text::after {
-  color: #e67e22;
+  color: var(--orange);
 }
 .navigation .list .item:nth-of-type(4) .navlink .link-text::after {
-  color: #e571ef;
+  color: var(--pink);
 }
 .navigation .list .item:nth-of-type(5) .navlink .link-text::after {
-  color: #04aa6d;
+  color: var(--blue);
 }
 .navigation .list .item:nth-of-type(6) .navlink .link-text::after {
-  color: #834ac9;
+  color: var(--violet);
 }
 .navigation[active] {
   -webkit-transform: translateX(0);

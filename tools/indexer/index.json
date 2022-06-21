@@ -1,5 +1,10 @@
 [
     {
+        "title": "Betriebssysteme",
+        "location": "/docs/betriebssysteme.html",
+        "prettypath": ""
+    },
+    {
         "title": "Datenbanken",
         "location": "/docs/datenbanken.html",
         "prettypath": ""

@@ -38,7 +38,7 @@
   --green: hsl(99, 57%, 31%);
   --lime: hsl(158, 95%, 34%);
   --blue: hsl(208, 80%, 50%);
-  --violet: hsl(267, 54%, 54%);
+  --violet: hsl(59, 76%, 54%);
   --pink: hsl(295, 80%, 69%);
   --shadow-ergebnis-div: hsl(0, 0%, 0%);
   --shadow-ergebnis-div-active: hsl(0, 0%, 0%);
@@ -83,6 +83,7 @@ body[colorTheme=light] {
   --font-color-ergebnis-heading-active: hsl(0, 0%, 100%);
   --font-color-ergebnis-paragraph: hsl(0, 0%, 40%);
   --font-color-ergebnis-paragraph-active: hsl(0, 0%, 90%);
+  --violet: hsl(267, 54%, 54%);
 }
 
 :root {

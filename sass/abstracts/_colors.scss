@@ -61,7 +61,7 @@
     --green: hsl(99, 57%, 31%); // #427c22;
     --lime: hsl(158, 95%, 34%); // #04aa6d; == Systemtechnik
     --blue: hsl(208, 80%, 50%); // #1986e6; == Programmiersprachen
-    --violet: hsl(267, 54%, 54%); // #834ac9; == Betriebssysteme
+    --violet: hsl(59, 76%, 54%); // #834ac9; == Betriebssysteme
     --pink: hsl(295, 80%, 69%); // #e571ef; == Datenbanken
 
     // search.html Farben:
@@ -112,4 +112,6 @@ body[colorTheme="light"] {
     --font-color-ergebnis-heading-active: hsl(0, 0%, 100%);
     --font-color-ergebnis-paragraph: hsl(0, 0%, 40%);
     --font-color-ergebnis-paragraph-active: hsl(0, 0%, 90%);
+
+    --violet: hsl(267, 54%, 54%); // #834ac9; == Betriebssysteme
 }
