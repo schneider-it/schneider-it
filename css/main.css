@@ -1368,6 +1368,9 @@ footer .footer-vogel img {
 .navigation .list .item:nth-of-type(5) .navlink .link-text::after {
   color: #04aa6d;
 }
+.navigation .list .item:nth-of-type(6) .navlink .link-text::after {
+  color: #834ac9;
+}
 .navigation[active] {
   -webkit-transform: translateX(0);
           transform: translateX(0);
