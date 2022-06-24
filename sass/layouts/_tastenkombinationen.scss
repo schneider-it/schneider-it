@@ -1,5 +1,10 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../base/animations" as *;
+
 .navigation {
     & .tastenkombinationenSwitch {
+        display: inline-block;
         position: absolute;
         width: 4rem;
         height: 4rem;
@@ -15,7 +20,7 @@
         & i {
             width: 40%;
             height: 40%;
-            // transition: color var(--transition-short) ease-in-out;
+            transition: color var(--transition-short) ease-in-out;
         }
 
         &:hover i {

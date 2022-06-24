@@ -75,6 +75,10 @@
                 transition: top var(--transition-long) var(--bounce-easing);
                 user-select: none;
 
+                & > h4 {
+                    hyphens: auto;
+                }
+
                 & > p {
                     transition: margin var(--transition-long) var(--bounce-easing);
                     font-size: 1rem;

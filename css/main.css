@@ -476,7 +476,7 @@ body {
 }
 
 h1 {
-  font-family: "Public Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: clamp(4.2rem, 5.5vw, 5rem);
   font-weight: 900;
   margin: 5rem 0;
@@ -1333,6 +1333,7 @@ footer .footer-vogel img {
 }
 .navigation .list .item .navlink .link-text::after {
   content: attr(data-after);
+  color: #5966f3;
   display: block;
   position: absolute;
   -webkit-transform-origin: left center;
@@ -1354,24 +1355,6 @@ footer .footer-vogel img {
   -webkit-transform: skewY(-6deg);
           transform: skewY(-6deg);
 }
-.navigation .list .item:nth-of-type(1) .navlink .link-text::after {
-  color: #5966f3;
-}
-.navigation .list .item:nth-of-type(2) .navlink .link-text::after {
-  color: var(--lime);
-}
-.navigation .list .item:nth-of-type(3) .navlink .link-text::after {
-  color: var(--orange);
-}
-.navigation .list .item:nth-of-type(4) .navlink .link-text::after {
-  color: var(--pink);
-}
-.navigation .list .item:nth-of-type(5) .navlink .link-text::after {
-  color: var(--blue);
-}
-.navigation .list .item:nth-of-type(6) .navlink .link-text::after {
-  color: var(--violet);
-}
 .navigation[active] {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -1381,20 +1364,29 @@ footer .footer-vogel img {
   transition: opacity var(--transition-short) ease-in-out calc(var(--transition-middle) - var(--transition-short));
   opacity: 1;
 }
-.navigation .item:nth-of-type(1) .navlink .link-text::after {
-  color: hsl(235deg, 86%, 65%);
+
+body[colorTheme=dark] .navigation .item:nth-of-type(1) .navlink .link-text::after {
+  color: #5966f3;
 }
-.navigation .item:nth-of-type(2) .navlink .link-text::after {
-  color: #1986e6;
+
+body[colorTheme=dark] .navigation .item:nth-of-type(2) .navlink .link-text::after {
+  color: var(--lime);
 }
-.navigation .item:nth-of-type(3) .navlink .link-text::after {
-  color: #e67e22;
+
+body[colorTheme=dark] .navigation .item:nth-of-type(3) .navlink .link-text::after {
+  color: var(--orange);
 }
-.navigation .item:nth-of-type(4) .navlink .link-text::after {
-  color: #e571ef;
+
+body[colorTheme=dark] .navigation .item:nth-of-type(4) .navlink .link-text::after {
+  color: var(--pink);
 }
-.navigation .item:nth-of-type(5) .navlink .link-text::after {
-  color: #04aa6d;
+
+body[colorTheme=dark] .navigation .item:nth-of-type(5) .navlink .link-text::after {
+  color: var(--blue);
+}
+
+body[colorTheme=dark] .navigation .item:nth-of-type(6) .navlink .link-text::after {
+  color: var(--violet);
 }
 
 .navigation-blur-filter {
@@ -1557,6 +1549,7 @@ body[colorTheme=light] .sun {
 }
 
 .navigation .tastenkombinationenSwitch {
+  display: inline-block;
   position: absolute;
   width: 4rem;
   height: 4rem;
@@ -1580,6 +1573,8 @@ body[colorTheme=light] .sun {
 .navigation .tastenkombinationenSwitch i {
   width: 40%;
   height: 40%;
+  -webkit-transition: color var(--transition-short) ease-in-out;
+  transition: color var(--transition-short) ease-in-out;
 }
 .navigation .tastenkombinationenSwitch:hover i {
   color: var(--main-color);
@@ -1855,6 +1850,11 @@ table tr td.right {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+.cards > a .card .card-text > h4 {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 .cards > a .card .card-text > p {
   -webkit-transition: margin var(--transition-long) var(--bounce-easing);
