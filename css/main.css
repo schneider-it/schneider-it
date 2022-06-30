@@ -288,13 +288,13 @@ body {
   width: 100%;
 }
 
-:target:before {
+:target::before {
   content: "";
   display: block;
   position: relative;
   width: 0;
-  height: 1.8rem;
-  margin-top: -1.8rem;
+  height: 2.4rem;
+  margin-top: -2.4rem;
 }
 
 i[centered]:before {

@@ -429,6 +429,10 @@ function KeyCombination(e) {
             let backButton = document.getElementsByClassName("back_button")[0];
             window.location.href = backButton.children[0].href;
             return false;
+        } else if (e.key === "ArrowRight") {
+            return false;
+        } else if (e.key === "ArrowLeft") {
+            return false;
         }
     }
 }
