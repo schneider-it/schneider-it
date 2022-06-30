@@ -419,14 +419,15 @@ function KeyCombination(e) {
         if (e.key === "/" || e.key === "Tab") {
             window.open("/components/search.html", "_self");
             return false;
-        }
-
-        if (
-            (e.key === "z" && e.ctrlKey) ||
-            e.key === "Backspace" ||
-            (e.key === "Tab" && e.shiftKey)
-        ) {
+        } else if (e.key === "z" && e.ctrlKey) {
             history.back();
+            return false;
+        } else if (e.key === "y" && e.ctrlKey) {
+            history.forward();
+            return false;
+        } else if (e.key === "Backspace") {
+            let backButton = document.getElementsByClassName("back_button")[0];
+            window.location.href = backButton.children[0].href;
             return false;
         }
     }
