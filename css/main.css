@@ -1671,7 +1671,6 @@ table tr td.right {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  pointer-events: none;
 }
 .title > :is(img, i) {
   position: relative;
