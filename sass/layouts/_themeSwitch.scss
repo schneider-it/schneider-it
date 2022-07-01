@@ -36,18 +36,18 @@
     }
 }
 
-body .moon {
+body :is(.moon, .sun, .auto) {
     display: none;
 }
 
-body .sun {
-    display: inline-block;
-}
-
-body[colorTheme="light"] .moon {
+body[colorTheme="dark"] .moon {
     display: inline-block;
 }
 
 body[colorTheme="light"] .sun {
-    display: none;
+    display: inline-block;
+}
+
+body[colorTheme="auto"] .auto {
+    display: inline-block;
 }

@@ -5,10 +5,14 @@
     left: 50%;
     transform: translateX(-50%);
     height: 4rem;
+
     display: inline-grid;
     gap: 1.5rem;
     margin-top: 8rem;
     grid-template-columns: 3rem 1fr;
+
+    user-select: none;
+    pointer-events: none;
 
     & > :is(img, i) {
         position: relative;

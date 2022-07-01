@@ -60,30 +60,36 @@ function ThemeSwitch() {
     let navigation = document.querySelector(".navigation");
 
     themeSwitch.onclick = function () {
-        if (localStorage.getItem("colorTheme") == null) {
-            if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        switch (body.getAttribute("colorTheme")) {
+            case "auto":
                 body.setAttribute("colorTheme", "dark");
                 localStorage.setItem("colorTheme", "dark");
-            } else {
+                break;
+            case "dark":
                 body.setAttribute("colorTheme", "light");
                 localStorage.setItem("colorTheme", "light");
-            }
-        } else {
-            if (body.getAttribute("colorTheme") == "dark") {
-                body.setAttribute("colorTheme", "light");
-                localStorage.setItem("colorTheme", "light");
-            } else {
-                body.setAttribute("colorTheme", "dark");
-                localStorage.setItem("colorTheme", "dark");
-            }
+                break;
+            default:
+                body.setAttribute("colorTheme", "auto");
+                localStorage.setItem("colorTheme", "auto");
+                break;
         }
     };
 
-    if (localStorage.getItem("colorTheme") != null) {
-        if (localStorage.getItem("colorTheme") == "dark") {
-            body.setAttribute("colorTheme", "dark");
-        } else if (localStorage.getItem("colorTheme") == "light") {
-            body.setAttribute("colorTheme", "light");
+    if (localStorage.getItem("colorTheme") == null) {
+        body.setAttribute("colorTheme", "auto");
+        localStorage.setItem("colorTheme", "auto");
+    } else {
+        switch (localStorage.getItem("colorTheme")) {
+            case "dark":
+                body.setAttribute("colorTheme", "dark");
+                break;
+            case "light":
+                body.setAttribute("colorTheme", "light");
+                break;
+            default:
+                body.setAttribute("colorTheme", "auto");
+                break;
         }
     }
 }
@@ -419,14 +425,19 @@ function KeyCombination(e) {
         if (e.key === "/" || e.key === "Tab") {
             window.open("/components/search.html", "_self");
             return false;
-        }
-
-        if (
-            (e.key === "z" && e.ctrlKey) ||
-            e.key === "Backspace" ||
-            (e.key === "Tab" && e.shiftKey)
-        ) {
+        } else if (e.key === "z" && e.ctrlKey) {
             history.back();
+            return false;
+        } else if (e.key === "y" && e.ctrlKey) {
+            history.forward();
+            return false;
+        } else if (e.key === "Backspace") {
+            let backButton = document.getElementsByClassName("back_button")[0];
+            window.location.href = backButton.children[0].href;
+            return false;
+        } else if (e.key === "ArrowRight") {
+            return false;
+        } else if (e.key === "ArrowLeft") {
             return false;
         }
     }

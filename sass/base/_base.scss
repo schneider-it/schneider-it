@@ -21,15 +21,41 @@
     width: 100%;
 }
 
-:target:before {
+:target::before {
     content: "";
     display: block;
     position: relative;
     width: 0;
-    $target-abstand-top: 1.8rem;
+    $target-abstand-top: 2.4rem;
     height: $target-abstand-top;
     margin-top: -$target-abstand-top;
 }
+
+// Formel (ausgehend von backButton): 2rem (margin-top) + 2 * 1.15rem (4rem - 1.7rem / 2) - (font-size - 1.7rem / 2)
+
+// h1 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(4.2rem, 5.5vw, 5rem) - 1.7rem) / 2);
+// }
+
+// h2 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(2.5rem, 3.3vw, 3rem) - 1.7rem) / 2);
+// }
+
+// h3 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(1.9rem, 2.5vw, 2.3rem) - 1.7rem) / 2);
+// }
+
+// h4 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(1.5rem, 2vw, 1.9rem) - 1.7rem) / 2);
+// }
+
+// h5 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(1.2rem, 1.64vw, 1.5rem) - 1.7rem) / 2);
+// }
+
+// h6 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(1.1rem, 1.3vw, 1.3rem) - 1.7rem) / 2);
+// }
 
 i[centered]:before {
     position: absolute;

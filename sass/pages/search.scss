@@ -52,10 +52,16 @@ body {
     }
 }
 
+#info {
+    position: relative;
+    width: var(--container);
+    margin: 4rem auto 0;
+}
+
 #ergebnisse {
     position: relative;
     width: var(--container);
-    margin: 4rem auto;
+    margin: 0 auto 4rem;
 
     & .ergebnis {
         width: 100%;
