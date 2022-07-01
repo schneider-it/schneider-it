@@ -74,6 +74,9 @@ function BuildErgebnisse(ergebnisse) {
     let container = document.getElementById("ergebnisse");
     container.innerHTML = "";
 
+    let info = document.getElementById("info");
+    info.innerHTML = "";
+
     // let clear_search_history = document.getElementById("clear_search_history");
     // clear_search_history.style.display = "none";
 
@@ -110,10 +113,13 @@ function BuildSearchHistory(results_exist) {
     const container = document.getElementById("ergebnisse");
     container.innerHTML = "";
 
+    const info = document.getElementById("info");
+    info.innerHTML = "";
+
     let pattern = document.getElementById("search").value;
 
     if (results_exist == false && pattern != "") {
-        container.innerHTML =
+        info.innerHTML =
             "<h5>Your search did not return any results.</h5>" +
             "<h6>Suggestions:</h6>" +
             "<ul>" +
@@ -121,12 +127,12 @@ function BuildSearchHistory(results_exist) {
             "<li>Try other search terms.</li>" +
             "<li>Try more general search terms.</li>" +
             "</ul>";
-        if (search_history.length >= 1) container.innerHTML += "<hr>";
+        if (search_history.length >= 1) info.innerHTML += "<hr>";
     }
-    if (search_history.length == 0) container.innerHTML += "";
+    if (search_history.length == 0) info.innerHTML += "";
     else if (search_history.length == 1)
         // Einzahl
-        container.innerHTML +=
+        info.innerHTML +=
             "<div id='latest-result-heading' class='flexbox' space-between centered><h5>Latest Result:</h5>" +
             "<div id='clear_search_history' class='button' onclick='ClearSearchHistory()' small>" +
             "Clear Latest Result&nbsp;&nbsp;&nbsp;<i class='fa-solid fa-arrow-down'></i>" +
@@ -134,7 +140,7 @@ function BuildSearchHistory(results_exist) {
             "</div>";
     else if (search_history.length > 1)
         // Mehrzahl
-        container.innerHTML +=
+        info.innerHTML +=
             "<div id='latest-result-heading' class='flexbox' space-between centered><h5>Latest Results:</h5>" +
             "<div id='clear_search_history' class='button' onclick='ClearSearchHistory()' small>" +
             "Clear Latest Results&nbsp;&nbsp;&nbsp;<i class='fa-solid fa-arrow-down'></i>" +
@@ -171,7 +177,11 @@ function BuildSearchHistory(results_exist) {
 document.onkeydown = function (e) {
     if (e.key === "Tab" || e.key == "ArrowDown" || e.key == "ArrowUp") {
         e.preventDefault();
-        if (!window.matchMedia("(pointer: coarse)").matches && ergebnisse != "")
+        if (
+            !window.matchMedia("(pointer: coarse)").matches &&
+            ergebnisse != "" &&
+            ergebnisse != null
+        )
             document
                 .querySelector(".search_div")
                 .setAttribute("data-after", "Press Enter to open the selected result!");
@@ -205,21 +215,18 @@ document.onkeydown = function (e) {
             new_active_element.scrollIntoViewIfNeeded(true);
         } else {
             active_element.removeAttribute("active");
+            active_element.style.background = "";
             let container = document.getElementById("ergebnisse");
             if (!e.shiftKey || e.key == "ArrowDown") {
                 let first_element = container.firstElementChild;
-                let last_element = container.lastElementChild;
                 if (first_element != null) {
-                    last_element.style.background = "";
                     first_element.setAttribute("active", "");
                     setBackgroundofErgebnis(first_element);
                     first_element.scrollIntoViewIfNeeded(true);
                 }
             } else if (e.shiftKey || e.key == "ArrowUp") {
                 let last_element = container.lastElementChild;
-                let first_element = container.firstElementChild;
                 if (last_element != null) {
-                    first_element.style.background = "";
                     last_element.setAttribute("active", "");
                     setBackgroundofErgebnis(last_element);
                     last_element.scrollIntoViewIfNeeded(true);
@@ -328,10 +335,12 @@ $("#search_form").submit(function () {
 });
 
 function EscapeHTML(unsafe) {
-    return unsafe
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+    return (
+        unsafe
+            // .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;")
+            .replace(/'/g, "&#039;")
+    );
 }

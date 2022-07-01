@@ -60,30 +60,36 @@ function ThemeSwitch() {
     let navigation = document.querySelector(".navigation");
 
     themeSwitch.onclick = function () {
-        if (localStorage.getItem("colorTheme") == null) {
-            if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+        switch (body.getAttribute("colorTheme")) {
+            case "auto":
                 body.setAttribute("colorTheme", "dark");
                 localStorage.setItem("colorTheme", "dark");
-            } else {
+                break;
+            case "dark":
                 body.setAttribute("colorTheme", "light");
                 localStorage.setItem("colorTheme", "light");
-            }
-        } else {
-            if (body.getAttribute("colorTheme") == "dark") {
-                body.setAttribute("colorTheme", "light");
-                localStorage.setItem("colorTheme", "light");
-            } else {
-                body.setAttribute("colorTheme", "dark");
-                localStorage.setItem("colorTheme", "dark");
-            }
+                break;
+            default:
+                body.setAttribute("colorTheme", "auto");
+                localStorage.setItem("colorTheme", "auto");
+                break;
         }
     };
 
-    if (localStorage.getItem("colorTheme") != null) {
-        if (localStorage.getItem("colorTheme") == "dark") {
-            body.setAttribute("colorTheme", "dark");
-        } else if (localStorage.getItem("colorTheme") == "light") {
-            body.setAttribute("colorTheme", "light");
+    if (localStorage.getItem("colorTheme") == null) {
+        body.setAttribute("colorTheme", "auto");
+        localStorage.setItem("colorTheme", "auto");
+    } else {
+        switch (localStorage.getItem("colorTheme")) {
+            case "dark":
+                body.setAttribute("colorTheme", "dark");
+                break;
+            case "light":
+                body.setAttribute("colorTheme", "light");
+                break;
+            default:
+                body.setAttribute("colorTheme", "auto");
+                break;
         }
     }
 }
