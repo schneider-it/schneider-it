@@ -469,6 +469,34 @@ body::-webkit-scrollbar {
     color: white;
   }
 }
+@-webkit-keyframes spin-logo {
+  10% {
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform: rotate(0deg) translateY(-50%);
+            transform: rotate(0deg) translateY(-50%);
+  }
+  50% {
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform: rotate(-360deg) translateY(-50%);
+            transform: rotate(-360deg) translateY(-50%);
+  }
+}
+@keyframes spin-logo {
+  10% {
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform: rotate(0deg) translateY(-50%);
+            transform: rotate(0deg) translateY(-50%);
+  }
+  50% {
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    -webkit-transform: rotate(-360deg) translateY(-50%);
+            transform: rotate(-360deg) translateY(-50%);
+  }
+}
 html,
 body {
   font-size: clamp(1.1rem, 1.2vw, 1.5rem);
@@ -1689,6 +1717,10 @@ table tr td.right {
 }
 .title > :is(img, i)[img-border-radius] {
   border-radius: 10000px;
+}
+.title > :is(img, i):hover {
+  -webkit-animation: spin-logo 3s ease-in-out 0s infinite normal backwards;
+          animation: spin-logo 3s ease-in-out 0s infinite normal backwards;
 }
 .title i::before {
   font-size: 2.5rem;

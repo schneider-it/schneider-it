@@ -21,6 +21,10 @@
         &[img-border-radius] {
             border-radius: 10000px;
         }
+
+        &:hover {
+            animation: spin-logo 3s ease-in-out 0s infinite normal backwards;
+        }
     }
 
     & i::before {
