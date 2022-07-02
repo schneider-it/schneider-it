@@ -433,13 +433,13 @@ body::-webkit-scrollbar {
   }
 }
 @-webkit-keyframes spin-logo {
-  10% {
+  15% {
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     -webkit-transform: rotate(0deg) translateY(-50%);
             transform: rotate(0deg) translateY(-50%);
   }
-  50% {
+  85% {
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     -webkit-transform: rotate(-360deg) translateY(-50%);
@@ -447,13 +447,13 @@ body::-webkit-scrollbar {
   }
 }
 @keyframes spin-logo {
-  10% {
+  15% {
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     -webkit-transform: rotate(0deg) translateY(-50%);
             transform: rotate(0deg) translateY(-50%);
   }
-  50% {
+  85% {
     -webkit-transform-origin: 50% 0;
             transform-origin: 50% 0;
     -webkit-transform: rotate(-360deg) translateY(-50%);
@@ -1685,9 +1685,9 @@ table tr td.right {
 .title > :is(img, i)[img-border-radius] {
   border-radius: 10000px;
 }
-.title > :is(img, i):hover {
-  -webkit-animation: spin-logo 3s ease-in-out 0s infinite normal backwards;
-          animation: spin-logo 3s ease-in-out 0s infinite normal backwards;
+.title > :is(img, i)[spinning] {
+  -webkit-animation: spin-logo 1.95s cubic-bezier(0.65, 0, 0.35, 1) 0s infinite alternate backwards;
+          animation: spin-logo 1.95s cubic-bezier(0.65, 0, 0.35, 1) 0s infinite alternate backwards;
 }
 .title i::before {
   font-size: 2.5rem;
@@ -1727,6 +1727,8 @@ table tr td.right {
 }
 .link[youtube-font] {
   font-family: "Youtube Sans", sans-serif;
+  letter-spacing: 0.03rem;
+  word-spacing: 0.05rem;
 }
 .link::before {
   content: "";
@@ -1931,10 +1933,6 @@ table tr td.right {
 .img:not([no-border-radius]) {
   border-radius: var(--border-radius);
 }
-.img[invert] {
-  -webkit-filter: invert(1);
-          filter: invert(1);
-}
 .img[img-size=large] {
   max-height: 60rem;
   max-width: 60rem;
@@ -1954,6 +1952,18 @@ table tr td.right {
 .img[img-size=little] {
   max-height: 5rem;
   max-width: 5rem;
+}
+
+body[colorTheme=dark] .img[invert] {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+@media (prefers-color-scheme: dark) {
+  body[colorTheme=auto] .img[invert] {
+    -webkit-filter: invert(1);
+            filter: invert(1);
+  }
 }
 
 .code-string {

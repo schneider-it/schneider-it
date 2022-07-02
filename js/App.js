@@ -7,6 +7,7 @@ function OnLoadAll() {
     RandomizeButtonHover();
     LoadButtonNextPrev();
     TableScroll();
+    TitleLogoSpin();
 }
 
 function OnLoadIndex() {
@@ -15,6 +16,7 @@ function OnLoadIndex() {
     VanillaTiltEffect();
     SetCardColors();
     RandomizeButtonHover();
+    TitleLogoSpin();
 }
 
 function OnLoadLeaf() {
@@ -24,6 +26,7 @@ function OnLoadLeaf() {
     RandomizeButtonHover();
     LoadButtonNextPrev();
     TableScroll();
+    TitleLogoSpin();
 }
 
 function OnLoadSearch() {
@@ -168,6 +171,30 @@ function ShowCopyAccess(id) {
     setTimeout(function () {
         code.removeAttribute("copied");
     }, 1200);
+}
+
+function TitleLogoSpin() {
+    let logo = document.getElementById("title-logo");
+    if (logo != null) {
+        let mouseleft = false;
+
+        logo.addEventListener("mouseenter", function (event) {
+            mouseleft = false;
+            logo.setAttribute("spinning", "");
+        });
+
+        logo.addEventListener("mouseleave", function (event) {
+            mouseleft = true;
+        });
+
+        logo.addEventListener(
+            "animationiteration",
+            function () {
+                if (mouseleft) logo.removeAttribute("spinning");
+            },
+            false
+        );
+    }
 }
 
 function TableScroll() {

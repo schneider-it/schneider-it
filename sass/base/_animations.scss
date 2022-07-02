@@ -67,11 +67,11 @@
 }
 
 @keyframes spin-logo {
-    10% {
+    15% {
         transform-origin: 50% 0;
         transform: rotate(0deg) translateY(-50%);
     }
-    50% {
+    85% {
         transform-origin: 50% 0;
         transform: rotate(-360deg) translateY(-50%);
     }
