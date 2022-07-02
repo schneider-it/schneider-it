@@ -52,3 +52,9 @@
 body[colorTheme=dark] {
   --main-color: var(--blue);
 }
+
+@media (prefers-color-scheme: dark) {
+  body[colorTheme=auto] {
+    --main-color: var(--blue);
+  }
+}

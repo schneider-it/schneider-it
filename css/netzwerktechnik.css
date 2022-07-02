@@ -52,3 +52,9 @@
 body[colorTheme=dark] {
   --main-color: var(--orange);
 }
+
+@media (prefers-color-scheme: dark) {
+  body[colorTheme=auto] {
+    --main-color: var(--orange);
+  }
+}

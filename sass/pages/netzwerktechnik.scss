@@ -3,3 +3,9 @@
 body[colorTheme="dark"] {
     --main-color: var(--orange);
 }
+
+body[colorTheme="auto"] {
+    @media (prefers-color-scheme: dark) {
+        --main-color: var(--orange);
+    }
+}
