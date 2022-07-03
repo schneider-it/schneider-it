@@ -78,3 +78,12 @@
         z-index: 1009;
     }
 }
+
+@media (max-width: 40em) {
+    .navigation .tastenkombinationenSwitch {
+        bottom: 1rem;
+        right: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}

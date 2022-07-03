@@ -51,3 +51,12 @@ body[colorTheme="light"] .sun {
 body[colorTheme="auto"] .auto {
     display: inline-block;
 }
+
+@media (max-width: 40em) {
+    .navigation .themeSwitch {
+        top: 1rem;
+        left: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+}

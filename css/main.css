@@ -1164,7 +1164,6 @@ footer .footer-vogel img {
   right: 2rem;
   width: 4rem;
   height: 4rem;
-  padding: 1.5rem;
   border-radius: 50%;
   -webkit-transition: background var(--transition-short) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
   transition: background var(--transition-short) ease-in-out, -webkit-transform 1s cubic-bezier(0.19, 1, 0.22, 1);
@@ -1218,6 +1217,26 @@ footer .footer-vogel img {
           transform: rotate(-45deg);
 }
 
+@media (max-width: 40em) {
+  .burger {
+    top: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .burger > .burger-line {
+    width: 1rem;
+    height: 0.2rem;
+  }
+  .burger > .burger-line1 {
+    -webkit-transform: translateY(-0.2rem);
+            transform: translateY(-0.2rem);
+  }
+  .burger > .burger-line2 {
+    -webkit-transform: translateY(0.2rem);
+            transform: translateY(0.2rem);
+  }
+}
 .navigation {
   position: fixed;
   display: -webkit-box;
@@ -1461,6 +1480,17 @@ body[colorTheme=dark] .navigation .item:nth-of-type(6) .navlink .link-text::afte
   color: var(--font-color-light);
 }
 
+@media (max-width: 40em) {
+  .back_button {
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .back_button > a > i {
+    font-size: 1rem;
+  }
+}
 .search_button {
   position: fixed;
   top: 2rem;
@@ -1502,6 +1532,17 @@ body[colorTheme=dark] .navigation .item:nth-of-type(6) .navlink .link-text::afte
   color: var(--font-color-light);
 }
 
+@media (max-width: 40em) {
+  .search_button {
+    top: 1rem;
+    right: 4rem;
+    width: 2rem;
+    height: 2rem;
+  }
+  .search_button > a > i {
+    font-size: 1rem;
+  }
+}
 .navigation .themeSwitch {
   position: absolute;
   width: 4rem;
@@ -1555,6 +1596,14 @@ body[colorTheme=auto] .auto {
   display: inline-block;
 }
 
+@media (max-width: 40em) {
+  .navigation .themeSwitch {
+    top: 1rem;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
 .navigation .tastenkombinationenSwitch {
   display: inline-block;
   position: absolute;
@@ -1635,6 +1684,14 @@ body[colorTheme=auto] .auto {
   z-index: 1009;
 }
 
+@media (max-width: 40em) {
+  .navigation .tastenkombinationenSwitch {
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
+  }
+}
 table {
   width: 100%;
   position: relative;

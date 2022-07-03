@@ -41,3 +41,16 @@
         }
     }
 }
+
+@media (max-width: 40em) {
+    .back_button {
+        top: 1rem;
+        left: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+        & > a > i {
+            font-size: 1rem;
+        }
+    }
+}

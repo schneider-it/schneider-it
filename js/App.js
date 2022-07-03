@@ -8,6 +8,7 @@ function OnLoadAll() {
     LoadButtonNextPrev();
     TableScroll();
     TitleLogoSpin();
+    TitleFontSize();
 }
 
 function OnLoadIndex() {
@@ -17,6 +18,7 @@ function OnLoadIndex() {
     SetCardColors();
     RandomizeButtonHover();
     TitleLogoSpin();
+    TitleFontSize();
 }
 
 function OnLoadLeaf() {
@@ -27,6 +29,7 @@ function OnLoadLeaf() {
     LoadButtonNextPrev();
     TableScroll();
     TitleLogoSpin();
+    TitleFontSize();
 }
 
 function OnLoadSearch() {
@@ -197,13 +200,24 @@ function TitleLogoSpin() {
     }
 }
 
+function TitleFontSize() {
+    let title = document.querySelector(".title h1");
+
+    // window.addEventListener("scroll", () => {
+    //     let current = window.scrollY;
+    //     current = 200 - current;
+
+    //     title.style.fontSize = "clamp(1rem, " + current + "px, 5rem)";
+    // });
+}
+
 function TableScroll() {
     // let tables = document.querySelectorAll("table");
     // console.log(tables);
     // tables.forEach((table) => {
     //     table.draggable({ axis: "x" });
     // });
-    $("table").draggable({ axis: "x" });
+    // $("table").draggable({ axis: "x" });
 }
 
 function RandomizeButtonHover() {
