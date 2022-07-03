@@ -1,1870 +1,2244 @@
 [
     {
-        "title": "Betriebssysteme",
-        "location": "/docs/betriebssysteme.html",
-        "prettypath": ""
-    },
-    {
-        "title": "Linux",
-        "location": "/docs/betriebssysteme/linux.html",
-        "prettypath": "Betriebssysteme"
-    },
-    {
+        "id": 0,
         "title": "Datenbanken",
         "location": "/docs/datenbanken.html",
         "prettypath": ""
     },
     {
+        "id": 1,
         "title": "relationale Datenbanken",
         "location": "/docs/datenbanken/relationale_Datenbanken.html",
         "prettypath": "Datenbanken"
     },
     {
+        "id": 2,
         "title": "Grundlagen",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#Grundlagen",
         "prettypath": "Datenbanken ➜ relationale Datenbanken"
     },
     {
+        "id": 3,
         "title": "Beziehungen",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#Beziehungen",
         "prettypath": "Datenbanken ➜ relationale Datenbanken"
     },
     {
+        "id": 4,
         "title": "Transformationsregeln",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#Beziehungen-Transformationsregeln",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ Beziehungen"
     },
     {
+        "id": 5,
         "title": "Vererbung",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#Beziehungen-Vererbung",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ Beziehungen"
     },
     {
+        "id": 6,
         "title": "Normalformen",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#Normalformen",
         "prettypath": "Datenbanken ➜ relationale Datenbanken"
     },
     {
+        "id": 7,
         "title": "SQL - Structured Query Language",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken"
     },
     {
+        "id": 8,
         "title": "DQL - Data Query Language",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language-DQL_-_Data_Query_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
     },
     {
+        "id": 9,
         "title": "DML - Data Manipulation Language",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language-DML_-_Data_Manipulation_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
     },
     {
+        "id": 10,
         "title": "DDL - Data Definition Language",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language-DDL_-_Data_Definition_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
     },
     {
+        "id": 11,
         "title": "DCL - Data Control Language",
         "location": "/docs/datenbanken/relationale_Datenbanken.html#SQL_-_Structured_Query_Language-DCL_-_Data_Control_Language",
         "prettypath": "Datenbanken ➜ relationale Datenbanken ➜ SQL - Structured Query Language"
     },
     {
+        "id": 12,
+        "title": "Betriebssysteme",
+        "location": "/docs/betriebssysteme.html",
+        "prettypath": ""
+    },
+    {
+        "id": 13,
+        "title": "Linux",
+        "location": "/docs/betriebssysteme/linux.html",
+        "prettypath": "Betriebssysteme"
+    },
+    {
+        "id": 14,
         "title": "Netzwerktechnik",
         "location": "/docs/netzwerktechnik.html",
         "prettypath": ""
     },
     {
-        "title": "Bausteine",
-        "location": "/docs/netzwerktechnik/bausteine.html",
-        "prettypath": "Netzwerktechnik"
-    },
-    {
-        "title": "URL",
-        "location": "/docs/netzwerktechnik/bausteine/url.html",
-        "prettypath": "Netzwerktechnik ➜ Bausteine"
-    },
-    {
-        "title": "URL - Uniform Resource Locator",
-        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator",
-        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL"
-    },
-    {
-        "title": "Aufbau eines URL (Beispiel)",
-        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)",
-        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator"
-    },
-    {
-        "title": "Ressourcentyp://",
-        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Ressourcentyp://",
-        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
-    },
-    {
-        "title": "User:Passwort@",
-        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-User:Passwort@",
-        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
-    },
-    {
-        "title": "Host.Domain.TLD",
-        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Host.Domain.TLD",
-        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
-    },
-    {
-        "title": ":Port",
-        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-:Port",
-        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
-    },
-    {
-        "title": "/Pfad/Datei",
-        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-/Pfad/Datei",
-        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
-    },
-    {
-        "title": "Parameter",
-        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Parameter",
-        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
-    },
-    {
+        "id": 15,
         "title": "Grundlagen Netzwerktechnik",
         "location": "/docs/netzwerktechnik/grundlagen.html",
         "prettypath": "Netzwerktechnik"
     },
     {
+        "id": 16,
         "title": "OSI-Schichtenmodell",
         "location": "/docs/netzwerktechnik/grundlagen.html#OSI-Schichtenmodell",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik"
     },
     {
+        "id": 17,
         "title": "Tabelle",
         "location": "/docs/netzwerktechnik/grundlagen.html#OSI-Schichtenmodell-Tabelle",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ OSI-Schichtenmodell"
     },
     {
+        "id": 18,
         "title": "well-known Ports",
         "location": "/docs/netzwerktechnik/grundlagen.html#well-known_Ports",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik"
     },
     {
+        "id": 19,
         "title": "Namensauflösung",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik"
     },
     {
+        "id": 20,
         "title": "Übersicht",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-Übersicht",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 21,
         "title": "hosts",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-hosts",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 22,
         "title": "lmhosts",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-lmhosts",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 23,
         "title": "DNS - Domain Name System",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-DNS_-_Domain_Name_System",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 24,
         "title": "WINS - Windows Internet Name Service",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-WINS_-_Windows_Internet_Name_Service",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 25,
         "title": "Schritt für Schritt: Ablauf einer Namensauflösung",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-Schritt_für_Schritt:_Ablauf_einer_Namensauflösung",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 26,
         "title": "Zusätzliche Namensauflösung in Windows",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-Zusätzliche_Namensauflösung_in_Windows",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 27,
         "title": "Zeroconf / Bonjour / Avahi",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-Zeroconf_/_Bonjour_/_Avahi",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 28,
         "title": "PNRP - Peer Name Resolution Protocol",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-PNRP_-_Peer_Name_Resolution_Protocol",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 29,
         "title": "DDNS - DynDNS - Dynamic Domain Name System",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-DDNS_-_DynDNS_-_Dynamic_Domain_Name_System",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 30,
         "title": "DNSSEC",
         "location": "/docs/netzwerktechnik/grundlagen.html#Namensauflösung-DNSSEC",
         "prettypath": "Netzwerktechnik ➜ Grundlagen Netzwerktechnik ➜ Namensauflösung"
     },
     {
+        "id": 31,
         "title": "Protokolle",
         "location": "/docs/netzwerktechnik/protokolle.html",
         "prettypath": "Netzwerktechnik"
     },
     {
-        "title": "DNS",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html",
-        "prettypath": "Netzwerktechnik ➜ Protokolle"
-    },
-    {
-        "title": "DNS - Domain Name System",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS"
-    },
-    {
-        "title": "Namensauflösung vor DNS",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Namensauflösung_vor_DNS",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Domain oder Domain-Name",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Domain_oder_Domain-Name",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Organisatorische Top-Level-Domains (Auszug)",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Organisatorische_Top-Level-Domains_(Auszug)",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Geografische Top-Level-Domains (Auszug)",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Geografische_Top-Level-Domains_(Auszug)",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Aufgabenteilung im DNS",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Aufgabenteilung_im_DNS",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "DNS-Zonen",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNS-Zonen",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Einträge in einer DNS-Zone bzw. Zonendatei",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Einträge_in_einer_DNS-Zone_bzw._Zonendatei",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "DNS-Server / Nameserver",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNS-Server_/_Nameserver",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Resolver (DNS-Client)",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Resolver_(DNS-Client)",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Primärer und Sekundärer DNS-Server / Primary und Secondary Nameserver",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Primärer_und_Sekundärer_DNS-Server_/_Primary_und_Secondary_Nameserver",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Ablauf einer Namensauflösung mit DNS (DNS-Abfrage)",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Ablauf_einer_Namensauflösung_mit_DNS_(DNS-Abfrage)",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Rekursion",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Rekursion",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "Iteration",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Iteration",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "DNS-Protokoll",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNS-Protokoll",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "OpenDNS",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-OpenDNS",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "DNSSEC",
-        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNSSEC",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
-    },
-    {
-        "title": "HTTP",
-        "location": "/docs/netzwerktechnik/protokolle/http.html",
-        "prettypath": "Netzwerktechnik ➜ Protokolle"
-    },
-    {
-        "title": "HTTP im OSI-Schichtenmodell",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP im OSI-Schichtenmodell",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
-    },
-    {
-        "title": "Wie funktioniert HTTP?",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#Wie funktioniert HTTP?",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
-    },
-    {
-        "title": "HTTP-Versionen im Vergleich",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
-    },
-    {
-        "title": "HTTP/1.1",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/1.1",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
-    },
-    {
-        "title": "HTTPS - HTTP Secure",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTPS - HTTP Secure",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
-    },
-    {
-        "title": "HTTP/2",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/2",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
-    },
-    {
-        "title": "HTTP/3",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/3",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
-    },
-    {
-        "title": "HTTP-Adressierung",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Adressierung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
-    },
-    {
-        "title": "HTTP-Cookie",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Cookie",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
-    },
-    {
-        "title": "HTTP-Authentifizierung",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Authentifizierung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
-    },
-    {
-        "title": "HTTP-ABR - HTTP Adaptive Bit Rate",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-ABR - HTTP Adaptive Bit Rate",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
-    },
-    {
-        "title": "Eigenen Webserver einrichten",
-        "location": "/docs/netzwerktechnik/protokolle/http.html#Eigenen Webserver einrichten",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
-    },
-    {
-        "title": "IP",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html",
-        "prettypath": "Netzwerktechnik ➜ Protokolle"
-    },
-    {
-        "title": "IPv4",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
-    },
-    {
-        "title": "Aufgaben",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Aufgaben",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
-    },
-    {
-        "title": "Aufbau",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Aufbau",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
-    },
-    {
-        "title": "Netzanteil",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Netzanteil",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
-    },
-    {
-        "title": "Hostanteil",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Hostanteil",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
-    },
-    {
-        "title": "IPv5",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv5",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
-    },
-    {
-        "title": "IPv6",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
-    },
-    {
-        "title": "Vorteile",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Vorteile",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Aufbau",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Aufbau",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Schreibweise",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Schreibweise",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Segmentierung",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Segmentierung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Scopes",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Scopes",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "SLAAC",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Link-Lokal IPv6-Adressen",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-Link-Lokal_IPv6-Adressen",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
-    },
-    {
-        "title": "globale IPv6-Adressen",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-globale_IPv6-Adressen",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
-    },
-    {
-        "title": "temporär globale IPv6-Adressen",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-temporär_globale_IPv6-Adressen",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
-    },
-    {
-        "title": "Address Selection",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Address_Selection",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "IPsec",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-IPsec",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Renumbering",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Renumbering",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Flow Labels",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Flow_Labels",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Jumbograms",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Jumbograms",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Multicast",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Multicast",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "Multihoming",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Multicast",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "NDP",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-NDP",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "stateless vs. stateful",
-        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-stateless_vs._stateful",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
-    },
-    {
-        "title": "TCP",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html",
-        "prettypath": "Netzwerktechnik ➜ Protokolle"
-    },
-    {
-        "title": "Aufgaben",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Aufgaben",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Segmentierung (Data Segmenting)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Segmentierung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Verbindungsmanagement (Connection Establishment and Termination)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Verbindungsmanagement",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Fehlerbehandlung (Error Detection)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Fehlerbehandlung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Flusssteuerung (Flow Control)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Flusssteuerung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Anwendungsunterstützung (Application Support)",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Anwendungsunterstützung",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Ports",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
-    },
-    {
-        "title": "Portgruppen",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
-    },
-    {
-        "title": "well-known Ports",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-well-known_Ports",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
-    },
-    {
-        "title": "Registered Ports",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Registered_Ports",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
-    },
-    {
-        "title": "Dynamically Allocated Ports",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Dynamically_Allocated_Ports",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
-    },
-    {
-        "title": "Portzustände",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
-    },
-    {
-        "title": "Open",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Open",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
-    },
-    {
-        "title": "Closed",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Closed",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
-    },
-    {
-        "title": "Filtered",
-        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Filtered",
-        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
-    },
-    {
+        "id": 32,
         "title": "UDP",
         "location": "/docs/netzwerktechnik/protokolle/udp.html",
         "prettypath": "Netzwerktechnik ➜ Protokolle"
     },
     {
+        "id": 33,
         "title": "Unterschiede zu TCP",
         "location": "/docs/netzwerktechnik/protokolle/udp.html#Unterschiede",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ UDP"
     },
     {
+        "id": 34,
         "title": "Funktionsweise von UDP",
         "location": "/docs/netzwerktechnik/protokolle/udp.html#Funktionsweise",
         "prettypath": "Netzwerktechnik ➜ Protokolle ➜ UDP"
     },
     {
+        "id": 35,
+        "title": "TCP",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "id": 36,
+        "title": "Aufgaben",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Aufgaben",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "id": 37,
+        "title": "Segmentierung (Data Segmenting)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Segmentierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "id": 38,
+        "title": "Verbindungsmanagement (Connection Establishment and Termination)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Verbindungsmanagement",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "id": 39,
+        "title": "Fehlerbehandlung (Error Detection)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Fehlerbehandlung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "id": 40,
+        "title": "Flusssteuerung (Flow Control)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Flusssteuerung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "id": 41,
+        "title": "Anwendungsunterstützung (Application Support)",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Anwendungsunterstützung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "id": 42,
+        "title": "Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP"
+    },
+    {
+        "id": 43,
+        "title": "Portgruppen",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
+    },
+    {
+        "id": 44,
+        "title": "well-known Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-well-known_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "id": 45,
+        "title": "Registered Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Registered_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "id": 46,
+        "title": "Dynamically Allocated Ports",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portgruppen-Dynamically_Allocated_Ports",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portgruppen"
+    },
+    {
+        "id": 47,
+        "title": "Portzustände",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports"
+    },
+    {
+        "id": 48,
+        "title": "Open",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Open",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
+    },
+    {
+        "id": 49,
+        "title": "Closed",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Closed",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
+    },
+    {
+        "id": 50,
+        "title": "Filtered",
+        "location": "/docs/netzwerktechnik/protokolle/tcp.html#Ports-Portzustände-Filtered",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ TCP ➜ Ports ➜ Portzustände"
+    },
+    {
+        "id": 51,
+        "title": "IP",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "id": 52,
+        "title": "IPv4",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
+    },
+    {
+        "id": 53,
+        "title": "Aufgaben",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Aufgaben",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "id": 54,
+        "title": "Aufbau",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Aufbau",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "id": 55,
+        "title": "Netzanteil",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Netzanteil",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "id": 56,
+        "title": "Hostanteil",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv4-Hostanteil",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv4"
+    },
+    {
+        "id": 57,
+        "title": "IPv5",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv5",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
+    },
+    {
+        "id": 58,
+        "title": "IPv6",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP"
+    },
+    {
+        "id": 59,
+        "title": "Vorteile",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Vorteile",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 60,
+        "title": "Aufbau",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Aufbau",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 61,
+        "title": "Schreibweise",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Schreibweise",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 62,
+        "title": "Segmentierung",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Segmentierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 63,
+        "title": "Scopes",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Scopes",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 64,
+        "title": "SLAAC",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 65,
+        "title": "Link-Lokal IPv6-Adressen",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-Link-Lokal_IPv6-Adressen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
+    },
+    {
+        "id": 66,
+        "title": "globale IPv6-Adressen",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-globale_IPv6-Adressen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
+    },
+    {
+        "id": 67,
+        "title": "temporär globale IPv6-Adressen",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-SLAAC-temporär_globale_IPv6-Adressen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6 ➜ SLAAC"
+    },
+    {
+        "id": 68,
+        "title": "Address Selection",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Address_Selection",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 69,
+        "title": "IPsec",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-IPsec",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 70,
+        "title": "Renumbering",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Renumbering",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 71,
+        "title": "Flow Labels",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Flow_Labels",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 72,
+        "title": "Jumbograms",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Jumbograms",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 73,
+        "title": "Multicast",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Multicast",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 74,
+        "title": "Multihoming",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-Multicast",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 75,
+        "title": "NDP",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-NDP",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 76,
+        "title": "stateless vs. stateful",
+        "location": "/docs/netzwerktechnik/protokolle/ip.html#IPv6-stateless_vs._stateful",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ IP ➜ IPv6"
+    },
+    {
+        "id": 77,
+        "title": "HTTP",
+        "location": "/docs/netzwerktechnik/protokolle/http.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "id": 78,
+        "title": "HTTP im OSI-Schichtenmodell",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP im OSI-Schichtenmodell",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "id": 79,
+        "title": "Wie funktioniert HTTP?",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#Wie funktioniert HTTP?",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "id": 80,
+        "title": "HTTP-Versionen im Vergleich",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "id": 81,
+        "title": "HTTP/1.1",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/1.1",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
+    },
+    {
+        "id": 82,
+        "title": "HTTPS - HTTP Secure",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTPS - HTTP Secure",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
+    },
+    {
+        "id": 83,
+        "title": "HTTP/2",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/2",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
+    },
+    {
+        "id": 84,
+        "title": "HTTP/3",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Versionen im Vergleich-HTTP/3",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP ➜ HTTP-Versionen im Vergleich"
+    },
+    {
+        "id": 85,
+        "title": "HTTP-Adressierung",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Adressierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "id": 86,
+        "title": "HTTP-Cookie",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Cookie",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "id": 87,
+        "title": "HTTP-Authentifizierung",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-Authentifizierung",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "id": 88,
+        "title": "HTTP-ABR - HTTP Adaptive Bit Rate",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#HTTP-ABR - HTTP Adaptive Bit Rate",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "id": 89,
+        "title": "Eigenen Webserver einrichten",
+        "location": "/docs/netzwerktechnik/protokolle/http.html#Eigenen Webserver einrichten",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ HTTP"
+    },
+    {
+        "id": 90,
+        "title": "DNS",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html",
+        "prettypath": "Netzwerktechnik ➜ Protokolle"
+    },
+    {
+        "id": 91,
+        "title": "DNS - Domain Name System",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS"
+    },
+    {
+        "id": 92,
+        "title": "Namensauflösung vor DNS",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Namensauflösung_vor_DNS",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 93,
+        "title": "Domain oder Domain-Name",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Domain_oder_Domain-Name",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 94,
+        "title": "Organisatorische Top-Level-Domains (Auszug)",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Organisatorische_Top-Level-Domains_(Auszug)",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 95,
+        "title": "Geografische Top-Level-Domains (Auszug)",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Geografische_Top-Level-Domains_(Auszug)",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 96,
+        "title": "Aufgabenteilung im DNS",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Aufgabenteilung_im_DNS",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 97,
+        "title": "DNS-Zonen",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNS-Zonen",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 98,
+        "title": "Einträge in einer DNS-Zone bzw. Zonendatei",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Einträge_in_einer_DNS-Zone_bzw._Zonendatei",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 99,
+        "title": "DNS-Server / Nameserver",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNS-Server_/_Nameserver",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 100,
+        "title": "Resolver (DNS-Client)",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Resolver_(DNS-Client)",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 101,
+        "title": "Primärer und Sekundärer DNS-Server / Primary und Secondary Nameserver",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Primärer_und_Sekundärer_DNS-Server_/_Primary_und_Secondary_Nameserver",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 102,
+        "title": "Ablauf einer Namensauflösung mit DNS (DNS-Abfrage)",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Ablauf_einer_Namensauflösung_mit_DNS_(DNS-Abfrage)",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 103,
+        "title": "Rekursion",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Rekursion",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 104,
+        "title": "Iteration",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-Iteration",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 105,
+        "title": "DNS-Protokoll",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNS-Protokoll",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 106,
+        "title": "OpenDNS",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-OpenDNS",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 107,
+        "title": "DNSSEC",
+        "location": "/docs/netzwerktechnik/protokolle/dns.html#DNS_-_Domain_Name_System-DNSSEC",
+        "prettypath": "Netzwerktechnik ➜ Protokolle ➜ DNS ➜ DNS - Domain Name System"
+    },
+    {
+        "id": 108,
+        "title": "Bausteine",
+        "location": "/docs/netzwerktechnik/bausteine.html",
+        "prettypath": "Netzwerktechnik"
+    },
+    {
+        "id": 109,
+        "title": "URL",
+        "location": "/docs/netzwerktechnik/bausteine/url.html",
+        "prettypath": "Netzwerktechnik ➜ Bausteine"
+    },
+    {
+        "id": 110,
+        "title": "URL - Uniform Resource Locator",
+        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator",
+        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL"
+    },
+    {
+        "id": 111,
+        "title": "Aufbau eines URL (Beispiel)",
+        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)",
+        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator"
+    },
+    {
+        "id": 112,
+        "title": "Ressourcentyp://",
+        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Ressourcentyp://",
+        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
+    },
+    {
+        "id": 113,
+        "title": "User:Passwort@",
+        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-User:Passwort@",
+        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
+    },
+    {
+        "id": 114,
+        "title": "Host.Domain.TLD",
+        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Host.Domain.TLD",
+        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
+    },
+    {
+        "id": 115,
+        "title": ":Port",
+        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-:Port",
+        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
+    },
+    {
+        "id": 116,
+        "title": "/Pfad/Datei",
+        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-/Pfad/Datei",
+        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
+    },
+    {
+        "id": 117,
+        "title": "Parameter",
+        "location": "/docs/netzwerktechnik/bausteine/url.html#URL_-_Uniform_Resource_Locator-Aufbau_eines_ URL_(Beispiel)-Parameter",
+        "prettypath": "Netzwerktechnik ➜ Bausteine ➜ URL ➜ URL - Uniform Resource Locator ➜ Aufbau eines URL (Beispiel)"
+    },
+    {
+        "id": 118,
         "title": "Programmiersprachen",
         "location": "/docs/programmiersprachen.html",
         "prettypath": ""
     },
     {
+        "id": 119,
         "title": "Brainfuck",
         "location": "/docs/programmiersprachen/brainfuck.html",
         "prettypath": "Programmiersprachen"
     },
     {
+        "id": 120,
         "title": "Was ist das?",
         "location": "/docs/programmiersprachen/brainfuck.html#Was_ist_das?",
         "prettypath": "Programmiersprachen ➜ Brainfuck"
     },
     {
+        "id": 121,
         "title": "Erklärung",
         "location": "/docs/programmiersprachen/brainfuck.html#Erklärung",
         "prettypath": "Programmiersprachen ➜ Brainfuck"
     },
     {
+        "id": 122,
         "title": "Entwicklung",
         "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Entwicklung",
         "prettypath": "Programmiersprachen ➜ Brainfuck ➜ Erklärung"
     },
     {
+        "id": 123,
         "title": "Programmierung",
         "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Programmierung",
         "prettypath": "Programmiersprachen ➜ Brainfuck ➜ Erklärung"
     },
     {
+        "id": 124,
         "title": "Mit Brainfuck anfangen",
         "location": "/docs/programmiersprachen/brainfuck.html#Erklärung-Mit_Brainfuck_anfangen",
         "prettypath": "Programmiersprachen ➜ Brainfuck ➜ Erklärung"
     },
     {
+        "id": 125,
         "title": "C#",
         "location": "/docs/programmiersprachen/csharp.html",
         "prettypath": "Programmiersprachen"
     },
     {
+        "id": 126,
         "title": "Other stuff C#",
         "location": "/docs/programmiersprachen/csharp/anderes.html",
         "prettypath": "Programmiersprachen ➜ C#"
     },
     {
-        "title": "Playfair Chiffre",
-        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
-    },
-    {
+        "id": 127,
         "title": "Verkettung C#",
         "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
     },
     {
+        "id": 128,
         "title": "Verkettete Listen",
         "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C#"
     },
     {
+        "id": 129,
         "title": "einfach Verkettete Listen",
         "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen-einfach_Verkettete_Listen",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C# ➜ Verkettete Listen"
     },
     {
+        "id": 130,
         "title": "doppelt Verkettete Listen",
         "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen-doppelt_Verkettete_Listen",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C# ➜ Verkettete Listen"
     },
     {
+        "id": 131,
         "title": "einfach Verkettete Listen generisch",
         "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen-einfach_Verkettete_Listen_generisch",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C# ➜ Verkettete Listen"
     },
     {
+        "id": 132,
         "title": "doppelt Verkettete Listen generisch",
         "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Verkettete_Listen-doppelt_Verkettete_Listen_generisch",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C# ➜ Verkettete Listen"
     },
     {
+        "id": 133,
         "title": "Binary Tree",
         "location": "/docs/programmiersprachen/csharp/anderes/verkettung.html#Binary-Tree",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ Verkettung C#"
     },
     {
+        "id": 134,
         "title": "wichtige Klassen C#",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
     },
     {
+        "id": 135,
         "title": "Math / Mathf",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C#"
     },
     {
+        "id": 136,
         "title": "PI",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-PI",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
+        "id": 137,
         "title": "E",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-E",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
+        "id": 138,
         "title": "Min",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Min",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
+        "id": 139,
         "title": "Max",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Max",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
+        "id": 140,
         "title": "Pow",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Pow",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
+        "id": 141,
         "title": "Sqrt",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Sqrt",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
+        "id": 142,
         "title": "Round",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Round",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
+        "id": 143,
         "title": "Abs",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Math_/_Mathf-Abs",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C# ➜ Math / Mathf"
     },
     {
+        "id": 144,
         "title": "String",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#String",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C#"
     },
     {
+        "id": 145,
         "title": "Random",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Random",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C#"
     },
     {
+        "id": 146,
         "title": "Convert",
         "location": "/docs/programmiersprachen/csharp/anderes/wichtige_klassen.html#Convert",
         "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C# ➜ wichtige Klassen C#"
     },
     {
+        "id": 147,
+        "title": "Playfair Chiffre",
+        "location": "/docs/programmiersprachen/csharp/anderes/playfair_chiffre.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Other stuff C#"
+    },
+    {
+        "id": 148,
         "title": "Grundlagen C#",
         "location": "/docs/programmiersprachen/csharp/grundlagen.html",
         "prettypath": "Programmiersprachen ➜ C#"
     },
     {
-        "title": "Datentypen C#",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
-    },
-    {
-        "title": "einfache Datentypen",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C#"
-    },
-    {
-        "title": "Eigenschaften",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Eigenschaften",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Wertebereiche",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Wertebereiche",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Wertebereich erklärt",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Wertebereiche_erklärt",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Operationen mit Zahlen",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Operation_mit_Zahlen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Int",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Int",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Double",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Double",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Float",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Float",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Decimal",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Decimal",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Bool",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Bool",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Struct",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Struct",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "short",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-short",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "long",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-long",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "byte",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-byte",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "sbyte",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-sbyte",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "uint",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-uint",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "ushort",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-ushort",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "ulong",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-ulong",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
-    },
-    {
-        "title": "Referenztypen",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C#"
-    },
-    {
-        "title": "Eigenschaften",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Eigenschaften",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "Char",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Char",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "String",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-String",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "Array",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Array",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "List",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-List",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "Class",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Class",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "Interface",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Interface",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "Enum",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Enum",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "Object",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Object",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
-        "title": "Delegate",
-        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Delegate",
-        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
-    },
-    {
+        "id": 149,
         "title": "Flusssteuerung C#",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
     },
     {
+        "id": 150,
         "title": "if",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#if",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
     },
     {
+        "id": 151,
         "title": "else",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#else",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
     },
     {
+        "id": 152,
         "title": "switch",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#switch",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
     },
     {
+        "id": 153,
         "title": "Schleifen",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
     },
     {
+        "id": 154,
         "title": "while",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-while",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
     },
     {
+        "id": 155,
         "title": "for",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-for",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
     },
     {
+        "id": 156,
         "title": "foreach",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-foreach",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
     },
     {
+        "id": 157,
         "title": "do-while",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#schleifen-do-while",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C# ➜ Schleifen"
     },
     {
+        "id": 158,
         "title": "return",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#return",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
     },
     {
+        "id": 159,
         "title": "continue und break",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#continue_und_break",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
     },
     {
+        "id": 160,
         "title": "goto",
         "location": "/docs/programmiersprachen/csharp/grundlagen/flusssteuerung.html#goto",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Flusssteuerung C#"
     },
     {
+        "id": 161,
         "title": "statische Methoden C#",
         "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
     },
     {
+        "id": 162,
         "title": "Einleitung",
         "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Eninleitung",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
     },
     {
+        "id": 163,
         "title": "Methodenaufruf",
         "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Methodenaufruf",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
     },
     {
+        "id": 164,
         "title": "Rekursion",
         "location": "/docs/programmiersprachen/csharp/grundlagen/methoden.html#Rekursion",
         "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ statische Methoden C#"
     },
     {
+        "id": 165,
+        "title": "Datentypen C#",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C#"
+    },
+    {
+        "id": 166,
+        "title": "einfache Datentypen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C#"
+    },
+    {
+        "id": 167,
+        "title": "Eigenschaften",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Eigenschaften",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 168,
+        "title": "Wertebereiche",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Wertebereiche",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 169,
+        "title": "Wertebereich erklärt",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Wertebereiche_erklärt",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 170,
+        "title": "Operationen mit Zahlen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Operation_mit_Zahlen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 171,
+        "title": "Int",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Int",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 172,
+        "title": "Double",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Double",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 173,
+        "title": "Float",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Float",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 174,
+        "title": "Decimal",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Decimal",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 175,
+        "title": "Bool",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Bool",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 176,
+        "title": "Struct",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-Struct",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 177,
+        "title": "short",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-short",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 178,
+        "title": "long",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-long",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 179,
+        "title": "byte",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-byte",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 180,
+        "title": "sbyte",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-sbyte",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 181,
+        "title": "uint",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-uint",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 182,
+        "title": "ushort",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-ushort",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 183,
+        "title": "ulong",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#einfache_Datentypen-ulong",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ einfache Datentypen"
+    },
+    {
+        "id": 184,
+        "title": "Referenztypen",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C#"
+    },
+    {
+        "id": 185,
+        "title": "Eigenschaften",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Eigenschaften",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 186,
+        "title": "Char",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Char",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 187,
+        "title": "String",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-String",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 188,
+        "title": "Array",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Array",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 189,
+        "title": "List",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-List",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 190,
+        "title": "Class",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Class",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 191,
+        "title": "Interface",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Interface",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 192,
+        "title": "Enum",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Enum",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 193,
+        "title": "Object",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Object",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 194,
+        "title": "Delegate",
+        "location": "/docs/programmiersprachen/csharp/grundlagen/datentypen.html#Referenztypen-Delegate",
+        "prettypath": "Programmiersprachen ➜ C# ➜ Grundlagen C# ➜ Datentypen C# ➜ Referenztypen"
+    },
+    {
+        "id": 195,
         "title": "OOP C#",
         "location": "/docs/programmiersprachen/csharp/oop.html",
         "prettypath": "Programmiersprachen ➜ C#"
     },
     {
-        "title": "Interfaces C#",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
-    },
-    {
-        "title": "Interfaces",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C#"
-    },
-    {
-        "title": "Was ist ein Interface?",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
-    },
-    {
-        "title": "Syntax",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?-Syntax",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces ➜ Was ist ein Interface?"
-    },
-    {
-        "title": "Methoden",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Methoden",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
-    },
-    {
-        "title": "Properties",
-        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Properties",
-        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
-    },
-    {
+        "id": 196,
         "title": "Klassen",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
     },
     {
+        "id": 197,
         "title": "Verwendung",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
     },
     {
+        "id": 198,
         "title": "Was ist eine Klasse?",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Was_ist_eine_Klasse?",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Verwendung"
     },
     {
+        "id": 199,
         "title": "Syntax",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Syntax",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Verwendung"
     },
     {
+        "id": 200,
         "title": "Instanz einer Klasse",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Verwendung-Instanz_einer_Klasse",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Verwendung"
     },
     {
+        "id": 201,
         "title": "private Variablen",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#private_Variablen",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
     },
     {
+        "id": 202,
         "title": "public Properties",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#public_Properties",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
     },
     {
+        "id": 203,
         "title": "Konstruktoren",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
     },
     {
+        "id": 204,
         "title": "Einleitung",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren-Einleitung",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Konstruktoren"
     },
     {
+        "id": 205,
         "title": "Konstruktor-Verkettung",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Konstruktoren-Konstruktor-Verkettung",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Konstruktoren"
     },
     {
+        "id": 206,
         "title": "Methoden",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
     },
     {
+        "id": 207,
         "title": "Syntax",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-Syntax",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
     },
     {
+        "id": 208,
         "title": "2 Arten",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-2_Arten",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
     },
     {
+        "id": 209,
         "title": "statische Methoden",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-statische_Methoden",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
     },
     {
+        "id": 210,
         "title": "dynamische Methoden",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-dynamische_Methoden",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
     },
     {
+        "id": 211,
         "title": "Rekursion",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Methoden-Rekursion",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Methoden"
     },
     {
+        "id": 212,
         "title": "Generische Klassen",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
     },
     {
+        "id": 213,
         "title": "Theorie",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Theorie",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
     },
     {
+        "id": 214,
         "title": "Syntax Klasse",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Klasse",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
     },
     {
+        "id": 215,
         "title": "Syntax Instanz",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Instanz",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
     },
     {
+        "id": 216,
         "title": "Syntax Properties",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Properties",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
     },
     {
+        "id": 217,
         "title": "Syntax Methoden",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Methoden",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
     },
     {
+        "id": 218,
         "title": "Syntax Methodenaufruf",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Generische_Klassen-Syntax_Methodenaufruf",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Generische Klassen"
     },
     {
+        "id": 219,
         "title": "Unit Tests",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen"
     },
     {
+        "id": 220,
         "title": "Was sind Unit Tests?",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests-Was_sind_Unit_Tests?",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Unit Tests"
     },
     {
+        "id": 221,
         "title": "Syntax",
         "location": "/docs/programmiersprachen/csharp/oop/klassen.html#Unit_Tests-Syntax",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Klassen ➜ Unit Tests"
     },
     {
+        "id": 222,
+        "title": "Interfaces C#",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
+    },
+    {
+        "id": 223,
+        "title": "Interfaces",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C#"
+    },
+    {
+        "id": 224,
+        "title": "Was ist ein Interface?",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
+    },
+    {
+        "id": 225,
+        "title": "Syntax",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Was_ist_ein_Interface?-Syntax",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces ➜ Was ist ein Interface?"
+    },
+    {
+        "id": 226,
+        "title": "Methoden",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Methoden",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
+    },
+    {
+        "id": 227,
+        "title": "Properties",
+        "location": "/docs/programmiersprachen/csharp/oop/interfaces.html#Interfaces-Properties",
+        "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Interfaces C# ➜ Interfaces"
+    },
+    {
+        "id": 228,
         "title": "Vererbung C#",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C#"
     },
     {
+        "id": 229,
         "title": "Einleitung",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Einleitung",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C#"
     },
     {
+        "id": 230,
         "title": "Beispiel",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Einleitung-Beispiel",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ Einleitung"
     },
     {
+        "id": 231,
         "title": "besondere Klassen",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#besondere_Klassen",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C#"
     },
     {
+        "id": 232,
         "title": "abstract Klassen",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#besondere_Klassen-abstract_Klassen",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ besondere Klassen"
     },
     {
+        "id": 233,
         "title": "sealed Klassen",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#besondere_Klassen-sealed_Klassen",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ besondere Klassen"
     },
     {
+        "id": 234,
         "title": "Polymorphie",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Polymorphie",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C#"
     },
     {
+        "id": 235,
         "title": "Vorgeschichte",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Polymorphie-Vorgeschichte",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ Polymorphie"
     },
     {
+        "id": 236,
         "title": "Einleitung",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Polymorphie-Einleitung",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ Polymorphie"
     },
     {
+        "id": 237,
         "title": "Personenbeispiel",
         "location": "/docs/programmiersprachen/csharp/oop/vererbung.html#Polymorphie-Personenbeispiel",
         "prettypath": "Programmiersprachen ➜ C# ➜ OOP C# ➜ Vererbung C# ➜ Polymorphie"
     },
     {
+        "id": 238,
         "title": "HTML",
         "location": "/docs/programmiersprachen/html.html",
         "prettypath": "Programmiersprachen"
     },
     {
-        "title": "alle Attribute",
-        "location": "/docs/programmiersprachen/html/alle_attribute.html",
-        "prettypath": "Programmiersprachen ➜ HTML"
-    },
-    {
-        "title": "globale Attribute",
-        "location": "/docs/programmiersprachen/html/alle_attribute.html#globale_Attribute",
-        "prettypath": "Programmiersprachen ➜ HTML ➜ alle Attribute"
-    },
-    {
+        "id": 239,
         "title": "alle HTML-Tags",
         "location": "/docs/programmiersprachen/html/alle_tags.html",
         "prettypath": "Programmiersprachen ➜ HTML"
     },
     {
+        "id": 240,
         "title": "Überblick",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Überblick",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags"
     },
     {
+        "id": 241,
         "title": "Details",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags"
     },
     {
+        "id": 242,
         "title": "&lt;div&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-div",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 243,
         "title": "Beschreibung",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-div-Beschreibung",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details ➜ &lt;div&gt;"
     },
     {
+        "id": 244,
         "title": "Beispiel",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-div-Beispiel",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details ➜ &lt;div&gt;"
     },
     {
+        "id": 245,
         "title": "&lt;span&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-span",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 246,
         "title": "&lt;a&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-a",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 247,
         "title": "&lt;img&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-img",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 248,
         "title": "&lt;link&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-link",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 249,
         "title": "&lt;script&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-script",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 250,
         "title": "&lt;noscript&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-noscript",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 251,
         "title": "&lt;h1&gt; bis &lt;h6&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-h1&gt;_bis_&lt;h6",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 252,
         "title": "&lt;p&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-p",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 253,
         "title": "&lt;html&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-html",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 254,
         "title": "&lt;head&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-head",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 255,
         "title": "&lt;body&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-body",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 256,
         "title": "&lt;title&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-title",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 257,
         "title": "&lt;meta&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-meta",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 258,
         "title": "&lt;style&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-style",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 259,
         "title": "&lt;table&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-table",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 260,
         "title": "&lt;tr&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-tr",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 261,
         "title": "&lt;th&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-th",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 262,
         "title": "&lt;td&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-td",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 263,
         "title": "&lt;thead&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-thead",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 264,
         "title": "&lt;tbody&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-tbody",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 265,
         "title": "&lt;tfoot&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-tfoot",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 266,
         "title": "&lt;colgroup&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-colgroup",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 267,
         "title": "&lt;col&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-col",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 268,
         "title": "&lt;br&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-br",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 269,
         "title": "&lt;form&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-form",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 270,
         "title": "&lt;button&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-button",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 271,
         "title": "&lt;input&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-input",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 272,
         "title": "&lt;label&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-label",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 273,
         "title": "&lt;main&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-main",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 274,
         "title": "&lt;section&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-section",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 275,
         "title": "&lt;article&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-article",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 276,
         "title": "&lt;nav&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-nav",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 277,
         "title": "&lt;header&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-header",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 278,
         "title": "&lt;footer&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-footer",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 279,
         "title": "&lt;ul&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-ul",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 280,
         "title": "&lt;ol&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-ol",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 281,
         "title": "&lt;li&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-li",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 282,
         "title": "&lt;sub&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-sub",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 283,
         "title": "&lt;sup&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-sup",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 284,
         "title": "&lt;pre&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-pre",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 285,
         "title": "&lt;!--...--&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-!--...--",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 286,
         "title": "&lt;!DOCTYPE&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-!DOCTYPE",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 287,
         "title": "&lt;audio&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-audio",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 288,
         "title": "&lt;video&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-video",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 289,
         "title": "&lt;abbr&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-abbr",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 290,
         "title": "&lt;code&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-code",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 291,
         "title": "&lt;strong&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-strong",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 292,
         "title": "&lt;b&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-b",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 293,
         "title": "&lt;em&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-em",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 294,
         "title": "&lt;i&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-i",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 295,
         "title": "&lt;del&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-del",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 296,
         "title": "&lt;s&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-s",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 297,
         "title": "&lt;u&gt;",
         "location": "/docs/programmiersprachen/html/alle_tags.html#Details-u",
         "prettypath": "Programmiersprachen ➜ HTML ➜ alle HTML-Tags ➜ Details"
     },
     {
+        "id": 298,
         "title": "Grundlagen HTML",
         "location": "/docs/programmiersprachen/html/grundlagen.html",
         "prettypath": "Programmiersprachen ➜ HTML"
     },
     {
+        "id": 299,
         "title": "Fakten über HTML",
         "location": "/docs/programmiersprachen/html/grundlagen.html#Fakten_über_HTML",
         "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
     },
     {
+        "id": 300,
         "title": "Syntax HTML-Tag",
         "location": "/docs/programmiersprachen/html/grundlagen.html#Syntax_HTML-Tag",
         "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
     },
     {
+        "id": 301,
         "title": "Syntax Attribute",
         "location": "/docs/programmiersprachen/html/grundlagen.html#Syntax_Attribute",
         "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
     },
     {
+        "id": 302,
         "title": "Box-Modell",
         "location": "/docs/programmiersprachen/html/grundlagen.html#Box-Modell",
         "prettypath": "Programmiersprachen ➜ HTML ➜ Grundlagen HTML"
     },
     {
+        "id": 303,
+        "title": "alle Attribute",
+        "location": "/docs/programmiersprachen/html/alle_attribute.html",
+        "prettypath": "Programmiersprachen ➜ HTML"
+    },
+    {
+        "id": 304,
+        "title": "globale Attribute",
+        "location": "/docs/programmiersprachen/html/alle_attribute.html#globale_Attribute",
+        "prettypath": "Programmiersprachen ➜ HTML ➜ alle Attribute"
+    },
+    {
+        "id": 305,
         "title": "WPF",
         "location": "/docs/programmiersprachen/wpf.html",
         "prettypath": "Programmiersprachen"
     },
     {
+        "id": 306,
         "title": "Controls",
         "location": "/docs/programmiersprachen/wpf.html#Controls",
         "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
+        "id": 307,
         "title": "Übersicht",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Übersicht",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 308,
         "title": "Label",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Label",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 309,
         "title": "TextBox",
         "location": "/docs/programmiersprachen/wpf.html#Controls-TextBox",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 310,
         "title": "TextBlock",
         "location": "/docs/programmiersprachen/wpf.html#Controls-TextBlock",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 311,
         "title": "Slider",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Slider",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 312,
         "title": "RadioButton",
         "location": "/docs/programmiersprachen/wpf.html#Controls-RadioButton",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 313,
         "title": "CheckBox",
         "location": "/docs/programmiersprachen/wpf.html#Controls-CheckBox",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 314,
         "title": "Button",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Button",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 315,
         "title": "DatePicker",
         "location": "/docs/programmiersprachen/wpf.html#Controls-DatePicker",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 316,
         "title": "Tabellen",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 317,
         "title": "DataGrid",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen-DataGrid",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Tabellen"
     },
     {
+        "id": 318,
         "title": "ListView",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen-ListView",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Tabellen"
     },
     {
+        "id": 319,
         "title": "ListBox",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen-ListBox",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Tabellen"
     },
     {
+        "id": 320,
         "title": "ComboBox",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Tabellen-ComboBox",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Tabellen"
     },
     {
+        "id": 321,
         "title": "Panel",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Panel",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls"
     },
     {
+        "id": 322,
         "title": "StackPanel",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-StackPanel",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
     },
     {
+        "id": 323,
         "title": "WrapPanel",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-WrapPanel",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
     },
     {
+        "id": 324,
         "title": "DockPanel",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-DockPanel",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
     },
     {
+        "id": 325,
         "title": "Grid",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-Grid",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
     },
     {
+        "id": 326,
         "title": "Canvas",
         "location": "/docs/programmiersprachen/wpf.html#Controls-Panel-Canvas",
         "prettypath": "Programmiersprachen ➜ WPF ➜ Controls ➜ Panel"
     },
     {
+        "id": 327,
         "title": "Properties",
         "location": "/docs/programmiersprachen/wpf.html#Properties",
         "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
+        "id": 328,
         "title": "MVVM - Modell",
         "location": "/docs/programmiersprachen/wpf.html#MVVM - Modell",
         "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
+        "id": 329,
         "title": "DataBinding",
         "location": "/docs/programmiersprachen/wpf.html#DataBinding",
         "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
+        "id": 330,
         "title": "ObservableCollection",
         "location": "/docs/programmiersprachen/wpf.html#ObservableCollection",
         "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
+        "id": 331,
         "title": "ControlBinding",
         "location": "/docs/programmiersprachen/wpf.html#ControlBinding",
         "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
+        "id": 332,
         "title": "Converter",
         "location": "/docs/programmiersprachen/wpf.html#Converter",
         "prettypath": "Programmiersprachen ➜ WPF"
     },
     {
+        "id": 333,
         "title": "Systemtechnik",
         "location": "/docs/systemtechnik.html",
         "prettypath": ""
     },
     {
+        "id": 334,
         "title": "Formeln",
         "location": "/docs/systemtechnik/formeln.html",
         "prettypath": "Systemtechnik"
     },
     {
+        "id": 335,
         "title": "Vorsätze der Einheiten",
         "location": "/docs/systemtechnik/formeln.html#Vorsätze_der_Einheiten",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 336,
         "title": "Ohm'sches Gesetz & Co.",
         "location": "/docs/systemtechnik/formeln.html#Ohm'sches_Gesetz_&_Co.",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 337,
         "title": "Ohm'sches Gesetz",
         "location": "/docs/systemtechnik/formeln.html#Ohm'sches_Gesetz_&_Co.-Ohm'sches_Gesetz",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Ohm'sches Gesetz & Co."
     },
     {
+        "id": 338,
         "title": "Ähnliche physikalische Gesetze",
         "location": "/docs/systemtechnik/formeln.html#Ohm'sches_Gesetz_&_Co.-Ähnliche_physikalische_Gesetze",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Ohm'sches Gesetz & Co."
     },
     {
+        "id": 339,
         "title": "Kirchhoffsche Gesetze",
         "location": "/docs/systemtechnik/formeln.html#Kirchhoffsche_Gesetze",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 340,
         "title": "Knotenregel",
         "location": "/docs/systemtechnik/formeln.html#Kirchhoffsche_Gesetze-Knotenregel",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Kirchhoffsche Gesetze"
     },
     {
+        "id": 341,
         "title": "Maschenregel",
         "location": "/docs/systemtechnik/formeln.html#Kirchhoffsche_Gesetze-Maschenregel",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Kirchhoffsche Gesetze"
     },
     {
+        "id": 342,
         "title": "Strom- & Spannungsteiler",
         "location": "/docs/systemtechnik/formeln.html#Strom-_&_Spannunsteiler",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 343,
         "title": "Stromteiler",
         "location": "/docs/systemtechnik/formeln.html#Strom-_&_Spannunsteiler-Stromteiler",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Strom- & Spannungsteiler"
     },
     {
+        "id": 344,
         "title": "Spannungsteiler",
         "location": "/docs/systemtechnik/formeln.html#Strom-_&_Spannunsteiler-Spannungsteiler",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Strom- & Spannungsteiler"
     },
     {
+        "id": 345,
         "title": "Tiefpass",
         "location": "/docs/systemtechnik/formeln.html#Tiefpass",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 346,
         "title": "Wechselspannung",
         "location": "/docs/systemtechnik/formeln.html#Wechselspannung",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 347,
         "title": "Plattenkondensator",
         "location": "/docs/systemtechnik/formeln.html#Plattenkondensator",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 348,
         "title": "Transistor",
         "location": "/docs/systemtechnik/formeln.html#Transistor",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 349,
         "title": "Verstärker",
         "location": "/docs/systemtechnik/formeln.html#Verstärker",
         "prettypath": "Systemtechnik ➜ Formeln"
     },
     {
+        "id": 350,
         "title": "Invertierende Verstärker",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Invertierende_Verstärker",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
+        "id": 351,
         "title": "Theorie",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Invertierende_Verstärker-Theorie",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
     },
     {
+        "id": 352,
         "title": "Aufbau",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Invertierende_Verstärker-Aufbau",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
     },
     {
+        "id": 353,
         "title": "Formeln",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Invertierende_Verstärker-Formeln",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Invertierende Verstärker"
     },
     {
+        "id": 354,
         "title": "Nicht-Invertierende Verstärker",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Nicht-Invertierende_Verstärker",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
+        "id": 355,
         "title": "Theorie",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Nicht-Invertierende_Verstärker-Theorie",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
     },
     {
+        "id": 356,
         "title": "Aufbau",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Nicht-Invertierende_Verstärker-Aufbau",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
     },
     {
+        "id": 357,
         "title": "Formeln",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Nicht-Invertierende_Verstärker-Formeln",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Nicht-Invertierende Verstärker"
     },
     {
+        "id": 358,
         "title": "Summierende Verstärker",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Summierende_Verstärker",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
+        "id": 359,
         "title": "Theorie",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Summierende_Verstärker-Theorie",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
     },
     {
+        "id": 360,
         "title": "Aufbau",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Summierende_Verstärker-Aufbau",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
     },
     {
+        "id": 361,
         "title": "Formeln",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Summierende_Verstärker-Formeln",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Summierende Verstärker"
     },
     {
+        "id": 362,
         "title": "Differenzverstärker",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Differenzverstärker",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
+        "id": 363,
         "title": "Theorie",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Differenzverstärker-Theorie",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
     },
     {
+        "id": 364,
         "title": "Aufbau",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Differenzverstärker-Aufbau",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
     },
     {
+        "id": 365,
         "title": "Formeln",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Differenzverstärker-Formeln",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Differenzverstärker"
     },
     {
+        "id": 366,
         "title": "Integrator",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Integrator",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
+        "id": 367,
         "title": "Theorie",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Integrator-Theorie",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
     },
     {
+        "id": 368,
         "title": "Aufbau",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Integrator-Aufbau",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
     },
     {
+        "id": 369,
         "title": "Formel",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Integrator-Formel",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Integrator"
     },
     {
+        "id": 370,
         "title": "Bodediagramm",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Bodediagramm",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker"
     },
     {
+        "id": 371,
         "title": "Theorie",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Bodediagramm-Theorie",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Bodediagramm"
     },
     {
+        "id": 372,
         "title": "Zeichnung",
         "location": "/docs/systemtechnik/formeln.html#Verstärker-Bodediagramm-Zeichnung",
         "prettypath": "Systemtechnik ➜ Formeln ➜ Verstärker ➜ Bodediagramm"
     },
     {
+        "id": 373,
         "title": "Schaltungen",
         "location": "/docs/systemtechnik/schaltungen.html",
         "prettypath": "Systemtechnik"
