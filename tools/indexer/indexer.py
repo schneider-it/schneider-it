@@ -10,13 +10,22 @@ ESCAPECHARS = [
 ]
 
 class Topic:
+    id = -1
+
     def __init__(self, title, location):
+        self.id = Topic.next_id()
         self.title = title 
         self.location = location
         self.subtopics = list() 
     
     def __str__(self):
         return str(self.title)
+
+    @classmethod
+    def next_id(cls):
+        Topic.id += 1
+        return Topic.id
+
     
     def escapeChars(self):
         def escape(string,escapechars):
@@ -32,7 +41,7 @@ class Topic:
         
             
     def getCoreInfo(self):
-        return { "title": self.title, "location":self.location}
+        return {"id":self.id, "title": self.title, "location":self.location}
     
     def toFlat(self,prettypath=""):
         topics = list()
