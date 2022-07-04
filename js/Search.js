@@ -55,13 +55,18 @@ $("#search").on("keyup", function (e) {
         let pattern = document.getElementById("search").value;
         ergebnisse = fuse.search(pattern);
 
+        for (let i = 0; i < ergebnisse.length; i++) {
+            const ergebnis = ergebnisse[i];
+            ergebnisse[i] = ergebnis.item;
+        }
+
         if (pattern != "" && ergebnisse != "") {
             if (!window.matchMedia("(pointer: coarse)").matches)
                 document
                     .querySelector(".search_div")
                     .setAttribute("data-after", "Press Enter to open the first result!");
 
-            BuildErgebnisse(ergebnisse);
+            BuildErgebnisse();
         } else {
             // search_history = JSON.parse(localStorage.getItem("search_history"));
             if (pattern != "") BuildSearchHistory(false);
@@ -70,12 +75,15 @@ $("#search").on("keyup", function (e) {
     }
 });
 
-function BuildErgebnisse(ergebnisse) {
+function BuildErgebnisse() {
     let container = document.getElementById("ergebnisse");
     container.innerHTML = "";
 
     let info = document.getElementById("info");
     info.innerHTML = "";
+
+    active_element = null;
+    index = 0;
 
     // let clear_search_history = document.getElementById("clear_search_history");
     // clear_search_history.style.display = "none";
@@ -83,18 +91,16 @@ function BuildErgebnisse(ergebnisse) {
     for (let i = 0; i < ergebnisse.length; i++) {
         container.insertAdjacentHTML(
             "beforeend",
-            "<div class='ergebnis' onclick=\"OnClickErgebnis('" +
-                ergebnisse[i].item.title +
-                "', '" +
-                ergebnisse[i].item.location +
-                "', '" +
-                ergebnisse[i].item.prettypath +
+            "<div class='ergebnis' id='" +
+                ergebnisse[i].id +
+                "' onclick=\"OnClickErgebnis('" +
+                ergebnisse[i].id +
                 "')\">" +
                 "<h4>" +
-                ergebnisse[i].item.title +
+                ergebnisse[i].title +
                 "</h4>" +
                 "<p>" +
-                ergebnisse[i].item.prettypath +
+                ergebnisse[i].prettypath +
                 "</p>" +
                 "</div>"
         );
@@ -154,12 +160,10 @@ function BuildSearchHistory(results_exist) {
     for (let i = 0; i < search_history.length; i++) {
         container.insertAdjacentHTML(
             "beforeend",
-            "<div class='ergebnis' onclick=\"OnClickErgebnis('" +
-                search_history[i].title +
-                "', '" +
-                search_history[i].location +
-                "', '" +
-                search_history[i].prettypath +
+            "<div class='ergebnis' id='" +
+                search_history[i].id +
+                "' onclick=\"OnClickErgebnis('" +
+                search_history[i].id +
                 "')\">" +
                 "<h4>" +
                 search_history[i].title +
@@ -174,88 +178,70 @@ function BuildSearchHistory(results_exist) {
     return false;
 }
 
+var active_element;
+var index;
+
 document.onkeydown = function (e) {
     if (e.key === "Tab" || e.key == "ArrowDown" || e.key == "ArrowUp") {
         e.preventDefault();
+
         if (
-            !window.matchMedia("(pointer: coarse)").matches &&
-            ergebnisse != "" &&
-            ergebnisse != null
+            window.matchMedia("(pointer: coarse)").matches &&
+            ergebnisse == "" &&
+            ergebnisse == null
         )
-            document
-                .querySelector(".search_div")
-                .setAttribute("data-after", "Press Enter to open the selected result!");
-
-        let active_element = document.querySelector("[active]");
-        if (active_element == null) {
-            let container = document.getElementById("ergebnisse");
-            let first_element = container.firstElementChild;
-            while (first_element.classList.contains("ergebnis") == false)
-                // Achtung
-                first_element = first_element.nextElementSibling;
-            if (first_element != null) {
-                first_element.setAttribute("active", "");
-                setBackgroundofErgebnis(first_element);
-            }
             return false;
-        }
-        let new_active_element;
 
-        if (!e.shiftKey || e.key == "ArrowDown") {
-            new_active_element = active_element.nextElementSibling;
-        } else if (e.shiftKey || e.key == "ArrowUp") {
-            new_active_element = active_element.previousElementSibling;
-        }
+        // HTML altes active löschen
 
-        if (new_active_element != null) {
-            active_element.removeAttribute("active");
-            active_element.style.background = "";
-            new_active_element.setAttribute("active", "");
-            setBackgroundofErgebnis(new_active_element);
-            new_active_element.scrollIntoViewIfNeeded(true);
-        } else {
-            active_element.removeAttribute("active");
-            active_element.style.background = "";
-            let container = document.getElementById("ergebnisse");
-            if (!e.shiftKey || e.key == "ArrowDown") {
-                let first_element = container.firstElementChild;
-                if (first_element != null) {
-                    first_element.setAttribute("active", "");
-                    setBackgroundofErgebnis(first_element);
-                    first_element.scrollIntoViewIfNeeded(true);
-                }
-            } else if (e.shiftKey || e.key == "ArrowUp") {
-                let last_element = container.lastElementChild;
-                if (last_element != null) {
-                    last_element.setAttribute("active", "");
-                    setBackgroundofErgebnis(last_element);
-                    last_element.scrollIntoViewIfNeeded(true);
-                }
+        if (active_element) {
+            let html_active_element = document.getElementById(active_element.id);
+
+            if (html_active_element) {
+                html_active_element.removeAttribute("active");
+                html_active_element.style.background = "";
             }
         }
+
+        // active Element herausfinden / index herausfinden
+
+        if (active_element == null) {
+            index = 0;
+        } else {
+            if (!e.shiftKey || e.key == "ArrowDown") {
+                if (++index > ergebnisse.length - 1) index = 0;
+            } else if (e.shiftKey || e.key == "ArrowUp") {
+                if (--index < 0) index = ergebnisse.length - 1;
+            }
+        }
+
+        active_element = ergebnisse[index];
+
+        console.log(fuse._docs);
+        console.log(ergebnisse);
+
+        // HTML neues active setzen
+
+        html_active_element = document.getElementById(active_element.id);
+
+        if (html_active_element) {
+            html_active_element.setAttribute("active", "");
+            setBackgroundofErgebnis(html_active_element);
+            html_active_element.scrollIntoViewIfNeeded(true);
+        }
+
+        // Message korrigieren
+
+        document
+            .querySelector(".search_div")
+            .setAttribute("data-after", "Press Enter to open the selected result!");
+
         return false;
     }
 
     if (e.key === "Enter" || e.keyCode === 13) {
         event.preventDefault();
-        let pattern = document.getElementById("search").value;
-        let ergebnisse = fuse.search(pattern);
-        let active_element = document.querySelector("[active]");
-        var index = 0;
-        if (active_element != null) {
-            for (var i = 0; i < ergebnisse.length; i++) {
-                if (
-                    active_element.children[0].innerHTML == ergebnisse[i].item.title &&
-                    active_element.children[1].innerHTML == ergebnisse[i].item.prettypath
-                )
-                    index = i;
-            }
-        }
-        OnClickErgebnis(
-            ergebnisse[index].item.title,
-            ergebnisse[index].item.location,
-            ergebnisse[index].item.prettypath
-        );
+        OnClickErgebnis(active_element.id);
     }
 };
 
@@ -278,28 +264,19 @@ function ClearSearchHistory() {
     BuildSearchHistory(false);
 }
 
-function OnClickErgebnis(title, location, prettypath) {
+function OnClickErgebnis(id) {
     let isalreadyinHistory = false;
     for (let i = 0; i < search_history.length; i++) {
-        if (
-            search_history[i].title == EscapeHTML(title) &&
-            search_history[i].location == EscapeHTML(location) &&
-            search_history[i].prettypath == EscapeHTML(prettypath)
-        )
-            isalreadyinHistory = true;
+        if (search_history[i].id == id) isalreadyinHistory = true;
     }
     if (!isalreadyinHistory) {
         for (let i = search_history.length - 1; i >= 0; i--) {
             if (i <= 5) search_history[i + 1] = search_history[i];
         }
-        search_history[0] = {
-            title: EscapeHTML(title),
-            location: EscapeHTML(location),
-            prettypath: EscapeHTML(prettypath),
-        };
+        search_history[0] = fuse._docs[id];
     }
     localStorage.setItem("search_history", JSON.stringify(search_history));
-    window.location.href = location;
+    window.location.href = fuse._docs[id].location;
 }
 
 function setBackgroundofErgebnis(element) {
