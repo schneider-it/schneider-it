@@ -1664,9 +1664,9 @@ body[colorTheme=auto] .auto {
 .tastenkombinationen-iframe {
   display: none;
   position: fixed;
-  height: min(100vh - 2rem, 40rem);
-  width: min(100vw - 2rem, 60rem);
-  margin: calc((100vh - min(100vh - 2rem, 40rem)) / 2) calc((100vw - min(100vw - 2rem, 60rem)) / 2);
+  height: min(100vh - 2rem, 30rem);
+  width: min(100vw - 2rem, 55rem);
+  margin: calc((100vh - min(100vh - 2rem, 30rem)) / 2) calc((100vw - min(100vw - 2rem, 55rem)) / 2);
   padding: 0;
   outline: 0.2rem var(--border-color) solid;
   -webkit-box-shadow: inset 0.1rem 0.1rem var(--border-color), inset -0.1rem -0.1rem var(--border-color);

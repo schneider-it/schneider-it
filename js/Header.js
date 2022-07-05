@@ -14,7 +14,7 @@ export function LoadHeader() {
 
 export function LoadHeaderwithoutSearch() {
     if (document.getElementById("header") != null) {
-        $("#header").load("/components/header_without_search.html", function () {
+        $("#header").load("/components/header_for_search.html", function () {
             Toggle.NavigationActiveToggle();
             Toggle.ThemeSwitch();
             Toggle.TastenkombinationenActiveToggle();

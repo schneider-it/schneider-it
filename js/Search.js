@@ -43,11 +43,32 @@ fetch("/tools/indexer/index.json")
 let ergebnisse;
 let search_history;
 
-$("#search").on("keyup", function (e) {
+var active_element;
+var index;
+
+document.onkeydown = function (event) {
     if (
-        (e.key !== "Tab" || e.keyCode !== 9) &&
-        (e.key !== "Shift" || e.keyCode !== 16) &&
-        (e.key !== "Enter" || e.keyCode !== 13)
+        event.key === "Tab" ||
+        event.key === "ArrowDown" ||
+        event.key === "ArrowUp" ||
+        event.key === "Enter" ||
+        event.key === "Shift" ||
+        event.key === "Delete"
+    )
+        event.preventDefault();
+    else document.getElementById("search").focus();
+};
+
+document.onkeyup = function (event) {
+    if (
+        !(
+            event.key === "Tab" ||
+            event.key === "ArrowDown" ||
+            event.key === "ArrowUp" ||
+            event.key === "Enter" ||
+            event.key === "Shift" ||
+            event.key === "Delete"
+        )
     ) {
         let search = document.getElementsByClassName("search_div");
         //search.scrollIntoViewIfNeeded(true);
@@ -72,8 +93,59 @@ $("#search").on("keyup", function (e) {
             if (pattern != "") BuildSearchHistory(false);
             else BuildSearchHistory();
         }
+    } else if (event.key === "Tab" || event.key === "ArrowDown" || event.key === "ArrowUp") {
+        if (
+            window.matchMedia("(pointer: coarse)").matches &&
+            ergebnisse == "" &&
+            ergebnisse == null
+        )
+            return false;
+
+        // HTML altes active löschen
+
+        if (active_element) {
+            let html_active_element = document.getElementById(active_element.id);
+
+            if (html_active_element) {
+                html_active_element.removeAttribute("active");
+                html_active_element.style.background = "";
+            }
+        }
+
+        // active Element herausfinden / index herausfinden
+
+        if ((event.key === "Tab" && !event.shiftKey) || event.key == "ArrowDown") {
+            if (++index > ergebnisse.length - 1 || active_element == null) index = 0;
+        } else if ((event.key === "Tab" && event.shiftKey) || event.key == "ArrowUp") {
+            if (--index < 0 || active_element == null) index = ergebnisse.length - 1;
+        }
+
+        active_element = ergebnisse[index];
+
+        // HTML neues active setzen
+
+        html_active_element = document.getElementById(active_element.id);
+
+        if (html_active_element) {
+            html_active_element.setAttribute("active", "");
+            setBackgroundofErgebnis(html_active_element);
+            html_active_element.scrollIntoViewIfNeeded(true);
+        }
+
+        // Message korrigieren
+
+        document
+            .querySelector(".search_div")
+            .setAttribute("data-after", "Press Enter to open the selected result!");
+
+        return false;
+    } else if (event.key === "Enter") {
+        if (active_element == null) OnClickErgebnis(ergebnisse[0].id);
+        else OnClickErgebnis(active_element.id);
+    } else if (event.key === "Delete") {
+        ClearSearchHistory();
     }
-});
+};
 
 function BuildErgebnisse() {
     let container = document.getElementById("ergebnisse");
@@ -157,19 +229,21 @@ function BuildSearchHistory(results_exist) {
     // if (search_history.length != 0) clear_search_history.style.display = "block";
     // else clear_search_history.style.display = "none";
 
-    for (let i = 0; i < search_history.length; i++) {
+    ergebnisse = search_history;
+
+    for (let i = 0; i < ergebnisse.length; i++) {
         container.insertAdjacentHTML(
             "beforeend",
             "<div class='ergebnis' id='" +
-                search_history[i].id +
+                ergebnisse[i].id +
                 "' onclick=\"OnClickErgebnis('" +
-                search_history[i].id +
+                ergebnisse[i].id +
                 "')\">" +
                 "<h4>" +
-                search_history[i].title +
+                ergebnisse[i].title +
                 "</h4>" +
                 "<p>" +
-                search_history[i].prettypath +
+                ergebnisse[i].prettypath +
                 "</p>" +
                 "</div>"
         );
@@ -177,73 +251,6 @@ function BuildSearchHistory(results_exist) {
 
     return false;
 }
-
-var active_element;
-var index;
-
-document.onkeydown = function (e) {
-    if (e.key === "Tab" || e.key == "ArrowDown" || e.key == "ArrowUp") {
-        e.preventDefault();
-
-        if (
-            window.matchMedia("(pointer: coarse)").matches &&
-            ergebnisse == "" &&
-            ergebnisse == null
-        )
-            return false;
-
-        // HTML altes active löschen
-
-        if (active_element) {
-            let html_active_element = document.getElementById(active_element.id);
-
-            if (html_active_element) {
-                html_active_element.removeAttribute("active");
-                html_active_element.style.background = "";
-            }
-        }
-
-        // active Element herausfinden / index herausfinden
-
-        if (active_element == null) {
-            index = 0;
-        } else {
-            if (!e.shiftKey || e.key == "ArrowDown") {
-                if (++index > ergebnisse.length - 1) index = 0;
-            } else if (e.shiftKey || e.key == "ArrowUp") {
-                if (--index < 0) index = ergebnisse.length - 1;
-            }
-        }
-
-        active_element = ergebnisse[index];
-
-        console.log(fuse._docs);
-        console.log(ergebnisse);
-
-        // HTML neues active setzen
-
-        html_active_element = document.getElementById(active_element.id);
-
-        if (html_active_element) {
-            html_active_element.setAttribute("active", "");
-            setBackgroundofErgebnis(html_active_element);
-            html_active_element.scrollIntoViewIfNeeded(true);
-        }
-
-        // Message korrigieren
-
-        document
-            .querySelector(".search_div")
-            .setAttribute("data-after", "Press Enter to open the selected result!");
-
-        return false;
-    }
-
-    if (e.key === "Enter" || e.keyCode === 13) {
-        event.preventDefault();
-        OnClickErgebnis(active_element.id);
-    }
-};
 
 function LoadSearchHistory() {
     if (localStorage.getItem("search_history") != null)
@@ -259,9 +266,11 @@ function LoadSearchHistory() {
 }
 
 function ClearSearchHistory() {
-    search_history = [];
-    localStorage.setItem("search_history", JSON.stringify(search_history));
-    BuildSearchHistory(false);
+    if (confirm("Are you sure you want to delete your search history?")) {
+        search_history = [];
+        localStorage.setItem("search_history", JSON.stringify(search_history));
+        BuildSearchHistory(false);
+    }
 }
 
 function OnClickErgebnis(id) {

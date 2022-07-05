@@ -58,8 +58,8 @@
 .tastenkombinationen-iframe {
     display: none;
     position: fixed;
-    $height: min(100vh - 2rem, 40rem);
-    $width: min(100vw - 2rem, 60rem);
+    $height: min(100vh - 2rem, 30rem);
+    $width: min(100vw - 2rem, 55rem);
     height: $height;
     width: $width;
     margin: calc((100vh - $height) / 2) calc((100vw - $width) / 2);
