@@ -9,10 +9,30 @@ body {
     min-height: 100vh;
 }
 
+#blur {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    backdrop-filter: blur(10px);
+    mask: linear-gradient(to bottom, black 10%, transparent 25%);
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.8) 5%, transparent 25%);
+
+    user-select: none;
+    pointer-events: none;
+    z-index: 970;
+}
+
 .search_div {
-    position: relative;
+    position: fixed;
     width: clamp(4vh, 60rem, calc(100% - 32vh));
-    margin: 2rem auto 0;
+    margin: 2rem 0 0 50vw;
+
+    transform: translateX(-50%);
+
+    z-index: 971;
 
     & form {
         & #search {
@@ -55,7 +75,7 @@ body {
 #info {
     position: relative;
     width: var(--container);
-    margin: 4rem auto 0;
+    margin: 10rem auto 0;
 }
 
 #ergebnisse {

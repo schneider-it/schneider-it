@@ -84,7 +84,7 @@ document.onkeyup = function (event) {
         if (pattern != "" && ergebnisse != "") {
             if (!window.matchMedia("(pointer: coarse)").matches)
                 document.querySelector("#information-after").innerHTML =
-                    "Press <kbd light>Enter</kbd> to open the first result!";
+                    "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: var(--main-color)'>first</div>&nbsp;result!";
 
             BuildErgebnisse();
         } else {
@@ -121,6 +121,11 @@ document.onkeyup = function (event) {
 
         active_element = ergebnisse[index];
 
+        // Message korrigieren
+
+        document.querySelector("#information-after").innerHTML =
+            "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: var(--main-color)'>selected</div>&nbsp;result!";
+
         // HTML neues active setzen
 
         html_active_element = document.getElementById(active_element.id);
@@ -130,11 +135,6 @@ document.onkeyup = function (event) {
             setBackgroundofErgebnis(html_active_element);
             html_active_element.scrollIntoViewIfNeeded(true);
         }
-
-        // Message korrigieren
-
-        document.querySelector("#information-after").innerHTML =
-            "Press <kbd light>Enter</kbd> to open the selected result!";
 
         return false;
     } else if (event.key === "Enter") {
@@ -182,7 +182,7 @@ function BuildErgebnisse() {
 function BuildSearchHistory(results_exist) {
     if (search_history != "")
         document.querySelector("#information-after").innerHTML =
-            "Press <kbd light>Enter</kbd> to open your latest result!";
+            "Press <kbd light>Enter</kbd> to open your&nbsp;<div style='color: var(--main-color)'>latest</div>&nbsp;result!";
     else document.querySelector("#information-after").innerHTML = "";
 
     const container = document.getElementById("ergebnisse");
@@ -286,31 +286,50 @@ function OnClickErgebnis(id) {
 }
 
 function setBackgroundofErgebnis(element) {
+    const body = document.querySelector("body");
+
     if (
-        element.children[1].innerHTML.includes("Datenbanken") ||
-        element.children[0].innerHTML.includes("Datenbanken")
-    )
-        element.style.background = "hsl(295, 80%, 69%)";
-    else if (
-        element.children[1].innerHTML.includes("Programmiersprachen") ||
-        element.children[0].innerHTML.includes("Programmiersprachen")
-    )
-        element.style.background = "hsl(208, 80%, 50%)";
-    else if (
-        element.children[1].innerHTML.includes("Netzwerktechnik") ||
-        element.children[0].innerHTML.includes("Netzwerktechnik")
-    )
-        element.style.background = "hsl(37, 80%, 51%)";
-    else if (
-        element.children[1].innerHTML.includes("Systemtechnik") ||
-        element.children[0].innerHTML.includes("Systemtechnik")
-    )
-        element.style.background = "hsl(158, 95%, 34%)";
-    else if (
-        element.children[1].innerHTML.includes("Betriebssysteme") ||
-        element.children[0].innerHTML.includes("Betriebssysteme")
-    )
-        element.style.background = "hsl(267, 54%, 54%)";
+        body.getAttribute("colorTheme") == "dark" ||
+        (body.getAttribute("colorTheme") == "auto" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+        if (
+            element.children[1].innerHTML.includes("Datenbanken") ||
+            element.children[0].innerHTML.includes("Datenbanken")
+        ) {
+            element.style.background = "hsl(295, 80%, 69%)";
+            document.querySelector("#information-after").innerHTML =
+                "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: hsl(295, 80%, 69%)'>selected</div>&nbsp;result!";
+        } else if (
+            element.children[1].innerHTML.includes("Programmiersprachen") ||
+            element.children[0].innerHTML.includes("Programmiersprachen")
+        ) {
+            element.style.background = "hsl(208, 80%, 50%)";
+            document.querySelector("#information-after").innerHTML =
+                "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: hsl(208, 80%, 50%)'>selected</div>&nbsp;result!";
+        } else if (
+            element.children[1].innerHTML.includes("Netzwerktechnik") ||
+            element.children[0].innerHTML.includes("Netzwerktechnik")
+        ) {
+            element.style.background = "hsl(37, 80%, 51%)";
+            document.querySelector("#information-after").innerHTML =
+                "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: hsl(37, 80%, 51%)'>selected</div>&nbsp;result!";
+        } else if (
+            element.children[1].innerHTML.includes("Systemtechnik") ||
+            element.children[0].innerHTML.includes("Systemtechnik")
+        ) {
+            element.style.background = "hsl(158, 95%, 34%)";
+            document.querySelector("#information-after").innerHTML =
+                "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: hsl(158, 95%, 34%)'>selected</div>&nbsp;result!";
+        } else if (
+            element.children[1].innerHTML.includes("Betriebssysteme") ||
+            element.children[0].innerHTML.includes("Betriebssysteme")
+        ) {
+            element.style.background = "hsl(267, 54%, 54%)";
+            document.querySelector("#information-after").innerHTML =
+                "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: hsl(267, 54%, 54%)'>selected</div>&nbsp;result!";
+        }
+    } else element.style.background = "hsl(235, 86%, 65%)";
 }
 
 $("#search_form").submit(function () {
