@@ -83,9 +83,8 @@ document.onkeyup = function (event) {
 
         if (pattern != "" && ergebnisse != "") {
             if (!window.matchMedia("(pointer: coarse)").matches)
-                document
-                    .querySelector(".search_div")
-                    .setAttribute("data-after", "Press Enter to open the first result!");
+                document.querySelector("#information-after").innerHTML =
+                    "Press <kbd light>Enter</kbd> to open the first result!";
 
             BuildErgebnisse();
         } else {
@@ -134,9 +133,8 @@ document.onkeyup = function (event) {
 
         // Message korrigieren
 
-        document
-            .querySelector(".search_div")
-            .setAttribute("data-after", "Press Enter to open the selected result!");
+        document.querySelector("#information-after").innerHTML =
+            "Press <kbd light>Enter</kbd> to open the selected result!";
 
         return false;
     } else if (event.key === "Enter") {
@@ -183,10 +181,9 @@ function BuildErgebnisse() {
 
 function BuildSearchHistory(results_exist) {
     if (search_history != "")
-        document
-            .querySelector(".search_div")
-            .setAttribute("data-after", "Press Enter to open your latest result!");
-    else document.querySelector(".search_div").setAttribute("data-after", "");
+        document.querySelector("#information-after").innerHTML =
+            "Press <kbd light>Enter</kbd> to open your latest result!";
+    else document.querySelector("#information-after").innerHTML = "";
 
     const container = document.getElementById("ergebnisse");
     container.innerHTML = "";

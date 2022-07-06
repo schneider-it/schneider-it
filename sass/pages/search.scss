@@ -37,8 +37,8 @@ body {
         align-items: center;
     }
 
-    &::after {
-        content: attr(data-after); //'Press Enter to open the first result!';
+    & #information-after {
+        content: attr(information-after); //'Press Enter to open the first result!';
         position: absolute;
         right: 2rem;
         top: 0;
