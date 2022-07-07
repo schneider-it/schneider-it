@@ -46,6 +46,8 @@ let search_history;
 var active_element;
 var index;
 
+let search_history_element_count;
+
 document.onkeydown = function (event) {
     if (
         event.key === "Tab" ||
@@ -123,8 +125,9 @@ document.onkeyup = function (event) {
 
         // Message korrigieren
 
-        document.querySelector("#information-after").innerHTML =
-            "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: var(--main-color)'>selected</div>&nbsp;result!";
+        if (active_element)
+            document.querySelector("#information-after").innerHTML =
+                "Press <kbd light>Enter</kbd> to open the&nbsp;<div style='color: var(--main-color)'>selected</div>&nbsp;result!";
 
         // HTML neues active setzen
 
@@ -150,7 +153,11 @@ function BuildErgebnisse() {
     container.innerHTML = "";
 
     let info = document.getElementById("info");
-    info.innerHTML = "";
+    // info.innerHTML = "";
+    document.getElementById("info-no-result").style.display = "none";
+    document.getElementById("info-hr").style.display = "none";
+    document.getElementById("info-latest-result-singular").style.display = "none";
+    document.getElementById("info-latest-result-plural").style.display = "none";
 
     active_element = null;
     index = 0;
@@ -189,38 +196,29 @@ function BuildSearchHistory(results_exist) {
     container.innerHTML = "";
 
     const info = document.getElementById("info");
-    info.innerHTML = "";
+    // info.innerHTML = "";
+    document.getElementById("info-no-result").style.display = "none";
+    document.getElementById("info-hr").style.display = "none";
+    document.getElementById("info-latest-result-singular").style.display = "none";
+    document.getElementById("info-latest-result-plural").style.display = "none";
+
+    active_element = null;
+    index = 0;
 
     let pattern = document.getElementById("search").value;
 
     if (results_exist == false && pattern != "") {
-        info.innerHTML =
-            "<h5>Your search did not return any results.</h5>" +
-            "<h6>Suggestions:</h6>" +
-            "<ul>" +
-            "<li>Make sure all words are spelled correctly.</li>" +
-            "<li>Try other search terms.</li>" +
-            "<li>Try more general search terms.</li>" +
-            "</ul>";
-        if (search_history.length >= 1) info.innerHTML += "<hr>";
+        document.getElementById("info-no-result").style.display = "block";
+        if (search_history.length >= 1) document.getElementById("info-hr").style.display = "block";
     }
-    if (search_history.length == 0) info.innerHTML += "";
-    else if (search_history.length == 1)
+    // if (search_history.length == 0) info.innerHTML += "";
+    else if (search_history.length == 1) {
         // Einzahl
-        info.innerHTML +=
-            "<div id='latest-result-heading' class='flexbox' space-between centered><h5>Latest Result:</h5>" +
-            "<div id='clear_search_history' class='button' onclick='ClearSearchHistory()' small>" +
-            "Clear Latest Result&nbsp;&nbsp;&nbsp;<i class='fa-solid fa-arrow-down'></i>" +
-            "</div>" +
-            "</div>";
-    else if (search_history.length > 1)
+        document.getElementById("info-latest-result-singular").style.display = "block";
+    } else if (search_history.length > 1) {
         // Mehrzahl
-        info.innerHTML +=
-            "<div id='latest-result-heading' class='flexbox' space-between centered><h5>Latest Results:</h5>" +
-            "<div id='clear_search_history' class='button' onclick='ClearSearchHistory()' small>" +
-            "Clear Latest Results&nbsp;&nbsp;&nbsp;<i class='fa-solid fa-arrow-down'></i>" +
-            "</div>" +
-            "</div>";
+        document.getElementById("info-latest-result-plural").style.display = "block";
+    }
 
     // let clear_search_history = document.getElementById("clear_search_history");
     // if (search_history.length != 0) clear_search_history.style.display = "block";
@@ -249,7 +247,23 @@ function BuildSearchHistory(results_exist) {
     return false;
 }
 
+function OnClickErgebnis(id) {
+    let isalreadyinHistory = false;
+    for (let i = 0; i < search_history.length; i++) {
+        if (search_history[i].id == id) isalreadyinHistory = true;
+    }
+    if (!isalreadyinHistory) {
+        for (let i = search_history.length - 1; i >= 0; i--) {
+            if (i < search_history_element_count - 1) search_history[i + 1] = search_history[i];
+        }
+        if (search_history_element_count > 0) search_history[0] = fuse._docs[id];
+    }
+    localStorage.setItem("search_history", JSON.stringify(search_history));
+    window.location.href = fuse._docs[id].location;
+}
+
 function LoadSearchHistory() {
+    console.log("okay");
     if (localStorage.getItem("search_history") != null)
         search_history = JSON.parse(localStorage.getItem("search_history"));
     else search_history = [];
@@ -270,20 +284,52 @@ function ClearSearchHistory() {
     }
 }
 
-function OnClickErgebnis(id) {
-    let isalreadyinHistory = false;
-    for (let i = 0; i < search_history.length; i++) {
-        if (search_history[i].id == id) isalreadyinHistory = true;
+var values = [0, 3, 5, 10, 30, 100, Infinity];
+
+function OnLoadCounter() {
+    if (localStorage.getItem("search_history_counter") != null)
+        search_history_element_count = localStorage.getItem("search_history_counter");
+    else search_history_element_count = 5;
+    $("#slider-value").text(search_history_element_count);
+    let counter_index = 2;
+    for (let i = 0; i < values.length; i++) {
+        const element = values[i];
+        if (element == search_history_element_count) counter_index = i;
     }
-    if (!isalreadyinHistory) {
-        for (let i = search_history.length - 1; i >= 0; i--) {
-            if (i <= 5) search_history[i + 1] = search_history[i];
-        }
-        search_history[0] = fuse._docs[id];
-    }
-    localStorage.setItem("search_history", JSON.stringify(search_history));
-    window.location.href = fuse._docs[id].location;
+    $("#slider-range").val(counter_index);
 }
+
+$("#slider-range").on("input", (event) => {
+    $("#slider-value").text(values[event.target.value]);
+});
+
+$("#slider-range").on("change", (event) => {
+    if (values[event.target.value] < search_history.length) {
+        if (
+            confirm(
+                "Your changes would delete some of your latest results. Are you sure you want to delete them?"
+            )
+        ) {
+            search_history_element_count = values[event.target.value];
+            localStorage.setItem("search_history_counter", search_history_element_count);
+
+            search_history = search_history.slice(0, search_history_element_count);
+            localStorage.setItem("search_history", JSON.stringify(search_history));
+            BuildSearchHistory(false);
+        } else {
+            let counter_index = 2;
+            for (let i = 0; i < values.length; i++) {
+                const element = values[i];
+                if (element == search_history_element_count) counter_index = i;
+            }
+            $("#slider-range").val(counter_index);
+            $("#slider-value").text(search_history_element_count);
+        }
+    } else {
+        search_history_element_count = values[event.target.value];
+        localStorage.setItem("search_history_counter", search_history_element_count);
+    }
+});
 
 function setBackgroundofErgebnis(element) {
     const body = document.querySelector("body");

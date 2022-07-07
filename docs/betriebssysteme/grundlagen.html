@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="/css/main.min.css" />
+        <link rel="stylesheet" href="/css/betriebssysteme.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
+        <title>Betriebssysteme Grundlagen - Schneider IT</title>
+    </head>
+    <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
+        <div class="scroll_indicator_div">
+            <div class="scroll_indicator" id="scroll_indicator"></div>
+        </div>
+
+        <div id="header"></div>
+
+        <div class="back_button">
+            <a href="../betriebssysteme.html">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+        </div>
+
+        <div class="title searchable">
+            <img id="title-logo" loading="lazy" src="/img/grundlagen.png" alt="Grundlagen_Logo" />
+            <h1>Grundlagen</h1>
+        </div>
+        <div></div>
+
+        <div class="section searchable">
+            <div class="container" style="margin-top: 10vh">
+                <div>
+                    <h3 id="Aufgaben_von_Betriebssystemen">Aufgaben von Betriebssystemen</h3>
+                    <div>
+                        Das Betriebssystem ist quasi das Herzstück jedes Computers. Ohne die
+                        komplexe Software können die anderen Programme nicht funktionieren. Dabei
+                        sind die Aufgaben, die das System erledigen muss, vielfältig. Manches findet
+                        komplett im Hintergrund statt und vieles auch gleichzeitig.
+
+                        <h4>Hardware-Verwaltung</h4>
+                        <div>
+                            Eine der wichtigsten Aufgaben des Betriebssystems läuft für Nutzer meist
+                            unsichtbar im Hintergrund ab. Die Software verwaltet sämtliche Hardware,
+                            sowohl für die Ein- als auch die Ausgabe. Dafür verwendet das System
+                            Treiber, die von Hardware-Produzenten mitgeliefert werden. Über die
+                            Treiber ist es möglich, Befehle von Geräten zu empfangen und
+                            weiterzugeben sowie selbst Befehle an die Hardware zu übermitteln. Auf
+                            diese Weise funktionieren, Tastatur, Maus, Bildschirm, Festplatte,
+                            Grafikkarte und alle anderen Komponenten, die einen Computer ausmachen.
+                        </div>
+                        <h4>Software-Verwaltung</h4>
+                        <div>
+                            Wenn man Software aus dem Internet runterlädt, hat man auf der
+                            Downloadseite meist die Wahl zwischen Versionen für verschiedene
+                            Betriebssysteme. Das zeigt, wie eng die Programmierung der Anwendungen
+                            an die Vorgaben des Betriebssystems gebunden ist. Die grundlegenden
+                            Systeme der Computer verfügen über Schnittstellen, welche die
+                            Kommunikation mit den individuellen Anwendungen regeln. So ist es
+                            möglich, dass eine Anwendung Arbeitsspeicher zugewiesen bekommt,
+                            Prozessorressourcen verwenden darf und die Eingabe durch Tastatur und
+                            Maus weiterverarbeiten kann.
+                        </div>
+                        <h4>Dateiverwaltung</h4>
+                        <div>
+                            Wenn man ein Dokument verfasst hat, kann man dieses entweder drucken
+                            (wofür die Anwendung die Anweisung an das Betriebssystem weitergibt,
+                            welches dann wiederum an den Drucker übergibt), oder man speichert die
+                            Datei in einem Ordner ab. Das man in einer Verzeichnisstruktur arbeiten
+                            kann, ist auch nur dank des Betriebssystems möglich. Auf der Festplatte
+                            selbst herrscht diese Ordnung nicht.
+                        </div>
+                        <h4>Rechteverwaltung</h4>
+                        <div>
+                            In bestimmten Situationen, zum Beispiel im Unternehmenskontext, arbeiten
+                            verschiedene Personen an einem Gerät. Aber nicht alle sollen die
+                            Möglichkeit haben, Systemeinstellungen vorzunehmen. Moderne
+                            Betriebssysteme machen es deshalb möglich, verschiedene Benutzer
+                            anzulegen und deren Rechte individuell anzupassen. Jedes Konto lässt
+                            sich dann auch mit einem Passwort absichern.
+                        </div>
+                        <h4>Benutzerführung</h4>
+                        <div>
+                            Auch Menschen ohne besondere IT-Kenntnisse sollen problemlos mit einem
+                            Computer umgehen können. Deshalb ist es für ein Betriebssystem wichtig,
+                            Funktionen und Optionen möglichst einfach zu gestalten. Auch für Laien
+                            sollen die wichtigsten Aspekte problemlos nutzbar sein. Darüber hinaus
+                            bieten viele Betriebssysteme – vor allem bei PCs – zusätzliche
+                            Möglichkeiten für professionelle Nutzer.
+                        </div>
+                        <h4>Netzwerkfunktionen</h4>
+                        <div>
+                            Da das Betriebssystem die Hardware organisiert, ist es auch für die
+                            Netzwerkkarte und damit für die Verbindung ins Internet und in andere
+                            Netzwerke verantwortlich. Über ein Betriebssystem lässt sich in der
+                            Regel der Computer als Netzteilnehmer konfigurieren, zum Beispiel auch
+                            eine spezifische IP-Adresse definieren. In den Einstellungen kann man
+                            zudem die Spezifikationen eines LANs und des Subnets eintragen, um sich
+                            so mit anderen PCs zu verbinden. Die Netzwerkeinstellungen ermöglichen
+                            auch, den DNS-Server individuell zu bestimmen.
+                        </div>
+                        <h4>Sicherheitsvorkehrungen</h4>
+                        <div>
+                            Zwar nicht traditionell eine Aufgabe des Betriebssystems – und auch
+                            immer noch durch zusätzliche Software erreichbar: Sicherheit. Da
+                            Computer bei einer ständigen Verbindung ins Internet Gefahren ausgesetzt
+                            sind, haben Betriebssysteme auch eigene Sicherheitsvorkehrungen
+                            eingebaut. So sind beispielsweise bei Windows von Haus aus bereits
+                            Firewall und Antiviren-Scanner implementiert.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
+        <script defer src="/js/Lightbox.js"></script>
+        <script defer src="/js/FontAwesome.js"></script>
+
+        <script defer type="text/javascript" src="/js/App.js"></script>
+    </body>
+</html>

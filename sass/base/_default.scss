@@ -31,3 +31,11 @@ body {
 
     // visibility: hidden;
 }
+
+div {
+    text-align: justify;
+
+    &[no-justify] {
+        text-align: left;
+    }
+}

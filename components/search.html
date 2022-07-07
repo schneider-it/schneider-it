@@ -12,7 +12,7 @@
         <link rel="icon" href="/img/Logo.svg" />
         <title>Suche - Schneider IT</title>
     </head>
-    <body onload="OnLoadSearch(); LoadSearchHistory();">
+    <body onload="OnLoadSearch(); LoadSearchHistory(); OnLoadCounter();">
         <div id="header"></div>
 
         <div class="back_button">
@@ -39,12 +39,47 @@
             <span id="information-after"></span>
         </div>
 
-        <div id="info"></div>
+        <div id="info">
+            <div id="info-no-result">
+                <h5>Your search did not return any results.</h5>
+                <h6>Suggestions:</h6>
+                <ul>
+                    <li>Make sure all words are spelled correctly.</li>
+                    <li>Try other search terms.</li>
+                    <li>Try more general search terms.</li>
+                </ul>
+            </div>
+            <div id="info-hr">
+                <hr />
+            </div>
+            <div id="info-latest-result-singular" class="flexbox" space-between centered>
+                <h5>Latest Result:</h5>
+                <div id="slider-container">
+                    <span id="slider-info">Save this amount of results:</span>
+                    <input type="range" min="0" max="6" id="slider-range" />
+                    <span id="slider-value"></span>
+                </div>
+                <div id="clear_search_history" class="button" onclick="ClearSearchHistory()" small>
+                    Clear Latest Result&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+            <div id="info-latest-result-plural" class="flexbox" space-between centered>
+                <h5>Latest Results:</h5>
+                <div id="slider-container">
+                    <span id="slider-info">Save this amount of results:</span>
+                    <input type="range" min="0" max="6" id="slider-range" />
+                    <span id="slider-value"></span>
+                </div>
+                <div id="clear_search_history" class="button" onclick="ClearSearchHistory()" small>
+                    Clear Latest Results&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+        </div>
         <div id="ergebnisse"></div>
 
         <script
             src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            integrity="sha256-/xUj3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"
         ></script>
         <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
