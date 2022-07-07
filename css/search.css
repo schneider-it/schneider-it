@@ -68,30 +68,8 @@ body {
   min-height: 100vh;
 }
 
-#blur {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  -webkit-mask: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), color-stop(25%, transparent));
-  -webkit-mask: linear-gradient(to bottom, black 10%, transparent 25%);
-          mask: -webkit-gradient(linear, left top, left bottom, color-stop(10%, black), color-stop(25%, transparent));
-          mask: linear-gradient(to bottom, black 10%, transparent 25%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, rgba(0, 0, 0, 0.8)), color-stop(25%, transparent));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 5%, transparent 25%);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  pointer-events: none;
-  z-index: 970;
-}
-
 .search_div {
-  position: fixed;
+  position: absolute;
   width: clamp(4vh, 60rem, 100% - 32vh);
   margin: 2rem 0 0 50vw;
   -webkit-transform: translateX(-50%);
