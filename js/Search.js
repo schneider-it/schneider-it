@@ -152,12 +152,11 @@ function BuildErgebnisse() {
     let container = document.getElementById("ergebnisse");
     container.innerHTML = "";
 
-    let info = document.getElementById("info");
+    // let info = document.getElementById("info");
     // info.innerHTML = "";
     document.getElementById("info-no-result").style.display = "none";
     document.getElementById("info-hr").style.display = "none";
-    document.getElementById("info-latest-result-singular").style.display = "none";
-    document.getElementById("info-latest-result-plural").style.display = "none";
+    document.getElementById("info-latest-result").style.display = "none";
 
     active_element = null;
     index = 0;
@@ -186,6 +185,8 @@ function BuildErgebnisse() {
     return false;
 }
 
+var singular_active;
+
 function BuildSearchHistory(results_exist) {
     if (search_history != "")
         document.querySelector("#information-after").innerHTML =
@@ -195,12 +196,11 @@ function BuildSearchHistory(results_exist) {
     const container = document.getElementById("ergebnisse");
     container.innerHTML = "";
 
-    const info = document.getElementById("info");
+    // let info = document.getElementById("info");
     // info.innerHTML = "";
     document.getElementById("info-no-result").style.display = "none";
     document.getElementById("info-hr").style.display = "none";
-    document.getElementById("info-latest-result-singular").style.display = "none";
-    document.getElementById("info-latest-result-plural").style.display = "none";
+    document.getElementById("info-latest-result").style.display = "none";
 
     active_element = null;
     index = 0;
@@ -211,13 +211,18 @@ function BuildSearchHistory(results_exist) {
         document.getElementById("info-no-result").style.display = "block";
         if (search_history.length >= 1) document.getElementById("info-hr").style.display = "block";
     }
-    // if (search_history.length == 0) info.innerHTML += "";
-    else if (search_history.length == 1) {
-        // Einzahl
-        document.getElementById("info-latest-result-singular").style.display = "block";
-    } else if (search_history.length > 1) {
-        // Mehrzahl
-        document.getElementById("info-latest-result-plural").style.display = "block";
+    if (search_history.length >= 1) {
+        let text = document.getElementById("info-latest-result").innerHTML;
+        if (search_history.length == 1 && singular_active) {
+            text = text.replace(/Results/g, "Result");
+            singular_active = !singular_active;
+        } else if (search_history.length > 1 && !singular_active) {
+            text = text.replace(/Result/g, "Results");
+            singular_active = !singular_active;
+        }
+        document.getElementById("info-latest-result").innerHTML = text;
+
+        document.getElementById("info-latest-result").style.display = "grid";
     }
 
     // let clear_search_history = document.getElementById("clear_search_history");
@@ -263,7 +268,6 @@ function OnClickErgebnis(id) {
 }
 
 function LoadSearchHistory() {
-    console.log("okay");
     if (localStorage.getItem("search_history") != null)
         search_history = JSON.parse(localStorage.getItem("search_history"));
     else search_history = [];
@@ -290,6 +294,7 @@ function OnLoadCounter() {
     if (localStorage.getItem("search_history_counter") != null)
         search_history_element_count = localStorage.getItem("search_history_counter");
     else search_history_element_count = 5;
+
     $("#slider-value").text(search_history_element_count);
     let counter_index = 2;
     for (let i = 0; i < values.length; i++) {
