@@ -62,11 +62,17 @@
                 <h5>Latest Result:</h5>
                 <div id="slider-container">
                     <span id="slider-info">Save this amount of results:</span>
-                    <input id="slider-range" type="range" min="0" max="6" />
+                    <input id="slider-range" type="range" min="0" />
                     <span id="slider-value"></span>
                 </div>
                 <div id="clear_search_history" class="button" onclick="ClearSearchHistory()" small>
                     Clear Latest Result&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-down"></i>
+                </div>
+            </div>
+            <div id="bring-back-latest-result">
+                <div class="button">
+                    Do you want to save results in local history?&nbsp;
+                    <i class="fa-solid fa-arrow-right-long"></i>
                 </div>
             </div>
         </div>

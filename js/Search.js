@@ -157,6 +157,7 @@ function BuildErgebnisse() {
     document.getElementById("info-no-result").style.display = "none";
     document.getElementById("info-hr").style.display = "none";
     document.getElementById("info-latest-result").style.display = "none";
+    document.getElementById("bring-back-latest-result").style.display = "none";
 
     active_element = null;
     index = 0;
@@ -201,6 +202,7 @@ function BuildSearchHistory(results_exist) {
     document.getElementById("info-no-result").style.display = "none";
     document.getElementById("info-hr").style.display = "none";
     document.getElementById("info-latest-result").style.display = "none";
+    document.getElementById("bring-back-latest-result").style.display = "none";
 
     active_element = null;
     index = 0;
@@ -224,7 +226,11 @@ function BuildSearchHistory(results_exist) {
 
         document.getElementById("info-latest-result").style.display = "grid";
     }
-
+    console.log(search_history.length);
+    console.log(localStorage.getItem("search_history_counter"));
+    if (search_history.length == 0 && localStorage.getItem("search_history_counter") == 0) {
+        document.getElementById("bring-back-latest-result").style.display = "block";
+    }
     // let clear_search_history = document.getElementById("clear_search_history");
     // if (search_history.length != 0) clear_search_history.style.display = "block";
     // else clear_search_history.style.display = "none";
@@ -291,6 +297,7 @@ function ClearSearchHistory() {
 var values = [0, 3, 5, 10, 30, 100, Infinity];
 
 function OnLoadCounter() {
+    document.getElementById("slider-range").max = values.length - 1;
     if (localStorage.getItem("search_history_counter") != null)
         search_history_element_count = localStorage.getItem("search_history_counter");
     else search_history_element_count = 5;
@@ -302,39 +309,39 @@ function OnLoadCounter() {
         if (element == search_history_element_count) counter_index = i;
     }
     $("#slider-range").val(counter_index);
-}
 
-$("#slider-range").on("input", (event) => {
-    $("#slider-value").text(values[event.target.value]);
-});
+    $("#slider-range").on("input", (event) => {
+        $("#slider-value").text(values[event.target.value]);
+    });
 
-$("#slider-range").on("change", (event) => {
-    if (values[event.target.value] < search_history.length) {
-        if (
-            confirm(
-                "Your changes would delete some of your latest results. Are you sure you want to delete them?"
-            )
-        ) {
+    $("#slider-range").on("change", (event) => {
+        if (values[event.target.value] < search_history.length) {
+            if (
+                confirm(
+                    "Your changes would delete some of your latest results. Are you sure you want to delete them?"
+                )
+            ) {
+                search_history_element_count = values[event.target.value];
+                localStorage.setItem("search_history_counter", search_history_element_count);
+
+                search_history = search_history.slice(0, search_history_element_count);
+                localStorage.setItem("search_history", JSON.stringify(search_history));
+                BuildSearchHistory(false);
+            } else {
+                let counter_index = 2;
+                for (let i = 0; i < values.length; i++) {
+                    const element = values[i];
+                    if (element == search_history_element_count) counter_index = i;
+                }
+                $("#slider-range").val(counter_index);
+                $("#slider-value").text(search_history_element_count);
+            }
+        } else {
             search_history_element_count = values[event.target.value];
             localStorage.setItem("search_history_counter", search_history_element_count);
-
-            search_history = search_history.slice(0, search_history_element_count);
-            localStorage.setItem("search_history", JSON.stringify(search_history));
-            BuildSearchHistory(false);
-        } else {
-            let counter_index = 2;
-            for (let i = 0; i < values.length; i++) {
-                const element = values[i];
-                if (element == search_history_element_count) counter_index = i;
-            }
-            $("#slider-range").val(counter_index);
-            $("#slider-value").text(search_history_element_count);
         }
-    } else {
-        search_history_element_count = values[event.target.value];
-        localStorage.setItem("search_history_counter", search_history_element_count);
-    }
-});
+    });
+}
 
 function setBackgroundofErgebnis(element) {
     const body = document.querySelector("body");
@@ -396,4 +403,8 @@ function EscapeHTML(unsafe) {
             .replace(/"/g, "&quot;")
             .replace(/'/g, "&#039;")
     );
+}
+
+function ClearLocalStorage() {
+    localStorage.clear();
 }

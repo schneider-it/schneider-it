@@ -80,6 +80,59 @@ body {
     position: relative;
     width: var(--container);
     margin: 10rem auto 0;
+
+    & > div {
+        display: none;
+    }
+
+    & #slider-container {
+        position: relative;
+        z-index: 10;
+    }
+
+    & #slider-range {
+        -webkit-appearance: none;
+        margin-inline: 1rem;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::-webkit-slider-runnable-track {
+            background: var(--background-color-3);
+            height: 0.5rem;
+            border-radius: 10000px;
+        }
+
+        &::-moz-range-track {
+            background: var(--background-color-3);
+            height: 1rem;
+            border-radius: 10000px;
+        }
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 1rem;
+            width: 1rem;
+            margin-top: -0.25rem;
+            background: var(--main-color);
+            border-radius: 50%;
+        }
+
+        &::-moz-range-thumb {
+            height: 1rem;
+            width: 1rem;
+            margin-top: -0.25rem;
+            background: var(--main-color);
+            border-radius: 50%;
+        }
+    }
+
+    & #bring-back-latest-result {
+        position: relative;
+        top: 5rem;
+        margin-left: 50vw;
+    }
 }
 
 #ergebnisse {
@@ -134,49 +187,6 @@ body {
                 transform: translateY(12px);
             }
         }
-    }
-}
-
-#slider-container {
-    position: relative;
-    z-index: 10;
-}
-
-#slider-range {
-    -webkit-appearance: none;
-    margin-inline: 1rem;
-
-    &:focus {
-        outline: none;
-    }
-
-    &::-webkit-slider-runnable-track {
-        background: var(--background-color-3);
-        height: 0.5rem;
-        border-radius: 10000px;
-    }
-
-    &::-moz-range-track {
-        background: var(--background-color-3);
-        height: 1rem;
-        border-radius: 10000px;
-    }
-
-    &::-webkit-slider-thumb {
-        -webkit-appearance: none;
-        height: 1rem;
-        width: 1rem;
-        margin-top: -0.25rem;
-        background: var(--main-color);
-        border-radius: 50%;
-    }
-
-    &::-moz-range-thumb {
-        height: 1rem;
-        width: 1rem;
-        margin-top: -0.25rem;
-        background: var(--main-color);
-        border-radius: 50%;
     }
 }
 
