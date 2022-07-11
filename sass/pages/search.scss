@@ -130,8 +130,9 @@ body {
 
     & #bring-back-latest-result {
         position: relative;
-        top: 5rem;
-        margin-left: 50vw;
+        top: 20vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
     }
 }
 

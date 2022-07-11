@@ -225,6 +225,7 @@ function BuildSearchHistory(results_exist) {
         document.getElementById("info-latest-result").innerHTML = text;
 
         document.getElementById("info-latest-result").style.display = "grid";
+        OnLoadCounter();
     }
     console.log(search_history.length);
     console.log(localStorage.getItem("search_history_counter"));
@@ -340,6 +341,13 @@ function OnLoadCounter() {
             search_history_element_count = values[event.target.value];
             localStorage.setItem("search_history_counter", search_history_element_count);
         }
+    });
+
+    $("#bring-back-latest-result").on("click", (event) => {
+        search_history_element_count = 5;
+        localStorage.setItem("search_history_counter", search_history_element_count);
+
+        BuildSearchHistory(false);
     });
 }
 
