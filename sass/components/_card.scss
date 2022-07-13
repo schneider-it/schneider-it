@@ -25,6 +25,10 @@
             background-color: var(--background-color-card);
             padding: 1.5rem;
 
+            // Vanilla Tilt Parallax Effekt
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+
             & .card-before {
                 position: absolute;
                 top: 0;
@@ -42,7 +46,7 @@
                 height: 6rem;
                 top: 20%;
                 left: 50%;
-                transform: translate(-50%, -50%);
+                transform: translate3d(-50%, -50%, 100px);
                 border-radius: 10000px;
                 background-color: var(--background-color-card);
                 display: flex;

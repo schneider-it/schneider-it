@@ -188,7 +188,6 @@ select {
   html:focus-within {
     scroll-behavior: auto;
   }
-
   *,
 *::before,
 *::after {
@@ -207,6 +206,8 @@ select {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
   text-decoration: none;
   outline-style: none;
   border-style: none;
@@ -277,16 +278,13 @@ i[centered]:before {
 }
 
 body {
-  -ms-overflow-style: none;
-  /* for Internet Explorer, Edge */
-  scrollbar-width: none;
-  /* for Firefox */
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
 }
 
 body::-webkit-scrollbar {
-  display: none;
-  /* for Chrome, Safari, and Opera */
+  display: none; /* for Chrome, Safari, and Opera */
 }
 
 @-webkit-keyframes burger-anim1 {
@@ -1864,6 +1862,10 @@ table tr td.right {
   overflow: hidden;
   background-color: var(--background-color-card);
   padding: 1.5rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
 }
 .cards > a .card .card-before {
   position: absolute;
@@ -1882,8 +1884,8 @@ table tr td.right {
   height: 6rem;
   top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate3d(-50%, -50%, 100px);
+          transform: translate3d(-50%, -50%, 100px);
   border-radius: 10000px;
   background-color: var(--background-color-card);
   display: -webkit-box;
