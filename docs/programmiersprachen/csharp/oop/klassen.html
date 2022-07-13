@@ -56,7 +56,7 @@
                         </div>
                         <h4 id="Verwendung-Syntax">Syntax</h4>
                         <div>
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">class</span> &lt;<span
                                     class="code-keyword"
                                     >Classname</span
@@ -66,7 +66,7 @@
                                 { }
                             </div>
                             Beispiel:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">class</span>
                                 <span class="code-class">Person</span>
                                 <div>{</div>
@@ -82,7 +82,7 @@
                         <div>
                             Wenn man nun eine Instanz dieser Klasse erstellen möchte, muss man das
                             neue Objekt erstellen und instanziieren.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-class">Person</span>
                                 <span class="code-variable">myPerson</span> =
                                 <span class="code-keyword">new</span>
@@ -93,7 +93,7 @@
                     <h3 id="private_Variablen">private Variablen</h3>
                     <div>
                         In einer Klasse lassen sich Variablen genauso deklarieren wie im Main.
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-keyword">private string</span>
                             <span class="code-variable">name</span>;
                         </div>
@@ -125,13 +125,13 @@
                             es in der Langschreibweise eine andere Variable public macht.
                             <br /><br />
                             Ein Beispiel der Kurzschreibweise sieht so aus:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">public string</span> Name {
                                 <span class="code-keyword">get</span>;
                                 <span class="code-keyword">set</span>; }
                             </div>
                             Ein Beispiel der Langschreibweise sieht so aus:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">string</span> name; <br /><br />
                                 <span class="code-keyword">public string</span> Name
                                 <div>{</div>
@@ -157,7 +157,7 @@
                             Instanziieren einer Instanz aufgerufen werden. Grundsätzlich existiert
                             in einer Klasse immer mindestens ein Konstruktor, auch wenn man diesen
                             nicht sieht.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">public</span>
                                 <span class="code-class">Person</span>()
                                 <div>{</div>
@@ -171,7 +171,7 @@
                             Meistens bekommt ein selbst definierter Konstruktor einen oder mehrere
                             Parameter übergeben, damit diese Werte gleich beim Erstellen der Instanz
                             in die Variablen gespeichert werden können.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">public string</span> Name {
                                 <span class="code-keyword">get</span>;
                                 <span class="code-keyword">set</span>; } <br /><br />
@@ -193,7 +193,7 @@
                             <br /><br />
                             Der Konstruktor kann auch mehrere Parameter übergeben bekommen, diese
                             sind dann mit einem Beistrich zu trennen.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">public string</span> Name {
                                 <span class="code-keyword">get</span>;
                                 <span class="code-keyword">set</span>; }
@@ -218,7 +218,7 @@
                             </div>
                             In einer Klasse kann es auch mehrere Konstruktoren geben. Diese müssen
                             sich allerdings von den Parametern her voneinander unterscheiden.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">public string</span> Name {
                                 <span class="code-keyword">get</span>;
                                 <span class="code-keyword">set</span>; }
@@ -258,7 +258,7 @@
                             Wenn eine Klasse einen Konstruktor mit mindestens einem Parameter
                             besitzt, kann man diese Variable beim instanziieren der Klasse gleich
                             mit-über-geben.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-class">Person</span>
                                 <span class="code-variable">myPerson</span> =
                                 <span class="code-keyword">new</span>
@@ -269,7 +269,7 @@
                             Wichtig ist hierbei, dass die Datentypen, die man übergibt, auch mit
                             irgendeiner Parameterliste von einem Konstruktor in der Klasse
                             übereinstimmen.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-class">Person</span>
                                 <span class="code-variable">myPerson</span> =
                                 <span class="code-keyword">new</span>
@@ -288,7 +288,7 @@
                                 Konstruktor aufgerufen wird, verweist der Konstruktor auf einen
                                 anderen Konstruktor, der dann bestimmte Zuweisungen, die ohne
                                 Konstruktor-Verkettung doppelt vorkommen würden, ausführt.
-                                <div class="code">
+                                <div class="code language-csharp">
                                     <span class="code-keyword">public string</span> Name {
                                     <span class="code-keyword">get</span>;
                                     <span class="code-keyword">set</span>; }
@@ -328,7 +328,7 @@
                                 betreiben. Dies eignet sich dann besonders gut, wenn man einen
                                 Konstruktor mit allen möglichen Parametern hat und alle anderen
                                 Konstruktoren auf diesen Konstruktor "verketten".
-                                <div class="code">
+                                <div class="code language-csharp">
                                     <span class="code-keyword">public string</span> Name {
                                     <span class="code-keyword">get</span>;
                                     <span class="code-keyword">set</span>; }
@@ -364,7 +364,7 @@
                                 </div>
                                 Wenn man auf den Konstruktor der Basis-Klasse verweisen möchte (mehr
                                 dazu unter Vererbung), schreibt man base statt this.
-                                <div class="code">
+                                <div class="code language-csharp">
                                     <div class="code-comment">// BaseClass Person</div>
                                     <span class="code-keyword">class</span>
                                     <span class="code-class">Person</span>
@@ -527,7 +527,7 @@
                         <div>
                             Die grundsätzliche immer gleichbleibende Syntax einer C#-Methode sieht
                             wie folgt aus:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 &lt;<span class="code-keyword-optional">Zugriffsmodifizierer</span
                                 >&gt; &lt;<span class="code-keyword">Rückgabewert</span>&gt;
                                 &lt;<span class="code-keyword">Methodenname</span>&gt;(&lt;<span
@@ -548,7 +548,7 @@
                         <h4 id="Methoden-statische_Methoden">statische Methoden</h4>
                         <div>
                             Keine Instanz einer Klasse notwendig:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">static void</span>
                                 <span class="code-method">Main</span>(<span class="code-keyword"
                                     >string</span
@@ -567,7 +567,7 @@
                         <h4 id="Methoden-dynamische_Methoden">dynamische Methoden</h4>
                         <div>
                             Kann nur aufgerufen werden, wenn eine Instanz vorhanden ist:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">static void</span>
                                 <span class="code-method">Main</span>(<span class="code-keyword"
                                     >string</span
@@ -601,7 +601,7 @@
                         <div>
                             Man spricht von Rekursion, wenn sich eine Methode selbst aufruft und
                             somit einen endlosen geschlossenen Kreislauf bildet.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">static void</span>
                                 <span class="code-method">RecMethod</span>()
                                 <div>{</div>
@@ -620,7 +620,7 @@
                             aus sich selbst herausspringen muss. Dies kann ganz einfach erzielt
                             werden, indem ein if in die Methode eingebaut wird, das irgendwann true
                             ergibt.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">static void</span>
                                 <span class="code-method">RecMethod</span>(<span
                                     class="code-keyword"
@@ -665,7 +665,7 @@
                             enthält, nein Integers, nein Characters...<br />
                             Wenn das der Fall ist, baut man sich am besten eine generische Klasse
                             List:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">class</span>
                                 <span class="code-class">List</span>&lt;<span class="code-generic"
                                     >T</span
@@ -677,7 +677,7 @@
                             Wenn man den generischen Datentyp T einschränken möchte, sodass man zum
                             Beispiel sicherstellen kann, dass T "compareable" ist, dann verwendet
                             man generische Typconstraints mithilfe des Schlüsselwortes where.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">class</span>
                                 <span class="code-class">List</span>&lt;<span class="code-generic"
                                     >T</span
@@ -744,7 +744,7 @@
                             Beim Instanziieren dieser Klasse muss man dann ebenfalls eine andere
                             Syntax verwenden. In diesem Fall, instanziieren wir eine Liste mit
                             Integern.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-class">List</span>&lt;<span class="code-keyword"
                                     >int</span
                                 >&gt; <span class="code-variable">myIntList</span> =
@@ -755,7 +755,7 @@
                             </div>
                             Beziehungsweise, wenn man die Klasse mit einem String instanziieren
                             möchte:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-class">List</span>&lt;<span class="code-keyword"
                                     >string</span
                                 >&gt; <span class="code-variable">myStringList</span> =
@@ -770,7 +770,7 @@
                             Wenn man eine generisches Property, ein generisches Attribut
                             beziehungsweise eine generische Variable in der generischen Klasse haben
                             will, lautet die Syntax folgendermaßen:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">public</span>
                                 <span class="code-class">List</span>&lt;<span class="code-generic"
                                     >T</span
@@ -782,7 +782,7 @@
                         <div>
                             Diesen generischen Datentyp kann man nun in den Methoden der Klasse
                             einbauen. Zum Beispiel können wir eine Methoden Add hinzufügen.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">public</span>
                                 <span class="code-keyword">void</span>
                                 <span class="code-method">Add</span>(<span class="code-generic"
@@ -798,14 +798,14 @@
                         <h4 id="Generische_Klassen-Syntax_Methodenaufruf">Syntax Methodenaufruf</h4>
                         <div>
                             Diese Methode kann man dann genau wie bei konkreten Klassen aufrufen.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-variable">myIntList</span>.<span
                                     class="code-method"
                                     >Add</span
                                 >(10);
                             </div>
                             Oder die String-Variante:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-variable">myStringList</span>.<span
                                     class="code-method"
                                     >Add</span
@@ -832,7 +832,7 @@
                         <div>
                             Damit der Compiler weiß, dass es sich bei der neuen Methode um eine Unit
                             Test Methode handelt, benötigt man eine bestimmte Syntax.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">using</span>
                                 Microsoft.VisualStudio.TestTools.UnitTesting; <br /><br />
                                 [<span class="code-class">TestClass</span>] <br />

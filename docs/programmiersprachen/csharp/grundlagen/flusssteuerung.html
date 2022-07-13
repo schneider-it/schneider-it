@@ -95,7 +95,7 @@
                             </tr>
                         </table>
                         Hier ein Beispiel:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-keyword">double</span>
                             <span class="code-variable">tempInCelsius</span> =
                             <span class="code-keyword">new</span>
@@ -118,7 +118,7 @@
                         </div>
                         Wenn nur ein einziger Befehl in der if-Bedingung gibt, kann man die
                         geschwungenen Klammern weglassen.
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">if</span> (<span class="code-variable"
                                 >tempInCelsius</span
                             >
@@ -128,7 +128,7 @@
                             >(<span class="code-string">"Cold"</span>); <br />
                         </div>
                         Diese Bedingung ist erfüllt, wenn eine der beiden Bedingungen erfüllt ist:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">if</span> (<span class="code-variable"
                                 >tempInCelsius</span
                             >
@@ -140,7 +140,7 @@
                             >(<span class="code-string">"Unangenehm"</span>); <br />
                         </div>
                         Und diese Bedingung ist nur erfüllt, wenn beide Bedingungen erfüllt sind:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">if</span> (<span class="code-variable"
                                 >tempInCelsius</span
                             >
@@ -153,7 +153,7 @@
                         </div>
                         Dieser Programmcode im if wird nur ausgeführt, wenn maximale eine der beiden
                         Bedingungen zutrifft:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">if</span> (!(<span class="code-variable"
                                 >tempInCelsius</span
                             >
@@ -166,7 +166,7 @@
                         </div>
                         Der Programmcode wird nur ausgeführt, wenn keine der beiden Bedingungen
                         zutrifft:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">if</span> (!(<span class="code-variable"
                                 >tempInCelsius</span
                             >
@@ -179,13 +179,13 @@
                         </div>
                         Für kurze if-Statements gibt es auch eine Kurzschreibweise. Die Syntax sieht
                         dann wie folgt aus:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-method">Bedingung</span> ?
                             <span class="code-variable">Code, wenn true</span> :
                             <span class="code-string">Code, wenn false</span>;
                         </div>
                         Hier ein Beispiel:
-                        <div class="code">
+                        <div class="code language-csharp">
                             (<span class="code-variable">tempInCelsius</span> &lt;
                             <span class="code-number">10.0</span>) ?
                             <span class="code-class">Console</span>.<span class="code-method"
@@ -201,7 +201,7 @@
                         Else ist eine Bedingung, die eintritt, wenn das vorherige if nicht eintritt.
                         Allerdings muss man keine eigene Bedingung programmieren. <br />
                         Ein Else kann deshalb niemals ohne if existieren.
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">if</span> (<span class="code-variable"
                                 >tempInCelsius</span
                             >
@@ -222,7 +222,7 @@
                         </div>
                         Genau wie beim if kann man auch beim else die geschwungenen Klammern
                         weglassen, wenn nur ein Befehl darin steht.
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">if</span> (<span class="code-variable"
                                 >tempInCelsius</span
                             >
@@ -236,7 +236,7 @@
                             >(<span class="code-string">"Angenehm"</span>); <br />
                         </div>
                         Nach einem else kann sogar noch ein if kommen:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">if</span> (<span class="code-variable"
                                 >tempInCelsius</span
                             >
@@ -274,7 +274,7 @@
                         Bei jedem case und beim default muss am Ende ein Flowcontrol stehen, also
                         break, return oder going to, es sei denn, bei dem case steht gar kein Code
                         (Beispiel Case 5).
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-keyword">int</span>
                             <span class="code-variable">number</span> =
                             <span class="code-keyword">new</span>
@@ -329,7 +329,7 @@
                         <div>
                             Die while-Schleife wiederholt den Programmcode, der innerhalb steht,
                             solange die Bedingung zutrifft.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-keyword">int</span>
                                 <span class="code-variable">counter</span> =
                                 <span class="code-number">0</span>; <br />
@@ -352,7 +352,7 @@
                             Programmcode gezielt eine bestimmte Anzahl oft ausgeführt werden soll.
                             <br /><br />
                             Syntax:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-flowcontrol">for</span> ( <br />
                                 <span class="tab"></span>&lt;<span class="code-keyword-optional"
                                     >Inizialisierung (optional)</span
@@ -368,7 +368,7 @@
                                 <div>}</div>
                             </div>
                             Diese for-Schleife rennt zum Beispiel meistens 10 Mal durch:
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-flowcontrol">for</span> (<span
                                     class="code-keyword"
                                     >int</span
@@ -389,7 +389,7 @@
                         <div>
                             Mithilfe der foreach-Schleife kann man sehr einfach Arrays oder Listen
                             durchlaufen.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-flowcontrol">foreach</span> (<span
                                     class="code-keyword"
                                     >var</span
@@ -409,7 +409,7 @@
                         <div>
                             Die do-while-Schleife ist wie die while-Schleife, nur dass die do-while
                             auf jeden Fall einmal durchlaufen wird.
-                            <div class="code">
+                            <div class="code language-csharp">
                                 <span class="code-flowcontrol">do</span> <br />
                                 <div>{</div>
                                 <span class="tab code-comment">// do something</span> <br />
@@ -424,7 +424,7 @@
                     <div>
                         return wird verwendet, um von Methoden Werte zurückzugeben. Zum Beispiel
                         gibt diese Methode GetName() in der Klasse Person den Namen zurück:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-keyword">class</span>
                             <span class="code-class">Person</span>
                             <div>{</div>
@@ -441,7 +441,7 @@
                             <div>}</div>
                         </div>
                         Dieser Name kann dann zum Beispiel in eine Variable gespeichert werden:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-class">Person</span>
                             <span class="code-variable">myPerson</span> =
                             <span class="code-keyword">new</span>
@@ -454,7 +454,7 @@
                         </div>
                         Wenn eine Methode keinen Wert zurückliefert (void), kann man den
                         Programmcode trotzdem zwischenzeitig mit return unterbrechen:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-keyword">public void</span>
                             <span class="code-method">DoSomething</span>() <br />
                             <div>{</div>
@@ -468,7 +468,7 @@
                             <div>}</div>
                         </div>
                         Das ist zum Beispiel bei Rekursion relativ hilfreich:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-keyword">public void</span>
                             <span class="code-method">CountUp</span>(<span class="code-keyword"
                                 >int</span
@@ -496,7 +496,7 @@
                         Durchführung des Programmcodes in einer Schleife aus der innersten Schleife
                         herausspringen. Während continue am Beginn der Schleife wieder anfängt,
                         springt break zur ersten Zeile nach der Schleife.
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">for</span> (<span class="code-keyword"
                                 >int</span
                             >
@@ -517,7 +517,7 @@
                             <br />
                             <div>}</div>
                         </div>
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">for</span> (<span class="code-keyword"
                                 >int</span
                             >
@@ -542,7 +542,7 @@
                         Sprungpunkt am Beginn des Programms setzen, welchen man am Ende des
                         Programms aufruft. Dies hätte dann die gleiche Wirkung wie eine
                         while(true)-Schleife.
-                        <div class="code">
+                        <div class="code language-csharp">
                             Sprungpunkt:; <br />
                             <span class="code-class">Console</span>.<span class="code-method"
                                 >WriteLine</span
@@ -553,7 +553,7 @@
                         Grundsätzlich wird goto nicht sehr häufig verwendet, weil es ziemlich
                         unübersichtlich ist, trotzdem hat es manche Einsatzmöglichkeiten, wo es
                         gerne verwendet wird:
-                        <div class="code">
+                        <div class="code language-csharp">
                             <span class="code-flowcontrol">while</span>(<span class="code-keyword"
                                 >true</span
                             >) <br />
