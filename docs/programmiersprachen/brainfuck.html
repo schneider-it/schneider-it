@@ -10,6 +10,7 @@
         />
         <link rel="stylesheet" href="/css/lightbox.min.css" />
         <link href="/css/fa_all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/tools/highlight/styles/atom-one-dark.min.css" />
 
         <link rel="stylesheet" href="/css/main.min.css" />
         <link rel="stylesheet" href="/css/programmiersprachen.min.css" />
@@ -58,58 +59,8 @@
                         >). Auch wenn diese 160 Bytes eigentlich nicht der Syntax von C entsprechen,
                         wird der Code trotz Warnings compiliert.
                         <div class="code">
-                            <span class="code-error">s</span>[<span class="code-number">99</span
-                            >],<span class="code-keyword">*</span><span class="code-error">r</span
-                            ><span class="code-keyword">=</span
-                            ><span class="code-error">s</span>,<span class="code-keyword">*</span
-                            ><span class="code-error">d</span>,<span class="code-error">c</span
-                            >;<span class="code-error">main</span>(<span class="code-error">a</span
-                            >,<span class="code-error">b</span>){char<span class="code-keyword"
-                                >*</span
-                            ><span class="code-error">v</span><span class="code-keyword">=</span
-                            ><span class="code-number">1</span>[<span class="code-error">d</span
-                            ><span class="code-keyword">=</span
-                            ><span class="code-error">b</span>];<span class="code-flowcontrol"
-                                >for</span
-                            >(;<span class="code-error">c</span><span class="code-keyword">=</span
-                            ><span class="code-keyword">*</span><span class="code-error">v</span
-                            ><span class="code-keyword">++</span><span class="code-keyword">%</span
-                            ><span class="code-number">93</span>;)<span class="code-flowcontrol"
-                                >for</span
-                            >(<span class="code-error">b</span><span class="code-keyword">=</span
-                            ><span class="code-error">c</span><span class="code-keyword">&</span
-                            ><span class="code-number">2</span>,<span class="code-error">b</span
-                            ><span class="code-keyword">=</span><span class="code-error">c</span
-                            ><span class="code-keyword">%</span><span class="code-number">7</span
-                            ><span class="code-keyword">?</span
-                            ><span class="code-error">a</span>&&(<span class="code-error">c</span
-                            ><span class="code-keyword">&</span><span class="code-number">17</span
-                            ><span class="code-keyword">?</span><span class="code-error">c</span
-                            ><span class="code-keyword">&</span><span class="code-number">1</span
-                            ><span class="code-keyword">?</span>(<span class="code-keyword">*</span
-                            ><span class="code-error">r</span><span class="code-keyword">+</span
-                            ><span class="code-keyword">=</span><span class="code-error">b</span
-                            ><span class="code-keyword">-</span
-                            ><span class="code-number">1</span>):(<span class="code-error">r</span
-                            ><span class="code-keyword">+</span><span class="code-keyword">=</span
-                            ><span class="code-error">b</span><span class="code-keyword">-</span
-                            ><span class="code-number">1</span>):<span class="code-error"
-                                >syscall</span
-                            >(<span class="code-number">4</span><span class="code-keyword">-</span
-                            ><span class="code-keyword">!</span
-                            ><span class="code-error">b</span>,<span class="code-error">b</span
-                            >,<span class="code-error">r</span>,<span class="code-number">1</span
-                            >),<span class="code-number">0</span>):<span class="code-error">v</span
-                            >;<span class="code-error">b</span><span class="code-keyword">&&</span
-                            ><span class="code-error">c</span>|<span class="code-error">a</span
-                            ><span class="code-keyword">**</span
-                            ><span class="code-error">r</span>;<span class="code-error">v</span
-                            ><span class="code-keyword">=</span
-                            ><span class="code-error">d</span>)<span class="code-error">main</span
-                            >(<span class="code-keyword">!</span
-                            ><span class="code-error">c</span>,<span class="code-keyword">&</span
-                            ><span class="code-error">a</span>);<span class="code-error">d</span
-                            ><span class="code-keyword">=</span><span class="code-error">v</span>;}
+                            s[99],*r=s,*d,c;main(a,b){char*v=1[d=b];for(;c=*v++%93;)for(b=c&2,b=c%7?a&&(c&17
+                            ?c&1?(*r+=b-1):(r+=b-1):syscall(4-!b,b,r,1),0):v;b&&c|a**r;v=d)main(!c,&a);d=v;}
                         </div>
                     </div>
                     <h4 id="Erklärung-Programmierung">Programmierung</h4>
@@ -220,6 +171,7 @@
         <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
         <script defer src="/js/Lightbox.js"></script>
         <script defer src="/js/FontAwesome.js"></script>
+        <script src="/tools/highlight/highlight.min.js"></script>
 
         <script defer type="text/javascript" src="/js/App.js"></script>
     </body>

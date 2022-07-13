@@ -1,324 +1,598 @@
 <!DOCTYPE html>
 <html lang="de">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!">
-        <link rel="stylesheet" href="/css/lightbox.min.css">
-        <link href="/css/fa_all.min.css" rel="stylesheet">
-        
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Lernen Sie HTML, CSS, JavaScript, Bootstrap, C#, SYTE, SYTB, NWTK und noch vieles mehr!"
+        />
+        <link rel="stylesheet" href="/css/lightbox.min.css" />
+        <link href="/css/fa_all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/tools/highlight/styles/atom-one-dark.min.css" />
+
         <link rel="stylesheet" href="/css/main.min.css" />
-            <link rel="stylesheet" href="/css/programmiersprachen.min.css" />
-        <link rel="icon" href="/img/Logo.svg">
+        <link rel="stylesheet" href="/css/programmiersprachen.min.css" />
+        <link rel="icon" href="/img/Logo.svg" />
         <title>C# Flusssteuerung - Schneider IT</title>
     </head>
     <body onload="OnLoadLeaf();" onscroll="OnScroll();" onkeydown="OnKeyDown();">
         <div class="scroll_indicator_div">
             <div class="scroll_indicator" id="scroll_indicator"></div>
-        </div> 
+        </div>
 
         <div id="header"></div>
 
-            <div class="back_button">
+        <div class="back_button">
             <a href="../grundlagen.html">
                 <i class="fa-solid fa-arrow-left"></i>
             </a>
         </div>
 
         <div class="title searchable">
-            <img id="title-logo" loading="lazy" src="/img/reihenfolge.png" alt="Flusssteuerung_Logo">
+            <img
+                id="title-logo"
+                loading="lazy"
+                src="/img/reihenfolge.png"
+                alt="Flusssteuerung_Logo"
+            />
             <h1>Flusssteuerung C#</h1>
         </div>
         <div></div>
 
         <div class="section searchable">
-            <div class="container" style="margin-top: 10vh;">
+            <div class="container" style="margin-top: 10vh">
                 <div>
                     <h3 id="if">if</h3>
                     <div>
-                        Mit einem if können Sie eine Bedingung festlegen, die erfüllt sein muss, damit bestimmter Programmcode durchgeführt wird.
-                        <br><br>
+                        Mit einem if können Sie eine Bedingung festlegen, die erfüllt sein muss,
+                        damit bestimmter Programmcode durchgeführt wird.
+                        <br /><br />
                         Diese verschiedenen Konditionen gibt es:
                         <table>
-                            <tr><th>Konditionen</th></tr>
-                            <tr><td>a &lt; b: kleiner als</td></tr>
-                            <tr><td>a &lt;= b: kleiner gleich</td></tr>
-                            <tr><td>a &gt; b: größer als</td></tr>
-                            <tr><td>a &gt;= b: größer gleich</td></tr>
-                            <tr><td>a == b: gleich</td></tr>
-                            <tr><td>a != b: ungleich</td></tr>
-                            <tr><td>a === b: ident (gleiche Refernz)</td></tr>
+                            <tr>
+                                <th>Konditionen</th>
+                            </tr>
+                            <tr>
+                                <td>a &lt; b: kleiner als</td>
+                            </tr>
+                            <tr>
+                                <td>a &lt;= b: kleiner gleich</td>
+                            </tr>
+                            <tr>
+                                <td>a &gt; b: größer als</td>
+                            </tr>
+                            <tr>
+                                <td>a &gt;= b: größer gleich</td>
+                            </tr>
+                            <tr>
+                                <td>a == b: gleich</td>
+                            </tr>
+                            <tr>
+                                <td>a != b: ungleich</td>
+                            </tr>
+                            <tr>
+                                <td>a === b: ident (gleiche Refernz)</td>
+                            </tr>
                         </table>
                         <table>
-                            <tr><th>Kombination mehrerer Bedingungen</th></tr>
-                            <tr><td>&&: beide Bedingungen müssen erfüllt werden</td></tr>
-                            <tr><td>||: eine der beiden Bedingungen muss erfüllt werden</td></tr>
-                            <tr><td>!: Setzt man ein Rufzeichen vor die Bedingung, dann darf die Bedingung nicht erfüllt werden, damit der Programmcode ausgeführt wird.</td></tr>
+                            <tr>
+                                <th>Kombination mehrerer Bedingungen</th>
+                            </tr>
+                            <tr>
+                                <td>&&: beide Bedingungen müssen erfüllt werden</td>
+                            </tr>
+                            <tr>
+                                <td>||: eine der beiden Bedingungen muss erfüllt werden</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    !: Setzt man ein Rufzeichen vor die Bedingung, dann darf die
+                                    Bedingung nicht erfüllt werden, damit der Programmcode
+                                    ausgeführt wird.
+                                </td>
+                            </tr>
                         </table>
                         Hier ein Beispiel:
                         <div class="code">
-                            <span class="code-keyword">double</span> <span class="code-variable">tempInCelsius</span> = <span class="code-keyword">new</span> <span class="code-class">Random</span>().<span class="code-method">NextDouble</span>() * <span class="code-number">50</span> - <span class="code-number">15</span>; <br>
-                            <br>
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span>) <br>
+                            <span class="code-keyword">double</span>
+                            <span class="code-variable">tempInCelsius</span> =
+                            <span class="code-keyword">new</span>
+                            <span class="code-class">Random</span>().<span class="code-method"
+                                >NextDouble</span
+                            >() * <span class="code-number">50</span> -
+                            <span class="code-number">15</span>; <br />
+                            <br />
+                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span>) <br />
                             <div>{</div>
-                                <span class="tab code-variable">tempInCelsius</span> += <span class="code-number">10.0</span>; <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Heizkörper einschalten!"</span>); <br>
+                            <span class="tab code-variable">tempInCelsius</span> +=
+                            <span class="code-number">10.0</span>; <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Heizkörper einschalten!"</span>); <br />
                             <div>}</div>
                         </div>
-                        Wenn nur ein einziger Befehl in der if-Bedingung gibt, kann man die geschwungenen Klammern weglassen.
+                        Wenn nur ein einziger Befehl in der if-Bedingung gibt, kann man die
+                        geschwungenen Klammern weglassen.
                         <div class="code">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span>) <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Cold"</span>); <br>
+                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span>) <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Cold"</span>); <br />
                         </div>
                         Diese Bedingung ist erfüllt, wenn eine der beiden Bedingungen erfüllt ist:
                         <div class="code">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span> || <span class="code-variable">tempInCelsius</span> &gt;= <span class="code-number">40.0</span>) <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Unangenehm"</span>); <br>
+                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span> ||
+                            <span class="code-variable">tempInCelsius</span> &gt;=
+                            <span class="code-number">40.0</span>) <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Unangenehm"</span>); <br />
                         </div>
                         Und diese Bedingung ist nur erfüllt, wenn beide Bedingungen erfüllt sind:
                         <div class="code">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span> && <span class="code-variable">tempInCelsius</span> &gt;= <span class="code-number">40.0</span>) <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Unmöglich"</span>); <br>
+                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span> &&
+                            <span class="code-variable">tempInCelsius</span> &gt;=
+                            <span class="code-number">40.0</span>) <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Unmöglich"</span>); <br />
                         </div>
-                        Dieser Programmcode im if wird nur ausgeführt, wenn maximale eine der beiden Bedingungen zutrifft:
+                        Dieser Programmcode im if wird nur ausgeführt, wenn maximale eine der beiden
+                        Bedingungen zutrifft:
                         <div class="code">
-                            <span class="code-flowcontrol">if</span> (!(<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span> || <span class="code-variable">tempInCelsius</span> &gt;= <span class="code-number">40.0</span>)) <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Ist es heiß oder kalt?"</span>); <br>
+                            <span class="code-flowcontrol">if</span> (!(<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span> ||
+                            <span class="code-variable">tempInCelsius</span> &gt;=
+                            <span class="code-number">40.0</span>)) <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Ist es heiß oder kalt?"</span>); <br />
                         </div>
-                        Der Programmcode wird nur ausgeführt, wenn keine der beiden Bedingungen zutrifft:
+                        Der Programmcode wird nur ausgeführt, wenn keine der beiden Bedingungen
+                        zutrifft:
                         <div class="code">
-                            <span class="code-flowcontrol">if</span> (!(<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span> && <span class="code-variable">tempInCelsius</span> &gt;= <span class="code-number">40.0</span>)) <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Angenehm"</span>); <br>
+                            <span class="code-flowcontrol">if</span> (!(<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span> &&
+                            <span class="code-variable">tempInCelsius</span> &gt;=
+                            <span class="code-number">40.0</span>)) <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Angenehm"</span>); <br />
                         </div>
-                        Für kurze if-Statements gibt es auch eine Kurzschreibweise. Die Syntax sieht dann wie folgt aus:
+                        Für kurze if-Statements gibt es auch eine Kurzschreibweise. Die Syntax sieht
+                        dann wie folgt aus:
                         <div class="code">
-                            <span class="code-method">Bedingung</span> ? <span class="code-variable">Code, wenn true</span> : <span class="code-string">Code, wenn false</span>;
+                            <span class="code-method">Bedingung</span> ?
+                            <span class="code-variable">Code, wenn true</span> :
+                            <span class="code-string">Code, wenn false</span>;
                         </div>
                         Hier ein Beispiel:
                         <div class="code">
-                            (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">10.0</span>) ? <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Kalt"</span>) : <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Warm"</span>);
+                            (<span class="code-variable">tempInCelsius</span> &lt;
+                            <span class="code-number">10.0</span>) ?
+                            <span class="code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Kalt"</span>) :
+                            <span class="code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Warm"</span>);
                         </div>
                     </div>
                     <h3 id="else">else</h3>
                     <div>
-                        Else ist eine Bedingung, die eintritt, wenn das vorherige if nicht eintritt. Allerdings muss man keine eigene Bedingung programmieren. <br>
+                        Else ist eine Bedingung, die eintritt, wenn das vorherige if nicht eintritt.
+                        Allerdings muss man keine eigene Bedingung programmieren. <br />
                         Ein Else kann deshalb niemals ohne if existieren.
                         <div class="code">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span>) <br>
+                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span>) <br />
                             <div>{</div>
-                                <span class="tab code-variable">tempInCelsius</span> += <span class="code-number">10.0</span>; <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Heizkörper einschalten!"</span>); <br>
+                            <span class="tab code-variable">tempInCelsius</span> +=
+                            <span class="code-number">10.0</span>; <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Heizkörper einschalten!"</span>); <br />
                             <div>}</div>
-                            <span class="code-flowcontrol">else</span> <br>
+                            <span class="code-flowcontrol">else</span> <br />
                             <div>{</div>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Nichts tun!"</span>); <br>
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Nichts tun!"</span>); <br />
                             <div>}</div>
                         </div>
-                        Genau wie beim if kann man auch beim else die geschwungenen Klammern weglassen, wenn nur ein Befehl darin steht.
+                        Genau wie beim if kann man auch beim else die geschwungenen Klammern
+                        weglassen, wenn nur ein Befehl darin steht.
                         <div class="code">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span>) <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Kalt"</span>); <br>
-                            <span class="code-flowcontrol">else</span> <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Angenehm"</span>); <br>
+                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span>) <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Kalt"</span>); <br />
+                            <span class="code-flowcontrol">else</span> <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Angenehm"</span>); <br />
                         </div>
                         Nach einem else kann sogar noch ein if kommen:
                         <div class="code">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable">tempInCelsius</span> &lt; <span class="code-number">20.0</span>) <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Kalt"</span>); <br>
-                            <span class="code-flowcontrol">else</span> <span class="code-flowcontrol">if</span> (<span class="code-variable">tempInCelsius</span> &gt;= <span class="code-number">40.0</span>) <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Heiß"</span>); <br>
-                            <span class="code-flowcontrol">else</span> <br>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Angenehm"</span>); <br>
+                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &lt; <span class="code-number">20.0</span>) <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Kalt"</span>); <br />
+                            <span class="code-flowcontrol">else</span>
+                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
+                                >tempInCelsius</span
+                            >
+                            &gt;= <span class="code-number">40.0</span>) <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Heiß"</span>); <br />
+                            <span class="code-flowcontrol">else</span> <br />
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Angenehm"</span>); <br />
                         </div>
-                        Hier sei geschrieben, dass das erste else nicht unbedingt notwendig ist, weil das Programm andernfalls auch funktionieren würde, allerdings ist das Programm mit dem else schneller.
+                        Hier sei geschrieben, dass das erste else nicht unbedingt notwendig ist,
+                        weil das Programm andernfalls auch funktionieren würde, allerdings ist das
+                        Programm mit dem else schneller.
                     </div>
                     <h3 id="switch">switch</h3>
                     <div>
-                        Wenn man zu viele ifs verwenden müsste, kann man stattdessen einen switch verwenden. 
-                        Dabei ist man allerdings auf die == Kondition beschränkt.
-                        <br><br>
-                        In einem switch befinden sich ein bis mehrere cases und vielleicht auf default. 
-                        Wenn der Wert, der in den Klammern hinter switch steht auf den Wert nach case zutrifft, 
-                        wird der Code von diesem case ausgeführt.
-                        Trifft kein case zu, es existiert allerdings ein default, wird dieser Code ausgeführt.
-                        <br><br>
-                        Bei jedem case und beim default muss am Ende ein Flowcontrol stehen, also break, return oder going to, es sei denn, bei dem case steht gar kein Code (Beispiel Case 5).
+                        Wenn man zu viele ifs verwenden müsste, kann man stattdessen einen switch
+                        verwenden. Dabei ist man allerdings auf die == Kondition beschränkt.
+                        <br /><br />
+                        In einem switch befinden sich ein bis mehrere cases und vielleicht auf
+                        default. Wenn der Wert, der in den Klammern hinter switch steht auf den Wert
+                        nach case zutrifft, wird der Code von diesem case ausgeführt. Trifft kein
+                        case zu, es existiert allerdings ein default, wird dieser Code ausgeführt.
+                        <br /><br />
+                        Bei jedem case und beim default muss am Ende ein Flowcontrol stehen, also
+                        break, return oder going to, es sei denn, bei dem case steht gar kein Code
+                        (Beispiel Case 5).
                         <div class="code">
-                            <span class="code-keyword">int</span> <span class="code-variable">number</span> = <span class="code-keyword">new</span> <span class="code-class">Random</span>().<span class="code-method">Next</span>(<span class="code-number">1</span>, <span class="code-number">10</span>); <br>
-                            <br>
-                            <span class="code-flowcontrol">switch</span> (<span class="code-variable">number</span>)
+                            <span class="code-keyword">int</span>
+                            <span class="code-variable">number</span> =
+                            <span class="code-keyword">new</span>
+                            <span class="code-class">Random</span>().<span class="code-method"
+                                >Next</span
+                            >(<span class="code-number">1</span>,
+                            <span class="code-number">10</span>); <br />
+                            <br />
+                            <span class="code-flowcontrol">switch</span> (<span
+                                class="code-variable"
+                                >number</span
+                            >)
                             <div>{</div>
-                                <span class="tab code-flowcontrol">case</span> <span class="code-number">3</span>: <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"3000 €"</span>); <span class="code-flowcontrol">break</span>; <br>
-                                <span class="tab code-flowcontrol">case</span> <span class="code-number">5</span>: <br>
-                                <span class="tab code-flowcontrol">case</span> <span class="code-number">6</span>: <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"5500 €"</span>); <span class="code-flowcontrol">break</span>; <br>
-                                <span class="tab code-flowcontrol">case</span> <span class="code-number">9</span>: <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"9000 €"</span>); <span class="code-flowcontrol">break</span>; <br>
-                                <span class="tab code-flowcontrol">default</span>: <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"leider nichts"</span>); <span class="code-flowcontrol">break</span>; <br>
+                            <span class="tab code-flowcontrol">case</span>
+                            <span class="code-number">3</span>:
+                            <span class="code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"3000 €"</span>);
+                            <span class="code-flowcontrol">break</span>; <br />
+                            <span class="tab code-flowcontrol">case</span>
+                            <span class="code-number">5</span>: <br />
+                            <span class="tab code-flowcontrol">case</span>
+                            <span class="code-number">6</span>:
+                            <span class="code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"5500 €"</span>);
+                            <span class="code-flowcontrol">break</span>; <br />
+                            <span class="tab code-flowcontrol">case</span>
+                            <span class="code-number">9</span>:
+                            <span class="code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"9000 €"</span>);
+                            <span class="code-flowcontrol">break</span>; <br />
+                            <span class="tab code-flowcontrol">default</span>:
+                            <span class="code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"leider nichts"</span>);
+                            <span class="code-flowcontrol">break</span>; <br />
                             <div>}</div>
                         </div>
-                        In diesem Beispiel gibt es also folgende 5 Scenarien: <br>
-                        1. number == 3: Es wird "3000 €" ausgegeben. <br>
-                        2. number == 5: Es wird "5500 €" ausgegeben. <br>
-                        3. number == 6: Es wird "5500 €" ausgegeben. <br>
-                        4. number == 9: Es wird "9000 €" ausgegeben. <br>
-                        5. number == irgendetwas anderes: Es wird "leider nichts" ausgegeben. <br>
+                        In diesem Beispiel gibt es also folgende 5 Scenarien: <br />
+                        1. number == 3: Es wird "3000 €" ausgegeben. <br />
+                        2. number == 5: Es wird "5500 €" ausgegeben. <br />
+                        3. number == 6: Es wird "5500 €" ausgegeben. <br />
+                        4. number == 9: Es wird "9000 €" ausgegeben. <br />
+                        5. number == irgendetwas anderes: Es wird "leider nichts" ausgegeben. <br />
                     </div>
                     <h3 id="schleifen">Schleifen</h3>
                     <div>
                         Schleifen wiederholen Programmcode.
                         <h4 id="schleifen-while">while</h4>
                         <div>
-                            Die while-Schleife wiederholt den Programmcode, der innerhalb steht, solange die Bedingung zutrifft.
+                            Die while-Schleife wiederholt den Programmcode, der innerhalb steht,
+                            solange die Bedingung zutrifft.
                             <div class="code">
-                                <span class="code-keyword">int</span> <span class="code-variable">counter</span> = <span class="code-number">0</span>; <br>
-                                <br>
-                                <span class="code-flowcontrol">while</span> (<span class="code-variable">counter</span> &lt; <span class="code-number">10</span>) <br>
-                                    <span class="tab code-variable">counter</span>++; <br>
-                                <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-variable">counter</span>); <span class="code-comment">// Augabe: 10</span> <br>
+                                <span class="code-keyword">int</span>
+                                <span class="code-variable">counter</span> =
+                                <span class="code-number">0</span>; <br />
+                                <br />
+                                <span class="code-flowcontrol">while</span> (<span
+                                    class="code-variable"
+                                    >counter</span
+                                >
+                                &lt; <span class="code-number">10</span>) <br />
+                                <span class="tab code-variable">counter</span>++; <br />
+                                <span class="code-class">Console</span>.<span class="code-method"
+                                    >WriteLine</span
+                                >(<span class="code-variable">counter</span>);
+                                <span class="code-comment">// Augabe: 10</span> <br />
                             </div>
                         </div>
                         <h4 id="schleifen-for">for</h4>
                         <div>
-                            Die for-Schleife ist eine Zählschleife. 
-                            Das bedeutet, dass das Programmcode gezielt eine bestimmte Anzahl oft ausgeführt werden soll.
-                            <br><br>
+                            Die for-Schleife ist eine Zählschleife. Das bedeutet, dass das
+                            Programmcode gezielt eine bestimmte Anzahl oft ausgeführt werden soll.
+                            <br /><br />
                             Syntax:
                             <div class="code">
-                                <span class="code-flowcontrol">for</span> ( <br>
-                                        <span class="tab"></span>&lt;<span class="code-keyword-optional">Inizialisierung (optional)</span>&gt;; <br>
-                                        <span class="tab"></span>&lt;<span class="code-keyword">Bedingung</span>&gt;; <br>
-                                        <span class="tab"></span>&lt;<span class="code-keyword-optional">Änderung eines Wertes (optional)</span>&gt;) <br>
+                                <span class="code-flowcontrol">for</span> ( <br />
+                                <span class="tab"></span>&lt;<span class="code-keyword-optional"
+                                    >Inizialisierung (optional)</span
+                                >&gt;; <br />
+                                <span class="tab"></span>&lt;<span class="code-keyword"
+                                    >Bedingung</span
+                                >&gt;; <br />
+                                <span class="tab"></span>&lt;<span class="code-keyword-optional"
+                                    >Änderung eines Wertes (optional)</span
+                                >&gt;) <br />
                                 <div>{</div>
-                                    <span class="tab code-comment">// do something</span><br>
+                                <span class="tab code-comment">// do something</span><br />
                                 <div>}</div>
                             </div>
                             Diese for-Schleife rennt zum Beispiel meistens 10 Mal durch:
                             <div class="code">
-                                <span class="code-flowcontrol">for</span> (<span class="code-keyword">int</span> <span class="code-variable">i</span> = <span class="code-number">0</span>; <span class="code-variable">i</span> &lt; <span class="code-number">10</span>; <span class="code-variable">i</span>++) <br>
+                                <span class="code-flowcontrol">for</span> (<span
+                                    class="code-keyword"
+                                    >int</span
+                                >
+                                <span class="code-variable">i</span> =
+                                <span class="code-number">0</span>;
+                                <span class="code-variable">i</span> &lt;
+                                <span class="code-number">10</span>;
+                                <span class="code-variable">i</span>++) <br />
                                 <div>{</div>
-                                    <span class="tab code-comment">// do something</span><br>
+                                <span class="tab code-comment">// do something</span><br />
                                 <div>}</div>
                             </div>
-                            Wenn man in der obrigen Schleife allerdings i--; programmieren würde, würde die Schleife endlos durchlauft werden.
+                            Wenn man in der obrigen Schleife allerdings i--; programmieren würde,
+                            würde die Schleife endlos durchlauft werden.
                         </div>
                         <h4 id="schleifen-foreach">foreach</h4>
                         <div>
-                            Mithilfe der foreach-Schleife kann man sehr einfach Arrays oder Listen durchlaufen.
+                            Mithilfe der foreach-Schleife kann man sehr einfach Arrays oder Listen
+                            durchlaufen.
                             <div class="code">
-                                <span class="code-flowcontrol">foreach</span> (<span class="code-keyword">var</span> <span class="code-variable">item</span> <span class="code-flowcontrol">in</span> <span class="code-variable">myArray</span>) <br>
+                                <span class="code-flowcontrol">foreach</span> (<span
+                                    class="code-keyword"
+                                    >var</span
+                                >
+                                <span class="code-variable">item</span>
+                                <span class="code-flowcontrol">in</span>
+                                <span class="code-variable">myArray</span>) <br />
                                 <div>{</div>
-                                    <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-variable">item</span>);
+                                <span class="tab code-class">Console</span>.<span
+                                    class="code-method"
+                                    >WriteLine</span
+                                >(<span class="code-variable">item</span>);
                                 <div>}</div>
                             </div>
                         </div>
                         <h4 id="schleifen-do-while">do-while</h4>
                         <div>
-                            Die do-while-Schleife ist wie die while-Schleife, nur dass die do-while auf jeden Fall einmal durchlaufen wird.
+                            Die do-while-Schleife ist wie die while-Schleife, nur dass die do-while
+                            auf jeden Fall einmal durchlaufen wird.
                             <div class="code">
-                                <span class="code-flowcontrol">do</span> <br>
+                                <span class="code-flowcontrol">do</span> <br />
                                 <div>{</div>
-                                    <span class="tab code-comment">// do something</span> <br>
-                                } <span class="code-flowcontrol">while</span> (</span>&lt;<span class="code-keyword-optional">Bedingung</span>&gt;);
+                                <span class="tab code-comment">// do something</span> <br />
+                                } <span class="code-flowcontrol">while</span> (&lt;<span
+                                    class="code-keyword-optional"
+                                    >Bedingung</span
+                                >&gt;);
                             </div>
                         </div>
                     </div>
                     <h3 id="return">return</h3>
                     <div>
-                        return wird verwendet, um von Methoden Werte zurückzugeben. 
-                        Zum Beispiel gibt diese Methode GetName() in der Klasse Person den Namen zurück:
+                        return wird verwendet, um von Methoden Werte zurückzugeben. Zum Beispiel
+                        gibt diese Methode GetName() in der Klasse Person den Namen zurück:
                         <div class="code">
-                            <span class="code-keyword">class</span> <span class="code-class">Person</span>
+                            <span class="code-keyword">class</span>
+                            <span class="code-class">Person</span>
                             <div>{</div>
-                                <span class="tab code-keyword">private string</span> <span class="code-variable">name</span>; <br>
-                                <br>
-                                <span class="tab code-keyword">public string</span> <span class="code-method">GetName</span>() <br>
-                                <div class="tab">{</div>
-                                    <span class="tab"></span><span class="tab code-flowcontrol">return</span> <span class="code-variable">name</span>;
-                                <div class="tab">}</div>
+                            <span class="tab code-keyword">private string</span>
+                            <span class="code-variable">name</span>; <br />
+                            <br />
+                            <span class="tab code-keyword">public string</span>
+                            <span class="code-method">GetName</span>() <br />
+                            <div class="tab">{</div>
+                            <span class="tab"></span
+                            ><span class="tab code-flowcontrol">return</span>
+                            <span class="code-variable">name</span>;
+                            <div class="tab">}</div>
                             <div>}</div>
                         </div>
                         Dieser Name kann dann zum Beispiel in eine Variable gespeichert werden:
                         <div class="code">
-                            <span class="code-class">Person</span> <span class="code-variable">myPerson</span> = <span class="code-keyword">new</span> <span class="code-class">Person</span>(); <br>
-                            <span class="code-keyword">string</span> <span class="code-variable">name</span> = <span class="code-variable">myPerson</span>.<span class="code-method">GetName</span>(); <br>
+                            <span class="code-class">Person</span>
+                            <span class="code-variable">myPerson</span> =
+                            <span class="code-keyword">new</span>
+                            <span class="code-class">Person</span>(); <br />
+                            <span class="code-keyword">string</span>
+                            <span class="code-variable">name</span> =
+                            <span class="code-variable">myPerson</span>.<span class="code-method"
+                                >GetName</span
+                            >(); <br />
                         </div>
-                        Wenn eine Methode keinen Wert zurückliefert (void), kann man den Programmcode trotzdem zwischenzeitig mit return unterbrechen:
+                        Wenn eine Methode keinen Wert zurückliefert (void), kann man den
+                        Programmcode trotzdem zwischenzeitig mit return unterbrechen:
                         <div class="code">
-                            <span class="code-keyword">public void</span> <span class="code-method">DoSomething</span>() <br>
+                            <span class="code-keyword">public void</span>
+                            <span class="code-method">DoSomething</span>() <br />
                             <div>{</div>
-                                <span class="tab code-comment">// Code, der ausgeführt wird</span> <br>
-                                <span class="tab code-flowcontrol">return</span>; <br>
-                                <span class="tab code-comment">// Code, der nicht mehr ausgeführt wird</span> <br>
+                            <span class="tab code-comment">// Code, der ausgeführt wird</span>
+                            <br />
+                            <span class="tab code-flowcontrol">return</span>; <br />
+                            <span class="tab code-comment"
+                                >// Code, der nicht mehr ausgeführt wird</span
+                            >
+                            <br />
                             <div>}</div>
                         </div>
                         Das ist zum Beispiel bei Rekursion relativ hilfreich:
                         <div class="code">
-                            <span class="code-keyword">public void</span> <span class="code-method">CountUp</span>(<span class="code-keyword">int</span> <span class="code-variable">counter</span>) <br>
+                            <span class="code-keyword">public void</span>
+                            <span class="code-method">CountUp</span>(<span class="code-keyword"
+                                >int</span
+                            >
+                            <span class="code-variable">counter</span>) <br />
                             <div>{</div>
-                                <span class="tab code-flowcontrol">if</span> (<span class="code-variable">counter</span> &gt;= 10) <br>
-                                <span class="tab"></span><span class="tab code-flowcontrol">return</span>; <br>
-                                <span class="tab code-method">CountUp</span>(<span class="code-variable">counter</span>++);
+                            <span class="tab code-flowcontrol">if</span> (<span
+                                class="code-variable"
+                                >counter</span
+                            >
+                            &gt;= 10) <br />
+                            <span class="tab"></span
+                            ><span class="tab code-flowcontrol">return</span>; <br />
+                            <span class="tab code-method">CountUp</span>(<span class="code-variable"
+                                >counter</span
+                            >++);
                             <div>}</div>
                         </div>
-                        Außerdem kann man return bei public Properties verwenden: Mehr dazu OOP -> Klassen -> public Properties.
+                        Außerdem kann man return bei public Properties verwenden: Mehr dazu OOP ->
+                        Klassen -> public Properties.
                     </div>
                     <h3 id="continue_und_break">continue und break</h3>
                     <div>
-                        Mit den Schlüsselwörtern continue und break kann man während der Durchführung des Programmcodes in einer Schleife aus der innersten Schleife herausspringen. 
-                        Während continue am Beginn der Schleife wieder anfängt, springt break zur ersten Zeile nach der Schleife.
+                        Mit den Schlüsselwörtern continue und break kann man während der
+                        Durchführung des Programmcodes in einer Schleife aus der innersten Schleife
+                        herausspringen. Während continue am Beginn der Schleife wieder anfängt,
+                        springt break zur ersten Zeile nach der Schleife.
                         <div class="code">
-                            <span class="code-flowcontrol">for</span> (<span class="code-keyword">int</span> <span class="code-variable">i</span> = <span class="code-number">0</span>; <span class="code-variable">i</span> &lt; <span class="code-number">5</span>; <span class="code-variable">i</span>++) <br>
+                            <span class="code-flowcontrol">for</span> (<span class="code-keyword"
+                                >int</span
+                            >
+                            <span class="code-variable">i</span> =
+                            <span class="code-number">0</span>;
+                            <span class="code-variable">i</span> &lt;
+                            <span class="code-number">5</span>;
+                            <span class="code-variable">i</span>++) <br />
                             <div>{</div>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Juhu!"</span>); <span class="code-comment">// Juhu! wird 5x ausgegeben</span> <br>
-                                <span class="tab code-flowcontrol">continue</span>; <span class="code-comment">// Schleife beginnt mit erhöhtem i von vorne</span> <br>
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Juhu!"</span>);
+                            <span class="code-comment">// Juhu! wird 5x ausgegeben</span> <br />
+                            <span class="tab code-flowcontrol">continue</span>;
+                            <span class="code-comment"
+                                >// Schleife beginnt mit erhöhtem i von vorne</span
+                            >
+                            <br />
                             <div>}</div>
                         </div>
                         <div class="code">
-                            <span class="code-flowcontrol">for</span> (<span class="code-keyword">int</span> <span class="code-variable">i</span> = <span class="code-number">0</span>; <span class="code-variable">i</span> &lt; <span class="code-number">10</span>; <span class="code-variable">i</span>++) <br>
+                            <span class="code-flowcontrol">for</span> (<span class="code-keyword"
+                                >int</span
+                            >
+                            <span class="code-variable">i</span> =
+                            <span class="code-number">0</span>;
+                            <span class="code-variable">i</span> &lt;
+                            <span class="code-number">10</span>;
+                            <span class="code-variable">i</span>++) <br />
                             <div>{</div>
-                                <span class="tab code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Juhu!"</span>); <span class="code-comment">// Juhu! wird 1x ausgegeben</span> <br>
-                                <span class="tab code-flowcontrol">break</span>; <span class="code-comment">// beendet Schleife</span> <br>
+                            <span class="tab code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Juhu!"</span>);
+                            <span class="code-comment">// Juhu! wird 1x ausgegeben</span> <br />
+                            <span class="tab code-flowcontrol">break</span>;
+                            <span class="code-comment">// beendet Schleife</span> <br />
                             <div>}</div>
                         </div>
                     </div>
                     <h3 id="goto">goto</h3>
                     <div>
-                        Mit goto kann man im Programmcode herumspringen.
-                        Zum Beispiel kann man einen Sprungpunkt am Beginn des Programms setzen, welchen man am Ende des Programms aufruft.
-                        Dies hätte dann die gleiche Wirkung wie eine while(true)-Schleife.
+                        Mit goto kann man im Programmcode herumspringen. Zum Beispiel kann man einen
+                        Sprungpunkt am Beginn des Programms setzen, welchen man am Ende des
+                        Programms aufruft. Dies hätte dann die gleiche Wirkung wie eine
+                        while(true)-Schleife.
                         <div class="code">
-                            Sprungpunkt:; <br>
-                            <span class="code-class">Console</span>.<span class="code-method">WriteLine</span>(<span class="code-string">"Hallo!"</span>); <br>
-                            <br>
+                            Sprungpunkt:; <br />
+                            <span class="code-class">Console</span>.<span class="code-method"
+                                >WriteLine</span
+                            >(<span class="code-string">"Hallo!"</span>); <br />
+                            <br />
                             <span class="code-flowcontrol">goto</span> Sprungpunkt;
                         </div>
-                        Grundsätzlich wird goto nicht sehr häufig verwendet, weil es ziemlich unübersichtlich ist, trotzdem hat es manche Einsatzmöglichkeiten, wo es gerne verwendet wird:
+                        Grundsätzlich wird goto nicht sehr häufig verwendet, weil es ziemlich
+                        unübersichtlich ist, trotzdem hat es manche Einsatzmöglichkeiten, wo es
+                        gerne verwendet wird:
                         <div class="code">
-                            <span class="code-flowcontrol">while</span>(<span class="code-keyword">true</span>) <br>
-                                <span class="tab code-flowcontrol">for</span> (<span class="code-keyword">int</span> <span class="code-variable">i</span> = <span class="code-number">0</span>; <span class="code-variable">i</span> &lt; <span class="code-number">10</span>; <span class="code-variable">i</span>++) <br>
-                                <div class="tab">{</div>
-                                    <span class="tab"></span><span class="tab code-comment">// some code</span> <br>
-                                    <span class="tab"></span><span class="tab code-flowcontrol">goto</span> Sprungpunkt; <br>
-                                    <span class="tab"></span><span class="tab code-comment">// some other code</span> <br>
-                                <div class="tab">}</div>
+                            <span class="code-flowcontrol">while</span>(<span class="code-keyword"
+                                >true</span
+                            >) <br />
+                            <span class="tab code-flowcontrol">for</span> (<span
+                                class="code-keyword"
+                                >int</span
+                            >
+                            <span class="code-variable">i</span> =
+                            <span class="code-number">0</span>;
+                            <span class="code-variable">i</span> &lt;
+                            <span class="code-number">10</span>;
+                            <span class="code-variable">i</span>++) <br />
+                            <div class="tab">{</div>
+                            <span class="tab"></span
+                            ><span class="tab code-comment">// some code</span> <br />
+                            <span class="tab"></span
+                            ><span class="tab code-flowcontrol">goto</span> Sprungpunkt; <br />
+                            <span class="tab"></span
+                            ><span class="tab code-comment">// some other code</span> <br />
+                            <div class="tab">}</div>
                             Sprungpunkt:;
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
         </div>
 
         <div id="footer"></div>
-        
-        <script
-                src="https://code.jquery.com/jquery-3.6.0.min.js"
-                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-                crossorigin="anonymous"
-            ></script>
-            <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
-            <script defer src="/js/Lightbox.js"></script>
-            <script defer src="/js/FontAwesome.js"></script>
 
-            <script defer type="text/javascript" src="/js/App.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
+        <script defer src="/js/Lightbox.js"></script>
+        <script defer src="/js/FontAwesome.js"></script>
+        <script src="/tools/highlight/highlight.min.js"></script>
+
+        <script defer type="text/javascript" src="/js/App.js"></script>
     </body>
 </html>

@@ -10,6 +10,7 @@
         />
         <link rel="stylesheet" href="/css/lightbox.min.css" />
         <link href="/css/fa_all.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/tools/highlight/styles/atom-one-dark.min.css" />
 
         <link rel="stylesheet" href="/css/main.min.css" />
         <link rel="stylesheet" href="/css/programmiersprachen.min.css" />
@@ -44,112 +45,52 @@
                         <div>
                             Um die Zahl &pi; (Pi) auf 16 Nachkommastellen genau zu bekommen (ohne
                             auswendig merken), kann man Math.PI verwenden.
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.PI;
-                                <span class="code-comment">// 3.1415926535897931</span>
-                            </div>
+                            <div class="code">double number = Math.PI; // 3.1415926535897931</div>
                         </div>
                         <h4 id="Math_/_Mathf-E">E</h4>
                         <div>
                             Um die Zahl &#8455; (Euler'sche Zahl) auf 16 Nachkommastellen genau zu
                             bekommen (ohne auswendig merken), kann man Math.E verwenden.
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.E;
-                                <span class="code-comment">// 2.7182818284590451</span>
-                            </div>
+                            <div class="code">double number = Math.E; // 2.7182818284590451</div>
                         </div>
                         <h4 id="Math_/_Mathf-Min">Min</h4>
                         <div>
                             Will man die kleinere Zahl von zwei Zahlen bekommen:
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.<span class="code-method"
-                                    >Min</span
-                                >(<span class="code-number">5</span>,
-                                <span class="code-number">10</span>);
-                            </div>
+                            <div class="code">double number = Math.Min(5, 10);</div>
                         </div>
                         <h4 id="Math_/_Mathf-Max">Max</h4>
                         <div>
                             Will man die größere Zahl von zwei Zahlen bekommen:
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.<span class="code-method"
-                                    >Max</span
-                                >(<span class="code-number">5</span>,
-                                <span class="code-number">10</span>);
-                            </div>
+                            <div class="code">double number = Math.Max(5, 10);</div>
                         </div>
                         <h4 id="Math_/_Mathf-Pow">Pow</h4>
                         <div>
                             Um Zahlen potenzieren zu können, verwendet man in C# die Pow-Methode.
                             <br />
                             Wenn man zum Beispiel 2<sup>32</sup> ausrechnen möchte:
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.<span class="code-method"
-                                    >Pow</span
-                                >(<span class="code-number">2</span>,
-                                <span class="code-number">32</span>);
-                            </div>
+                            <div class="code">double number = Math.Pow(2, 32);</div>
                         </div>
                         <h4 id="Math_/_Mathf-Sqrt">Sqrt</h4>
                         <div>
                             Um Zahlen radizieren zu können, verwendet man in C# die Sqrt-Methode.
                             <br />
                             Wenn man zum Beispiel die Quadratwurzel aus 2 ausrechnen möchte:
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.<span class="code-method"
-                                    >Sqrt</span
-                                >(<span class="code-number">2</span>);
-                            </div>
+                            <div class="code">double number = Math.Sqrt(2);</div>
                             Damit man auch andere Wurzeln ziehen kann, muss man die Pow-Methode
                             verwenden. <br />
                             Zum Beispiel kann man so die Kubikwurzel aus 2 ziehen:
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.<span class="code-method"
-                                    >Pow</span
-                                >(<span class="code-number">2</span>,
-                                <span class="code-number">1</span>/<span class="code-number">3</span
-                                >);
-                            </div>
+                            <div class="code">double number = Math.Pow(2, 1/3);</div>
                         </div>
                         <h4 id="Math_/_Mathf-Round">Round</h4>
                         <div>
                             Möchte man Zahlen runden, verwendet man die Round-Methode. Will man zum
                             Beispiel &pi; auf 10 Nachkommastellen runden:
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.<span class="code-method"
-                                    >Round</span
-                                >(<span class="code-class">Math</span>.PI,
-                                <span class="code-number">10</span>);
-                            </div>
+                            <div class="code">double number = Math.Round(Math.PI, 10);</div>
                         </div>
                         <h4 id="Math_/_Mathf-Abs">Abs</h4>
                         <div>
                             Um den Betrag einer Zahl zu bekommen:
-                            <div class="code">
-                                <span class="code-keyword">double</span>
-                                <span class="code-variable">number</span> =
-                                <span class="code-class">Math</span>.<span class="code-method"
-                                    >Abs</span
-                                >(<span class="code-class">Math</span>.<span class="code-method"
-                                    >Sqrt</span
-                                >(<span class="code-number">4</span>));
-                            </div>
+                            <div class="code">double number = Math.Abs(Math.Sqrt(4));</div>
                         </div>
                     </div>
                     <h3 id="String">String</h3>
@@ -169,6 +110,7 @@
         <script defer type="text/javascript" src="/js/VanillaTilt.js"></script>
         <script defer src="/js/Lightbox.js"></script>
         <script defer src="/js/FontAwesome.js"></script>
+        <script src="/tools/highlight/highlight.min.js"></script>
 
         <script defer type="text/javascript" src="/js/App.js"></script>
     </body>
