@@ -3,6 +3,7 @@ function OnLoadAll() {
     LoadFooter();
     VanillaTiltEffect();
     SetCardColors();
+    LoadHighlightCode();
     AddCopyButtons();
     RandomizeButtonHover();
     LoadButtonNextPrev();
@@ -24,6 +25,7 @@ function OnLoadIndex() {
 function OnLoadLeaf() {
     LoadHeader();
     LoadFooter();
+    LoadHighlightCode();
     AddCopyButtons();
     RandomizeButtonHover();
     LoadButtonNextPrev();
@@ -154,6 +156,14 @@ function SetCardColors() {
         const card_before = cards_before[i];
         card_before.style.background = colors[Math.floor(Math.random() * colors.length)];
     }
+}
+
+function LoadHighlightCode() {
+    document.querySelectorAll(".code").forEach((el) => {
+        try {
+            hljs.highlightElement(el);
+        } catch {}
+    });
 }
 
 function AddCopyButtons() {

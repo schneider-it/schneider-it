@@ -206,8 +206,6 @@ select {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
   text-decoration: none;
   outline-style: none;
   border-style: none;
@@ -234,13 +232,6 @@ body {
   background-color: var(--background-color);
   overflow-x: hidden;
   scroll-behavior: smooth;
-}
-
-div {
-  text-align: justify;
-}
-div[no-justify] {
-  text-align: left;
 }
 
 .container {

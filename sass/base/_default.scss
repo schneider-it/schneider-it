@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    transform-style: preserve-3d;
 
     text-decoration: none;
     outline-style: none;
@@ -31,12 +30,4 @@ body {
     scroll-behavior: smooth;
 
     // visibility: hidden;
-}
-
-div {
-    text-align: justify;
-
-    &[no-justify] {
-        text-align: left;
-    }
 }
