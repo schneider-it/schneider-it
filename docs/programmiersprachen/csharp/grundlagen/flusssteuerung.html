@@ -95,171 +95,87 @@
                             </tr>
                         </table>
                         Hier ein Beispiel:
-                        <div class="code language-csharp">
-                            <span class="code-keyword">double</span>
-                            <span class="code-variable">tempInCelsius</span> =
-                            <span class="code-keyword">new</span>
-                            <span class="code-class">Random</span>().<span class="code-method"
-                                >NextDouble</span
-                            >() * <span class="code-number">50</span> -
-                            <span class="code-number">15</span>; <br />
-                            <br />
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span>) <br />
-                            <div>{</div>
-                            <span class="tab code-variable">tempInCelsius</span> +=
-                            <span class="code-number">10.0</span>; <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Heizkörper einschalten!"</span>); <br />
-                            <div>}</div>
-                        </div>
+                        <pre class="code language-csharp">
+double tempInCelsius = new Random().NextDouble() * 50 - 15; 
+
+if (tempInCelsius < 20.0) { 
+    Console.WriteLine("Heizkörper einschalten?"); 
+
+    if(Console.ReadLine() == "y") {
+        tempInCelsius += 3.0;
+    }
+}</pre
+                        >
                         Wenn nur ein einziger Befehl in der if-Bedingung gibt, kann man die
                         geschwungenen Klammern weglassen.
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span>) <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Cold"</span>); <br />
-                        </div>
+                        <pre class="code language-csharp">
+if (tempInCelsius < 20.0) 
+    Console.WriteLine("Cold");</pre
+                        >
                         Diese Bedingung ist erfüllt, wenn eine der beiden Bedingungen erfüllt ist:
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span> ||
-                            <span class="code-variable">tempInCelsius</span> &gt;=
-                            <span class="code-number">40.0</span>) <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Unangenehm"</span>); <br />
-                        </div>
+                        <pre class="code language-csharp">
+if (tempInCelsius < 20.0 || tempInCelsius >= 40.0)
+    Console.WriteLine("Unangenehm");</pre
+                        >
                         Und diese Bedingung ist nur erfüllt, wenn beide Bedingungen erfüllt sind:
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span> &&
-                            <span class="code-variable">tempInCelsius</span> &gt;=
-                            <span class="code-number">40.0</span>) <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Unmöglich"</span>); <br />
-                        </div>
-                        Dieser Programmcode im if wird nur ausgeführt, wenn maximale eine der beiden
+                        <pre class="code language-csharp">
+if (tempInCelsius < 20.0 && tempInCelsius >= 40.0)
+    Console.WriteLine("Unmöglich");</pre
+                        >
+                        Dieser Programmcode im if wird nur ausgeführt, wenn maximal eine der beiden
                         Bedingungen zutrifft:
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">if</span> (!(<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span> ||
-                            <span class="code-variable">tempInCelsius</span> &gt;=
-                            <span class="code-number">40.0</span>)) <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Ist es heiß oder kalt?"</span>); <br />
-                        </div>
+                        <pre class="code language-csharp">
+if (!(tempInCelsius < 20.0 || tempInCelsius >= 40.0))
+    Console.WriteLine("Ist es heiß oder kalt?");</pre
+                        >
                         Der Programmcode wird nur ausgeführt, wenn keine der beiden Bedingungen
                         zutrifft:
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">if</span> (!(<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span> &&
-                            <span class="code-variable">tempInCelsius</span> &gt;=
-                            <span class="code-number">40.0</span>)) <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Angenehm"</span>); <br />
-                        </div>
+                        <pre class="code language-csharp">
+if (!(tempInCelsius < 20.0 && tempInCelsius >= 40.0))
+    Console.WriteLine("Angenehm");</pre
+                        >
                         Für kurze if-Statements gibt es auch eine Kurzschreibweise. Die Syntax sieht
                         dann wie folgt aus:
                         <div class="code language-csharp">
-                            <span class="code-method">Bedingung</span> ?
-                            <span class="code-variable">Code, wenn true</span> :
-                            <span class="code-string">Code, wenn false</span>;
+                            Bedingung ? Code, wenn true : Code, wenn false;
                         </div>
                         Hier ein Beispiel:
-                        <div class="code language-csharp">
-                            (<span class="code-variable">tempInCelsius</span> &lt;
-                            <span class="code-number">10.0</span>) ?
-                            <span class="code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Kalt"</span>) :
-                            <span class="code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Warm"</span>);
-                        </div>
+                        <pre class="code language-csharp">
+(tempInCelsius < 10.0) ? 
+    Console.WriteLine("Kalt") :
+    Console.WriteLine("Warm");</pre
+                        >
                     </div>
                     <h3 id="else">else</h3>
                     <div>
                         Else ist eine Bedingung, die eintritt, wenn das vorherige if nicht eintritt.
                         Allerdings muss man keine eigene Bedingung programmieren. <br />
                         Ein Else kann deshalb niemals ohne if existieren.
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span>) <br />
-                            <div>{</div>
-                            <span class="tab code-variable">tempInCelsius</span> +=
-                            <span class="code-number">10.0</span>; <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Heizkörper einschalten!"</span>); <br />
-                            <div>}</div>
-                            <span class="code-flowcontrol">else</span> <br />
-                            <div>{</div>
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Nichts tun!"</span>); <br />
-                            <div>}</div>
-                        </div>
+                        <pre class="code language-csharp">
+if (tempInCelsius < 20.0) { 
+    tempInCelsius += 10.0;
+    Console.WriteLine("Heizkörper einschalten!"); 
+} else {
+    Console.WriteLine("Nichts tun!"); 
+}</pre
+                        >
                         Genau wie beim if kann man auch beim else die geschwungenen Klammern
                         weglassen, wenn nur ein Befehl darin steht.
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span>) <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Kalt"</span>); <br />
-                            <span class="code-flowcontrol">else</span> <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Angenehm"</span>); <br />
-                        </div>
+                        <pre class="code language-csharp">
+if (tempInCelsius < 20.0) 
+    Console.WriteLine("Kalt"); 
+else
+    Console.WriteLine("Angenehm");</pre
+                        >
                         Nach einem else kann sogar noch ein if kommen:
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &lt; <span class="code-number">20.0</span>) <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Kalt"</span>); <br />
-                            <span class="code-flowcontrol">else</span>
-                            <span class="code-flowcontrol">if</span> (<span class="code-variable"
-                                >tempInCelsius</span
-                            >
-                            &gt;= <span class="code-number">40.0</span>) <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Heiß"</span>); <br />
-                            <span class="code-flowcontrol">else</span> <br />
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Angenehm"</span>); <br />
-                        </div>
-                        Hier sei geschrieben, dass das erste else nicht unbedingt notwendig ist,
-                        weil das Programm andernfalls auch funktionieren würde, allerdings ist das
-                        Programm mit dem else schneller.
+                        <pre class="code language-csharp">
+if (tempInCelsius < 20.0) 
+    Console.WriteLine("Kalt"); 
+else if (tempInCelsius >= 40.0) 
+    Console.WriteLine("Heiß"); 
+else
+    Console.WriteLine("Angenehm");</pre
+                        >
                     </div>
                     <h3 id="switch">switch</h3>
                     <div>
@@ -274,53 +190,32 @@
                         Bei jedem case und beim default muss am Ende ein Flowcontrol stehen, also
                         break, return oder going to, es sei denn, bei dem case steht gar kein Code
                         (Beispiel Case 5).
-                        <div class="code language-csharp">
-                            <span class="code-keyword">int</span>
-                            <span class="code-variable">number</span> =
-                            <span class="code-keyword">new</span>
-                            <span class="code-class">Random</span>().<span class="code-method"
-                                >Next</span
-                            >(<span class="code-number">1</span>,
-                            <span class="code-number">10</span>); <br />
-                            <br />
-                            <span class="code-flowcontrol">switch</span> (<span
-                                class="code-variable"
-                                >number</span
-                            >)
-                            <div>{</div>
-                            <span class="tab code-flowcontrol">case</span>
-                            <span class="code-number">3</span>:
-                            <span class="code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"3000 €"</span>);
-                            <span class="code-flowcontrol">break</span>; <br />
-                            <span class="tab code-flowcontrol">case</span>
-                            <span class="code-number">5</span>: <br />
-                            <span class="tab code-flowcontrol">case</span>
-                            <span class="code-number">6</span>:
-                            <span class="code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"5500 €"</span>);
-                            <span class="code-flowcontrol">break</span>; <br />
-                            <span class="tab code-flowcontrol">case</span>
-                            <span class="code-number">9</span>:
-                            <span class="code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"9000 €"</span>);
-                            <span class="code-flowcontrol">break</span>; <br />
-                            <span class="tab code-flowcontrol">default</span>:
-                            <span class="code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"leider nichts"</span>);
-                            <span class="code-flowcontrol">break</span>; <br />
-                            <div>}</div>
-                        </div>
-                        In diesem Beispiel gibt es also folgende 5 Scenarien: <br />
-                        1. number == 3: Es wird "3000 €" ausgegeben. <br />
-                        2. number == 5: Es wird "5500 €" ausgegeben. <br />
-                        3. number == 6: Es wird "5500 €" ausgegeben. <br />
-                        4. number == 9: Es wird "9000 €" ausgegeben. <br />
-                        5. number == irgendetwas anderes: Es wird "leider nichts" ausgegeben. <br />
+                        <pre class="code language-csharp">
+int number = new Random().Next(1, 10); 
+
+switch (number) { 
+    case 3:
+        Console.WriteLine("3000 €"); 
+        break; 
+    case 5: 
+    case 6: 
+        Console.WriteLine("5500 €"); 
+        break; 
+    case 9: 
+        Console.WriteLine("9000 €");
+        break; 
+    default: 
+        Console.WriteLine("leider nichts"); 
+        break; 
+}</pre
+                        >
+                        In diesem Beispiel gibt es also vier verschiedene Ausgaben:
+                        <ol>
+                            <li>Es wird "3000 €" ausgegeben; wenn 3</li>
+                            <li>Es wird "5500 €" ausgegeben; wenn 5 oder 6</li>
+                            <li>Es wird "9000 €" ausgegeben; wenn 9</li>
+                            <li>Es wird "leider nichts" ausgegeben; bei allen anderen</li>
+                        </ol>
                     </div>
                     <h3 id="schleifen">Schleifen</h3>
                     <div>
@@ -329,22 +224,27 @@
                         <div>
                             Die while-Schleife wiederholt den Programmcode, der innerhalb steht,
                             solange die Bedingung zutrifft.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">int</span>
-                                <span class="code-variable">counter</span> =
-                                <span class="code-number">0</span>; <br />
-                                <br />
-                                <span class="code-flowcontrol">while</span> (<span
-                                    class="code-variable"
-                                    >counter</span
-                                >
-                                &lt; <span class="code-number">10</span>) <br />
-                                <span class="tab code-variable">counter</span>++; <br />
-                                <span class="code-class">Console</span>.<span class="code-method"
-                                    >WriteLine</span
-                                >(<span class="code-variable">counter</span>);
-                                <span class="code-comment">// Augabe: 10</span> <br />
-                            </div>
+                            <pre class="code language-csharp">
+int counter = 0; 
+
+while (counter < 10) 
+    counter++;
+
+Console.WriteLine(counter); 
+
+// Augabe: 10</pre
+                            >
+                            Wenn ein Durchlauf fertig ist, springt das Programm nochmals zur
+                            Bedingung in der runden Klammer, wenn diese true ist, wird der Code
+                            nochmals ausgeführt.
+                            <br />
+                            <br />
+                            So kann man eine Endlosschleife machen:
+                            <pre class="code language-csharp">
+while (true) {
+    // some code
+}</pre
+                            >
                         </div>
                         <h4 id="schleifen-for">for</h4>
                         <div>
@@ -352,141 +252,88 @@
                             Programmcode gezielt eine bestimmte Anzahl oft ausgeführt werden soll.
                             <br /><br />
                             Syntax:
-                            <div class="code language-csharp">
-                                <span class="code-flowcontrol">for</span> ( <br />
-                                <span class="tab"></span>&lt;<span class="code-keyword-optional"
-                                    >Inizialisierung (optional)</span
-                                >&gt;; <br />
-                                <span class="tab"></span>&lt;<span class="code-keyword"
-                                    >Bedingung</span
-                                >&gt;; <br />
-                                <span class="tab"></span>&lt;<span class="code-keyword-optional"
-                                    >Änderung eines Wertes (optional)</span
-                                >&gt;) <br />
-                                <div>{</div>
-                                <span class="tab code-comment">// do something</span><br />
-                                <div>}</div>
-                            </div>
+                            <pre class="code language-csharp">
+for (&lt;Inizialisierung (optional)&gt;; &lt;Bedingung&gt;; &lt;Änderung eines Wertes (optional)&gt;)
+{
+    // do something
+}
+                            </pre>
                             Diese for-Schleife rennt zum Beispiel meistens 10 Mal durch:
-                            <div class="code language-csharp">
-                                <span class="code-flowcontrol">for</span> (<span
-                                    class="code-keyword"
-                                    >int</span
-                                >
-                                <span class="code-variable">i</span> =
-                                <span class="code-number">0</span>;
-                                <span class="code-variable">i</span> &lt;
-                                <span class="code-number">10</span>;
-                                <span class="code-variable">i</span>++) <br />
-                                <div>{</div>
-                                <span class="tab code-comment">// do something</span><br />
-                                <div>}</div>
-                            </div>
+                            <pre class="code language-csharp">
+for (int i = 0; i < 10; i++) 
+{ 
+    // do something 
+}</pre
+                            >
                             Wenn man in der obrigen Schleife allerdings i--; programmieren würde,
-                            würde die Schleife endlos durchlauft werden.
+                            würde die Schleife endlos durchlauft werden:
+                            <pre class="code language-csharp">
+for (int i = 0; i < 10; i++) 
+{ 
+    i--;
+}</pre
+                            >
                         </div>
                         <h4 id="schleifen-foreach">foreach</h4>
                         <div>
                             Mithilfe der foreach-Schleife kann man sehr einfach Arrays oder Listen
                             durchlaufen.
-                            <div class="code language-csharp">
-                                <span class="code-flowcontrol">foreach</span> (<span
-                                    class="code-keyword"
-                                    >var</span
-                                >
-                                <span class="code-variable">item</span>
-                                <span class="code-flowcontrol">in</span>
-                                <span class="code-variable">myArray</span>) <br />
-                                <div>{</div>
-                                <span class="tab code-class">Console</span>.<span
-                                    class="code-method"
-                                    >WriteLine</span
-                                >(<span class="code-variable">item</span>);
-                                <div>}</div>
-                            </div>
+                            <pre class="code language-csharp">
+foreach (var item in myArray) { 
+    Console.WriteLine(item); 
+}</pre
+                            >
                         </div>
                         <h4 id="schleifen-do-while">do-while</h4>
                         <div>
                             Die do-while-Schleife ist wie die while-Schleife, nur dass die do-while
                             auf jeden Fall einmal durchlaufen wird.
-                            <div class="code language-csharp">
-                                <span class="code-flowcontrol">do</span> <br />
-                                <div>{</div>
-                                <span class="tab code-comment">// do something</span> <br />
-                                } <span class="code-flowcontrol">while</span> (&lt;<span
-                                    class="code-keyword-optional"
-                                    >Bedingung</span
-                                >&gt;);
-                            </div>
+                            <pre class="code language-csharp">
+do { 
+    // do something 
+} while (&lt;Bedingung&gt;);</pre
+                            >
                         </div>
                     </div>
                     <h3 id="return">return</h3>
                     <div>
                         return wird verwendet, um von Methoden Werte zurückzugeben. Zum Beispiel
                         gibt diese Methode GetName() in der Klasse Person den Namen zurück:
-                        <div class="code language-csharp">
-                            <span class="code-keyword">class</span>
-                            <span class="code-class">Person</span>
-                            <div>{</div>
-                            <span class="tab code-keyword">private string</span>
-                            <span class="code-variable">name</span>; <br />
-                            <br />
-                            <span class="tab code-keyword">public string</span>
-                            <span class="code-method">GetName</span>() <br />
-                            <div class="tab">{</div>
-                            <span class="tab"></span
-                            ><span class="tab code-flowcontrol">return</span>
-                            <span class="code-variable">name</span>;
-                            <div class="tab">}</div>
-                            <div>}</div>
-                        </div>
+                        <pre class="code language-csharp">
+class Person { 
+    private string name; 
+    
+    public string GetName() { 
+        return name; 
+    } 
+}</pre
+                        >
                         Dieser Name kann dann zum Beispiel in eine Variable gespeichert werden:
-                        <div class="code language-csharp">
-                            <span class="code-class">Person</span>
-                            <span class="code-variable">myPerson</span> =
-                            <span class="code-keyword">new</span>
-                            <span class="code-class">Person</span>(); <br />
-                            <span class="code-keyword">string</span>
-                            <span class="code-variable">name</span> =
-                            <span class="code-variable">myPerson</span>.<span class="code-method"
-                                >GetName</span
-                            >(); <br />
-                        </div>
+                        <pre class="code language-csharp">
+Person myPerson = new Person(); 
+string name = myPerson.GetName();</pre
+                        >
                         Wenn eine Methode keinen Wert zurückliefert (void), kann man den
                         Programmcode trotzdem zwischenzeitig mit return unterbrechen:
-                        <div class="code language-csharp">
-                            <span class="code-keyword">public void</span>
-                            <span class="code-method">DoSomething</span>() <br />
-                            <div>{</div>
-                            <span class="tab code-comment">// Code, der ausgeführt wird</span>
-                            <br />
-                            <span class="tab code-flowcontrol">return</span>; <br />
-                            <span class="tab code-comment"
-                                >// Code, der nicht mehr ausgeführt wird</span
-                            >
-                            <br />
-                            <div>}</div>
-                        </div>
+                        <pre class="code language-csharp">
+public void DoSomething() { 
+    // Code, der ausgeführt wird 
+    return; 
+    // Code, der nicht mehr ausgeführt wird 
+}</pre
+                        >
                         Das ist zum Beispiel bei Rekursion relativ hilfreich:
-                        <div class="code language-csharp">
-                            <span class="code-keyword">public void</span>
-                            <span class="code-method">CountUp</span>(<span class="code-keyword"
-                                >int</span
-                            >
-                            <span class="code-variable">counter</span>) <br />
-                            <div>{</div>
-                            <span class="tab code-flowcontrol">if</span> (<span
-                                class="code-variable"
-                                >counter</span
-                            >
-                            &gt;= 10) <br />
-                            <span class="tab"></span
-                            ><span class="tab code-flowcontrol">return</span>; <br />
-                            <span class="tab code-method">CountUp</span>(<span class="code-variable"
-                                >counter</span
-                            >++);
-                            <div>}</div>
-                        </div>
+                        <pre class="code language-csharp">
+public void CountUp(int counter) { 
+    if (counter >= 10) return;
+    CountUp(counter++); 
+}</pre
+                        >
+                        Obere Methode ist vergleichbar mit dieser while-Schleife:
+                        <pre class="code language-csharp">
+while (counter < 10)
+    counter++;</pre
+                        >
                         Außerdem kann man return bei public Properties verwenden: Mehr dazu OOP ->
                         Klassen -> public Properties.
                     </div>
@@ -496,45 +343,21 @@
                         Durchführung des Programmcodes in einer Schleife aus der innersten Schleife
                         herausspringen. Während continue am Beginn der Schleife wieder anfängt,
                         springt break zur ersten Zeile nach der Schleife.
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">for</span> (<span class="code-keyword"
-                                >int</span
-                            >
-                            <span class="code-variable">i</span> =
-                            <span class="code-number">0</span>;
-                            <span class="code-variable">i</span> &lt;
-                            <span class="code-number">5</span>;
-                            <span class="code-variable">i</span>++) <br />
-                            <div>{</div>
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Juhu!"</span>);
-                            <span class="code-comment">// Juhu! wird 5x ausgegeben</span> <br />
-                            <span class="tab code-flowcontrol">continue</span>;
-                            <span class="code-comment"
-                                >// Schleife beginnt mit erhöhtem i von vorne</span
-                            >
-                            <br />
-                            <div>}</div>
-                        </div>
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">for</span> (<span class="code-keyword"
-                                >int</span
-                            >
-                            <span class="code-variable">i</span> =
-                            <span class="code-number">0</span>;
-                            <span class="code-variable">i</span> &lt;
-                            <span class="code-number">10</span>;
-                            <span class="code-variable">i</span>++) <br />
-                            <div>{</div>
-                            <span class="tab code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Juhu!"</span>);
-                            <span class="code-comment">// Juhu! wird 1x ausgegeben</span> <br />
-                            <span class="tab code-flowcontrol">break</span>;
-                            <span class="code-comment">// beendet Schleife</span> <br />
-                            <div>}</div>
-                        </div>
+                        <pre class="code language-csharp">
+for (int i = 0; i < 5; i++) { 
+    Console.WriteLine("Juhu!"); 
+    // Juhu! wird 5x ausgegeben 
+    continue; 
+    // Schleife beginnt mit erhöhtem i von vorne 
+}</pre
+                        >
+                        <pre class="code language-csharp">
+for (int i = 0; i < 10; i++) { 
+    Console.WriteLine("Juhu!"); 
+    // Juhu! wird 1x ausgegeben 
+    break; 
+    // beendet Schleife }</pre
+                        >
                     </div>
                     <h3 id="goto">goto</h3>
                     <div>
@@ -542,40 +365,26 @@
                         Sprungpunkt am Beginn des Programms setzen, welchen man am Ende des
                         Programms aufruft. Dies hätte dann die gleiche Wirkung wie eine
                         while(true)-Schleife.
-                        <div class="code language-csharp">
-                            Sprungpunkt:; <br />
-                            <span class="code-class">Console</span>.<span class="code-method"
-                                >WriteLine</span
-                            >(<span class="code-string">"Hallo!"</span>); <br />
-                            <br />
-                            <span class="code-flowcontrol">goto</span> Sprungpunkt;
-                        </div>
+                        <pre class="code language-csharp">
+Sprungpunkt:; 
+Console.WriteLine("Hallo!"); 
+goto Sprungpunkt;</pre
+                        >
                         Grundsätzlich wird goto nicht sehr häufig verwendet, weil es ziemlich
                         unübersichtlich ist, trotzdem hat es manche Einsatzmöglichkeiten, wo es
                         gerne verwendet wird:
-                        <div class="code language-csharp">
-                            <span class="code-flowcontrol">while</span>(<span class="code-keyword"
-                                >true</span
-                            >) <br />
-                            <span class="tab code-flowcontrol">for</span> (<span
-                                class="code-keyword"
-                                >int</span
-                            >
-                            <span class="code-variable">i</span> =
-                            <span class="code-number">0</span>;
-                            <span class="code-variable">i</span> &lt;
-                            <span class="code-number">10</span>;
-                            <span class="code-variable">i</span>++) <br />
-                            <div class="tab">{</div>
-                            <span class="tab"></span
-                            ><span class="tab code-comment">// some code</span> <br />
-                            <span class="tab"></span
-                            ><span class="tab code-flowcontrol">goto</span> Sprungpunkt; <br />
-                            <span class="tab"></span
-                            ><span class="tab code-comment">// some other code</span> <br />
-                            <div class="tab">}</div>
-                            Sprungpunkt:;
-                        </div>
+                        <pre class="code language-csharp">
+while(true) 
+    for (int i = 0; i < 10; i++) 
+    { 
+        // some code goto
+        if (i > 5)
+            Sprungpunkt; 
+        // some other code 
+    } 
+
+Sprungpunkt:;</pre
+                        >
                     </div>
                 </div>
             </div>
