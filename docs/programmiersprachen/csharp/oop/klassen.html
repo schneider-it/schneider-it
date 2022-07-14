@@ -56,23 +56,12 @@
                         </div>
                         <h4 id="Verwendung-Syntax">Syntax</h4>
                         <div>
-                            <div class="code language-csharp">
-                                <span class="code-keyword">class</span> &lt;<span
-                                    class="code-keyword"
-                                    >Classname</span
-                                >&gt;&lt;&lt;<span class="code-keyword-optional">Generic</span
-                                >&gt;&gt; : &lt;<span class="code-keyword-optional">BaseClass</span
-                                >&gt;, &lt;<span class="code-keyword-optional">Interface</span>&gt;
-                                { }
+                            <div class="code color language-csharp">
+                                class &lt;Classname&gt;&lt;&lt;Generic&gt;&gt; : &lt;BaseClass&gt;,
+                                &lt;Interface&gt; { }
                             </div>
                             Beispiel:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <br />
-                                <div>}</div>
-                            </div>
+                            <div class="code color language-csharp">class Person { }</div>
                             Eine Klasse besteht immer aus Daten (Attributen und Eigenschaften) und
                             Verhalten (Methoden). Aus diesem Grund kann man innerhalb einer Klasse
                             dynamische Methoden (auch statische Methoden, wenn man will) und
@@ -82,21 +71,15 @@
                         <div>
                             Wenn man nun eine Instanz dieser Klasse erstellen möchte, muss man das
                             neue Objekt erstellen und instanziieren.
-                            <div class="code language-csharp">
-                                <span class="code-class">Person</span>
-                                <span class="code-variable">myPerson</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">Person</span>();
+                            <div class="code color language-csharp">
+                                Person myPerson = new Person();
                             </div>
                         </div>
                     </div>
                     <h3 id="private_Variablen">private Variablen</h3>
                     <div>
                         In einer Klasse lassen sich Variablen genauso deklarieren wie im Main.
-                        <div class="code language-csharp">
-                            <span class="code-keyword">private string</span>
-                            <span class="code-variable">name</span>;
-                        </div>
+                        <div class="code color language-csharp">private string name;</div>
                         Diese Variable ist nun allerdings nur in der Klasse verfügbar, weil ihre
                         Sichtbarkeit private ist, was bei den Variablen in einer Klasse durchaus
                         Sinn macht. Wenn man public Variablen erstellen will, macht man am besten
@@ -125,23 +108,18 @@
                             es in der Langschreibweise eine andere Variable public macht.
                             <br /><br />
                             Ein Beispiel der Kurzschreibweise sieht so aus:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">public string</span> Name {
-                                <span class="code-keyword">get</span>;
-                                <span class="code-keyword">set</span>; }
+                            <div class="code color language-csharp">
+                                public string Name { get; set; }
                             </div>
                             Ein Beispiel der Langschreibweise sieht so aus:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">string</span> name; <br /><br />
-                                <span class="code-keyword">public string</span> Name
-                                <div>{</div>
-                                <span class="code-keyword tab">get</span> {
-                                <span class="code-keyword">return</span> name; }
-                                <br />
-                                <span class="code-keyword tab">set</span> { name =
-                                <span class="code-keyword">value</span>; }
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+string name; 
+
+public string Name { 
+    get { return name; } 
+    set { name = value; } 
+}</pre
+                            >
                             Wie man gut erkennen kann, wird bei der Langschreibweise die Variable
                             name returned, wenn die Get-Methode aufgerufen wird. Wenn man der
                             Variable name einen Wert zuweisen will, setzt man name auf den
@@ -157,13 +135,7 @@
                             Instanziieren einer Instanz aufgerufen werden. Grundsätzlich existiert
                             in einer Klasse immer mindestens ein Konstruktor, auch wenn man diesen
                             nicht sieht.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">public</span>
-                                <span class="code-class">Person</span>()
-                                <div>{</div>
-                                <br />
-                                <div>}</div>
-                            </div>
+                            <div class="code color language-csharp">public Person() { }</div>
                             Konstruktoren kann man auch selber definieren. In den geschwungenen
                             Klammern kann man auch Programmcode hinzufügen, wie er in den Grundlagen
                             erklärt wird.
@@ -171,20 +143,13 @@
                             Meistens bekommt ein selbst definierter Konstruktor einen oder mehrere
                             Parameter übergeben, damit diese Werte gleich beim Erstellen der Instanz
                             in die Variablen gespeichert werden können.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">public string</span> Name {
-                                <span class="code-keyword">get</span>;
-                                <span class="code-keyword">set</span>; } <br /><br />
-                                <span class="code-keyword">public</span>
-                                <span class="code-class">Person</span>(<span class="code-keyword"
-                                    >string</span
-                                >
-                                <span class="code-variable">name</span>)
-                                <div>{</div>
-                                <span class="tab code-keyword-optional">this</span>.Name =
-                                <span class="code-variable">name</span>;
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+public string Name { get; set; } 
+
+public Person(string name) {
+    this.Name = name; 
+}</pre
+                            >
                             Wie man sehen kann, steht da ein this für dem Name. Dieses muss
                             verwendet werden, wenn name und Name gleich heißen würden, also zum
                             Beispiel beide groß geschrieben werden. In diesem Fall müsste es jetzt
@@ -193,64 +158,32 @@
                             <br /><br />
                             Der Konstruktor kann auch mehrere Parameter übergeben bekommen, diese
                             sind dann mit einem Beistrich zu trennen.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">public string</span> Name {
-                                <span class="code-keyword">get</span>;
-                                <span class="code-keyword">set</span>; }
-                                <br />
-                                <span class="code-keyword">public int</span> Age {
-                                <span class="code-keyword">get</span>;
-                                <span class="code-keyword">set</span>; } <br /><br />
-                                <span class="code-keyword">public</span>
-                                <span class="code-class">Person</span>(<span class="code-keyword"
-                                    >string</span
-                                >
-                                <span class="code-variable">name</span>,
-                                <span class="code-keyword">int</span>
-                                <span class="code-variable">age</span>)
-                                <div>{</div>
-                                <span class="tab code-keyword-optional">this</span>.Name =
-                                <span class="code-variable">name</span>;
-                                <br />
-                                <span class="tab code-keyword-optional">this</span>.Age =
-                                <span class="code-variable">age</span>;
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+public string Name { get; set; } 
+
+public int Age { get; set; } 
+
+public Person(string name, int age) { 
+    this.Name = name; 
+    this.Age = age; 
+}</pre
+                            >
                             In einer Klasse kann es auch mehrere Konstruktoren geben. Diese müssen
                             sich allerdings von den Parametern her voneinander unterscheiden.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">public string</span> Name {
-                                <span class="code-keyword">get</span>;
-                                <span class="code-keyword">set</span>; }
-                                <br />
-                                <span class="code-keyword">public int</span> Age {
-                                <span class="code-keyword">get</span>;
-                                <span class="code-keyword">set</span>; } <br /><br />
-                                <span class="code-keyword">public</span>
-                                <span class="code-class">Person</span>(<span class="code-keyword"
-                                    >string</span
-                                >
-                                <span class="code-variable">name</span>)
-                                <div>{</div>
-                                <span class="tab code-keyword-optional">this</span>.Name =
-                                <span class="code-variable">name</span>;
-                                <div>}</div>
-                                <br />
-                                <span class="code-keyword">public</span>
-                                <span class="code-class">Person</span>(<span class="code-keyword"
-                                    >string</span
-                                >
-                                <span class="code-variable">name</span>,
-                                <span class="code-keyword">int</span>
-                                <span class="code-variable">age</span>)
-                                <div>{</div>
-                                <span class="tab code-keyword-optional">this</span>.Name =
-                                <span class="code-variable">name</span>;
-                                <br />
-                                <span class="tab code-keyword-optional">this</span>.Age =
-                                <span class="code-variable">age</span>;
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+public string Name { get; set; } 
+
+public int Age { get; set; } 
+
+public Person(string name) { 
+    this.Name = name; 
+} 
+
+public Person(string name, int age) { 
+    this.Name = name; 
+    this.Age = age; 
+}</pre
+                            >
                             Wie man an diesem Beispiel gut sehen kann, gibt es Programmzeilen die
                             sich wiederholen. Und doppelten Programmcode wollen wir vermeiden. Aus
                             diesem Grund gibt es die Konstruktor-Verkettung.
@@ -258,24 +191,14 @@
                             Wenn eine Klasse einen Konstruktor mit mindestens einem Parameter
                             besitzt, kann man diese Variable beim instanziieren der Klasse gleich
                             mit-über-geben.
-                            <div class="code language-csharp">
-                                <span class="code-class">Person</span>
-                                <span class="code-variable">myPerson</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">Person</span>(<span class="code-string"
-                                    >"Felix"</span
-                                >);
+                            <div class="code color language-csharp">
+                                Person myPerson = new Person("Felix");
                             </div>
                             Wichtig ist hierbei, dass die Datentypen, die man übergibt, auch mit
                             irgendeiner Parameterliste von einem Konstruktor in der Klasse
                             übereinstimmen.
-                            <div class="code language-csharp">
-                                <span class="code-class">Person</span>
-                                <span class="code-variable">myPerson</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">Person</span>(<span class="code-string"
-                                    >"Felix"</span
-                                >, 16);
+                            <div class="code color language-csharp">
+                                Person myPerson = new Person("Felix", 16);
                             </div>
                         </div>
                         <h4 id="Konstruktoren-Konstruktor-Verkettung">Konstruktor-Verkettung</h4>
@@ -288,236 +211,75 @@
                                 Konstruktor aufgerufen wird, verweist der Konstruktor auf einen
                                 anderen Konstruktor, der dann bestimmte Zuweisungen, die ohne
                                 Konstruktor-Verkettung doppelt vorkommen würden, ausführt.
-                                <div class="code language-csharp">
-                                    <span class="code-keyword">public string</span> Name {
-                                    <span class="code-keyword">get</span>;
-                                    <span class="code-keyword">set</span>; }
-                                    <br />
-                                    <span class="code-keyword">public int</span> Age {
-                                    <span class="code-keyword">get</span>;
-                                    <span class="code-keyword">set</span>; } <br /><br />
-                                    <span class="code-keyword">public</span>
-                                    <span class="code-class">Person</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>)
-                                    <div>{</div>
-                                    <span class="tab code-keyword-optional">this</span>.Name =
-                                    <span class="code-variable">name</span>;
-                                    <div>}</div>
-                                    <br />
-                                    <span class="code-keyword">public</span>
-                                    <span class="code-class">Person</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>,
-                                    <span class="code-keyword">int</span>
-                                    <span class="code-variable">age</span>) :
-                                    <span class="code-keyword">this</span>(<span
-                                        class="code-variable"
-                                        >name</span
-                                    >)
-                                    <div>{</div>
-                                    <span class="tab code-keyword-optional">this</span>.Age =
-                                    <span class="code-variable">age</span>;
-                                    <div>}</div>
-                                </div>
+                                <pre class="code color language-csharp">
+public string Name { get; set; } 
+
+public int Age { get; set; }
+
+public Person(string name) { 
+    this.Name = name; 
+} 
+
+public Person(string name, int age) : this(name) { 
+    this.Age = age; 
+}</pre
+                                >
                                 Man kann Konstruktor-Verkettung auch in die umgekehrte Richtung
                                 betreiben. Dies eignet sich dann besonders gut, wenn man einen
                                 Konstruktor mit allen möglichen Parametern hat und alle anderen
                                 Konstruktoren auf diesen Konstruktor "verketten".
-                                <div class="code language-csharp">
-                                    <span class="code-keyword">public string</span> Name {
-                                    <span class="code-keyword">get</span>;
-                                    <span class="code-keyword">set</span>; }
-                                    <br />
-                                    <span class="code-keyword">public int</span> Age {
-                                    <span class="code-keyword">get</span>;
-                                    <span class="code-keyword">set</span>; } <br /><br />
-                                    <span class="code-keyword">public</span>
-                                    <span class="code-class">Person</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>) :
-                                    <span class="code-keyword">this</span>(<span
-                                        class="code-variable"
-                                        >name</span
-                                    >, 0) { } <br /><br />
-                                    <span class="code-keyword">public</span>
-                                    <span class="code-class">Person</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>,
-                                    <span class="code-keyword">int</span>
-                                    <span class="code-variable">age</span>)
-                                    <div>{</div>
-                                    <span class="tab code-keyword-optional">this</span>.Name =
-                                    <span class="code-variable">name</span>;
-                                    <br />
-                                    <span class="tab code-keyword-optional">this</span>.Age =
-                                    <span class="code-variable">age</span>;
-                                    <div>}</div>
-                                </div>
+                                <pre class="code color language-csharp">
+public string Name { get; set; } 
+
+public int Age { get; set; }
+
+public Person(string name) : this(name, 0) { } 
+
+public Person(string name, int age) { 
+    this.Name = name; 
+    this.Age = age;
+}</pre
+                                >
                                 Wenn man auf den Konstruktor der Basis-Klasse verweisen möchte (mehr
                                 dazu unter Vererbung), schreibt man base statt this.
-                                <div class="code language-csharp">
-                                    <div class="code-comment">// BaseClass Person</div>
-                                    <span class="code-keyword">class</span>
-                                    <span class="code-class">Person</span>
-                                    <div>{</div>
-                                    <span class="tab code-keyword">public string</span> Name {
-                                    <span class="code-keyword">get</span>;
-                                    <span class="code-keyword">set</span>; }
-                                    <br />
-                                    <span class="tab code-keyword">public int</span> Age {
-                                    <span class="code-keyword">get</span>;
-                                    <span class="code-keyword">set</span>; } <br /><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Person</span>() <br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span>:
-                                    <span class="code-keyword">this</span>(<span class="code-string"
-                                        >"unnamed"</span
-                                    >, 0) { } <br /><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Person</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>) <br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span>:
-                                    <span class="code-keyword">this</span>(<span
-                                        class="code-variable"
-                                        >name</span
-                                    >, 0) { } <br /><br />
-                                    <span class="tab code-comment">// nicht sehr sinnvoll</span
-                                    ><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Person</span>(<span
-                                        class="code-keyword"
-                                        >int</span
-                                    >
-                                    <span class="code-variable">age</span>) <br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span>:
-                                    <span class="code-keyword">this</span>(<span class="code-string"
-                                        >"unnamed"</span
-                                    >, <span class="code-variable">age</span>) { } <br /><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Person</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>,
-                                    <span class="code-keyword">int</span>
-                                    <span class="code-variable">age</span>)
-                                    <div class="tab">{</div>
-                                    <span class="tab"></span
-                                    ><span class="tab code-keyword-optional">this</span>.Name =
-                                    <span class="code-variable">name</span>;
-                                    <br />
-                                    <span class="tab"></span
-                                    ><span class="tab code-keyword-optional">this</span>.Age =
-                                    <span class="code-variable">age</span>;
-                                    <div class="tab">}</div>
-                                    <div>}</div>
-                                    <br />
-                                    <div class="code-comment">// ChildClass Student</div>
-                                    <span class="code-keyword">class</span>
-                                    <span class="code-class">Student</span> :
-                                    <span class="code-class">Person</span>
-                                    <div>{</div>
-                                    <span class="tab code-keyword">public string</span> Schoolclass
-                                    { <span class="code-keyword">get</span>;
-                                    <span class="code-keyword">set</span>; } <br /><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Student</span>()<br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span> :
-                                    <span class="code-keyword">this</span>(<span class="code-string"
-                                        >"unnamed"</span
-                                    >, 0, <span class="code-keyword">null</span> ) { } <br /><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Student</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>) <br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span>:
-                                    <span class="code-keyword">this</span>(<span
-                                        class="code-variable"
-                                        >name</span
-                                    >, 0, <span class="code-keyword">null</span> ) { } <br /><br />
-                                    <span class="tab code-comment">// nicht sehr sinnvoll</span
-                                    ><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Student</span>(<span
-                                        class="code-keyword"
-                                        >int</span
-                                    >
-                                    <span class="code-variable">age</span>) <br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span>:
-                                    <span class="code-keyword">this</span>(<span class="code-string"
-                                        >"unnamed"</span
-                                    >, <span class="code-variable">age</span>,
-                                    <span class="code-keyword">null</span> ) { } <br /><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Student</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>,
-                                    <span class="code-keyword">int</span>
-                                    <span class="code-variable">age</span>) <br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span>:
-                                    <span class="code-keyword">this</span>(<span
-                                        class="code-variable"
-                                        >name</span
-                                    >, <span class="code-variable">age</span>,
-                                    <span class="code-keyword">null</span> ) { } <br /><br />
-                                    <span class="tab code-keyword">public</span>
-                                    <span class="code-class">Student</span>(<span
-                                        class="code-keyword"
-                                        >string</span
-                                    >
-                                    <span class="code-variable">name</span>,
-                                    <span class="code-keyword">int</span>
-                                    <span class="code-variable">age</span>, <br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span
-                                    ><span class="tab"></span>&nbsp;&nbsp;
-                                    <span class="code-keyword">string</span>
-                                    <span class="code-variable">schoolclass</span>) <br /><span
-                                        class="tab"
-                                    ></span
-                                    ><span class="tab"></span><span class="tab"></span>:
-                                    <span class="code-keyword">base</span>(<span
-                                        class="code-variable"
-                                        >name</span
-                                    >, <span class="code-variable">age</span>)
-                                    <div class="tab">{</div>
-                                    <span class="tab"></span
-                                    ><span class="tab code-keyword-optional">this</span>.Schoolclass
-                                    = <span class="code-variable">schoolclass</span>;
-                                    <div class="tab">}</div>
-                                    <div>}</div>
-                                </div>
+                                <pre class="code color language-csharp">
+// BaseClass Person 
+class Person { 
+    public string Name { get; set; } 
+    
+    public int Age { get; set; } 
+    
+    public Person() : this("unnamed", 0) { } 
+    
+    public Person(string name) : this(name, 0) { } 
+    
+    // nicht sehr sinnvoll 
+    public Person(int age) : this("unnamed", age) { } 
+    
+    public Person(string name, int age) { 
+        this.Name = name; 
+        this.Age = age; 
+    } 
+} 
+
+// ChildClass Student
+class Student : Person { 
+    public string Schoolclass { get; set; }
+
+    public Student() : this("unnamed", 0, null ) { } 
+    
+    public Student(string name) : this(name, 0, null ) { } 
+    
+    // nicht sehr sinnvoll 
+    public Student(int age) : this("unnamed", age, null ) { } 
+    
+    public Student(string name, int age) : this(name, age, null ) { } 
+    
+    public Student(string name, int age, string schoolclass) : base(name, age) { 
+        this.Schoolclass = schoolclass; 
+    } 
+}</pre
+                                >
                             </div>
                         </div>
                     </div>
@@ -527,13 +289,9 @@
                         <div>
                             Die grundsätzliche immer gleichbleibende Syntax einer C#-Methode sieht
                             wie folgt aus:
-                            <div class="code language-csharp">
-                                &lt;<span class="code-keyword-optional">Zugriffsmodifizierer</span
-                                >&gt; &lt;<span class="code-keyword">Rückgabewert</span>&gt;
-                                &lt;<span class="code-keyword">Methodenname</span>&gt;(&lt;<span
-                                    class="code-keyword-optional"
-                                    >Parameter</span
-                                >&gt;) { }
+                            <div class="code color language-csharp">
+                                &lt;Zugriffsmodifizierer&gt; &lt;Rückgabewert&gt;
+                                &lt;Methodenname&gt;(&lt;Parameter&gt;) { }
                             </div>
                         </div>
                         <h4 id="Methoden-2_Arten">2 Arten</h4>
@@ -548,65 +306,38 @@
                         <h4 id="Methoden-statische_Methoden">statische Methoden</h4>
                         <div>
                             Keine Instanz einer Klasse notwendig:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">static void</span>
-                                <span class="code-method">Main</span>(<span class="code-keyword"
-                                    >string</span
-                                >[] <span class="code-variable">args</span>)
-                                <div>{</div>
-                                <span class="tab code-method">Method</span>();
-                                <div>}</div>
-                                <br />
-                                <span class="code-keyword">static void</span>
-                                <span class="code-method">Method</span>()
-                                <div>{</div>
-                                <span class="tab code-comment">// code</span>
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+static void Main(string[] args) { 
+    Method(); 
+} 
+
+static void Method() {
+    // code 
+}</pre
+                            >
                         </div>
                         <h4 id="Methoden-dynamische_Methoden">dynamische Methoden</h4>
                         <div>
                             Kann nur aufgerufen werden, wenn eine Instanz vorhanden ist:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">static void</span>
-                                <span class="code-method">Main</span>(<span class="code-keyword"
-                                    >string</span
-                                >[] <span class="code-variable">args</span>)
-                                <div>{</div>
-                                <span class="tab code-class">Person</span>
-                                <span class="code-variable">person</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">Person</span>();
-                                <br />
-                                <span class="tab code-variable">person</span>.<span
-                                    class="code-method"
-                                    >Method</span
-                                >();
-                                <div>}</div>
-                                <br />
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <span class="tab"></span
-                                ><span class="code-keyword">static void</span>
-                                <span class="code-method">Method</span>()
-                                <div class="tab">{</div>
-                                <span class="tab"></span
-                                ><span class="tab code-comment">// code</span>
-                                <div class="tab">}</div>
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+static void Main(string[] args) { 
+    Person person = new Person();
+    person.Method(); 
+} 
+
+class Person { 
+    public void Method() { 
+        // code 
+    } 
+}</pre
+                            >
                         </div>
                         <h4 id="Methoden-Rekursion">Rekursion</h4>
                         <div>
                             Man spricht von Rekursion, wenn sich eine Methode selbst aufruft und
                             somit einen endlosen geschlossenen Kreislauf bildet.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">static void</span>
-                                <span class="code-method">RecMethod</span>()
-                                <div>{</div>
-                                <span class="tab code-method">RecMethod</span>();
-                                <div>}</div>
+                            <div class="code color language-csharp">
+                                static void RecMethod() { RecMethod(); }
                             </div>
                             Diese RecMethod würde zu einem StackOverflow führen, da der Cache
                             irgendwann voll sein wird. Aus diesem Grund macht diese Methode keinen
@@ -620,29 +351,12 @@
                             aus sich selbst herausspringen muss. Dies kann ganz einfach erzielt
                             werden, indem ein if in die Methode eingebaut wird, das irgendwann true
                             ergibt.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">static void</span>
-                                <span class="code-method">RecMethod</span>(<span
-                                    class="code-keyword"
-                                    >int</span
-                                >
-                                <span class="code-variable">counter</span>)
-                                <div>{</div>
-                                <span class="tab code-flowcontrol">if</span>(<span
-                                    class="code-variable"
-                                    >counter</span
-                                >
-                                &lt;= 0)
-                                <br />
-                                <span class="tab"></span
-                                ><span class="tab code-flowcontrol">return</span>;
-                                <br />
-                                <span class="tab code-method">RecMethod</span>(<span
-                                    class="code-variable"
-                                    >counter</span
-                                >--);
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+static void RecMethod(int counter) { 
+    if(counter <= 0) return;
+    RecMethod(counter--); 
+}</pre
+                            >
                             Methoden können übrigens auch untereinander rekursiv sein, wenn zum
                             Beispiel Method1 Method2 aufruft und Method2 wiederrum Method1. Dieses
                             Verfahren kann man theoretisch endlos im Kreis fortsetzen. Das erinnert
@@ -665,31 +379,12 @@
                             enthält, nein Integers, nein Characters...<br />
                             Wenn das der Fall ist, baut man sich am besten eine generische Klasse
                             List:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">List</span>&lt;<span class="code-generic"
-                                    >T</span
-                                >&gt;
-                                <div>{</div>
-                                <br />
-                                <div>}</div>
-                            </div>
+                            <div class="code color language-csharp">class List&lt;T&gt; { }</div>
                             Wenn man den generischen Datentyp T einschränken möchte, sodass man zum
                             Beispiel sicherstellen kann, dass T "compareable" ist, dann verwendet
                             man generische Typconstraints mithilfe des Schlüsselwortes where.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">List</span>&lt;<span class="code-generic"
-                                    >T</span
-                                >&gt; <span class="code-keyword">where</span>
-                                <span class="code-generic">T</span> :
-                                <span class="code-generic">IComparable</span>&lt;<span
-                                    class="code-generic"
-                                    >T</span
-                                >&gt;
-                                <div>{</div>
-                                <br />
-                                <div>}</div>
+                            <div class="code color language-csharp">
+                                class List&lt;T&gt; where T : IComparable&lt;T&gt; { }
                             </div>
                             Nach diesem Doppelpunkt können viele verschiedenen Constraints stehen.
                             In dieser Tabelle sind die Wichtigsten zusammengefasst:
@@ -744,25 +439,13 @@
                             Beim Instanziieren dieser Klasse muss man dann ebenfalls eine andere
                             Syntax verwenden. In diesem Fall, instanziieren wir eine Liste mit
                             Integern.
-                            <div class="code language-csharp">
-                                <span class="code-class">List</span>&lt;<span class="code-keyword"
-                                    >int</span
-                                >&gt; <span class="code-variable">myIntList</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">List</span>&lt;<span class="code-keyword"
-                                    >int</span
-                                >&gt;();
+                            <div class="code color language-csharp">
+                                List&lt;int&gt; myIntList = new List&lt;int&gt;();
                             </div>
                             Beziehungsweise, wenn man die Klasse mit einem String instanziieren
                             möchte:
-                            <div class="code language-csharp">
-                                <span class="code-class">List</span>&lt;<span class="code-keyword"
-                                    >string</span
-                                >&gt; <span class="code-variable">myStringList</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">List</span>&lt;<span class="code-keyword"
-                                    >string</span
-                                >&gt;();
+                            <div class="code color language-csharp">
+                                List&lt;string&gt; myStringList = new List&lt;string&gt;();
                             </div>
                         </div>
                         <h4 id="Generische_Klassen-Syntax_Properties">Syntax Properties</h4>
@@ -770,47 +453,26 @@
                             Wenn man eine generisches Property, ein generisches Attribut
                             beziehungsweise eine generische Variable in der generischen Klasse haben
                             will, lautet die Syntax folgendermaßen:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">public</span>
-                                <span class="code-class">List</span>&lt;<span class="code-generic"
-                                    >T</span
-                                >&gt; Items { <span class="code-keyword">get</span>;
-                                <span class="code-keyword">set</span>; }
+                            <div class="code color language-csharp">
+                                public List&lt;T&gt; Items { get; set; }
                             </div>
                         </div>
                         <h4 id="Generische_Klassen-Syntax_Methoden">Syntax Methoden</h4>
                         <div>
                             Diesen generischen Datentyp kann man nun in den Methoden der Klasse
                             einbauen. Zum Beispiel können wir eine Methoden Add hinzufügen.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">public</span>
-                                <span class="code-keyword">void</span>
-                                <span class="code-method">Add</span>(<span class="code-generic"
-                                    >T</span
-                                >
-                                <span class="code-variable">value</span>)
-                                <div>{</div>
-                                <span class="tab">Items</span>.<span class="code-method">Add</span
-                                >(<span class="code-variable">value</span>);
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+public void Add(T value) { 
+    Items.Add(value); 
+}</pre
+                            >
                         </div>
                         <h4 id="Generische_Klassen-Syntax_Methodenaufruf">Syntax Methodenaufruf</h4>
                         <div>
                             Diese Methode kann man dann genau wie bei konkreten Klassen aufrufen.
-                            <div class="code language-csharp">
-                                <span class="code-variable">myIntList</span>.<span
-                                    class="code-method"
-                                    >Add</span
-                                >(10);
-                            </div>
+                            <div class="code color language-csharp">myIntList.Add(10);</div>
                             Oder die String-Variante:
-                            <div class="code language-csharp">
-                                <span class="code-variable">myStringList</span>.<span
-                                    class="code-method"
-                                    >Add</span
-                                >(<span class="code-string">"Katze"</span>);
-                            </div>
+                            <div class="code color language-csharp">myStringList.Add("Katze");</div>
                         </div>
                     </div>
                     <h3 id="Unit_Tests">Unit Tests</h3>
@@ -832,45 +494,18 @@
                         <div>
                             Damit der Compiler weiß, dass es sich bei der neuen Methode um eine Unit
                             Test Methode handelt, benötigt man eine bestimmte Syntax.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">using</span>
-                                Microsoft.VisualStudio.TestTools.UnitTesting; <br /><br />
-                                [<span class="code-class">TestClass</span>] <br />
-                                <span class="code-keyword">public class</span>
-                                <span class="code-class">UnitTest_List</span> <br />
-                                <div>{</div>
-                                <span class="tab"></span>[<span class="code-class">TestMethod</span
-                                >] <br />
-                                <span class="tab code-keyword">public void</span>
-                                <span class="code-method">TestAdd</span>() <br />
-                                <div class="tab">{</div>
-                                <span class="tab"></span
-                                ><span class="tab code-class">List</span>&lt;<span
-                                    class="code-keyword"
-                                    >int</span
-                                >&gt; <span class="code-variable">myIntList</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">List</span>&lt;<span class="code-keyword"
-                                    >int</span
-                                >&gt;();
-                                <br />
-                                <span class="tab"></span
-                                ><span class="tab code-variable">myIntList</span>.<span
-                                    class="code-method"
-                                    >Add</span
-                                >(<span class="code-number">123</span>);
-                                <br />
-                                <span class="tab"></span
-                                ><span class="tab code-class">Assert</span>.<span
-                                    class="code-method"
-                                    >AreEqual</span
-                                >(<span class="code-variable">myIntList</span>.Items[<span
-                                    class="code-number"
-                                    >0</span
-                                >], <span class="code-number">123</span>);
-                                <div class="tab">}</div>
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+using Microsoft.VisualStudio.TestTools.UnitTesting; 
+
+[TestClass]
+public class UnitTest_List { 
+    [TestMethod] public void TestAdd() {
+        List&lt;int&gt; myIntList = new List&lt;int&gt;();
+        myIntList.Add(123); 
+        Assert.AreEqual(myIntList.Items[0], 123); 
+    } 
+}</pre
+                            >
                             Die Assert Klasse ist bei Unit Tests automatisch mit dabei. Mithilfe der
                             verschiedenen Methoden in der Assert Klasse kann man seine eigenen
                             Methoden auf alles testen.

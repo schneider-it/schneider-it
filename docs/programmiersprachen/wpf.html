@@ -193,19 +193,21 @@
                         <div>
                             Ein Label dient als Beschriftung für eine TextBox oder einen TextBlock,
                             einen DatePicker oder irgendein anderes Control.
-                            <div class="code">&lt;Label Content="Passwort: " Width="100"/&gt;</div>
+                            <div class="code color">
+                                &lt;Label Content="Passwort: " Width="100"/&gt;
+                            </div>
                         </div>
                         <h4 id="Controls-TextBox">TextBox</h4>
                         <div>
                             In eine TextBox kann der User etwas hineinschreiben, was dann
                             verarbeitet werden kann.
-                            <div class="code">&lt;TextBox Text="" Width="200"/&gt;</div>
+                            <div class="code color">&lt;TextBox Text="" Width="200"/&gt;</div>
                         </div>
                         <h4 id="Controls-TextBlock">TextBlock</h4>
                         <div>
                             Ein TextBlock ist ein Feld mit Text, den den User nicht bearbeiten,
                             sondern nur lesen kann.
-                            <div class="code">&lt;TextBox Text="" Width="200"/&gt;</div>
+                            <div class="code color">&lt;TextBox Text="" Width="200"/&gt;</div>
                         </div>
                         <h4 id="Controls-Slider">Slider</h4>
                         <div>
@@ -213,7 +215,7 @@
                             kann, um bestimmte Einstellungen zu verändern. Meistens benötigt man
                             einen Converter für einen Slider, damit die Position der Sliderauswahl
                             auch in einen Wert umgewandelt werden kann.
-                            <div class="code">
+                            <div class="code color">
                                 &lt;Slider Value="50" Minimum="0" Maximum="100" TickFrequency="1"
                                 TickPlacement="Top/Bottom"/&gt;
                             </div>
@@ -223,7 +225,7 @@
                             Ein RadioButton kommt selten alleine. Mehrere RadioButtons ermöglich
                             eine Auswahl von mehreren Angeboten, sodass der User zum Beispiel sein
                             Lieblingsessen auswählen kann.
-                            <div class="code">
+                            <div class="code color">
                                 &lt;RadioButton Content="Italienisch" IsChecked="False"
                                 GroupName="FavouriteFood"/&gt; <br />
                                 &lt;RadioButton Content="Österreichisch" IsChecked="True"
@@ -239,7 +241,7 @@
                             Ein CheckBox kommt selten alleine. Mehrere CheckBoxes ermöglich eine
                             Mehrfachauswahl von mehreren möglichen Wahr/Falsch-Aussagen, sodass der
                             User zum Beispiel Besitztümer ankreuzen kann.
-                            <div class="code">
+                            <div class="code color">
                                 &lt;CheckBox Content="Computer" IsChecked="True"/&gt; <br />
                                 &lt;CheckBox Content="Laptop" IsChecked="False"/&gt; <br />
                                 &lt;CheckBox Content="Handy" IsChecked="True"/&gt; <br />
@@ -250,7 +252,7 @@
                         <div>
                             Ein Button ist ein klickbares Element, das mithilfe von ControlBinding
                             eine bestimmte Aktion durchführen kann.
-                            <div class="code">
+                            <div class="code color">
                                 &lt;Button Content="Add" Command="{Binding AddCmd}"/&gt;
                             </div>
                         </div>
@@ -259,7 +261,9 @@
                             Mithilfe eines DatePicker kann man eine TextBox mit einem
                             Datumsauswählfeld erstellen. Wenn man daraufklickt, öffnet sich ein
                             kleines Fenster mit einem Kalender.
-                            <div class="code">&lt;DatePicker SelectedDate="18/03/2022"/&gt;</div>
+                            <div class="code color">
+                                &lt;DatePicker SelectedDate="18/03/2022"/&gt;
+                            </div>
                         </div>
                         <h4 id="Controls-Tabellen">Tabellen</h4>
                         <div>
@@ -279,7 +283,7 @@
                             <h5 id="Controls-Panel-StackPanel">StackPanel</h5>
                             <div>
                                 Das StackPanel ordnet jedes Kindelement vertikal an.
-                                <pre class="code">
+                                <pre class="code color">
 &lt;StackPanel Orientation="Vertical"&gt;
 
 &lt;/StackPanel&gt;</pre
@@ -290,7 +294,7 @@
                             <h5 id="Controls-Panel-WrapPanel">WrapPanel</h5>
                             <div>
                                 Das WrapPanel ordnet jedes Kindelement horizontal an.
-                                <pre class="code">
+                                <pre class="code color">
 &lt;WrapPanel Orientation="Horizontal"&gt;
 
 &lt;/WrapPanel&gt;</pre
@@ -301,7 +305,7 @@
                             <h5 id="Controls-Panel-DockPanel">DockPanel</h5>
                             <div>
                                 Das DockPanel erlaubt das kleben an den vier Seiten.
-                                <pre class="code">
+                                <pre class="code color">
 &lt;DockPanel DockPanel.Dock="Left"&gt;
 
 &lt;/DockPanel&gt;</pre
@@ -313,7 +317,7 @@
                             <div>
                                 Das Grid erzeigt eine Tabelle, die sich der Größe des Fensters
                                 anpasst.
-                                <pre class="code">
+                                <pre class="code color">
 &lt;Grid Margin="15"&gt;
     &lt;Grid.ColumnDefinitions&gt;
         &lt;ColumnDefinition Width="2*" /&gt;
@@ -339,7 +343,7 @@
                             <div>
                                 Der Canvas ist eine Art Zeichenfläche, wo man Elemente beliebig hin-
                                 und herziehen kann.
-                                <pre class="code">
+                                <pre class="code color">
 &lt;Canvas&gt;
     &lt;Label Canvas.Left="15" Canvas.Top="20"&gt;MyLabel&lt;/Label&gt;
 &lt;/Canvas&gt;</pre
@@ -420,10 +424,10 @@
                         Text als das Property, das gebindet werden soll.
                         <br /><br />
                         Name ist hier eine Variable aus der VM-Klasse.
-                        <div class="code">&lt;TextBox Text="{Binding Name}"/&gt;</div>
+                        <div class="code color">&lt;TextBox Text="{Binding Name}"/&gt;</div>
                         Damit man diesen Name auch verwenden kann, benötigt man einen Verweis auf
                         die VM-Klasse.
-                        <pre class="code">
+                        <pre class="code color">
 &lt;Window.DataContext&gt;
     &lt;local:PersonVM/&gt;
 &lt;/Window.DataContext&gt;</pre
@@ -432,7 +436,7 @@
                         jeder erbenden Klasse das Nutzen der OnPropertyChanged(); - Methode. Diese
                         Methode benachrichtigt die View, falls sich in der ViewModel-Klasse ein Wert
                         verändert hat, sodass sich diese updated.
-                        <pre class="code">
+                        <pre class="code color">
 public class PropertyChangedClass : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler PropertyChanged;
@@ -445,7 +449,7 @@ public class PropertyChangedClass : INotifyPropertyChanged
                         >
                         Die Klasse Person sieht so aus (mit drei Properties und ToString()- und
                         ToCSV()-Methoden):
-                        <pre class="code">
+                        <pre class="code color">
 public class Person
 {
     public string Name { get; set; }
@@ -472,7 +476,7 @@ public class Person
                         welches Property sich verändert hat, wenn gar kein Parameter übergeben wird?
                         Einfach Antwort: Darum kümmert sich das [CallerMemberName] aus der
                         PropertyChangedClass.
-                        <pre class="code">
+                        <pre class="code color">
 public class PersonVM : PropertyChangedClass
 {
     private Person _person;
@@ -504,7 +508,7 @@ public class PersonVM : PropertyChangedClass
                         Wenn man eine Liste mit Elementen, wie zum Beispiel DataGrid haben will, die
                         sich mit TextBoxen und anderen Controls gemeinsam updated, benötigt man eine
                         ObservableCollection.
-                        <pre class="code">
+                        <pre class="code color">
 public class PersonsVM : PropertyChangedClass
 {
     public PersonsVM()
@@ -536,12 +540,12 @@ public class PersonsVM : PropertyChangedClass
 }</pre
                         >
                         Dies wird dann folgendermaßen mit der XAML-Datei verknüpft:
-                        <pre class="code">
+                        <pre class="code color">
 &lt;Window.DataContext&gt;
     &lt;local:PersonsVM/&gt;
 &lt;/Window.DataContext&gt;</pre
                         >
-                        <div class="code">
+                        <div class="code color">
                             &lt;DataGrid ItemsSource="{Binding AllPersons}" SelectedItem="{Binding
                             SelectedPerson}" Width="300"/&gt;
                         </div>
@@ -550,7 +554,7 @@ public class PersonsVM : PropertyChangedClass
                     <div>
                         Will man die Aktion eines Buttons kontrollieren, benötigt man
                         ControlBinding.
-                        <pre class="code">
+                        <pre class="code color">
 public class PersonsVM : PropertyChangedClass
 {
     public AddCmd AddCmd { get; set; }
@@ -587,7 +591,7 @@ public class PersonsVM : PropertyChangedClass
     }
 }</pre
                         >
-                        <pre class="code">
+                        <pre class="code color">
 public class LoginCmd : ICommand
 {
     private PersonsVM _personsVM;
@@ -618,7 +622,7 @@ public class LoginCmd : ICommand
     }
 }</pre
                         >
-                        <pre class="code">
+                        <pre class="code color">
 public class AddCmd : ICommand
 {
     private PersonsVM _personsVM;
@@ -659,7 +663,7 @@ public class AddCmd : ICommand
                         muss aber nicht sein. Will man zum Beispiel einen Integer (1-5, wie
                         Schulnoten) in den dazupassenden String ("Sehr gut" - "Nicht genügend")
                         convertieren, kann man das so lösen:
-                        <pre class="code">
+                        <pre class="code color">
 public class IntToMarkConverter : IValueConverter
 {
     public object Convert(object value, Type targetType, 
@@ -683,12 +687,12 @@ public class IntToMarkConverter : IValueConverter
     }
 }</pre
                         >
-                        <pre class="code">
+                        <pre class="code color">
 &lt;Window.Resources&gt;
     &lt;local:IntToMarkConverter x:Key="IntMark"/&gt;
 &lt;/Window.Resources&gt;</pre
                         >
-                        <pre class="code">
+                        <pre class="code color">
 &lt;TextBox Text="{Binding Note}"/&gt;
 &lt;TextBlock Text="{Binding Note, Converter={StaticResource IntMark}}"/&gt;</pre
                         >

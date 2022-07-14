@@ -266,7 +266,7 @@
                             /></a>
                             Dadurch, dass Zahlen in C# so aufgebaut sind, lassen sich lustige
                             Programme schreiben:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 sbyte mySByte; 
 mySByte = 127; 
 mySByte++; 
@@ -279,23 +279,25 @@ Console.WriteLine(mySByte);
                         </h4>
                         <div>
                             Alle numerischen Datentypen können addiert,
-                            <div class="code language-csharp">&lt;Datentyp&gt; summe = 4 + 3;</div>
+                            <div class="code color language-csharp">
+                                &lt;Datentyp&gt; summe = 4 + 3;
+                            </div>
                             subtrahiert,
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 &lt;Datentyp&gt; differenz = 8 - 5;
                             </div>
                             multipliziert und
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 &lt;Datentyp&gt; produkt = 3 * 13;
                             </div>
                             moduliert (Restwert beim Dividieren) werden.
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 &lt;Datentyp&gt; rest = 7 % 2; 
 // Ergebnis 1, weil 7/2 -> 1 Rest</pre
                             >
                             Beim Dividieren muss man bei dem jeweiligen Datentyp aufpassen, dass das
                             Ergebnis auch in den Wertebereich hineinpasst:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 &lt;Datentyp&gt; quotient = (&lt;Datentyp&gt;)(12 / 5);
                             </div>
                             Noch viele weitere Operationen mit Zahlen finde Sie unter Grundlagen ->
@@ -307,55 +309,55 @@ Console.WriteLine(mySByte);
                             damit wahrscheinlich der am öftesten verwendete numerische Datentyp.
                             <br /><br />
                             Die Deklaration des Integers ist ziemlich einfach:
-                            <div class="code language-csharp">int myInt;</div>
+                            <div class="code color language-csharp">int myInt;</div>
                             Die Initialisierung des Integers ist ebenfalls simple:
-                            <div class="code language-csharp">myInt = 0;</div>
+                            <div class="code color language-csharp">myInt = 0;</div>
                             So wie bei fast allen anderen Datentyp auch, kann man Deklaration und
                             Initialisierung in einer Zeile programmieren:
-                            <div class="code language-csharp">int myInt = 0;</div>
+                            <div class="code color language-csharp">int myInt = 0;</div>
                         </div>
                         <h4 id="einfache_Datentypen-Double">Double</h4>
                         <div>
                             Die Deklaration des Double:
-                            <div class="code language-csharp">double myDouble;</div>
+                            <div class="code color language-csharp">double myDouble;</div>
                             Die Initialisierung des Double:
-                            <div class="code language-csharp">myDouble = Math.PI;</div>
+                            <div class="code color language-csharp">myDouble = Math.PI;</div>
                         </div>
                         <h4 id="einfache_Datentypen-Float">Float</h4>
                         <div>
                             Die Deklaration des Float:
-                            <div class="code language-csharp">float myFloat;</div>
+                            <div class="code color language-csharp">float myFloat;</div>
                             Die Initialisierung des Float:
-                            <div class="code language-csharp">myFloat = 3.1415926f;</div>
+                            <div class="code color language-csharp">myFloat = 3.1415926f;</div>
                             Das "f" hinter der Zahl sorgt dafür, dass die Zahl in einen Float
                             konvertiert wird.
                         </div>
                         <h4 id="einfache_Datentypen-Decimal">Decimal</h4>
                         <div>
                             Die Deklaration des Decimal:
-                            <div class="code language-csharp">decimal myDecimal;</div>
+                            <div class="code color language-csharp">decimal myDecimal;</div>
                             Die Initialisierung des Decimal:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 myDecimal = (decimal)new Random().NextDouble();
                             </div>
                         </div>
                         <h4 id="einfache_Datentypen-Bool">Bool</h4>
                         <div>
                             Die Deklaration eines Bool'schen Wertes:
-                            <div class="code language-csharp">bool myBool;</div>
+                            <div class="code color language-csharp">bool myBool;</div>
                             Die Initialisierung des Bool:
-                            <div class="code language-csharp">myBool = true;</div>
+                            <div class="code color language-csharp">myBool = true;</div>
                         </div>
                         <h4 id="einfache_Datentypen-Struct">Struct</h4>
                         <div>
                             Das ist der Aufbau eines Structs:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 struct &lt;Structname&gt; { 
     // Variablen und Methoden 
 }</pre
                             >
                             Hier ein Beispiel für ein Struct:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 struct MyStruct { 
     // Variablen 
     int x; 
@@ -374,9 +376,9 @@ struct MyStruct {
 }</pre
                             >
                             Die Deklaration eines Structs sieht folgendermaßen aus:
-                            <div class="code language-csharp">MyStruct myStruct;</div>
+                            <div class="code color language-csharp">MyStruct myStruct;</div>
                             Initialisierung:
-                            <div class="code language-csharp">myStruct = new MyStruct();</div>
+                            <div class="code color language-csharp">myStruct = new MyStruct();</div>
                             Mehr Infos bezüglich Struct finden Sie unter Grundlagen -> Datentypen ->
                             Refernztypen -> Class.
                         </div>
@@ -385,57 +387,59 @@ struct MyStruct {
                         <div>
                             Ein Short hat einen Zahlenberech von -32768 bis 32767. Die Deklaration
                             sieht wie folgt aus:
-                            <div class="code language-csharp">short myShort;</div>
+                            <div class="code color language-csharp">short myShort;</div>
                             Die Initialisierung des Short:
-                            <div class="code language-csharp">myShort = 1;</div>
+                            <div class="code color language-csharp">myShort = 1;</div>
                         </div>
                         <h4 id="einfache_Datentypen-long">long</h4>
                         <div>
                             Ein Long hat einen Zahlenberech von -9223372036854775808 bis
                             9223372036854775807. Die Deklaration sieht wie folgt aus:
-                            <div class="code language-csharp">long myLong;</div>
+                            <div class="code color language-csharp">long myLong;</div>
                             Die Initialisierung des Long:
-                            <div class="code language-csharp">myLong = 0;</div>
+                            <div class="code color language-csharp">myLong = 0;</div>
                         </div>
                         <h4 id="einfache_Datentypen-byte">byte</h4>
                         <div>
                             Ein Byte hat einen Zahlenberech von 0 bis 255. Die Deklaration sieht wie
                             folgt aus:
-                            <div class="code language-csharp">byte myByte;</div>
+                            <div class="code color language-csharp">byte myByte;</div>
                             Die Initialisierung des Byte:
-                            <div class="code language-csharp">myByte = 255;</div>
+                            <div class="code color language-csharp">myByte = 255;</div>
                         </div>
                         <h4 id="einfache_Datentypen-sbyte">sbyte</h4>
                         <div>
                             Ein SByte hat einen Zahlenberech von -128 bis 127. Die Deklaration sieht
                             wie folgt aus:
-                            <div class="code language-csharp">sbyte mySByte;</div>
+                            <div class="code color language-csharp">sbyte mySByte;</div>
                             Die Initialisierung des SByte:
-                            <div class="code language-csharp">mySByte = -128;</div>
+                            <div class="code color language-csharp">mySByte = -128;</div>
                         </div>
                         <h4 id="einfache_Datentypen-uint">uint</h4>
                         <div>
                             Ein UInt hat einen Zahlenberech von 0 bis 4294967295. Die Deklaration
                             sieht wie folgt aus:
-                            <div class="code language-csharp">uint myUInt;</div>
+                            <div class="code color language-csharp">uint myUInt;</div>
                             Die Initialisierung des UInt:
-                            <div class="code language-csharp">myUInt = 4294967295;</div>
+                            <div class="code color language-csharp">myUInt = 4294967295;</div>
                         </div>
                         <h4 id="einfache_Datentypen-ushort">ushort</h4>
                         <div>
                             Ein UShort hat einen Zahlenberech von 0 bis 65535. Die Deklaration sieht
                             wie folgt aus:
-                            <div class="code language-csharp">ushort myUShort;</div>
+                            <div class="code color language-csharp">ushort myUShort;</div>
                             Die Initialisierung des UShort:
-                            <div class="code language-csharp">myUShort = 65535;</div>
+                            <div class="code color language-csharp">myUShort = 65535;</div>
                         </div>
                         <h4 id="einfache_Datentypen-ulong">ulong</h4>
                         <div>
                             Ein ULong hat einen Zahlenberech von 0 bis 18446744073709551615. Die
                             Deklaration sieht wie folgt aus:
-                            <div class="code language-csharp">ulong myULong;</div>
+                            <div class="code color language-csharp">ulong myULong;</div>
                             Die Initialisierung des ULong:
-                            <div class="code language-csharp">myULong = 18446744073709551615;</div>
+                            <div class="code color language-csharp">
+                                myULong = 18446744073709551615;
+                            </div>
                         </div>
                     </div>
                     <h3 id="Referenztypen">Referenztypen</h3>
@@ -475,9 +479,9 @@ struct MyStruct {
                             Char kann jedes Unicode-Zeichen enthalten.
                             <br /><br />
                             Deklaration eines Char:
-                            <div class="code language-csharp">char myChar;</div>
+                            <div class="code color language-csharp">char myChar;</div>
                             Die Initialisierung eines Char:
-                            <div class="code language-csharp">myChar = 'c';</div>
+                            <div class="code color language-csharp">myChar = 'c';</div>
                         </div>
                         <h4 id="Referenztypen-String">String</h4>
                         <div>
@@ -486,9 +490,9 @@ struct MyStruct {
                             eigentlich ein neuer String erzeugt.
                             <br /><br />
                             Deklaration eines String:
-                            <div class="code language-csharp">string myString;</div>
+                            <div class="code color language-csharp">string myString;</div>
                             Die Initialisierung eines String:
-                            <div class="code language-csharp">myString = "Schneider";</div>
+                            <div class="code color language-csharp">myString = "Schneider";</div>
                         </div>
                         <h4 id="Referenztypen-Array">Array</h4>
                         <div>
@@ -504,21 +508,25 @@ struct MyStruct {
                             komplizierter aus, jedoch ist der Grundaufbau bei fast allen
                             Referenztypen gleich (das Schlüsselwort new bei Instanziierung gibt es
                             nur bei Referenztypen):
-                            <div class="code language-csharp">&lt;Datentyp&gt;[] myArray;</div>
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
+                                &lt;Datentyp&gt;[] myArray;
+                            </div>
+                            <div class="code color language-csharp">
                                 myArray = new &lt;Datentyp&gt;[&lt;Anzahl an Feldern&gt;];
                             </div>
                             Ein Beispiel zur Vereinfachung und Verdeutlichung der Syntax:
-                            <div class="code language-csharp">int[] myIntArray = new int[3];</div>
+                            <div class="code color language-csharp">
+                                int[] myIntArray = new int[3];
+                            </div>
                             In dem Beispiel wird ein Array aus Integern deklariert und mit 3 Feldern
                             instanziiert.
                             <br /><br />
                             Für mehrdimensionale Arrays gibt es diese Beispiele (Syntax kann endlos
                             so fortgesetzt werden):
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 int[,] myIntArray2 = new int[2, 4];
                             </div>
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 int[,,] myIntArray3 = new int[3, 3, 3];
                             </div>
                             Letzteres Array kann man sich so vorstellen:
@@ -537,26 +545,26 @@ struct MyStruct {
                             /></a>
                             Eine Initialisierung der einzelnen Felder eines Arrays sieht zum
                             Beispiel so aus:
-                            <div class="code language-csharp">myIntArray[0] = -10;</div>
+                            <div class="code color language-csharp">myIntArray[0] = -10;</div>
                             Außerdem kann man bei Arrays die Deklarierung, Instanziierung des Arrays
                             und die Initialisierung der Elemente gemeinsam durchführen:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 int[] myIntArray = new int[] { 1, 3, 5, 7, 9 };
                             </div>
                             Eine alternative Syntax ist diese:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 int[] myIntArray = { 1, 2, 3, 4, 5, 6 };
                             </div>
                             Ein Jagged Array ist ein Array, dessen Elemente wiederrum Arrays sind.
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 int[][] myIntJaggedArray = new int[6][];
                             </div>
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 myIntJaggedArray[0] = new int[4] { 1, 2, 3, 4 };
                             </div>
                             Das eignet sich zum Beispiel ideal für einen Kalender, weil nicht jeder
                             Monat gleich viele Tage hat.
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 using System.Globalization; 
 using System.Text; 
 
@@ -601,15 +609,15 @@ class Calendar {
                             verdoppelt wird, wenn sie zu klein ist.
                             <br /><br />
                             Bei Listen muss man immer System.Collections.Generic verwenden:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 using System.Collections.Generic;
                             </div>
                             Deklaration und Initialisierung:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 List&lt;int&gt; myIntList = new List&lt;int&gt;();
                             </div>
                             List ist eine einfach C#-Klasse und enthält einige wichtige Methoden:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 // fügt ein Element mit der Zahl hinzu
 myIntList.Add(&lt;Zahl&gt;); 
 
@@ -686,10 +694,10 @@ myIntList.RemoveRange(&lt;Index&gt;, &lt;Count&gt;);</pre
                             Der Aufzählungstyp (Enumeration typ) enthält eine unbegrenzt
                             konfigurierbare, bestimmte Auswahl an Werten. Sozusagen wie ein
                             Bool'scher Wert, nur mit mehreren, selbst konfigurierbaren Werten.
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 enum Jahreszeiten { Frühling, Sommer, Herbst, Winter };
                             </div>
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 Jahreszeiten jz = Jahreszeiten.Herbst;
                             </div>
                         </div>
@@ -701,28 +709,28 @@ myIntList.RemoveRange(&lt;Index&gt;, &lt;Count&gt;);</pre
                             Delegate.
                             <br /><br />
                             Syntax der Deklaration eines Delegates:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 &lt;Zugriffsmodifizierer&gt; delegate &lt;Rückgabewert&gt;
                                 &lt;Delegatenname&gt; (&lt;Parameter&gt;);
                             </div>
                             Beispiel:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 public delegate void myDelegate (string myMessage);
                             </div>
                             Nun gibt es drei verschiedene Möglichkeiten eine Methode für eine
                             Instanz des Delegates festzulegen:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 myDelegate myDelegate = new myDelegate(SomeMethods.myMethod);
                             </div>
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 myDelegate myDelegate = SomeMethods.myMethod;
                             </div>
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 myDelegate myDelegate = (string myMessage) =>
                                 Console.WriteLine(myMessage);
                             </div>
                             Die Methode myMethod in der Klasse SomeMethods sieht so aus:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 class SomeMethods { 
     static public void myMethod(string myMessage) {
         Console.WriteLine(myMessage); 
@@ -731,10 +739,12 @@ class SomeMethods {
                             >
                             Aufgerufen kann die Methode dann auf diese zwei verschiedene Arten
                             werden:
-                            <div class="code language-csharp">
+                            <div class="code color language-csharp">
                                 myDelegate.Invoke("Hello World!");
                             </div>
-                            <div class="code language-csharp">myDelegate("Hello World!");</div>
+                            <div class="code color language-csharp">
+                                myDelegate("Hello World!");
+                            </div>
                         </div>
                     </div>
                 </div>

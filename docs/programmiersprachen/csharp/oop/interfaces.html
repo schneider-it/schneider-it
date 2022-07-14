@@ -49,44 +49,28 @@
                         damit am Ende alles funktioniert.
                         <h5 id="Interfaces-Was_ist_ein_Interface?-Syntax">Syntax</h5>
                         <div>
-                            <div class="code language-csharp">
-                                <span class="code-keyword">interface</span> &lt;<span
-                                    class="code-keyword"
-                                    >Interfacename</span
-                                >&gt; { }
+                            <div class="code color language-csharp">
+                                interface &lt;Interfacename&gt; { }
                             </div>
                             Beispiel:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">interface</span>
-                                <span class="code-generic">IPerson</span>
-                                <div>{</div>
-                                <br />
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+interface IPerson {
+
+}</pre
+                            >
                         </div>
                     </div>
                     <h4 id="Interfaces-Methoden">Methoden</h4>
                     <div>
                         Wenn man eine Methode als Schnittstelle in einem Interface definieren will,
                         muss man folgende Syntax verwenden:
-                        <div class="code language-csharp">
-                            <span class="code-keyword">void</span>
-                            <span class="code-method">Sleep</span>(<span class="code-keyword"
-                                >int</span
-                            >
-                            <span class="code-variable">hours</span>);
-                        </div>
+                        <div class="code color language-csharp">void Sleep(int hours);</div>
                     </div>
                     <h4 id="Interfaces-Properties">Properties</h4>
                     <div>
                         Was eher selten vorkommt, ist die Definition eines Properties in einem
                         Interface. Trotzdem hier ein Beispiel:
-                        <div class="code language-csharp">
-                            <span class="code-keyword">string</span>
-                            <span class="code-method">Name</span> {
-                            <span class="code-keyword">get</span>;
-                            <span class="code-keyword">set</span>; }
-                        </div>
+                        <div class="code color language-csharp">string Name { get; set; }</div>
                     </div>
                 </div>
             </div>

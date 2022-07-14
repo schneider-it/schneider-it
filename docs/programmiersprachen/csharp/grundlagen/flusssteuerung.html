@@ -95,7 +95,7 @@
                             </tr>
                         </table>
                         Hier ein Beispiel:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 double tempInCelsius = new Random().NextDouble() * 50 - 15; 
 
 if (tempInCelsius < 20.0) { 
@@ -108,39 +108,39 @@ if (tempInCelsius < 20.0) {
                         >
                         Wenn nur ein einziger Befehl in der if-Bedingung gibt, kann man die
                         geschwungenen Klammern weglassen.
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 if (tempInCelsius < 20.0) 
     Console.WriteLine("Cold");</pre
                         >
                         Diese Bedingung ist erfüllt, wenn eine der beiden Bedingungen erfüllt ist:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 if (tempInCelsius < 20.0 || tempInCelsius >= 40.0)
     Console.WriteLine("Unangenehm");</pre
                         >
                         Und diese Bedingung ist nur erfüllt, wenn beide Bedingungen erfüllt sind:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 if (tempInCelsius < 20.0 && tempInCelsius >= 40.0)
     Console.WriteLine("Unmöglich");</pre
                         >
                         Dieser Programmcode im if wird nur ausgeführt, wenn maximal eine der beiden
                         Bedingungen zutrifft:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 if (!(tempInCelsius < 20.0 || tempInCelsius >= 40.0))
     Console.WriteLine("Ist es heiß oder kalt?");</pre
                         >
                         Der Programmcode wird nur ausgeführt, wenn keine der beiden Bedingungen
                         zutrifft:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 if (!(tempInCelsius < 20.0 && tempInCelsius >= 40.0))
     Console.WriteLine("Angenehm");</pre
                         >
                         Für kurze if-Statements gibt es auch eine Kurzschreibweise. Die Syntax sieht
                         dann wie folgt aus:
-                        <div class="code language-csharp">
+                        <div class="code color language-csharp">
                             Bedingung ? Code, wenn true : Code, wenn false;
                         </div>
                         Hier ein Beispiel:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 (tempInCelsius < 10.0) ? 
     Console.WriteLine("Kalt") :
     Console.WriteLine("Warm");</pre
@@ -151,7 +151,7 @@ if (!(tempInCelsius < 20.0 && tempInCelsius >= 40.0))
                         Else ist eine Bedingung, die eintritt, wenn das vorherige if nicht eintritt.
                         Allerdings muss man keine eigene Bedingung programmieren. <br />
                         Ein Else kann deshalb niemals ohne if existieren.
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 if (tempInCelsius < 20.0) { 
     tempInCelsius += 10.0;
     Console.WriteLine("Heizkörper einschalten!"); 
@@ -161,14 +161,14 @@ if (tempInCelsius < 20.0) {
                         >
                         Genau wie beim if kann man auch beim else die geschwungenen Klammern
                         weglassen, wenn nur ein Befehl darin steht.
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 if (tempInCelsius < 20.0) 
     Console.WriteLine("Kalt"); 
 else
     Console.WriteLine("Angenehm");</pre
                         >
                         Nach einem else kann sogar noch ein if kommen:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 if (tempInCelsius < 20.0) 
     Console.WriteLine("Kalt"); 
 else if (tempInCelsius >= 40.0) 
@@ -190,7 +190,7 @@ else
                         Bei jedem case und beim default muss am Ende ein Flowcontrol stehen, also
                         break, return oder going to, es sei denn, bei dem case steht gar kein Code
                         (Beispiel Case 5).
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 int number = new Random().Next(1, 10); 
 
 switch (number) { 
@@ -224,7 +224,7 @@ switch (number) {
                         <div>
                             Die while-Schleife wiederholt den Programmcode, der innerhalb steht,
                             solange die Bedingung zutrifft.
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 int counter = 0; 
 
 while (counter < 10) 
@@ -240,7 +240,7 @@ Console.WriteLine(counter);
                             <br />
                             <br />
                             So kann man eine Endlosschleife machen:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 while (true) {
     // some code
 }</pre
@@ -252,14 +252,14 @@ while (true) {
                             Programmcode gezielt eine bestimmte Anzahl oft ausgeführt werden soll.
                             <br /><br />
                             Syntax:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 for (&lt;Inizialisierung (optional)&gt;; &lt;Bedingung&gt;; &lt;Änderung eines Wertes (optional)&gt;)
 {
     // do something
 }
                             </pre>
                             Diese for-Schleife rennt zum Beispiel meistens 10 Mal durch:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 for (int i = 0; i < 10; i++) 
 { 
     // do something 
@@ -267,7 +267,7 @@ for (int i = 0; i < 10; i++)
                             >
                             Wenn man in der obrigen Schleife allerdings i--; programmieren würde,
                             würde die Schleife endlos durchlauft werden:
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 for (int i = 0; i < 10; i++) 
 { 
     i--;
@@ -278,7 +278,7 @@ for (int i = 0; i < 10; i++)
                         <div>
                             Mithilfe der foreach-Schleife kann man sehr einfach Arrays oder Listen
                             durchlaufen.
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 foreach (var item in myArray) { 
     Console.WriteLine(item); 
 }</pre
@@ -288,7 +288,7 @@ foreach (var item in myArray) {
                         <div>
                             Die do-while-Schleife ist wie die while-Schleife, nur dass die do-while
                             auf jeden Fall einmal durchlaufen wird.
-                            <pre class="code language-csharp">
+                            <pre class="code color language-csharp">
 do { 
     // do something 
 } while (&lt;Bedingung&gt;);</pre
@@ -299,7 +299,7 @@ do {
                     <div>
                         return wird verwendet, um von Methoden Werte zurückzugeben. Zum Beispiel
                         gibt diese Methode GetName() in der Klasse Person den Namen zurück:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 class Person { 
     private string name; 
     
@@ -309,13 +309,13 @@ class Person {
 }</pre
                         >
                         Dieser Name kann dann zum Beispiel in eine Variable gespeichert werden:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 Person myPerson = new Person(); 
 string name = myPerson.GetName();</pre
                         >
                         Wenn eine Methode keinen Wert zurückliefert (void), kann man den
                         Programmcode trotzdem zwischenzeitig mit return unterbrechen:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 public void DoSomething() { 
     // Code, der ausgeführt wird 
     return; 
@@ -323,14 +323,14 @@ public void DoSomething() {
 }</pre
                         >
                         Das ist zum Beispiel bei Rekursion relativ hilfreich:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 public void CountUp(int counter) { 
     if (counter >= 10) return;
     CountUp(counter++); 
 }</pre
                         >
                         Obere Methode ist vergleichbar mit dieser while-Schleife:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 while (counter < 10)
     counter++;</pre
                         >
@@ -343,7 +343,7 @@ while (counter < 10)
                         Durchführung des Programmcodes in einer Schleife aus der innersten Schleife
                         herausspringen. Während continue am Beginn der Schleife wieder anfängt,
                         springt break zur ersten Zeile nach der Schleife.
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 for (int i = 0; i < 5; i++) { 
     Console.WriteLine("Juhu!"); 
     // Juhu! wird 5x ausgegeben 
@@ -351,7 +351,7 @@ for (int i = 0; i < 5; i++) {
     // Schleife beginnt mit erhöhtem i von vorne 
 }</pre
                         >
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 for (int i = 0; i < 10; i++) { 
     Console.WriteLine("Juhu!"); 
     // Juhu! wird 1x ausgegeben 
@@ -365,7 +365,7 @@ for (int i = 0; i < 10; i++) {
                         Sprungpunkt am Beginn des Programms setzen, welchen man am Ende des
                         Programms aufruft. Dies hätte dann die gleiche Wirkung wie eine
                         while(true)-Schleife.
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 Sprungpunkt:; 
 Console.WriteLine("Hallo!"); 
 goto Sprungpunkt;</pre
@@ -373,7 +373,7 @@ goto Sprungpunkt;</pre
                         Grundsätzlich wird goto nicht sehr häufig verwendet, weil es ziemlich
                         unübersichtlich ist, trotzdem hat es manche Einsatzmöglichkeiten, wo es
                         gerne verwendet wird:
-                        <pre class="code language-csharp">
+                        <pre class="code color language-csharp">
 while(true) 
     for (int i = 0; i < 10; i++) 
     { 

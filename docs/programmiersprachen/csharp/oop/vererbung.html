@@ -55,47 +55,26 @@
                         <div>
                             Nehmen wir an, wir bauen eine einfache Klasse Person. Person ist nun die
                             BaseClass.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <span class="tab code-keyword">public string</span>
-                                Name { <span class="code-keyword">get</span>;
-                                <span class="code-keyword">set</span>; } <br /><br />
-                                <span class="tab code-keyword">public void</span>
-                                <span class="code-method">SayHello</span>()
-                                <div class="tab">{</div>
-                                <span class="tab"></span
-                                ><span class="tab code-class">Console</span>.<span
-                                    class="code-method"
-                                    >WriteLine</span
-                                >(<span class="code-string">"Hello"</span>);
-                                <div class="tab">}</div>
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+class Person { 
+    public string Name { get; set; } 
+    
+    public void SayHello() { 
+        Console.WriteLine("Hello"); 
+    } 
+}</pre
+                            >
                             Nun wollen wir eine Klasse Student kreieren, die ebenfalls alle
                             Attribute und Methoden von Person enthält. Weil wir doppelten
                             Programmcode vermeiden wollen, lassen wir Student einfach von Person
                             erben.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">Student</span> :
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <br />
-                                <div>}</div>
-                            </div>
+                            <div class="code color language-csharp">class Student : Person { }</div>
                             Durch die Vererbung ist das Attribut Name und die Methode SayHello jetzt
                             auch in der Student Klasse.
-                            <div class="code language-csharp">
-                                <span class="code-class">Student</span>
-                                <span class="code-variable">s1</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">Student</span>();
-                                <br />
-                                <span class="code-variable">s1</span>.Name =
-                                <span class="code-string">"Mike"</span>;
-                            </div>
+                            <pre class="code color language-csharp">
+Student s1 = new Student(); 
+s1.Name = "Mike";</pre
+                            >
                         </div>
                     </div>
                     <h3 id="besondere_Klassen">besondere Klassen</h3>
@@ -107,25 +86,13 @@
                             erbenden Klassen (ChildClass) gemacht werden darf. Also wenn es keinen
                             Sinn machen würde, eine Instanz der abstrakten Klasse (BaseClass) zu
                             bilden.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">abstract class</span>
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <br />
-                                <div>}</div>
-                            </div>
+                            <div class="code color language-csharp">abstract class Person { }</div>
                         </div>
                         <h4 id="besondere_Klassen-sealed_Klassen">sealed Klassen</h4>
                         <div>
                             Sealed Klassen (versiegelte Klassen) sind Klassen, von denen man nicht
                             erben kann. Es kann also keine ChildClass einer sealed Klasse geben.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">sealed class</span>
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <br />
-                                <div>}</div>
-                            </div>
+                            <div class="code color language-csharp">sealed class Person { }</div>
                             Weil sich sealed und abstract gegenseitig eigentlich komplett
                             widersprechen, ist es nicht möglich eine Klasse gleichzeitig abstract
                             und sealed zu machen.
@@ -137,32 +104,20 @@
                         <div>
                             Es ist möglich eine BaseClass Person zu deklarieren, die man dann aber
                             mit der ChildClass Student instanziiert.
-                            <div class="code language-csharp">
-                                <span class="code-class">Person</span>
-                                <span class="code-variable">person</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">Student</span>();
+                            <div class="code color language-csharp">
+                                Person person = new Student();
                             </div>
                             Das sieht auf den ersten Blick ziemlich unlogisch aus, aber diese Logik
                             hat einen wichtigen Einsatzzweck: Arrays / Listen. <br />
                             Dieses Beispiel sollte verdeutlichen, warum diese Instanziierung Sinn
                             macht:
-                            <div class="code language-csharp">
-                                <span class="code-class">Person</span>[]
-                                <span class="code-variable">people</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">Person</span>[3]
-                                <div>{</div>
-                                <span class="tab code-keyword">new</span>
-                                <span class="code-class">Student</span>();
-                                <br />
-                                <span class="tab code-keyword">new</span>
-                                <span class="code-class">Teacher</span>();
-                                <br />
-                                <span class="tab code-keyword">new</span>
-                                <span class="code-class">Scientist</span>();
-                                <div>};</div>
-                            </div>
+                            <pre class="code color language-csharp">
+Person[] people = new Person[3] { 
+    new Student(); 
+    new Teacher(); 
+    new Scientist(); 
+};</pre
+                            >
                             Wir erstellen ein Array mit Personen. Jede Person ist allerdings bereits
                             eine spezifische Person, zum Beispiel ein Lehrer.
                         </div>
@@ -178,77 +133,38 @@
                             "Guten Morgen!" und jeder Wissenschaftler mit "Grüß Gott!" grüßt. In der
                             Klasse Person haben wir bereits eine Methode SayHello, in der die Person
                             mit "Grüß Gott!" grüßt.
-                            <div class="code language-csharp">
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <span class="tab code-keyword">public virtual void</span>
-                                <span class="code-method">SayHello</span>()
-                                <div class="tab">{</div>
-                                <span class="tab"></span
-                                ><span class="tab code-class">Console</span>.<span
-                                    class="code-method"
-                                    >WriteLine</span
-                                >(<span class="code-string">"Grüß Gott!"</span>);
-                                <div class="tab">}</div>
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+class Person { 
+    public virtual void SayHello() {
+        Console.WriteLine("Grüß Gott!"); 
+    } 
+}</pre
+                            >
                             Das Schlüsselwort virtual benötigen wir, damit Polymorphie überhaupt
                             funktioniert.
                             <br /><br />
                             Nun müssen wir die drei Klassen Student, Teacher und Scientist
                             folgendermaßen ausimplementieren, damit unser Programm auch
                             funktioniert:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">Student</span> :
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <span class="tab code-keyword">public override void</span>
-                                <span class="code-method">SayHello</span>()
-                                <div class="tab">{</div>
-                                <span class="tab"></span
-                                ><span class="tab code-class">Console</span>.<span
-                                    class="code-method"
-                                    >WriteLine</span
-                                >(<span class="code-string">"Moin Meister!"</span>);
-                                <div class="tab">}</div>
-                                <div>}</div>
-                                <br />
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">Teacher</span> :
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <span class="tab code-keyword">public override void</span>
-                                <span class="code-method">SayHello</span>()
-                                <div class="tab">{</div>
-                                <span class="tab"></span
-                                ><span class="tab code-class">Console</span>.<span
-                                    class="code-method"
-                                    >WriteLine</span
-                                >(<span class="code-string">"Guten Morgen!"</span>);
-                                <div class="tab">}</div>
-                                <div>}</div>
-                                <br />
-                                <span class="code-keyword">class</span>
-                                <span class="code-class">Scientist</span> :
-                                <span class="code-class">Person</span>
-                                <div>{</div>
-                                <span class="tab code-keyword">public new void</span>
-                                <span class="code-method">SayHello</span>()
-                                <div class="tab">{</div>
-                                <span class="tab"></span
-                                ><span class="tab code-class">Console</span>.<span
-                                    class="code-method"
-                                    >WriteLine</span
-                                >(<span class="code-string">"Heute wieder "</span>
-                                +
-                                <br />
-                                <span class="tab"></span><span class="tab"></span
-                                ><span class="tab code-string">"ein explosiver Tag!");</span>
-                                <div class="tab">}</div>
-                                <div>}</div>
-                            </div>
+                            <pre class="code color language-csharp">
+class Student : Person { 
+    public override void SayHello() {
+        Console.WriteLine("Moin Meister!"); 
+    } 
+} 
+
+class Teacher : Person {
+    public override void SayHello() { 
+        Console.WriteLine("Guten Morgen!"); 
+    } 
+} 
+
+class Scientist : Person { 
+    public new void SayHello() { 
+        Console.WriteLine("Heute wieder " + "ein explosiver Tag!"); 
+    } 
+}
+                            </pre>
                             Wie Sie vielleicht bemerkt haben, verwenden wir bei Student und Teacher
                             das Schlüsselwort override, damit wir die BaseMethode überschreiben
                             (Polymorphes Verhalten).
@@ -257,48 +173,24 @@
                             BaseMethode aufgerufen wird (Nicht&#8209;Polymorphes Verhalten).
                             <br /><br />
                             Bei folgendem Programm sieht die Ausgabe dementsprechend so aus:
-                            <div class="code language-csharp">
-                                <span class="code-keyword">static void</span>
-                                <span class="code-method">Main</span>(<span class="code-keyword"
-                                    >string</span
-                                >[] <span class="code-variable">args</span>)
-                                <div>{</div>
-                                <span class="tab code-class">Person</span>[]
-                                <span class="code-variable">people</span> =
-                                <span class="code-keyword">new</span>
-                                <span class="code-class">Person</span>[3]
-                                <div class="tab">{</div>
-                                <span class="tab"></span><span class="tab code-keyword">new</span>
-                                <span class="code-class">Student</span>();
-                                <br />
-                                <span class="tab"></span><span class="tab code-keyword">new</span>
-                                <span class="code-class">Teacher</span>();
-                                <br />
-                                <span class="tab"></span><span class="tab code-keyword">new</span>
-                                <span class="code-class">Scientist</span>();
-                                <div class="tab">};</div>
-                                <br />
-                                <span class="tab code-flowcontrol">foreach</span>(<span
-                                    class="code-keyword"
-                                    >var</span
-                                >
-                                <span class="code-variable">item</span>
-                                <span class="code-flowcontrol">in</span>
-                                <span class="code-variable">people</span>)
-                                <div class="tab">{</div>
-                                <span class="tab"></span
-                                ><span class="tab code-variable">item</span>.<span
-                                    class="code-method"
-                                    >SayHello</span
-                                >();
-                                <div class="tab">}</div>
-                                <div>}</div>
-                            </div>
-                            <div class="code language-csharp">
-                                Moin Meister! <br />
-                                Guten Morgen! <br />
-                                Grüß Gott!
-                            </div>
+                            <pre class="code color language-csharp">
+static void Main(string[] args) { 
+    Person[] people = new Person[3] {
+        new Student(); 
+        new Teacher(); 
+        new Scientist(); 
+    }; 
+    
+    foreach(var item in people) { 
+        item.SayHello(); 
+    } 
+}</pre
+                            >
+                            <pre class="code color language-csharp">
+Moin Meister!
+Guten Morgen!
+Grüß Gott!</pre
+                            >
                             Hier noch einmal die drei wichtigen Schlüsselwörter im Überblick:
                             <table>
                                 <tr>

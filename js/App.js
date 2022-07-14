@@ -159,7 +159,7 @@ function SetCardColors() {
 }
 
 function LoadHighlightCode() {
-    document.querySelectorAll(".code").forEach((el) => {
+    document.querySelectorAll(".code.color").forEach((el) => {
         try {
             hljs.highlightElement(el);
         } catch {}
@@ -183,6 +183,7 @@ function CopyToClipboardCode(id) {
     var code = document.querySelector(id);
     let text = code.textContent;
     text = text.replace(/^\s+|\s+$/gm, "");
+    text = text.replace(/</g, "&lt;").replace(/>/g, "&gt;");
     navigator.clipboard.writeText(text.substring(0, text.length - 5));
 }
 
