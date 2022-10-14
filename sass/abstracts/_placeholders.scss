@@ -1,9 +1,0 @@
-%flex-between {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    &.nowrap {
-        flex-wrap: nowrap;
-    }
-}
