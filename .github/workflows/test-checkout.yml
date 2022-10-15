@@ -1,0 +1,15 @@
+name: Update indexer.json file
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  update-indexer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: file structure
+        run: ls -la
