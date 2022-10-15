@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  update-indexer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd tools/indexer/
+      - run: source indexer-venv/bin/activate
+      - run: python3 indexer.py
