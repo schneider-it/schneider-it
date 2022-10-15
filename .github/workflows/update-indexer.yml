@@ -1,3 +1,5 @@
+name: Update indexer.json file
+
 on:
   push:
     branches:
