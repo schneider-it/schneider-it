@@ -21,7 +21,7 @@ jobs:
       - name: update 
         run: |
           cd tools/indexer/
-          sudo apt install python3-bs4
+          # sudo apt install python3-bs4
           # python3 -m venv indexer-venv
           # source indexer-venv/bin/activate
           python3 indexer.py
