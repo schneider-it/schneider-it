@@ -11,5 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: cd tools/indexer/
+      - run: python3 -m venv indexer-venv
       - run: source indexer-venv/bin/activate
       - run: python3 indexer.py
