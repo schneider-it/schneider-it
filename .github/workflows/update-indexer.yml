@@ -22,3 +22,9 @@ jobs:
         run: |
           cd tools/indexer/
           python3 indexer.py
+      
+      - name: push index.json
+        run: |
+          git add .
+          git commit -m "update index.json"
+          git push
