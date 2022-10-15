@@ -16,10 +16,13 @@ jobs:
       - uses: BSFishy/pip-action@v1
         with:
           requirements: tools/indexer/requirements.txt
-      - uses: stefanzweifel/git-auto-commit-action@v4
 
       
       - name: update 
         run: |
           cd tools/indexer/
           python3 indexer.py
+
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: update indexer.json (automated)
