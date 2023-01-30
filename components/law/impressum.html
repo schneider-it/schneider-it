@@ -35,83 +35,17 @@
         <div class="section">
             <div class="container" style="margin-top: 10vh">
                 <div>
-                    <h3>Danke liebe SpenderInnen!</h3>
+                    <h3>Mitwirkende und Unterstützende Personen</h3>
                     <div>
-                        Ein
-                        <h4 style="display: inline">RIESIGES DANKESCHÖN</h4>
-                        an alle Spenderinnen und Spender. Ihr ermöglicht es erst, diese Webseite zu
-                        betreiben!
-                    </div>
-                    <h3>Alle Mitwirkenden</h3>
-                    <div>
-                        Ebenso ein
-                        <h5 style="display: inline">großes Danke</h5>
-                        an alle mitwirkenden Person!
                         <table>
                             <tr>
-                                <th>Mitwirkende und Unterstützende Personen</th>
-                            </tr>
-                            <tr>
-                                <td>👑 Anton Xaver Edlinger</td>
-                            </tr>
-                            <tr>
-                                <td>👑 Valentin Fritz</td>
-                            </tr>
-                            <tr>
-                                <td>👑 Yanik Latzka</td>
-                            </tr>
-                            <tr>
-                                <td>Mag. Paul Nagl</td>
-                            </tr>
-                            <tr>
-                                <td>Dipl.-Ing.(FH) Alexander Mestl</td>
-                            </tr>
-                            <tr>
-                                <td>Dipl.-Ing. Dr. Strohmayr Sabine</td>
+                                <th>Programmierer</th>
                             </tr>
                             <tr>
                                 <td>Clemens Schlipfinger</td>
                             </tr>
-                            <tr>
-                                <td>Samuel Leeb</td>
-                            </tr>
-                            <tr>
-                                <td>Vanessa Kausl</td>
-                            </tr>
-                            <tr>
-                                <td>Christian Schneider</td>
-                            </tr>
-                            <tr>
-                                <td>Valentin Schmitzberger</td>
-                            </tr>
-                            <tr>
-                                <td>Alexander Schindl</td>
-                            </tr>
-                            <tr>
-                                <td>Simon Höller</td>
-                            </tr>
                         </table>
-                        👑 ehrenvolle Spender
-                    </div>
-                    <h3>Kontaktdaten</h3>
-                    <div>
-                        <table>
-                            <tr>
-                                <th style="width: 33%">Person</th>
-                                <th style="width: 33%">Email</th>
-                                <th style="width: 33%">Zuständigkeitsbereich</th>
-                            </tr>
-                            <tr>
-                                <td>Felix Schneider</td>
-                                <td id="email1" class="email">Hidden</td>
-                                <td>HTML, CSS, JS</td>
-                            </tr>
-                            <tr>
-                                <td>Clemens Schlipfinger</td>
-                                <td id="email2" class="email">Hidden</td>
-                                <td>Python</td>
-                            </tr>
-                        </table>
+                        <!-- 👑 ehrenvolle Spender -->
                     </div>
                 </div>
             </div>
@@ -130,36 +64,5 @@
         <script src="/tools/highlight/highlight.min.js"></script>
 
         <script defer type="text/javascript" src="/js/App.js"></script>
-
-        <script>
-            var email1 = document.getElementById("email1");
-            var email2 = document.getElementById("email2");
-
-            email1.addEventListener("click", function () {
-                email1.innerHTML = "felix@schneider-it.at";
-                if (email1.getAttribute("clicked") == "") {
-                    navigator.clipboard.writeText("felix@schneider-it.at");
-                    email1.innerHTML = "copied";
-                    email1.setAttribute("copied", "");
-                    setTimeout(function () {
-                        email1.innerHTML = "felix@schneider-it.at";
-                        email1.removeAttribute("copied");
-                    }, 1200);
-                } else email1.setAttribute("clicked", "");
-            });
-
-            email2.addEventListener("click", function () {
-                email2.innerHTML = "clemens.schlipfinger@gmail.com";
-                if (email2.getAttribute("clicked") == "") {
-                    navigator.clipboard.writeText("clemens.schlipfinger@gmail.com");
-                    email2.innerHTML = "copied";
-                    email2.setAttribute("copied", "");
-                    setTimeout(function () {
-                        email2.innerHTML = "clemens.schlipfinger@gmail.com";
-                        email2.removeAttribute("copied");
-                    }, 1200);
-                } else email2.setAttribute("clicked", "");
-            });
-        </script>
     </body>
 </html>
