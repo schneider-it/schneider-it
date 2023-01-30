@@ -1,0 +1,87 @@
+﻿@using Markdig
+
+<MudTabs Elevation="2" Rounded="true" ApplyEffectsToContainer="true" PanelClass="pa-6" Style="max-width: 70vw">
+    <MudTabPanel Text="Editor">
+        <div style="display: flex; justify-content: space-between">
+            <MudButtonGroup Color="Color.Primary" Variant="Variant.Text">
+                <MudTooltip Text="Bold" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.FormatBold" Color="Color.Primary" aria-label="Bold"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+                <MudTooltip Text="Italic" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.FormatItalic" Color="Color.Primary" aria-label="Italic"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+                <MudTooltip Text="Quote" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.FormatQuote" Color="Color.Primary" aria-label="Quote"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+                <MudTooltip Text="Heading" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.FormatSize" Color="Color.Primary" aria-label="Heading"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+            </MudButtonGroup>
+            <MudButtonGroup Color="Color.Primary" Variant="Variant.Text">
+                <MudTooltip Text="Unordered List" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.FormatListBulleted" Color="Color.Primary" aria-label="Unordered List"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+                <MudTooltip Text="Ordered List" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.FormatListNumbered" Color="Color.Primary" aria-label="Ordered List"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+                <MudTooltip Text="Checkbox" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.Checklist" Color="Color.Primary" aria-label="Checkbox"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+            </MudButtonGroup>
+            <MudButtonGroup Color="Color.Primary" Variant="Variant.Text">
+                <MudTooltip Text="Link" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.AddLink" Color="Color.Primary" aria-label="Link"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+                <MudTooltip Text="Image" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.Image" Color="Color.Primary" aria-label="Image"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+                <MudTooltip Text="Mention User" Arrow="true" Placement="Placement.Top" Color="Color.Tertiary">
+                    <MudButton>
+                        <MudIcon Icon="@Icons.Material.Filled.AlternateEmail" Color="Color.Primary" aria-label="Mention User"></MudIcon>
+                    </MudButton>
+                </MudTooltip>
+            </MudButtonGroup>
+        </div>
+
+        <MudFocusTrap>
+            <MudTextField T="string"
+                          @bind-Value="Text"
+                          Variant="Variant.Outlined" Lines="25"
+                          Counter="40000" MaxLength="40000"
+                          Immediate="true"/>
+        </MudFocusTrap>
+    </MudTabPanel>
+    <MudTabPanel Text="Preview">
+        <div>
+            @((MarkupString)Preview)
+        </div>
+    </MudTabPanel>
+    <MudTabPanel Text="Raw">
+        <div>
+            @Preview
+        </div>
+    </MudTabPanel>
+</MudTabs>
+
+@code {
+    public string Text { get; set; } = String.Empty;
+    public string Preview => Markdown.ToHtml(Text);
+}

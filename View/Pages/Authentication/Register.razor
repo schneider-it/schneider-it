@@ -1,0 +1,128 @@
+﻿@page "/authentication/register"
+@using Model.Entities.Authentication.Models
+@using Model.Entities.Authentication
+@inject ILogger<Login> Logger
+
+<MudCard Class="position-relative w-100" Style="min-width: 35rem">
+    <MudCardHeader>
+        <MudText Typo="Typo.h5">Register</MudText>
+    </MudCardHeader>
+    <MudCardContent>
+        <ErrorMsg @bind-Msg="_error"/>
+        <SuccessMsg @bind-Msg="_success"/>
+        <div @onkeydown="@TryRegister">
+            <MudForm @ref="_form">
+                <MudTextField
+                    T="string"
+                    InputMode="InputMode.text" InputType="InputType.Text" Immediate="true"
+                    Counter="32" MaxLength="32"
+                    Label="Username"
+                    @bind-Value="RegUser.Username"
+                    For="() => RegUser.Username"/>
+                <MudTextField
+                    T="string"
+                    InputMode="InputMode.text" InputType="InputType.Text" Immediate="true"
+                    Counter="50" MaxLength="50"
+                    Label="Email"
+                    @bind-Value="RegUser.Email"
+                    For="() => RegUser.Email"/>
+                <MudTextField
+                    T="string"
+                    InputMode="InputMode.text" InputType="_passwordInputType" Immediate="true"
+                    Label="Password"
+                    Adornment="Adornment.End"
+                    AdornmentIcon="@_passwordInputIcon" OnAdornmentClick="ShowPwd"
+                    @bind-Value="RegUser.LoginPassword"
+                    For="() => RegUser.LoginPassword"/>
+            </MudForm>
+        </div>
+        <MudOverlay @bind-Visible="_isRegistering" DarkBackground="true" AutoClose="false" Absolute="true">
+            <MudProgressCircular Color="Color.Primary" Indeterminate="true" Size="Size.Large" StrokeWidth="5"/>
+        </MudOverlay>
+    </MudCardContent>
+    <MudCardActions Style="margin-inline: .4rem; padding-bottom: 1rem;">
+        <MudButton ButtonType="ButtonType.Button" Variant="Variant.Filled" Color="Color.Primary" OnClick="async () => await HandleRegisterAsync()">
+            Register
+        </MudButton>
+        <MudSpacer/>
+        <a href="authentication/login">
+            <MudText Typo="Typo.subtitle1">
+                Already have an account?
+            </MudText>
+        </a>
+    </MudCardActions>
+</MudCard>
+
+
+@code {
+
+    bool _isRegistering;
+    MudForm _form = null!;
+    string? _error;
+    string? _success;
+
+    bool _isShow;
+    string _passwordInputIcon = Icons.Material.Filled.Visibility;
+    InputType _passwordInputType = InputType.Password;
+
+    User RegUser { get; } = new();
+
+    void ShowPwd() {
+        if (_isShow) {
+            _isShow = false;
+            _passwordInputIcon = Icons.Material.Filled.Visibility;
+            _passwordInputType = InputType.Password;
+        }
+        else {
+            _isShow = true;
+            _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
+            _passwordInputType = InputType.Text;
+        }
+    }
+
+    async void TryRegister(KeyboardEventArgs e) {
+        if (e.Code is "Enter" or "NumpadEnter")
+            await HandleRegisterAsync();
+    }
+
+    void SetError(string msg) {
+        _error = msg;
+        _success = null;
+    }
+
+    async Task HandleRegisterAsync() {
+        try {
+            if (!await _form.IsFormValidAsync()) return;
+            _error = null;
+            _isRegistering = true;
+            await UserService.RegisterAsync(RegUser);
+            await UserService.LoginAsync(new LoginModel(RegUser.Email, RegUser.LoginPassword));
+            _success = "Registration successful!";
+        }
+        catch (DuplicateEmailException) {
+            SetError("Invalid email!");
+        }
+        catch (LoginException) {
+            SetError("Invalid email or Password!");
+        }
+        catch (TaskCanceledException) {
+            SetError("Request timed out! Please try again later.");
+            Logger.LogInformation("Register/Login canceled");
+        }
+        catch (OperationCanceledException) {
+            SetError("Request timed out! Please try again later.");
+            Logger.LogInformation("Register/Login canceled");
+        }
+        catch (Exception e) {
+            SetError("An error occurred! Please try again later.");
+            Logger.LogError(e, "Register/Login failed");
+        }
+        finally {
+            _isRegistering = false;
+            StateHasChanged();
+        }
+    }
+
+
+
+}

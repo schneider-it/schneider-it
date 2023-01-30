@@ -1,0 +1,121 @@
+﻿@page "/authentication/login"
+@inject ILogger<Login> Logger
+
+@using Model.Entities.Authentication.Models
+@inherits CancellationComponent
+
+
+<MudCard Class="position-relative w-100" Style="min-width: 35rem">
+    <MudCardHeader>
+        <MudText Typo="Typo.h5">Login</MudText>
+        <AuthorizeView>
+            <Authorized>
+                <MudSpacer/>
+                <MudText Typo="Typo.subtitle1" Color="Color.Info">You are already logged in, but you can still change accounts</MudText>
+            </Authorized>
+        </AuthorizeView>
+    </MudCardHeader>
+    <MudCardContent>
+        <ErrorMsg @bind-Msg="_error"/>
+        <SuccessMsg @bind-Msg="_success"/>
+        <div @onkeydown="@TryLogin">
+            <MudForm @ref="_from">
+                <MudTextField
+                    T="string" Immediate="true" InputType="InputType.Text" InputMode="InputMode.text"
+                    Label="Email"
+                    Counter="50" MaxLength="50"
+                    @bind-Value="Model.Email"
+                    For="() => Model.Email"/>
+                <MudTextField
+                    T="string" Immediate="true" InputMode="InputMode.text"
+                    Label="Password" Class="mt-3"
+                    InputType="_passwordInputType" Adornment="Adornment.End"
+                    AdornmentIcon="@_passwordInputIcon" OnAdornmentClick="ShowPwd"
+                    @bind-Value="Model.Password"
+                    For="() => Model.Password"/>
+            </MudForm>
+        </div>
+        <MudOverlay @bind-Visible="_isLoggingIn" DarkBackground="true" AutoClose="false" LockScroll="true" Absolute="true">
+            <MudProgressCircular Color="Color.Primary" Indeterminate="true" Size="Size.Large"/>
+        </MudOverlay>
+    </MudCardContent>
+    <MudCardActions Style="margin-inline: .4rem; padding-bottom: 1rem;">
+        <MudButton Disabled="_isLoggingIn" ButtonType="ButtonType.Button" Variant="Variant.Filled" Color="Color.Primary" OnClick="async () => await HandleLoginAsync()">Login</MudButton>
+        <MudSpacer/>
+        <a href="authentication/register">
+            <MudText Typo="Typo.subtitle1">
+                Don't have an account?
+            </MudText>
+        </a>
+    </MudCardActions>
+</MudCard>
+
+
+@code {
+    bool _isLoggingIn;
+
+    MudForm _from = null!;
+    string? _error;
+    string? _success;
+
+    bool _isShow;
+    string _passwordInputIcon = Icons.Material.Filled.Visibility;
+    InputType _passwordInputType = InputType.Password;
+
+
+    LoginModel Model { get; } = new();
+
+    void ShowPwd() {
+        if (_isShow) {
+            _isShow = false;
+            _passwordInputIcon = Icons.Material.Filled.Visibility;
+            _passwordInputType = InputType.Password;
+        }
+        else {
+            _isShow = true;
+            _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
+            _passwordInputType = InputType.Text;
+        }
+    }
+
+    async void TryLogin(KeyboardEventArgs e) {
+        if (e.Code is "Enter" or "NumpadEnter")
+            await HandleLoginAsync();
+    }
+    
+    void SetError(string msg) {
+        _error = msg;
+        _success = null;
+    }
+
+    async Task HandleLoginAsync() {
+        try {
+            if (!await _from.IsFormValidAsync()) return;
+            _error = null;
+            _isLoggingIn = true;
+            await UserService.LoginAsync(Model);
+            _success = "Login successful!";
+        }
+        catch (LoginException) {
+    // this is the only exception that can be thrown by the login method (we wrote that ourselves :))
+            SetError("Invalid username or password");
+        }
+        catch (TaskCanceledException) {
+            SetError("Request timed out! Please try again later.");
+            Logger.LogInformation("Login canceled");
+        }
+        catch (OperationCanceledException) {
+            SetError("Request timed out! Please try again later.");
+            Logger.LogInformation("Login canceled");
+        }
+        catch (Exception e) {
+            SetError("An error occurred! Please try again later.");
+            Logger.LogError(e, "Login failed");
+        }
+        finally {
+            _isLoggingIn = false;
+            StateHasChanged();
+        }
+    }
+
+}

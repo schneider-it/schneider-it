@@ -1,0 +1,135 @@
+﻿@using Model.Entities.Authentication
+<MudPaper class="ml-5 pa-4 position-relative rounded-r-xl" Style="width: 100%" Outlined="true" Elevation="5" Square="true">
+
+    @if (ErrorMessage is not null)
+    {
+        <MudAlert Severity="Severity.Error" ShowCloseIcon="true" CloseIconClicked="() => ErrorMessage = null">
+            @(ErrorMessage)
+        </MudAlert>
+    }
+
+    <MudGrid>
+        <MudItem xs="8">
+            <MudText Typo="Typo.subtitle2" Style="transform: scaleY(0.9)">USERNAME</MudText>
+            <MudText Style="font-size: 1.2rem; font-weight: bold">@User.Username</MudText>
+            <MudText Style="font-size: 0.9rem; font-weight: lighter" Color="Color.Info">
+                You can change your username 3 times within 60 days.
+            </MudText>
+        </MudItem>
+        <MudItem xs="4">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+                       Style="top: 50%; transform: translateY(-50%)">
+                Change Username
+            </MudButton>
+        </MudItem>
+        
+        <MudItem xs="8">
+            <MudText Typo="Typo.subtitle2" Style="transform: scaleY(0.9)">EMAIL</MudText>
+            <MudText>
+                <span Style="font-size: 1.2rem; font-weight: bold">@_hiddenEmail</span>
+                <MudLink @onclick="HideEmail" Color="Color.Secondary">
+                    @(_emailIsHidden ? "Show Email" : "Hide Email")
+                </MudLink>
+            </MudText>
+            <MudText Style="font-size: 0.9rem; font-weight: lighter" Color="Color.Info">
+                You can change your email 5 times within 90 days.
+            </MudText>
+        </MudItem>
+        <MudItem xs="4">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+                       Style="top: 50%; transform: translateY(-50%)">
+                Change Email
+            </MudButton>
+        </MudItem>
+        
+        <MudItem xs="8">
+            <MudText Typo="Typo.subtitle2" Style="transform: scaleY(0.9)">PASSWORD</MudText>
+            <MudText>
+                <span Style="font-size: 1.2rem; font-weight: bold">@_hiddenPassword</span>
+            </MudText>
+            <MudText Style="font-size: 0.9rem; font-weight: lighter" Color="Color.Info">
+                You can change your password 6 times within 30 days.
+            </MudText>
+        </MudItem>
+        <MudItem xs="4">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" FullWidth="true"
+                       Style="top: 50%; transform: translateY(-50%)">
+                Change Password
+            </MudButton>
+        </MudItem>
+    </MudGrid>
+
+    <MudOverlay Visible="IsLoading" DarkBackground="true" AutoClose="false" Absolute="true">
+        <MudProgressCircular Color="Color.Primary" Indeterminate="true" Size="Size.Large" StrokeWidth="5"/>
+    </MudOverlay>
+</MudPaper>
+
+@code {
+
+    [Parameter]
+    public string? ErrorMessage { get; set; }
+
+    [Parameter]
+    public EventCallback<string?> ErrorMessageChanged { get; set; }
+
+    [Parameter]
+    [EditorRequired]
+    public bool IsLoading { get; set; }
+
+    [Parameter]
+    [EditorRequired]
+    public User User { get; set; } = null!;
+
+    [Parameter]
+    [EditorRequired]
+    public EventCallback SaveClick { get; set; }
+
+    bool _isShow;
+    string _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
+    InputType _passwordInputType = InputType.Password;
+
+    void ShowPwd()
+    {
+        if (_isShow)
+        {
+            _isShow = false;
+            _passwordInputIcon = Icons.Material.Filled.VisibilityOff;
+            _passwordInputType = InputType.Password;
+        }
+        else
+        {
+            _isShow = true;
+            _passwordInputIcon = Icons.Material.Filled.Visibility;
+            _passwordInputType = InputType.Text;
+        }
+    }
+
+    string _hiddenEmail = null!;
+    bool _emailIsHidden;
+    
+    string _hiddenPassword = null!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        _hiddenEmail = await UserRepository.GetHiddenEmail(User.Email);
+        _emailIsHidden = true;
+
+        RandomHiddenPassword();
+    }
+
+    async Task HideEmail()
+    {
+        if (_emailIsHidden)
+            _hiddenEmail = User.Email;
+        else
+            _hiddenEmail = await UserRepository.GetHiddenEmail(User.Email);
+        _emailIsHidden = !_emailIsHidden;
+        StateHasChanged();
+    }
+
+    void RandomHiddenPassword()
+    {
+        _hiddenPassword = new String('*', new Random().Next(8, new Random().Next(16, 21)));
+    }
+
+}

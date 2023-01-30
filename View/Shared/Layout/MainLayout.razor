@@ -1,0 +1,40 @@
+﻿@inherits LayoutComponentBase
+
+<MudDialogProvider
+    CloseButton="true"
+    DisableBackdropClick="false"
+    Position="DialogPosition.Center"
+    CloseOnEscapeKey="true"/>
+<MudSnackbarProvider/>
+<MudThemeProvider Theme="ThemeHandler.Theme"/>
+
+<MudLayout>
+    <Header></Header>
+    <MudMainContent>
+        <MudContainer Class="mt-4">
+            <div Style="display: inline-block; position: relative; left: 50%; transform: translateX(-50%);">
+                @Body
+            </div>
+        </MudContainer>
+    </MudMainContent>
+    <Footer></Footer>
+</MudLayout>
+
+@code {
+
+    protected override void OnInitialized() {
+        ThemeHandler.ThemeChange += Invoker;
+    }
+
+
+    public void Dispose() {
+        ThemeHandler.ThemeChange -= Invoker;
+    }
+
+
+    private async void Invoker() {
+        await InvokeAsync(StateHasChanged);
+    }
+
+
+}
