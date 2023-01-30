@@ -1,0 +1,19 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+.email {
+    background-color: var(--background-color-2);
+    color: var(--font-color-secondary);
+    cursor: pointer;
+
+    &[clicked] {
+        background: none;
+        color: var(--font-color);
+    }
+
+    &[copied] {
+        background-color: var(--main-color);
+        color: var(--font-color-light);
+        cursor: default;
+    }
+}

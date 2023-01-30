@@ -1,0 +1,94 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/placeholders" as *;
+
+.container {
+    position: relative;
+    width: var(--container);
+    margin: auto;
+
+    &[container-size="fluid"] {
+        width: 100%;
+    }
+
+    &[container-size="small"] {
+        width: 50%;
+    }
+}
+
+.section {
+    min-height: 100vh;
+    width: 100%;
+}
+
+:target::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 0;
+    $target-abstand-top: 2.4rem;
+    height: $target-abstand-top;
+    margin-top: -$target-abstand-top;
+}
+
+// Formel (ausgehend von backButton): 2rem (margin-top) + 2 * 1.15rem (4rem - 1.7rem / 2) - (font-size - 1.7rem / 2)
+
+// h1 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(4.2rem, 5.5vw, 5rem) - 1.7rem) / 2);
+// }
+
+// h2 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(2.5rem, 3.3vw, 3rem) - 1.7rem) / 2);
+// }
+
+// h3 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(1.9rem, 2.5vw, 2.3rem) - 1.7rem) / 2);
+// }
+
+// h4 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(1.5rem, 2vw, 1.9rem) - 1.7rem) / 2);
+// }
+
+// h5 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(1.2rem, 1.64vw, 1.5rem) - 1.7rem) / 2);
+// }
+
+// h6 :target::before {
+//     $target-abstand-top: calc(2rem + 2 * 1.15rem - (clamp(1.1rem, 1.3vw, 1.3rem) - 1.7rem) / 2);
+// }
+
+i[centered]:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+// Wenn Scrollbar sichtbar sein soll...
+// ::-webkit-scrollbar {
+//     width: .5vw;
+// }
+
+// ::-webkit-scrollbar-track {
+//     margin-block: .2vw;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     background: #555;
+//     border: transparent solid 3vw;
+//     border-radius: 10000px;
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//     background: #666;
+// }

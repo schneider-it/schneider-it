@@ -1,0 +1,51 @@
+@use "../abstracts/variables" as *;
+
+.img {
+    display: block;
+    max-height: 40rem;
+    max-width: 100%;
+    margin-block: 1.5rem;
+
+    &:not([no-border-radius]) {
+        border-radius: var(--border-radius);
+    }
+
+    &[img-size="large"] {
+        max-height: 60rem;
+        max-width: 60rem;
+    }
+
+    &[img-size="big"] {
+        max-height: 50rem;
+        max-width: 50rem;
+    }
+
+    &[img-size="medium"] {
+        max-height: 30rem;
+        max-width: 30rem;
+    }
+
+    &[img-size="small"] {
+        max-height: 15rem;
+        max-width: 15rem;
+    }
+
+    &[img-size="little"] {
+        max-height: 5rem;
+        max-width: 5rem;
+    }
+}
+
+body[colorTheme="dark"] {
+    .img[invert] {
+        filter: invert(1);
+    }
+}
+
+body[colorTheme="auto"] {
+    @media (prefers-color-scheme: dark) {
+        .img[invert] {
+            filter: invert(1);
+        }
+    }
+}

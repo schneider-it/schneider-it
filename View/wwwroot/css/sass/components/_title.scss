@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as *;
+
+.title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4rem;
+
+    display: inline-grid;
+    gap: 1.5rem;
+    margin-top: 8rem;
+    grid-template-columns: 3rem 1fr;
+
+    user-select: none;
+
+    & > :is(img, i) {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 3rem;
+        height: 3rem;
+        object-fit: cover;
+
+        &[img-border-radius] {
+            border-radius: 10000px;
+        }
+
+        &[spinning] {
+            animation: spin-logo 1.95s cubic-bezier(0.65, 0, 0.35, 1) 0s infinite alternate
+                backwards;
+        }
+    }
+
+    & i::before {
+        font-size: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    & > h1 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        font-weight: 700;
+        margin: 0;
+        // word-break: break-all;
+    }
+}
+
+@media (min-width: 60em) {
+    .title {
+        margin-top: 2rem;
+    }
+}

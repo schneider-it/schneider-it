@@ -1,0 +1,108 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+.code-string {
+    color: var(--font-color-code-string) !important;
+}
+.code-comment {
+    color: var(--font-color-code-comment) !important;
+}
+.code-class {
+    color: var(--font-color-code-class) !important;
+}
+.code-struct {
+    color: var(--font-color-code-struct) !important;
+}
+.code-method {
+    color: var(--font-color-code-method) !important;
+}
+.code-variable {
+    color: var(--font-color-code-variable) !important;
+}
+.code-number {
+    color: var(--font-color-code-number) !important;
+}
+.code-keyword {
+    color: var(--font-color-code-keyword) !important;
+}
+.code-keyword-optional {
+    color: var(--font-color-code-keyword-optional) !important;
+}
+.code-generic {
+    color: var(--font-color-code-generic) !important;
+}
+.code-flowcontrol {
+    color: var(--font-color-code-flowcontrol) !important;
+}
+.code-error {
+    color: var(--font-color-code-error) !important;
+}
+.code-normal {
+    color: var(--font-color-code-normal) !important;
+}
+
+.code {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 2.5rem 0;
+    padding: 1.5rem;
+    padding-right: 5rem;
+    color: var(--font-color);
+    background-color: var(--background-color-code);
+    border: 3px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-family: "Source Code Pro", monospace;
+    font-weight: 600;
+    user-select: text;
+    line-height: 1.5;
+    // counter-increment: code-id;
+
+    & .code-copy {
+        position: absolute;
+        top: -2rem;
+        right: -1rem;
+        padding: 0.5rem 1rem;
+        color: var(--font-color);
+        background-color: var(--background-color-code-copy);
+        border: var(--main-color) 0.25rem solid;
+        border-radius: var(--border-radius);
+        text-align: center;
+        vertical-align: middle;
+        cursor: pointer;
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        transition: background-color var(--transition-short) ease-in-out;
+        z-index: 10;
+
+        &[copied] {
+            color: var(--font-color-light);
+            background-color: var(--main-color);
+        }
+    }
+
+    & div,
+    span {
+        font-family: inherit;
+    }
+
+    & .tab::before {
+        content: "\00A0\00A0\00A0\00A0";
+    }
+}
+
+@media (min-width: 40em) {
+    .code {
+        &::after {
+            font-family: "Font Awesome 5 Free";
+            content: "\f121";
+            position: absolute;
+            right: 1.5rem;
+            top: 0;
+            height: 100%;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

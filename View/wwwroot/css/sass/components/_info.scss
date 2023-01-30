@@ -1,0 +1,33 @@
+@use "../abstracts/colors" as *;
+@use "../abstracts/variables" as *;
+
+.info {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 1.5em;
+    padding-right: 5rem;
+    color: var(--font-color-info);
+    background-color: var(--background-color-info);
+    border: 3px solid var(--border-color-2);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+
+    &::before {
+        content: "Info: ";
+        font-weight: 800;
+    }
+
+    &::after {
+        font-family: "Font Awesome 5 Free";
+        content: "\f129";
+        position: absolute;
+        right: 1.5rem;
+        top: 0;
+        height: 100%;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+    }
+}
