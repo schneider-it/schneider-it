@@ -2,60 +2,58 @@
 
 <PageTitle>Search - Schneider IT</PageTitle>
 
-<div class="wrapper">
-    <div class="search_div">
-        <form id="search_form">
-            <input
-                type="text"
-                id="search"
-                name=""
-                placeholder="Search"
-                autofocus
-                autocapitalize="none"
-                autocomplete="off"
-                autocorrect="off"/>
-        </form>
-        <span id="information-after"></span>
-    </div>
-
-    <div id="info">
-        <div id="info-no-result">
-            <h5>Your search did not return any results.</h5>
-            <h6>Suggestions:</h6>
-            <ul>
-                <li>Make sure all words are spelled correctly.</li>
-                <li>Try other search terms.</li>
-                <li>Try more general search terms.</li>
-            </ul>
-        </div>
-        <div id="info-hr">
-            <hr/>
-        </div>
-        <div
-            id="info-latest-result"
-            class="grid"
-            responsive
-            grid-template-columns="1,3,1"
-            centered>
-            <h5>Latest Result:</h5>
-            <div id="slider-container">
-                <span id="slider-info">Save this amount of results:</span>
-                <input id="slider-range" type="range" min="0"/>
-                <span id="slider-value"></span>
-            </div>
-            <div id="clear_search_history" class="button" onclick="ClearSearchHistory()" small>
-                Clear Latest Result&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-down"></i>
-            </div>
-        </div>
-        <div id="bring-back-latest-result">
-            <div class="button">
-                Do you want to save results in local history?&nbsp;
-                <i class="fa-solid fa-arrow-right-long"></i>
-            </div>
-        </div>
-    </div>
-    <div id="ergebnisse"></div>
+<div class="search_div">
+    <form id="search_form">
+        <input
+            type="text"
+            id="search"
+            name=""
+            placeholder="Search"
+            autofocus
+            autocapitalize="none"
+            autocomplete="off"
+            autocorrect="off"/>
+    </form>
+    <span id="information-after"></span>
 </div>
+
+<div id="info">
+    <div id="info-no-result">
+        <h5>Your search did not return any results.</h5>
+        <h6>Suggestions:</h6>
+        <ul>
+            <li>Make sure all words are spelled correctly.</li>
+            <li>Try other search terms.</li>
+            <li>Try more general search terms.</li>
+        </ul>
+    </div>
+    <div id="info-hr">
+        <hr/>
+    </div>
+    <div
+        id="info-latest-result"
+        class="grid"
+        responsive
+        grid-template-columns="1,3,1"
+        centered>
+        <h5>Latest Result:</h5>
+        <div id="slider-container">
+            <span id="slider-info">Save this amount of results:</span>
+            <input id="slider-range" type="range" min="0"/>
+            <span id="slider-value"></span>
+        </div>
+        <div id="clear_search_history" class="button" onclick="ClearSearchHistory()" small>
+            Clear Latest Result&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </div>
+    <div id="bring-back-latest-result">
+        <div class="button">
+            Do you want to save results in local history?&nbsp;
+            <i class="fa-solid fa-arrow-right-long"></i>
+        </div>
+    </div>
+</div>
+<div id="ergebnisse"></div>
 
 @code {
 

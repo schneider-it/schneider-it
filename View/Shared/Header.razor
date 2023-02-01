@@ -1,12 +1,10 @@
-﻿
-
-<div class="back_button">
+﻿<div class="back_button">
     <a href="javascript:history.back()">
         <i class="fa-solid fa-arrow-left"></i>
     </a>
 </div>
 
-@if (!NavigationManager.Uri.Contains("search"))
+@if (SearchButtonDisabled)
 {
     <div class="search_button">
         <a href="/search">
@@ -39,7 +37,7 @@
 
     <ul class="list">
         <li class="item">
-            <a href="/index.html" class="navlink">
+            <a href="/" class="navlink">
                 <span class="link-showcase">
                     <span class="link-text" data-after="HOME">
                         <i class="fas fa-home"></i> HOME
@@ -107,6 +105,8 @@
 
 
 @code {
+    [Parameter]
+    public bool SearchButtonDisabled { get; set; }
 
     private Dictionary<string, object> navigationAttributes { get; set; } = new();
 
@@ -122,5 +122,4 @@
         }
         StateHasChanged();
     }
-
 }

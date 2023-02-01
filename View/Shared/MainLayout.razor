@@ -9,28 +9,39 @@
 <MudThemeProvider Theme="ThemeHandler.Theme"/>
 
 <MudLayout>
-    <Header></Header>
-    <MudMainContent>
-        <MudContainer Style="min-height: 100vh">
-            @Body
-        </MudContainer>
-    </MudMainContent>
-    <Footer></Footer>
+    @if (NavigationManager.Uri.Contains("search"))
+    {
+        <Header SearchButtonDisabled="false"></Header>
+    }
+    else
+    {
+        <Header SearchButtonDisabled="true"></Header>        
+    }
+    <div style="min-height: 100vh;">
+        @Body
+    </div>
+    @if (!NavigationManager.Uri.Contains("search"))
+    {
+        <Footer></Footer>
+    }
 </MudLayout>
 
 @code {
 
-    protected override void OnInitialized() {
+    protected override void OnInitialized()
+    {
         ThemeHandler.ThemeChange += Invoker;
     }
 
 
-    public void Dispose() {
+    public void Dispose()
+    {
         ThemeHandler.ThemeChange -= Invoker;
     }
 
 
-    private async void Invoker() {
+    private async void Invoker()
+    {
         await InvokeAsync(StateHasChanged);
     }
 

@@ -1,12 +1,4 @@
-﻿html {
-    overflow-y: scroll;
-}
-
-body {
-    min-height: 100vh;
-}
-
-.search_div {
+﻿.search_div {
     position: absolute;
     width: clamp(4vh, 60rem, 100% - 32vh);
     margin: 2rem 0 0 50vw;
