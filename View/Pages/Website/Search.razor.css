@@ -1,5 +1,5 @@
 ﻿.search_div {
-    position: absolute;
+    position: relative;
     width: clamp(4vh, 60rem, 100% - 32vh);
     margin: 2rem 0 0 50vw;
     -webkit-transform: translateX(-50%);
