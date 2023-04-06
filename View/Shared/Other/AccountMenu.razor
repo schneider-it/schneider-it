@@ -1,0 +1,54 @@
+﻿@inject ILogger<AccountMenu> Logger
+
+<MudMenu AnchorOrigin="Origin.BottomRight" TransformOrigin="Origin.TopRight">
+    <ActivatorContent>
+        <MudAvatar Color="Color.Primary" Size="Size.Large">@UserService.CurrentUser?.Username[0]</MudAvatar>
+    </ActivatorContent>
+    <ChildContent>
+        <div class="py-4"
+             style="min-width: 220px">
+            <MudText Class="px-6 pb-2"
+                     Typo="Typo.h4">
+                <b>@UserService.CurrentUser?.Username</b>
+            </MudText>
+            <MudDivider Class="my-2"/>
+            <MudNavLink Href="authentication/settings" Match="NavLinkMatch.All">
+                <div class="d-flex align-self-center">
+                    <MudIcon Icon="@Icons.Filled.Settings"/>
+                    <MudText Inline="true" Class="ml-3">
+                        Settings
+                    </MudText>
+                </div>
+            </MudNavLink>
+
+            <div class="mt-6 mx-4">
+                <MudButton Color="Color.Error"
+                           FullWidth="true"
+                           StartIcon="@Icons.Material.Filled.Logout"
+                           Variant="Variant.Outlined"
+                           OnClick="LogOut">
+                    Logout
+                </MudButton>
+            </div>
+        </div>
+    </ChildContent>
+</MudMenu>
+
+@code {
+
+    private async void LogOut() {
+        try {
+            await UserService.LogoutAsync();
+        }
+        catch (TaskCanceledException) {
+            Logger.LogInformation("Logout canceled");
+        }
+        catch (OperationCanceledException) {
+            Logger.LogInformation("Logout canceled");
+        }
+        catch (Exception e) {
+            Logger.LogError(e, "Logout failed");
+        }
+    }
+
+}

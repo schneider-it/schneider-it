@@ -1,0 +1,43 @@
+﻿@using System.Net.Http
+@using System.Globalization
+@using System.Security.Authentication
+
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.JSInterop
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@using Microsoft.AspNetCore.Components.Authorization;
+
+@using MudBlazor
+@using MudBlazor.Utilities
+
+@using Domain.Repositories.Interfaces
+@using Domain.Extensions
+
+@using Model.Configuration
+@using Model.Entities
+@using Model.Entities.Authentication
+@using Model.Entities.Authentication.Models
+@using Model.Entities.Theme
+
+@using View.Components
+@using View
+@using View.Shared
+@using View.Shared.Other
+@using View.Pages
+@using View.Pages.Authentication
+@using View.Pages.Law
+@using View.Pages.Website
+
+@inject UserService UserService
+@inject IUserRepository UserRepository
+@inject IThemeHandler ThemeHandler
+@inject ProtectedLocalStorage LocalStorage
+@implements IDisposable
+@inherits CancellationComponent
+@inject NavigationManager NavigationManager

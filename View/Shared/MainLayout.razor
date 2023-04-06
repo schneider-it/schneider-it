@@ -1,0 +1,49 @@
+﻿@inherits LayoutComponentBase
+
+<MudDialogProvider
+    CloseButton="true"
+    DisableBackdropClick="false"
+    Position="DialogPosition.Center"
+    CloseOnEscapeKey="true"/>
+<MudSnackbarProvider/>
+<MudThemeProvider Theme="ThemeHandler.Theme"/>
+
+<MudLayout>
+    @if (NavigationManager.Uri.Contains("search"))
+    {
+        <Header SearchButtonDisabled="false"></Header>
+    }
+    else
+    {
+        <Header SearchButtonDisabled="true"></Header>        
+    }
+    <div style="min-height: 100vh;">
+        @Body
+    </div>
+    @if (!NavigationManager.Uri.Contains("search"))
+    {
+        <Footer></Footer>
+    }
+</MudLayout>
+
+@code {
+
+    protected override void OnInitialized()
+    {
+        ThemeHandler.ThemeChange += Invoker;
+    }
+
+
+    public void Dispose()
+    {
+        ThemeHandler.ThemeChange -= Invoker;
+    }
+
+
+    private async void Invoker()
+    {
+        await InvokeAsync(StateHasChanged);
+    }
+
+
+}
