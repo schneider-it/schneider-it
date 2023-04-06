@@ -5,7 +5,7 @@ footer {
     background-color: var(--background-color-footer);
     font-size: 1rem;
     color: var(--font-color);
-    min-height: 20rem;
+    min-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
