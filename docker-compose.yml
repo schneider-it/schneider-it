@@ -1,0 +1,18 @@
+services:
+  mysql:
+    image: mysql:8.0.27
+    networks:
+      - network_mysql
+  
+  schneider-it:
+    image: trueberryless/schneider-it
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - network_mysql
+    depends_on:
+      - mysql
+
+networks:
+  network_mysql: 
