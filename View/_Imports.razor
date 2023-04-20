@@ -2,42 +2,54 @@
 @using System.Globalization
 @using System.Security.Authentication
 
-
 @using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Components.Authorization
 @using Microsoft.AspNetCore.Components.Forms
 @using Microsoft.AspNetCore.Components.Routing
 @using Microsoft.AspNetCore.Components.Web
 @using Microsoft.AspNetCore.Components.Web.Virtualization
-@using Microsoft.JSInterop
 @using Microsoft.AspNetCore.Components
+
 @using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
-@using Microsoft.AspNetCore.Components.Authorization;
+@inject ProtectedLocalStorage ProtectedLocalStorage
 
 @using MudBlazor
 @using MudBlazor.Utilities
 
-@using Domain.Repositories.Interfaces
+@using Domain
+@using Domain.Exceptions
 @using Domain.Extensions
+@using Domain.Repositories
+@using Domain.Repositories.Implementations
+@using Domain.Repositories.Interfaces
 
+@using Model
 @using Model.Configuration
 @using Model.Entities
-@using Model.Entities.Authentication
-@using Model.Entities.Authentication.Models
 @using Model.Entities.Theme
 
-@using View.Components
 @using View
-@using View.Shared
-@using View.Shared.Other
+@using View.Components
 @using View.Pages
 @using View.Pages.Authentication
-@using View.Pages.Law
-@using View.Pages.Website
+@using View.Services
+@using View.Shared
+
 
 @inject UserService UserService
+@inject NavigationManager NavigationManager
+
+@inject ICategoryNodeRepository CategoryNodeRepository
+@inject IContentNodeRepository ContentNodeRepository
+@inject INodeRepository NodeRepository
+@inject IImageRepository ImageRepository
+@inject IUserEditsNodeRepository UserEditsNodeRepository
+@inject IRoleClaimRepository RoleClaimRepository
+@inject IRoleRepository RoleRepository
 @inject IUserRepository UserRepository
+
+@inject ILogger<Login> Logger
+@inject ISnackbar Snackbar
+@inherits CancellationComponent
 @inject IThemeHandler ThemeHandler
 @inject ProtectedLocalStorage LocalStorage
-@implements IDisposable
-@inherits CancellationComponent
-@inject NavigationManager NavigationManager

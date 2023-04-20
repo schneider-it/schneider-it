@@ -1,0 +1,18 @@
+@page "/page/"
+@page "/page/{Path?}"
+@using Microsoft.Extensions.Configuration.UserSecrets
+
+<div>@Path</div>
+
+@code {
+    [Parameter]
+    public string? Path { get; set; }
+    
+    public List<string> PathParts { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        Path ??= "";
+        PathParts = Path.Split("/").ToList();
+    }
+}
