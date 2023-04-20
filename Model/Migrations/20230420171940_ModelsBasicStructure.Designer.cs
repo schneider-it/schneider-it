@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Model.Configuration;
 
@@ -10,9 +11,11 @@ using Model.Configuration;
 namespace Model.Migrations
 {
     [DbContext(typeof(ModelDbContext))]
-    partial class ModelDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230420171940_ModelsBasicStructure")]
+    partial class ModelsBasicStructure
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -180,8 +183,6 @@ namespace Model.Migrations
                     b.HasIndex("ParentNodeId");
 
                     b.ToTable("NODES_BT");
-
-                    b.UseTptMappingStrategy();
                 });
 
             modelBuilder.Entity("Model.Entities.UserEditsNode", b =>
@@ -208,29 +209,6 @@ namespace Model.Migrations
                     b.HasIndex("NodeId");
 
                     b.ToTable("USER_EDITS_NODES");
-                });
-
-            modelBuilder.Entity("Model.Entities.CategoryNode", b =>
-                {
-                    b.HasBaseType("Model.Entities.Node");
-
-                    b.Property<string>("Content")
-                        .HasColumnType("longtext")
-                        .HasColumnName("CONTENT");
-
-                    b.ToTable("CATEGORY_NODES");
-                });
-
-            modelBuilder.Entity("Model.Entities.ContentNode", b =>
-                {
-                    b.HasBaseType("Model.Entities.Node");
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("longtext")
-                        .HasColumnName("CONTENT");
-
-                    b.ToTable("CONTENT_NODES");
                 });
 
             modelBuilder.Entity("Model.Entities.Authentication.RoleClaim", b =>
@@ -286,24 +264,6 @@ namespace Model.Migrations
                     b.Navigation("Node");
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("Model.Entities.CategoryNode", b =>
-                {
-                    b.HasOne("Model.Entities.Node", null)
-                        .WithOne()
-                        .HasForeignKey("Model.Entities.CategoryNode", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("Model.Entities.ContentNode", b =>
-                {
-                    b.HasOne("Model.Entities.Node", null)
-                        .WithOne()
-                        .HasForeignKey("Model.Entities.ContentNode", "Id")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("Model.Entities.Authentication.Role", b =>

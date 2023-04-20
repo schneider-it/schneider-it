@@ -31,7 +31,12 @@ public class User {
     [NotMapped]
     [MinLength(8)]
     public string LoginPassword { get; set; } = null!;
+
+    [Column("REGISTERED_AT")] 
+    public DateTime RegisteredAt { get; set; }
     
+    public List<UserEditsNode> EditedNodes { get; set; }
+
     public List<RoleClaim> RoleClaims { get; set; } = new();
 
     [NotMapped] 
